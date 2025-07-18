@@ -2,15 +2,15 @@
 ms.assetid: 4d1cf6ab-ed6e-4cd8-8ab8-f5d294877e4a
 title: Upgrade an Agent to System Center Operations Manager
 description: This article describes how to upgrade an Operations Manager agent to System Center.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 monikerRange: ' >=sc-om-2019'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade an Operations Manager agent

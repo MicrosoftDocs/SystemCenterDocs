@@ -1,10 +1,11 @@
 ---
 description: This article helps you identify data sources you want to protect with DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 04/16/2025
 title: Identify Data Sources you want to Protect
+ms.update-cycle: 1095-days
 ms.subservice: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
 author: jyothisuri

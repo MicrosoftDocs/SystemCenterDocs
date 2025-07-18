@@ -1,34 +1,34 @@
 ---
-title: Customize and author classes
+title: Customize and Author Classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 ---
 
 # Customize and author classes with Service Manager authoring
 
-A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
+A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.
 
- Class definitions that represent a larger element, such as a Service Manager feature, are often grouped together. Class definitions are stored in management packs that must be imported into Service Manager to enable Service Manager functionality.  
+ Class definitions that represent a larger element, such as a Service Manager feature, are often grouped together. Class definitions are stored in management packs that must be imported into Service Manager to enable Service Manager functionality. In this article, you'll learn about customizing and authoring classes with Service Manager authoring.
 
 ## Key concepts for classes
 
 Objects in Service Manager are *instances* of a particular base class. All instances of a base class have a common set of properties and common behavior.  
 
- Like all management pack elements, classes have *ID* and *Display Name* properties. In this documentation, **ID** refers to the unique name of the class that is seen only in the Authoring Tool, while **Name** and **Display Name** refer to the language-specific name that appears in the Service Manager console.  
+ Like all management pack elements, classes have *ID* and *Display Name* properties. In this documentation, **ID** refers to the unique name of the class that is seen only in the Authoring tool, while **Name** and **Display Name** refer to the language-specific name that appears in the Service Manager console.  
 
 > [!NOTE]  
-> When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring Tool.  
+> When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring tool.  
 
 ### Properties
 
@@ -78,13 +78,13 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  *Relationships* are defined between classes to indicate an association between a particular instance of one class and the particular instance of another. There are three types of relationships, and they're detailed in the following sections:  
 
-- Hosting relationship  
+- [Hosting relationship](#hosting-relationship) 
 
-- Containment relationship  
+- [Containment relationship](#containment-relationship)  
 
-- Reference relationship  
+- [Reference relationship](#reference-relationship)  
 
-Class relationships affect objects in the following ways.  
+Class relationships affect objects in the following ways: 
 
 |Relationship type|Key property and existence|Available properties|  
 |-----------------------|--------------------------------|--------------------------|  
@@ -122,11 +122,13 @@ Class relationships affect objects in the following ways.
 
  **Sample database hosting relationships**  
 
- ![Diagram of a Sample Database Hosting Relationship.](./media/auth-classes/author-authguide_sampledatabasehosting.png)
+ ![Diagram of a Sample Database Hosting relationship.](./media/auth-classes/author-authguide_sampledatabasehosting.png)
+
+
 
 ## General guidelines and best practices for classes
 
-Use the following guidelines and best practices when you're customizing classes in the Service Manager Authoring Tool.  
+Use the following guidelines and best practices when you're customizing classes in the Service Manager Authoring tool.  
 
 ### Naming conventions for type definitions
 
@@ -194,17 +196,21 @@ Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Kno
 
  This improves simple search. Simple search searches only the **DisplayName** property, and by explicitly including the **Title** property value and the **ID** property value in the **DisplayName** property value, the results of simple search are improved. This is because the user can search either by a word in the title or by ID.  
 
+ 
+
 ## Browse a class in the Authoring tool
 
-You can use the **Class Browser** pane in the Service Manager Authoring Tool to browse classes and their properties. While you're browsing classes, you can add a control to a form by dragging properties from the **Class Browser** pane to a form that is being authored in the authoring pane.  
+You can use the **Class Browser** pane in the Service Manager Authoring tool to browse classes and their properties. While you're browsing classes, you can add a control to a form by dragging properties from the **Class Browser** pane to a form that is being authored in the authoring pane.  
 
- The **Class Browser** pane can display classes from any management pack that is in the Library folder and from any management pack that has been opened in the Authoring Tool. When you select a class, the **Class Browser** pane displays the properties that are specifically defined for that class and the internal properties that are generated by the system. By default, the Library folder is in the following location: C:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\> Authoring\\Library.  
+ The **Class Browser** pane can display classes from any management pack that is in the Library folder and from any management pack that has been opened in the Authoring tool. When you select a class, the **Class Browser** pane displays the properties that are specifically defined for that class and the internal properties that are generated by the system. By default, the Library folder is in the following location: C:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\> Authoring\\Library.  
 
  When you select a management pack in the **Class Browser** pane, all the classes from the selected management pack are displayed, and you can expand the class for which you want to view properties. When you select **All Management Packs**, all the classes from all the management packs in the Library folder are displayed. Whenever you change the selection of the management pack, you must refresh the **Class Browser** pane.  
 
 ### Browse a class  
 
-1. If the **Class Browser** pane isn't visible in the Authoring Tool, select **View**, and select **Class Browser**.  
+To browse a class in the Authoring tool, follow these steps:
+
+1. If the **Class Browser** pane isn't visible in the Authoring tool, select **View**, and then select **Class Browser**.  
 
 2. In the **Class Browser** pane, in the management pack list, select the management pack that contains the class that you want to browse. For example, select the **System Library** management pack.  
 
@@ -218,21 +224,23 @@ You can use the **Class Browser** pane in the Service Manager Authoring Tool to 
 
 ## Edit details of a class in the Authoring tool
 
-You can use the Service Manager Authoring Tool to view the properties of a class and to edit the details, such as the name or description, of a class.  
+You can use the Service Manager Authoring tool to view the properties of a class and to edit the details, such as the name or description, of a class.  
 
  In the **Management Pack Explorer**, you can select a class and view its details in the **Details** pane. If you select a class that is defined in an unsealed management pack, you can change the name and description of that class.  
 
 ### Change the name or description of a class  
 
+To change the name or description of a class in the Authoring tool, follow these steps:
+
 1. On your desktop, select **Start**.  
 
-2. Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
+2. Select **Service Manager Authoring tool**, and wait for the Authoring tool to open.  
 
 3. Ensure that both the **Management Pack Explorer** and the **Details** panes are open.  
 
 4. Select **File**, and select **Open**.  
 
-5. In the **Open File** dialog, select an unsealed management pack that contains the class that you want to change, and select **Open**. For example, open the *Authoring Tool installation folder* \\Samples\\Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml sample management pack.  
+5. In the **Open File** dialog, select an unsealed management pack that contains the class that you want to change, and select **Open**. For example, open the *Authoring tool installation folder* \\Samples\\Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml sample management pack.  
 
 6. In the **Management Pack Explorer**, expand the management pack that contains the class that you want to change.  
 
@@ -244,9 +252,9 @@ You can use the Service Manager Authoring Tool to view the properties of a class
 
 ## Create a class using inheritance in the Authoring tool
 
-In the Service Manager Authoring Tool, you can create a class that inherits properties and relationships from an existing base class. You can then modify or add properties and relationships to the new class.  
+In the Service Manager Authoring tool, you can create a class that inherits properties and relationships from an existing base class. You can then modify or add properties and relationships to the new class.  
 
- As the first step of defining class inheritance, choose the base class from which to inherit properties and relationships. In the Authoring Tool, you can choose the base class by using one of the following methods:  
+ As the first step of defining class inheritance, choose the base class from which to inherit properties and relationships. In the Authoring tool, you can choose the base class by using one of the following methods:  
 
 - Use a shortcut to inherit properties and relationships from the base configuration item class.  
 
@@ -256,11 +264,13 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 - Start defining inheritance without a specific base class selection.  
 
-  The following procedures describe all the methods for defining class inheritance in the Authoring Tool.  
+  The following procedures describe all the methods for defining class inheritance in the Authoring tool.  
 
 ### Start with the configuration item class or the work item class as a base class  
 
-1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+To start with the configuration item class or the work item class as a base class in the Authoring tool, follow these steps:
+
+1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and then select **Management Pack Explorer**.  
 
 2. In the **Management Pack Explorer**, select and then expand any management pack.  
 
@@ -279,7 +289,9 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 ### Start with a selected base class  
 
-1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+To start with a selected base class in the Authoring tool, follow these steps:
+
+1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and then select **Management Pack Explorer**.  
 
 2. In the **Management Pack Explorer**, locate and then right-click the base class from which the new class will inherit properties and relationships. Select **Inherit from this class**.  
 
@@ -291,7 +303,9 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 ### Start without a selected base class  
 
-1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+To start without a selected base class in the Authoring tool, follow these steps:
+
+1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and select **Management Pack Explorer**.  
 
 2. In the **Management Pack Explorer**, select and then expand any management pack.  
 
@@ -307,19 +321,21 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
      If the base class that you selected to inherit properties and relationships from is in an unsealed management pack, this class customization will be saved in that selected management pack.  
 
-6. In the **Create class** dialog, specify the internal name for this class, and select **Create**.  
+6. In the **Create class** dialog, specify the internal name for this class, and then select **Create**.  
 
      In the authoring pane, you can now view the list of properties of the new class. This list includes all the properties of the base class that you selected.  
 
 ## Extend a class in the Authoring tool
 
-You can extend a class in the Service Manager Authoring Tool by adding properties and relationships to the definition of the class. Extending a class affects all the existing instances of that class: all instances of that class will be updated to include the new properties and relationships.  
+You can extend a class in the Service Manager Authoring tool by adding properties and relationships to the definition of the class. Extending a class affects all the existing instances of that class: all instances of that class will be updated to include the new properties and relationships.  
 
 ### Extend a class  
 
-1. If the **Management Pack Explorer** pane isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+To extend a class in the Authoring tool, follow these steps:
 
-2. In the **Management Pack Explorer** pane, locate and right\-click the class that you want to extend, and select **Extend class**.  
+1. If the **Management Pack Explorer** pane isn't visible in the Authoring tool, select **View**, and select **Management Pack Explorer**.  
+
+2. In the **Management Pack Explorer** pane, locate and right-click the class that you want to extend, and select **Extend class**.  
 
 3. In the **Target Management Pack** dialog, select an unsealed management pack to store the class extension, and select **OK**.  
 
@@ -336,4 +352,4 @@ You can extend a class in the Service Manager Authoring Tool by adding propertie
 
 ## Next steps
 
-- To view and edit the properties of objects, see [Customize and author forms](auth-forms.md).
+To view and edit the properties of objects, see [Customize and author forms](auth-forms.md).

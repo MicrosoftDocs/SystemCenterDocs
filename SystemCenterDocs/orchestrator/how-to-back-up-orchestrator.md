@@ -2,9 +2,10 @@
 title: Back up Orchestrator
 description: Describes how to backup a System Center - Orchestrator environment.
 ms.date: 04/16/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24

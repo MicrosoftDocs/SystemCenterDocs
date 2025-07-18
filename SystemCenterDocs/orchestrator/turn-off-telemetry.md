@@ -5,7 +5,7 @@ description: This article provides information about how to manage the telemetry
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/16/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: UpdateFrequency2
