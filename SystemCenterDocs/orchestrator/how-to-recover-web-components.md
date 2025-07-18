@@ -10,16 +10,15 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: edc3c49a-93e9-4ec4-81e3-c454b54ae976
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
-
-This article describes how to recover web components after restoring a System Center - Orchestrator environment.
 
 # Recover web components
 
 When you use the Database Configuration utility to modify the Orchestrator database, the tool won't modify the Web Service database reference (only the installer performs this task). You will need to manually modify it after updating with the database configuration utility.  
+
+This article discusses about the Orchestrator Web components.
 
 ## Modify the Web Service database reference  
 

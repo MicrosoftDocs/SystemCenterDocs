@@ -1,10 +1,9 @@
 ---
 ms.assetid: d4b3e835-cd9b-4993-bfe0-e491f5f18508
-title: Manage Azure Resource Manager-based and region-specific VMs using System Center VMM.
+title: Manage Azure Resource Manager-based and Region-specific VMs using System Center VMM.
 description: This article provides information about how to manage VMs with Azure Resource Manager-based and region-specific Azure subscriptions, using VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/16/2025
 ms.topic: how-to
 ms.service: system-center

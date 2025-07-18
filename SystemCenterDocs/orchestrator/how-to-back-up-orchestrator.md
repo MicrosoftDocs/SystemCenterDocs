@@ -5,15 +5,14 @@ ms.date: 04/16/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Back up Orchestrator
 
-This article describes how to backup a System Center - Orchestrator environment.
+This article discusses about backing up a System Center - Orchestrator environment.
 
 A complete backup of an Orchestrator environment consists of the following:  
 
@@ -47,4 +46,4 @@ The Orchestrator database is a standard SQL Server database that is supported by
 
 ## Next steps
 
-Learn more about [recover a database](how-to-recover-a-database.md).
+Learn more about [recovering a database](how-to-recover-a-database.md).

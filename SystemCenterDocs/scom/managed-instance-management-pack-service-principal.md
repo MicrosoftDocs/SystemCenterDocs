@@ -1,6 +1,6 @@
 ---
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
-title: Create a service principal in Management Pack for Azure SQL Managed Instance
+title: Create a Service Principal in Management Pack for Azure SQL Managed Instance
 description: This article explains how to create a service principal in Azure Cloud for using them in the Management Pack for Azure SQL Managed Instance
 author: epomortseva
 ms.author: v-fkornilov
@@ -45,7 +45,7 @@ To register an application and create a service principal, follow these steps:
 
 You've created your Microsoft Entra application and service principal.
 
-## [Assign a role to the application](#tab/assign-a-role-to-the-application)
+## Assign a role to the application
 
 To access resources in your subscription, you must assign a role to the application. Decide which role offers the right permissions for the application, however, for authenticating Azure SQL Managed Instance management pack workflows in Azure Cloud the **Reader** role is enough.
 
@@ -61,7 +61,7 @@ To assign a role to the application, follow these steps:
 
     ![Screenshot showing the Adding a role assignment.](./media/managed-instance-management-pack/new-spn-role-based-access-control.png)
 
-## [Sign in to the application](#sign-in-to-the-application)
+## Sign in to the application
 
 When programmatically signing in, pass the tenant ID and the application ID in your authentication request. You also need a certificate or an authentication key.
 
@@ -89,8 +89,6 @@ To create a new client secret, follow these steps:
     ![Screenshot showing the Client secret registration.](./media/managed-instance-management-pack/add-client-secret.png)
 
 Your service principal is set up.
-
----
 
 ## Set Azure Run As account
 

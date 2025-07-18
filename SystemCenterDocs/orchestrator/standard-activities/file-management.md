@@ -11,17 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d491e346-f43e-4958-85cc-169305fc471e
 caps.latest.revision: 8
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # File Management
 
-This article provides information on the various File Management activities.
+The following table provides a brief description of tasks you can accomplish when using each File Management activity.  
 
-The following table provides a brief description of tasks you can accomplish when using each File Management activity: 
-
-|Tasks|File management activities|  
+|Tasks|File Management Activities|  
 |-----------|--------------------------------|  
 |Compress files into zip archives|[Compress File](compress-file.md)|  
 |Copy files from one directory to another|[Copy File](copy-file.md)|  

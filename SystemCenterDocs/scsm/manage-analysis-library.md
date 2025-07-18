@@ -1,11 +1,10 @@
 ---
-title: Manage and use the analysis libraries
+title: Manage and use the Analysis Libraries
 description: Explains how to manage and use the analysis libraries in the Service Manager console.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/16/2025
 ms.reviewer: na
 ms.suite: na
@@ -19,11 +18,11 @@ ms.assetid: 5f3e94e5-6706-4ef4-a511-a21c5d6b98f8
 
 
 
-This article explains how to manage and use the analysis libraries in the Service Manager console. The analysis libraries are file storage areas, such as network shares, Universal Naming Convention \(UNC\) paths, and Microsoft SharePoint. The libraries are used to house Microsoft Excel data files, which are generated from Microsoft Online Analytical Processing \(OLAP\) data cubes. When they're saved to an analysis library, you can easily access Excel files and the cube data they connect to without having to open the Service Manager console. Instead, you can open the storage location directly or from the Reporting workspace.  
+You can use the following procedure to manage the analysis libraries in the Service Manager console in Service Manager. The analysis libraries are file storage areas, such as network shares, Universal Naming Convention \(UNC\) paths, and Microsoft SharePoint. The libraries are used to house Microsoft Excel data files, which are generated from Microsoft Online Analytical Processing \(OLAP\) data cubes. When they're saved to an analysis library, you can easily access Excel files and the cube data they connect to without having to open the Service Manager console. Instead, you can open the storage location directly or from the Reporting workspace.  
 
- You might want to create many analysis library folders for different departments in your organization.  
+You might want to create many analysis library folders for different departments in your organization.  
 
- In order to add a new analysis library folder, the underlying shared folder or other sharing location must already exist and you must have permission to write to it.  
+In order to add a new analysis library folder, the underlying shared folder or other sharing location must already exist and you must have permission to write to it.  
 
 ## Manage an analysis library folder  
 

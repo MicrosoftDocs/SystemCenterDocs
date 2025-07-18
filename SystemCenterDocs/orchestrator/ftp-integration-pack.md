@@ -9,16 +9,15 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/16/2025
 ---
 
 # FTP integration pack
 
-In this article, you'll learn about FTP integration pack. Integration packs are add-ons for Orchestrator, a component of System Center, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products. The Integration Pack for FTP enables you to automate FTP operations, which include creating a folder, deleting a file or folder, downloading, uploading, file, and folder listing and synchronization.
+Integration packs are add-ons for Orchestrator, a component of System Center, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products. The Integration Pack for FTP enables you to automate FTP operations, which include creating a folder, deleting a file or folder, downloading, uploading, file, and folder listing and synchronization.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
@@ -43,7 +42,7 @@ The Integration Pack for FTP requires the following software to be installed and
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an integration pack](how-to-add-an-integration-pack.md).
 
-## Configuring the FTP connections
+## Configure FTP connections
 
 A connection establishes a reusable link between Orchestrator and an FTP server. You can create as many connections as you require specifying links to multiple FTP servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 

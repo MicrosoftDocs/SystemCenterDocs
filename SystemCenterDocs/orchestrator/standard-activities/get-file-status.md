@@ -11,19 +11,18 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b61d52ec-e35d-42cf-a0fb-fda815e3195b
 caps.latest.revision: 15
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Get File Status
 
-This article describes the functionality of Get File Status activity. The Get File Status activity verifies that a file exists on the local file system or a network location using a UNC path. You can check that a file is available before copying to another location or before starting any services that depend on the existence of the file. If the file doesn't exist, you can take corrective action using the [Copy File](copy-file.md) activity to copy the file from another location.  
+The Get File Status activity verifies that a file exists on the local file system or a network location using a UNC path. You can check that a file is available before copying to another location or before starting any services that depend on the existence of the file. If the file doesn't exist, you can take corrective action using the [Copy File](copy-file.md) activity to copy the file from another location.  
 
 ## Configure the Get File Status Activity
 
- Before you configure the Get File Status activity, you need to determine the file name and path name you're checking.  
+Before you configure the Get File Status activity, you need to determine the file name and path name you're checking.  
 
- Use the following information to configure the Get File Status activity.  
+Use the following information to configure the Get File Status activity.  
 
 ### Details Tab  
 
@@ -36,7 +35,7 @@ This article describes the functionality of Get File Status activity. The Get Fi
 
 ### Published Data
 
- The following table lists the published data items:  
+The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
