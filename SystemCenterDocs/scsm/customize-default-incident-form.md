@@ -1,11 +1,10 @@
 ---
-title: Customize the default incident form for the sample scenario
+title: Customize the Default Incident Form for the Sample Scenario
 description: This sample scenario article describes how to apply simple customizations to a default form in the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.reviewer: na
 ms.suite: na
@@ -19,11 +18,11 @@ ms.assetid: 2af8b9d4-f736-4f96-b058-a96b10a64aca
 
 
 
-This sample scenario article describes how to apply simple customizations to a default form in the Service Manager Authoring tool. In this scenario, you customize the Incident form, which is the default form for interacting with incidents. You customize the form in the Authoring Tool and then save the customized form in a new management pack. Then, in the Service Manager console, you import this new management pack. Afterwards, whenever you create or view an incident, Service Manager displays the customized form. The Incident form, System.WorkItem.Incident.ConsoleForm, is defined in the Service Manager Incident Management Library management pack.
+This sample scenario describes how to apply simple customizations to a default form in the Service Manager Authoring Tool. In this scenario, you customize the Incident form, which is the default form for interacting with incidents. You customize the form in the Authoring Tool and then save the customized form in a new management pack. Then, in the Service Manager console, you import this new management pack. Afterwards, whenever you create or view an incident, Service Manager displays the customized form. The Incident form, System.WorkItem.Incident.ConsoleForm, is defined in the Service Manager Incident Management Library management pack.
 
 The sample scenario for customizing the default Incident form consists of three steps.
 
-## View the default incident form
+## Step 1: View the default incident form
 
 Before you customize the form, view the default form in the Service Manager console and identify elements on the form that you want to customize. For example, you can plan to rearrange various text boxes on the form.
 
@@ -37,7 +36,7 @@ To view the default incident form, follow these steps:
 
 4. Review the **Incident** form. This form is the form that you use to create and view incidents. You can identify elements in the form that you might want to customize.
 
-## Customize the default incident form
+## Step 2: Customize the default incident form
 
 Use the following procedure to customize the default Incident form in the Authoring Tool.
 
@@ -67,7 +66,7 @@ To customize the Incident form, follow these steps:
 
 9. Exit the Authoring Tool.
 
-## Use the customized default incident form
+## Step 3: Use the customized default incident form
 
 Use the following procedure to view and use the customized Incident form in the Service Manager console.
 

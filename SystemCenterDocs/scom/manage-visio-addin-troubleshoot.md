@@ -1,9 +1,8 @@
 ---
 title: Troubleshoot the Visio Add-in
 description: This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
@@ -76,7 +75,6 @@ You can change the font size by selecting the shape and then choosing a differen
 Health Explorer and Alert View hyperlinks might not be available in Edit mode or Full Screen mode if you've grouped your shapes or added links to any shapes that were already contained within groups.  
 
 ### You receive a ConfigurationErrorsException error message  
-
 You might see the following error message:  
 
 ```  
@@ -95,7 +93,6 @@ To work around this problem, delete the configuration file identified at the top
 \OpsMgrAddin.vsto_vstoloca_Path_logwdvddmizljsrbc2bvt5gtm5juzdix\12.0.6325.5000\\user.config  
 
 ### You receive a MissingMethodException error message
-
 You might see the following error message:  
 
 ```  
@@ -122,7 +119,6 @@ When you open a document that you previously linked to Operations Manager, you r
 This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don't show this message again**.  
 
 ### You can't reinstall the Visio Add-in  
-
 If you delete the Operations Manager Visio Add-in by using the Visio Trust Center, you can't add it again later.  
 
 This behavior occurs by design in Visio. Before you can add the Operations Manager Visio Add-in again, uninstall it by using Add/Remove Programs (or Programs and Features) in the Control Panel, and then reinstall it.  

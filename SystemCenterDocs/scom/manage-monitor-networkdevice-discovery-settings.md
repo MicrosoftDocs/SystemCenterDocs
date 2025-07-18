@@ -1,9 +1,8 @@
 ---
 title: Network Device Discovery Settings
 description: This article describes how to configure discovery of network devices to be monitored by Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
@@ -14,7 +13,7 @@ ms.assetid: f7229aef-0a5c-40de-9219-c1df83fd3aa9
 
 # Network device discovery settings
 
-This article describes how to configure discovery of network devices to be monitored by Operations Manager.
+
 
 System Center Operations Manager offers many settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
 
@@ -37,7 +36,6 @@ System Center Operations Manager offers many settings that you can use to config
 |**IP Address or Host Name**|**Exclude Filters** page, **Add** button, when configuring a recursive discovery rule|Enter either a fully qualified domain name (FQDN), an IPv4 address, or an IPv6 address to exclude from discovery. You can add multiple IP address individually.|
 
 ## Wildcard matching for IP address range
-
 Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly. So, for example, the pattern *abc* doesn't match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it's interpreted as if there were an asterisk at the beginning. For example, the pattern ~[0-9] matches any string that doesn't contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates **except for an empty string**.
 
 Spaces are significant characters and are subject to matching.

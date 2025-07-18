@@ -1,6 +1,6 @@
 ---
 ms.assetid: 90109309-a692-414d-8877-2853d44d3bb4
-title: Management Pack for SQL Server Analysis Services delivery
+title: Management Pack for SQL Server Analysis Services Delivery
 description: This article explains how to install Management Pack for SQL Server Analysis Services
 author: epomortseva
 ms.author: v-fkornilov
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 
 # Management Pack for SQL Server Analysis Services Delivery
 
-This article explains how to install Management Pack for SQL Server Analysis Services. Management Pack for SQL Server Analysis Services provides monitoring of SQL Server 2012 (and higher) Analysis
+Management Pack for SQL Server Analysis Services provides monitoring of SQL Server 2012 (and higher) Analysis
 Services instances, databases, and partitions.
 
 You can download Management Pack for SQL Server Analysis Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57382) or System Center Operations Manager Online Catalog.
@@ -46,7 +46,7 @@ After you download and unpack the **Microsoft.SQLServer.AnalysisServices.Managem
 
 ## Prerequisites
 
-Before you start using Management Pack for SQL Server Analysis services, ensure that the environment you use meet these prerequisites: 
+The environment that you use must meet the following prerequisites before you start using Management Pack for SQL Server Analysis Services:
 
 - Install **.NET Framework 4.5** or higher.
 

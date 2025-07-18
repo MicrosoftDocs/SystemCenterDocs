@@ -1,9 +1,8 @@
 ---
 title: Install and Configure the Visio Services Data Provider
 description: This article describes how to install and configure the Visio Services Data Provider in a SharePoint farm.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.custom: UpdateFrequency2, intro-installation
 ms.service: system-center
@@ -14,7 +13,9 @@ ms.assetid: 8b1c21ab-529b-4c04-9384-717a503f3df7
 
 # Install and configure the Visio Services Data Provider
 
-This article describes how to install and configure the Visio Services Data Provider in a SharePoint farm. The Visio Services Data Provider for System Center - Operations Manager uses SharePoint's Visio Services to enable Visio diagrams to show live health state from Operations Manager in SharePoint.  
+
+
+The Visio Services Data Provider for System Center - Operations Manager uses SharePoint's Visio Services to enable Visio diagrams to show live health state from Operations Manager in SharePoint.   
 
 The Visio Services Data Provider for Operations Manager has the following prerequisites:  
 
@@ -27,7 +28,7 @@ The Visio Services Data Provider for Operations Manager has the following prereq
 > [!NOTE]  
 > You must install SharePoint Server 2010, 2013, or 2016 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](/SharePoint/install/install-sharepoint-server-2016-on-one-server). For more information about installing SharePoint Server 2013 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers), and for SharePoint 2016, see [Install SharePoint 2016 across multiple servers](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers).  
 
-## Install the Visio Services data provider
+## Install the Visio Services data provider  
 
 To install the Visio Services data provider, follow these steps:
 
@@ -77,7 +78,7 @@ To use SharePoint's Central Administration, follow these steps:
 
     The account is listed in the **Select an account for this component** field.  
 
-## Grant the Visio Services account Read-Only Operator access to the management server
+## Grant the Visio Services account Read-Only Operator access to the management server  
 
 To grant access to the management server, follow these steps:
 

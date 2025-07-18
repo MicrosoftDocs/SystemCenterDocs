@@ -1,10 +1,9 @@
 ---
 ms.assetid:
-title: Connect Reporting Data Warehouse Across a Firewall
+title: Connect Reporting Data Warehouse across a Firewall
 description: This article describes how to configure a System Center Operations Manager Report server behind a firewall.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
@@ -20,7 +19,7 @@ In an environment where the Reporting data warehouse is separated from the manag
 
 ## Management Server and Reporting Data Warehouse
 
-This procedure is necessary to enable SQL Server Authentication. To enable it, follow these steps:
+The following steps are necessary to enable SQL Server Authentication:
 
 1. On the computer hosting the Reporting data warehouse, create a SQL Server sign-in in the proper role for reader and writer. The credentials you supply for this account must be made a member of the following roles in the data warehouse database on the computer running SQL Server:
    a. OpsMgrWriter  
@@ -47,4 +46,4 @@ A "Could not verify if current user is in sysadmin Role" error message might dis
 
 * To understand the different types of reports that are available and their purpose, review the list of [reports installed with Operations Manager](manage-reports-installed-during-setup.md).
 
-* To understand how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats, review [How to run, save, and export a report](manage-reports-run-save-export.md).
+* To understand how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats, review [How to Run, Save, and Export a Report](manage-reports-run-save-export.md).

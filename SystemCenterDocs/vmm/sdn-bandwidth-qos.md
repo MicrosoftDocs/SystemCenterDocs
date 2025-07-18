@@ -1,10 +1,9 @@
 ---
 ms.assetid: f993ce68-4b19-4d10-9ebd-dc1e6261cc4e
-title: Control SDN virtual network bandwidth with QoS
+title: Control SDN Virtual Network Bandwidth with QoS
 description: This article provides information about how to configure SDN QoS by using VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.topic: article
 ms.service: system-center
@@ -56,7 +55,7 @@ To create virtual network adapter port profile, follow these steps:
 > - Ensure that the minimum and maximum values for bandwidth are within the bandwidth range of the physical NIC(s) that the logical switch is deployed on. Otherwise, the bandwidth allocation request will be rejected.
 
 
-## [Create port classification](#tab/create-port-classification)
+## Create port classification
 
 To create a port classification, follow these steps:
 
@@ -66,7 +65,7 @@ To create a port classification, follow these steps:
 
 As an example, we created a port classification with the name **TenantA workload**, which we use later.
 
-## [Associate port classifications to logical switch](#tab/associate-port-classifications-to-logical-switch)
+## Associate port classifications to logical switch
 
 To associate a port classification to the logical switch, follow these steps:
 
@@ -80,7 +79,7 @@ To associate a port classification to the logical switch, follow these steps:
     ![Screenshot of virtual port.](media/configure-virtual-port.png)
 6. Repeat the above steps to add the port classifications required for this logical switch.
 
-## [Apply port classification to virtual network adapter](#tab/apply-port-classification-to-virtual-network-adapter)
+## Apply port classification to virtual network adapter
 
 To apply a port classification (and hence the QoS settings) to a virtual network adapter, follow these steps:
 
@@ -89,7 +88,6 @@ To apply a port classification (and hence the QoS settings) to a virtual network
 3.	Select the desired port classification from the **Classification** dropdown list.
 ![Screenshot of the Network adapter hardware configuration.](media/network-adapter-hardware-configuration.png)
 
----
 
 > [!NOTE]
 > - Only the classifications available for the logical switch are displayed here. You can also apply a port classification while creating a VM.

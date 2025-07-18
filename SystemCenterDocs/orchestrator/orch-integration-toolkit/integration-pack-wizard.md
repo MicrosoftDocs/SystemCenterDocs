@@ -1,9 +1,8 @@
 ---
 title: Orchestrator Integration Toolkit Integration Pack Wizard
 description: This article provides details about the Orchestrator Integration Pack Wizard.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/17/2025
 ms.service: system-center
 ms.subservice: orchestrator
@@ -13,7 +12,7 @@ ms.custom: engagement-fy24
 
 # Integration Pack Wizard
 
-This article provides details about the Orchestrator Integration Pack Wizard. The Integration Pack Wizard (IP Wizard) allows you to create a new Integration Pack from an existing _Integration assembly_. _Integration assemblies_ can be authored using the Command-Line Activity Wizard (`CLIActivityWizard`) or using the Orchestrator SDK. The IP Wizard (`IPWizard`) packages the assemblies, dependent files, and required metadata into a `.OIP` file that can be deployed via the Orchestrator Deployment Manager.
+The Integration Pack Wizard (IP Wizard) allows you to create a new Integration Pack from an existing _Integration assembly_. _Integration assemblies_ can be authored using the Command-Line Activity Wizard (`CLIActivityWizard`) or using the Orchestrator SDK. The IP Wizard (`IPWizard`) packages the assemblies, dependent files, and required metadata into a `.OIP` file that can be deployed via the Orchestrator Deployment Manager.
 You can create professional-looking Integration Packs with full branding and custom icons, or simply package up command-line activities so that they can be more easily deployed using the IP Wizard.
 
 ## Decide when to create an integration pack  
@@ -24,7 +23,7 @@ When you only have few activities or when you’re in the development phase and 
 
 If you have a group of activities to test or you’re further along in the development cycle and want to test the entire end-to-end process of installation or upgrade, then creating an Integration Pack is the better approach. The Integration Pack provides a more user-friendly experience and a complete installation experience. Integration Packs also allow for deployment of the activities to multiple Runbook Servers or Runbook Designers across the organization or to external customers.  
 
-## [Create an Integration Pack](#tab/create-an-integration-pack)  
+## Create a new integration pack  
 
 The Integration Pack Wizard allows you to create Integration Packs from the existing Orchestrator-compatible assemblies and dependent files. If you haven't yet created an Orchestrator-compatible assembly, see the [Command Line Activity Wizard](command-line-activity-wizard.md#create-a-new-activity-assembly).  
 
@@ -88,11 +87,11 @@ To create an integration pack, follow these steps:
 
     For information on deploying your Integration Pack, see the article [Add an Integration Pack](../how-to-add-an-integration-pack.md).  
 
-## [Update an Integration Pack](#tab/update-an-integration-pack)
+## Update an existing integration pack  
 
 The Orchestrator Integration Pack Wizard allows you to import an existing Integration Pack so that you can make changes and repackage it as a new version. Ensure that you check the **Enable Upgrade** checkbox, otherwise a new IP will be created instead of replacing or upgrading the previous installed version.  
 
-### Helpful IP Upgrade tips  
+### Helpful IP Upgrade Tips  
 
 #### Update underlying assemblies
 
@@ -100,9 +99,7 @@ When you create an Integration Pack, metadata about the IP is stored in the pack
 
 You can retain the IP config settings while modifying only the assembly. Save your new assembly to the same path and filename as the previous assembly (which is shown in the Library field of the Activity Information dialog).
 
----
-
-## QIK Integration Pack migration  
+## QIK Integration Pack Migration  
 
 If you created an Integration Pack using the Opalis QIK Wizard, you'll need to convert it to be compatible with Orchestrator before it can be imported and used by Orchestrator.  
 
