@@ -1,10 +1,9 @@
 ---
 title: Windows PowerShell Workflow Concepts
 description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.date: 02/26/2025
 ms.subservice: service-management-automation

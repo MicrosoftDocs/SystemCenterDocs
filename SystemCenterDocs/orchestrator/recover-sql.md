@@ -3,16 +3,16 @@ title: Recover SQL
 description: The Recover SQL activity is used in a runbook that recovers a SQL database to its original location or to a network folder.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 5ca6e7f3-d484-4311-a712-78daacfba9ba
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 ---
 # Recover SQL

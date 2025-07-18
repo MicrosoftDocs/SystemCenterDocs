@@ -5,8 +5,8 @@ description: This article explains the new functionality and bug fixes implement
 author: fkornilov
 ms.author: v-vlchernov
 manager: evansma
-ms.date: 01/23/2025
-ms.topic: article
+ms.date: 06/30/2025
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
@@ -14,6 +14,24 @@ ms.subservice: operations-manager
 # Features and enhancements in Management Pack for SQL Server Analysis Services
 
 This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+
+## July 2025 – 7.10.4 RTM
+
+### What’s New
+
+- Added "Msmdsrv Memory Usage" monitor that tracks the private memory usage of the `msmdsrv.exe` process and its child processes for an Analysis Services instance.
+    By default, this monitor is disabled to prevent duplicate alerts with other memory monitors that use SSAS internal counters. These duplicates can occur in production environments where memory limits typically align with total system memory, making this monitor behave similarly to the "Memory Consumed by SSAS Instance" monitor.
+    The monitor triggers alerts based on the percentage of the server's total physical memory used:
+    - A *warning alert* is generated when private bytes for `msmdsrv.exe` and its child processes exceed the *Warning Threshold*.
+    - A *critical alert* is triggered when usage exceeds the *Critical Threshold*.
+
+- Added "Msmdsrv Private Memory (GB)" and "Msmdsrv Private Memory (%)" performance rules — these rules collect private memory usage metrics for the `msmdsrv.exe` process and its child processes in an SSAS instance:
+    - "Msmdsrv Private Memory (GB)" captures private memory usage in gigabytes for the `msmdsrv.exe` process.
+    - "Msmdsrv Private Memory (%)" measures private memory usage as a percentage of total physical memory, combining usage from `msmdsrv.exe` and its child processes.
+
+- Included minor enhancements and routine maintenance updates to improve system stability and overall reliability
+
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
 ## January 2025 - 7.8.3 RTM
 

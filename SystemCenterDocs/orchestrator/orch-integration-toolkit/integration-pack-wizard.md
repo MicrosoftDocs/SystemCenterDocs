@@ -2,11 +2,11 @@
 title: Orchestrator Integration Toolkit Integration Pack Wizard
 description: This article provides details about the Orchestrator Integration Pack Wizard.
 author: jyothisuri
-ms.author: jsuri
+ms.author: jsuri 
 ms.date: 04/17/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: how-to
+ms.topic: concept-article
 ms.custom: engagement-fy24
 ---
 
