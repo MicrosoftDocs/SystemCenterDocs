@@ -1,6 +1,6 @@
 ### YamlMime:ZonePivotGroups
 groups:
-#Owner: v-gjeronika
+#Owner: jsuri
 - id: orchestrator-security-planning
   title: Orchestration security planning
   prompt: Choose a security requirement

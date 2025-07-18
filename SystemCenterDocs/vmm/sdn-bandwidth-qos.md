@@ -5,7 +5,7 @@ description: This article provides information about how to configure SDN QoS by
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/17/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

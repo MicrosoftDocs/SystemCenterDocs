@@ -1,14 +1,13 @@
 ---
 description: This article describes what DPM protection groups consist of and why you should use them.
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 title: Deploy protection groups
 ms.subservice: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 ---
 
@@ -177,7 +176,3 @@ If you're deploying DPM to protect data over a WAN and your protection group inc
 If you choose manual replica creation, DPM specifies the precise locations on the DPM server where you must create the replicas. Typically, you create the replicas by restoring your most recent backup of the data source from removable media such as tape. After you restore the data, you complete the process by running synchronization with consistency check for each of the replicas.
 
 When you restore the data to the DPM server to create the replica, you must retain the original directory structure and properties of the data source, such as time stamps and security permissions. The more the discrepancies that exist between the replicas and the protected data source, the longer the consistency checking part of the process takes. If you don't preserve the original directory structure and properties, manual replica creation can take as long as automatic replica creation.
-
-## Naming a Protection Group
-
-When you name the protection group, provide a unique, meaningful name for the group. The name can include any combination of alphanumeric characters and can include spaces but can't exceed 64 characters.

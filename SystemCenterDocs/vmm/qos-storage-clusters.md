@@ -2,12 +2,11 @@
 ms.assetid: 74defbac-c24a-4e32-8445-f29a853942aa
 title: Set storage QoS for clusters
 description: This article describes how to set storage QoS policies for clusters
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/18/2024
 ms.custom: engagement-fy24
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'

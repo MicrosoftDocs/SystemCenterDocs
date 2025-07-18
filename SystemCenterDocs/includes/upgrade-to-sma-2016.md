@@ -1,9 +1,8 @@
 ---
 description: include file to describe the process to upgrade Service Management Automation in System Center 2016.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:  
 ms.date: 05/31/2018
