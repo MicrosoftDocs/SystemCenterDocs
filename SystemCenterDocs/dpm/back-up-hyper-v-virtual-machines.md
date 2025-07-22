@@ -332,7 +332,7 @@ When you can recover a backed-up virtual machine, you use the Recovery wizard to
 
     - **Recover as virtual machine to any host**: DPM supports alternate location recovery (ALR), which provides a seamless recovery of a protected Hyper-V virtual machine to a different Hyper-V host, independent of processor architecture. Hyper-V virtual machines that are recovered to a cluster node won't be highly available. If you choose this option, the Recovery Wizard presents you with an additional screen for identifying the destination and destination path.
          >[!NOTE]
-         If you select the original standalone Hyper-V host or the original Hyper-V cluster and restore to any node of the cluster the behavior is the same as Recover to original instance. The original Virtual Machine and all associated checkpoints will be deleted.
+         >If you select the original standalone Hyper-V host or the original Hyper-V cluster and restore to any node of the cluster the behavior is the same as Recover to original instance. The original Virtual Machine and all associated checkpoints will be deleted.
 
     - **Copy to a network folder**: DPM supports item-level recovery (ILR), which allows you to perform item-level recovery of files, folders, volumes, and virtual hard disks (VHDs) from a host-level backup of Hyper-V virtual machines to a network share or a volume on a DPM protected server. The DPM protection agent doesn't have to be installed inside the guest to perform item-level recovery. If you choose this option, the Recovery Wizard presents you with an additional screen for identifying the destination and destination path.
 
