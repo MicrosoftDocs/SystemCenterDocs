@@ -6,11 +6,12 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/22/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 6bf81515-8883-471e-b1df-62c30ad9ae9e
 ---
 

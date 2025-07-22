@@ -2,13 +2,13 @@
 title: Install Operations Manager on a Single Server
 description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
 ms.custom: engagement-fy23, UpdateFrequency.5
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 02/17/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/19/2025
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 
@@ -35,6 +35,12 @@ You must ensure that your server meets the minimum supported configurations for 
 - Database Engine Services - Full-Text and Semantic Extractions for Search (as called in SQL Server 2012 and later)
 
 - Reporting Services - Native
+
+::: moniker range=">=sc-om-2019"
+
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
+
+::: moniker-end
 
 ### Install the single server management group configuration
 

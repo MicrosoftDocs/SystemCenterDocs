@@ -3,11 +3,11 @@ title: Computer groups in System Center - Orchestrator
 description: This article provides information on how to configure the activities in runbook to use a computer group.
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 # Computer groups

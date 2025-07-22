@@ -3,15 +3,15 @@ title: Guidelines for creating custom activities
 description: Learn about the guidelines for creating custom activities in the Service Manager Authoring Tool.
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 50891279-b22e-4d84-baf7-1488f6e9585b
 ---
 

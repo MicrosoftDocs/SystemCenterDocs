@@ -1,14 +1,13 @@
 ---
 title: Connect to the Operations and Web Console
 description: This article describes how to open and configure the Operations Manager consoles to view monitoring data and perform administration in the management group.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
 ---
 

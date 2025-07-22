@@ -8,7 +8,7 @@ ms.date: 07/22/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Create management pack templates

@@ -2,11 +2,10 @@
 ms.assetid: 59073d38-cfaf-4f49-a052-ff95b3086dcd
 title: Configure guest clusters in SDN using System Center Virtual Machine Manager.
 description: This article explains about how to configure guest clusters in SDN through VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 07/24/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'

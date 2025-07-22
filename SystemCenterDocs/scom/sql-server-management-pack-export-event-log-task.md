@@ -5,19 +5,21 @@ description: This article explains how to run the export event log task for DB E
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/02/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Export event log Task
+# Export event log task
 
 Export Event Log Task exports the Event log file containing Discovery, Monitoring, and Library SQL Server MP source events with ID 4221 from the selected SQL Server DB Engine.
 
 For the SQL Server DB Engine on Windows in the agentless monitoring mode, this task generates a log file using the System Center Operations Manager log file.
 
-## Steps to run the task
+## Run the task
+
+To run the export event log task, follow these steps:
 
 1. Determine the log file location for saving:
    - local computer
@@ -33,21 +35,15 @@ For the SQL Server DB Engine on Windows in the agentless monitoring mode, this t
 
 ![Export Event Log task screenshot.](./media/sql-server-management-pack/export-log-task.png)
 
-- **Timeout (seconds)**
+The task parameters with their description are as follows:
 
-    Specifies the time the rule is allowed to run before being stopped and marked as failed. The default value is 300 seconds, which can be changed.
+|Parameter|Definition|
+|-|-|
+|Timeout (Seconds)|Time the rule is allowed to run before being stopped and marked as failed. The default value is 300 seconds, which can be changed.|
+|Export Event Log Target File Path (Mandatory)|folder path, desired file name, and extension with Windows Event Viewer formats - .evtx, .evt, .etl.|
+|Date To (Optional)|Date and time until which the log file will be exported.|
+|Date From (Optional)|Date or time from which the log file will be exported.|
 
-- **Export Event Log Target File Path (Mandatory)**
-
-    Specify the folder path, desired file name, and extension with Windows Event Viewer formats - .evtx, .evt, .etl.
-
-- **Date To (Optional)**
-
-    Specify the date and time until which the log file will be exported.
-
-- **Date From (Optional)**
-
-    Specify the date or time from which the log file will be exported.
 
 ## Date and time formats for override task parameters
 
@@ -66,18 +62,18 @@ The following date time formats can be used:
 
 Separate the date numbers with symbols: ".", "/", "-".
 
-The following parameters for specifying the duration range:
+The following table lists parameters for specifying the duration range:
 
 |Parameter|Definition|
 |-|-|
 |P|Duration designator, placed at the start of duration expression|
-|Y|A number of years|
-|M|A number of months|
-|D|A number of days|
+|Y|Number of years|
+|M|Number of months|
+|D|Number of days|
 |T|Time designator, placed after the date range and before the time range|
-|H|A number of hours|
-|M|A number of minutes|
-|S|A number of seconds|
+|H|Number of hours|
+|M|Number of minutes|
+|S|Number of seconds|
 
 **P1Y1DT30M.01S** means 1 year 1 day 30 minutes and 10 milliseconds.
 **P1MT8H** means 1 month and 8 hours.
@@ -85,6 +81,8 @@ The following parameters for specifying the duration range:
 **PT45M30S** means 45 minutes and 30 seconds.
   
 ## InvariantCulture date time examples
+
+The InvariantCulture date time examples are as follows:
 
 - The time range is one day.
 
@@ -106,6 +104,8 @@ The following parameters for specifying the duration range:
     Date From=06/2023 and Date To=06/2023. An event log file is created with events from the whole month of June.
 
 ## Duration range examples
+
+The duration range examples are as follows:
 
 - The time range is last hour.
 
