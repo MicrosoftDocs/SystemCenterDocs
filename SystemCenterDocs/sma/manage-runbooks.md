@@ -1,12 +1,11 @@
 ---
-title: Manage runbooks for Service Management Automation
+title: Manage Runbooks for Service Management Automation
 description: Describes how to schedule, track, and configure runbooks for System Center Service Management Automation.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 04/01/2025
+ms.date: 07/22/2025
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -162,7 +161,7 @@ The Automation Dashboard shows a summary of all of the runbooks in the SMA envir
 - The time axis of the chart changes according to the type of time range that you select.
 - You can choose whether to display the line for a particular status by clicking on it at the top of the screen.
 
-Display the dashboard
+Display the dashboard, as follows:
 
 1. In the Management Portal, select **Automation**.
 2. Select the **Dashboard** tab.

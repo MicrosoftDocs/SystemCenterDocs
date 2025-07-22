@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Examples of custom query-based monitors in the System Center Management Pack for SQL Server
-description: This article shows examples of configuring custom query monitors and performance rules in the System Center Management Pack for SQL Server.
+title: Examples of Custom Query-based Monitors in the System Center management pack for SQL Server
+description: This article shows examples of configuring custom query monitors and performance rules in the System Center management pack for SQL Server.
 manager: evansma
 author: fkornilov
 ms.author: v-fkornilov
-ms.date: 04/01/2025
+ms.date: 07/22/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,7 +17,7 @@ All examples of using custom query-based monitors and performance rules based on
 
 ## Prerequisites
 
-Before configuring custom query monitors and performance rules in the System Center Management Pack for SQL Server, ensure you meet these prerequisites:
+Before you configure custom query monitors and performance rules in the System Center management pack for SQL Server, ensure you meet these prerequisites:
 
 - [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS).
 - A running instance of the [AdventureWorks2022](/sql/samples/adventureworks-install-configure) database. If you don't have one, follow these steps to install it:
@@ -74,7 +74,7 @@ To create a monitor that changes its state to unhealthy if the table contains re
 
    ![Screenshot that shows a target database name and SQL query for the first example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-1-sql-query-step.png)
 
-1. At the **Conditions** step do the following:
+1. At the **Conditions** step, do the following:
   
    1. Select the **ANY** condition. It means that if any of the added conditions are violated, the monitor switches to an unhealthy state. This example needs only one condition.  
    1. To add a new condition, select **Add**, and then select **Empty Result Set**. This condition checks if the specified result set that the query returned is empty.
@@ -89,7 +89,7 @@ To create a monitor that changes its state to unhealthy if the table contains re
 
 1. At the **Schedule** and **Schedule Filter** steps, leave the default values. The monitor will process the data without a schedule, once every 15 minutes.
 
-1. At the **Configure Health** step do the following:
+1. At the **Configure Health** step, do the following:
   
    1. Select **Critical** as the health state that the monitor should generate if the condition fails.
    1. Change the **Operational State** information if necessary.
@@ -97,7 +97,7 @@ To create a monitor that changes its state to unhealthy if the table contains re
 
    ![Screenshot that shows configuring health for the first example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-configure-health-step.png)
 
-1. At the **Configure Alerts** step do the following:
+1. At the **Configure Alerts** step, do the following:
   
    1. Select **Generate alerts for this monitor**.
    1. Set **Alert name** as `[Sales].[CreditCard] table with ExpYear values = 2005`.
@@ -136,7 +136,7 @@ To create a monitor that changes its state to unhealthy if the `Illustration` ta
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Objects**. Right-click **Monitors**, select **Create a Monitor**, and then select **Unit Monitor**.
 
-1. At the **Monitor Type** step do the following:
+1. At the **Monitor Type** step, do the following:
   
    1. Select **Microsoft SQL Server** > **DB Engine** > **User-defined SQL Query Two-State Monitor**.
    1. In the **Select destination management pack** dropdown list, select a management pack that you want to use. Or select **New** to create a new one.

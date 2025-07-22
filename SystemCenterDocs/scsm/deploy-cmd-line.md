@@ -1,12 +1,11 @@
 ---
-title: Deploy from a command line
+title: Deploy from a Command Line
 description: This article describes how to deploy Service Manager using command-line parameters.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/01/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/22/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -58,11 +57,11 @@ For additional information about command\-line parameters, enter **setup.exe /?*
 
 ## Before you start
 
-Here are some considerations before you start deploying Service Manager from a command line:
+Before you deploy Service Manager from a command line:
 
 ### Prepare the computer
 
- To help prevent an installation failure, on the computer where you'll be installing Service Manager, follow these steps:  
+ To help prevent an installation failure, perform the following steps on the computer where you'll be installing Service Manager: 
 
 1. Run the UI\-based Setup up to the point where you run the prerequisite checker. Ensure that the prerequisite checker passes, or at least passes with a warning.  
 
