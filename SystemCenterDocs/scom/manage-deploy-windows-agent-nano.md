@@ -8,7 +8,7 @@ ms.date: 07/24/2025
 ms.custom: intro-installation, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: how-to
+ms.topic: install-set-up-deploy
 monikerRange: 'sc-om-2016'
 ---
 

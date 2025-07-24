@@ -2,13 +2,12 @@
 ms.assetid: 
 title: Microsoft Management Packs
 description: This article lists the Microsoft Management Packs.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/11/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/08/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Microsoft Management Packs
@@ -258,7 +257,7 @@ The following table is for reference only and contains links to management packs
 |[Windows Server Network Load Balancing 2012/2012 R2](https://www.microsoft.com/download/details.aspx?id=13302)|6.0.7221.0|09/24/2020|
 |[Windows Server Network Load Balancing 2016](https://www.microsoft.com/download/details.aspx?id=54653)|10.1.0.0|09/30/2020|
 |[Windows Server Operating System 2003/2008/2008 R2/2012/2012R2](https://www.microsoft.com/download/details.aspx?id=9296)|6.0.7326.0|04/09/2021|
-|[Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|12/05/2022|
+|[Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.2.2|5/12/2025|
 |[Windows Server Print Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|7/15/2024|
 |[Windows Server Remote Access 2012 R2 Multitenant](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|09/30/2020|
 |[Windows Server Remote Access 2012 R2](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|09/30/2020|

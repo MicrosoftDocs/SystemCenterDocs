@@ -8,7 +8,7 @@ ms.date: 07/24/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Author strategies for .NET application monitoring

@@ -1,9 +1,8 @@
 ---
 description: Information to help you identify your storage needs and to prepare the storage to support a DPM deployment.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

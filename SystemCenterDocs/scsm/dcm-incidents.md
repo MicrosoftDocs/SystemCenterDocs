@@ -1,11 +1,13 @@
 ---
 title: Configure Desired Configuration Management to Generate Incidents
 description: Learn about how to configure Desired Configuration Management to generate incidents in Service Manager.
-ms.topic: article
+ms.date: 07/24/2025
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 07/24/2025
+ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---

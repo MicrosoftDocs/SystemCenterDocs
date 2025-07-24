@@ -2,10 +2,9 @@
 ms.assetid: 
 title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/21/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 05/08/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -151,8 +150,9 @@ Windows 10 and Windows 11 client operating system are supported for the Operatio
 ## Microsoft Monitoring Agent operating system
 
 >[!NOTE]
-> Operations Manager 2022 only includes the 64-bit version of the agent.
+> Operations Manager 2022 and later includes the 64-bit version of the agent.
 
+- Windows Server 2025 - Standard, Datacenter, Server Core
 - Windows Server 2022 - Standard, Datacenter, Server Core
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core

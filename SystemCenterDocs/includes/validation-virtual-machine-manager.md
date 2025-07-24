@@ -1,9 +1,8 @@
 ---
 title: Include file
 description: Include file for Validation section in Install docs.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  03/19/2025
 ms.topic:  include
 ms.service: system-center

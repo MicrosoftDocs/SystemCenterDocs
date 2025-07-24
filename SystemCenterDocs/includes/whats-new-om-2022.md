@@ -2,9 +2,8 @@
 ms.assetid:
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager 2022
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/16/2024
 ms.custom: intro-whats-new
 ms.service: system-center
