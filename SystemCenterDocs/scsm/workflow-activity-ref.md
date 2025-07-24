@@ -3,10 +3,9 @@ title: Workflow Activity Reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
 ms.custom: na, UpdateFrequency2, engagement-fy23, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/23/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/24/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -19,7 +18,7 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 This article provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 
- For information about how to use WF activities and WF workflows with Service Manager, see [Automate IT processes with workflows](automate-processes-workflows.md).  
+ For information about how to use WF activities and WF workflows with Service Manager, see [Automate IT Processes with Workflows](automate-processes-workflows.md).  
 
 ## Active Directory activities
 
@@ -27,7 +26,7 @@ Use Active Directory Domain Services (AD DS) activities to make Active Directory
 
  The Service Manager Authoring Tool provides two default Service Manager activities in the **Active Directory Activities** group in the **Activities Toolbox** pane. The sections in this article describe these activities.  
 
-### [Add AD DS Computer to a Group activity](#tab/add-ad-ds-computer-to-a-group-activity)
+### Add AD DS Computer to a Group activity
 
 This activity adds a computer to a security group in Active Directory Domain Services (AD DS) in Service Manager. The computer and the group must belong to the same domain, and all the containers in the domain are searched.  
 
@@ -55,7 +54,7 @@ The **Add AD DS Computer to Group** activity generates the output that is descri
 |--------------------------|------------------------------|-----------------------|
 |None|None|None|  
 
-### [Add AD DS User to Group activity](#tab/add-ad-ds-user-to-group-activity)
+### Add AD DS User to Group activity
 
 This activity adds a user to a security group in Active Directory Domain Services (AD DS) in Service Manager. The user and the group must belong to the same domain, and all the containers in the domain are searched.  
 
@@ -83,15 +82,13 @@ The **Add AD DS User to Group** activity generates the output that is described 
 |--------------------------|------------------------------|-----------------------|
 |None|None|None|
 
----
-
 ## Control Flow activities
 
 Use control flow activities to provide structure—branches, loops, or timer delays—for your workflow in Service Manager.  
 
 The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
 
-### [Delay activity](#tab/delay-activity)
+### Delay activity
 
 This activity introduces a delay between activities in a workflow in Service Manager. The **Delay** activity is derived from the Microsoft .NET Framework **DelayActivity** class.  
 
@@ -114,7 +111,7 @@ This activity introduces a delay between activities in a workflow in Service Man
 |--------------------------|------------------------------|-----------------------|
 |None|For more information about this activity, see [DelayActivity Class](/dotnet/api/system.workflow.activities.delayactivity) in the .NET Framework Class Library.|None|
 
-### [For Each Loop activity](#tab/for-each-loop-activity)
+### For Each Loop activity
 
 The **For Each Loop** activity takes as an input an array (*collection*) of objects and repeats the set of activities within the loop for each object in the collection. For example, if the input collection has five objects, the loop iterates five times. If the collection is empty, the loop doesn't iterate. There's no upper limit to the number of objects in the collection. The **For Each Loop** activity always runs on the computer on which the workflow runs.  
 
@@ -122,7 +119,7 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
 - **Input Container**: This activity sets up the loop and defines the input collection. You can use the **Get Incident** or the **Get Virtual Machine** activity in this role.  
 
-- **Loop Container**: Named **ForEachChildActivity**, this activity contains the loop activities. Most Windows Workflow Foundation (WF) activities that you place in this container have two additional properties: **Current Item** and **Property to Bind**. For each activity within the loop container, follow these steps to set these properties:  
+- **Loop Container**: Named **ForEachChildActivity**, this activity contains the loop activities. Most Windows Workflow Foundation (WF) activities that you place in this container have two additional properties: **Current Item** and **Property to Bind**. For each activity within the loop container, set these properties as follows:  
 
   1. Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. If this activity is the first activity in the **For Each Loop** activity, **Current Item** is set automatically.  
 
@@ -151,7 +148,7 @@ Two types of activities don't get the **Current Item** and **Property to Bind** 
 |--------------------------|------------------------------|-----------------------|
 |The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions: <br /><br /> -  If any error occurs in the **ForEachLoop** activity and that isn't with the child activities, the workflow terminates. <br /> -  If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true. <br /> -   If any of the input properties are null. The activity doesn't iterate. <br /><br />  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity doesn't do so itself.|None|None|
 
-### [IfElse activity](#tab/ifelse-activity)
+### IfElse activity
 
 This activity controls the sequence of activities within a workflow based on a Boolean (True/False) condition. You can use the outcome of a previous activity, such as a script activity, for the condition.  
 
@@ -169,7 +166,7 @@ This activity controls the sequence of activities within a workflow based on a B
 |--------------------------|------------------------------|-----------------------|
 |None|For more information about the **IfElse** activity, see [IfElseActivity Class](/dotnet/api/system.workflow.activities.ifelseactivity) in the .NET Framework 4 Class Library.|None|
 
-### [Parallel activity](#tab/parallel-activity)
+### Parallel activity
 
 This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](/dotnet/api/system.workflow.activities.parallelactivity) in the .NET Framework Class Library.  
 
@@ -185,15 +182,13 @@ This activity forks the sequence of activities into two simultaneous sequences o
 |--------------------------|------------------------------|-----------------------|
 |None|None|None|
 
----
-
 ## Virtual Machine Manager activities
 
 Use virtual machine management activities in Service Manager to build workflows that allow for creating and updating virtual machines. The virtual machine management activities support System Center Virtual Machine Manager.  
 
  The Service Manager Authoring Tool provides the following five default virtual machine management activities in the **VMM Activities** group in the **Activities Toolbox** pane.  
 
-### [Get VM activity](#tab/get-vm-activity)
+### Get VM activity
 
 This activity in Service Manager retrieves a list of one or more virtual machine IDs from a Virtual Machine Manager (VMM) Library.  
 
@@ -229,7 +224,7 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 |--------------------------|------------------------------|-----------------------|
 |The **Get VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
 
-### [Move VM activity](#tab/move-vm-activity)
+### Move VM activity
 
 This activity in Service Manager moves a virtual machine from the Virtual Machine Manager (VMM) Library to a maintenance host.  
 
@@ -271,7 +266,7 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 |--------------------------|------------------------------|-----------------------|
 |The **Move VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
 
-### [Shutdown VM activity](#tab/shutdown-vm-activity)
+### Shutdown VM activity
 
 This activity in Service Manager shuts down the guest operating system on a virtual machine.  
 
@@ -308,7 +303,7 @@ This activity in Service Manager shuts down the guest operating system on a virt
 |--------------------------|------------------------------|-----------------------|
 |The **Shutdown VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
 
-### [Start VM activity](#tab/start-vm-activity)
+### Start VM activity
 
 This activity in Service Manager starts a stopped or paused virtual machine.  
 
@@ -343,7 +338,7 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 |--------------------------|------------------------------|-----------------------|
 |The **Start VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions, as appropriate, if any of the script properties can't be resolved.|None|None|
 
-### [Save State VM activity](#tab/save-state-vm-activity)
+### Save State VM activity
 
 This activity in Service Manager saves the state of a virtual machine and then stops the virtual machine.  
 
@@ -377,8 +372,6 @@ This activity in Service Manager saves the state of a virtual machine and then s
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
 |The **Save State VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
-
----
 
 ## Script activities
 
@@ -473,7 +466,7 @@ Use Service Manager activities in Service Manager to make Service Manager functi
 
  The  Service Manager Authoring Tool provides the following four default Service Manager activities in the **SM Activities** group in the **Activities Toolbox** pane.  
 
-### [Create Incident activity](#tab/create-incident-activity)
+### Create Incident activity
 
 This activity creates and populates an incident in Service Manager.  
 
@@ -508,7 +501,7 @@ This activity creates and populates an incident in Service Manager.
 |--------------------------|------------------------------|-----------------------|
 |None|None|None|
 
-### [Get Incident activity](#tab/get-incident-activity)
+### Get Incident activity
 
 This activity retrieves one or more incidents in Service Manager.  
 
@@ -541,7 +534,7 @@ This activity retrieves one or more incidents in Service Manager.
 |--------------------------|------------------------------|-----------------------|
 |None|The **Get Incident** activity has its own validator to perform error validation on input properties.|None|
 
-### [Update Incident activity](#tab/update-incident-activity)
+### Update Incident activity
 
 This activity in Service Manager saves property changes to one Service Manager incident.  
 
@@ -577,7 +570,7 @@ This activity in Service Manager saves property changes to one Service Manager i
 |--------------------------|------------------------------|-----------------------|
 |None|None|None|
 
-### [Set Activity Status to Completed activity](#tab/set-activity-status-to-completed-activity)
+### Set Activity Status to Completed activity
 
 This activity updates the status of an automated activity in Service Manager.  
 
@@ -596,5 +589,3 @@ This activity updates the status of an automated activity in Service Manager.
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
 |None|When you're using this activity in a workflow that is triggered by a Service Manager automated activity, enter **$Data/BaseManagedEntityId$** as the value of this property. This value applies to the **Set Activity Status to Completed** activity at the automated activity that triggered the workflow to run.|None|
-
----

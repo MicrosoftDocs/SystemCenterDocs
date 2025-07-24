@@ -2,7 +2,7 @@
 title: Get Documents
 description: The Get Documents activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/23/2025
+ms.date: 07/24/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -10,31 +10,30 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 53456c0d-b7b8-4ef8-ad38-6b685dda54c6
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Documents
 
-This article describes the **Get Documents** activity used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
+The **Get Documents** activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint document library that is retrieved when you define the activity.
 
-## Get Documents required properties
+## Get Documents Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Library | The name of the SharePoint document library to be searched. | String   |
 
-## Get Documents optional properties
+## Get Documents Optional Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Folder | The relative path of a child folder in the document library to refine the search.   | String   |
 | Recursive   | A Boolean value that indicates whether to retrieve data from documents in all child folders. | True<br>False   |
 
-## Get Documents filters
+## Get Documents Filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -45,7 +44,7 @@ The following tables list the filters, required and optional properties, and Pub
 | Modified By | The name of the user who last modified the document.   | Equals<br>Does not equal   |
 | Title   | The title of the document.   | Equals<br>Does not equal<br>Contains<br>Starts with   |
 
-## Get Documents published data
+## Get Documents Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|

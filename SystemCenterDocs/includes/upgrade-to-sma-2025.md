@@ -1,12 +1,11 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 2025.
 ms.topic: include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/23/2025
+ms.date: 07/24/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:

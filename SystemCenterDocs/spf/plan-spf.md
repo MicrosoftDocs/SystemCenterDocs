@@ -1,10 +1,9 @@
 ---
 title: Plan SPF Deployment
 description: This article provides an overview of how to plan for a Service Provider Foundation installation.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/23/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/24/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-provider-foundation
@@ -17,11 +16,11 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 This article helps you ensure that you've the prerequisites and planning steps in place before you deploy System Center - Service Provider Foundation (SPF).
 
-## Prerequisites
+## Deployment prerequisites
 
-Before you deploy SPF, ensure that the requirements for SPF include:
+Deployment requirements for SPF include:
 
--	The minimum [hardware and software](./system-requirements-spf.md) requirements on the SPF server.
+-	Ensure you've the minimum [hardware and software](./system-requirements-spf.md) requirements on the SPF server.
 -	The SPF server needs SQL Server for its database. The SQL Server database can be local or on a remote server and should have at least 5 GB of storage. When you install SPF, you need to specify the server's name and port number. [Learn more](./system-requirements-spf.md#sql-server) about supported SQL Server versions.
 -	The VMM console should be installed on the SPF server. SPF can also run on the same server as the VMM management server. VMM must be deployed in your infrastructure.
 -	If you want to use usage metering to manage tenant costs, you need a System Center Operations Manager server, and a Data Warehouse server, running Windows 2012 R2 or later.
