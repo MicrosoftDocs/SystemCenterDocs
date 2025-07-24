@@ -6,6 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 07/24/2025
 ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24

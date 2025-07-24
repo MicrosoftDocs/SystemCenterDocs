@@ -8,12 +8,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: dcbc0186-947f-4cf5-af5e-720980a2c8c0
 caps.latest.revision: 9
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Runbook Control
 

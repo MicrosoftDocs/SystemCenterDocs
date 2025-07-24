@@ -2,11 +2,10 @@
 ms.assetid: de43c081-201d-47e8-8d49-639ebd5b518b
 title: Set up self-service in VMM
 description: This article describes how to set up self-service in VMM
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 09/02/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
