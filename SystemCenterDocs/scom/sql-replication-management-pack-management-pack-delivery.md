@@ -1,17 +1,17 @@
 ---
 ms.assetid: 1d7cbdf6-687f-4d47-8d7e-cc9e07072e58
-title: Management Pack for SQL Server Replication Delivery
-description: This article explains how to install Management Pack for SQL Server Replication
+title: Management pack for SQL Server Replication Delivery
+description: This article explains how to install Management pack for SQL Server Replication
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 04/24/2025
+ms.date: 07/24/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Management Pack for SQL Server Replication Delivery
+# Management pack for SQL Server Replication Delivery
 
 You can download Management Pack for SQL Server Replication from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=56204) or find it in the System Center Operations Manager Online Catalog.
 
@@ -43,7 +43,7 @@ After you download and unpack the **Microsoft.SQLServer.Windows.Replication.Mana
 
 ## Prerequisites
 
-Before you start using Management Pack for SQL Server Replication, ensure that the environment that you use must meet the following prerequisites:
+Before you use management pack for SQL Server Replication, ensure that the environment that you use must meet the following prerequisites:
 
 - Install **.NET Framework 4.5** or higher.
 

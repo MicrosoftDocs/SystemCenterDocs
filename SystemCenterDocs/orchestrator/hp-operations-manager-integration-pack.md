@@ -9,16 +9,13 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: fbb368f4-4512-4960-a98d-66e36ee49d29
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/24/2025
+ms.date: 07/24/2025
 ---
 
 # HP Operations Manager Integration Pack for System Center - Orchestrator
-
-This article describes about the Integration Pack for HP Operations Manager.
 
 ::: moniker range="sc-orch-2019"
 

@@ -2,10 +2,9 @@
 ms.assetid: f257a38b-38b3-4688-8c56-19317fc68d8e
 title: Install Agent on Nano Server
 description: This article describes how to install the Operations Manager agent on Nano Server.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/24/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/24/2025
 ms.custom: intro-installation, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,9 +14,9 @@ monikerRange: 'sc-om-2016'
 
 # Install agent on Nano Server
 
-This article describes how to install the Operations Manager agent on Nano Server.
-
 Windows Server 2016 Nano Server is a new installation option introduced in Windows Server 2016. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016  - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
+
+This article describes how to install the Operations Manager agent on Nano Server.
 
 ## Nano Server monitoring capabilities
 

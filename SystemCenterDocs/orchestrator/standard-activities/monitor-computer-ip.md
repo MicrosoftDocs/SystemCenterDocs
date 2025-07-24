@@ -2,7 +2,7 @@
 title: Monitor Computer-IP
 description: This article describes the functionality of Monitor Computer/IP activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/24/2025
+ms.date: 07/24/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -11,15 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: eee8ce17-c286-41ac-9736-00e96fa78f71
 caps.latest.revision: 16
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Monitor Computer/IP
 
-This article describes the functionality of Monitor Computer/IP activity.
-
 The Monitor Computer/IP activity will send a ping to a remote computer or IP address and wait for a response. You can configure the Monitor Computer/IP activity to invoke your runbook if the computer is either reachable or unreachable. The Monitor Computer/IP activity can be used to invoke runbooks that will automatically notify administrators when a vital system has become unreachable on the network.  
+
+This article describes the functionality of Monitor Computer/IP activity.
 
 ## Configure the Monitor Computer/IP Activity
 
