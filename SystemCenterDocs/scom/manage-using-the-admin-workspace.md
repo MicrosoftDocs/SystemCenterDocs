@@ -1,15 +1,14 @@
 ---
 title: Configure a management group using the Administration workspace
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console. In the System Center Operations Manager Operations console, the Administration workspace is the primary workspace for administrators.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Configure a management group using the Administration workspace

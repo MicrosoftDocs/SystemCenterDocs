@@ -8,7 +8,7 @@ ms.date: 04/02/2025
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Replace parameters in a URL request

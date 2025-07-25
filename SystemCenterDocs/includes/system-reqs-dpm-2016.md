@@ -1,9 +1,8 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2016 in your environment.
 ms.topic: include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 10/08/2024

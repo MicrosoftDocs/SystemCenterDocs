@@ -2,13 +2,12 @@
 title: Install Service Manager on a single computer
 description: This article helps you to evaluate System Center - Service Manager when you want to install it on one computer.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/19/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: intro-installation, UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
@@ -22,7 +21,13 @@ If you want to evaluate System Center - Service Manager and you've a minimal amo
 
  ![Screenshot showing the Minimum Configuration for Service Manager.](./media/install-one-computer/deploy-minimumconfiguration.png)  
 
- If your organization's best practice guidelines don't allow you to install applications on a Hyper-V host, you can create a second virtual computer to host the Service Manager management server, the Service Manager database, and the data warehouse databases. Use the following procedures to install Service Manager on a single computer.  
+ If your organization's best practice guidelines don't allow you to install applications on a Hyper-V host, you can create a second virtual computer to host the Service Manager management server, the Service Manager database, and the data warehouse databases. Use the following procedures to install Service Manager on a single computer. 
+
+::: moniker range=">=sc-sm-2019"
+
+[!INCLUDE [validation-service-manager.md](../includes/validation-service-manager.md)]
+
+::: moniker-end
 
 ## Install Service Manager
 

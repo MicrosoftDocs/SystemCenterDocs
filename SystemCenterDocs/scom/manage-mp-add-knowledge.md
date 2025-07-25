@@ -2,14 +2,13 @@
 ms.assetid: 715a0ed4-8936-4b43-ad1b-024465e0605e
 title: How to Add Knowledge to a Management Pack
 description: This article describes how to add custom knowledge to a workflow in a management pack.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # How to add knowledge to a management pack
