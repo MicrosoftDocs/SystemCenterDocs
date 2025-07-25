@@ -1,6 +1,6 @@
 ---
-title: Monitoring types in Management Pack for Azure SQL Database
-description: Learn how to set up Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database.
+title: Monitoring Types in management pack for Azure SQL Database
+description: Learn how to set up Azure REST API and T-SQL monitoring in management pack for Azure SQL Database.
 ms.custom: engagement-fy23
 author: FKornilov
 ms.author: v-fkornilov
@@ -53,7 +53,7 @@ To make these workflows available in the Azure REST API, select the **Use T-SQL 
 > [!NOTE]
 > To connect Microsoft System Center Operations Manager to Azure resources, your server must have the TLS 1.2 protocol enabled. To learn how to check the protocol status on your server, see [TLS 1.2 enforcement for Microsoft Entra Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
 
-## [Set up Azure REST API monitoring](#tab/set-up-azure-rest-api-monitoring)
+## Set up Azure REST API monitoring
 
 Azure REST API monitoring provides a wide range of monitoring targets.
 
@@ -235,7 +235,7 @@ To monitor Azure SQL Database instances by using the Azure REST API, follow thes
 
    For the correct T-SQL monitoring of geo replicas, grant the SQL Administrator right on each replica server.
 
-## [Set up T-SQL monitoring](#tab/set-up-t-sql-monitoring)
+## Set up T-SQL monitoring
 
 T-SQL is intended to monitor specific Azure SQL Database servers. When you select this mode, the monitoring workflows, including discoveries, rules, and monitors, use T-SQL queries in data sources.
 
@@ -311,8 +311,6 @@ To monitor Azure SQL Database instances by using T-SQL queries, follow these ste
 
 1. On **Summary**, review the connection settings, and then select **Create**.
 
----
-
 ## Related content
 
-- [Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md).
+[Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md).

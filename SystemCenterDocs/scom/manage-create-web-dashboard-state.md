@@ -1,10 +1,9 @@
 ---
 ms.assetid:
-title: Create a dashboard with the State widget in the Web console
+title: Create a Dashboard with the State widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Health State widget.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/02/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
@@ -23,7 +22,7 @@ System Center Operations Manager Web console provides a monitoring interface for
 
 ## Add widget to dashboard
 
-To create a dashboard and add a State widget, follow these steps:
+To create a dashboard and add a widget, follow these steps:
 
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.

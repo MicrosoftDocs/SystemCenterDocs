@@ -1,13 +1,12 @@
 ---
 description: This article explains how to extend the tiered volume in System Center - Data Protection Manager.
 ms.topic:  article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/02/2025
-title:  Extend tiered volume in System Center Data Protection Manager
+title:  Extend Tiered Volume in System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -21,7 +20,7 @@ Before you resize a volume, ensure that you have enough capacity in the storage 
 
 For the virtual disk that uses storage tiers, you can resize each tier separately using the **Resize-StorageTier** cmdlet.
 
-## Resize the virtual disk
+## Step 1 – Resize the virtual disk
 
 Run the following PowerShell cmdlets to get the names of the storage tiers by following the associations from the virtual disk:
 
@@ -40,7 +39,7 @@ Get-StorageTier <FriendlyName> | Resize-StorageTier -Size <Size>
 
 When you resize the **StorageTier** (s), the **VirtualDisk** and **Disk** follow automatically and are resized too.
 
-## Resize the partition
+## Step 2 – Resize the partition
 
 Next, resize the partition using the **Resize-Partition** cmdlet. The virtual disk is expected to have two partitions: the first partition is reserved and shouldn't be modified; the one you need to resize is **PartitionNumber = 2** and **Type = Basic**.
 

@@ -1,9 +1,8 @@
 ---
 title: Configure Monitoring for Java Applications
 description: This article describes how to configure monitoring of Java applications with Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/02/2025
 ms.custom: engagement-fy24
 ms.service: system-center
@@ -50,7 +49,7 @@ To import and configure the management pack, follow these steps:
 
 4. Using instructions in the Management Pack Guide for JEE, follow the procedure to enable deep monitoring mode.  
 
-## Import the management pack for Java Application Performance Monitoring  
+### Import the management pack for Java Application Performance Monitoring  
 
 To import the management pack for Java application performance monitoring, follow these steps:
 
@@ -82,7 +81,7 @@ To import the management pack for Java application performance monitoring, follo
 
     - Microsoft.JEE.Tomcat.7.Apm.mp  
 
-## Manually deploy the Java Application Performance Monitoring agent and enable Java Application Performance Monitoring
+### Manually deploy the Java Application Performance Monitoring agent and enable Java Application Performance Monitoring
 
 To manually deploy the Java Application Performance Monitoring agent and enable Java application performance monitoring, follow these steps:
 
@@ -94,7 +93,7 @@ To manually deploy the Java Application Performance Monitoring agent and enable 
 
 4. Next, reconfigure the Java application server. To enable Java Application Performance Monitoring, specify the command line options that use Jar file as class loader and then restart the application. Another discovery after you install the agent enables Application Performance Monitoring.  
 
-## Verify Application Performance Monitoring agent deployment and override monitors
+### Verify Application Performance Monitoring agent deployment and override monitors
 
 To verify application performance monitoring agent deployment and override monitors, follow these steps:
 
