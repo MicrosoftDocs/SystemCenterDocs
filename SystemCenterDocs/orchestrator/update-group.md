@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 9ddbe80a-4efb-4679-b880-bda7228c167e
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update Group
 

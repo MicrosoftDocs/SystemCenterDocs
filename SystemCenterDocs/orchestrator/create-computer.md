@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 509fb603-b567-4497-85c7-4fbf4a1cec0f
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Computer
 

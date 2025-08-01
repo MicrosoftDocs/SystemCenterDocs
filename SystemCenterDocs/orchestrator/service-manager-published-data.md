@@ -8,7 +8,6 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ms.custom: UpdateFrequency3
 ---
 # Service Manager published data

@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: ba537978-bae7-4188-8c49-c380c7fc4adc
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Update Alert Activity

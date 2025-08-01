@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: fe6cca94-3419-4008-8bb8-8d6ad02599a7
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Rename Group
 
