@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: 8dfe35b3-d3bf-4b34-889d-703b51672ca0
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # REST activities
 

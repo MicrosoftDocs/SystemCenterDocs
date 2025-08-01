@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: d77c39e2-e0bb-4259-8072-803361ad4211
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Create Storage Account

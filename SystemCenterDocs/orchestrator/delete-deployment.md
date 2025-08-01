@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 40e827f1-2dfa-4a05-81c8-e23bfd8643ec
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Deployment

@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: a530a448-c782-49d6-abba-7ba60c2fdfce
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Remove VM
 

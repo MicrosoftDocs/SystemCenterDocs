@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: e62158f4-c8bd-4a51-ab8a-0deee62347fd
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # List Management Certificate

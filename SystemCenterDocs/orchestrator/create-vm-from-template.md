@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 4c5d8bf4-cb22-443f-b5fb-ff4361e081a6
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create VM from Template
 

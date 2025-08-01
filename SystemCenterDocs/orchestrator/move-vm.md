@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: eb03a923-0d0c-4e47-a287-5ac20650028c
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Move VM
 
