@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: e4769f6f-dad7-4132-8d3c-917eee12d18a
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Change Deployment Configuration

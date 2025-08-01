@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 49456582-3214-450f-afca-cbe812fdaed7
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update Disk
 

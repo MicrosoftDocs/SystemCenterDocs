@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: 728e1e07-f776-4080-8ee2-188affb15224
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 
 # Delete collection activity for System Center Configuration Manager

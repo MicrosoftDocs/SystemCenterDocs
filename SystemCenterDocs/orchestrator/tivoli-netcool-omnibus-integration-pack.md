@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: dcdd6577-1783-4f61-9aae-dd4c590bb2e3
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # IBM Tivoli Netcool OMNIbus Integration Pack for System Center  - Orchestrator

@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 6565cdb0-f0f7-4d4a-a08d-f4016806e0c6
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create New Disk
 
