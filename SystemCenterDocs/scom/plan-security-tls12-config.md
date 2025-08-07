@@ -4,7 +4,7 @@ title: Enforce TLS 1.2 for Operations Manager
 description: This article describes how to configure System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 06/03/2025
+ms.date: 08/07/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -48,8 +48,8 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 
 ::: moniker range=">sc-om-2016"
 
-1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the web console server.
-1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers and the web console server.
+1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874&preserve-view=true) version 18.7.4 on all management servers and the web console server.
+1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106&preserve-view=true) version 17.10.6 on all management servers and the web console server.
 1. Configure Windows to only use TLS 1.2.  
 1. Configure .NET Framework to utilize higher levels of cryptography by default.
 

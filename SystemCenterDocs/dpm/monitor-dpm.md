@@ -3,7 +3,7 @@ description: This article describes the way that you can monitor DPM.
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 07/24/2025
+ms.date: 08/07/2025
 title: Monitor DPM
 ms.subservice: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -50,7 +50,7 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](https://learn.microsoft.com/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
+>Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
 
@@ -74,7 +74,7 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](https://learn.microsoft.com/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
+>Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
     
@@ -98,7 +98,7 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](https://learn.microsoft.com/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
+>Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
 
