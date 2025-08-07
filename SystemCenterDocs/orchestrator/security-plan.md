@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.assetid: 
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 monikerRange: 'sc-orch-2025'
 zone_pivot_groups: orchestrator-security-planning
 ---
@@ -85,7 +85,7 @@ You specify the Orchestrator Users group during the Orchestrator installation pr
 The decision of which to use depends on where you want to manage the group’s users. Typically using an Active Directory group provides better centralized access to the group as opposed to managing it locally on the management server.
 
 >[!Note]
->A member of the Orchestrator Users group can grant access to other users to view and run runbooks from the Orchestration console without having to add those users to the group. Those who only use the Orchestration console are referred to as operators. They typically require the ability to run runbooks, but not to create them. For information about setting permissions for individual runbooks, see [Runbook Permissions](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh403774(v=sc.12)) in [Using Runbooks in System Center - Orchestrator](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh403791(v=sc.12)).
+>A member of the Orchestrator Users group can grant access to other users to view and run runbooks from the Orchestration console without having to add those users to the group. Those who only use the Orchestration console are referred to as operators. They typically require the ability to run runbooks, but not to create them. For information about setting permissions for individual runbooks, see [Runbook Permissions](/previous-versions/system-center/system-center-2012-r2/hh403774(v=sc.12)) in [Using Runbooks in System Center - Orchestrator](/previous-versions/system-center/system-center-2012-r2/hh403791(v=sc.12)).
 
 ::: zone-end
 
@@ -113,7 +113,7 @@ Security to the orchestrator database is implemented through database roles in t
 |Orchestrator Runbook Server Monitor Service Account|Microsoft.SystemCenter. Orchestrator.Runtime|
 |Orchestrator Web Service User Account|Microsoft.SystemCenter. Orchestrator.Operators|
 
-|Role|Permission|Object|
+|**Role**|**Permission**|**Object**|
 |---|---|---|
 |Microsoft.SystemCenter. Orchestrator.Operators|SELECT|[Microsoft.SystemCenter.Orchestrator.Runtime].[Jobs],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[RunbookInstances],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[RunbookInstanceParameters],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[RunbookServers],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[ActivityInstances],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[ActivityInstanceData],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[Events],<br><br>[Microsoft.SystemCenter.Orchestrator.Statistics].[Statistics]|
 |Microsoft.SystemCenter. Orchestrator.Operators|EXECUTE|[Microsoft.SystemCenter.Orchestrator].[GetSecurityToken],<br><br>[Microsoft.SystemCenter.Orchestrator].[AccessCheck],<br><br>[Microsoft.SystemCenter.Orchestrator].[ComputeAuthorizationCache],<br><br>[Microsoft.SystemCenter.Orchestrator.Statistics.Internal].[GetStatisticsSummary],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[CreateJob],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[CancelJob]|
@@ -161,7 +161,7 @@ As part of your security planning, you must plan for rotating your encryption ke
 
 3. Reinstall the management server and create a new database.
 
-      For more information on how to install the management server, see [How to Install a Management Server](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh420384(v=sc.12)).
+      For more information on how to install the management server, see [How to Install a Management Server](/previous-versions/system-center/system-center-2012-r2/hh420384(v=sc.12)).
 
       Don't connect to the existing database. A new cryptographic key is generated when a new database is created.
 
@@ -183,11 +183,11 @@ All elements of a runbook are accessible to all Runbook Designers, and to any ru
 
 ## Orchestrator Web Service and Orchestration Console Security
 
-If you plan to install the Orchestrator web service and orchestration console, you should choose a secure protocol such as HTTPS to secure communication and prevent malformed requests from a man-in-the-middle attack. For more information on securing your Orchestrator web service and the Orchestration console, go to [How to Configure the Orchestrator Web Service to use HTTPS](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh529160(v=sc.12)).
+If you plan to install the Orchestrator web service and orchestration console, you should choose a secure protocol such as HTTPS to secure communication and prevent malformed requests from a man-in-the-middle attack. For more information on securing your Orchestrator web service and the Orchestration console, go to [How to Configure the Orchestrator Web Service to use HTTPS](/previous-versions/system-center/system-center-2012-r2/hh529160(v=sc.12)).
 
 In the default configuration of an Orchestrator deployment, web service calls aren't logged. This applies to requests made with the Orchestration console and the Orchestration Integration Toolkit (OIT). The result is that a user can start a job and pass parameters into a runbook with no record of who started the job.
 
-To record all requests to your Orchestrator web service, you should enable audit trail logging with `atlc.exe.` For more information about logging using `atlc.exe`, go to [Audit Trail](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh488400(v=sc.12)).
+To record all requests to your Orchestrator web service, you should enable audit trail logging with `atlc.exe.` For more information about logging using `atlc.exe`, go to [Audit Trail](/previous-versions/system-center/system-center-2012-r2/hh488400(v=sc.12)).
 
 ::: zone-end
 
@@ -372,4 +372,4 @@ Essentially, the Export functionality creates an export file whose encrypted dat
 
 ## Next steps
 
-[System requirements for System Center Orchestrator](https://learn.microsoft.com/system-center/orchestrator/system-requirements-orch).
+[System requirements for System Center Orchestrator](/system-center/orchestrator/system-requirements-orch).
