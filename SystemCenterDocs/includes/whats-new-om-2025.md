@@ -17,7 +17,7 @@ The following sections introduce new and updated features in System Center Opera
 
 ## Support for Windows Server 2025
 
-Operations Manager 2025 now supports Windows Server 2025. [Learn more](/system-center/scom/system-requirements?view=sc-om-2025).
+Operations Manager 2025 now supports Windows Server 2025. [Learn more](/system-center/scom/system-requirements?view=sc-om-2025&preserve-view=true).
 
 ## Support for OpenSSL 3.1 to 3.3
 

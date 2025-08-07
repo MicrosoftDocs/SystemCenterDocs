@@ -113,6 +113,8 @@ Security to the orchestrator database is implemented through database roles in t
 |Orchestrator Runbook Server Monitor Service Account|Microsoft.SystemCenter. Orchestrator.Runtime|
 |Orchestrator Web Service User Account|Microsoft.SystemCenter. Orchestrator.Operators|
 
+The following table lists the roles that are created in the orchestrator database and the permissions granted to each.
+
 |**Role**|**Permission**|**Object**|
 |---|---|---|
 |Microsoft.SystemCenter. Orchestrator.Operators|SELECT|[Microsoft.SystemCenter.Orchestrator.Runtime].[Jobs],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[RunbookInstances],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[RunbookInstanceParameters],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[RunbookServers],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[ActivityInstances],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[ActivityInstanceData],<br><br>[Microsoft.SystemCenter.Orchestrator.Runtime].[Events],<br><br>[Microsoft.SystemCenter.Orchestrator.Statistics].[Statistics]|
