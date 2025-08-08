@@ -3,6 +3,7 @@ title: Get Monitor
 description: The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 04/07/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

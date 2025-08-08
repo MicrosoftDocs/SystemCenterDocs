@@ -4,7 +4,7 @@ title: Microsoft Management Packs
 description: This article lists the Microsoft Management Packs.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/11/2025
+ms.date: 07/08/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
@@ -116,7 +116,7 @@ The following table is for reference only and contains links to management packs
 |[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|6.7.15.0|1/23/2025|
 |[Microsoft System Center management pack for SQL Server Replication version agnostic 2012-2019+](https://www.microsoft.com/download/details.aspx?id=56204)|7.0.28.0|7/15/2024|
 |[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57381)|7.8.2|1/23/2025|
-|[Microsoft System Center management pack for SQL Server version agnostic 2012-2022+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=56203)|7.8.4|1/24/2025||
+|[Microsoft System Center management pack for SQL Server version agnostic 2012-2022+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=56203)|7.8.4|1/24/2025|
 |[Microsoft System Center Management Pack for Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|4/7/2022|
 |[Microsoft System Center Management Pack for Windows Print Server 2016 and 1709 plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|12/14/2020|
 |[Microsoft System Center Management Pack for Windows Server Cluster 2016 and above](https://www.microsoft.com/download/details.aspx?id=54701)|10.1.0.0|7/15/2024|
@@ -257,7 +257,7 @@ The following table is for reference only and contains links to management packs
 |[Windows Server Network Load Balancing 2012/2012 R2](https://www.microsoft.com/download/details.aspx?id=13302)|6.0.7221.0|09/24/2020|
 |[Windows Server Network Load Balancing 2016](https://www.microsoft.com/download/details.aspx?id=54653)|10.1.0.0|09/30/2020|
 |[Windows Server Operating System 2003/2008/2008 R2/2012/2012R2](https://www.microsoft.com/download/details.aspx?id=9296)|6.0.7326.0|04/09/2021|
-|[Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|12/05/2022|
+|[Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.2.2|5/12/2025|
 |[Windows Server Print Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|7/15/2024|
 |[Windows Server Remote Access 2012 R2 Multitenant](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|09/30/2020|
 |[Windows Server Remote Access 2012 R2](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|09/30/2020|

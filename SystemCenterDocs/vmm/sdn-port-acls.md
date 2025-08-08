@@ -5,6 +5,7 @@ description: This article describes how to allow and block network traffic to a 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/24/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager

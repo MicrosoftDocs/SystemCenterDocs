@@ -12,6 +12,7 @@ ms.assetid: 25a60cd2-3942-47f6-b671-e126f109d291
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 
 # Get Hosts Activity

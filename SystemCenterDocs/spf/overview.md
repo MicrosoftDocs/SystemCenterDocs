@@ -4,6 +4,7 @@ description: This article provides a broad overview of Service Provider Foundati
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/07/2023
+ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation

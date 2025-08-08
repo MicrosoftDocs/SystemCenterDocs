@@ -3,6 +3,7 @@ title: Remove VM
 description: The Remove VM activity is used to delete a VM that is no longer needed.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: a530a448-c782-49d6-abba-7ba60c2fdfce
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Remove VM
 

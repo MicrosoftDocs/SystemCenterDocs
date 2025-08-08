@@ -6,6 +6,7 @@ ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 03/28/2025
+ms.update-cycle: 1095-days
 title: Use Groups, Queues, and Lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
