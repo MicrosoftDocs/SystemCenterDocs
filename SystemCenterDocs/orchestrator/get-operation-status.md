@@ -3,6 +3,7 @@ title: Get Operation Status
 description: The Get Operation Status activity is used to get the status of the specified operation.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 08/07/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 09/04/2024
+ms.date: 08/07/2025
 ms.subservice: service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
@@ -17,7 +17,7 @@ See the following sections for information about the new features/features updat
 
 ## Support for Windows Server 2025  
 
-Service Manager 2025 now supports Windows Server 2025. [Learn more](/system-center/scsm/system-requirements?view=sc-sm-2025).
+Service Manager 2025 now supports Windows Server 2025. [Learn more](/system-center/scsm/system-requirements?view=sc-sm-2025&preserve-view=true).
 
 ## Other updates
 

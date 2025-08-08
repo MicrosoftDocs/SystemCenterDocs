@@ -5,6 +5,7 @@ ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 author: jyothisuri

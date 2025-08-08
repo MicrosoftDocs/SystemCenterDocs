@@ -5,6 +5,7 @@ description: This article describes the VMM server collate mapping from VMM code
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/22/2017
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

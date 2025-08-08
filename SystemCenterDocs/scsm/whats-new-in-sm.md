@@ -5,6 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.topic: whats-new
 ms.service: system-center
 ms.subservice: service-manager

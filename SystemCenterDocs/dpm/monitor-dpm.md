@@ -3,7 +3,7 @@ description: This article describes the way that you can monitor DPM.
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 title: Monitor DPM
 ms.subservice: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -45,12 +45,12 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
-**Use Microsoft 365 SMTP to configure email for DPM**
+**Use an external SMTP mail provider to configure email for DPM**
 
-DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting basic authentication and port 587 for secure SMTP.
+DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->If you upgrade from DPM 2019 UR5 to 2019 UR6 and were using M365 SMTP, you must reconfigure your credentials by selecting the Basic Authentication option.
+>Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
 
@@ -69,12 +69,12 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
-**Use Microsoft 365 SMTP to configure email for DPM**
+**Use an external SMTP mail provider to configure email for DPM**
 
-DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting basic authentication and port 587 for secure SMTP.
+DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->If you upgrade from DPM 2022 UR1 to 2022 UR2 and were using M365 SMTP, you must reconfigure your credentials by selecting the Basic Authentication option.
+>Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
     
@@ -93,12 +93,12 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
-**Use Microsoft 365 SMTP to configure email for DPM**
+**Use an external SMTP mail provider to configure email for DPM**
 
-DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting basic authentication and port 587 for secure SMTP.
+DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->If you upgrade from DPM 2022 to 2025 and were using M365 SMTP, you must reconfigure your credentials by selecting the Basic Authentication option.
+>Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
 

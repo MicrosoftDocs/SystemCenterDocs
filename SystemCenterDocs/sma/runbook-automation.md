@@ -23,7 +23,7 @@ You can use Service Management Automation (SMA) runbooks to automate routine ope
 
 PowerShell Workflow runbooks are based on Windows PowerShell Workflow. You can directly edit the code of the runbook using the editor in the Management Portal. You can also use any offline text editor and [import the runbook](authoring-automation-runbooks.md) into SMA.
 
-### Advantages
+### Advantages 
 
 The advantages of PowerShell workflow runbooks are as follows:
 
