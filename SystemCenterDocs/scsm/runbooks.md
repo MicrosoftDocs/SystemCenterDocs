@@ -16,7 +16,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 # Use Service Manager runbooks to automate procedures
 
 
-Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
+Runbooks in Service Manager are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 
 ## Runbooks in Service Manager
 
@@ -94,3 +94,4 @@ To view a runbook, follow these steps:
 ## Next steps
 
 To customize how items are displayed in Service Manager, see [User interface customization](ui-customization.md).
+
