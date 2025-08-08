@@ -4,11 +4,11 @@ title: Remove a Gateway Server from a Management Group
 description: This article describes the procedure to remove a gateway server from  a Management Group.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Remove a Gateway Server from a Management Group
@@ -48,7 +48,7 @@ Gateway servers can manage three different types of objects:
 4. In the Agent Managed pane, select the computers for which you want to change the primary management server, right-click them, and then select **Change Primary Management Server**.
 
      >[!Note]
-     >The **Change Primary Management Server** option will be unavailable if Active Directory Domain Services was used to assign any of the selected computers to the management group using [Active Directory Integration for agent assignment](/system-center/scom/manage-ad-integration-agent-assignment?view=sc-om-2022). The **Change Primary Management Server** option can be disabled due to the Agents not being remotely managed.
+     >The **Change Primary Management Server** option will be unavailable if Active Directory Domain Services was used to assign any of the selected computers to the management group using [Active Directory Integration for agent assignment](/system-center/scom/manage-ad-integration-agent-assignment?view=sc-om-2022&preserve-view=true). The **Change Primary Management Server** option can be disabled due to the Agents not being remotely managed.
 
 5. In the Change Management Server dialog, select the new management server from the list, and then select **OK**. The change takes effect on the agent after its next update interval.
 

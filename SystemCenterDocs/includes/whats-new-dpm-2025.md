@@ -4,7 +4,7 @@ ms.topic: include
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 11/04/2024
+ms.date: 08/07/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -17,7 +17,7 @@ See the following sections for detailed information about the new features/featu
 
 ### Windows Server 2025 support
 
-DPM 2025 supports the installation of DPM 2025 on Windows Server 2025 and the protection of Windows Server 2025 workloads. You can now Backup system state, file, folder and volume, and applications supported by DPM 2025. [Learn more](/system-center/dpm/prepare-environment-for-dpm?view=sc-dpm-2025)
+DPM 2025 supports the installation of DPM 2025 on Windows Server 2025 and the protection of Windows Server 2025 workloads. You can now Backup system state, file, folder and volume, and applications supported by DPM 2025. [Learn more](/system-center/dpm/prepare-environment-for-dpm?view=sc-dpm-2025&preserve-view=true)
 
 ### Enhanced Passphrase save mechanism for MARS Agent
 

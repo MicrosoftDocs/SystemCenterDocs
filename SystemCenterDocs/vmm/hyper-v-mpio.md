@@ -5,7 +5,7 @@ description: This article provides information about managing MPIO for Hyper-V h
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/09/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

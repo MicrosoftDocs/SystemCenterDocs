@@ -4,10 +4,11 @@ description: This article describes how to use agentless monitoring in Operation
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 # Agentless Monitoring in Operations Manager

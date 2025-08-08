@@ -5,11 +5,10 @@ description: This article describes how to set up Storage Spaces Direct in the V
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/07/2025
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
-
 ---
 
 # Deploy clusters with Storage Spaces Direct in VMM

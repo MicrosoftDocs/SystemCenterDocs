@@ -3,16 +3,16 @@ title: Move Or Copy Item
 description: The Move Or Copy Item activity is used in a runbook to move or copy an item to another folder.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 3cd9da10-0931-4029-b313-7860eda9ba27
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Move Or Copy Item
 

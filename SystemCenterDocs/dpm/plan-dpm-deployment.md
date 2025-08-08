@@ -1,9 +1,9 @@
 ---
 description: Information to help you plan for and prepare to deploy DPM in your environment.
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 08/06/2025
 title: Get ready to deploy DPM servers
 ms.subservice: data-protection-manager
 ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
@@ -32,7 +32,7 @@ First, determine how many servers you'll need:
 
 - A single DPM server can protect up to 3000 client computers and 100 servers.
 
-    - For DPM server capacity planning, you can use the [DPM storage calculators](https://go.microsoft.com/fwlink/?LinkId=830710). These calculators are Excel sheets and are workload-specific. They guide about the number of DPM servers required, processor core, RAM, virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific, you'll need to combine the recommended settings and consider them together with the system requirements and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. Note that the calculators were released for DPM 2010 but remain relevant for later DPM versions.
+    - For DPM server capacity planning, you can use the [DPM storage calculators](https://www.microsoft.com/download/details.aspx?id=54301). These calculators are Excel sheets and are workload-specific. They guide about the number of DPM servers required, processor core, RAM, virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific, you'll need to combine the recommended settings and consider them together with the system requirements and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. Note that the calculators were released for DPM 2010 but remain relevant for later DPM versions.
 
 Then figure out how to locate the servers:
 

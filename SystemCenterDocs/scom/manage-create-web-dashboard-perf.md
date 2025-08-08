@@ -9,7 +9,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Create a dashboard with the Performance widget in the Web console

@@ -1,6 +1,6 @@
 ---
 description: This article describes what DPM protection groups consist of and why you should use them.
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.date: 04/22/2025
 title: Deploy protection groups

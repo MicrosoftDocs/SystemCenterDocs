@@ -1,16 +1,17 @@
 ---
-title: Enable Service Manager reporting
+title: Enable Service Manager Reporting
 description: Use the Data Warehouse Registration wizard to enable reporting.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: d5795bd5-7c01-47b9-909f-8147362b9cf4
 ---
 
@@ -18,7 +19,7 @@ ms.assetid: d5795bd5-7c01-47b9-909f-8147362b9cf4
 
 
 
-After you 've deployed the Service Manager management servers and data warehouse management servers, for reporting to function you must run the Data Warehouse Registration Wizard. This wizard registers the Service Manager management group with the data warehouse management group. It also deploys management packs from the Service Manager management server to the data warehouse management server.  
+After you've deployed the Service Manager management servers and data warehouse management servers, for reporting to function you must run the Data Warehouse Registration Wizard. This wizard registers the Service Manager management group with the data warehouse management group. It also deploys management packs from the Service Manager management server to the data warehouse management server.  
 
  The management pack deployment process can take several hours to complete. It's a best practice not to turn off any Service Manager computers or stop any Service Manager services during this time. During this registration process, you can continue to use the Service Manager console to perform any Service Manager functions that you want.  
 
@@ -26,7 +27,7 @@ After you 've deployed the Service Manager management servers and data warehouse
 
 ## Run the Data Warehouse Registration wizard
 
-You can use the following steps in System Center - Service Manager to use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse.
+To use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse, in System Center - Service Manager, follow these steps:
 
 1. By using an account that is a member of the Service Manager and data warehouse management administrators group, sign in to the computer that hosts the Service Manager console.  
 
@@ -59,7 +60,7 @@ You can use the following steps in System Center - Service Manager to use the Da
 
 Several management packs are imported during the data warehouse registration process in Service Manager. Data warehouse registration is complete when all of the management packs have been imported. You'll have to determine when that process is complete by using the following procedure.  
 
-To determine when management pack deployment has completed, do the following:
+To determine when management pack deployment has completed, follow these steps:
 
 1. Start the Service Manager console.  
 
@@ -73,7 +74,7 @@ To determine when management pack deployment has completed, do the following:
 
 6. Scroll through the **Status** list. The management pack deployment process is complete when the status for all of the management packs is **Associated** or **Imported**. Ensure that there's no status of either **Pending Association** or **Failed** in the status list. In the **Data Warehouse Jobs** pane, the status of the **MPSyncJob** will have changed from **Running** to **Not Started** when the registration process is complete. This deployment process can take up to two hours to complete.  
 
-7. Use the following steps to periodically refresh the **Data Warehouse Job** pane to monitor the progress of the registration process:  
+7. To periodically refresh the **Data Warehouse Job** pane to monitor the progress of the registration process, do the following:
 
    1. In the **Tasks** pane, under **Data Warehouse Jobs**, select **Refresh**.  
 

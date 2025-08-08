@@ -5,10 +5,11 @@ description: This article describes the different command-line arguments you wou
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/19/2025
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Install Operations Manager from the Command Prompt

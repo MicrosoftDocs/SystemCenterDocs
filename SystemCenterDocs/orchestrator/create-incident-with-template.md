@@ -3,16 +3,16 @@ title: Create Incident with Template
 description: The Create Incident with Template activity is used to create a new incident from an existing Incident Template.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 02bcec02-12cc-4dd1-858c-beecbb7cbd3c
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Incident with Template
 

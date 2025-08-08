@@ -3,16 +3,16 @@ title: Deploy Task Sequence activity
 description: Describes the configurable properties for the Deploy Task Sequence activity for Configuration Manager Integration Pack.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: d79a77be-37ae-4831-b7f9-42f2528c589f
 author: jyothisuri
 ms.author: jsuri
-ROBOTS: noindex
 ---
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack

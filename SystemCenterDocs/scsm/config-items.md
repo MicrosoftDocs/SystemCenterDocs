@@ -1,7 +1,7 @@
 ---
 title: Configuration items in Service Manager
 description: Learn about configuration items in Service Manager.
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

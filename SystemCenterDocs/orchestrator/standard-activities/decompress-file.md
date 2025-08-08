@@ -3,12 +3,13 @@ title: Decompress File
 description: This article describes the Decompress File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: ca5b4132-d8bd-4052-95f3-d7df76ae426a
 caps.latest.revision: 12
 author: jyothisuri

@@ -3,16 +3,16 @@ title: Query List
 description: The Query List activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list by using Collaborative Application Markup Language (CAML).
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 157c07bc-10eb-4c38-ba66-472f1736d3d6
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Query List
 

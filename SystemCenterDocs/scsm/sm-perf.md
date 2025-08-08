@@ -2,12 +2,11 @@
 title: System Center - Service Manager performance
 description: Describes how performance for System Center - Service Manager server roles and features is affected by different factors.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/21/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

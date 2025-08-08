@@ -1,17 +1,17 @@
 ---
 ms.assetid: 110aa866-00e8-4672-bd03-39cc8818e6b4
-title: Features and enhancements in Management Pack for SQL Server Dashboards
-description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Dashboards
+title: Features and Enhancements in management pack for SQL Server Dashboards
+description: This article explains the new functionality and bug fixes implemented in management pack for SQL Server Dashboards
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 07/22/2025
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Features and enhancements in Management Pack for SQL Server Dashboards
+# Features and enhancements in management pack for SQL Server Dashboards
 
 This article covers new functionality and improvements in Management Pack for SQL Server Dashboards.
 
@@ -19,7 +19,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added Vertipaq tiles to Analysis Servises dashboards:
+- Added Vertipaq tiles to Analysis Services dashboards:
   - Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
   - Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:

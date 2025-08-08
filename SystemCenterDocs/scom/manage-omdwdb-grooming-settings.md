@@ -7,7 +7,7 @@ ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 8dfd8f03-85ac-4231-8861-1d98e354cf94
 ---
 

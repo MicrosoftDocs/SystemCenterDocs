@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, intro-installation, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Install Windows Agent Manually Using MOMAgent.msi

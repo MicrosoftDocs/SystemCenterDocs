@@ -2,9 +2,10 @@
 title: Classes, fields, and filters
 description: The following tables list the System Center - Service Manager integration pack classes.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3

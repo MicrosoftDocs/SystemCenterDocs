@@ -7,12 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: ab0c21ce-3a9d-4901-ad45-4e9e76757a48
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Clone Windows VM Activity
 

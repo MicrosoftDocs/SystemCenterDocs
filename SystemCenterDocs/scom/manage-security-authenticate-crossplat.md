@@ -8,7 +8,7 @@ ms.date: 03/26/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Access UNIX and Linux computers in Operations Manager

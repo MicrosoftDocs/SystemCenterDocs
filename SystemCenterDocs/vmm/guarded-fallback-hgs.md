@@ -5,7 +5,8 @@ description: This article explains about how to configure the fallback HGS in VM
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/17/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'

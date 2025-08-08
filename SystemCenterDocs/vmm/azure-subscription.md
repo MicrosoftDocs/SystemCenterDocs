@@ -5,7 +5,7 @@ description: This article describes how to add an Azure subscription, so that yo
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/03/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

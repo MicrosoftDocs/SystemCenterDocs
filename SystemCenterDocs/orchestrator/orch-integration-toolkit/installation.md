@@ -6,7 +6,7 @@ ms.author: jsuri
 ms.date: 03/03/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ms.custom: intro-installation
 ---
 

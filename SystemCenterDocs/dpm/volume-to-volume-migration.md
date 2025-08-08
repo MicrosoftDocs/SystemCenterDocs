@@ -1,7 +1,7 @@
 ---
 title: System Center - Data Protection Manager volume to volume migration
 description: This article describes volume to volume migration.
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.date: 11/01/2024
 ms.subservice: data-protection-manager

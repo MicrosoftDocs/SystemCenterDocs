@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24

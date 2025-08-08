@@ -7,7 +7,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 08ea756b-01dd-4f6c-8326-4fec3ab3706e
 ---
 

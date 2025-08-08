@@ -3,12 +3,13 @@ title: Get Disk Space Status
 description: This article describes the Get Disk Space Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: e092f55e-b9bd-4e78-8609-1bb5676b7dce
 caps.latest.revision: 13
 author: jyothisuri
