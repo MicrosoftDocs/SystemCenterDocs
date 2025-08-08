@@ -11,8 +11,8 @@ ms.topic: how-to
 ms.assetid: e8b03da9-f448-44bd-b8e2-d87b809d4d92
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Revert VM Snapshot activity
 

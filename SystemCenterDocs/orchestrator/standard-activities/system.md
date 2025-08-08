@@ -3,6 +3,7 @@ title: System
 description: This article provides information about the tasks that you can do using System activities. 
 ms.custom: UpdateFrequency5, engagement-fy23, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1825-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

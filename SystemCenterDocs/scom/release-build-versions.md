@@ -5,6 +5,7 @@ description: This article details the release builds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
 ms.date: 12/10/2024
+ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager

@@ -3,6 +3,7 @@ title: Run VMM PowerShell Script
 description: The Run VMM PowerShell activity is used to call any PowerShell activity.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 6c162738-677c-49f5-8b14-b63f81a7da2b
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Run VMM PowerShell Script
 

@@ -6,6 +6,7 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/19/2025
+ms.update-cycle: 180-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager

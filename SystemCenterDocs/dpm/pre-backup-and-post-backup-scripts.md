@@ -3,8 +3,8 @@ description: This article describes the  pre and post backup scripts for Data Pr
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Use Pre-backup and Post-backup scripts
+ms.date: 03/31/2025
+title: Use Pre-backup and Post-backup Scripts
 ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
 author: jyothisuri
@@ -14,11 +14,13 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Pre-backup and Post-backup scripts for DPM
 
-This article details the pre- and post-backup scripts that you can use for DPM and how to use them.
+
 
 A *pre-backup script* is a script that resides on a protected computer. It's executed before each DPM backup job and prepares the protected data source for backup.
 
 A *post-backup script* is a script that runs after a DPM backup job to do any post-backup processing, such as bringing a virtual machine back online.
+
+This article details the pre-backup and post-backup scripts that you can use for DPM and how to use them.
 
 When you install a protection agent on a computer, a *ScriptingConfig.xml* file is added to the install path *\Microsoft Data Protection Manager\DPM\Scripting* folder on the protected computer. For each protected data source on the computer, you can specify a pre-backup script and a post-backup script in ScriptingConfig.xml.
 
@@ -48,6 +50,8 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 ```
 
 ## Specify pre-backup and post-backup scripts
+
+To specify pre-backup and post-backup scripts, follow these steps:
 
 1. On the protected computer, open the *ScriptingConfig.xml* file in an XML or text editor.
 
@@ -83,3 +87,5 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 
     > [!NOTE]
     > DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.
+
+ 

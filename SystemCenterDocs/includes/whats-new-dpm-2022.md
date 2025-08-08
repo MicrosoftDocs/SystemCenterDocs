@@ -4,7 +4,7 @@ ms.topic: include
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 08/06/2024
+ms.date: 06/27/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -68,6 +68,10 @@ For issues fixed and the installation instructions for UR2 refresh, see [KB ar
 >[!NOTE]
 >DPM 2022 UR2 has been superseded with DPM 2022 UR2 Refresh that has the same feature enhancements but fixes the known issues observed in DPM 2022 UR2. [Learn more](/system-center/dpm/dpm-release-notes?view=sc-dpm-2022#dpm-2022-ur2-release-notes&preserve-view=true).
 
+### Parallel online backup jobs - limit enhancement
+
+DPM 2022 UR2 supports increase in the maximum parallel online backup jobs from the default eight to a configurable limit of 20 based on your hardware and network limitations through a registry key for faster online backups. [Learn more](/azure/backup/backup-azure-microsoft-azure-backup).
+
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
 DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](/system-center/dpm/back-up-vmware?view=sc-dpm-2022&tabs=Add#restore-an-individual-file-from-a-vm&preserve-view=true) and [Hyper-V](../dpm/back-up-hyper-v-virtual-machines.md) VMs running Windows. You need [MARS](https://support.microsoft.com/topic/update-for-azure-backup-for-microsoft-azure-recovery-services-agent-bb330054-65d3-4432-a45e-362e1888dd2c) version 2.0.9251.0 or later to use this feature.  
@@ -84,7 +88,7 @@ DPM 2022 UR2 supports protection of VMware VMs running on vSphere 8.0. 
 DPM 2022 UR2 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](../dpm/monitor-dpm.md).
 
 >[!NOTE]
->If you have been using M365 SMTP with DPM 2022 UR1, you must re-enter the credentials using Basic Authentication.  
+>If you have been using Microsoft 365 SMTP with DPM 2022 UR1, you must re-enter the credentials using Basic Authentication.  
 
 ### Fallback to crash consistent backups for VMware VMs  
 

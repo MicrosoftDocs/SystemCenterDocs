@@ -5,6 +5,7 @@ description: This article is the landing page covering all of the getting starte
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: intro-get-started, UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
