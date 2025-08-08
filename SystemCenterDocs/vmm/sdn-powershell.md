@@ -1,11 +1,10 @@
 ---
 ms.assetid: dd9c6826-5cc4-482e-947d-bb645d64f3f9
-title: Set up Software Defined Network (SDN) Components in the VMM Fabric Using PowerShell
+title: Set up Software Defined Network (SDN) Components in the VMM Fabric using PowerShell
 description: This article describes how to use PowerShell to deploy SDN components in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 07/24/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -43,7 +42,7 @@ The advantages of PowerShell deployment are as follows:
 
 ## Before you start
 
-Here are some considerations before you start setting up SDN components in the VMM fabric using PowerShell:
+Here are some considerations before you set up SDN components in the VMM fabric using PowerShell:
 
 - SET-enabled switch deployment isn't currently supported in a PowerShell deployment. You need to deploy the SET-enabled switch out-of-band, and then specify the name of the switch during deployment.
 - Check if you have the prerequisites for SDN component deployment in place:

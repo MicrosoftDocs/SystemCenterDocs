@@ -2,12 +2,11 @@
 title: Configure Service Level Management
 description: Learn about configuring Service Level Management in Service Manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.subservice: service-manager
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24

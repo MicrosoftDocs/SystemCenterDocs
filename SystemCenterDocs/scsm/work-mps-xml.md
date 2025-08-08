@@ -3,10 +3,9 @@ title: Work with management pack XML files
 description: Describes how to work with management pack XML files for Service Manager authoring.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -227,8 +226,6 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 </Forms>  
 
 ```  
-
-
 
 ## Author a management pack file to manage projectors
 
@@ -1034,8 +1031,6 @@ namespace SMFormsDemo
 }  
 
 ```  
-
----
 
 ## Next steps
 

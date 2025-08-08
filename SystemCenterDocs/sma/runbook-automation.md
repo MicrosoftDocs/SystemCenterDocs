@@ -1,11 +1,10 @@
 ---
 description: Provides details on how you can automate operations in your Microsoft Azure Pack environment with Service Management Automation
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 title: Automate Microsoft Azure Pack Operations with Runbooks
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24

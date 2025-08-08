@@ -1,11 +1,11 @@
 ---
 ms.assetid: b4dbae9a-cf0d-4598-96d8-421e10681e45
-title: SQL Server Reporting in Management Pack for SQL Server
+title: SQL Server Reporting in management pack for SQL Server
 description: This article explains SQL Server reporting
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

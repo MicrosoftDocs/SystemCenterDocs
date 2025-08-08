@@ -3,13 +3,12 @@ description: You can use DPM to back up and restore your System Center VMM datab
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 title: Back up and Restore VMM Servers
 ms.subservice: data-protection-manager
 ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
@@ -49,7 +48,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer, remember the fo
 
 ## Before you start
 
-Before you start backing up and restoring VMM servers, do the following:
+Before you back up and restore VMM servers, do the following:
 
 - Review the [release notes](dpm-release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
