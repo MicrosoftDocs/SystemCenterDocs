@@ -4,8 +4,7 @@ description: Use network load balancing in Windows Server to configure a pool of
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency3, engagement-fy24

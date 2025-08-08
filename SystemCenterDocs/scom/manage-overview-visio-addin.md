@@ -3,8 +3,7 @@ title: Use the Visio Add-in and SharePoint Visio Services Data Provider
 description: This article highlights the Visio add-in and SharePoint Visio services data provider.
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager

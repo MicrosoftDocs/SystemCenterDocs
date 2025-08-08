@@ -3,10 +3,9 @@ description: include file to provide the information about the minimum hardware 
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 03/14/2019
+ms.date: 08/07/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  f7d4d856-e3de-4a24-ab59-76db63d8b606
