@@ -3,9 +3,8 @@ ms.assetid:
 title: Obtain a certificate for use with Windows Servers and System Center Operations Manager
 description: This article explains how to obtain a certificate for use with Windows Servers and System Center Operations Manager.
 ms.custom: engagement-fy23, UpdateFrequency2
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 01/04/2025
 ms.topic: article
 ms.service: system-center

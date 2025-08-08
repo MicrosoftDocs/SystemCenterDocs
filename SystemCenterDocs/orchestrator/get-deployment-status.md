@@ -12,6 +12,11 @@ ms.topic: article
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
 author: jyothisuri
 ms.author: jsuri
+<<<<<<< HEAD
+=======
+manager: jsuri
+
+>>>>>>> 8ad97e4473bed05261cfc5488e326ed1e2906684
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack

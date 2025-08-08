@@ -13,6 +13,11 @@ ms.assetid: c3409b18-a952-48fd-8fbd-7d9d4ef44173
 caps.latest.revision: 16
 author: jyothisuri
 ms.author: jsuri
+<<<<<<< HEAD
+=======
+manager: jsuri
+
+>>>>>>> 8ad97e4473bed05261cfc5488e326ed1e2906684
 ---
 # Save Event Log
 

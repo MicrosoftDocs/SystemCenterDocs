@@ -3,9 +3,8 @@ title: include file
 description: include file to describe the hardware, software, and other system requirements  Service Manager 2022.
 ms.custom: na
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/04/2023
 ms.reviewer: na
 ms.suite: na

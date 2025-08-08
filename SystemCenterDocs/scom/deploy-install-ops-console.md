@@ -2,9 +2,8 @@
 ms.assetid: 7f64b190-0af1-431d-85ca-6b6ac9f0ce0e
 title: Install the Operations Console
 description: This article describes how to install the Operations Manager Operations console on other servers and computers.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/19/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center

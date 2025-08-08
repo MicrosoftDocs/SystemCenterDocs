@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid: 349554ed-af74-42fd-b061-bb75e0a3bd0f
 caps.latest.revision: 18
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # End Process
 

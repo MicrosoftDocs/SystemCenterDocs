@@ -3,13 +3,12 @@ description: Use DPM to protect SharePoint farms, external SQL Server databases,
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 05/27/2025
 title: Back up SharePoint with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
@@ -19,15 +18,15 @@ You can deploy System Center Data Protection Manager (DPM) to protect SharePoint
 
 - [Configure SharePoint protection in DPM](#configure-backup)
 
-- [Restoring SharePoint with DPM](#restore-sharepoint-data)
+- [Restore SharePoint with DPM](#restore-sharepoint-data)
 
-For information about troubleshooting, see [Troubleshooting SharePoint and DPM](https://techcommunity.microsoft.com/t5/system-center-blog/backing-up-sharepoint-with-data-protection-manager-and/ba-p/350563).
+For information about troubleshooting, see [Troubleshoot SharePoint and DPM](https://techcommunity.microsoft.com/t5/system-center-blog/backing-up-sharepoint-with-data-protection-manager-and/ba-p/350563).
 
 ## Prerequisites and limitations
 
-- For a list of supported SharePoint versions and the DPM versions required to back them up, see [What can DPM back up?](dpm-protection-matrix.md)
+- For a list of supported SharePoint versions and the DPM versions required to back them up, see [What can DPM back up?](dpm-protection-matrix.md).
 
-- By default when you protect SharePoint, all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations, such as search indexes, templates or application service databases, or the user profile service, you'll need to configure these for protection separately. Ensure that you enable protection for all folders that include these types of features or customization files.
+- By default when you protect SharePoint, all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations, such as search indexes, templates or application service databases, or the user profile service, you'll need to configure these for protection separately. Ensure that you enable protection for all folders that include these types of features or customization files:
 
 - SharePoint databases using AlwaysOn can be protected from DPM 2012 R2 with Update 5 onwards.
 
@@ -44,6 +43,8 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 - DPM doesn't support protecting remote FILESTREAM. The FILESTREAM should be part of the database.
 
 ## Before you start
+
+Before you start backing up data, do the following:
 
 1. **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't, see:
 
@@ -63,7 +64,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
 ## Configure backup
 
-To back up SharePoint farm, configure protection for SharePoint by using ConfigureSharePoint.exe and then create a protection group in DPM.
+To back up SharePoint farm, configure protection for SharePoint by using ConfigureSharePoint.exe, and then create a protection group in DPM, follow these steps:
 
 1. **Run ConfigureSharePoint.exe** - This tool configures the SharePoint VSS Writer service \(WSS\) and provides the protection agent with credentials for the SharePoint farm.
     After you've deployed the protection agent, the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you've multiple WFE servers, you only need to install it on one of them. Run as follows:
@@ -138,6 +139,8 @@ After the protection group has been created, the initial replication occurs and 
 
 ### Set up monitoring notifications
 
+To set up monitoring the notifications, follow these steps:
+
 1. In the DPM Administrator Console, select **Monitoring** > **Action** > **Options**.
 
 2. Select **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
@@ -148,6 +151,8 @@ After the protection group has been created, the initial replication occurs and 
 
 ### Publish Operations Manager alerts
 
+To publish Operations Manager alerts, follow these steps:
+
 1. In the DPM Administrator Console, select **Monitoring** > **Action** > **Options** > **Alert Publishing** > **Publish Active Alerts**
 
 2. After you enable **Alert Publishing**, all the existing DPM alerts that might require a user action are published to the **DPM Alerts** event log. The Operations Manager agent that is installed on the DPM server then publishes these alerts to the Operations Manager and continues to update the console as new alerts are generated.
@@ -156,13 +161,13 @@ After the protection group has been created, the initial replication occurs and 
 
 You can recover SharePoint data as follows:
 
-- Recover to the original location
+- Recover to the original location.
 
 - Recover to an alternate location. Remember, you can't perform a full farm recovery to a new location.
 
-- Copy the data to a network folder
+- Copy the data to a network folder.
 
-- Copy the data to tape
+- Copy the data to tape.
 
 Remember, to recover a farm:
 
@@ -194,7 +199,7 @@ Select the required tab for steps to restore data to a functioning or non-functi
 
 # [Restore data to a functioning farm](#tab/FunctioningFarm)
 
-Follow these steps to restore data to a functioning farm:
+To restore data to a functioning farm, follow these steps:
 
 1. In the DPM Administrator Console, select **Recovery** on the navigation bar.
 
@@ -223,7 +228,7 @@ Follow these steps to restore data to a functioning farm:
 
 # [Restore data to a non-functioning farm](#tab/NonfunctioningFarm)
 
-Follow these steps to restore data to a non-functioning farm:
+To restore data to a non-functioning farm, follow these steps:
 
 1. Create a new farm that uses the same instance of SQL Server and the same front-end Web server as the original protected farm.
 
@@ -258,7 +263,7 @@ Follow these steps to restore data to a non-functioning farm:
 
 ---
 
-## Switching the Front-End Web Server
+## Switch the Front-End Web Server
 
 The following procedure uses the example of a server farm with two front-end Web servers, Server1 and Server2. DPM uses Server1 to protect the farm. You need to change the front-end Web server that DPM uses to Server2 so that you can remove Server1 from the farm.
 
@@ -266,6 +271,8 @@ The following procedure uses the example of a server farm with two front-end Web
 > If the front-end Web server that DPM uses to protect the farm is unavailable, use the following procedure to change the front-end Web server by starting at step 4.
 
 #### Change the front-end Web server that DPM uses to protect the farm
+
+To change the front-end Web server that DPM uses to protect the farm, follow these steps:
 
 1. Stop the SharePoint VSS Writer service on Server1 by running the following command at command prompt:
 
@@ -316,7 +323,7 @@ When a database is removed from a SharePoint farm, DPM will skip the backup of t
 
 This is a warning alert that is generated in Data Protection Manager (DPM) when automatic protection of a SharePoint database fails. For more information about the cause of this alert, see the alert **Details** pane.
 
-To resolve this alert, follow these steps:
+To resolve the DPM alert, follow these steps:
 
 1. Verify with the SharePoint administrator if the database has been removed from the farm. If the database has been removed from the farm, then it must be removed from active protection in DPM.
 2. To remove the database from active protection:

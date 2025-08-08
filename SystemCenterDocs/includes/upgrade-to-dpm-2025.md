@@ -1,9 +1,8 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2025.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:
 ms.date:  04/17/2024

@@ -1,23 +1,26 @@
 ---
 ms.assetid: 24cefdb6-cc98-4153-af9a-f172d4f72bbf
-title: How to Create a New Action Account in Operations Manager
+title: Create an Action Account in Operations Manager
 description: This article describes how to create a management server action account in Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create a new action account in Operations Manager
+# Create an action account in Operations Manager
 
+This article describes how to create a management server action account in Operations Manager.
 
 Use the following procedure to create a new management server action account. The new action account won't, by default, have access to Operations Manager database unless access is inherited in the credentials you assign to the action account. If not, a new account for accessing the Operations Manager database needs to be created.  
 
-## To create a new action account  
+## Create an action account 
+
+To create an action account in Operations Manager, follow these steps:
 
 1.  Sign in to the computer with an account that is a member of the Operations Manager Administrators role.  
 
@@ -56,8 +59,8 @@ Use the following procedure to create a new management server action account. Th
 
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
 
-- The Report Server unattended execution account is used to query data from the Reporting Data Warehouse. To understand how to reconfigure the user name or password for this account, see [How to Manage the Report Server Unattended Execution Account in Operations Manager](how-to-manage-the-report-server-unattended-execution-account.md).  
+- The Report Server unattended execution account is used to query data from the Reporting Data Warehouse. To understand how to reconfigure the user name or password for this account, see [Manage the Report Server Unattended Execution Account in Operations Manager](how-to-manage-the-report-server-unattended-execution-account.md).  
 
 - To learn about how you can use the Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](~/scom/manage-security-overview-hslockdown.md).  

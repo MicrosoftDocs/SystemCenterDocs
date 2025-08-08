@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
+
 ---
 
 # Deploy clusters with Storage Spaces Direct in VMM
@@ -33,7 +34,7 @@ Before you deploy clusters, do the following:
 
 You can deploy a hyper-converged cluster in the VMM fabric using the same methods that you would with any other Hyper-V cluster:
 
-- Enable S2D on a Hyper-V cluster currently managed in the VMM fabric.
+- Enable S2D on a Hyper-V cluster currently managed in the VMM fabric. 
 - Add an existing Hyper-V cluster to the VMM fabric, with or without S2D enabled.
 - Provision a Hyper-V cluster and enable S2D from the existing Hyper-V hosts.
 - Provision a Hyper-V cluster with S2D enabled from bare-metal servers.

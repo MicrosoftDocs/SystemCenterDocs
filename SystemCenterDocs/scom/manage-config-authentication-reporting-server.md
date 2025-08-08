@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
+
 ---
 
 # Configure authentication for the Reporting server
