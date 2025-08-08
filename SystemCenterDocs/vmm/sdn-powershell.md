@@ -20,7 +20,7 @@ System Center Virtual Machine Manager (VMM) can be used to deploy and manage a S
 You can deploy SDN components in the VMM fabric, including:
 
 - **Network Controller**: The network controller allows you to automate the configuration of your network infrastructure instead of manually configuring network devices and services.
-- **RAS Gateway for SDN**: RAS Gateway is a software-based, multi-tenant, BGP capable router in Windows Server 2016 that is designed for CSPs and enterprises that host multiple tenant virtual networks using HNV.
+- **RAS Gateway for SDN**: RAS Gateway is a software-based, multitenant, BGP capable router in Windows Server 2016 that is designed for CSPs and enterprises that host multiple tenant virtual networks using HNV.
 - **Software Load Balancing (SLB) for SDN**: SDN in Windows Server 2016 can use Software Load Balancing (SLB) to evenly distribute tenant and tenant customer network traffic among virtual network resources. The Windows Server SLB enables multiple servers to host the same workload, providing high availability and scalability.
 
 There are a couple of ways to deploy these components:
