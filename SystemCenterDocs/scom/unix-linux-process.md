@@ -4,12 +4,7 @@ title: UNIX or Linux Process in Operations Manager management pack
 description: This article provides an overview of UNIX or Linux process.
 author: jyothisuri
 ms.author: jsuri
-<<<<<<< HEAD
-manager: jsuri
 ms.date: 08/07/2025
-=======
-ms.date: 11/01/2024
->>>>>>> 12dcceeaad4dd4e06f81cbb17080bb5232aae118
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

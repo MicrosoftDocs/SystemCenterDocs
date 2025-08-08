@@ -5,13 +5,8 @@ description: This article explains SQL Server reporting
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-<<<<<<< HEAD
 ms.date: 08/07/2025
-ms.topic: article
-=======
-ms.date: 11/01/2024
 ms.topic: concept-article
->>>>>>> 12dcceeaad4dd4e06f81cbb17080bb5232aae118
 ms.service: system-center
 ms.subservice: operations-manager
 ---

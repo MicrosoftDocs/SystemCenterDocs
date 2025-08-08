@@ -1,10 +1,6 @@
 ---
 description: Provides details on how you can automate operations in your Microsoft Azure Pack environment with Service Management Automation
-<<<<<<< HEAD
-ms.topic: article
-=======
 ms.topic: concept-article
->>>>>>> 12dcceeaad4dd4e06f81cbb17080bb5232aae118
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
