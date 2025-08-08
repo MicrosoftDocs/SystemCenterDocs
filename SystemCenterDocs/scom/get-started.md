@@ -2,14 +2,13 @@
 ms.assetid: e5f04a75-99c5-4fd8-adb8-47273e6f0505
 title: Getting Started
 description: This article is the landing page covering all of the getting started guidance for Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: intro-get-started, UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: get-started
 ---
 
 # Getting Started

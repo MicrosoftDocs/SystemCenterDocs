@@ -2,10 +2,9 @@
 ms.assetid: 
 title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 01/15/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 05/08/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -28,7 +27,7 @@ This information helps you understand the performance and scalability characteri
 | Agentless-managed computers per management group | 60 |
 | Agent-managed and UNIX or Linux computers per management group | 6,000 (with 50 open consoles); 15,000 (with 25 open consoles) |
 | UNIX or Linux computers per dedicated management server | 1,000 |
-| UNIX or Linux computers monitored per dedicated gateway server | 200 |
+| UNIX or Linux computers monitored per dedicated gateway server | 100 |
 | Network devices managed by a resource pool with three or more management servers | 1,000 |
 | Network devices managed by two resource pools | 2,000 |
 | Agents for Application Performance Monitoring (APM) | 700 |
@@ -70,15 +69,15 @@ Use this information to evaluate if your hardware environment is ready to suppor
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
 
-| Component                                                          | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core | Windows Server 2025 Standard, Datacenter | Windows Server 2025 Server Core |
-|:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|:-----------------------------------------|:--------------------------------|
-| **Operations Manager** Management Server                            | Yes                                      | Yes    | Yes      | Yes          | Yes      | Yes          |
-| **Operations Manager** Gateway Server                               | Yes                                      | Yes    | Yes      | Yes          |Yes      | Yes          |
-| **Operations Manager** Web Console                                  | Yes                                      |        | Yes      |              |Yes      |              |
-| **Operations Manager** ACS Collector                                | Yes                                      |        | Yes      |              |Yes      |              |
-| **Operations Manager** Operations console                           | Yes                                      |        | Yes      |              |Yes      |              |
-| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes    | Yes      | Yes          |Yes      | Yes          |
-| **Operations Manager** Reporting server                             | Yes                                      |        |Yes       |              |Yes       |              |
+| Component                                                          | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core | Windows Server 2025 Standard, Datacenter | Windows Server 2025 Server Core |
+|:--------------------------------------------------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|:-----------------------------------------|:--------------------------------|
+| **Operations Manager** Management Server                            | Yes      | Yes          | Yes      | Yes          |
+| **Operations Manager** Gateway Server                               | Yes      | Yes          |Yes      | Yes          |
+| **Operations Manager** Web Console                                  | Yes      |              |Yes      |              |
+| **Operations Manager** ACS Collector                                | Yes      |              |Yes      |              |
+| **Operations Manager** Operations console                           | Yes      |              |Yes      |              |
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes      | Yes          |Yes      | Yes          |
+| **Operations Manager** Reporting server                             |Yes       |              |Yes       |              |
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 

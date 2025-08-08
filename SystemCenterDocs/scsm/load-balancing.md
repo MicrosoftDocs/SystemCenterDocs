@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 08/07/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
