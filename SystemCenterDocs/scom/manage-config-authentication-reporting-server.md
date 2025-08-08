@@ -4,8 +4,7 @@ title: Configure Authentication with Reporting server
 description: This article describes how to configure the Operations Manger reporting server to be compliant with Federal Information Processing Standards.
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

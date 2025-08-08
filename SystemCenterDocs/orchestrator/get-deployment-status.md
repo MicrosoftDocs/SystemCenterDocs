@@ -2,7 +2,7 @@
 title: Get Deployment Status Activity
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
@@ -179,7 +178,6 @@ Deployment Types.
 |UserID |User ID|
 |VMHostName|If the device is a virtual machine, the name of the host for the VM|
 
----
 
 ## Configure the Get Deployment Status activity
 

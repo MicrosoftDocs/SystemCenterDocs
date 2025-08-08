@@ -1,12 +1,11 @@
 ---
-title: Seal a Service Manager Management Pack
+title: Seal a Service Manager management pack
 description: Describes how to seal a Service Manager management pack for use with Service Manager authoring.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager

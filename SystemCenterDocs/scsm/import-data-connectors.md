@@ -4,9 +4,8 @@ description: Explains how to use connectors to import data into System Center - 
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---

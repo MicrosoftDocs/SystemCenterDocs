@@ -5,7 +5,7 @@ description: This article explains monitoring performance metrics and limitation
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 
 # Monitoring Performance and Limitations
 
-Management Pack for SQL Server occupies certain amount of memory and CPU capacity in order to monitor your SQL environment.
+Management Pack for SQL Server occupies certain amount of memory and CPU capacity in order to monitor your SQL environment. The following table provides statistics on memory and CPU consumption per SKU type, depending on the number of databases being monitored.
 
 >[!NOTE]
 >The metrics below are applicable to Management Pack for SQL Server only; capacities that are consumed by other resources aren't considered in this table. Also, Management Pack for SQL Server supports monitoring of no more than 2300 databases on a single instance and no more than 50 SQL Server instances on a single machine.

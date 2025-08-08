@@ -4,8 +4,7 @@ title: Deploy a Hyper-converged or Disaggregated Cluster with Storage Spaces Dir
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,6 +13,8 @@ ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
 
 # Deploy clusters with Storage Spaces Direct in VMM
 
+
+
 This article describes how to set up a cluster with Storage Spaces Direct (S2D) in the System Center - Virtual Manager (VMM) fabric. You can set up a couple of types of clusters:
 
 - A hyper-converged deployment that runs compute and storage resources in the same cluster.
@@ -21,7 +22,7 @@ This article describes how to set up a cluster with Storage Spaces Direct (S2D) 
 
 ## Before you start
 
-Before you start deploying clusters, do the following:
+Before you deploy clusters, do the following:
 
 - Ensure you're running VMM 2016 or a later version.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed and configured to host VMs.
