@@ -4,8 +4,13 @@ title: Set up Software Defined Network (SDN) Components in the VMM Fabric using 
 description: This article describes how to use PowerShell to deploy SDN components in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
+<<<<<<< HEAD
 ms.date: 08/07/2025
 ms.topic: article
+=======
+ms.date: 07/24/2024
+ms.topic: how-to
+>>>>>>> 12dcceeaad4dd4e06f81cbb17080bb5232aae118
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

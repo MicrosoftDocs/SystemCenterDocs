@@ -5,7 +5,7 @@ description: This article describes the procedure on how to update the network c
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/07/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24

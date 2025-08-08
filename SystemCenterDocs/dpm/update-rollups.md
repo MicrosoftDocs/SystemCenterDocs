@@ -2,11 +2,10 @@
 ms.assetid: 224a6e43-cce0-4d27-92ba-1c551e9366c0
 title: Deploy and manage Update Rollups in System Center Data Protection Manager
 description: This article provides information about how to deploy and manage the update rollups in System Center DPM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24

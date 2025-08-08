@@ -1,15 +1,14 @@
 ---
 description: Information to help you plan for and prepare to deploy DPM in your environment.
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
 title: Get ready to deploy DPM servers
 ms.subservice: data-protection-manager
 ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy24
 ---
 

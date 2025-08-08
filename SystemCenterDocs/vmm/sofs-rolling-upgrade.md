@@ -2,11 +2,10 @@
 ms.assetid: 599241ef-28b7-4a9c-ad1f-d2c79f5dd784
 title: Run a rolling upgrade of a SOFS cluster to Windows Server in VMM
 description: This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

@@ -1,7 +1,11 @@
 ---
 title: Use Runbooks
 description: You can use Service Manager runbooks to automate procedures.
+<<<<<<< HEAD
 ms.topic: article
+=======
+ms.topic: how-to
+>>>>>>> 12dcceeaad4dd4e06f81cbb17080bb5232aae118
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

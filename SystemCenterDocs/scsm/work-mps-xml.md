@@ -5,12 +5,16 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
+<<<<<<< HEAD
 ms.date: 08/07/2025
+=======
+ms.date: 11/01/2024
+>>>>>>> 12dcceeaad4dd4e06f81cbb17080bb5232aae118
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 1f621771-00da-4dd8-a96f-9a0b243c3d88
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Troubleshoot upgrade issues in System Center - Service Manager
+title: Troubleshoot Upgrade Issues in System Center - Service Manager
 description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/10/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 
 This article helps you troubleshoot upgrade issues in System Center – Service Manager.
 
- There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
+There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
 
 - Failure occurs during the prerequisite check.
 - Failure occurs during predicted checks.
@@ -37,7 +37,7 @@ If a condition is found that is an absolute requirement for Service Manager, a f
 
 If either a warning or a failure indication appears, you can either cancel the installation and make the necessary changes, or make the appropriate changes and then select **Check prerequisites again** and continue with the installation. All failure conditions must be corrected before the installation or upgrade can proceed.
 
-# [During predicted checks](#tab/Phase2)
+# [During predicted checks](#tab/Phase2) 
 
 After any failures that were identified during the prerequisite check are corrected, pressing **Next** on the **Prerequisites** page starts the upgrade or installation of Service Manager. The system checks for the following conditions during the installation or upgrade process:
 
@@ -105,11 +105,11 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 - Disable signature verification on the computer that is running Setup.  
 
-- Increase the service time\-out setting on the computer that is running Setup.  
+- Increase the service time-out setting on the computer that is running Setup.
 
 ### Disable signature verification
 
-Follow these steps to disable signature verification:
+To disable signature verification, follow these steps:
 
 1. On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
@@ -121,7 +121,7 @@ Follow these steps to disable signature verification:
 
 ### Increase the service time-out setting  
 
-Follow these steps to increase the service time-out setting:
+To increase the service time-out setting, follow these steps:
 
 1. On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 

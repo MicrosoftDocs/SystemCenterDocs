@@ -1,9 +1,8 @@
 ---
 description: This article describes how to update protection agents for both connected and disconnected client computers.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.date: 11/01/2024
 title: Update the DPM protection agent

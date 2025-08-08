@@ -2,14 +2,13 @@
 ms.assetid: 22fdfe80-9d2a-4b46-b544-06a5b2b0e6c2
 title: Using Classes and Groups for Overrides
 description: This article describes how to apply overrides to classes and groups in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Using classes and groups for overrides
