@@ -135,7 +135,7 @@ Use the following procedure to configure settings to specify activity prefixes w
 > [!NOTE]
 > Revising the activity request prefix doesn't affect the existing activity records.
 
-### Configure activity settings
+### Configure the general activity settings
 
 To configure general activity settings, follow these steps:
 

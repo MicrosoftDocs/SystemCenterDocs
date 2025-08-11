@@ -39,7 +39,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
 ## Before you start
 
- Here are some considerations before you set up VM networks in SDN using VMM:
+Here are some considerations before you set up a virtual network in SDN in the VMM fabric:
 
 - Network controller is deployed in the SDN fabric. [Learn more](sdn-controller.md).
 
@@ -72,11 +72,9 @@ To create a VM network, follow these steps:
    >[!NOTE]
    > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
 
-
-
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option.  Select the **VPN gateway device** that you want to use and confirm the settings.
 
-     Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear. Complete the settings based on the information provided by the VPN admin.
+   Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear. Complete the settings based on the information provided by the VPN admin.
 
    - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
 

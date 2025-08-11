@@ -1,7 +1,6 @@
 ---
 title: Register Source Systems to the System Center Data Warehouse
 description: Describes how you can register source systems to the System Center data warehouse and troubleshoot common problems in Service Manager.
-manager: jsuri
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
@@ -187,7 +186,8 @@ Events with a source of **Deployment** are generated during management pack depl
 When you start and stop Service Manager services, you must stop and start all three services.
 
 After the data warehouse is deployed, events are more likely to have a source of **Data Warehouse**. These events are created by jobs within the normal course of operations like extract, transform, and load (ETL) jobs; the MPSync job; and the DWMaintenance job.
-Use the Service Manager console to troubleshoot errors
+
+### Use the Service Manager console to troubleshoot errors
 
 In the Service Manager console, select **Data Warehouse Jobs** and you will see ETL job and MPSync job status. If your deployment was successful and your data warehouse is correctly registered to at least one Service Manager management group, you see at least five jobs. Every job should have the status **Running** or **Not Started**.
 
@@ -197,7 +197,7 @@ In the **Data Warehouse** workspace, you can select **Management Packs** in the 
 
 If your management pack has defined data warehouse-specific elements, such as outriggers, dimensions, fact tables, or reports, that management pack must be successfully deployed before the new tables and reports will be ready to use.
 
-### [Use Windows PowerShell to troubleshoot errors](#use-windows-powershell-to-troubleshoot-errors)
+### Use Windows PowerShell to troubleshoot errors
 
 The Windows PowerShell cmdlets in the following table provide detailed information about the data warehouse jobs.
 

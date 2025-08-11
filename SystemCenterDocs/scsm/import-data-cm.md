@@ -1,7 +1,6 @@
 ---
 title: Import Data from Configuration Manager
 description: Describes how to import data from Configuration Manager into Service Manager.
-manager: jsuri
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
