@@ -1,12 +1,12 @@
 ---
-title: Register source systems to the System Center data warehouse
+title: Register Source Systems to the System Center Data Warehouse
 description: Describes how you can register source systems to the System Center data warehouse and troubleshoot common problems in Service Manager.
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/08/2025
 ms.subservice: service-manager
 ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -112,6 +112,8 @@ You can use the following procedures in Service Manager to register the System C
 
 ### Register the data warehouse with another Service Manager management group
 
+To register the data warehouse with another Service Manager management group, follow these steps:
+
 1. By using an account that is a member of the Service Manager and data warehouse management administrators group, sign in to the computer that hosts the Service Manager console.
 
 2. In the Service Manager console, select **Data Warehouse**.
@@ -154,6 +156,8 @@ You can use the following procedure to manage data warehouse data import jobs in
 - Resuming a suspended, or Not Started, job
 
 ### Manage data import jobs and change a job schedule
+
+To manage data import jobs and change a job schedule, follow these steps:
 
 1. In the Service Manager console, select **Data Warehouse**, expand **Data Warehouse**, and select **Data Warehouse Jobs**.
 
@@ -218,7 +222,7 @@ Other aspects of the data warehouse deployment might appear to have gone smoothl
 
 **Troubleshooting Steps**
 
-To troubleshoot this problem, complete the following steps.
+To troubleshoot this problem, follow these steps:
 
 Step 1: Check the deployment status of your management packs:
 
@@ -287,7 +291,7 @@ One or more data warehouse jobs start failing after importing a custom managemen
 
 To troubleshoot this problem, complete the following steps:
 
-1. Check the event log to ensure that the root cause is the custom management pack:
+1. Check the event log to ensure that the root cause is the custom management pack by following these steps:
 
     1. On data warehouse management server, open the Operations Manager event log.
 
@@ -305,7 +309,7 @@ To troubleshoot this problem, complete the following steps:
 
     4. After the MP Sync job is completed, resume the failed job either from the Service Manager console or with a Windows PowerShell cmdlet.
 
-3. Fix and reimport the custom management pack:
+3. Fix and reimport the custom management pack by following these steps:
 
     1. Remove the custom management pack and recover from the failure using step 2, shown previously.
 
@@ -353,13 +357,13 @@ Ensure that your management pack is synced to the data warehouse by completing t
 
 2. Select **Data Warehouse**.
 
-3. Select **Management Packs**, and then locate your management pack in the list of management packs. To do this, use the search feature by entering your management pack name in the search box. If you don't see your management pack:
+3. Select **Management Packs**, and then locate your management pack in the list of management packs. To do this, use the search feature by entering your management pack name in the search box. If you don't see your management pack, do the following:
 
     1. It might have failed to import into the data warehouse management server. Go to the data warehouse management server, open the Operations Manager event log and then filter the events with **Event Sources** as **OpsMgr SDK Service**.
 
     2. The MPSync job may not have run yet. It runs on a recurring schedule, which is, by default, once every hour. You can modify the schedule with Windows PowerShell. To speed up management pack synchronization, after you import your management pack you can manually resume the MPSync job, either from the Service Manager console or by using Windows PowerShell.
 
-Check the deployment status of your management pack:
+Check the deployment status of your management pack by following these steps:
 
 1. Open the Service Manager console.
 
