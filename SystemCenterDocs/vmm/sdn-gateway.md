@@ -4,7 +4,6 @@ title: Set up an SDN RAS Gateway in the VMM Fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-ms.topic: article
 ms.date: 04/22/2025
 ms.topic: how-to
 ms.service: system-center
