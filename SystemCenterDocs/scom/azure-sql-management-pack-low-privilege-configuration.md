@@ -3,8 +3,7 @@ ms.assetid: 8f864a9e-b04a-43e3-a624-574d5f08f823
 title: Low-privilege configuration in Management Pack for Azure SQL Database
 description: This article explains how to configure low-privilege configuration in Management Pack for Azure SQL Database
 author: Anastas1ya
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

@@ -5,6 +5,7 @@ description: This article provides guidance for adding files to the library in t
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/02/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager

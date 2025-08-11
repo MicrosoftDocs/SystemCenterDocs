@@ -2,10 +2,9 @@
 ms.assetid: 1e065bb4-b2a4-4632-a262-67bdfc23f0d1
 title: Configure VM Failover Between Virtual Networks in VMM
 description: This article describes how to fail over VMs between virtual networks without Azure Site Recovery
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/21/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager

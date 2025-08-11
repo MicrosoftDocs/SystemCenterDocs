@@ -2,6 +2,7 @@
 title: Configuration Manager integration pack activities
 description: This article contains configuration instructions for activities provided by the Configuration Manager integration pack.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article

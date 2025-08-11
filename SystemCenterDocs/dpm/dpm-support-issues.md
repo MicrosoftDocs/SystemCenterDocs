@@ -5,7 +5,8 @@ author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 08/07/2025
+ms.update-cycle: 180-days
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -492,6 +493,29 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ## <a name="BKMK_Data"></a>Data protection issues
 
+::: moniker range=">=sc-dpm-2019"
+
+### Protected Data Source 16 TB size limit 
+
+**Issue**: By default, DPM formats the Replica volume using 4K NTFS Cluster size. This limits the NTFS volume size to 16 TB.  If the Data source being protected exceeds the 16 TB limit, protection fails with the following error:
+
+**DPM is out of disk space for the replica. (ID 58 Details: There is not enough space on the disk (0x80070070))**
+
+If the amount of the protected data source is below the limit initially, initial protection succeeds but if it exceeds the 16 TB limit later, DPM auto grows the replica virtual disk but then fails while it attempts to extend the file system to beyond the 16 TB limit.
+
+If the amount of the protected data source is above the 16 TB limit at the time of initial protection, the new replica allocation fails.
+
+**Workaround**: If the amount of the protected data source is above the 16 TB limit at the time of initial protection, you can add the following registry entry to force DPM to create the replica volume using NTFS 16K Cluster size. This enables the maximum 64TB file system limit, which supports Shadow copies.
+
+If the data source exceeded the 16 TB limit after initial replica was created using default 4K cluster and now fails, you can either reduce the amount of protected data on the source to below 16 TB limit to continue backups, or you must stop protection, delete the replica, and start protection over after adding the registry setting to increase the cluster size.
+
+Registry setting to increase the initial Replica NTFS cluster size 16K is
+
+`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage`
+`ReplicaVolumeClusterSize:REG_DWORD:0x00004000 (16384)`
+
+::: moniker-end
+
 ### DPM doesn't back up shared VHDX
 
 **Issue**: DPM can't back up VMs using shared drives (which are potentially attached to other VMs) as the Hyper-V VSS writer can't back up volumes that are backed up by shared VHDs.
@@ -658,9 +682,9 @@ These workloads can be running on a single server or in a cluster configuration.
 
 ### SQL distributed availability group using Managed Instance Links
 
-**Issue**: DPM cannot protect a SQL DAG when using [Managed Instance Links](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql).
+**Issue**: DPM cannot protect a SQL DAG when using [Managed Instance Links](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql&preserve-view=true).
 
-**Workaround**: [Use Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql).
+**Workaround**: [Use Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql&preserve-view=true).
 
 ### SQL Server 2022 support
 

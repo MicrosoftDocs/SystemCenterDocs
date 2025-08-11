@@ -3,9 +3,8 @@ ms.assetid: d68fe81d-e14c-494f-b118-e9a421d551c1
 title: Features and enhancements in Management Pack for SQL Server Reporting Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Reporting Services
 author: epomortseva
-ms.author: v-vlchernov
-manager: evansma
-ms.date: 06/27/2025
+ms.author: jsuri
+ms.date: 06/30/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,7 +14,7 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
-## July 2025 – 7.9.7 CTP
+## July 2025 – 7.10.4 RTM
 
 ### What’s New
 
@@ -24,6 +23,8 @@ This article covers new functionality and improvements in Management Pack for SQ
   - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
 
 - Included minor enhancements and routine maintenance updates to improve system stability and overall reliability.
+
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
 ### Known Issues
 

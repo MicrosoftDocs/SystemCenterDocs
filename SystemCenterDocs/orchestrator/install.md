@@ -3,7 +3,8 @@ title: Install Orchestrator
 description: Provides instructions for installing System Center - Orchestrator
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/19/2025
+ms.date: 08/07/2025
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
@@ -611,14 +612,14 @@ A connection was successfully established with the server, but then an error occ
 
 Following are the three ways to mitigate this error:
 
-- Option 1: [Install a valid certificate on a server](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16).
+- Option 1: [Install a valid certificate on a server](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16&preserve-view=true).
   
     >[!Note]
     > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
     
-- Option 2: `TrustServerCertificate=True` to allow bypassing the normal trust mechanism (not recommended). For more information, see [How encryption and certificate validation works](/sql/connect/oledb/features/encryption-and-certificate-validation?view=sql-server-ver16#encryption-and-certificate-validation-behavior).
+- Option 2: `TrustServerCertificate=True` to allow bypassing the normal trust mechanism (not recommended). For more information, see [How encryption and certificate validation works](/sql/connect/oledb/features/encryption-and-certificate-validation?view=sql-server-ver16#encryption-and-certificate-validation-behavior&preserve-view=true).
 
-    1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
+    1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate&preserve-view=true).
     1. During installation, check the checkbox **Yes, Trust Server Certificate (not recommended)**.
        Following configuration occurs:
           1. For SQL Connection string, adds *Trust Server Certificate=true*.
