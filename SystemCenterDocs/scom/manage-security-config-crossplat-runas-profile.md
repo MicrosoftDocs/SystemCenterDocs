@@ -107,6 +107,6 @@ To add a Run As account, follow these steps:
 
 5.  On the **Run As Accounts** page, select **Add** to add a Run As account that you created. Select the class, group, or object that will be accessed using the credentials in the Run As account.  
 
-6.  Select **Save**.  
+6.  Select **Save**.
 
 Repeat as needed until all three profiles have been configured with one or more Run As accounts.  

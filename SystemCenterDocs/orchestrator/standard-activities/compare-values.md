@@ -10,9 +10,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Compare Values
 

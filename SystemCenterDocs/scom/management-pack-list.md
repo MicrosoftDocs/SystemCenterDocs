@@ -2,10 +2,9 @@
 ms.assetid: 
 title: Microsoft Management Packs
 description: This article lists the Microsoft Management Packs.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 12/20/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/11/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -89,7 +88,7 @@ The following table is for reference only and contains links to management packs
 |[Microsoft Analytics Platform System](https://www.microsoft.com/download/details.aspx?id=42522)|1.0.0.0|09/27/2019|
 |[Microsoft Azure SQL Database (CTP1)](https://www.microsoft.com/download/details.aspx?id=54359)|7.0.25.0|09/08/2020|
 |[Microsoft Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.26.0|11/03/2020|
-|[Microsoft Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.0.34.0|12/22/2021|
+|[Microsoft Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.6.0|8/5/2024|
 |[Microsoft Azure Stack Hub](https://www.microsoft.com/download/details.aspx?id=55184)|1.0.9.0|03/30/2023|
 |[Microsoft Distributed Transaction Coordinator (MSDTC) 2016 and above Management Pack for Microsoft System Center](https://www.microsoft.com/download/details.aspx?id=54271)|10.0.0.1|6/7/2022|
 |[Microsoft Exchange Server 2013 and above Management Pack](https://www.microsoft.com/download/details.aspx?id=39039)|15.0.669.23|6/22/2022|
@@ -98,12 +97,12 @@ The following table is for reference only and contains links to management packs
 |[Microsoft Intune Exchange Connector](https://www.microsoft.com/download/details.aspx?id=55990)|1.0.0.0|09/28/2017|
 |[Microsoft RDS Management Pack](https://www.microsoft.com/download/details.aspx?id=54806)|10.0.6.0|12/17/2021|
 |[Microsoft System Center 1801+ Management Pack for Service Management Automation](https://www.microsoft.com/download/details.aspx?id=56559)|7.4.48.0|3/1/2018|
-|[Microsoft System Center 1801+ Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=56557)|7.4.58.0|3/1/2018|
-|[Microsoft System Center 2012 R2 Operations Manager Core Monitoring Agent Management Pack](https://www.microsoft.com/download/details.aspx?id=55033)|7.1.10226.1339|4/6/2017|
+|[Microsoft System Center 1801+ Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=56557)|7.4.58.0|7/15/2024|
+|[Microsoft System Center 2012 R2 Operations Manager Core Monitoring Agent Management Pack](https://www.microsoft.com/download/details.aspx?id=55033)|7.1.10226.1339|7/15/2024|
 |[Microsoft System Center 2012 R2 Operations Manager Management Pack to configure Operations Management Suite](https://www.microsoft.com/download/details.aspx?id=57171)|7.1.10226.1402|7/25/2018|
 |[Microsoft System Center 2016 Management Pack for Hyper-V](https://www.microsoft.com/download/details.aspx?id=54918)|10.0.8.0|2/27/2024|
-|[Microsoft System Center 2016 Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=54064)|7.3.81.0|10/13/2016|
-|[Microsoft System Center 2016 Management Pack for WSUS](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|12/9/2016|
+|[Microsoft System Center 2016 Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=54064)|7.3.81.0|7/15/2024|
+|[Microsoft System Center 2016 Management Pack for WSUS](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|7/15/2024|
 |[Microsoft System Center 2016 Operations Manager Core Monitoring Agent Management Pack](https://www.microsoft.com/download/details.aspx?id=55025)|7.2.11846.0|4/5/2017|
 |[Microsoft System Center 2016 Operations Manager Management Pack to configure Operations Management Suite](https://www.microsoft.com/download/details.aspx?id=57172)|7.2.12074.0|1/28/2019|
 |[Microsoft System Center 2019 and above Management Pack for Orchestrator](https://www.microsoft.com/download/details.aspx?id=56558)|7.5.1.0|2/23/2023|
@@ -112,38 +111,38 @@ The following table is for reference only and contains links to management packs
 |[Microsoft System Center Management Pack for ADDS](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|6/22/2022|
 |[Microsoft System Center Management Pack for Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|12/26/2022|
 |[Microsoft System Center Management Pack for Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.6.0.0|7/24/2024|
-|[Microsoft System Center Management Pack for Internet Information Service 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|4/7/2022|
-|[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57382)|7.6.2.0|7/24/2024|
-|[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|7.6.2.0|7/24/2024|
-|[Microsoft System Center management pack for SQL Server Replication version agnostic 2012-2019+](https://www.microsoft.com/download/details.aspx?id=56204)|7.0.28.0|12/26/2020|
-|[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57381)|7.6.1.0|7/24/2024|
-|[Microsoft System Center management pack for SQL Server version agnostic 2012-2022+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=56203)|7.6.5.0|7/24/2024|
+|[Microsoft System Center Management Pack for Internet Information Service 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|7/15/2024|
+|[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57382)|7.8.3|1/23/2025|
+|[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|6.7.15.0|1/23/2025|
+|[Microsoft System Center management pack for SQL Server Replication version agnostic 2012-2019+](https://www.microsoft.com/download/details.aspx?id=56204)|7.0.28.0|7/15/2024|
+|[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57381)|7.8.2|1/23/2025|
+|[Microsoft System Center management pack for SQL Server version agnostic 2012-2022+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=56203)|7.8.4|1/24/2025||
 |[Microsoft System Center Management Pack for Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|4/7/2022|
 |[Microsoft System Center Management Pack for Windows Print Server 2016 and 1709 plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|12/14/2020|
-|[Microsoft System Center Management Pack for Windows Server Cluster 2016 and above](https://www.microsoft.com/download/details.aspx?id=54701)|10.1.0.0|4/7/2022|
-|[Microsoft System Center Management Pack for Windows Server DHCP 2016 and above](https://www.microsoft.com/download/details.aspx?id=54587)|10.1.0.1|4/7/2022|
-|[Microsoft System Center Management Pack for Windows Server Network Load Balancing 2016 and above](https://www.microsoft.com/download/details.aspx?id=54653)|10.1.0.0|4/7/2022|
-|[Microsoft System Center Management Pack for Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|9/18/2023|
+|[Microsoft System Center Management Pack for Windows Server Cluster 2016 and above](https://www.microsoft.com/download/details.aspx?id=54701)|10.1.0.0|7/15/2024|
+|[Microsoft System Center Management Pack for Windows Server DHCP 2016 and above](https://www.microsoft.com/download/details.aspx?id=54587)|10.1.0.1|7/15/2024|
+|[Microsoft System Center Management Pack for Windows Server Network Load Balancing 2016 and above](https://www.microsoft.com/download/details.aspx?id=54653)|10.1.0.0|7/15/2024|
+|[Microsoft System Center Management Pack for Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|7/15/2024|
 |[Microsoft System Center Operations Manager 1801 Management Pack to configure Operations Management Suite](https://www.microsoft.com/download/details.aspx?id=57173)|7.3.13285.0|1/28/2019|
-|[Microsoft System Center Operations Manager 2016 inbox management pack hotfix for WMI health monitor issue](https://www.microsoft.com/download/details.aspx?id=55792)|7.2.11907.0|8/27/2017|
-|[Microsoft System Center Operations Manager Management Pack for Certificates Monitoring](https://www.microsoft.com/download/details.aspx?id=104858)|2.0.0.1|5/31/2023|
-|[Microsoft System Center Operations Manager Management Pack for Microsoft 365](https://www.microsoft.com/download/details.aspx?id=103379)|10.2.0.0|9/22/2023|
-|[Microsoft System Center Operations Manager Management Pack for Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=50013)|1.8.0.9|8/18/2022|
-|[Microsoft Windows Server File & iSCSI Services 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=57594&WT.mc_id=rss_alldownloads_all)|10.1.0.4|04/07/2022|
+|[Microsoft System Center Operations Manager 2016 inbox management pack hotfix for WMI health monitor issue](https://www.microsoft.com/download/details.aspx?id=55792)|7.2.11907.0|7/15/2024|
+|[Microsoft System Center Operations Manager Management Pack for Certificates Monitoring](https://www.microsoft.com/download/details.aspx?id=104858)|2.0.0.1|7/15/2024|
+|[Microsoft System Center Operations Manager Management Pack for Microsoft 365](https://www.microsoft.com/download/details.aspx?id=103379)|10.2.0.0|9/17/2024|
+|[Microsoft System Center Operations Manager Management Pack for Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=50013)|1.8.0.9|7/15/2024|
+|[Microsoft Windows Server File & iSCSI Services 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=57594&WT.mc_id=rss_alldownloads_all)|10.1.0.4|7/15/2024|
 |[Monitoring Pack for Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1.0|6/8/2012|
 |[NET Application Performance Monitoring with Visual Studio Application Insights (Preview)](https://www.microsoft.com/download/details.aspx?id=53895)|1.0.0.0|09/27/2016|
-|[OMS Service Map Integration](https://www.microsoft.com/download/details.aspx?id=55763)|1.0.0.6|08/16/2017|
+|[OMS Service Map Integration](https://www.microsoft.com/download/details.aspx?id=55763)|1.0.0.6|7/15/2024|
 |[Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1.0|06/08/2012|
-|[Service Bus](https://www.microsoft.com/download/details.aspx?id=41672)|1.0.0.26|09/30/2020|
+|[Service Bus](https://www.microsoft.com/download/details.aspx?id=41672)|1.0.0.26|7/15/2024|
 |[Service Manager 2010 management pack for Operations Manager 2007 R2](https://www.microsoft.com/download/details.aspx?id=23964)|7.0.5826.856|9/24/2020|
 |[SharePoint 2010 Products Management Pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/8/2020|
 |[SharePoint Foundation 2010](https://www.microsoft.com/download/details.aspx?id=13819)|14.0.4745.1000|10/08/2020|
 |[SharePoint Server 2010 (This version is for Operations Manager 2007 R2, see below for Operations Manager 2012 management pack)](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/08/2020|
-|[SharePoint Server 2013](https://www.microsoft.com/download/details.aspx?id=35590)|15.0.4557.1000|09/30/2020|
-|[SharePoint Server 2016](https://www.microsoft.com/download/details.aspx?id=52043)|16.0.13125.1000|07/31/2020|
-|[SharePoint Server 2019](https://www.microsoft.com/download/details.aspx?id=57776&WT.mc_id=rss_alldownloads_all)|16.0.11426.3000|11/18/2021|
-|[Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=47364)|9319.562|6/7/2021|
-|[Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57511&WT.mc_id=rss_alldownloads_all)|2046.143|6/27/2021|
+|[SharePoint Server 2013](https://www.microsoft.com/download/details.aspx?id=35590)|15.0.4557.1000|7/15/2024|
+|[SharePoint Server 2016](https://www.microsoft.com/download/details.aspx?id=52043)|16.0.13125.1000|7/15/2024|
+|[SharePoint Server 2019](https://www.microsoft.com/download/details.aspx?id=57776&WT.mc_id=rss_alldownloads_all)|16.0.11426.3000|7/15/2024|
+|[Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=47364)|9319.562|7/15/2024|
+|[Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57511&WT.mc_id=rss_alldownloads_all)|2046.143|7/15/2024|
 |[Software Defined Networking (SDN) Management Pack](https://www.microsoft.com/download/details.aspx?id=54300)|10.0.0.2|3/21/2022|
 |[SQL Server 2012 Parallel Data Warehouse Appliance](https://www.microsoft.com/download/details.aspx?id=38198)|1.0.14.0|09/30/2020|
 |[Storage Spaces Direct Management Pack for Windows Server 2016 and above](https://www.microsoft.com/download/details.aspx?id=100782)|1.0.47.4|7/27/2022|
@@ -159,9 +158,9 @@ The following table is for reference only and contains links to management packs
 |[System Center 2012 Management Pack for Microsoft Windows Server AD CS 2012](https://www.microsoft.com/download/details.aspx?id=34765)|7.1.10100.0|9/30/2020|
 |[System Center 2012 Management Pack for Microsoft Windows Server File & iSCSI Services 2012 R2](https://www.microsoft.com/download/details.aspx?id=42066)|7.1.10100.2|10/29/2018|
 |[System Center 2012 Management Pack for Multi-Tenant RemoteAccess 2012](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|9/30/2020|
-|[System Center 2012 Management Pack for Windows Deployment Services](https://www.microsoft.com/download/details.aspx?id=36817)|7.0.8560.0|9/30/2020|
+|[System Center 2012 Management Pack for Windows Deployment Services](https://www.microsoft.com/download/details.aspx?id=36817)|7.0.8560.0|7/15/2024|
 |[System Center 2012 Management Pack for Windows Server 2012 R2 Remote Access](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|9/30/2020|
-|[System Center 2012 Management Pack for Windows Server 2012 R2 Windows Deployment Services](https://www.microsoft.com/download/details.aspx?id=40800)|7.1.10100.0|9/30/2020|
+|[System Center 2012 Management Pack for Windows Server 2012 R2 Windows Deployment Services](https://www.microsoft.com/download/details.aspx?id=40800)|7.1.10100.0|7/15/2024|
 |[System Center 2012 Management Pack for RemoteAccess 2012](https://www.microsoft.com/download/details.aspx?id=36496)|7.0.8560.0|9/30/2020|
 |[System Center 2012 R2 Data Protection Manager](https://www.microsoft.com/download/details.aspx?id=45525)|4.2.1276.0|09/25/2020|
 |[System Center 2012 R2 Management Pack for JEE Application Servers](https://www.microsoft.com/download/details.aspx?id=44576)|7.5.1038.0|9/23/2020|
@@ -187,22 +186,22 @@ The following table is for reference only and contains links to management packs
 |[System Center 2016 Virtual Machine Manager](https://www.microsoft.com/download/details.aspx?id=54113&WT.mc_id=rss_alldownloads_all)|10.0.6.0|07/06/2017|
 |[System Center 2019 Management Pack for UNIX and Linux Operating Systems](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1234.0|11/21/2023|
 |[System Center Data Protection Manager 2010](https://www.microsoft.com/download/details.aspx?id=7612)|3.0.7696.12|09/24/2020|
-|[System Center Management Pack for Active Directory Federation Services](https://www.microsoft.com/download/details.aspx?id=54526)|10.0.3.3|8/9/2023|
-|[System Center Management Pack for ADRMS 2012 and 2012 R2](https://www.microsoft.com/download/details.aspx?id=40797)|7.1.10100.0|9/30/2020|
+|[System Center Management Pack for Active Directory Federation Services](https://www.microsoft.com/download/details.aspx?id=54526)|10.0.3.3|7/15/2024|
+|[System Center Management Pack for ADRMS 2012 and 2012 R2](https://www.microsoft.com/download/details.aspx?id=40797)|7.1.10100.0|7/15/2024|
 |[System Center Management Pack for Distributed Transaction Coordinator on Windows Server 2012 R2](https://www.microsoft.com/download/details.aspx?id=41560)|7.1.10100.0|5/5/2021|
 |[System Center Management Pack for Guarded Fabric 2016 and above](https://www.microsoft.com/download/details.aspx?id=52764)|10.0.1.2|4/7/2022|
 |[System Center Management Pack for Message Queuing 2016 and above](https://www.microsoft.com/download/details.aspx?id=57958)|7.1.10242.1|4/7/2022|
-|[System Center Management Pack for Microsoft Windows Server 2012 AD RMS](https://www.microsoft.com/download/details.aspx?id=34766)|7.0.8560.0|9/30/2020|
+|[System Center Management Pack for Microsoft Windows Server 2012 AD RMS](https://www.microsoft.com/download/details.aspx?id=34766)|7.0.8560.0|7/15/2024|
 |[System Center Management Pack for Microsoft Windows Server File & iSCSI Services 2016 and above](https://www.microsoft.com/download/details.aspx?id=57594)|10.1.0.4|4/7/2022|
 |[System Center Management Pack for Service Bus](https://www.microsoft.com/download/details.aspx?id=41672)|1.0.0.26|9/30/2020|
-|[System Center Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=40867)|7.2.48.0|9/25/2020|
-|[System Center Management Pack for Service Reporting](https://www.microsoft.com/download/details.aspx?id=40803)|7.2.68.0|9/30/2020|
+|[System Center Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=40867)|7.2.48.0|7/15/2024|
+|[System Center Management Pack for Service Reporting](https://www.microsoft.com/download/details.aspx?id=40803)|7.2.68.0|7/15/2024|
 |[System Center Management Pack for SharePoint Server 2013](https://www.microsoft.com/download/details.aspx?id=35590)|15.0.4557.1000|11/30/2021|
 |[System Center Management Pack for SharePoint Server 2016](https://www.microsoft.com/download/details.aspx?id=52043)|16.0.13125.10000|11/18/2021|
 |[System Center Management Pack for SharePoint Server 2019](https://www.microsoft.com/download/details.aspx?id=57776)|16.0.11426.3000|11/18/2021|
 |[System Center Management Pack for the Microsoft Analytics Platform System](https://www.microsoft.com/download/details.aspx?id=42522)|1.0|9/27/2019|
 |[System Center Management Pack for Windows 10 and above Operating System](https://www.microsoft.com/download/details.aspx?id=51189)|10.0.0.2|3/21/2022|
-|[System Center Management Pack for Windows Server 2012 DHCP](https://www.microsoft.com/download/details.aspx?id=39062)|6.0.7309.0|9/23/2020|
+|[System Center Management Pack for Windows Server 2012 DHCP](https://www.microsoft.com/download/details.aspx?id=39062)|6.0.7309.0|7/15/2024|
 |[System Center Management Pack for Windows Server 2012 R2 Essentials](https://www.microsoft.com/download/details.aspx?id=40809)|7.1.10100.0|9/30/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Hyper-V](https://www.microsoft.com/download/details.aspx?id=40798)|7.1.10107.0|9/24/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Remote Desktop Services](https://www.microsoft.com/download/details.aspx?id=44991)|7.2.0.0|12/17/2021|
@@ -225,12 +224,12 @@ The following table is for reference only and contains links to management packs
 |[Visual Studio 2015 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=49554)|	14.0.24807.0|09/30/2020|
 |[Visual Studio 2017 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=54791)|15.113.26130.0|02/23/2017|
 |[Windows Client 10 Operating System](https://www.microsoft.com/download/details.aspx?id=51189)|10.0.0.0|02/22/2021|
-|[Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|09/08/2021|
+|[Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|7/15/2024|
 |[Windows Server 2012 R2 Essentials](https://www.microsoft.com/download/details.aspx?id=40809)|7.1.10100.0|09/30/2020|
 |[Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1.0|10/11/2016|
 |[Windows Server Active Directory Certificate Services (ADCS) 2008/2008 R2/2012/2012 R2](https://www.microsoft.com/download/details.aspx?id=34765)|7.1.10100.0|09/30/2020|
 |[Windows Server Active Directory Certificate Services (ADCS) 2016 (and above)](https://www.microsoft.com/download/details.aspx?id=56671)|10.0.0.1|02/11/2021|
-|[Windows Server Active Directory Directory Services (ADDS) 2016 - 2022](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|03/09/2022|
+|[Windows Server Active Directory Directory Services (ADDS) 2016 - 2022](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|7/15/2024|
 |[Windows Server Active Directory Federation Services (ADFS) 2016 (and above)](https://www.microsoft.com/download/details.aspx?id=54526)|10.0.3.2|04/07/2022|
 |[Windows Server Active Directory Lightweight Directory Services (ADLDS) 2008/2008R2/2012R2](https://www.microsoft.com/download/details.aspx?id=1451)|6.0.8228.0|10/08/2020|
 |[Windows Server Active Directory Rights Management Services (ADRMS) 2012 R2](https://www.microsoft.com/download/details.aspx?id=40797)|7.1.10100.0|09/30/2020|
@@ -259,7 +258,7 @@ The following table is for reference only and contains links to management packs
 |[Windows Server Network Load Balancing 2016](https://www.microsoft.com/download/details.aspx?id=54653)|10.1.0.0|09/30/2020|
 |[Windows Server Operating System 2003/2008/2008 R2/2012/2012R2](https://www.microsoft.com/download/details.aspx?id=9296)|6.0.7326.0|04/09/2021|
 |[Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|12/05/2022|
-|[Windows Server Print Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|12/14/2020|
+|[Windows Server Print Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|7/15/2024|
 |[Windows Server Remote Access 2012 R2 Multitenant](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|09/30/2020|
 |[Windows Server Remote Access 2012 R2](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|09/30/2020|
 |[Windows Server Remote Access 2012](https://www.microsoft.com/download/details.aspx?id=36496)|7.0.8560.0|09/30/2020|

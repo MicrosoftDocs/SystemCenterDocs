@@ -7,9 +7,8 @@ ms.date: 03/03/2025
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 

@@ -2,9 +2,8 @@
 ms.assetid: 0497e546-7da7-4342-a427-4a9488ae6c7a
 title: Install Operations Manager with RC4 disabled
 description: This article describes Operations Manager installation with RC4 disabled
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 02/17/2025
 ms.custom: na, intro-installation, UpdateFrequency2
 ms.service: system-center

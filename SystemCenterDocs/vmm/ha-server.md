@@ -2,9 +2,8 @@
 ms.assetid: bc7828ab-1e1f-43d4-a390-c14321f9124b
 title: Deploy highly available VMM management server
 description: This article provides instructions for deploying the VMM server in high availability mode
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
