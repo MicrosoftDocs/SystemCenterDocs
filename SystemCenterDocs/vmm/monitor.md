@@ -5,6 +5,7 @@ description: This article describes how to monitor VMM with VMM jobs, and System
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/02/2024
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

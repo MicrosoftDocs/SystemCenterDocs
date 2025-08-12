@@ -2,9 +2,8 @@
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
 title: Custom database engine query-based monitors in System Center Management Pack for SQL Server
 description: This article explains how to configure a custom database engine query monitor in System Center Management Pack for SQL Server.
-manager: evansma
 author: epomortseva
-ms.author: v-fkornilov
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

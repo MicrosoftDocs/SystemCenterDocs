@@ -7,6 +7,7 @@ ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/09/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 # Computer groups

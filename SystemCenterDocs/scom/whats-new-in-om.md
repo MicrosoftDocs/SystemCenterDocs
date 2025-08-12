@@ -5,6 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager

@@ -2,6 +2,7 @@
 title: Get Tier activity in System Center - Orchestrator
 description: The Get Tier activity is used in a runbook to return data on all tiers within the VMM management server. This article also lists the filters and published data.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article

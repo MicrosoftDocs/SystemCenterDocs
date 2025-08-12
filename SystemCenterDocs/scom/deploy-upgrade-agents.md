@@ -5,6 +5,7 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 monikerRange: ' >=sc-om-2019'

@@ -3,6 +3,7 @@ title: Update Collection Membership activity
 description: Describes the configurable properties for the Update Collection Membership activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +13,6 @@ ms.topic: how-to
 ms.assetid: 32836679-a36c-4d97-8bd4-384502d10f21
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 
 # Update Collection Membership activity for Configuration Manager Integration Pack

@@ -2,6 +2,7 @@
 title: Optimize Performance of .NET Activities in System Center - Orchestrator
 description: Describes how to configure runbook servers in System Center - Orchestrator, to optimize performance of .NET activities.
 ms.date: 04/09/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: how-to

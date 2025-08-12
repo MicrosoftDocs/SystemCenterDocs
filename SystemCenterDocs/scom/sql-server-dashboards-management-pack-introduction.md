@@ -3,8 +3,7 @@ ms.assetid: bb3791a0-51ca-4d4e-acab-6913cc0a50bb
 title: Introduction to management pack for SQL Server Dashboards
 description: This article explains the management pack for SQL Server Dashboards functionality
 author: Anastas1ya
-ms.author: v-vlchernov
-manager: evansma
+ms.author: jsuri
 ms.date: 05/22/2025
 ms.topic: concept-article
 ms.service: system-center

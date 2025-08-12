@@ -5,6 +5,7 @@ description: This article details the upgrade information and procedures for Orc
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/18/2025
+ms.update-cycle: 180-days
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: orchestrator

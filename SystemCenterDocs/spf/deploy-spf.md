@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 
 
 
-This article describes how to install System Center - Service Provider Foundation (SPF).
+This article describes how to install System Center - Service Provider Foundation (SPF). 
 
 SPF is part of System Center - Orchestrator. SPF exposes an extensible OData web service that interacts with System Center Virtual Machine Manager (VMM) that enables service providers and hosters to design and implement multitenant self-service portals that integrate IaaS capabilities into System Center.
 

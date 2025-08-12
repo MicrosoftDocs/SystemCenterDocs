@@ -5,6 +5,7 @@ description: This article details the upgrade information and procedures for Vir
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

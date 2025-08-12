@@ -11,9 +11,9 @@ ms.topic: upgrade-and-migration-article
 ms.assetid: b7260dc1-2314-4474-849b-7f6c627b5280
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Upgrade Deployment
 

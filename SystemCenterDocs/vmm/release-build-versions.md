@@ -3,6 +3,7 @@ ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Release build versions for System Center Virtual Machine Manager
 description: This article details the release builds in Virtual Machine Manager
 ms.date: 04/16/2025
+ms.update-cycle: 180-days
 author: jyothisuri
 ms.author: jsuri
 ms.topic: concept-article
