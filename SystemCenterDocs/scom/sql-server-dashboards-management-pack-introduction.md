@@ -1,7 +1,7 @@
 ---
 ms.assetid: bb3791a0-51ca-4d4e-acab-6913cc0a50bb
-title: Introduction to management pack for SQL Server Dashboards
-description: This article explains the management pack for SQL Server Dashboards functionality
+title: Introduction to Management Pack for SQL Server Dashboards
+description: This article explains the Management Pack for SQL Server Dashboards functionality
 author: Anastas1ya
 ms.author: jsuri
 ms.date: 05/22/2025
@@ -10,7 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Introduction to management pack for SQL Server Dashboards
+# Introduction to Management Pack for SQL Server Dashboards
 
 Microsoft SQL Server Dashboards Management Pack provides the ability to create and customize visualization on the fly.
 
