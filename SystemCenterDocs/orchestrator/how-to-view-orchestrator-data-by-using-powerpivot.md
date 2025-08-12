@@ -16,7 +16,7 @@ You can use Microsoft PowerPivot for Microsoft Excel to create reports for Syste
 
 ## Install PowerPivot  
 
-You must install PowerPivot for Excel to enable the product.  [Learn more](/previous-versions/sql/sql-server-2012/gg413462(v=sql.110)).  
+You must install PowerPivot for Excel to enable the product. [Learn more](/previous-versions/sql/sql-server-2012/gg413462(v=sql.110)).  
 
 ## Create a connection to an Orchestrator feed  
 
