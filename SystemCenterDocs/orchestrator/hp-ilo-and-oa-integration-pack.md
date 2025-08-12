@@ -21,7 +21,7 @@ ms.date: 04/09/2025
 ::: moniker range="sc-orch-2019"
 
 >[!NOTE]
->HP iLO and OA Integration pack has been discontinued from System Center Orchestator 2022 and later.
+>HP iLO and OA Integration pack has been discontinued from System Center Orchestrator 2022 and later.
 
 ::: moniker-end
 

@@ -37,7 +37,7 @@ To create a connection to an Orchestrator feed, follow these steps:
 
     If the test connection fails, do the following:  
 
-    1. Selectlick **OK**.  
+    1. Select **OK**.  
     2. Select **Advanced**. The **Advanced** dialog box opens.  
     3. In the **Security** section, change **Integrated Security** to **Basic**.  
     4. Change **Persist Security Info** to **True**.  
