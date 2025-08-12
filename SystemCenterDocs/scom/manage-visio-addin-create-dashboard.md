@@ -65,4 +65,4 @@ Your Web part should now display with the published diagram in the Visio Web Acc
 
 ## Next steps
 
-Learn how to [publish Visio diagrams] that you’ve connected to Operations Manager data to a SharePoint document library(manage-visio-addin-publish-sharepoint.md).
+Learn how to [publish Visio diagrams](manage-visio-addin-publish-sharepoint.md) that you’ve connected to Operations Manager data to a SharePoint document library.
