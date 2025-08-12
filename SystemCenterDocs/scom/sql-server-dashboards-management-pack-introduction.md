@@ -16,9 +16,9 @@ Microsoft SQL Server Dashboards Management Pack provides the ability to create a
 
 There are two views in SQL Server Dashboards:
 
-- **Datacenter**-an aggregated view.
+- **Datacenter**- Gives an aggregated view.
 
-- **Instance**-provides detailed information about the selected object.
+- **Instance**- Provides detailed information about the selected object.
 
 ## Supported Configurations
 
