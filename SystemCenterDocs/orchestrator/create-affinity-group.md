@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: c361dda5-c55c-4743-8053-1bdf57667fa3
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Create Affinity Group

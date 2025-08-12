@@ -1,10 +1,10 @@
 ---
-title: Operations Manager deployment consideration in System Center - Service Manager
+title: Operations Manager Deployment Consideration in System Center - Service Manager
 description: This article contains information to be aware of when you're combining Operations Manager and Service Manager.
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025 
 ms.subservice: service-manager
 ms.topic: concept-article
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -29,6 +29,8 @@ When you deploy a Service Manager management server and a data warehouse, you ne
 
 ## Database collations
 
+Here are some considerations to use database collations:
+
 - You must use the same supported language collations if you want to import data from Operations Manager into Service Manager.
 - This only applies to the Operations Manager database, and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse. Specifically, this appears in the Service Manager console as a Data Warehouse Data Source.
 - This doesn't affect either the Operations Manager to Service Manager Configuration Item connector, or the Operations Manager to  Service Manager Alert Incident connector.  
@@ -48,7 +50,7 @@ Operations Manager is supported by Service Manager, and Service Manager for conn
 
 ### Operations Manager agents
 
-Service Manager includes an Operations Manager agent. The agent is automatically installed when you deploy Service Manager. After installation, you must manually configure the agent to communicate with the Operations Manager management server.  
+Service Manager includes an Operations Manager agent. The agent is automatically installed when you deploy Service Manager. After installation, you must manually configure the agent to communicate with the Operations Manager management server.
 
 - To validate that the agent is installed, open **Control Panel**, and verify that the agent is present.
 - To monitor a server running the Self-Service Portal, or the Service Manager console, deploy the Operations Manager agent on the server before you install the portal or console.
@@ -62,4 +64,4 @@ Service Manager includes an Operations Manager agent. The agent is automatically
 
 ## Next steps
 
-[Review](sm-languages.md) languages supported by Service Manager.
+Review [languages supported by Service Manager](sm-languages.md).

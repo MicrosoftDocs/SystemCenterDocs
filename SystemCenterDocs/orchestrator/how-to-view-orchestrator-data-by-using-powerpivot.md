@@ -2,6 +2,7 @@
 title: View Orchestrator data with PowerPivot
 description: Describes how to use PowerPivot for Excel to analyze operations data in System Center - Orchestrator.
 ms.date: 04/09/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: how-to

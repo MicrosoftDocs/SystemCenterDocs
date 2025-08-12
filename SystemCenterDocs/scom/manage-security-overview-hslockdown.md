@@ -1,10 +1,10 @@
 ---
 ms.assetid: 81cb4616-6574-471f-a939-d05198d0d65c
-title: Control Access by Using the Health Service Lockdown Tool in Operations Manager
+title: Control Access by using the Health Service Lockdown Tool in Operations Manager
 description: This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.topic: how-to
 
 # Control access by using the Health Service Lockdown Tool in Operations Manager
 
-
+This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
 
 On computers requiring high security, for example a domain controller, you might need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
 
@@ -38,9 +38,11 @@ Accounts must be specified in one of the following fully qualified domain name (
 
 If you used the add or deny options when running the Health Service Lockdown tool, you'll need to restart the System Center Management service before the changes take effect.  
 
-When evaluating allowed and denied listings, know that denies takes priority over allows. If a user is listed as allowed, and the same user is a member of a group that is listed as denied, the user will be denied.  
+When evaluating allowed and denied listings, know that denials take priority over allows. If a user is listed as allowed, and the same user is a member of a group that is listed as denied, the user will be denied.  
 
-## To deny an account with the health service lockdown tool  
+## Deny an account with the health service lockdown tool
+
+To deny an account with the health service lockdown tool, follow these steps:
 
 1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
@@ -56,7 +58,9 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
-## To unlock the Action account  
+## Unlock the Action account
+
+To unlock the Action account, follow these steps:
 
 1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
@@ -72,7 +76,9 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
-## To add the Local System account
+## Add the Local System account
+
+To add a Local System account, follow these steps:
 
 1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
@@ -90,8 +96,8 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
 
-- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
+- If you need to create new credentials for the management server action account, see [Create a new Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
 
 - To understand how to target Run As account distribution to agent-managed computers securely, review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  

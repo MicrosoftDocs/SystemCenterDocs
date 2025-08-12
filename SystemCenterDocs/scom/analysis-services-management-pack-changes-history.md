@@ -2,10 +2,9 @@
 ms.assetid: 8e379e26-a604-4976-88ff-d291c48b8700
 title: Features and enhancements in Management Pack for SQL Server Analysis Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Analysis Services
-author: fkornilov
-ms.author: v-vlchernov
-manager: evansma
-ms.date: 06/27/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 06/30/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,7 +14,7 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
-## July 2025 – 7.9.7 CTP
+## July 2025 – 7.10.4 RTM
 
 ### What’s New
 
@@ -30,6 +29,8 @@ This article covers new functionality and improvements in Management Pack for SQ
     - "Msmdsrv Private Memory (%)" measures private memory usage as a percentage of total physical memory, combining usage from `msmdsrv.exe` and its child processes.
 
 - Included minor enhancements and routine maintenance updates to improve system stability and overall reliability
+
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
 ## January 2025 - 7.8.3 RTM
 

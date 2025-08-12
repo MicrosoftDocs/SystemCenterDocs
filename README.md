@@ -5,7 +5,7 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 
 # System Center Technical Documentation Contributor Guide
 
-You've found the GitHub repository that houses the source for System Center technical documentation that is published to  [TechNet](https://technet.microsoft.com/system-center-docs/).
+You've found the GitHub repository that houses the source for System Center technical documentation that is published to  [Microsoft Learn](https://learn.microsoft.com/en-us/system-center/).
 
 This repository also contains guidance to help you contribute to our technical documentation.  For a list of the articles in the contributors' guide, see [the index](./contributor-guide/contributor-guide-index.md).
 

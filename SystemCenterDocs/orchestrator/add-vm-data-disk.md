@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 29ca91cb-1d7f-43b1-a967-23e7cdf2918c
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Add VM Data Disk

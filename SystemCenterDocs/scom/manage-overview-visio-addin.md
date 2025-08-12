@@ -1,9 +1,9 @@
 ---
-title: Using the Visio Add-in and SharePoint Visio Services Data Provider
+title: Use the Visio Add-in and SharePoint Visio Services Data Provider
 description: This article highlights the Visio add-in and SharePoint Visio services data provider.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -11,7 +11,7 @@ ms.topic: concept-article
 ms.assetid: 225d3776-a502-485d-a7ea-096b14f590a6
 ---
 
-# Using the Visio Add-in and SharePoint Visio Services Data Provider
+# Use the Visio Add-in and SharePoint Visio Services Data Provider
 
 
 The Visio Add-in for System Center - Operations Manager combines the strengths of two applications widely used in enterprise IT to simplify the creation of customized dashboards that show the health of an environment. The Visio Add-in lets you create diagrams in Visio 2010, 2013, and 2016 that shows:
@@ -36,7 +36,7 @@ The Visio Add-in and SharePoint  Visio Services Data Provider have the following
 
 -   Health states can be automatically refreshed in published Visio documents that are hosted in SharePoint document libraries, when the Visio Services data provider for System Center - Operations Manager is installed and configured on the SharePoint server farm.  
 
-The following articles provide information about how to install, configure, and use the Visio Add-in and the SharePoint Visio Services Data Provider.  
+The following articles provide information about how to install, configure, and use the Visio Add-in and the SharePoint Visio Services Data Provider:  
 
 -   [Install the Visio Add-in](manage-visio-addin-install-configure.md)  
 

@@ -5,7 +5,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -191,7 +191,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 
  Binary data isn't stored directly in a management pack. Instead, metadata about the binary resource is stored in the management pack, and the actual binary data is stored externally in a resource file. The metadata includes a unique identifier, the file name, the creation data, the modified date, and accessibility information.  
 
- Binary data can include generic resources, images, assemblies, report definitions, and forms. The following example shows a generic XML resource, an assembly resource, and a report resource.  
+ Binary data can include generic resources, images, assemblies, report definitions, and forms. The following example shows a generic XML resource, an assembly resource, and a report resource:
 
 ```xml
 <Resources>  
@@ -325,7 +325,7 @@ This article also describes the following sections of a management pack that con
 
 ```  
 
- The following is a section-by-section explanation of what the type definition contains.  
+ The following is a section-by-section explanation of what the type definition contains:  
 
  **The ClassTypes section**  
 
@@ -579,7 +579,7 @@ ItemsSource="{Binding Source={StaticResource getStatusValues}, Mode=OneWay }"
 
 **Define a View**  
 
-The **Views** section of a management pack contains definitions of user interface \(UI\) views. These views can be used to filter and display objects in a management pack.  
+The **Views** section of a management pack contains definitions of user interface \(UI\) views. These views can be used to filter and display objects in a management pack:  
 
 ```  
 <View Target="System.ConfigItem.Projector"   
@@ -667,7 +667,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 
 - View: All projectors  
 
-- Enumerations: working, broken, in repair, new  
+- Enumerations: working, broken, in repair, new.  
 
 ```  
   <LanguagePacks>  
@@ -715,7 +715,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 
 - Class A has a property called Property1  
 
-- Class B derives from, or extends, Class A and therefore has a property called Property1. This property is inherited from Class A, the parent, or base class\)  
+- Class B derives from, or extends, Class A and therefore has a property called Property1. This property is inherited from Class A, the parent, or base class.
 
 - The definition of Class B adds a property called Property2.  
 
@@ -753,7 +753,7 @@ IsExtensionType="true"
 
  **Full Example**  
 
- The following code example shows the full management pack containing the class extension.  
+ The following code example shows the full management pack containing the class extension:  
 
 ```  
 ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" ContentReadable="true" SchemaVersion="1.1">  
@@ -797,7 +797,7 @@ ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://ww
 Import-SCSMManagementPack MyServiceManager.ManagementPack.xml  
 ```  
 
- This document doesn't describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Using Management Packs in Service Manager](~/scsm/management-packs.md).  
+ This document doesn't describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Use Management Packs in Service Manager](~/scsm/management-packs.md).  
 
 ### Full management pack example
 
@@ -1034,4 +1034,4 @@ namespace SMFormsDemo
 
 ## Next steps
 
-- [Seal a management pack](seal-mp.md).
+[Seal a management pack](seal-mp.md).
