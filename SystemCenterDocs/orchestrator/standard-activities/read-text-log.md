@@ -3,6 +3,7 @@ title: Read Text Log
 description: This article describes the Read Text Log activity that will read lines in a structured text log file.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/09/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

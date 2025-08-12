@@ -11,8 +11,8 @@ ms.topic: upgrade-and-migration-article
 ms.assetid: 748c58c3-6ef0-4249-b6bc-51f756d89f61
 author: jyothisuri
 ms.author: jsuri
-ROBOTS: noindex
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Migrate VM activity
 

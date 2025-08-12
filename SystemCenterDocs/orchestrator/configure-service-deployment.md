@@ -2,6 +2,7 @@
 title: Configure Service Deployment activity in System Center - Orchestrator
 description: The Configure Service Deployment activity is used in a runbook to configure a VMM service for deployment. It also lists configure optional properties.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article

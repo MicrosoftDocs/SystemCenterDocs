@@ -5,6 +5,7 @@ description: This article provides an overview of Run As accounts and profiles i
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager

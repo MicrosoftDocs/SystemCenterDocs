@@ -3,6 +3,7 @@ title: Monitoring
 description: This article provides a brief description of tasks you can accomplish when using each Monitoring activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/09/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

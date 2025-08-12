@@ -1,10 +1,10 @@
 ---
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
-title: Set up an SDN RAS gateway in the VMM fabric
+title: Set up an SDN RAS Gateway in the VMM Fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,7 +21,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 ::: moniker range=">=sc-vmm-2022"
 
-> [!Note]
+> [!NOTE]
 > VMM 2025 and 2022 provide dual stack support for RAS gateway.
 
 ::: moniker-end
@@ -34,7 +34,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 ## Before you start
 
-Ensure the following before you start:
+Here are some considerations before you set up an SDN RAS gateway:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM) and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You must deploy the network controller before you deploy the RAS gateway.
@@ -43,7 +43,7 @@ Ensure the following before you start:
 
 ## Deployment steps
 
-To set up a RAS gateway, do the following:
+To set up a RAS gateway, follow these steps:
 
 1. **Download the service template**: Download the service template that you need to deploy the GW.
 2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
@@ -58,10 +58,12 @@ To set up a RAS gateway, do the following:
 
 ## Download the service template
 
+To download the service template, follow these steps:
+
 1. Download the SDN folder from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN) and copy the templates from **VMM** >**Templates** > **GW** to a local path on the VMM server.
 2. Extract the contents to a folder on a local computer. You'll import them to the library later.
 
-The download contains Two templates:
+The download contains two templates:
 
 - The EdgeServiceTemplate_Generation 1 VM.xml template is for deploying the GW Service on Generation 1 virtual machines.
 - The EdgeServiceTemplate_Generation 2 VM.xml is for deploying the GW Service on Generation 2 virtual machines.
@@ -69,6 +71,8 @@ The download contains Two templates:
 Both the templates have a default count of three virtual machines, which can be changed in the service template designer.
 
 ## Create the GRE VIP logical network
+
+To create the GRE VIP logical network, follow these steps:
 
 1. In the VMM console, run the Create Logical Network Wizard. Enter a **Name**, optionally provide a description, and  select **Next**.
 ::: moniker range="sc-vmm-2019"
@@ -144,6 +148,8 @@ Both the templates have a default count of three virtual machines, which can be 
 
 ::: moniker range=">=sc-vmm-2019"
 
+To create an IP address pool, follow these steps:
+
 1. Right-click the GRE VIP logical network > **Create IP Pool**.
 2. Enter a **Name** and optional description for the pool, and check that the VIP network is selected. Select **Next**.
 3. Accept the default network site and select **Next**.
@@ -167,6 +173,8 @@ Both the templates have a default count of three virtual machines, which can be 
 ::: moniker-end
 
 ## Import the service template
+
+To import the service template, follow these steps:
 
 1. Select **Library** > **Import Template**.
 2. Browse to your service template folder. As an example,  select the **EdgeServiceTemplate Generation 2.xml** file.
@@ -192,6 +200,8 @@ To enable IPv6, while onboarding Gateway service, select the **Enable IPv6** che
  ::: moniker-end
 
 This example uses the Generation 2 template.
+
+To deploy the gateway service, follow these steps:
 
 1. Select the **EdgeServiceTemplate Generation2.xml** service template, and select **Configure Deployment**.
 2. Enter a **Name**, and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
@@ -246,6 +256,8 @@ To override the maximum number of VM networks that can be used with the gateway 
 ## Configure the gateway manager role
 
 Now that the gateway service is deployed, you can configure the properties and associate it with the network controller service.
+
+To configure the gateway manager role, follow these steps:
 
 1. Select **Fabric** > **Network Service** to display the list of network services installed. Right-click the network controller service > **Properties**.
 2. Select the **Services** tab, and select the **Gateway Manager Role**.
@@ -320,6 +332,8 @@ For more information on connection types, see [this](/windows-server/networking/
 
 ## Set up the traffic selector from PowerShell
 Here's the procedure to set up the traffic selector by using the VMM PowerShell.
+
+To set up the traffic selector, follow these steps:
 
 1. Create the traffic selector by using the following parameters.
 

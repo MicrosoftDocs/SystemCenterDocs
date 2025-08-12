@@ -4,7 +4,8 @@ title: Distribution and Targeting for Run As Accounts and Profiles
 description: This article describes how to target Run As accounts and configure profiles to monitor objects with minimal privileges.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/08/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -27,7 +28,7 @@ Distribution is an attribute of a Run As account in which you specify which comp
 
 Physical computer ABC hosts two instances of Microsoft SQL Server, instance X and instance Y. Each instance uses a different set of credentials for the **sa** account. You create a Run As account with the **sa** credentials for instance X, and a different Run As account with the **sa** credentials for instance Y. When you configure the SQL Server Run As profile, you associate both Run As account credentials for instance X and Y with the profile and specify that the Run As account instance X credentials are to be used for SQL Server instance X and that the Run As account Y credentials are to be used for SQL Server instance Y. Then, you configure both Run As accounts to be distributed to physical computer ABC.  
 
-## Selecting a target for a Run As account  
+## Select a target for a Run As account  
 
 As shown in the previous image, your options for selecting a target for a Run As account are **All targeted objects** and **A selected class, group, or object**.  
 
@@ -38,7 +39,7 @@ When you select **A selected class, group, or object**, you can limit the use of
 > [!NOTE]  
 > The Run As account credentials must be distributed the specific agent-managed systems the Run As credential should be authenticating with before configuring the Run As profile.     
 
-## Comparing more secure and less secure distribution  
+## Compare more secure and less secure distribution  
 
 Operations Manager distributes the Run As account credentials to either all agent-managed computers (the less secure option) or only to computers that you specify (the more secure option). If Operations Manager automatically distributed the Runs As account according to discovery a security risk would be introduced into your environment as illustrated in the following example. This is why an automatic distribution option was not included in Operations Manager.  
 
@@ -51,4 +52,4 @@ When you create a Run As account, you are prompted to choose whether the Run As 
 
 ## Next steps
 
-- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
+To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).

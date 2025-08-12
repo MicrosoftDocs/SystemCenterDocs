@@ -2,6 +2,7 @@
 title: Operations Manager activities in the System Center - Orchestrator integration pack
 description: This article describes all activities in the System Center integration pack for System Center - Operations Manager.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article

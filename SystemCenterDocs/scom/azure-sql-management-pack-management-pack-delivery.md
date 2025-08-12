@@ -3,8 +3,7 @@ ms.assetid: c253b065-5690-4230-88dd-0f794c1480f3
 title: Management Pack for Azure SQL Database delivery
 description: This article explains how to install Management Pack for Azure SQL Database
 author: Anastas1ya
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center
