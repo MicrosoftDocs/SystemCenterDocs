@@ -3,20 +3,16 @@ title: Get Deployment Status Activity
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 08/07/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
 author: jyothisuri
 ms.author: jsuri
-<<<<<<< HEAD
-=======
-manager: jsuri
-
->>>>>>> 8ad97e4473bed05261cfc5488e326ed1e2906684
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack

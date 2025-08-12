@@ -5,9 +5,10 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/19/2025
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 

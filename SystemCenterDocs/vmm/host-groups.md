@@ -5,7 +5,8 @@ description: This article describes how to set up host groups in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/09/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24

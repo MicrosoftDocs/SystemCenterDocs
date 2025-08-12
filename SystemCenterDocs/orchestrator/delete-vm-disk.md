@@ -3,16 +3,16 @@ title: Delete VM Disk
 description: The Delete VM Disk activity deletes the specified data or operating system disk from your image repository.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 02ec5f7f-abad-4144-b78c-f32dfc7312af
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete VM Disk

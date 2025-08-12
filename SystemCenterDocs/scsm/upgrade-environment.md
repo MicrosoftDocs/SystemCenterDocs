@@ -6,11 +6,12 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
 monikerRange: 'sc-sm-2016'
 ---

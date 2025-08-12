@@ -4,10 +4,11 @@ title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 2019, 2022 and 2025 releases.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 08/07/2025
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.topic: article
+ms.topic: release-notes
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
@@ -30,7 +31,7 @@ We recommend you to see the following articles for detailed information about wh
 
 **Description**: Communication with the SQL instances (existing SQL, SharePoint backups or SQL instance enumeration) might fail post upgrading to DPM 2025 if OLEDB 19 isn't installed.
 
-**Workaround**: Install latest version of [OLEDB 19](https://learn.microsoft.com/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16) (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
+**Workaround**: Install latest version of [OLEDB 19](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16&preserve-view=true) (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
 
 In addition, following are the improvements:
 

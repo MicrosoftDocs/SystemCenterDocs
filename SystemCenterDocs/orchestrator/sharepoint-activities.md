@@ -3,16 +3,16 @@ title: SharePoint Activities
 description: The following configuration instructions apply to all the activities in this integration pack. It also lists the properties tabs.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 998dfa81-2129-4879-b4cf-743b4e3ca609
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # SharePoint Activities
 

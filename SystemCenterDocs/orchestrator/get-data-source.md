@@ -3,12 +3,13 @@ title: Get Data Source
 description: The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload).
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 36855461-0113-451b-86f9-e10656fd8b15
 author: jyothisuri
 ms.author: jsuri

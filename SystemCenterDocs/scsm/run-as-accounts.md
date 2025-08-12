@@ -1,7 +1,7 @@
 ---
 title: Manage Run As accounts
 description: Describes how to manage Run As accounts in Service Manager.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

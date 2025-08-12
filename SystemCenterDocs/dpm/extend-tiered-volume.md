@@ -1,12 +1,12 @@
 ---
 description: This article explains how to extend the tiered volume in System Center - Data Protection Manager.
-ms.topic:  article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title:  Extend tiered volume in System Center Data Protection Manager
+ms.date: 04/02/2025
+title:  Extend Tiered Volume in System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -59,7 +59,9 @@ $Partition | Resize-Partition -Size ($Partition | Get-PartitionSupportedSize).Si
 
 ## Add disk to storage pool
 
-You can add more capacity to the tiered volume by adding new disks. Based on the requirement, you can add additional HDDs or SSDs. Follow the step below to add disks to a storage pool.
+You can add more capacity to the tiered volume by adding new disks. Based on the requirement, you can add additional HDDs or SSDs.
+
+To add disks to a storage pool, follow these steps:
 
 1. Physically connect the additional disks that you want to add, and [initialize these disks](add-storage.md#initialize-disks).
     After initialization, the newly added disks appear in the **Primordial** storage pool.

@@ -3,12 +3,13 @@ title: Get DPM Server Capacity
 description: The Get DPM Server Capacity activity is used in a runbook that queries a Data Protection Manager server for its available free storage capacity.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: be555ca0-71d1-4de6-ad5f-b1d2089ad958
 author: jyothisuri
 ms.author: jsuri

@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service P
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/28/2023
-ms.topic: article
+ms.topic: release-notes
 ms.service: system-center
 ms.subservice: service-provider-foundation
 monikerRange: '>sc-spf-2016'

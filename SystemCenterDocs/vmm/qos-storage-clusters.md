@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 12/18/2024
 ms.custom: engagement-fy24
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'

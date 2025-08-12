@@ -1,16 +1,17 @@
 ---
-title: Create and deploy server images of Service Manager
+title: Create and Deploy Server Images of Service Manager
 description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 07/22/2025
+ms.update-cycle: 1095-daysn
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 ---
 
@@ -25,6 +26,8 @@ You can use the information in this article to create a system image that contai
  Afterward, modify and save the sample CMD file below to create your own customized version and then run the file.  
 
 ## Prepare the server for imaging  
+
+To prepare the server for imaging, follow these steps:
 
 1. Install Windows Server on the new server.  
 
@@ -47,7 +50,7 @@ You can use the information in this article to create a system image that contai
 
 ### Create a CMD file that completes image installation  
 
-- Copy the following sample and modify it, as needed.  
+- Copy the following sample and modify it, as needed: 
 
     ```  
     @echo off  

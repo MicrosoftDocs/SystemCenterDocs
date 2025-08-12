@@ -3,12 +3,13 @@ title: Run SSH Command
 description: This article describes the functionality of Run SSH Command activity.
 ms.custom: UpdateFrequency3
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: f04d8a08-3621-4d03-b231-20994b0d5c93
 caps.latest.revision: 25
 author: jyothisuri

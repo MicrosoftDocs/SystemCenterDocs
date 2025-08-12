@@ -4,9 +4,10 @@ description: This article provides an overview of System Center - Orchestrator
 author: jyothisuri
 ms.author: jsuri
 ms.date: 12/17/2024
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 

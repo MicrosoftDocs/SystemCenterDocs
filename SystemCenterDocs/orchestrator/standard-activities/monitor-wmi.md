@@ -3,12 +3,13 @@ title: Monitor WMI
 description: This article describes the functionality of Monitor WMI activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: d825cef7-e68a-4387-829e-c3602bed2b6a
 caps.latest.revision: 19
 author: jyothisuri

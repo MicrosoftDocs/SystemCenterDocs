@@ -5,7 +5,8 @@ description: This article details the schema for the System Center Operations Ma
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.update-cycle: 1825-days
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 monikerRange: '>=sc-om-2019'

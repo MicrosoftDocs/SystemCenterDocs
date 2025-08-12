@@ -7,13 +7,13 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: a60f46a3-7696-4857-8cd9-eecc2162c9ee
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Shutdown VM Instance
 

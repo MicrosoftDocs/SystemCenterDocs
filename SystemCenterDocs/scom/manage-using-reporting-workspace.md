@@ -1,24 +1,28 @@
 ---
-title: Use the Reporting workspace in Operations Manager
+title: Use the Reporting Workspace in Operations Manager
+
 description: This article describes how to use the Operations Manager Operations console to view and administer reports.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/02/2025
+ms.date: 03/31/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: dbfffaab-d49c-42a5-bbb3-77cbeae9b841
 ---
 
-# Use the Reporting workspace in Operations Manager
+# Use the Reporting Workspace in Operations Manager
+
 
 
 
 System Center Operations Manager provides extensive reporting capabilities, including multiple report libraries that you can select from to customize reports for your specific requirements. Reports perform a query against the data warehouse database and return the results in an easy-to-read format.  
 
 > [!IMPORTANT]  
-> Users must be a member of the Report Operator Users role to run reports.  
+> Users must be a member of the Report Operator Users role to run reports. 
+
+This article discusses the Reporting Workspace in Operations Manager.
 
 ## Reporting  
 Reporting in the Reporting workspace contains all reports installed with Operations Manager, as well as those reports included in management packs that you've imported.  
@@ -52,5 +56,6 @@ In Operations Manager, you can run and view favorite reports under **Web Console
 
 ## Next steps
 
-- Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to create reports for your operational needs.
-- [Run, save, and export a report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
+ * Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to reports for your operational needs.
+
+ * [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.

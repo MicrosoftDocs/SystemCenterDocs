@@ -1,10 +1,10 @@
 ---
 description: This article describes how you can identify tape libraries compatible with DPM.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Identify compatible tape libraries
+ms.date: 04/22/2025
+title: Identify Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 author: jyothisuri
@@ -13,6 +13,8 @@ ms.custom: engagement-fy24
 ---
 
 # Identify compatible tape libraries
+
+This article describes how you can identify tape libraries compatible with DPM.
 
 Find the latest list of [compatible tape libraries](./dpm-compatible-tape-libraries.md) for System Center Data Protection Manager (DPM).
 
@@ -34,7 +36,7 @@ Before you run the tool, do the following:
 
 - Insert cleaning tape in slot 1. The tapes must be in consecutive slots, and there should be no tapes in the slots between the tapes. The data tape's slot must precede the cleaning tape slot.
 
-To acquire and run the compatibility tool:
+To acquire and run the compatibility tool, follow these steps::
 
 1. Download the [DPM Tape Library Compatibility Test Tool](https://go.microsoft.com/fwlink/?LinkId=203337).
 

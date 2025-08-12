@@ -4,7 +4,7 @@ description: Describes how to restore a database from backup in System Center - 
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.custom: engagement-fy23

@@ -7,11 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 32e0b1e4-6e53-42a3-a6e1-4f144d2e4073
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 
 # Get Host Properties Activity

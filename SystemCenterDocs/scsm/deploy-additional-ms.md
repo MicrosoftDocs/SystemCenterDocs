@@ -6,11 +6,12 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 80e03b05-c500-4b96-8ca0-4193e9cc07b1
 ---
 

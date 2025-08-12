@@ -1,12 +1,12 @@
 ---
-title: Monitoring types in Management Pack for Azure SQL Database
-description: Learn how to set up Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database.
+title: Monitoring Types in management pack for Azure SQL Database
+description: Learn how to set up Azure REST API and T-SQL monitoring in management pack for Azure SQL Database.
 ms.custom: engagement-fy23
 author: FKornilov
 ms.author: v-fkornilov
 manager: ebruersan
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/02/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---
@@ -65,7 +65,7 @@ When you use the Azure REST API, the Management Pack for Azure SQL Database uses
 
 For more information, see [Create a Microsoft Entra application and service principal that can access resources](/entra/identity-platform/howto-create-service-principal-portal).
 
-To monitor Azure SQL Database instances by using the Azure REST API:
+To monitor Azure SQL Database instances by using the Azure REST API, follow these steps:
 
 1. In the Operations Manager console, go to **Authoring** > **Management Pack Templates**. Right-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
@@ -242,7 +242,7 @@ T-SQL is intended to monitor specific Azure SQL Database servers. When you selec
 > [!NOTE]
 > Each workflow data source creates a new SQL connection for every pair of SQL Server credentials (username and password). SQL connections are counted for database transaction units and affect billing. For more information, see [Resource limits for Azure SQL Database and Azure Synapse Analytics servers](/azure/sql-database/sql-database-resource-limits-database-server).
 
-To monitor Azure SQL Database instances by using T-SQL queries:
+To monitor Azure SQL Database instances by using T-SQL queries, follow these steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Templates**. Right-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
@@ -313,4 +313,4 @@ To monitor Azure SQL Database instances by using T-SQL queries:
 
 ## Related content
 
-- [Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md)
+[Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md).

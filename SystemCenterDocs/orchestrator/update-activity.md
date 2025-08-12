@@ -3,16 +3,16 @@ title: Update Activity
 description: The Update Activity activity is used to make changes to activity records for the selected activity class.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 337c7278-33f1-40bd-8966-0f69c67711a5
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update Activity
 

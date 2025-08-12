@@ -3,16 +3,16 @@ title: Create Related Object
 description: The Create Related Object activity is used to create a new Service Manager object that is related to other existing objects either by membership or by a hosted relationship.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 06e71bd9-60d6-4a75-b658-d34791a75e5b
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Related Object
 

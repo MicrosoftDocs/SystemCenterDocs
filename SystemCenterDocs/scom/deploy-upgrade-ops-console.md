@@ -4,11 +4,12 @@ title: Upgrade an Operations Console
 description: This article describes how to upgrade an Operations console to the latest version of System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 07/22/2025
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade an Operations console
@@ -20,6 +21,8 @@ This procedure upgrades a standalone Operations console to System Center - Opera
 Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ## Upgrade a standalone Operations console
+
+To upgrade a standalone Operations console, follow these steps:
 
 1. Sign in to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role in your Operations Manager management group.
 
@@ -52,6 +55,8 @@ Before you begin the upgrade process, ensure that your server meets the minimum 
 
 ### Upgrade a stand-alone Operations console from the Command Prompt
 
+To upgrade a stand-alone Operations console from the command prompt, follow these steps:
+
 1. Sign in to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
 2. Open an elevated Command Prompt by using the **Run as Administrator** option.
@@ -63,6 +68,8 @@ Before you begin the upgrade process, ensure that your server meets the minimum 
     ```
 
 ### Verify the Operations console upgrade
+
+To verify the Operations console upgrade, follow these steps:
 
 1. On the Windows desktop, select **Start**, and select **Run**.
 
@@ -82,7 +89,7 @@ The value of the **UIVersion** entry is 7.2.11719.0.
 
 ## Next steps
 
-- After you've upgraded all of the standalone operations consoles in your management group, you can upgrade the agents. For more information, see [How to Upgrade an Agent to System Center Operations Manager](~/scom/deploy-upgrade-agents.md).
+- After you've upgraded all of the standalone operations consoles in your management group, you can upgrade the agents. For more information, see [Upgrade an Agent to System Center Operations Manager](~/scom/deploy-upgrade-agents.md).
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 

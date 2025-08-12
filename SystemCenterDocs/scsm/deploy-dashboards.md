@@ -10,7 +10,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 08d397c0-f3af-424c-a2cf-9490b4825834
 ---
 

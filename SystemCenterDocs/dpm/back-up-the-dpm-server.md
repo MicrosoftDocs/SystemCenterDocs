@@ -1,6 +1,6 @@
 ---
 description: This article helps you create a strategy for backing up the DPM server.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

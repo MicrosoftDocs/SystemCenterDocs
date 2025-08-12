@@ -4,7 +4,7 @@ description: This article describes the REST integration pack for System Center 
 ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.custom: engagement-fy24

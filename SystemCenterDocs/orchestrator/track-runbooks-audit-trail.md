@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
 author: jyothisuri
 ms.author: jsuri

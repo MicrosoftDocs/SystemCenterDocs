@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 

@@ -7,12 +7,13 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: dd525101-1078-46d0-93a5-f0761c6ad5e8
 author: jyothisuri
 ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 
 # HP Operations Manager Activities
