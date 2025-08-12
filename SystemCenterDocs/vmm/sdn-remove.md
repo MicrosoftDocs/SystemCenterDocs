@@ -17,11 +17,11 @@ ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 
 To remove an SDN from the System Center Virtual Machine Manager (VMM) fabric, you must remove the following objects in the specified order:
 
-1. VM networks (associated with the NC managed logical networks).
-2. Logical networks (managed by NC).
-3. Software load balancer (if deployed or deployed and configured).
-4. Gateway (if deployed or deployed and configured).
-5. Network controller (if deployed or deployed and configured).
+- VM networks (associated with the NC managed logical networks).
+- Logical networks (managed by NC).
+- Software load balancer (if deployed or deployed and configured).
+- Gateway (if deployed or deployed and configured).
+- Network controller (if deployed or deployed and configured).
 
 ## Remove the VM networks
 

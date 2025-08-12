@@ -42,8 +42,6 @@ To deactivate `generatePublisherEvidence` in `policymodule.exe.config`, follow t
 
 ### Create a profile for the service account
 
-To create a profile for the service account, follow this step:
-
 On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
 
 ## Next steps
