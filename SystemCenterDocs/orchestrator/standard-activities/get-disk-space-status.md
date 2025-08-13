@@ -2,7 +2,7 @@
 title: Get Disk Space Status
 description: This article describes the Get Disk Space Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -19,13 +19,15 @@ ms.author: jsuri
 
 The Get Disk Space Status activity will retrieve the current amount of available disk space on a UNC path or local disk drive that you specify. This activity can be used to check the space of a destination folder before transferring files to that location.  
 
+This article describes the Get Disk Space Status activity.
+
 ## Configure the Get Disk Space Status Activity
 
  Before you configure the Get Disk Space Status activity, you need to determine the UNC path or local drive that you want to check.  
 
- Use the following information to configure the Get Disk Space Status activity.  
+ Use the following information to configure the Get Disk Space Status activity:  
 
-### Details Tab  
+### Details tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -34,7 +36,7 @@ The Get Disk Space Status activity will retrieve the current amount of available
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items: 
 
 |Item|Description|  
 |----------|-----------------|  

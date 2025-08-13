@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.assetid: c10df30c-2768-4407-9599-77eb0e1c7d42
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.update-cycle: 1095-days
 ---
 
@@ -46,13 +46,13 @@ No optional properties are provided for this activity.
 
 ## Configure the Get VM Properties Activity
 
-The following procedure describes the steps required to configure a Get VM Properties activity.
+To configure a Get VM Properties activity, follow these steps:
 
 1. From the **Activities** pane, drag a **Get VM Properties** activity to the active runbook.
 
 2. Double-click the **Get VM Properties** activity icon. The **Properties** dialog opens.
-
-3. Configure the settings in the **Properties** tab as follows:
+   
+   Configure the settings in the **Properties** tab as follows:
 
     1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
     2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
