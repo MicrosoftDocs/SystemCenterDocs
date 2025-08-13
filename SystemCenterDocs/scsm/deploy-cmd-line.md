@@ -1,17 +1,17 @@
 ---
-title: Deploy from a command line
+title: Deploy from a Command Line
 description: This article describes how to deploy Service Manager using command-line parameters.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/22/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 27c60668-1baf-4521-98ad-cf87389c8310
 ---
 
@@ -58,9 +58,11 @@ For additional information about command\-line parameters, enter **setup.exe /?*
 
 ## Before you start
 
+Before you deploy Service Manager from a command line:
+
 ### Prepare the computer
 
- To help prevent an installation failure, perform the following steps on the computer where you'll be installing Service Manager:  
+ To help prevent an installation failure, perform the following steps on the computer where you'll be installing Service Manager: 
 
 1. Run the UI\-based Setup up to the point where you run the prerequisite checker. Ensure that the prerequisite checker passes, or at least passes with a warning.  
 
@@ -82,11 +84,13 @@ When the command\-line Setup is complete, the command prompt appears. You can vi
 
 The command\-line installation won't check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
 
-## Deploy a management server
+## [Deploy a management server](#tab/deploy-a-management-server)
 
 You can use the following command\-line procedures to deploy the Service Manager management server and the Service Manager database.  
 
-### To deploy the Service Manager management server and database on one computer  
+### Deploy the Service Manager management server and database on one computer  
+
+To deploy the Service Manager management server and database on one computer, follow these steps:
 
 1. Sign in to the computer where you want to install the Service Manager console using administrative credentials.  
 
@@ -114,11 +118,11 @@ You can use the following command\-line procedures to deploy the Service Manager
 
     ```  
 
-## Deploy a Data Warehouse management server
+## [Deploy a Data Warehouse management server](#tab/deploy-a-data-warehouse-management-server)
 
 Use the following procedures to deploy a Service Manager data warehouse and databases, including the Operations Manager and Configuration Manager data mart databases, in System Center - Service Manager.  
 
-## Deploy the data warehouse  
+## [Deploy the data warehouse](#tab/deploy-the-data-warehouse) 
 
 Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you're running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
 
@@ -126,7 +130,9 @@ The **/AnalysisServerDatabaseDataFilePath** is optional, and if it isn't used, t
 
 The DWStagingAndConfig database and the DWRepository database must reside on the same instance. Ensure that you specify the same computer and instance for the **/StgConfigSqlServerInstance** and **/RepositorySqlServerInstance** command\-line options.  
 
-#### Deploy the data warehouse management server, data warehouse databases, and optional data marts  
+#### Deploy the data warehouse management server, data warehouse databases, and optional data marts 
+
+To deploy the data warehouse management server, data warehouse databases, and optional data marts, follow these steps:
 
 1. Sign in to the computer where you want to install the Service Manager console using administrative credentials.  
 
@@ -165,11 +171,13 @@ The DWStagingAndConfig database and the DWRepository database must reside on the
     /Silent  
     ```  
 
-## Deploy a Service Manager console
+## [Deploy a Service Manager console](#tab/deploy-a-service-manager-console)
 
 Use the following command\-line procedure to deploy the Service Manager console in System Center - Service Manager.  
 
-### To deploy the Service Manager console  
+### Deploy the Service Manager console  
+
+To deploy the Service Manager console, follow these steps:
 
 1. Sign in to the computer where you want to install the Service Manager console using administrative credentials.  
 
@@ -191,10 +199,11 @@ Use the following command\-line procedure to deploy the Service Manager console 
 
     /Silent  
     ```  
+---
 
 ## Command-line option error codes
 
-The following is a list of the error codes that are used in the command-line installation of Service Manager.  
+The following is a list of the error codes that are used in the command-line installation of Service Manager:
 
 |Error code|Error|  
 |----------------|-----------|  

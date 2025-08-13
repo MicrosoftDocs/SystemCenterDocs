@@ -7,13 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: ec4ce381-6145-4af2-bfde-51f461e3d9b7
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Set VM CD or DVD to ISO Image Activity
 

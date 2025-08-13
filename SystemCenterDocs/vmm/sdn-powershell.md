@@ -1,12 +1,11 @@
 ---
 ms.assetid: dd9c6826-5cc4-482e-947d-bb645d64f3f9
-title: Set up Software Defined Network (SDN) components in the VMM fabric using PowerShell
+title: Set up Software Defined Network (SDN) Components in the VMM Fabric using PowerShell
 description: This article describes how to use PowerShell to deploy SDN components in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 07/24/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -21,7 +20,7 @@ System Center Virtual Machine Manager (VMM) can be used to deploy and manage a S
 You can deploy SDN components in the VMM fabric, including:
 
 - **Network Controller**: The network controller allows you to automate the configuration of your network infrastructure instead of manually configuring network devices and services.
-- **RAS Gateway for SDN**: RAS Gateway is a software-based, multi-tenant, BGP capable router in Windows Server 2016 that is designed for CSPs and enterprises that host multiple tenant virtual networks using HNV.
+- **RAS Gateway for SDN**: RAS Gateway is a software-based, multitenant, BGP capable router in Windows Server 2016 that is designed for CSPs and enterprises that host multiple tenant virtual networks using HNV.
 - **Software Load Balancing (SLB) for SDN**: SDN in Windows Server 2016 can use Software Load Balancing (SLB) to evenly distribute tenant and tenant customer network traffic among virtual network resources. The Windows Server SLB enables multiple servers to host the same workload, providing high availability and scalability.
 
 There are a couple of ways to deploy these components:
@@ -30,6 +29,8 @@ There are a couple of ways to deploy these components:
 - **PowerShell**: Deploy all components using PowerShell scripts.
 
 ## Advantages of PowerShell deployment
+
+The advantages of PowerShell deployment are as follows:
 
 - Deploy all SDN components with PowerShell scripts.
 - The use of a script reduces the introduction of manual errors and save significant deployment time.
@@ -41,6 +42,8 @@ There are a couple of ways to deploy these components:
 
 ## Before you start
 
+Here are some considerations before you set up SDN components in the VMM fabric using PowerShell:
+
 - SET-enabled switch deployment isn't currently supported in a PowerShell deployment. You need to deploy the SET-enabled switch out-of-band, and then specify the name of the switch during deployment.
 - Check if you have the prerequisites for SDN component deployment in place:
     - [Network controller prerequisites](sdn-controller.md#before-you-start)
@@ -49,7 +52,7 @@ There are a couple of ways to deploy these components:
 
 ## Deployment steps
 
-Here's what you need to do to set up SDN components in VMM with PowerShell.
+Here's what you need to do to set up SDN components in VMM with PowerShell:
 
 
 1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing, and others. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
@@ -70,4 +73,4 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 
 ## Next steps
 
-[Configure hosts and physical network infrastructure for SDN ](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+[Configure hosts and physical network infrastructure for SDN](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).

@@ -2,11 +2,11 @@
 ms.assetid: e756446f-f0bb-428f-a054-a33087fad435
 title: Deploy VMs from the VMM library
 description: This article describes how to create VMs in the VMM fabric from the VMM library
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/30/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24

@@ -2,14 +2,13 @@
 ms.assetid: afe18fe0-2d80-4176-b020-972b09ba6f27
 title: How to Create a Run As Account and Associate with a Run As Profile
 description: This article describes how to create a Run As account and associate with a profile in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # How to create a Run As account and associate with a Run As profile

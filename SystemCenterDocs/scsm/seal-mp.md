@@ -3,16 +3,17 @@ title: Seal a Service Manager management pack
 description: Describes how to seal a Service Manager management pack for use with Service Manager authoring.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 240ef642-dba3-416a-b048-df98d947cbaf
+
 ---
 
 # Seal a Service Manager management pack
@@ -29,6 +30,8 @@ When a management pack in Service Manager contains base definitions that other m
 
 ## Seal a management pack
 
+To seal a management pack, follow these steps:
+
 1. Create a .snk key file that contains a public\/private key pair.  
 
 2. In the Service Manager Authoring Tool, in **Management Pack Explorer**, right\-click the management pack that you want to seal, and select **Seal Management Pack**.  
@@ -39,4 +42,4 @@ When a management pack in Service Manager contains base definitions that other m
 
 ## Next steps
 
-- [Bundle management packs and resource files](bundle-mps.md).
+[Bundle management packs and resource files](bundle-mps.md).

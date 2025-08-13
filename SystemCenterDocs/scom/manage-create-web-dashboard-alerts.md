@@ -1,16 +1,15 @@
 ---
 ms.assetid:
-title: Create a dashboard with the Alert widget in the Web console
+title: Create a Dashboard with the Alert Widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Alert widget.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/10/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Create a dashboard with the Alert widget in the Web console
@@ -26,6 +25,8 @@ Operations Manager supports **Alert source** in the **Add** widget.
 ::: moniker-end
 
 ## Add widget to dashboard
+
+To add a widget to dashboard, follow these steps:
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 
@@ -130,6 +131,8 @@ The **Sort by** option is available under **Edit** > **Personalize**.
 
 ![Screenshot showing Edit and personalize.](./media/create-web-dashboard-alerts/edit-personalize.png)
 
+To view columns using sort by feature, follow these steps:
+
 1. Select a column under **Group by**.
 2. Select **Expand All** to view the columns grouped.
 3. Select the columns for sorting under **Sort by**, and select the **Order** (Ascending or Descending).
@@ -145,4 +148,4 @@ The following image shows sample results for Alert widget after grouping by **Na
 
 ## Next steps
 
-To learn how to create a dashboard in the new web console with the Performance widget, see [How create a dashboard with the Performance widget in the Web console](manage-create-web-dashboard-perf.md).
+To learn how to create a dashboard in the new web console with the Performance widget, see [How to create a dashboard with the Performance widget in the Web console](manage-create-web-dashboard-perf.md).
