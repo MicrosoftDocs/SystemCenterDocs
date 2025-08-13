@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid: 979b6b2d-8aba-48e3-a42a-8553cdd08559
 caps.latest.revision: 19
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Query WMI
 
@@ -23,7 +22,7 @@ This article describes the Query WMI activity that will send a WMI query to a sy
 
  Before you configure the Query WMI activity, you need to determine the following:  
 
-- The computer you are querying.  
+- The computer you're querying.  
 
 - The WMI query statement you want to run.  
 
@@ -33,7 +32,7 @@ Use the following information to configure the Query WMI activity:
 
 |Settings|Configuration instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Type the name of the computer that you are running the WMI query against. You can also use the ellipsis **(...)** button to browse for the computer.|  
+|**Computer**|Type the name of the computer that you're running the WMI query against. You can also use the ellipsis **(...)** button to browse for the computer.|  
 |**Namespace**|Type the name of the WMI namespace that you want to query.|  
 |**WMI query**|Type the WMI query that will be used to query the **Computer**. For more information about Windows Management Instrumentation, see [Windows Management Instrumentation](/windows/win32/wmisdk/wmi-start-page).|  
 

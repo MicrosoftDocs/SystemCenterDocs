@@ -3,9 +3,8 @@ title: Manage Workflows
 description: Describes how to manage workflows with the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/21/2025
 ms.reviewer: na
 ms.suite: na
@@ -40,7 +39,7 @@ The following procedures guide you through the process of creating a new workflo
 > [!IMPORTANT]  
 > After you've completed the wizard, you can't change the type of trigger that the workflow uses. For example, after you create a workflow that uses a timer trigger, you can't change it to use a database trigger instead.  
 
-### [Create a workflow triggered by a timer or schedule](#tab/create-a-workflow-triggered-by-a-timer-or-schedule)  
+### Create a new workflow triggered by a timer or schedule  
 
 To create a workflow triggered by a timer or schedule, follow these steps:
 
@@ -60,7 +59,7 @@ To create a workflow triggered by a timer or schedule, follow these steps:
     2. After you've set the interval for the workflow, select **Next**.  
 8. On the **Summary** page, review the settings for the new workflow, and select **Create**. After the wizard is completed, select **Close**.  
 
-### [Create a workflow triggered by a database change](#tab/create-a-workflow-triggered-by-a-database-change)  
+### Create a new workflow triggered by a database change  
 
 To create a workflow triggered by a database change, follow these steps:
 
@@ -74,8 +73,6 @@ To create a workflow triggered by a database change, follow these steps:
 8. To select a **Change event**, select the dropdown list, select one of the options, and select **Next**. For example, select the dropdown list, and select **When an instance of the class is updated**.  
 9. Optionally, under **Add Criteria to this trigger**, select **Additional Criteria** to set advanced criteria, such as when the activity status changes from **Pending** to **In Progress**.  
 10. On the **Summary** page, review the settings for the new workflow, and select **Create**. After the wizard is completed, select **Close**. 
-
----
 
 ## Save and build a workflow
 

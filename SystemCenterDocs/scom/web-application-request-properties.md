@@ -2,9 +2,8 @@
 ms.assetid: 4380f888-a7fa-4913-8715-9f1f524d4590
 title: Web Application Request Properties
 description: This article provides information about how to manage the web application requests properties in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/21/2025
 ms.topic: article
 ms.service: system-center

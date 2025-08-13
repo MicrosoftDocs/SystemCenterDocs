@@ -1,10 +1,9 @@
 ---
 ms.assetid: 3b2683c5-6f10-437e-87cb-cb389356ea00
-title: OLE DB Data Source Template in Operations Manager Management Pack
+title: OLE DB Data Source Template in Operations Manager management pack
 description: This article provides an overview about OLE DB data source template
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/21/2025
 ms.custom: engagement-fy24
 ms.service: system-center
@@ -26,7 +25,7 @@ The database can reside on any computer whether it has an agent for Operations M
 
 Use the  **OLE DB Data Source**  template in scenarios where applications rely on a database. You can either define a single watcher node to ensure that the database is accessible and responds to requests, or you can define each application server as a watcher node. The monitors that the template creates attempt to connect to the database from each location at the defined interval, and verify that each watcher node can connect successfully. In addition to validating the health of the database itself, any network connections and other required features between the watcher node and the database are also validated. You can use any number of watcher nodes, but it's typically most useful to select a sample that represents different environment or network segments.
 
-## [Monitoring performed by OLE DB data source template](#tab/monitoring-performed-by-ole-db-data-source-template)
+## Monitoring performed by OLE DB data source template
 
 Depending on your selections in the OLE DB Data Source Template wizard, the monitoring performed by the created monitors and rules can include any of the following settings:
 
@@ -40,13 +39,11 @@ Depending on your selections in the OLE DB Data Source Template wizard, the moni
 || Collection of time to complete the query | Always enabled if the query is provided. |
 || Collection of time to fetch results of query | Always enabled if the query is provided. |
 
-## [View monitoring data](#tab/view-monitoring-data)
+## View monitoring data
 
 All data collected by the  **OLE DB Data Source**  template is available in the  **OLE DB Data Source State**  view located in the  **Synthetic Transaction**  folder. In this view, an object represents each of the watcher nodes. The state of each object represents the worst state of the set of database monitors that are running on that node. If one or more of the nodes is shown with an error while at least one other node is healthy, it could indicate a problem with that particular node accessing the database, a network issue. If all the nodes are unhealthy, it could indicate a problem with the database itself.
 
 You can view the state of the individual database monitors by opening the Operations Manager Health Explorer for each object. You can view performance data by opening the Performance view for each of these objects.
-
----
 
 ## Wizard options
 
@@ -107,7 +104,7 @@ Simple authentication lets you connect to the database by using a simple name an
 
 ## Create and modify OLE DB data source templates
 
-#### [Run the OLE DB Data Source wizard](#tab/run-the-ole-db-data-source-wizard)
+#### Run the OLE DB Data Source wizard
 
 To run the OLE DB Data Source wizard, follow these steps:
 
@@ -141,7 +138,7 @@ To run the OLE DB Data Source wizard, follow these steps:
      > [!NOTE]
      > To create and modify a Run As profile, you must have administrative credentials for the management group.
 
-#### [Modify an existing OLE DB Data Source template](#tab/modify-an-existing-ole-db-data-source-template)
+#### Modify an existing OLE DB Data Source template
 
 To modify an existing OLE DB Data Source template, follow these steps:
 
@@ -152,11 +149,9 @@ To modify an existing OLE DB Data Source template, follow these steps:
 5. Right-click the monitor, and then select  **Properties**.
 6. Enter the changes that you want, and select  **OK**.
 
----
-
 ## View OLE DB data source monitors and collected data
 
-#### [View all OLE DB Data Source monitors](#tab/view-all-ole-db-data-source-monitors)
+#### View OLE DB data source monitors and collected data
 
 To view all OLE DB Data Source monitors, follow these steps:
 
@@ -164,14 +159,14 @@ To view all OLE DB Data Source monitors, follow these steps:
 2. Open the  **Monitoring**  workspace.
 3. In the  **Monitoring**  navigation pane, select  **Synthetic Transaction** , and select **OLE DB Data Source State**.
 
-#### [View the state of each monitor](#tab/view-the-state-of-each-monitor)
+#### View the state of each monitor
 
 To view the state of each monitor, follow these steps:
 
 1. In the  **OLE DB Data Source State**  pane, right-click an object. Select  **Open** , and select  **Health Explorer**.
 2. Expand the  **Availability**  and  **Performance**  nodes to view the individual monitors.
 
-#### [View the performance collected for a monitor](#tab/view-the-performance-collected-for-a-monitor)
+#### View the performance collected for a monitor
 
 To view the performance collected for a monitor, follow these steps:
 
