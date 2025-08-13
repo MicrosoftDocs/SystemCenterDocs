@@ -45,7 +45,7 @@ Use the following information to configure the Monitor Date/Time activity.
 |--------------|--------------------------------|  
 |**At**|Select an absolute time for the runbook to run. The Monitor Date/Time activity will invoke every day at the time that you specify.|  
 |**Every [x] days [y] hours [z] minutes**|Select to specify intervals of days, hours, and minutes for the runbook to run.<br /><br /> **Starting**: Select to specify the number of minutes past the hour to invoke the runbook. This option is only available if you have specified 0 minutes and at least 1 **Day** or 1 **hour** .<br /><br /> **At time slices within the hour**: Select to invoke the runbook at times that are multiples of **minutes** you have specified. This option is only available when 0 days and 0 hours are specified. For example, if **minutes** is set to 15, then the Monitor Date/Time activity will invoke at 0, 15, 30, and 45 minutes past each hour.<br /><br /> **Trigger immediately**: Select to invoke the runbook immediately after deploying.|  
-|**Every [x] seconds**|Select to specify the interval, in seconds, between each time the runbook is ran.|  
+|**Every [x] seconds**|Select to specify the interval, in seconds, between each time the runbook is run.|  
 
 The Monitor Date/Time activity accepts the following inputs when configuring times and intervals:  
 
