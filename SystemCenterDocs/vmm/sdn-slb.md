@@ -77,8 +77,6 @@ We recommend you use simplified SDN topology (two physical network) for SLB depl
 
 ## Create the transit logical network
 
-## [Create the transit logical network](#tab/create-the-transit-logical-network)
-
 To create the service template, follow these steps:
 
 1. Open the **Create logical network Wizard**, and enter a **Name** and optional description.
@@ -205,7 +203,6 @@ To create IP address pools for the private and public VIP networks, follow these
 6. You don't need to provide gateway, DNS, or WINS information because this pool is used to allocate IP addresses for VIPs through the network controller only. Select **Next** to skip these screens. Enter the address and use the default metric. Optionally configure DNS and WINS.
 7. Review the summary information, and select **Finish** to complete the wizard.
 8. Repeat the procedure for the public VIP logical network; this time enter the IP address range for the public network.
-
 
 
 ## Import the service template

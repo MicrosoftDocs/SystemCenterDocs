@@ -210,7 +210,7 @@ To upgrade the Service Manager management server, follow these steps:
 
 8. On the **The upgrade was completed successfully** page, if you've already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** checkbox, and select **Close**.  
 
-### Upgrade the Service Manager consol
+### Upgrade the Service Manager console
 
 Use the following procedure to upgrade the Service Manager console.  
 
