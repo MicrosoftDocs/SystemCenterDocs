@@ -2,9 +2,8 @@
 ms.assetid: 
 title: Enable debugging in Management Pack for SQL Server Analysis Services
 description: This article explains how to enable debugging in Management Pack for SQL Server Analysis Services
-manager: evansma
-author: fkornilov
-ms.author: v-fkornilov
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center

@@ -1,12 +1,12 @@
 ---
-title: Computer groups in System Center - Orchestrator
+title: Computer Groups in System Center - Orchestrator
 description: This article provides information on how to configure the activities in runbook to use a computer group.
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
@@ -20,49 +20,56 @@ You can create computer groups by using Active Directory queries, and you can ma
 
 To use computer groups in your activities, create a computer group, and then add computers to it.  
 
-You can also organize your computer groups into folders. Use the following steps to create a new folder.  
+You can also organize your computer groups into folders. 
 
 ### Create a folder  
 
-1. In the **Connections** pane in the Runbook Designer, click the **Computer Groups** folder or a subfolder.  
+To create a folder, follow these steps:
 
-2. Right-click to select **New**, and then click **Folder**.  
+1. In the **Connections** pane in the Runbook Designer, select the **Computer Groups** folder or a subfolder.  
+
+2. Right-click to select **New**, and then select **Folder**.  
 
 Use the following procedure to add a computer group. To add computers by using an Active Directory query or a Configuration Manager collection, use the Active Directory Integration Pack or the Integration Pack for Configuration Manager.  
 
 ### Add a computer group  
 
+To add a computer group, follow these steps:
+
 1. In the **Connections** pane, right-click the **Computer Groups** folder or a subfolder.  
 
-2. Select **New**, and then click **Computer Group** to open the **New Computer Group** dialog box.  
+2. Select **New**, and then select **Computer Group** to open the **New Computer Group** dialog box.  
 
 3. In the **New Computer Group** dialog box, on the **General** tab, in the **Name** and **Description** boxes, type a name and description of the computer group.  
 
-4. Click the **Contents** tab. The list displays all the computer entries that make up this computer group.  
+4. Select the **Contents** tab. The list displays all the computer entries that make up this computer group.  
 
-5. Click **Add** to open the **Add Computer to Computer Group** dialog box.  
+5. Select **Add** to open the **Add Computer to Computer Group** dialog box.  
 
-6. Enter the name of the computer that you are adding, or click the ellipsis **\(...\)** button next to the **Computer** box, and then select the applicable computer. Click **OK** to add the computer.  
-
+6. Enter the name of the computer that you are adding, or select the ellipsis **\(...\)** button next to the **Computer** box, and then select the applicable computer. Select **OK** to add the computer.  
+Select
 7. To add more computers to the group, repeat the previous two steps.  
+
 
 ### Modify settings  
 
-1. To modify the settings of an entry you added, click the entry on the **Contents** tab, and then click **Modify**.  
+To modify settings, follow these steps:
 
-2. To remove an entry on the **Contents** tab, click the entry, and then click **Remove**.  
+1. To modify the settings of an entry you added, select the entry on the **Contents** tab, and then select **Modify**.  
+
+2. To remove an entry on the **Contents** tab, select the entry, and then select **Remove**.  
 
 ## Use a computer group in an activity
 
 Any standard activity that requires you to identify a **Computer** name in the **Configuration Properties** dialog box, such as the **Send Event Log Message** activity, can use a computer group. Other activities can use the **Computer Group** where you define a remote system or computer.  
 
-Use the following procedure to use a computer group.  
+To use a computer group, follow these steps:
 
 1. Right-click the applicable activity from your runbook, select **Properties** on the menu, and then select the **Details** tab to open the **Activities Properties** dialog box.  
 
 2. In the **Computer** box, right-click to open a menu, select **Subscribe**, and then select **Computer Group** to open the **Select Computer Group** dialog box.  
 
-3. Select the computer group, and then click **OK**.  
+3. Select the computer group, and then select **OK**.  
 
     A placeholder `{computer group name}` is inserted next to the computer name in the **Computer** box.  
 

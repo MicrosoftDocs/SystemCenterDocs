@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 653f1f13-751b-48aa-b5aa-ad3ac5ddbaa8
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Management Certificate

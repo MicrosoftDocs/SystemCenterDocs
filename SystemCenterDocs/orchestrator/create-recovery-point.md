@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 178651bc-0edb-4046-8b64-4bbb2998408f
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Recovery Point
 

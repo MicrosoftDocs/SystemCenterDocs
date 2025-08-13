@@ -1,7 +1,7 @@
 ---
 title: Integration Pack for System Center DPM in System Center - Orchestrator
 description: This article describes the System Center DPM integration pack provided by System Center - Orchestrator.
-ms.date: 11/19/2024
+ms.date: 04/11/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
@@ -64,6 +64,8 @@ The DPM integration pack uses Windows PowerShell remoting on the Runbook Designe
 
 ## Enable Windows Remote Management trusted hosts
 
+To enable Windows Remote Management trusted hosts, follow these steps:
+
 1. On the Orchestrator computer, select **Start** >  **Run**. Then enter **gpedit.msc**, and select **OK** to open the **Local Group Policy Editor**.
 2. In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Remote Management (WinRM)** > **WinRM Client**. Double-click **Trusted Hosts**.
 3. Select **Enabled**, and add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Then select **OK**.
@@ -86,6 +88,8 @@ This integration pack uses Windows PowerShell remote commands to communicate wit
 
 Run the following command once on each computer that will receive commands. You don't need to run it on computers that only send commands. Because the command activates listeners, we recommend that you run it only where it's needed.
 
+To configure remote connection settings, follow these steps:
+
 1. Open a Windows PowerShell (x86) console as an administrator.
 2. Type _System Drive_**:\\PS&gt;enable-psremoting** and press Enter.
 
@@ -100,6 +104,8 @@ WM-Management also provides a setting for MaxConnections (regardless of users), 
 ## Configure connections
 
 Connections provide a way for you to define how DPM Activities connect to the DPM servers in your infrastructure. You must define at least one connection in order to use the DPM activities. You can define as many as you need to connect to different DPM servers or to use different connection settings or credentials.
+
+To configure connections, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and then select DPM.
 2. On the **Configurations** tab, select **Add** to begin the connection setup.

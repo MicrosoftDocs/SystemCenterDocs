@@ -4,7 +4,7 @@ title: Upgrade System Center Service Provider Foundation
 description: This article details the upgrade information and procedures for Service Provider Foundation
 author: jyothisuri
 ms.author: jsuri
-ms.date: 07/28/2023
+ms.date: 08/13/2024
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-provider-foundation

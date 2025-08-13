@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: d22e65e3-fc99-4dfa-aaf4-c8d2796e678d
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Blob

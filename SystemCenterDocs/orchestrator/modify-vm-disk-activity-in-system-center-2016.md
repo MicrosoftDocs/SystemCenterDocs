@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: c1ad150f-e139-40b7-be6b-4908cc75c501
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: 'sc-orch-2016'
 ---
 # Modify VM Disk activity in System Center 2016

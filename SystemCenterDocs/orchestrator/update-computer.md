@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 339881aa-8c21-4037-b4de-af1cc534546e
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update Computer
 

@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 7db21ed7-b166-44a5-a8f1-70ede936fbef
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Delete User
 
