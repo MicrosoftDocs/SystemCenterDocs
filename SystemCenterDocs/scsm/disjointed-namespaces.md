@@ -3,9 +3,9 @@ title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
+ms.date: 04/22/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
@@ -22,7 +22,9 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
-## Determine the principal name of the Service Manager management server  
+## Determine the principal name of the Service Manager management server 
+
+To determine the principal name, follow these steps:
 
 1. Start a Service Manager console.  
 
@@ -43,6 +45,8 @@ We recommend that you complete the following procedures before installing either
 9. At a command prompt, ping the Service Manager management server. You must have the IP address of the Service Manager management server for the following procedure.  
 
 ## Edit the hosts file  
+
+To edit the hosts file, follow these steps:
 
 1. On the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal, start Windows Explorer and then locate the %Systemroot%\\System32\\Drivers\\Etc folder.  
 

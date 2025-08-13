@@ -3,9 +3,9 @@ ms.assetid: d406c771-aa85-4a70-bf35-fb27e04b8244
 title: Monitor Configuration in management pack for SQL Server Replication
 description: This article explains the monitoring configuration in Management Pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-fkornilov
 manager: evansma
 ms.date: 07/24/2025
+ms.author: jsuri
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager

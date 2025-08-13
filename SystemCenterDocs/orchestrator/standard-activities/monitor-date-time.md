@@ -2,7 +2,7 @@
 title: Monitor Date-Time 
 description: This article describes the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -19,35 +19,35 @@ ms.author: jsuri
 
 The Monitor Date/Time activity invokes runbooks at a time or interval that you specify. Use the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month. You can also schedule runbooks to be invoked when a specific number of seconds have passed since it was last invoked, or immediately after the runbook is deployed.  
 
- The Monitor Date/Time activity uses the system clock of the operating system on the computer that runs the runbook server, not Coordinated Universal Time (UTC), to verify the runbook’s launch time. This enables the Monitor Date/Time activity to function in virtual machine environments and to continue running even when the system clock is adjusted because of the move into or out of Daylight Saving Time. However, if a runbook is scheduled to start during an hour that is skipped when the system clock is adjusted forward by one hour, that starting time is skipped and the runbook starts at the next scheduled time. If a runbook is scheduled to start during an hour that occurs twice because the system clock is adjusted backwards by one hour, the runbook launches twice.  
+The Monitor Date/Time activity uses the system clock of the operating system on the computer that runs the runbook server, not Coordinated Universal Time (UTC), to verify the runbook’s launch time. This enables the Monitor Date/Time activity to function in virtual machine environments and to continue running even when the system clock is adjusted because of the move into or out of Daylight Saving Time. However, if a runbook is scheduled to start during an hour that is skipped when the system clock is adjusted forward by one hour, that starting time is skipped and the runbook starts at the next scheduled time. If a runbook is scheduled to start during an hour that occurs twice because the system clock is adjusted backwards by one hour, the runbook launches twice.  
 
- Depending on the practices in your time zone, the usual official time to change the system clocks at the start or finish of Daylight Saving Time is 2:00 AM or 02:00. We recommend that you configure a schedule to prevent your runbooks from being skipped or processed twice when the system clock changes.  
+Depending on the practices in your time zone, the usual official time to change the system clocks at the start or finish of Daylight Saving Time is 2:00 AM or 02:00. We recommend that you configure a schedule to prevent your runbooks from being skipped or processed twice when the system clock changes.  
 
- The Monitor Date/Time activity becomes inactive when the schedule doesn't allow the runbook to run.  
+The Monitor Date/Time activity becomes inactive when the schedule doesn't allow the runbook to run.  
 
- The Monitor Date/Time activity is best suited for scenarios where you need to run routines regularly that don't rely on events in other systems. For example, nightly backup procedures or periodically reading and processing mail in a customer service inbox.  
+The Monitor Date/Time activity is best suited for scenarios where you need to run routines regularly that don't rely on events in other systems. For example, nightly backup procedures or periodically reading and processing mail in a customer service inbox.  
 
 ## Additional Use Cases
 
- The Monitor Date/Time activity starts according to its configured interval and passes the runbook run to the Check Schedule activity. The Check Schedule activity verifies that the runbook is allowed to run at the current time.  
+The Monitor Date/Time activity starts according to its configured interval and passes the runbook run to the Check Schedule activity. The Check Schedule activity verifies that the runbook is allowed to run at the current time.  
 
- If the runbook is permitted to run at that time, the Check Schedule activity publishes a published data value of True. It passes the runbook run to the next activity if there is a link to the next activity with a invoke condition of “Conforms to schedule from Check Schedule equals true”. If the runbook is not permitted to run at that time, the Check Schedule activity publishes a published data value of False. It passes the runbook run to the next activity if there is a link to the next activity with an invoke condition of “Conforms to schedule from Check Schedule equals false.” This is useful when you want to implement conditional link branches according to the results of the Schedule verification.  
+If the runbook is permitted to run at that time, the Check Schedule activity publishes a published data value of True. It passes the runbook run to the next activity if there's a link to the next activity with an invoke condition of “Conforms to schedule from Check Schedule equals true”. If the runbook isn't permitted to run at that time, the Check Schedule activity publishes a published data value of False. It passes the runbook run to the next activity if there's a link to the next activity with an invoke condition of “Conforms to schedule from Check Schedule equals false.” This is useful when you want to implement conditional link branches according to the results of the Schedule verification.  
 
 ## Configure the Monitor Date/Time Activity
 
- Before you configure the Monitor Date/Time activity, you need to determine the time or interval you want to use to invoke the runbook.  
+Before you configure the Monitor Date/Time activity, you need to determine the time or interval you want to use to invoke the runbook.  
 
- Use the following information to configure the Monitor Date/Time activity.  
+Use the following information to configure the Monitor Date/Time activity.  
 
-### Details Tab  
+### Details tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**At**|Select an absolute time for the runbook to run. The Monitor Date/Time activity will invoke every day at the time that you specify.|  
 |**Every [x] days [y] hours [z] minutes**|Select to specify intervals of days, hours, and minutes for the runbook to run.<br /><br /> **Starting**: Select to specify the number of minutes past the hour to invoke the runbook. This option is only available if you have specified 0 minutes and at least 1 **Day** or 1 **hour** .<br /><br /> **At time slices within the hour**: Select to invoke the runbook at times that are multiples of **minutes** you have specified. This option is only available when 0 days and 0 hours are specified. For example, if **minutes** is set to 15, then the Monitor Date/Time activity will invoke at 0, 15, 30, and 45 minutes past each hour.<br /><br /> **Trigger immediately**: Select to invoke the runbook immediately after deploying.|  
-|**Every [x] seconds**|Select to specify the interval, in seconds, between each time the runbook is ran.|  
+|**Every [x] seconds**|Select to specify the interval, in seconds, between each time the runbook is run.|  
 
- The Monitor Date/Time activity accepts the following inputs when configuring times and intervals:  
+The Monitor Date/Time activity accepts the following inputs when configuring times and intervals:  
 
 ### Configure Time and Intervals  
 

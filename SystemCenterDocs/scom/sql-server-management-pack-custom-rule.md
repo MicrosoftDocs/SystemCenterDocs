@@ -1,11 +1,11 @@
 ---
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
-title: Custom query-based performance rule in Management Pack for SQL Server
-description: This article explains how to configure custom query performance rule in Management Pack for SQL Server
+title: Custom Query-Based Performance Rule in management pack for SQL Server
+description: This article explains how to configure custom query performance rule in management pack for SQL Server
 manager: evansma
 author: epomortseva
-ms.author: v-fkornilov
-ms.date: 11/01/2024
+ms.author: jsuri
+ms.date: 04/15/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,8 @@ ms.subservice: operations-manager
 # Custom Query-Based Performance Rule
 
 If the set of default performance rules in the management pack isn't enough to cover your workflows, you can create your rule that targets the SQL Server DB Engine for Windows and Linux platforms.
+
+This article explains how to configure custom query performance rule in Management Pack for SQL Server.
 
 To create a new custom query-based performance rule, perform the following steps:
 

@@ -4,7 +4,7 @@ title: Import, Export, and Remove an Operations Manager Management Pack
 description: This article describes how to import, export and remove an Operations Manager management pack from the management group.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/14/2024
+ms.date: 08/07/2025
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -42,7 +42,7 @@ You have several options for importing management packs:
 > [!NOTE]
 > Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL: `https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx`. If the computer running Operations Manager Operations console can't connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that's accessible from the console.
 
-The Operations Manager community maintains a [list of management packs](/system-center/scom/management-pack-list?view=sc-om-2025). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk).
+The Operations Manager community maintains a [list of management packs](/system-center/scom/management-pack-list?view=sc-om-2025&preserve-view=true). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk).
 
 > [!NOTE]
 > Microsoft neither endorses nor provides support for third-party products. Please contact the specific provider for support issues.

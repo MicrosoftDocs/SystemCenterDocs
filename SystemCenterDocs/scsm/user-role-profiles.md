@@ -1,11 +1,11 @@
 ---
-title: User role profiles in Service Manager
+title: User Role Profiles in Service Manager
 description: Learn about the scope and properties of user role profiles in Service Manager.
 ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -19,7 +19,7 @@ This article provides detailed information about the scope and properties of use
 
 ## Tabs in the Administrator console
 
-The table below shows the tabs and order that they appear in the console.
+The table below shows the tabs and order that they appear in the console:
 
 | User roles | Tab order in Console |
 | --- | --- |
@@ -37,7 +37,7 @@ The table below shows the tabs and order that they appear in the console.
 
 ## Default user roles
 
-| action | allowed roles |
+| Action | Allowed roles |
 | --- | --- |
 | read knowledge articles | activity implementer, advanced operator, author, change initiator, change manager, end user, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow |
 | edit knowledge articles | advanced operator, author |
@@ -165,7 +165,7 @@ ServiceOfferingRelatesToRequestOffering &gt; RequestOffering
 
 ## Implied permissions
 
-The following are implied permissions for Service Manager.
+The following are implied permissions for Service Manager:
 
 ### ImpliedIncidentAffectedUser
 

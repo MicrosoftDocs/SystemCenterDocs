@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 602a269a-9b1b-493f-ba94-b086fd83e3f8
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update VM
 

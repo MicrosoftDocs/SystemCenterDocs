@@ -1,11 +1,11 @@
 ---
 ms.assetid: 90109309-a692-414d-8877-2853d44d3bb4
-title: Management Pack for SQL Server Analysis Services delivery
-description: This article explains how to install Management Pack for SQL Server Analysis Services
+title: Management pack for SQL Server Analysis Services Delivery
+description: This article explains how to install management pack for SQL Server Analysis Services
 author: epomortseva
-ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/17/2025
+ms.author: jsuri
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -52,7 +52,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Import **Management Pack for Windows Server Operating System**.
 
-- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers isn't required.
+- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enable Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers isn't required.
 
 - Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
 

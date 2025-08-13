@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 83b9212b-1329-4ecd-aacf-8329001dd3ad
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # List Cloud Service

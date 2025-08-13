@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
@@ -30,13 +30,15 @@ You can use the following procedures to create a connector for System Center - O
 
 ### Create an Orchestrator connector
 
+To create an Orchestrator connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
 3. In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Orchestrator connector**.
 
-4. Perform these steps to complete the Orchestrator Connector Wizard:
+4. To complete the Orchestrator Connector Wizard, do the following:
 
    1. On the **Before You Begin** page, select **Next**.
 
@@ -73,6 +75,8 @@ You can use the following procedures to create a connector for System Center - O
 
 ### Validate the creation of an Orchestrator connector
 
+To validate the creation of an Orchestrator connector, follow these steps:
+
 1. In the **Connectors** pane, locate the Orchestrator connector that you created.
 
 2. Review the **Status** column for a status of **Finished Success**.
@@ -92,6 +96,8 @@ To ensure that the Service Manager database is up to date, the Orchestrator conn
 
 ### Manually synchronize an Orchestrator connector
 
+To manually synchronize an Orchestrator connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -101,6 +107,8 @@ To ensure that the Service Manager database is up to date, the Orchestrator conn
 4. In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
 ### Validate that an Orchestrator connector is synchronized
+
+To validate that an Orchestrator connector is synchronized, follow these steps:
 
 1. In the Service Manager console, select **Connectors**.
 
@@ -115,6 +123,8 @@ You can use the following procedures to disable or enable an Orchestrator connec
 
 ### Disable an Orchestrator connector
 
+To disable an Orchestrator connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -126,6 +136,8 @@ You can use the following procedures to disable or enable an Orchestrator connec
 5. In the **Disable Connector** dialog, select **OK**.
 
 ### Enable an Orchestrator connector
+
+To enable an Orchestrator connector, follow these steps:
 
 1. In the Service Manager console, select **Administration**, and select **Connectors**.
 

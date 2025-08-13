@@ -5,7 +5,7 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.update-cycle: 180-days
 ms.reviewer: na
 ms.suite: na
@@ -24,6 +24,8 @@ You can't start an upgrade to System Center 2016 - Service Manager if any data w
 
 ## Upgrade preparation
 
+Here are some considerations to prepare for the upgrade:
+
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
 - Refer to the upgrade sequencing of System Center components at [Upgrading System Center 2012 R2 - Service Manager to System Center 2016](./upgrade-service-manager.md).
 - Don't mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server should use the same version.
@@ -35,7 +37,9 @@ You can't start an upgrade to System Center 2016 - Service Manager if any data w
 
 ## Prepare Service Manager 2012 R2 for upgrade
 
-This article describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
+This article describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade.
+
+To upgrade the data warehouse management server, follow these steps:
 
 1. List the data warehouse jobs that are running and disable them.
 
@@ -48,6 +52,8 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 5. Wait for 10 minutes, and then start the upgrade of the Service Manager management server.  
 
 ### List the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
+
+To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them, follow these steps:
 
 1. On the computer that hosts the data warehouse management server, select **Start**, select **All Programs**, select **Microsoft System Center 2012 R2**, and select **Service Manager Shell**.  
 
@@ -76,6 +82,8 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 
 
 ### Confirm that the data warehouse jobs have stopped running  
+
+To confirm that the data warehouse jobs have stopped running , follow these steps:
 
 1. In the Service Manager console, select **Data Warehouse**.  
 
@@ -139,7 +147,7 @@ Use the following procedures to upgrade your Service Manager environment to Syst
 
 ### Upgrade the Service Manager Self Service portal
 
-Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-configs-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
+Refer the instructions mentioned in the [Upgrade the Service Manager Self-Service Portal](upgrade-configs-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
 
 ### Upgrade steps for custom development
 
@@ -147,7 +155,7 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 
 ### Upgrade the data warehouse management server
 
- Use the following procedure to upgrade the data warehouse management server.  
+Use the following procedure to upgrade the data warehouse management server.  
 
 > [!IMPORTANT]  
 > Ensure that you've stopped the data warehouse jobs before you continue.  
@@ -183,7 +191,7 @@ To upgrade the data warehouse management server, follow these steps:
 
 ### Upgrade the Service Manager management server
 
- Use the following procedure to upgrade the Service Manager management server.  
+Use the following procedure to upgrade the Service Manager management server.  
 
 To upgrade the Service Manager management server, follow these steps:
 
@@ -205,7 +213,7 @@ To upgrade the Service Manager management server, follow these steps:
 
 ### Upgrade the Service Manager console
 
- Use the following procedure to upgrade the Service Manager console.  
+Use the following procedure to upgrade the Service Manager console.  
 
 To upgrade the Service Manager console, follow these steps:
 

@@ -2,9 +2,8 @@
 ms.assetid: 
 title: Examples of Custom Query-based Monitors in the System Center management pack for SQL Server
 description: This article shows examples of configuring custom query monitors and performance rules in the System Center management pack for SQL Server.
-manager: evansma
-author: fkornilov
-ms.author: v-fkornilov
+author: jyothisuri
+ms.author: jsuri
 ms.date: 07/22/2025
 ms.topic: concept-article
 ms.service: system-center

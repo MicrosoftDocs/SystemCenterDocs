@@ -1,10 +1,10 @@
 ---
 ms.assetid: 6cc028a5-1e33-4c8c-afaf-be1eb26bcf3f
-title: Provision a scale-out file server (SOFS) cluster from bare metal computers
+title: Provision a Scale-out File Server (SOFS) Cluster from Bare Metal Computers
 description: This article provides about provisioning an SOFS in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/11/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -19,7 +19,7 @@ In addition to adding existing file servers to an SOFS cluster in the System Cen
 
 ## Before you start
 
-Here's what you need for the deployment:
+Here are some considerations before you deploy a bare metal SOFS cluster in VMM:
 
 - **Physical computers** to deploy as SOFS cluster nodes. These computers must meet the prerequisites described in the table below. They can be running on operating system or an operating system that will be overwritten during the deployment process.
 - **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/>The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
@@ -121,6 +121,8 @@ Here's what you need for the deployment:
 
 ## Deployment steps
 
+To deploy bare metal SOFS cluster in VMM, follow these steps:
+
 1. **Before you start**: Verify the prerequisites above before you start.
 2. **Prepare physical computer**: Set up the BIOS on each physical computer to support virtualization.
 2. **Prepare the PXE server environment**:  Add the PXE server to the VMM fabric.
@@ -132,7 +134,7 @@ Here's what you need for the deployment:
 
 ## Prepare physical computers
 
-Prepare each computer to support virtualization, as follows:
+To prepare each computer to support virtualization, as follows:
 
 1. Set the BIOS boot order to boot from a Pre-Boot Execution Environment (PXE)-enabled network adapter as the first device.
 2. Configure the sign-in credentials and IP address settings for the BMC on each computer.
@@ -140,6 +142,8 @@ Prepare each computer to support virtualization, as follows:
 
 
 ## Add a PXE server to the VMM fabric
+
+To add a PXE server to the VMM fabric, follow these steps:
 
 1. Select **Fabric** > **Servers** > **Home** > **Add** > **Add Resources** > **PXE Server**.
 2. In **Computer name**, specify the PXE server name.
@@ -153,6 +157,7 @@ If you plan to assign custom drivers, the driver files must exist in the library
 
 In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play (PnP) IDs on the physical computer. If you select to filter the drivers by tags, VMM determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you don't need to assign custom tags.
 
+To add custom resources to the library, follow these steps:
 
 1. Locate a driver package that you want to add to the library.
 2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers and copy the driver package to the folder.
@@ -165,6 +170,8 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 ## Create a physical computer profile
 
 Before you start, determine whether the physical computers use Extensible Firmware Interface (EFI) or BIOS. If you've both, create a separate profile for each type.
+
+To create a physical computer profile, follow these steps:
 
 1. Select **Library** > **Home** > **Create** > **Physical Computer Profile**.
 2. In the **New Physical Computer Profiles Wizard** > **Profile Description**, enter a name and description and select **VM host**.
@@ -187,6 +194,8 @@ The Create Clustered File Server Wizard does the following:
 5. Adds the provisioned computers as a Scale-Out File Server cluster under VMM management.
 
 Run the wizard:
+
+To run the wizard, follow these steps:
 
 1. Select **Fabric** > **Servers** > **Home** > **Create** > **File Server Cluster**.
 2. In the **Create Clustered File Server Wizard** > **General**, enter a cluster name, file server name, and cluster IP addresses if needed.

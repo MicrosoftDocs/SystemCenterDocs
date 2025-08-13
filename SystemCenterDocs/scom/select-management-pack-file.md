@@ -1,11 +1,11 @@
 ---
 ms.assetid: 0a119fc2-b6fb-4ca6-a2ce-5344ea69b327
-title: Select a management pack file in Operations Manager management pack
-description: This article provides an overview about how to select a Management Pack File
+title: Select a Management Pack File in Operations Manager management pack
+description: This article provides an overview about how to select a management pack file
 author: Anastas1ya
-ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/14/2025
+ms.author: jsuri
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -49,7 +49,7 @@ When you determine how to group different elements, take the following considera
   - You can remove an application from your environment and no longer require its management pack. Or you can obtain a new management pack for an application and want to remove custom monitoring that you implemented. In cases like these, you can uninstall all of the elements for a particular application by removing any of its management pack files. If you combine elements for multiple applications, you limit your ability to manage the monitoring logic for a single application.
   - You can develop and test some monitoring logic in a lab environment before moving it into a production management group. Combining elements for a particular application into a single management pack lets you manage that file through the different environments without affecting the monitoring for other applications.
 
-By following the recommend strategy for logically grouping management pack elements, you can ensure that your management group runs as efficiently as possible and can most effectively handle future changes.
+By following the recommended strategy for logically grouping management pack elements, you can ensure that your management group runs as efficiently as possible and can most effectively handle future changes.
 
 ## Sealed and unsealed Management Pack Files
 
@@ -64,7 +64,7 @@ If you used the Operations console to create the groups in this example in an un
   - Create groups in each management pack file with the overrides. This has the advantage of being easy to implement without any requirement to seal a management pack file, but it has the disadvantage of requiring you to potentially create multiple copies of the same group.
   - Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then seal the .xml file by using the process described earlier in this article. You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
 
-## See also
+## Related content
 
-- [Management Pack Templates](management-pack-templates.md)
-- [Monitors and Rules](/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
+- [Management Pack Templates](management-pack-templates.md).
+- [Monitors and Rules](/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29).

@@ -1,10 +1,10 @@
 ---
-title: Manage release records
+title: Manage Release Records
 description: Provides an overview and describes how to manage Service Manager release records.
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.subservice: service-manager
 ms.topic: how-to
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -21,7 +21,7 @@ When changes are approved, it's up to release management processes to group the 
 
 After the changes have been bundled together, a release manager defines the sequence of actions needed for a release with release activities. For example, different changes might have infrastructure update tasks, database modification tasks, tasks to update applications, or other individual tasks. In some cases, it might make sense to group some tasks together with infrastructure updates or perform database updates or application updates. Some tasks can be deployed simultaneously, while other tasks must be deployed sequentially or separately.  
 
-## Release record process
+## Release a record process
 
 The release manager or other person responsible for the release defines the sequence of actions with a release record. The release record might depict the deployment sequence of different changes using parallel activities, sequential activities, and other activities. The release manager can delegate the responsibility for activities to others. When an activity is delegated, the person responsible for the activity can modify the activity and update its status.  
 
@@ -47,9 +47,13 @@ The next major release for Woodgrove Bank is a deployment of a new version of it
 
 At Woodgrove Bank, Garret configures administrative settings for releases, and he creates a parent release record. He also creates templates for parallel and sequential activities. Then, Phil creates release records, based on the templates that Garret created. Phil chooses which changes to deploy, and then he updates release activities by adding, deleting, or modifying them for each release, as necessary. Garret configures notifications for release records to notify users. Garret and Phil can review the status and the progress of change requests for a release whenever they need to.
 
+## Create release record
+
+The Release Manager creates a release record in Service Manager. A release record template is used to create release records.
+
 ## Create a release record
 
-The Release Manager creates a release record in Service Manager using the following procedure.  
+The Release Manager creates a release record in Service Manager using the following procedure:  
 
 To create a release record, follow these steps:
 
@@ -152,7 +156,7 @@ To unlink the current release record from a parent release record, follow these 
 
 ### Unlink a child release record from the current release record
 
-The Release Manager can unlink a child release record while editing a parent release record using the following procedure.  
+The Release Manager can unlink a child release record while editing a parent release record using the following procedure:  
 
 To unlink a child release record from the current parent release record, follow these steps:
 
@@ -321,4 +325,4 @@ To determine status and progress for a change request in a release record, follo
 
 ## Next steps
 
-- To learn about how Service Manager reports enable you to collect and view data and trends from across the business environment, read [Data warehouse reporting and analytics](dw-reporting.md).
+To learn about how Service Manager reports enable you to collect and view data and trends from across the business environment, read [Data warehouse reporting and analytics](dw-reporting.md).

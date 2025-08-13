@@ -2,7 +2,7 @@
 title: Generate Random Text
 description: This article describes the functionality of Generate Random Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.author: jsuri
 ---
 # Generate Random Text
 
-The Generate Random Text activity generates random strings of text.  
+The Generate Random Text activity generates random strings of text. This article describes the functionality of Generate Random Text activity.
 
 ## Configure the Generate Random Text Activity
 
@@ -34,7 +34,7 @@ The Generate Random Text activity generates random strings of text.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

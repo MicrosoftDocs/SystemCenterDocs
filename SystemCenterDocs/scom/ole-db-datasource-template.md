@@ -1,10 +1,10 @@
 ---
 ms.assetid: 3b2683c5-6f10-437e-87cb-cb389356ea00
-title: OLE DB data source template in Operations Manager management pack
+title: OLE DB Data Source Template in Operations Manager management pack
 description: This article provides an overview about OLE DB data source template
+ms.date: 04/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.topic: concept-article
 
 # OLE DB data source template
 
-
+This article provides an overview about OLE DB data source template.
 
 _OLE DB_ (Object Linking and Embedding Database) is a Microsoft technology for accessing various data sources by using a common method to connect to different databases such as Microsoft SQL Server.
 
@@ -27,7 +27,7 @@ Use the  **OLE DB Data Source**  template in scenarios where applications rely o
 
 ## Monitoring performed by OLE DB data source template
 
-Depending on your selections in the OLE DB Data Source Template wizard, the monitoring performed by the created monitors and rules can include any of the following settings.
+Depending on your selections in the OLE DB Data Source Template wizard, the monitoring performed by the created monitors and rules can include any of the following settings:
 
 | Type | Description | Enabled? |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Depending on your selections in the OLE DB Data Source Template wizard, the moni
 || Collection of time to complete the query | Always enabled if the query is provided. |
 || Collection of time to fetch results of query | Always enabled if the query is provided. |
 
-## Viewing monitoring data
+## View monitoring data
 
 All data collected by the  **OLE DB Data Source**  template is available in the  **OLE DB Data Source State**  view located in the  **Synthetic Transaction**  folder. In this view, an object represents each of the watcher nodes. The state of each object represents the worst state of the set of database monitors that are running on that node. If one or more of the nodes is shown with an error while at least one other node is healthy, it could indicate a problem with that particular node accessing the database, a network issue. If all the nodes are unhealthy, it could indicate a problem with the database itself.
 
@@ -51,17 +51,17 @@ When you run the  **OLE DB Data Source**  template, you've to provide values for
 
 ## General properties
 
-The following options are available on the  **General Options**  page of the wizard.
+The following options are available on the  **General Options**  page of the wizard:
 
 | Option | Description |
 | --- | --- |
 | Name | The name used for the monitoring wizard. This name is displayed in the Operations console in the  **OLE DB Data Source State**  view. |
 | Description | Optional description of the monitor. |
-| Management Pack | Management pack to store the classes, monitors, and rules that the template created. For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
+| Management Pack | Management pack to store the classes, monitors, and rules that the template created. For more information about management packs, see [Select a Management Pack File](select-management-pack-file.md). |
 
 ## Connection String
 
-The following options are available on the  **Connection String**  page of the wizard.
+The following options are available on the  **Connection String**  page of the wizard:
 
 | Option | Description |
 | --- | --- |
@@ -71,7 +71,7 @@ The following options are available on the  **Connection String**  page of the w
 
 ## Query Performance
 
-The following options are available on the  **Query Performance**  page of the wizard.
+The following options are available on the  **Query Performance**  page of the wizard:
 
 | Option | Description |
 | --- | --- |
@@ -81,7 +81,7 @@ The following options are available on the  **Query Performance**  page of the w
 
 ## Watcher Nodes
 
-The following options are available on the  **Watcher Nodes**  page of the wizard.
+The following options are available on the  **Watcher Nodes**  page of the wizard:
 
 | Option | Description |
 | --- | --- |
@@ -102,16 +102,18 @@ Integrated security lets you connect to the database by using credentials stored
 
 Simple authentication lets you connect to the database by using a simple name and password. For a SQL Server database, this simple authentication could be used for SQL Server authentication. To have the watcher nodes connect to the database by using simple authentication, create a Run As account with  **Simple Authentication**  as the  **Account type**  and the credentials for the appropriate user account. Then add this Run As profile to the  **OLE DB Simple Authentication Profile**. When you specify the connection string for the template, select the  **Use Simple Authentication RunAs Profile created for this OLE DB data source transaction**  checkbox. This adds variables to the connection string for the user name and password that you specified in the Run As account.
 
-## Creating and modifying OLE DB data source templates
+## Create and modify OLE DB data source templates
 
-#### To run the OLE DB Data Source wizard
+#### Run the OLE DB Data Source wizard
+
+To run the OLE DB Data Source wizard, follow these steps:
 
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
 3. In the  **Authoring**  navigation pane, right-click  **Management Pack Templates** , and then select  **Add Monitoring Wizard**.
 4. On the  **Select Monitoring Type**  page, select  **OLE DB Data Source** , and select  **Next**.
 5. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, enter a name and an optional description.
-6. Select a management pack in which to save the monitor, or select  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](select-management-pack-file.md).
+6. Select a management pack in which to save the monitor, or select  **New**  to create a new management pack. For more information, see [Select a Management Pack File](select-management-pack-file.md).
 7. Select  **Next**.
 8. In the  **Connection string**  box, enter a connection string for the database, or select the  **Build**  button to be prompted for the required information.
 9. If you want the monitor to run a query, select  **Query to execute** , and then enter a query.
@@ -126,7 +128,7 @@ Simple authentication lets you connect to the database by using a simple name an
 14. Select one or more [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
 15. Specify the frequency to run the monitor in the  **Run this query**  box. Select  **Next**.
 16. Review the summary of the monitor, and select  **Create**.
-17. If a Run As account with credentials that have access to the database doesn't exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
+17. If a Run As account with credentials that have access to the database doesn't exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [Create a Run As Account](/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
 
      > [!NOTE]
      > To create and modify a Run As account, you must have administrative credentials for the management group.
@@ -136,7 +138,9 @@ Simple authentication lets you connect to the database by using a simple name an
      > [!NOTE]
      > To create and modify a Run As profile, you must have administrative credentials for the management group.
 
-#### To modify an existing OLE DB Data Source template
+#### Modify an existing OLE DB Data Source template
+
+To modify an existing OLE DB Data Source template, follow these steps:
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.
@@ -145,26 +149,34 @@ Simple authentication lets you connect to the database by using a simple name an
 5. Right-click the monitor, and then select  **Properties**.
 6. Enter the changes that you want, and select  **OK**.
 
-## Viewing OLE DB data source monitors and collected data
+## View OLE DB data source monitors and collected data
 
-#### To view all OLE DB Data Source monitors
+#### View OLE DB data source monitors and collected data
+
+To view all OLE DB Data Source monitors, follow these steps:
 
 1. Open the Operations console.
 2. Open the  **Monitoring**  workspace.
 3. In the  **Monitoring**  navigation pane, select  **Synthetic Transaction** , and select **OLE DB Data Source State**.
 
-#### To view the state of each monitor
+#### View the state of each monitor
+
+To view the state of each monitor, follow these steps:
 
 1. In the  **OLE DB Data Source State**  pane, right-click an object. Select  **Open** , and select  **Health Explorer**.
 2. Expand the  **Availability**  and  **Performance**  nodes to view the individual monitors.
 
-#### To view the performance collected for a monitor
+#### View the performance collected for a monitor
+
+To view the performance collected for a monitor, follow these steps:
 
 1. In the  **OLE DB Data Source State**  pane, right-click an object. Select  **Open** , and select  **Performance**.
 2. In the  **Legend**  pane, select the counters that you want to view.
 3. Use options in the  **Actions**  pane to modify the Performance view.
 
-## See also
+---
 
-- [Creating Management Pack Templates](create-management-pack-templates.md)
-- [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+## Related content
+
+- [Create management pack templates](create-management-pack-templates.md).
+- [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29).

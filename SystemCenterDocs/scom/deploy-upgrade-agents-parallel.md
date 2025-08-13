@@ -4,7 +4,7 @@ title: Upgrade Agents in a Parallel Deployment
 description: This article provides guidance with upgrading agents when planning a side-by-side migration to Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/03/2025
+ms.date: 04/16/2025
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
@@ -61,6 +61,8 @@ Agents reporting to your Operations Manager 2019 management group can be upgrade
 Agents reporting to your Operations Manager 2022 management group can be upgraded to System Center 2025 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2022 management group.
 
 ::: moniker-end
+
+This article provides guidance with upgrading agents when planning a side-by-side migration to Operations Manager.
 
 ## Upgrade agents
 

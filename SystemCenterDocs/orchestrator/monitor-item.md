@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 99513133-5547-471a-b1c1-cabfad6eab0b
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Monitor Item
 

@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 568d336c-ed98-4ca1-8783-265a8dd0c6db
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Capture VM Instance

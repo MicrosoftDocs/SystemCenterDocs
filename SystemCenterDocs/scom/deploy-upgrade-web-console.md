@@ -1,10 +1,10 @@
 ---
 ms.assetid: ac2e1b48-2f24-44c1-8d06-9405b2db9c26
-title: Upgrade a Web Console
+title: Upgrade a Web console
 description: This article describes how to upgrade a Web console to the latest release of System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
@@ -15,7 +15,7 @@ ms.topic: upgrade-and-migration-article
 
 # Upgrade a Web console
 
-Before you begin the upgrade process, ensure that your server meets the minimum supported configurations for System Center Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+This article describes how to upgrade a Web console to the latest release of System Center Operations Manager. Before you begin the upgrade process, ensure that your server meets the minimum supported configurations for System Center Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!NOTE]
 > When you upgrade the web console, any customizations that were made to the web.config file after the web console was installed will be reset. Make a backup copy before proceeding.  
@@ -23,6 +23,8 @@ Before you begin the upgrade process, ensure that your server meets the minimum 
 If you made changes after you set up your web console to either enable or disable Secure Sockets Layer (SSL), the SSL settings will be reset during upgrade. To resolve the issue, you must make changes to the registry key before you upgrade the web console, as follows:
 
 ### Set the registry to enable or disable SSL on the Web console server
+
+To set the registry to enable or disable SSL, follow the steps:
 
 1. Sign in to the web console with an account that has local administrator rights, and on the desktop, select **Start**, and then select **Run**.
 
@@ -47,6 +49,8 @@ If you made changes after you set up your web console to either enable or disabl
 
 ### Upgrade the Web console server
 
+To upgrade the Web console server, follow the steps:
+
 1. Sign in to the computer that hosts the web console server with an Operations Manager Administrators role account for your Operations Manager management group.
 
 2. On the Operations Manager source media, run **Setup.exe**, and select **Install**.
@@ -69,6 +73,8 @@ If you made changes after you set up your web console to either enable or disabl
 7. When the **Ready to Upgrade** page appears, review the upgrade summary, and select **Upgrade**.
 
 ### Upgrade the Web console server from the Command Prompt
+
+To upgrade the Web console server from the Command Prompt, follow the steps:
 
 1. Sign in to the computer that hosts the web console server with an Operations Manager Administrators role account for your Operations Manager management group.
 

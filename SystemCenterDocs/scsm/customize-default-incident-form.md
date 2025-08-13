@@ -1,11 +1,11 @@
 ---
-title: Customize the default incident form for the sample scenario
+title: Customize the Default Incident Form for the Sample Scenario
 description: This sample scenario article describes how to apply simple customizations to a default form in the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/17/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -91,4 +91,4 @@ To use the customized System.WorkItem.Incident.ConsoleForm form, follow these st
 
 ## Next steps
 
-- For information that can help you customize and create forms in the Service Manager Authoring Tool, review [Form control properties in the Authoring Tool](form-control-properties.md).
+For information that can help you customize and create forms in the Service Manager Authoring Tool, review [Form control properties in the Authoring Tool](form-control-properties.md).
