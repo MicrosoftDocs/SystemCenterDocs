@@ -2,7 +2,7 @@
 title: Set SNMP Variable
 description: This article describes the Set SNMP Variable activity that will modify a variable, specified by its MIB, on a network device.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -15,9 +15,10 @@ caps.latest.revision: 24
 author: jyothisuri
 ms.author: jsuri
 ---
+
 # Set SNMP Variable
 
-The Set SNMP Variable activity will modify a variable, specified by its MIB, on a network device. Use the Set SNMP Variable to update a variable that reports on the failure or success of a critical runbook.  
+This article describes the Set SNMP Variable activity that will modify a variable, specified by its MIB, on a network device. Use the Set SNMP Variable to update a variable that reports on the failure or success of a critical runbook.  
 
 ## Configure the Set SNMP Variable Activity
 
@@ -30,11 +31,11 @@ The Set SNMP Variable activity will modify a variable, specified by its MIB, on 
 > [!NOTE]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
- Use the following information to configure the Set SNMP Variable activity.  
+ Use the following information to configure the Set SNMP Variable activity:  
 
-### Details Tab  
+### Details tab  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**IP address**|Type the IP address of the device hosting the MIB variable.|  
 |**Port**|Type port used to communicate with the network device.|  
@@ -43,17 +44,17 @@ The Set SNMP Variable activity will modify a variable, specified by its MIB, on 
 |**SNMP version**|Select the SNMP version to use when connecting to the network device. You can select **SNMPv1** or **SNMPv2c**.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. The community should have rights of Read write or higher. This field is case-sensitive and supports only alphanumeric characters.|  
 
-### Advanced Tab
+### Advanced tab
 
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Type the number of seconds the Set SNMP Variable will wait for a response from the network device. If the operation times out, then it will attempt to retry the action. The number of retries is specified in the **Retry** box.|  
 |**Retry**|Type the number of times to attempt to set the SNMP variable.|  
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items: 
 
 |Item|Description|  
 |----------|-----------------|  
