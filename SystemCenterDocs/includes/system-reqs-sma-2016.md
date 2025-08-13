@@ -1,12 +1,11 @@
 ---
 description: include file to describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 01/22/2018
+ms.date: 08/07/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid: 57ba1e98-2460-4a21-b083-9f77f16e4890
@@ -17,7 +16,7 @@ ms.assetid: 57ba1e98-2460-4a21-b083-9f77f16e4890
 The following sections describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation in System Center 2016.
 
 ## Hardware requirements
-The following recommended configurations should be used.
+The following recommended configurations should be used:
 
 |Performance component|Recommendation|
 |-------------------------|------------------|
@@ -25,7 +24,7 @@ The following recommended configurations should be used.
 |SQL Server|One computer with 8 GB of RAM and eight cores **Note:** One month of data under heavy load (12 jobs per minute for a month) results in 20 GB of disk space usage. Job purging should be used to keep this usage from growing beyond this amount.|
 
 ## Software requirements
-The following software must be installed for each role.
+The following software must be installed for each role:
 
 |Role|Prerequisites|
 |--------|-----------------|
@@ -61,7 +60,7 @@ Service Management Automation runs on Microsoft Azure just as it does on physica
 Service Management Automation was tested by Microsoft by installing and using it in a Microsoft Azure virtual machine. The testing concluded that Service Management Automation was fully functional and operated exactly the same as it does on physical hardware. Stability and performance benchmarks inside a Microsoft Azure virtual machine were at a level where no special considerations were needed.
 
 ## Security requirements
-The following ports must be opened for each role.
+The following ports must be opened for each role:
 
 |Role|Requirement|
 |--------|---------------|
@@ -69,7 +68,7 @@ The following ports must be opened for each role.
 |Automation web service|Default value: 9090. Configurable at install time port defaults to 9090. The installation program for Service Management Automation automatically opens the web service port on the local firewall.|
 |Windows PowerShell module|None|
 
-The following certificates are required for each component.
+The following certificates are required for each component:
 
 |Role|Requirement|
 |--------|---------------|

@@ -1,17 +1,19 @@
 ---
 title: Back up Orchestrator
-description: Describes how to backup a System Center - Orchestrator environment.
-ms.date: 11/01/2024
+description: Describes how to back up a System Center - Orchestrator environment.
+ms.date: 04/16/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Back up Orchestrator
+
+This article describes about backing up a System Center - Orchestrator environment.
 
 A complete backup of an Orchestrator environment consists of the following:  
 
@@ -21,7 +23,8 @@ A complete backup of an Orchestrator environment consists of the following:
 
 Orchestrator supports Volume Shadow copy Service \(VSS\) for backup and restore with System Center - Data Protection Manager (DPM). VSS is a framework that allows volume backups to be performed while an application continues to run.  
 
-## Registering Orchestrator with VSS  
+## Register Orchestrator with VSS  
+
 The **SCOExpressWriter** command\-line utility registers an Orchestrator database as a component associated with the Orchestrator management server. This association instructs DPM to back up the Orchestrator database when it performs a backup of the management server. Without this registration DPM must perform an individual backup of each component.  
 
 You must run **SCOExpressWriter** on the management server being registered, and you must be logged on with a user account that is a member of the local Administrators group.  
@@ -36,11 +39,11 @@ To register the Orchestrator database used by the local management server, run t
 
 ## Orchestrator servers
 
-Orchestrator management server, Runbook servers, and web servers do not persist any data. Runbooks and their settings are stored entirely in the Orchestrator database and accessed by these servers as required. Management servers and Runbook servers have a settings.dat file that includes configuration details to connect to the Orchestrator database. Orchestrator web servers have a web.config file with this same information. These files are backed up with standard file backups which are supported by DPM.  
+Orchestrator management server, Runbook servers, and web servers don't persist any data. Runbooks and their settings are stored entirely in the Orchestrator database and accessed by these servers as required. Management servers and Runbook servers have a settings.dat file that includes configuration details to connect to the Orchestrator database. Orchestrator web servers have a web.config file with this same information. These files are backed up with standard file backups which are supported by DPM.  
 
 ## Orchestrator database
 
-The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
+The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to back up the service master key and store it in a secure off\-site location. For more information, see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
 
 ## Next steps
 

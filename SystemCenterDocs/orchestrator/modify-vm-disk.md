@@ -8,6 +8,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 04/22/2025
+ms.update-cycle: 1095-days
 ---
 
 # Modify VM Disk activity

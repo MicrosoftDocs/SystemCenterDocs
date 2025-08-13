@@ -1,9 +1,8 @@
 ---
 ms.assetid: ba25182b-5ddf-439e-8dd6-541194e65168
 title:  include file  
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  05/17/2018
 ms.topic:  include
 ms.service:  system-center

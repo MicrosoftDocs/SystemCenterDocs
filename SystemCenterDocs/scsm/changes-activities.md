@@ -1,17 +1,17 @@
 ---
-title: Manage changes and activities
+title: Manage Changes and Activities
 description: Provides an example scenario and details about how to manage changes and activities in Service Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/31/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 6228f358-1256-475f-8d63-9bdf62070ecd
 ---
 
@@ -57,7 +57,7 @@ A change request normally results in a change to a configuration item. Therefore
 
 Complete the following steps to initiate and classify a change request.  
 
-### Create a new change request
+### Create a change request
 
 You can use the following procedures in Service Manager to create a change request for servers that are part of a service and then validate the creation of the change request. First, you view items from the service dependency view. Then, you navigate to the configuration items and open a change request template. Lastly, you assess the priority, impact, and risk level of the request. Although you create the change request from a service dependency view, you can also create a new change request from other places in Service Manager.  
 
@@ -84,6 +84,8 @@ To create a change request, follow these steps:
 
 #### Validate the creation of a change request  
 
+To validate the creation of a change request, follow these steps:
+
 1. Open the service that contains the items for which you created the change request, and select the **Service Dependents** tab.  
 2. In the **Service Components** list, notice that the two servers you opened the change request for are marked with **YES** under the **Affected By Change** column.  
 3. Select **Cancel** to close the service.  
@@ -92,7 +94,7 @@ To create a change request, follow these steps:
 
 You can use the following procedures to add related items to a change request and then validate the addition of the items. You can add related items, such as configuration items, incidents, other change requests, files, and knowledge articles. When you add files, such as saved screenshots, saved written procedures, and knowledge articles, reviewers and implementers can more easily review, approve, and implement the change.  
 
-To add files to any work item, including change requests, you must first enable the appropriate option. For more information, see [How to Configure General Change Settings](./change-activity-mgt.md).  
+To add files to any work item, including change requests, you must first enable the appropriate option. For more information, see [Configure General Change Settings](./change-activity-mgt.md).  
 
 To add related items to a change request, follow these steps:
 
@@ -120,6 +122,8 @@ You can use the following procedures to add a manual activity and then assign it
 
 #### Add a manual activity  
 
+To add a manual activity, follow these steps:
+
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Change Management**, and select **All Change Requests**.  
 3. Double\-click the change request to which you want to add a manual activity. For example, double\-click **Apply Exchange Server Update**.  
@@ -139,9 +143,11 @@ You can use the following procedures to add a manual activity and then assign it
 
 You can use the following procedures to add a dependent activity to an existing change request, which is used as part of the release management process. Although you can add dependent activities to work items, such as release records and service requests, the primary purpose of a dependent activity is for use as a mechanism to associate a change request with a release record. Specifically, a manual activity in a release record is linked to the dependent activity in a change request. When it's completed, the dependent activity indicates that the release management process is complete for the change request.  
 
-If you intend to use release management as part of the standard processes in your organization, consider adding dependent activities to change request templates. For more information about creating change request templates, see [How to Create Change Request Templates](./change-activity-mgt.md).  
+If you intend to use release management as part of the standard processes in your organization, consider adding dependent activities to change request templates. For more information about creating change request templates, see [Create Change Request Templates](./change-activity-mgt.md).  
 
 #### Add a dependent activity to a change request  
+
+To add a dependent activity to a change request, follow these steps:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Change Management**, and select **All Change Requests**.  
@@ -182,6 +188,8 @@ To edit a change request, follow these steps:
 
 #### Validate an edited change request  
 
+To validate an edited change request, follow these steps:
+
 1. Double\-click the change request that you updated.  
 2. Verify that your changes are displayed in the change request form.
 
@@ -201,6 +209,8 @@ To add a change reviewer, follow these steps:
 
 #### Validate that a reviewer was added  
 
+To validate that a reviewer was added, follow these steps:
+
 1. Double\-click the change request to which you added a reviewer. For example, double\-click **Apply Exchange Server Service Pack**.  
 2. Select the **Activities** tab, and then double\-click the activity to which you added a reviewer.  
 3. Verify that the reviewer was added.
@@ -213,6 +223,8 @@ You can use the following procedures to approve a review activity in the Service
 > Users can only approve or reject the activities that are assigned to them.  
 
 #### Approve a review activity for a change request  
+
+To approve a review activity for a change request, follow these steps:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Review Activities**, and select **In\-Progress Activities**.  
@@ -233,6 +245,8 @@ You can use the following procedure to notify reviewers that an activity is avai
 > Only administrators can configure workflow notifications.  
 
 #### Notify reviewers that an activity is available for review  
+
+To notify reviewers that an activity is available for review, follow these steps:
 
 1. In the Service Manager console, select **Administration**.  
 2. In the **Administration** pane, expand **Workflows**, and select **Configuration**.  
@@ -255,6 +269,8 @@ You can use the following procedure to notify reviewers that an activity is avai
 
 #### Notify users that a change request has been closed  
 
+To notify users that a change request has been closed, follow these steps:
+
 1. In the Service Manager console, select **Administration**.  
 2. In the **Administration** pane, expand **Workflows**, and select **Configuration**.  
 3. Select **Change Request Event Workflow Configuration**, and select **Configure Workflow Rules** in the **Tasks** pane.  
@@ -274,7 +290,7 @@ You can use the following procedure to notify reviewers that an activity is avai
 
 #### Validate receipt of the notification  
 
-- The reviewer of the review activity or the user that the change request is assigned to receives an email message that indicates that a new review activity requires approval or that the change request was closed.
+- The reviewer of the review activity or the user that the change request is assigned to receive an email message that indicates that a new review activity requires approval or that the change request was closed.
 
 ## Suspend and resume a Service Manager change request
 
@@ -342,6 +358,8 @@ You can use the following procedures to complete or fail a manual activity in Se
 
 #### Successfully complete a manual activity  
 
+To successfully complete a manual activity, follow these steps:
+
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Manual Activities**, and select **In\-Progress Activities**.  
 3. Select the manual activity.  
@@ -350,6 +368,8 @@ You can use the following procedures to complete or fail a manual activity in Se
 
 #### Fail a manual activity  
 
+To fail a manual activity, follow these steps:
+
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Manual Activities**, and select **In\-Progress Activities**.  
 3. Select the manual activity.  
@@ -357,6 +377,8 @@ You can use the following procedures to complete or fail a manual activity in Se
 5. In the **Comments** box, enter a comment, and select **OK**. For example, enter **The post\-implementation analysis indicates that the new hardware does not adequately meet our needs and has failed the review**.  
 
 #### Validate that a manual activity is complete or failed  
+
+To validate that a manual activity is complete or failed, follow these steps:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Manual Activities**, and select **All Activities**.  
@@ -371,6 +393,8 @@ You can use the following procedures to permanently close a successful change re
 
 #### Close a successful change request  
 
+To close a successful change request, follow these steps:
+
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Work Items**, expand **Change Management**, and select **Change Requests: Completed**.  
 3. Select the change request.  
@@ -378,6 +402,8 @@ You can use the following procedures to permanently close a successful change re
 5. In the **Comment** box, enter a comment, and select **OK**.  
 
 #### Close a failed change request  
+
+To close a failed change request, follow these steps:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, select **Change Management**, and select **Change Requests: Failed**.  
@@ -397,6 +423,8 @@ You can use the following procedure to notify reviewers that an activity is avai
 > Only administrators can configure workflow notifications.  
 
 #### Notify reviewers that an activity is available for review
+
+To notify reviewers that an activity is available for review, follow these steps:
 
 1. In the Service Manager console, select **Administration**.  
 2. In the **Administration** pane, expand **Workflows**, and select **Configuration**.  
@@ -419,6 +447,8 @@ You can use the following procedure to notify reviewers that an activity is avai
 
 #### Notify users that a change request has been closed
 
+To notify users that a change request has been closed, follow these steps:
+
 1. In the Service Manager console, select **Administration**.  
 2. In the **Administration** pane, expand **Workflows**, and select **Configuration**.  
 3. Select **Change Request Event Workflow Configuration**, and select **Configure Workflow Rules** in the **Tasks** pane.  
@@ -438,7 +468,7 @@ You can use the following procedure to notify reviewers that an activity is avai
 
 #### Validate receipt of the notification
 
-- The reviewer of the review activity or the user that the change request is assigned to receives an email message that indicates that a new review activity requires approval or that the change request was closed.
+- The reviewer of the review activity or the user that the change request is assigned to receive an email message that indicates that a new review activity requires approval or that the change request was closed.
 
 ## Next steps
 

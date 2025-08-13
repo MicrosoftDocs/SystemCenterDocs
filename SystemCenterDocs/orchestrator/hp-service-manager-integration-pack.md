@@ -7,13 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 6eb5a088-0b37-456c-bd38-8af868e5ae82
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 11/20/2024
+ms.date: 04/15/2025
 ---
 
 # HP Service Manager Integration Pack for System Center - Orchestrator
@@ -64,7 +63,7 @@ After you download the integration pack file, you must register it with the Orch
 ## Prepare to connect to the HP Service Manager Server
 
 - Make a record of the HP Service Manager server name and port number used to connect the HP Service Manager client.
-- For all HP Service Manager servers that you plan to connect to you must create an ODBC data source name (DSN) on each Client and Runbook server. Both SQL Server Native and Oracle ODBC connections are supported. See [Configuring the HP Service Manager Connections](#configure-the-hp-service-manager-connections).
+- For all HP Service Manager servers that you plan to connect to you must create an ODBC data source name (DSN) on each Client and Runbook server. Both SQL Server Native and Oracle ODBC connections are supported. See [Configure the HP Service Manager Connections](#configure-the-hp-service-manager-connections).
 - The licensing model for the components of HP Service Manager varies depending on the version installed. Consult the HP product documentation to determine which components are licensed separately. This integration pack requires HP Service Manager SOAP web service access to operate correctly. Ensure that this component is installed and licensed, if necessary.
 - Ensure that the user configured to access the HP Service Manager server has been assigned the SOAP-API CAPABILITY WORD in the HP Service Manager system. Depending on the version of HP Service Manager, it may be necessary to purchase extra licensing to enable the SOAP-API CAPABILITY WORD. Consult your HP Sales Representative for more information on licensing.
 
@@ -77,6 +76,8 @@ The HP Service Manager integration pack requires a connection to the HP Service 
 To avoid possible corruption, don't use alternate means to directly connect to the database. Always use the ODBC connection to ensure proper integration.
 
 ### Set up a SQL Server ODBC connection
+
+To set up a SQL Server ODBC connection, follow these steps:
 
 1. Open the **ODBC Data Source Administrator Utility (32-bit)**. To access this utility, select **Start**, **Run**, and then enter **\\Windows\\SysWOW64\\odbcad32.exe** in the **Open** box. Select **OK**.
 2. In the **ODBC Data Source Administrator**, select the **System DSN** tab.
@@ -98,6 +99,8 @@ To avoid possible corruption, don't use alternate means to directly connect to t
 
 ### Set up an Oracle ODBC Connection
 
+To set up an Oracle ODBC connection, follow these steps:
+
 1. Configure an Oracle Net Service name using the Oracle Net Configuration Assistant. For more information on this step, see the relevant Oracle product documentation.
 2. Open the ODBC Data Source Administrator Utility (32-bit). To access this utility, select **Start**, then **Run**, and then enter **\\Windows\\SysWOW64\\odbcad32.exe** in the **Open** box. Select **OK**.
 3. In the ODBC Data Source Administrator, select the **System DSN** tab.
@@ -112,6 +115,8 @@ To avoid possible corruption, don't use alternate means to directly connect to t
 12. Select **OK** to close the ODBC Data Source Administrator.
 
 ### Set up an HP Service Manager connection
+
+To set up an HP Service Manager connection, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and select **HP Service Manager**. The HP Service Manager dialog appears.
 2. On the **Connections** tab, select **Add** to begin the connection setup. The **Connection Configuration** dialog will appear.
@@ -161,4 +166,4 @@ To expose a required field, follow these steps:
     2. Ensure that each of the folders in the file path exists exactly as shown in the error message.
     3. Create any missing folders if necessary.
 
-    if the Runbook Designer is launched by a user without administrative privileges on the computer. In the current version of the integration pack, ensure that the user has sufficient permissions to write to the **%COMMONPROGRAMFILES(x86)%\\Microsoft System Center 2012\\Orchestrator\\Extensions\\Support\\HPServiceManager\\** directory.
+    If the Runbook Designer is launched by a user without administrative privileges on the computer. In the current version of the integration pack, ensure that the user has sufficient permissions to write to the **%COMMONPROGRAMFILES(x86)%\\Microsoft System Center 2012\\Orchestrator\\Extensions\\Support\\HPServiceManager\\** directory.

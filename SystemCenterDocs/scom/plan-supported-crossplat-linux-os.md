@@ -2,13 +2,14 @@
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
 title: Supported Linux operating system versions
 description: This article lists the supported versions of Linux operating system for System Center Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/09/2025
+author: jyothisuri
+ms.author: jsuri
+
+ms.date: 08/13/2025
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 

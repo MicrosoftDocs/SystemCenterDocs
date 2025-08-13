@@ -6,10 +6,9 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ---
 # Overview of the Orchestration console
@@ -226,7 +225,7 @@ The **Events** workspace lets you view log events. By default, log events includ
 
 1. Open your browser.  
 
-2. In the address bar, enter `http://computer name/:port number` where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
+2. In the address bar, enter `http://computer name:port number` where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
 
 ## Start the Orchestration console in the Runbook Designer  
 
@@ -629,7 +628,7 @@ The **Events** workspace lets you view log events. By default, log events includ
 
 1. Open your browser.  
 
-2. In the address bar, enter `http://computer name/:port number` where computer name is the name of the server where the web service is installed and port is the port number selected during configuration of the web service. By default, the port is 82.  
+2. In the address bar, enter `http://computer name:port number` where computer name is the name of the server where the web service is installed and port is the port number selected during configuration of the web service. By default, the port is 82.  
 
 ## Start the Orchestration console in the Runbook Designer
 

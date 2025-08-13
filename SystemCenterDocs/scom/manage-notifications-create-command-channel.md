@@ -1,14 +1,13 @@
 ---
 title: How to Enable a Command Notification Channel
 description: This article describes how to create a command notification channel in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 230eadbd-2a79-4987-903f-4bd0c85536fd
 ---
 

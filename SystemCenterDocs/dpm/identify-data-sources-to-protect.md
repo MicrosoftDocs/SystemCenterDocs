@@ -1,19 +1,21 @@
 ---
 description: This article helps you identify data sources you want to protect with DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Identify data sources you want to protect
+ms.date: 04/16/2025
+title: Identify Data Sources you want to Protect
+ms.update-cycle: 1095-days
 ms.subservice: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Identify data sources you want to protect
+
+This article helps you identify data sources you want to protect with DPM.
 
 To protect data sources with System Center Data Protection Manager (DPM), you'll need to do the following:
 
@@ -31,4 +33,4 @@ To protect data sources with System Center Data Protection Manager (DPM), you'll
 
 ## Next steps
 
-[Deploy the DPM protection agent](~/dpm/deploy-dpm-protection-agent.md)
+[Deploy the DPM protection agent](~/dpm/deploy-dpm-protection-agent.md).

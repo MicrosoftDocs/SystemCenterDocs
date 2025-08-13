@@ -5,7 +5,7 @@ description: This article provides information about how to manage Azure updates
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/22/2025
-ms.topic: how-to
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '<=sc-vmm-2022'
