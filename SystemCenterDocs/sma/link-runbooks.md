@@ -1,6 +1,6 @@
 ---
 description: Provides an overview of how you can call one or more child runbooks.
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

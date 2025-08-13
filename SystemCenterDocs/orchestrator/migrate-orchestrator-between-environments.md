@@ -3,11 +3,11 @@ title: Migrate Orchestrator between environments
 description: Describes how you can automatically move Orchestrator between environments.
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+ms.topic: upgrade-and-migration-article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/13/2025
+ms.update-cycle: 1095-days
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
@@ -158,7 +158,7 @@ Use the following steps to create a batch script to run on the new SQL Server co
 
 ## Deploy Orchestrator components in environment B  
 
-Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. For more information on deploying Orchestrator using the command line, see [Install with the Orchestrator Command Line Install Tool](~/orchestrator/install.md).  
+Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. For more information on deploying Orchestrator using the command line, see [Install with the Orchestrator Command Line Install Tool](install.md).  
 
 ::: moniker range="<=sc-orch-2019"
 The following example installs all of Orchestrator on a computer running SQL Server 2008 R2 and .NET Framework&nbsp;4:  
@@ -171,7 +171,7 @@ The following example installs Orchestrator on a computer running SQL Server:
 ::: moniker range="sc-orch-2025"
 
 >[!NOTE]
->Review guidelines about [Secure connection to SQL server)](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server).
+>Review guidelines about [Secure connection to SQL server)](install.md#secure-connection-to-sql-server).
 
 ::: moniker-end
 

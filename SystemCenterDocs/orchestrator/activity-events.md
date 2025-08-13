@@ -7,12 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
-ms.date: 11/01/2024
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.date: 04/10/2025
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Capture activity events to monitor runbooks
@@ -21,7 +20,7 @@ Each activity in an Orchestrator runbook has the ability to send an event whenev
 
 ## Configure an activity to send events  
 
-Follow these steps to configure an activity to send events:
+To configure an activity to send events, follow these steps:
 
 1. Open the runbook in the **Runbook Designer**.  
 
@@ -51,7 +50,7 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 
 ### Add an SNMP trap destination
 
-Follow these steps to add an SNMP trap destination:
+To add an SNMP trap destination, follow these steps:
 
 1. Open a command prompt with administrative credentials.  
 
@@ -73,7 +72,7 @@ You can't remove individual SNMP trap destinations. Instead, you must remove all
 
 **oedc /snmp /clear**  
 
-Follow these steps to remove all SNMP trap destinations:
+To remove all SNMP trap destinations, follow these steps:
 
 1. Open a command prompt with administrative credentials.  
 
@@ -93,7 +92,7 @@ Follow these steps to remove all SNMP trap destinations:
 
 After you've configured an SNMP trap destination for Orchestrator event notifications, you can receive them by using any tool that reads SNMP traps, or you can use the **Monitor SNMP Trap** activity in a runbook to read the information. The content of SNMP traps is limited to the first 1000 characters if the content exceeds that length.  
 
-The variable bindings are listed in the following table.  
+The variable bindings are listed in the following table:  
 
 |Trap Enterprise ID|1.3.6.1.4.1.4217.100.100|  
 |---|---|    
@@ -104,5 +103,5 @@ The variable bindings are listed in the following table.
 
 ## Next steps  
 
-- Look up the data that is captured when activities fire at [Orchestrator Logs](orchestrator-logs.md)  
+- Look up the data that is captured when activities fire at [Orchestrator Logs](orchestrator-logs.md).  
 - Read more about SNMP traps at [SNMP Traps in Windows Server](https://blogs.technet.microsoft.com/networking/2009/06/25/snmp-traps-in-windows-server/).

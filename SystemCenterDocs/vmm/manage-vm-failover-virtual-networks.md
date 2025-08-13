@@ -1,20 +1,17 @@
 ---
 ms.assetid: 1e065bb4-b2a4-4632-a262-67bdfc23f0d1
-title: Configure VM failover between virtual networks in VMM
+title: Configure VM Failover Between Virtual Networks in VMM
 description: This article describes how to fail over VMs between virtual networks without Azure Site Recovery
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 08/30/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Configure VM failover between virtual networks
-
-
 
 This article describes how to handle replication and failover of VMs in System Center Virtual Machine Manager (VMM) between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
 
@@ -33,6 +30,8 @@ This sample solution describes the following environment:
 
 ## Before you start
 
+Here are some considerations before you start configuring VM failover between virtual networks:
+
 - Ensure that the virtual switch and logical switch settings are valid and match in the VMM fabric. If they don't, network attach operations might not succeed after failover.
 - The primary VM must be connected to a virtual network
 - The replica VM must not be connected to a network
@@ -49,7 +48,7 @@ This sample solution describes the following environment:
 - Ensure both VMs are turned off before you run the scripts.
 - Ensure that the replication state is enabled on both VMs.
 
-## Run the planned failover script
+## [Run the planned failover script](#tab/run-the-planned-failover-script)
 
 Here's what this script does:
 
@@ -265,12 +264,12 @@ foreach($vmAdapter in $VMOnPDAdapter)
 }
 ```
 
-## Run the reverse replication/cancel script
+## [Run the reverse replication/cancel script](#tab/run-the-reverse-replicationcancel-script)
 
 Here's what this script does:
 
-1. If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
-2. If you cancel, the script reverses the networking steps and restores the primary VM connections after disconnecting the replica VM networks.
+- If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
+- If you cancel, the script reverses the networking steps and restores the primary VM connections after disconnecting the replica VM networks.
 
 ### Run the script
 
@@ -494,3 +493,5 @@ foreach($vmAdapter in $VMOnDRAdapter)
     $counter = $counter + 1
 }
 ```
+---
+

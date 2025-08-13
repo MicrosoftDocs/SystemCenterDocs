@@ -1,20 +1,19 @@
 ---
-title: Troubleshooting the Visio Add-in
+title: Troubleshoot the Visio Add-in
 description: This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/17/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.assetid: c9dabbc3-0ac5-46fe-8a34-b82b67c0e6ad
 ---
 
-# Troubleshooting the Visio Add-in
+# Troubleshoot the Visio Add-in
 
-
+This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
 
 The following sections provide information about troubleshooting the Visio Add-in:  
 
@@ -24,7 +23,7 @@ The following sections provide information about troubleshooting the Visio Add-i
 
 ## Enable trace logging for the server data module
 
-Use the following steps to enable trace logging for the server data module installed on the SharePoint server.  
+To enable trace logging for the server data module installed on the SharePoint server, follow these steps:  
 
 1.  Open the Microsoft.Office.Visio.Server.OperationsManager.dll configuration file in a text editor (such as Notepad).  
 
@@ -94,7 +93,6 @@ To work around this problem, delete the configuration file identified at the top
 \OpsMgrAddin.vsto_vstoloca_Path_logwdvddmizljsrbc2bvt5gtm5juzdix\12.0.6325.5000\\user.config  
 
 ### You receive a MissingMethodException error message
-
 You might see the following error message:  
 
 ```  
@@ -115,6 +113,7 @@ The state graphic doesn't appear on a stencil even though you've linked the shap
 Some stencils in Visio aren't defined with a wrapping group. To resolve this problem, create a group for the shape, and then use the **Link Shape to Data** option again. To create a group, right-click the shape, and select **Shape** and **Group**.  
 
 ### You see security warnings when you open a diagram  
+
 When you open a document that you previously linked to Operations Manager, you receive multiple security warnings.  
 
 This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don't show this message again**.  

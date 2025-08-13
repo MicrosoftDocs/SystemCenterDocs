@@ -3,16 +3,16 @@ title: Get Checkpoint
 description: The Get Checkpoint activity is used to retrieve a virtual machine checkpoint based on the filters you specify so that it can be used to restore the virtual machine to a previous state.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 047a8606-628d-4689-bfbc-336163cc52ba
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Checkpoint

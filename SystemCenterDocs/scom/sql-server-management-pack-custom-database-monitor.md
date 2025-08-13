@@ -1,11 +1,10 @@
 ---
-title: Custom database query-based monitors in System Center Management Pack for SQL Server
-description: This article explains how to configure a custom database query monitor in System Center Management Pack for SQL Server.
-manager: evansma
+title: Custom database query-based monitors in System Center management pack for SQL Server
+description: This article explains how to configure a custom database query monitor in System Center management pack for SQL Server.
 author: epomortseva
-ms.author: v-fkornilov
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/11/2025
+ms.author: jsuri
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
@@ -27,7 +26,7 @@ The Cookdown type allows you to retrieve data from multiple databases using a si
 
 ### Two-state custom database cookdown monitor
 
-To create a two-state custom query-based monitor, perform the following steps:
+To create a two-state custom query-based monitor, follow these steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Objects**. Right-click **Monitors**, select **Create a Monitor**, and then select **Unit Monitor**.
 
@@ -156,7 +155,7 @@ This monitor type can increase performance.
 
 ### Two-state custom database context monitor
 
-To create a two-state custom query-based monitor, perform the following steps:
+To create a two-state custom query-based monitor, follow these steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Objects**. Right-click **Monitors**, select **Create a Monitor**, and then select **Unit Monitor**.
 

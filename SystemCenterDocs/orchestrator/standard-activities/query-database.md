@@ -2,18 +2,18 @@
 title: Query Database 
 description: This article describes the Query Database activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/14/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 65d32c6e-5ac0-4672-9c8b-57d8b12af8f4
 caps.latest.revision: 19
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Query Database
 
@@ -59,7 +59,7 @@ Use the following information to configure the Query Database activity.
 
  Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.  
 
-### Access Connections
+### [Access Connections](#tab/access-connections)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -69,7 +69,7 @@ Use the following information to configure the Query Database activity.
 |**Password**|Enter the password for the workgroup file.|  
 |**DB password**|Enter the password for the Access database.|  
 
-### ODBC Connections
+### [ODBC Connections](#tab/odbc-connections)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -77,7 +77,7 @@ Use the following information to configure the Query Database activity.
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### Oracle Connections
+### [Oracle Connections](#tab/oracle-connections)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -85,11 +85,11 @@ Use the following information to configure the Query Database activity.
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### SQL Server Connections
+### [SQL Server Connections](#tab/sql-server-connections)
 
 ::: moniker range="sc-orch-2025"
 
->[!Note]
+>[!NOTE]
 >MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
 
 ::: moniker-end
@@ -99,6 +99,8 @@ Use the following information to configure the Query Database activity.
 |**Authentication**|Select either **Windows Authentication** or **SQL Server Authentication**.|  
 |**Server**|Enter the name of the SQL Server that you want to access.|  
 |**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, enter the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
+
+---
 
 ### Timeout
 
@@ -115,7 +117,7 @@ Use the following information to configure the Query Database activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  
@@ -129,4 +131,4 @@ Use the following information to configure the Query Database activity.
 |Access file|The Access database file that was queried. This published data will only be available when **Access** is selected on the **Connection** tab.|  
 |Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published data will only be available when **Access** is selected on the **Connection** tab.|  
 |For each row published|
-|Full line as a string with fields separated by `;`|The entire row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row|
+|Full line as a string with fields separated by `;`|The entire row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row.|

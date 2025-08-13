@@ -4,10 +4,9 @@ description: Describes the Add VM Disk activity, to add a disk to the user image
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2
 monikerRange: '<=sc-orch-2019'
 ---

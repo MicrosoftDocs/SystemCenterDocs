@@ -2,11 +2,10 @@
 ms.assetid: 17e19c04-7712-456c-a5ed-59a1237d05f5
 title: Manage telemetry settings in System Center Orchestrator
 description: This article provides information about how to manage the telemetry settings in System Center Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/16/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: UpdateFrequency2
@@ -21,6 +20,8 @@ By default, Orchestrator sends diagnostic and connectivity data to Microsoft. Mi
 Administrators can turn off this feature at any point of time.
 
 ## Turn on/off telemetry from console
+
+To turn on/off telemetry from console, follow these steps:
 
 1. In the Orchestration console > toolbar, select **Help**.
 
@@ -40,7 +41,9 @@ Administrators can turn off this feature at any point of time.
 
 ## Telemetry data collected
 
-| Data related To | Data collected |
+The table below lists the data related to System Center - Orchestrator that are collected for telemetry purposes:
+
+| Data related to | Data collected |
 | --- | --- |
 | **Installation and other configuration information** | DataBase name  <br /><br /> Database authentication type|
 | **Usage** | Number of Runbook designers <br /><br /> Number of folders <br /><br /> Number of variables <br /><br /> Number of schedules <br /><br /> Number of runbooks<br /><br /> Number of computer groups <br /><br /> 	Number of integration packs  <br /><br />  Average load per minute on runbook server <br /><br /> Names of integration packs <br /><br /> Activity name in use <br /><br /> Run script types |

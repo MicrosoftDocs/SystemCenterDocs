@@ -2,9 +2,8 @@
 ms.assetid: 6aaf4c5c-db14-4c48-8c6d-8912ac333cab
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2016
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/13/2023
 ms.topic: include
 ms.service:  system-center
