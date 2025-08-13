@@ -4,7 +4,7 @@ title: Set up TLS 1.2 for VMM
 description: This article provides instructions for setting up TLS 1.2 with VMM
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/02/2024
+ms.date: 08/13/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,7 +13,6 @@ ms.custom: engagement-fy24
 ---
 
 # Set up TLS 1.2 for VMM
-
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center Virtual Machine Manager (VMM) server.
 
@@ -36,11 +35,17 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Install a SQL Server update for TLS 1.2 support
 
-1. Open [KB 3135244](https://support.microsoft.com/help/3135244).
-2. [Download and install](https://support.microsoft.com/help/3135244) the update for your SQL Server version.
-    - You don't need this update if you're running SQL Server 2016.
-    - SQL Server 2008 R2 doesn't support TLS 1.2.
+::: moniker range="sc-vmm-2016"
 
+SQL server 2016 is required for TLS 1.2 support.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+
+SQL server 2016 or later is required for TLS 1.2 support.
+
+::: moniker-end	
 
 ## Configure the VMM server to use TLS 1.2
 
