@@ -1,12 +1,12 @@
 ---
-title: Troubleshoot computer problems with tasks
+title: Troubleshoot Computer Problems with Tasks
 description: You can troubleshoot computer problems with Service Manager tasks.
 ms.topic: troubleshooting-general
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.subservice: service-manager
 ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Troubleshoot computer problems with Service Manager tasks
 
-
+This article provides information about troubleshooting computer problems with Service Manager tasks.
 
 If you want to view the logs on a remote computer that is exhibiting problems, you must first create a task that opens Event Viewer. Event Viewer reads logs from remote computers.
 

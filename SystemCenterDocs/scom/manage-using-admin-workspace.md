@@ -1,9 +1,9 @@
 ---
 title: Use the Administration Workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
+ms.date: 04/22/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/15/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
@@ -13,7 +13,7 @@ ms.topic: concept-article
 
 # Use the Administration workspace in Operations Manager
 
-
+This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
@@ -21,7 +21,7 @@ When you first open the Administration workspace or when you select **Administra
 
 The sections below describe the different options in the Administration workspace and link to more detailed information about the task or option.  
 
-## Connected Management Groups  
+## Connected Management Groups 
 You can connect management groups to enable the forwarding of alerts and other monitoring data from a connected management group to the local management group. Tasks can be initiated from a local management group to run on managed objects of a connected management group.  
 
 Use **Connected Management Groups** in the Administration workspace to connect a management group or to edit the properties of a connected management group.  
