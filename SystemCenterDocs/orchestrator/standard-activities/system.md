@@ -24,7 +24,7 @@ The following table provides a brief description of tasks you can accomplish whe
 |Tasks|System activities|  
 |-----------|-----------------------|  
 |Run any program or command on any computer in your domain.|[Run Program](run-program.md)|  
-|Run scripts that parse data or run functions against available APIs.|[Run .Net Script](run-net-script.md)|  
+|Run scripts that parse data or run functions against available APIs.|[Run .NET Script](run-net-script.md)|  
 |End processes that are running on the runbook server or on a remote computer.|[End Process](end-process.md)|  
 |Start, stop, pause, or restart a Windows service.|[Start/Stop Service](start-stop-service.md)|  
 |Restart a computer on your network.|[Restart System](restart-system.md)|  
