@@ -174,11 +174,9 @@ To test an assembly, follow these steps:
 
 13. Select **Show Details** under the activity name in the Run Log pane to see the detailed results, including the input properties and published data.  
 
-
-
 ## QIK CLI Activity Migration
 
- If you've an assembly that was created using the Opalis 6.3 QIK CLI Wizard, you'll need to convert it to be compatible with Orchestrator before it can be used either in an Orchestrator Integration Pack or used directly in runbooks via the Invoke .NET activity. The conversion process is simple and only takes a few seconds per assembly.  
+If you've an assembly that was created using the Opalis 6.3 QIK CLI Wizard, you'll need to convert it to be compatible with Orchestrator before it can be used either in an Orchestrator Integration Pack or used directly in runbooks via the Invoke .NET activity. The conversion process is simple and only takes a few seconds per assembly.  
 
 > [!IMPORTANT]
 > The install for the Orchestrator Integration Toolkit won't fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it isn't present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before using the CLI.  

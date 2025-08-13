@@ -1,10 +1,9 @@
 ---
 ms.assetid: e252996f-c52c-4688-8a97-c0e70734b365
-title: Reporting Services Run As Profiles in Management Pack for SQL Server Reporting Services
+title: Reporting Services Run As Profiles in management pack for SQL Server Reporting Services
 description: This article explains Reporting Services Run As Profiles.
-author: epomortseva
-ms.author: v-fkornilov
-manager: evansma
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/10/2025
 ms.topic: article
 ms.service: system-center
@@ -72,7 +71,7 @@ If the default action account for the given system doesn't have the necessary pe
 
 ## Configure Run As Profiles
 
-To configure Run As profiles, perform the following steps:
+To configure Run As profiles, follow these steps:
 
 1. Identify the names of the target computers where the default action account has insufficient rights to monitor SQL Server Reporting Services.
 
