@@ -1,18 +1,18 @@
 ---
-title: Viewing and Investigating Alerts for .NET Applications (Server-side Perspective)
+title: View and Investigate Alerts for .NET Applications (Server-side Perspective)
 description: This article describes the .NET application monitoring feature and how to use it for the first time.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/15/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: e29fed7f-28ec-48fe-b195-0e776a4778da
 ---
 
-# Viewing and investigating alerts for .NET applications
+# View and investigate alerts for .NET applications
 
 
 
@@ -28,6 +28,8 @@ Application monitoring in Operations Manager has two new monitoring features tha
 After you've configured .NET applications to be monitored, you can view alerts and begin investigating the issues.  To configure monitoring of your .NET application, review the [Before you begin monitoring .NET applications](/previous-versions/system-center/system-center-2012-R2/hh543994(v=sc.12)) article to understand the requirements and configuration steps.  
 
 ### View and investigate alerts for .NET applications (server-side example)  
+
+To view and investigate alerts for .NET applications, follow these steps:
 
 1.  To view active alerts by application group, in the System Center - Operations Manager Operations console, in the navigation pane, select **Monitoring**, expand **Application Monitoring\.NET Monitoring** and expand the folder with the name of the application group you configured for monitoring, and select **Active Alerts**.  
 
@@ -116,4 +118,4 @@ After you've configured .NET applications to be monitored, you can view alerts a
 
 ## Next steps
 
-* For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
+For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).

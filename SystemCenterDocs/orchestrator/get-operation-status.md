@@ -2,17 +2,17 @@
 title: Get Operation Status
 description: The Get Operation Status activity is used to get the status of the specified operation.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 08/07/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 12a83835-4c84-4474-a8e0-df70d88e2818
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ---
 
@@ -37,6 +37,6 @@ There are no optional properties for this activity.
 | **Element**   | **Description**   | **Value Type** |
 |:---|:---|:---|
 | Request ID   | The request ID of the asynchronous request made using another Windows Azure Integration pack activity. | String   |
-| Status   | The status of the asynchronous request. The valid values are InProgress, Succeeded, and Failed   | String   |
+| Status   | The status of the asynchronous request. The valid values are InProgress, Succeeded, and Failed.   | String   |
 | Error Code   | The management service error code returned if the asynchronous request failed.   | String   |
 | Error Message | The management service error message returned if the asynchronous request failed.   | String   |

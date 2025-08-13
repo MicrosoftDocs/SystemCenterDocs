@@ -3,9 +3,10 @@ ms.assetid: ec50ea24-d1e0-4230-a3fc-717bd6556cb5
 title: Health rolls up in management pack for SQL Server
 description: This article explains how health rolls up
 author: Anastas1ya
-ms.author: v-fkornilov
+manager: evansma
 ms.date: 04/21/2025
-ms.topic: article
+ms.author: jsuri
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---

@@ -1,14 +1,13 @@
 ---
 title: Configure Monitoring for Java Applications
 description: This article describes how to configure monitoring of Java applications with Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/02/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: ec45bdd7-cc61-4c81-8d1c-a4aae303f892
 ---
 
@@ -27,6 +26,8 @@ Getting started with monitoring Java applications requires these four general st
 4. Verify the Java Application Performance Monitoring Agent deployment  
 
 ## Import and configure the management pack for Java Enterprise Edition
+
+To import and configure the management pack, follow these steps:
 
 1. Import and configure the Management Pack for Java Enterprise Edition (JEE), including installation of BeanSpy application. Java Application Performance Monitoring won't work without the JEE management pack configured and BeanSpy installed.  
 
@@ -49,6 +50,8 @@ Getting started with monitoring Java applications requires these four general st
 4. Using instructions in the Management Pack Guide for JEE, follow the procedure to enable deep monitoring mode.  
 
 ### Import the management pack for Java Application Performance Monitoring  
+
+To import the management pack for Java application performance monitoring, follow these steps:
 
 1. Now that the Management Pack for Java Enterprise Edition is imported and configured and BeanSpy deployed, import the Management Pack for Java Application Performance Monitoring. Download the management pack from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=39709).  
 
@@ -80,6 +83,8 @@ Getting started with monitoring Java applications requires these four general st
 
 ### Manually deploy the Java Application Performance Monitoring agent and enable Java Application Performance Monitoring
 
+To manually deploy the Java Application Performance Monitoring agent and enable Java application performance monitoring, follow these steps:
+
 1. Now that you've configured the Management Pack for Java Enterprise Edition (JEE) through deep monitoring and imported the Management Pack for Java Application Performance Monitoring, you're ready to manually deploy the Java Application Performance Monitoring agent. To see application servers you've configured for monitoring, in **Monitoring**, select **Configurations**.  
 
 2. To enable Java Application Performance Monitoring, in the **Monitoring** pane, in the **Tasks** pane, select **Deep Monitored Configurations**, and then select a deep monitoring application server.  
@@ -89,6 +94,8 @@ Getting started with monitoring Java applications requires these four general st
 4. Next, reconfigure the Java application server. To enable Java Application Performance Monitoring, specify the command line options that use Jar file as class loader and then restart the application. Another discovery after you install the agent enables Application Performance Monitoring.  
 
 ### Verify Application Performance Monitoring agent deployment and override monitors
+
+To verify application performance monitoring agent deployment and override monitors, follow these steps:
 
 1. To verify if Application Performance Monitoring is monitoring an application, right-click an application, and you can see a list of counters: Monitored Requests/sec, Average Request Time, Performance Events/sec, Exception Events/sec, and values for each counter. Five monitors apply to these. For more information about monitors, see the [Management Pack Guide for Java Application Performance Monitoring](/previous-versions/system-center/packs/dn502605(v=technet.10)).  
 
@@ -101,6 +108,6 @@ Getting started with monitoring Java applications requires these four general st
 
 ### View events using Application Diagnostics
 
-Like .NET Application Performance Monitoring, you can use Application Diagnostics to view event information for Java Application Performance Monitoring. For information about opening and using Application Diagnostics, see [Working with the Application Diagnostics Console](manage-working-with-the-application-diagnostics-console.md) and [Working with Events by Using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).  
+Like .NET Application Performance Monitoring, you can use Application Diagnostics to view event information for Java Application Performance Monitoring. For information about opening and using Application Diagnostics, see [Work with the Application Diagnostics Console](manage-working-with-the-application-diagnostics-console.md) and [Work with Events by Using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).  
 
 Due to the way Java statistics are reported, some of the standard Application Performance Monitoring reports don't apply to Java Application Performance Monitoring. For instance, you might see **NA** in some of the report columns where Java Application Performance Monitoring doesn't apply. Additionally, due to the way that Java application containers map to servers, many server-level reports don't have data.

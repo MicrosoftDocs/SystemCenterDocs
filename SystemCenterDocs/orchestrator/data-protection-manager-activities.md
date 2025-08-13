@@ -2,12 +2,12 @@
 title: Data Protection Manager activities in System Center - Orchestrator
 description: The article describes all activities in the integration pack for System Center - Data Protection Manager.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 # System Center - Data Protection Manager Activities

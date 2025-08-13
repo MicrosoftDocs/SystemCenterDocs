@@ -1,22 +1,21 @@
 ---
 ms.assetid: 7a8a492c-fede-4952-952a-6dec5b7be382
-title: UNIX or Linux log file in Operations Manager management pack
+title: UNIX or Linux Log File in Operations Manager management pack
 description: This article provides an overview of UNIX or Linux log file
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/16/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # UNIX or Linux log file
 
 
 
-The  **UNIX/Linux Log File Monitoring**  template lets you create an alert when a particular text is detected in a log file.
+The  **UNIX/Linux Log File Monitoring**  template lets you create an alert when a particular text is detected in a log file. This article provides an overview of UNIX or Linux log file.
 
 ## Scenarios
 
@@ -55,7 +54,7 @@ The following options are available on the  **Log File Details**  page of the wi
 | Log file path | Complete path and name of the log file. |
 | Expression | Regular expression of the text to detect. If you want to detect a simple string of characters, enter the string of characters. |
 
-## Creating and modifying UNIX/Linux log file templates
+## Create and modify UNIX/Linux log file templates
 
 To create a UNIX/Linux log file template, follow these steps:
 
@@ -66,9 +65,9 @@ To create a UNIX/Linux log file template, follow these steps:
    - If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
 2. Start the  **Add Monitoring**  wizard.
-3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Log File Monitoring** , and select  **Next**.
+3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Log File Monitoring**, and select  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, enter a name and description for this new template.
-5. Select a management pack in which you want to save the template or select  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](select-management-pack-file.md).
+5. Select a management pack in which you want to save the template or select  **New**  to create a new management pack. For more information, see [Select a Management Pack File](select-management-pack-file.md).
 6. If you want to monitor the log file on a single computer, do the following:
    - Click the  **Select a Computer**  button next to the  **Computer name**  box.
    - Select the computer to monitor, and select  **OK**.
@@ -85,6 +84,8 @@ To create a UNIX/Linux log file template, follow these steps:
 
 ### Modify an existing UNIX/Linux Log File template
 
+To modify a UNIX/Linux log file template, follow these steps:
+
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.
 3. In the  **Authoring**  navigation pane, expand  **Management Pack Templates** , and then select  **UNIX/Linux Log File**.
@@ -96,7 +97,7 @@ To create a UNIX/Linux log file template, follow these steps:
 
 There's no monitor or collected data for the  **UNIX/Linux Log File Monitoring**  template. If a match is found in the specified log file, an alert is generated. You can view this alert in the  **Active Alerts** view with the other alerts.
 
-## See also
+## Related content
 
-- [Creating Management Pack Templates](/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29)
-- [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Create Management Pack Templates](/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29).
+- [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29).
