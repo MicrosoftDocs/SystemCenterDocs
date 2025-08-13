@@ -4,6 +4,7 @@ title: Set QoS for Storage Resources
 description: This article describes how to set QoS policies for SOFS storage
 author: jyothisuri
 ms.author: jsuri
+ms.date: 04/22/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
