@@ -2,14 +2,14 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
+ms.update-cycle: 180-days
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # SQL Server Design Considerations
@@ -80,8 +80,8 @@ More information about configuring SQL connection encryption can be found here: 
 
 If **not** utilizing encrypted SQL connections, use previous releases of the SQL drivers that do not enforce encryption:
 
-- [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
-- [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
+- [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106&preserve-view=true) version 17.10.6.
+- [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874&preserve-view=true) version 18.7.4.
 
 ### SQL Server updates
 

@@ -2,11 +2,10 @@
 ms.assetid: c875ed10-4374-46fb-978e-06318512350d
 title: Plan VMM deployment
 description: This article provides links to planning System Center VMM deployment
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/20/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23

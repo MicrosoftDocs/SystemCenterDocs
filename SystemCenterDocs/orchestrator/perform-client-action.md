@@ -3,17 +3,16 @@ title: Perform Client Action activity
 description: Describes the configurable properties for the Perform Client Action activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 392c31ad-7e51-46c4-b153-3db61993a160
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Perform Client Action activity for Configuration Manager Integration Pack
