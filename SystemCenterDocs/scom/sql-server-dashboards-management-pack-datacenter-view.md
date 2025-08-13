@@ -1,10 +1,9 @@
 ---
 ms.assetid: 600eb684-a98b-42a6-957b-d43641415b76
-title: Datacenter View in Management Pack for SQL Server Dashboards
+title: Datacenter view in management pack for SQL Server Dashboards
 description: This article explains datacenter view
 author: Anastas1ya
 ms.author: v-fkornilov
-manager: evansma
 ms.date: 04/21/2025
 ms.topic: article
 ms.service: system-center
@@ -13,7 +12,7 @@ ms.subservice: operations-manager
 
 # Datacenter View
 
-This article explains datacenter view. The **Datacenter** view is the home page of the dashboard. This view provides information about the datacenter health state in an aggregated way.
+The **Datacenter** view is the home page of the dashboard. This view provides information about the datacenter health state in an aggregated way.
 
 It's possible to drill down from the **Datacenter** view to the **Instance** view in order to investigate the root cause of the issue.
 

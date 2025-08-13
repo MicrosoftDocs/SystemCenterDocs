@@ -5,9 +5,8 @@ ms.date: 04/21/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3
 ---
 
@@ -60,7 +59,7 @@ Configuration Manager server.
 
 ## Configure the Connection Name property
 
-- Select the ellipsis **(…)** button next to the **Name** field, and then select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
+- Select ellipsis **(…)** next to the **Name** field, and then select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
 
 **Value Type** properties are common across many of the activities.
 These properties provide flexibility in the type of data you provide to
@@ -70,7 +69,7 @@ listed immediately above the Value Type property.
 
 ## Configure Value Type properties
 
-- Select the ellipsis **(…)** button next to the **Value Type** field,
+- Select ellipsis **(…)** next to the **Value Type** field,
     and then select the setting that correctly identifies the type of
     value in the associated property.
 
@@ -85,7 +84,7 @@ Logon/Logoff. The settings on this tab are optional.
 
 ## Mandatory assignment schedules
 
-To add a new mandatory assignment, select the **New** button. The Mandatory Schedule dialog appears.
+To add a new mandatory assignment, select **New**. The Mandatory Schedule dialog appears.
 
 The Mandatory Schedule dialog contains the following elements:
 
@@ -107,7 +106,7 @@ To add a mandatory assignment, follow these steps:
 
 1. Select **Add**. The **Mandatory Schedule** dialog opens.
 2. To schedule the advertisement at a specified date and time, select **Use the following schedule**.
-3. To schedule the event, select the ellipsis **(…)** button to open the **Date Time Selection** dialog. Modify the date and time according to your needs, and select **OK**.
+3. To schedule the event, select ellipsis **(…)** to open the **Date Time Selection** dialog. Modify the date and time according to your needs, and select **OK**.
 4. If you want all the clients to run the program at the same time regardless of time zone, select the **UTC** checkbox.
 5. If you want the advertisement to run on a recurring schedule, select one of the options: **Weekly**, **Monthly**, or **Custom Interval** and set the properties according to your needs.
 6. To run the advertisement after an event, select **Assign immediately after this event**. Select the applicable option **As soon as possible**, **Logoff**, or **Logon**.

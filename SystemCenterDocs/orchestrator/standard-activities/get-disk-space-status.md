@@ -11,13 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e092f55e-b9bd-4e78-8609-1bb5676b7dce
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Get Disk Space Status
 
-This article describes the Get Disk Space Status activity. The Get Disk Space Status activity will retrieve the current amount of available disk space on a UNC path or local disk drive that you specify. This activity can be used to check the space of a destination folder before transferring files to that location.  
+The Get Disk Space Status activity will retrieve the current amount of available disk space on a UNC path or local disk drive that you specify. This activity can be used to check the space of a destination folder before transferring files to that location.  
+
+This article describes the Get Disk Space Status activity.
 
 ## Configure the Get Disk Space Status Activity
 
@@ -27,7 +28,7 @@ This article describes the Get Disk Space Status activity. The Get Disk Space St
 
 ### Details tab  
 
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Enter the name of the computer that you're checking. You can also use the ellipsis **(...)** button to browse for the computer.|  
 |**Drive**|Enter the drive path you want to check. To specify a local drive path, include the colon and backslash. For example, to specify the Local Disk (C:), enter `"C:\"`. If you specify a local drive path, the runbook server that runs the runbook will check its local drive. The runbook server that runs this runbook must have the appropriate rights to check the process on the computer on which you're checking the disk space status.|  

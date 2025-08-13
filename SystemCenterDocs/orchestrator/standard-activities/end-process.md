@@ -11,13 +11,12 @@ ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid: 349554ed-af74-42fd-b061-bb75e0a3bd0f
 caps.latest.revision: 18
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # End Process
 
-This article describes the End Process activity that ends processes that are running on the runbook server or on a remote computer. The End Process activity can be used to shut down an application that isn't responding. The activity returns **success** if the named process is successfully ended or if the name process isn't running. This activity uses a satellite license.  
+The End Process activity ends processes that are running on the runbook server or on a remote computer. The End Process activity can be used to shut down an application that isn't responding. The activity returns **success** if the named process is successfully ended or if the name process isn't running. This activity uses a satellite license.  
 
 ## Configure the End Process Activity
 
@@ -31,7 +30,7 @@ Use the following information to configure the End Process activity:
 
 ## Details tab  
 
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Enter the computer where this process is running. Enter `localhost` to specify the runbook server where the runbook is being processed. You can also use the ellipsis button **(...)** to browse for the computer.|  
 |**Process**|Enter the name or process ID of the process that you're ending. You can also use the ellipsis button **(...)** to browse for the process. Browsing is only available if you've specified a valid **Computer**.|  

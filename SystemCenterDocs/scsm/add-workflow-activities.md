@@ -3,9 +3,8 @@ title: Add or Remove Workflow Activities
 description: You can add or remove Service Manager workflow activities in a workflow to automate processes.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/21/2025
 ms.reviewer: na
 ms.suite: na
@@ -74,7 +73,7 @@ To add a script to a workflow, follow these steps:
 
 2. In the **Activities Toolbox** pane, locate the activity group **Script Activities** and its subgroup **Generic Script Activities**. Drag the script activity that you want to use to a position between the workflow start and workflow end icons or between two existing activities.  
 
-3. Set the script activity properties. To set this, do the following:  
+3. Set the script activity properties:  
 
     1. In the **Details** pane, select any of the properties in the **Activity Inputs** category, and select the ellipsis button (**...**) that appears next to the property.  
 
