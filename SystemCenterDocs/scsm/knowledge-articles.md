@@ -1,12 +1,12 @@
 ---
-title: Manage knowledge articles
+title: Manage Knowledge Articles
 description: Describes how to manage Service Manager knowledge articles.
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.subservice: service-manager
 ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -84,6 +84,8 @@ When the search is complete, Service Manager displays matches for content in the
 
 ### Search for a knowledge article using the Service Manager console
 
+To search for a knowledge article using the Service Manager console, follow these steps:
+
 1. In the Service Manager console, in the search box, enter a keyword or term. For example, enter **Windows 10**.
 
 2. Select the arrow to the right of the search box to view a list of the objects for which you want to search, and select **Knowledge**.
@@ -92,11 +94,15 @@ The **Knowledge Search** form displays the knowledge articles that match the sea
 
 ### Search for a knowledge article when an incident or change request form is open
 
+To search for a knowledge article when an incident or change request form is open, follow these steps:
+
 1. With an incident or change request form open, in the **Tasks** pane, select **Search for Knowledge Articles**.
 
 2. In the **Knowledge Search** form, enter a search term in the **Search for** box, and select **Go**. For example, enter **Windows 10**.
 
 ### Link a knowledge article to an incident or change request
+
+To link a knowledge article to an incident or change request, follow these steps:
 
 1. In the Service Manager console, in the search box, enter the keyword or term for which you want to search. For example, enter **Windows 10**.
 
@@ -116,4 +122,4 @@ The **Knowledge Search** form displays the knowledge articles that match the sea
 
 ## Next steps
 
-- [Configure and use Service Manager cmdlets](sm-cmdlets.md).
+[Configure and use Service Manager cmdlets](sm-cmdlets.md).
