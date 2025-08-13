@@ -1,10 +1,9 @@
 ---
 title: include file
 description: This include file provides information about how to upgrade to System Center Service Provider Foundation (SPF) 2016
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date:  02/21/2023
+author: jyothisuri
+ms.author: jsuri
+ms.date:  08/13/2025
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
@@ -54,7 +53,7 @@ Here's the recommended upgrade order for the above scenario
 
 1. Create a new server running Windows Server 2016 on which to install SPF 2016. You can use a VM. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
 2. Install the prerequisites on the new VM as follows:
-    - Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434).
+    - Install [SQL ODBC Drivers](/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-2016&preserve-view=true).
     - Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=50402).
     - Install SQL Server [command line utilities](https://www.microsoft.com/download/details.aspx?id=50402).
     - Install SQL Server [CLR types](https://www.microsoft.com/download/details.aspx?id=50402).

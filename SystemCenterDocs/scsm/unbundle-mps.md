@@ -1,17 +1,17 @@
 ---
-title: Unbundle a bundled management pack
+title: Unbundle a Bundled Management Pack
 description: Describes how to unbundle a bundled management pack for use with the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/31/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 89e11c59-3f08-4f0a-8efe-b55375c2bb6c
 ---
 
@@ -28,6 +28,8 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
  You can't extract sealed management packs from an .mpb file. Package owners must provide each file separately for a sealed management pack.  
 
 ### Extract individual unsealed management packs from an .mpb file  
+
+To extract individual unsealed management packs from an .mpb file, follow these steps:
 
 1. Start a Service Manager Windows&nbsp;PowerShell session.  
 
@@ -48,6 +50,8 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
    You can now navigate to the *mpdir* folder in the current working folder to view and access the management pack files that you extracted.  
 
 ### Extract resource files from an .mpb file
+
+To extract resource files from an .mpb file, follow these steps:
 
 1. In a Windows&nbsp;PowerShell window, enter the following commands:  
 

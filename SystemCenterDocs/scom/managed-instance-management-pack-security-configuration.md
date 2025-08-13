@@ -1,11 +1,10 @@
 ---
 title: Security configuration in Management Pack for Azure SQL Managed Instance
 description: Learn about the security configuration in Management Pack for Azure SQL Managed Instance.
-author: FKornilov
-ms.author: v-fkornilov
-manager: ebruersan
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: engagement-fy23

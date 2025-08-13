@@ -1,12 +1,11 @@
 ---
 ms.assetid: b883945e-734a-4b04-a63c-54db9c8cb7d9
-title: Create folders from web console in System Center Operations Manager
+title: Create Folders from Web console in System Center Operations Manager
 description: This article describes the procedure on how to create folders using Operations Manager web console, and store dashboards inside them.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/15/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 MonikerRange: '>=sc-om-2019'
@@ -17,6 +16,8 @@ ms.custom: UpdateFrequency2, engagement-fy24
 # Create folders from Web console
 
 You can create folders using the web console and save the dashboard inside them.
+
+This article describes the procedure on how to create folders using Operations Manager web console, and store dashboards inside them.
 
 ::: moniker range="sc-om-2019"
 
@@ -33,9 +34,9 @@ In Operations Manager, you can create a folder and place dashboards/views inside
 > [!NOTE]
 > Folders and views created from operations console can be viewed in the web console, but the dashboards created from the web console won't be visible in the operations console.
 
-## Create a new folder
+## Create a folder
 
-Use the following steps:
+To create a folder, follow these steps:
 
 1. Open the web console and navigate to **Monitoring**.
 2. Select **New dashboard**. This opens a right panel like before where **Monitoring** is selected by default.
@@ -59,6 +60,8 @@ Use the following steps:
 
 ## Save a dashboard inside a folder
 
+To save a dashboard inside a folder, follow these steps:
+
 1. Open the web console and navigate to **Monitoring**.
 2. Select **New dashboard**.
 3. Enter the name of the dashboard.
@@ -73,6 +76,8 @@ Use the following steps:
    > You can create a dashboard at the root monitoring level as before by not selecting any folder and selecting the monitoring root.
 
 ## Create folders in Web console using REST API
+
+To create folders in Web console using REST API, follow these steps:
 
 You can use the following REST APIs to create folders in Web console and save dashboards inside them.
 
@@ -125,10 +130,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
 ## Next Steps
 
-- [See standard views in management pack](manage-console-standard-views.md)
-
-- [Scope the views in management packs](manage-console-scope-views.md)
-
-- [Data Retrieve Items In Monitoring Tree View](/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
-
-- [Component - Add Dashboard](/rest/api/operationsmanager/monitoring/add-dashboard)
+- [Standard views in management pack](manage-console-standard-views.md).
+- [Scope the views in management packs](manage-console-scope-views.md).
+- [Data - Retrieve Items in Monitoring Tree View](/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view).
+- [Component - Add Dashboard](/rest/api/operationsmanager/monitoring/add-dashboard).

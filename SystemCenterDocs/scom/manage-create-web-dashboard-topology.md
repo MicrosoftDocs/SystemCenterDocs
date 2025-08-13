@@ -2,15 +2,14 @@
 ms.assetid:
 title: Create a dashboard with the Topology widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Topology widget.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/15/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Create a dashboard with the Topology widget in the Web console
@@ -40,6 +39,8 @@ Now your topology dashboard visualizes the health of objects positioned on the s
 
 For a topology diagram that includes monitored object health state in the widget, you can reposition the icons of the selected objects on the selected image.
 
+To reposition the icons, follow these steps:
+
 1. Hover your mouse over the widget and select on the ellipsis **...** on the top right corner of the widget.  This will display actions available for the widget.
 
 2. Select the **Edit state indicator layout** action.
@@ -50,4 +51,4 @@ For a topology diagram that includes monitored object health state in the widget
 
 ## Next steps
 
-To learn how to create a dashboard in the new web console with the Custom widget, see [How create a dashboard with the Custom widget in the Web console](manage-create-web-dashboard-custom.md)
+To learn how to create a dashboard in the new web console with the Custom widget, see [How to create a dashboard with the Custom widget in the Web console](manage-create-web-dashboard-custom.md).

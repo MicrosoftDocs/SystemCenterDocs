@@ -1,39 +1,37 @@
 ---
 title: View Configuration of a Monitored Object
-description: This article describes how to view the effective configuration of a monitored object in the Operations Manager HTLM5 Web console.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+description: This article describes how to view the effective configuration of a monitored object in the Operations Manager HTML5 Web console.
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/09/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.assetid:
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
-# How to view the effective configuration of a monitored object
+# View effective configuration of a monitored object
 
-
-
- In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
+In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
 
 From the results, you're able to see the following details:
 
 * Monitor/Rule name
 * Target class
-* Instance - the instance of the monitored object
-* Type - Value is either Rule or Monitor
-* Rule/Monitored enabled - Value is either True or False
-* Generates alert - Value is either True or False  
+* Instance - Instance of the monitored object.
+* Type - Value is either Rule or Monitor.
+* Rule/Monitored enabled - Value is either True or False.
+* Generates alert - Value is either True or False.
 * Alert severity
 * Alert priority
-* Overridden - Value is True or False value indicating if an override is applied  
+* Overridden - Value is True or False, indicating if an override is applied.  
 
 Rules or monitors with an override applied can be expanded to review the default and modified setting.  
 
-## How to launch effective configuration
+## Launch effective configuration
+
 From the Health State widget, select a monitored object in the table and the **Monitored Object details** page is shown.  Scroll down to the bottom of the page and in the Effective Configuration pane, click on the refresh icon in the upper right-hand corner of the pane.  
 
 ![Screenshot showing Enable effective configuration for a monitored instance.](./media/view-effective-configuration/effective-configuration-02.png)
@@ -50,4 +48,4 @@ If a rule or monitor has an override applied, which is reflected by the workflow
 
 ## Next steps
 
-Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.
+Before making changes to the monitoring settings defined in an Operations Manager management pack, review [Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.

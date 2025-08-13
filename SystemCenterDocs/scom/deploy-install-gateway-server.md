@@ -9,7 +9,7 @@ ms.date: 02/17/2025
 ms.custom: intro-installation, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Install a gateway server
