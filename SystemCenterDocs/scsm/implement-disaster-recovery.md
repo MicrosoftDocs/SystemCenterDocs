@@ -1,13 +1,13 @@
 ---
-title: Implement disaster recovery
+title: Implement Disaster Recovery
 description: Describes the steps needed to recover from potential software and equipment failures in your Service Manager environment.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/09/2025
+author: jyothisuri
+ms.author: jsuri
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: how-to
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
@@ -19,9 +19,9 @@ This article describes the steps needed to recover from potential software and e
 
 ## Restore a database
 
-To restore a database \(which includes the encryption keys\) for Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](/previous-versions/sql/sql-server-2008-r2/ms178094(v=sql.105)). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
+To restore a database \(which includes the encryption keys\) for Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Plan for Disaster Recovery](/previous-versions/sql/sql-server-2008-r2/ms178094(v=sql.105)). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
 
-In addition, you must use the script that you created in the [Backing Up Unsealed Management Packs in Service Manager](./prepare-disaster-recovery.md) article in this guide. You use this script to restore permissions for the recreated database.  
+In addition, you must use the script that you created in the [Back Up Unsealed Management Packs in Service Manager](./prepare-disaster-recovery.md) article in this guide. You use this script to restore permissions for the recreated database.  
 
 > [!WARNING]  
 > Long\-term historical data is stored in the Service Manager data warehouse and the current snapshot of the system is stored in the Service Manager database. Recreating the Service Manager data warehouse databases should only be used as a measure of last resort. When possible, you should try to restore the Service Manager data warehouse databases from backups and avoid recreating those databases. If reinstalled, the newly created Service Manager data warehouse databases will be able to synchronize the current snapshot of the system from the Service Manager database-however, historical data will be lost.
@@ -51,8 +51,6 @@ To restore the encryption key, follow these steps:
 8. After you receive the message **Secure Storage Key Restore Complete**, select **Finish**.
 
 ### Restore the server
-
-You can use the following procedure to reinstall a management server in Service Manager.  
 
 > [!NOTE]  
 > You must restore the encryption key before starting this procedure.  
@@ -109,11 +107,13 @@ To recover a data warehouse management server, follow these steps:
 
 ### Promote a Service Manager management server
 
-When you first ran Setup for Service Manager, you installed the initial Service Manager management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional Service Manager management servers to load\-balance Service Manager console connections. Also, you can promote one of the additional Service Manager management servers to take over the role of a failed initial Service Manager management server. For more information, see [Deploying Additional Service Manager Management Servers](deploy-additional-ms.md).
+When you first ran Setup for Service Manager, you installed the initial Service Manager management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional Service Manager management servers to load\-balance Service Manager console connections. Also, you can promote one of the additional Service Manager management servers to take over the role of a failed initial Service Manager management server. For more information, see [Deploy Additional Service Manager Management Servers](deploy-additional-ms.md).
 
 You can use the following procedures to promote a secondary Service Manager management server.  
 
-#### Prepare the secondary management server  
+#### Prepare the secondary management server
+
+To prepare the secondary management server, follow these steps:
 
 1. On the secondary management server, close the Service Manager console.  
 2. On the Windows desktop, select **Start**, and select **Run**.  
@@ -126,7 +126,9 @@ You can use the following procedures to promote a secondary Service Manager mana
 6. Open Windows Explorer. Locate the folder \\Program Files\\Microsoft System Center \<version\>\\Service Manager.  
 7. In this folder, delete the Health Service State folder and all of its contents.  
 
-#### Define the computer name for the Service Manager database  
+#### Define the computer name for the Service Manager database
+
+To define the computer name for the Service Manager database, follow these steps:
 
 1. On the Service Manager database, on the Windows desktop, select **Start**, point to **Programs**, point to **Microsoft SQL Server**, and select **SQL Server Management Studio**.  
 2. In the **Connect to Database Engine** dialog, do the following:  
@@ -145,7 +147,9 @@ You can use the following procedures to promote a secondary Service Manager mana
 7. At the bottom of the **SQLQuery1.sql** pane \(the center pane\), confirm that the "Query executed successfully" message appears.  
 8. Exit Microsoft SQL&nbsp;Server Management Studio.  
 
-#### Restart the services on the secondary management server  
+#### Restart the services on the secondary management server
+
+To restart the services on the secondary management server, follow these steps:
 
 1. On the secondary management server, on the Windows desktop, select **Start**, and select **Run**.  
 2. In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  

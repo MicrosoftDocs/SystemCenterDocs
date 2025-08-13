@@ -2,6 +2,7 @@
 title: Alphabetical List of Standard Activities
 description: This article lists Standard Activities
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -10,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: reference
 ms.assetid:
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 # Alphabetical List of Standard Activities

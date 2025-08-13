@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency2
 ---
 

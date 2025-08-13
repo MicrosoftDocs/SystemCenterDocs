@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Recommendations for antivirus exclusions that relate to Orchestrator

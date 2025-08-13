@@ -2,14 +2,13 @@
 ms.assetid: a12af71c-302a-4add-aaed-f42a0bf4cc8b
 title: Data Driven Alert Management
 description: This article describes how to use the Tune Management Packs feature to improve alert accuracy in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Data driven alert management

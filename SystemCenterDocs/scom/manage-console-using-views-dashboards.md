@@ -7,7 +7,7 @@ ms.date: 04/10/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 0b8ed9f1-b1f0-4006-976f-84d654c5f1da
 ---
 
