@@ -13,7 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Back up Orchestrator
 
-This article discusses about backing up a System Center - Orchestrator environment.
+This article describes about backing up a System Center - Orchestrator environment.
 
 A complete backup of an Orchestrator environment consists of the following:  
 
@@ -39,11 +39,11 @@ To register the Orchestrator database used by the local management server, run t
 
 ## Orchestrator servers
 
-Orchestrator management server, Runbook servers, and web servers do not persist any data. Runbooks and their settings are stored entirely in the Orchestrator database and accessed by these servers as required. Management servers and Runbook servers have a settings.dat file that includes configuration details to connect to the Orchestrator database. Orchestrator web servers have a web.config file with this same information. These files are backed up with standard file backups which are supported by DPM.  
+Orchestrator management server, Runbook servers, and web servers don't persist any data. Runbooks and their settings are stored entirely in the Orchestrator database and accessed by these servers as required. Management servers and Runbook servers have a settings.dat file that includes configuration details to connect to the Orchestrator database. Orchestrator web servers have a web.config file with this same information. These files are backed up with standard file backups which are supported by DPM.  
 
 ## Orchestrator database
 
-The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
+The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information, see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
 
 ## Next steps
 

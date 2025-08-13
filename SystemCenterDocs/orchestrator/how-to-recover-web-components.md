@@ -18,7 +18,7 @@ ms.author: jsuri
 
 When you use the Database Configuration utility to modify the Orchestrator database, the tool won't modify the Web Service database reference (only the installer performs this task). You will need to manually modify it after updating with the database configuration utility.  
 
-This article discusses about the Orchestrator Web components.
+This article describes about the Orchestrator Web components.
 
 ## Modify the Web Service database reference  
 
