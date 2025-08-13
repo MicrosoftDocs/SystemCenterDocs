@@ -1,5 +1,5 @@
 ---
-title: Work with Events by Using Application Diagnostics
+title: Work with Events by using Application Diagnostics
 description: This article describes how to use the Application Diagnostics console to review captured application error, exceptions and troubleshoot the events.
 ms.date: 04/23/2025
 author: jyothisuri
@@ -10,7 +10,6 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: caf7af6f-5967-48a0-b0e5-47cb0e0314f7
-zone_pivot_groups: operations-manager-exceptionevent-performanceevent-performancecounters-distributedchains-similarevents-relatedevents
 ---
 
 # Work with events by using Application Diagnostics
@@ -42,8 +41,6 @@ To open Application Diagnostics from an alert, follow these steps:
 
 Use the following procedures to investigate your alert. IT Pros will most likely want to use information on the Event properties, Performance counters, and Distributed chains tabs to find out what happened, understand if a system issue caused the problem, and investigate where the root cause occurred. Developers will most likely need to use the information on the Distributed chains, Similar events, and Related events tabs to understand the specific context around a code problem.  
 
-::: zone pivot="exceptionevent"
-
 ### Troubleshoot by using Exception Event properties in Application Diagnostics  
 
 In the Application Diagnostics window for the exception alert you're investigating, select the **Event properties** tab to view key details about the alert. This is the first place to check to see if the alert problem is apparent. Some of the key categories of information you'll see on the Event properties page are as follows:  
@@ -63,10 +60,6 @@ In the Application Diagnostics window for the exception alert you're investigati
     > [!TIP]  
     > Use the same troubleshooting steps for Performance events, Similar events, Related events, Distributed chains, and Performance counters as you did for Exception events.  
 
-::: zone-end
-
-::: zone pivot="performanceevent"
-
 ### Troubleshoot by using Performance Event properties in Application Diagnostics  
 
 To troubleshoot by using Performance Event properties, follow these steps:
@@ -81,11 +74,6 @@ To troubleshoot by using Performance Event properties, follow these steps:
 
 -   **Collection Notes** This displays any notes about the event.  
 
-
-::: zone-end
-
-::: zone pivot="performancecounters"
-
 ### Troubleshoot the state of the system by using Performance counters  
 
 To troubleshoot the state of the system, follow these steps:
@@ -98,10 +86,6 @@ To troubleshoot the state of the system, follow these steps:
 2.  Select the performance counter checkboxes for the performance counters you want to include in your information, and select **Apply**.  
 
 3.  Use the information in this display to assess the system performance state around the event you're investigating.  For example, if the performance is uniformly slow at the time of the event, then your alert is likely due to a system performance problem. 
-
-::: zone-end
-
-::: zone pivot="distributedchains"
 
 ### Find the root problem by using Distributed chains
 
@@ -119,10 +103,6 @@ To find the root problem, follow these steps:
 4.  What you see next depends on the kind of problem you're investigating. For example, if you select a transaction where a server isn't found, you might go to the event properties page for that event. This will let you pair the server error with the event you were initially investigating. Since it's a server error, you know that the problem isn't on the client side, but the server side. You might see a graph of the event you selected and be able to break down a performance event in terms of the page load time.  
 
 5.  From event properties, select the server-side call, and select the **Performance Counters** tab for more details.  
-
-::: zone-end
-
-::: zone pivot="similarevents"
 
 ### Troubleshoot by viewing similar events  
 
@@ -142,10 +122,6 @@ To troubleshoot by viewing similar events, follow these steps:
 
     Keep in mind that these are all similar events—related by definition—and these filters give you a better idea of exactly how they're related. So, using the Similar Events filters, you might find that most of your total events have the same problem as the event you're viewing, that it's a performance problem, that they belong to an exception class you configured, and that half of the similar events had the same failed function. Action: The function goes to the developer who needs to update the function code.  
 
-::: zone-end
-
-::: zone pivot="relatedevents"
-
 ### Troubleshoot by viewing related events
 
 To troubleshoot by viewing related events, follow these steps:
@@ -155,9 +131,6 @@ To troubleshoot by viewing related events, follow these steps:
 2.  To view the event details of an event in the list, select the link in the **Description** column.  
 
     In the related events, you might notice that the response time is slow for all the events during a certain time. This could indicate a problem with the system, not the code, and so it might be redirected to the IT pro for a solution. 
-
-::: zone-end
-
 
 ## Next steps
 

@@ -1,7 +1,7 @@
 ---
 ms.assetid: c253b065-5690-4230-88dd-0f794c1480f3
-title: Management Pack for Azure SQL Database Delivery
-description: This article explains how to install Management Pack for Azure SQL Database
+title: Management pack for Azure SQL Database Delivery
+description: This article explains how to install management pack for Azure SQL Database
 author: Anastas1ya
 manager: evansma
 ms.date: 04/23/2025
@@ -39,7 +39,7 @@ Management Pack for Azure SQL Database provides monitoring of [Azure SQL Databas
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
 
-The management pack supports monitoring of 2000 databases in a single Management Group.
+The management pack supports monitoring of 2,000 databases in a single Management Group.
 
 >[!NOTE]
 >If you've been using an agnostic version of [Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md) prior to the upgrade, you can remove both the **Microsoft.SQLServer.Generic.Dashboards.mp** management pack and the **Microsoft.SQLServer.Generic.Presentation.mp** management pack after the upgrade. For a non-agnostic version of Management Pack for SQL Server, the removal of these management packs isn't possible.

@@ -13,6 +13,7 @@ ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
 
 # Personalize a view in Operations Manager
 
+
 This article describes how to customize views in the Operations Manager Operations console.
 
 In System Center Operations Manager, views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view, but you can't save any changes to it. However, you can change the display options of the view and then save it as a personalized view.  

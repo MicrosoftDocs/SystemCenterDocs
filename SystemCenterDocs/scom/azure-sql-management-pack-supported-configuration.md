@@ -1,7 +1,7 @@
 ---
 ms.assetid: 3b973a20-df14-490f-8452-020a9e3ede96
-title: Scope and Supported Configuration in Management Pack for Azure SQL Database
-description: This article explains the scope and supported configuration in Management Pack for Azure SQL Database
+title: Scope and Supported Configuration in management pack for Azure SQL Database
+description: This article explains the scope and supported configuration in management pack for Azure SQL Database
 ms.custom: engagement-fy23
 author: epomortseva
 manager: evansma
@@ -30,7 +30,7 @@ Management Pack for Azure SQL Database supports the following Azure SQL Database
 |Database Geo-Replication|Geo-Replication Link State|
 
 
-### Purchase Models
+### Purchase models
 
 Management Pack for Azure SQL Database supports monitoring of databases in any of the following [purchase models](https://azure.microsoft.com/pricing/details/sql-database/single/):
 
