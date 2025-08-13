@@ -5,7 +5,7 @@ description: This article describes how to configure NAT connection and NAT rule
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/10/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

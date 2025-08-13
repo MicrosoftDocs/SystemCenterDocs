@@ -1,9 +1,8 @@
 ---
 title: include file
 description: include file that summarizes the release notes for Operations Manager 2019.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 09/02/2020
 ms.service: system-center
 ms.assetid: 56adc06e-4317-4622-83f2-cc44a5f40c78

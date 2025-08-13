@@ -2,9 +2,8 @@
 ms.assetid: c875ed10-4374-46fb-978e-06318512350d
 title: include file
 description: include file to provide information about hardware and software requirements for System Center 2016 - Service Provider Foundation
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  06/14/2018
 ms.topic:  include
 ms.service:  system-center
