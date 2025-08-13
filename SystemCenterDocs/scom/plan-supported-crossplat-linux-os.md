@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux operating system
 author: jyothisuri
 ms.author: jsuri
 
-ms.date: 04/09/2025
+ms.date: 08/13/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager

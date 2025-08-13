@@ -2,8 +2,8 @@
 title: Orchestrator Integration Toolkit Integration Pack Wizard
 description: This article provides details about the Orchestrator Integration Pack Wizard.
 author: jyothisuri
-ms.author: jsuri
-ms.date: 11/01/2024
+ms.author: jsuri 
+ms.date: 04/17/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
@@ -32,11 +32,11 @@ The Integration Pack Wizard allows you to create Integration Packs from the exis
 
 [wix-official]: https://wixtoolset.org/
 
-To create a new integration pack, follow these steps:
+To create an integration pack, follow these steps:
 
 1. Start the Integration Pack Wizard. Select **Start > Orchestrator Integration Pack Wizard**. The welcome page displays.  
 
-2. If you've an existing Integration Pack that you want to update, select **Import Integration Pack**. For more information, see [Updating an Existing Integration Pack](integration-pack-wizard.md#update-an-existing-integration-pack). To create a new Integration Pack, select **Next**.  
+2. If you've an existing Integration Pack that you want to update, select **Import Integration Pack**. For more information, see [Update an Integration Pack](integration-pack-wizard.md#update-an-existing-integration-pack). To create an Integration Pack, select **Next**.  
 
    > [!IMPORTANT]
    > If you want to upgrade an existing IP, you must select **Import Integration Pack**. If you select **Next**, the IP you create will have a new unique product ID and new unique IDs for all activities, even if you re-use a previous assembly and use the same product and filenames.  
@@ -85,7 +85,7 @@ To create a new integration pack, follow these steps:
 
 15. When the IP has been successfully built, the final page of the wizard will display the path and filename of the new OIP file. Select Finish to exit the wizard. If there's an error, you can select **Back** and retry the build process.  
 
-    For information on deploying your Integration Pack, see the article [How to add an Integration Pack](../how-to-add-an-integration-pack.md).  
+    For information on deploying your Integration Pack, see the article [Add an Integration Pack](../how-to-add-an-integration-pack.md).  
 
 ## Update an existing integration pack  
 
@@ -123,7 +123,9 @@ Prior to converting an IP, the following steps must be completed:
 
 #### Convert an Opalis-compatible Integration Pack
 
-1. Start the Integration Pack Wizard  
+To convert an Opalis-compatible Integration Pack, follow these steps:
+
+1. Start the Integration Pack Wizard.
 
 2. Select the **Import Integration Pack**.  
 
@@ -161,7 +163,7 @@ In addition to this online reference provided for System Center Orchestrator, th
 - [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
 - [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
 
-## See also
+## Related content
 
-- [Integration Toolkit Documentation](orchestrator-integration-toolkit-overview.md)
-- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
+- [Integration Toolkit Documentation](orchestrator-integration-toolkit-overview.md).
+- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).

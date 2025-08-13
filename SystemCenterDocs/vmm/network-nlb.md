@@ -1,10 +1,10 @@
 ---
 ms.assetid: de3c13d3-f817-4c1d-875b-f878e53f0ba8
-title: Integrate load balancing with VMM service templates
+title: Integrate Load Balancing with VMM Service Templates
 description: This article provides guidance for setting up load balancing for VMM service tiers
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/21/2024
+ms.date: 04/17/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -40,6 +40,8 @@ To add a load balancer, you'll need to do the following:
 
 ### Create VIP templates
 
+To create VIP templates, follow these steps:
+
 1. In the VMM console, select **Fabric** > **Networking** > **VIP Templates**.
 2. Select **Home** > **Show** > **Fabric Resources**  > **Create** > **Create VIP Template**.
 3. In the **Load Balancer VIP Template Wizard** > **Name**, specify the template name and description. In **VIP port**, specify the port that will be used for the type of network traffic you want to balance. For example, 443 for HTTPS traffic. In **Backend port**, specify the portal on which the backend server is listening for requests.
@@ -67,15 +69,17 @@ To add a load balancer, you'll need to do the following:
 
 ### Set up a hardware load balancer
 
-Set up a hardware load balancer as follows:
+To set up a hardware load balancer, follow these steps:
 
-- **Get a configuration provider**: To add a supported hardware load balancer, you'll need to download and install a configuration provider available from the load balancer manufacturer. VMM currently supports [Brocade ServerIron ADX load balancer provider](http://www.brocade.com/partnerships/technology-alliance-partners/partner-details/microsoft/microsoft-systems-center/index.page) and [Citrix NetScaler load balancer provider](https://www.citrix.com/community.html). The provider is a VMM plug-in that translates VMM PowerShell commands to the load balancer API. After you've installed the provider, you must restart the VMM service (**net stop scwmmservice** > **net start scvmmservice**).
-- **Set up an account**: Create a VMM Run As account with a username and password with permissions to configure the downloaded load balancer.
-- **Add the load balancer to VMM**: Add a hardware load balancer to VMM using the Add Load Balancer Wizard.
+1. **Get a configuration provider**: To add a supported hardware load balancer, you'll need to download and install a configuration provider available from the load balancer manufacturer. VMM currently supports [Brocade ServerIron ADX load balancer provider](http://www.brocade.com/partnerships/technology-alliance-partners/partner-details/microsoft/microsoft-systems-center/index.page) and [Citrix NetScaler load balancer provider](https://www.citrix.com/community.html). The provider is a VMM plug-in that translates VMM PowerShell commands to the load balancer API. After you've installed the provider, you must restart the VMM service (**net stop scwmmservice** > **net start scvmmservice**).
+2. **Set up an account**: Create a VMM Run As account with a username and password with permissions to configure the downloaded load balancer.
+3. **Add the load balancer to VMM**: Add a hardware load balancer to VMM using the Add Load Balancer Wizard.
 
 #### Add the hardware load balancer to VMM
 
 During the wizard, select the host groups for which the load balancer is available, specify the load balancer model, specify the address and port used to manage the load balancer, specify affinity to VMM logical network, select the configuration provider, and test the connection. You'll need to configure the hardware load balancer before you deploy a service. After the service is deployed, a load balancer can't be added.
+
+To add the hardware load balancer to VMM, follow these steps:
 
 1. Select **Fabric** > **Networking** > **Load Balancers** > **Fabric Resources** > **Home** > **Add** > **Add Resources** > **Load Balancer**.
 2. In **Add Load Balancer Wizard** > **Credentials**, select the Run As account with the load balancer credentials.
@@ -101,6 +105,9 @@ NLB is automatically included as a load balancer in VMM. As long as you've set u
 - NLB can't be used in service tiers running Linux VMs.
 
 ### Enable load balancing
+
+To enable load balancing, follow these steps:
+
 1. If the service template isn't open, select **Library** > **Templates** > **Service Templates** and open it.
 2. Select **Actions** > **Open Designer**.
 3. In the Service Template Designer, select the **Service Template Components** group > **Add Load Balancer**.
@@ -112,6 +119,8 @@ NLB is automatically included as a load balancer in VMM. As long as you've set u
 ### Set up the hardware VIP for user access
 
 When the service is deployed, VMM automatically selects a VIP from the reserved range in the static IP address pool and assigns it to the load-balanced service tier. To enable users to connect to the service, after the service is deployed, you need to determine the VIP and configure a DNS entry for it.
+
+To set up the hardware VIP for user access, follow these steps:
 
 1. After the service is deployed, select **Fabric** > **Networking** > **Load Balancers**.
 2. Select **Show** > **Service** > **Load Balancer Information for Services** and expand the service to see which VIP is assigned.

@@ -3,7 +3,7 @@ title: include file
 description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 2019 from a previous version.
 author: jyothisuri
 ms.author: jsuri
-ms.date:  02/21/2023
+ms.date:  08/13/2025
 ms.topic: include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
@@ -56,7 +56,7 @@ Prepare the SPF 2019 computer on which you want to run the upgrade.
 1. Create a new server running Windows Server 2019 on which you want to install SPF 2019. You can also use a Virtual Machine (VM).
 2. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
 3. Install the prerequisites on the new VM as follows:
-    - Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434).
+    - Install [SQL ODBC Drivers](/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-2016&preserve-view=true).
     - Install [SQL Native Client](https://www.microsoft.com/en-us/download/details.aspx?id=50402).
     - Install SQL Server [command line utilities](https://www.microsoft.com/en-us/download/details.aspx?id=53591).
     - Install SQL Server [CLR types](https://www.microsoft.com/en-us/download/details.aspx?id=42295).
