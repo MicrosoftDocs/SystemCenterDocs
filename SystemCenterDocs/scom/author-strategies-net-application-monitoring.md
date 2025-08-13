@@ -4,7 +4,6 @@ title: Author strategies for .NET application monitoring
 description: This article provides an overview about authoring strategies for .NET application monitoring.
 author: jyothisuri
 ms.author: jsuri
-
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center

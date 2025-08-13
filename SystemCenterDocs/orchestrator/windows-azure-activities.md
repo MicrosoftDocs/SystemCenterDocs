@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 69fc38af-c6bf-43bd-85c6-06875a321561
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Windows Azure Activities

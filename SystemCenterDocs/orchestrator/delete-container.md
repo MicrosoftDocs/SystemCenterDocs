@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 299c0f5b-287f-4e68-8657-1cb8696b1668
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Container

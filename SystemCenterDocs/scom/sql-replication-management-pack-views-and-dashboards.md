@@ -3,8 +3,7 @@ ms.assetid: 6de39cbf-10e3-424e-9c17-dfc8245cdd53
 title: Views and dashboards in Management Pack for SQL Server Replication
 description: This article explains views and dashboards in Management Pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

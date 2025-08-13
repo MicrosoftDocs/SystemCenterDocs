@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: d03ca34d-ec65-4fb8-ba30-c36acc06d8cc
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Network Adapter
 

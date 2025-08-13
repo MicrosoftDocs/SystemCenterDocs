@@ -13,7 +13,6 @@ ms.topic: install-set-up-deploy
 ms.assetid: d7300764-da0a-40de-ad3e-26ec34c0bf1c
 author: jyothisuri
 ms.author: jsuri
-ROBOTS: noindex
 ---
 
 # Deploy Software Update activity for Configuration Manager Integration Pack

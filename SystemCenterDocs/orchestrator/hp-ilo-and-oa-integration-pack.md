@@ -12,7 +12,7 @@ ms.assetid: 79e741ff-5d02-4255-8efc-19926247c1c0
 author: jyothisuri
 ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ---
 
 # HP iLO and OA Integration Pack for System Center - Orchestrator
@@ -21,7 +21,7 @@ ms.date: 11/01/2024
 ::: moniker range="sc-orch-2019"
 
 >[!NOTE]
->HP iLO and OA Integration pack has been discontinued from System Center Orchestator 2022 and later.
+>HP iLO and OA Integration pack has been discontinued from System Center Orchestrator 2022 and later.
 
 ::: moniker-end
 
@@ -61,6 +61,8 @@ Default credentials are used to store a common set of credentials that can be se
 
 ### Set up default credentials
 
+To set up default credentials, follow these steps:
+
 1. In the Runbook Designer, select the **Options** menu, and select HP iLO and OA. The HP iLO and OA dialog appears.
 2. On the **Connections** tab, select **Default credentials** to begin the setup. The **Default credentials** dialog appears.
 3. In the **User name** box, enter a default user name.
@@ -73,6 +75,8 @@ Default credentials are used to store a common set of credentials that can be se
 A connection establishes a reusable link between Orchestrator and an HP iLO and OA system. You can create as many connections as you require to specify links to multiple systems running HP iLO and OA. You can also create multiple connections to the same system to allow for differences in security permissions for different user accounts.
 
 ### Set up an HP iLO and OA connection
+
+To set up an HP iLO and OA connection, follow these steps:
 
 1. In the Runbook Designer, select **Options**, and select **HP iLO and OA**. The HP iLO and OA dialog appears.
 2. On the **Connections** tab, select **Add** to begin the connection setup. The **Connection** dialog appears.
@@ -91,7 +95,9 @@ A connection establishes a reusable link between Orchestrator and an HP iLO and 
 
 Connections can be exported and imported into the connections list.
 
-### To export a connection
+### Export a connection
+
+To export a connection, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and select **HP iLO and OA**. The **HP iLO and OA** dialog appears.
 2. On the **Connections** tab, select **Export** to begin the export. The **Save As** dialog appears.
@@ -100,6 +106,8 @@ Connections can be exported and imported into the connections list.
 5. Select **OK** to close the configuration dialog and select **Finish**.
 
 ### Import a connection
+
+To import a connection, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and select **HP iLO and OA**. The **HP iLO and OA** dialog appears.
 2. On the **Connections** tab, select **Import** to begin the import. The **Open** dialog appears.
@@ -113,6 +121,8 @@ A group establishes a reusable list of connections between Orchestrator and an H
 
 ### Set up an HP iLO and OA group
 
+To set up an HP iLO and OA group, follow these steps:
+
 1. In the Runbook Designer, select the **Options** menu, and select **HP iLO and OA**. The **HP iLO and OA** dialog appears.
 2. On the **Groups** tab, select **Add** to begin the group setup. The **Managed group** dialog appears.
 3. In the **Group name** box, enter a name for the group. This could be a descriptive name to distinguish the type of group.
@@ -120,6 +130,8 @@ A group establishes a reusable list of connections between Orchestrator and an H
 5. Select **OK** to close the configuration dialog, and select **Finish**.
 
 ### Batch update credentials on a group
+
+To batch update credentials on a group, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and select **HP iLO and OA**. The **HP iLO and OA** dialog appears.
 2. On the **Groups** tab, select a group and select **Batch credential update**.
