@@ -83,7 +83,7 @@ Use the following information to configure the Write to Database activity.
 ::: moniker range="sc-orch-2025"
 
 >[!Note]
->MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator RunbookWorker machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
+>MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator RunbookWorker machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/system-center/orchestrator/install?view=sc-orch-2025#secure-connection-to-sql-server&preserve-view=true) to install a SQL Server certificate.
 
 ::: moniker-end
 
