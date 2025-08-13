@@ -2,14 +2,13 @@
 ms.assetid: b35a0bd5-12b2-4c55-9c47-7eb2a36eccb1
 title: Running Tasks in Operations Manager
 description: This article describes how to run a task from the Operations console to help investigate and resolve issues detected.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Running tasks in Operations Manager

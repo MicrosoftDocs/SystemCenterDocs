@@ -2,9 +2,8 @@
 ms.assetid: b733159f-10ca-4b79-9ff0-54cd92940c7a
 description: include file to detail the Release Notes for System Center 1801-Service Management Automation
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 ms.subservice: service-management-automation
 keywords:

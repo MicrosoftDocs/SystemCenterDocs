@@ -3,17 +3,16 @@ title: Delete Network Adapter Activity in System Center
 description: The Delete Network Adapter activity is used in a runbook to remove a virtual network adapter from a virtual machine controlled by the VMware vSphere server. The network adapter to remove is identified by its MAC address.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: a1cf6a81-0362-4d5d-8019-f53605311470
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 monikerRange: 'sc-orch-2016'
 ---
 

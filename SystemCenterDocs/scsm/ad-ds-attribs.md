@@ -1,13 +1,13 @@
 ---
 title: Map Active Directory Domain Services attributes to properties in Service Manager
 description: Learn about the relationships between Active Directory Domain Services attributes and properties in Service Manager.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
 ms.custom: UpdateFrequency3, engagement-fy24

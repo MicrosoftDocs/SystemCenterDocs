@@ -2,20 +2,22 @@
 title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/15/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 0e47a137-5f4b-41a2-a13a-59bcaae8e750
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Write to Database
+
+This article describes the Write to Database activity that writes a row into a database table.
 
 The Write to Database activity writes a row into a database table. This activity interacts with the following databases:  
 
@@ -82,7 +84,7 @@ Use the following information to configure the Write to Database activity.
 
 ::: moniker range="sc-orch-2025"
 
->[!Note]
+>[!NOTE]
 >MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator RunbookWorker machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
 
 ::: moniker-end
@@ -108,7 +110,7 @@ Use the following information to configure the Write to Database activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

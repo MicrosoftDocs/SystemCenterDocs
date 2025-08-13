@@ -1,12 +1,12 @@
 ---
 title: What's new in System Center Orchestrator
 description: This article describes the new features and other changes in System Center Orchestrator.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: whats-new
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 11/15/2024
+ms.date: 05/15/2025
+ms.update-cycle: 180-days
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'

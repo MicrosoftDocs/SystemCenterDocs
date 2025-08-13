@@ -8,12 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: b3512761-a75f-44f0-8fbb-42c683dc2391
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ---
 # Copy Blob
