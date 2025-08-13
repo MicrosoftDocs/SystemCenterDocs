@@ -1,6 +1,6 @@
 ---
 title: Back up Orchestrator
-description: Describes how to backup a System Center - Orchestrator environment.
+description: Describes how to back up a System Center - Orchestrator environment.
 ms.date: 04/16/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
@@ -43,7 +43,7 @@ Orchestrator management server, Runbook servers, and web servers don't persist a
 
 ## Orchestrator database
 
-The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information, see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
+The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to back up the service master key and store it in a secure off\-site location. For more information, see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
 
 ## Next steps
 
