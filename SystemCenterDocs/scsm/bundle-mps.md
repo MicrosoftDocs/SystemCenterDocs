@@ -22,7 +22,7 @@ A custom management pack might include references to resources, such as an image
 
 In Service Manager, to bundle a management pack file with its resources, use the Windows&nbsp;PowerShell cmdlet **New\-SCSMManagementPackBundle**. For more information about this cmdlet, see [New\-SCSMManagementPackBundle](/previous-versions/system-center/powershell/system-center-2012-r2/hh316263(v=sc.20)).  
 
-When you bundle a management pack, any form .dll in the bundle is stored in the Service Manager database along with any other resources, such as images. The form is then automatically deployed to any Service Manager console computer that needs to render that form. When the form is loaded for the first time in the Service Manager console, it's retrieved from the Service Manager database and cached on the local computer. In subsequent uses, the form is retrieved from the local cache.  
+When you bundle a management pack, any form of .dll in the bundle is stored in the Service Manager database along with any other resources, such as images. The form is then automatically deployed to any Service Manager console computer that needs to render that form. When the form is loaded for the first time in the Service Manager console, its retrieved from the Service Manager database and cached on the local computer. In subsequent uses, the form is retrieved from the local cache.  
 
 To customize management packs that are bundled in an .mpb file, you must first unbundle the .mpb file and then individually customize each management pack and resource file. For more information about how to unbundle an .mpb management pack file, see [How to Unbundle a Bundled management pack](unbundle-mps.md).  
 

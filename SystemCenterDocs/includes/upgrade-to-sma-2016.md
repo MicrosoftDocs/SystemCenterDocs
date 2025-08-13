@@ -1,5 +1,5 @@
 ---
-description: include file to describe the process to upgrade Service Management Automation in System Center 2016.
+description: include file to describe the process to upgrade classic deployment model Automation in System Center 2016.
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
