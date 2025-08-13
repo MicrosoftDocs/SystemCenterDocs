@@ -20,7 +20,7 @@ ms.custom: engagement-fy23
 
 To provide real-world context to the step-by-step procedures for the Service Manager Authoring Tool, we've created a fictitious scenario that takes place at a fictitious company, Woodgrove Bank.  
 
- The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services (AD DS) so that the group software policies apply to the new computers.  
+The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services (AD DS) so that the group software policies apply to the new computers.  
 
 > [!NOTE]  
 > Some procedures in the Woodgrove Bank customization scenario rely on standard usage of the Service Manager console in Service Manager. This guide doesn't provide details for these common procedures.
@@ -93,7 +93,7 @@ The second step in the Woodgrove Bank customization scenario is to customize the
 
 ### View the System.AddComputerForm form  
 
-To view the form, follow these steps:
+To view the System.AddComputerForm form, follow these steps:
 
 1. In the Authoring Tool, expand **Forms** in the **Management Pack Explorer** pane. Right-click the **System.AddComputerForm** form, and select **Customize** to open the form in the authoring pane.  
 2. In the authoring pane, ensure that the **Details** pane is visible. If it isn't visible, select **View**, and select **Details Window**.  
@@ -101,7 +101,7 @@ To view the form, follow these steps:
 
 ### Customize the default Change Request form  
 
-To customize the form, follow these steps:
+To customize the default Change Request form, follow these steps:
 
 1. In the Authoring Tool, select **File**, point to **Open**, and select **File**. In the **Open File** dialog, locate the **ServiceManager.ChangeManagement.Library.mp** management pack. For example, the path to the management pack might be as follows:  
      D:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\>  Authoring\\Library\\ServiceManager.ChangeManagement.Library.mp.  
@@ -239,9 +239,9 @@ When Ken works with a compliance change request, they need to easily access the 
 
  The following procedure provides only the high-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](troubleshoot-with-tasks.md).  
 
-### Create a task Create a new task  
+### Create a new task  
 
-To create a task, follow these steps:
+To create a new task, follow these steps:
 
 1. In the Service Manager console, specify the task name: **Start Active Directory Users and Computers**.  
 2. Specify the target class: **Change Request**.  

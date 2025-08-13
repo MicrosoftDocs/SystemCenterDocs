@@ -14,6 +14,7 @@ ms.topic: article
 # Upgrade an ACS Collector
 
 
+
 Perform this procedure to upgrade the Audit Collection Services (ACS) Collector locally on the ACS collector. During this procedure, the ACS database is also upgraded without any additional steps.
 
 > [!WARNING]
