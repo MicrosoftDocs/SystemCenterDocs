@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: b3512761-a75f-44f0-8fbb-42c683dc2391
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Copy Blob

@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 8fec1534-e44d-4e06-a091-238ddcc866cb
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Suspend VM
 

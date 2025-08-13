@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: df444439-f5e2-4132-8326-47be1f785b46
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Checkpoint
 

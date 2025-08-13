@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 3cd9da10-0931-4029-b313-7860eda9ba27
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Move Or Copy Item
 

@@ -4,8 +4,8 @@ ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
-title: Automate Microsoft Azure Pack operations with runbooks
+ms.date: 08/07/2025
+title: Automate Microsoft Azure Pack Operations with Runbooks
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -23,7 +23,9 @@ You can use Service Management Automation (SMA) runbooks to automate routine ope
 
 PowerShell Workflow runbooks are based on Windows PowerShell Workflow. You can directly edit the code of the runbook using the editor in the Management Portal. You can also use any offline text editor and [import the runbook](authoring-automation-runbooks.md) into SMA.
 
-### Advantages
+### Advantages 
+
+The advantages of PowerShell workflow runbooks are as follows:
 
 - Implement all the complex logic with PowerShell Workflow code.
 - Use [checkpoints](overview-powershell-workflows.md#checkpoints) to resume runbook in case of error.
@@ -31,6 +33,8 @@ PowerShell Workflow runbooks are based on Windows PowerShell Workflow. You can d
 - Include other PowerShell Workflow runbooks as child runbooks to create high-level workflows.
 
 ### Limitations
+
+The limitations of PowerShell workflow runbooks are as follows:
 
 - You must be familiar with PowerShell Workflow.
 - Runbook must deal with the additional complexity of PowerShell Workflow, such as deserialized objects.
@@ -43,10 +47,14 @@ PowerShell runbooks are based on Windows PowerShell. You can directly edit the c
 
 ### Advantages
 
+The advantages of PowerShell runbooks are as follows:
+
 - Implement all the complex logic with PowerShell code without the additional complexities of PowerShell Workflow.
 - Runbook starts faster than PowerShell Workflow runbooks since it doesn't need to be compiled before running.
 
 ### Limitations
+
+The limitations of PowerShell runbooks are as follows:
 
 - You must be familiar with PowerShell scripting.
 - You can't use [parallel processing](overview-powershell-workflows.md) to perform multiple actions in parallel.
@@ -59,7 +67,7 @@ Requests to start a runbook are performed by the SMA web service using either th
 
 If the RunbookWorker property of the runbook is populated, then that Worker server will service the job. If the Worker server isn't available, then the job fails with an error. If the RunbookWorker property of the runbook isn't populated, then SMA randomly selects an available Worker server to service the request.
 
-The Worker server creates a job that runs on the Worker server that services the request and remotely accesses any computers or other resources that it will work with. This requires the cmdlets in the runbook to be able to remotely access these resources. Alternatively, the runbook can include an [InlineScript](overview-powershell-workflows.md#inlinescript) command in order to use PowerShell Remoting to run commands locally on a target computer. This concept is illustrated in the following diagram.
+The Worker server creates a job that runs on the Worker server that services the request and remotely accesses any computers or other resources that it will work with. This requires the cmdlets in the runbook to be able to remotely access these resources. Alternatively, the runbook can include an [InlineScript](overview-powershell-workflows.md#inlinescript) command in order to use PowerShell Remoting to run commands locally on a target computer. This concept is illustrated in the following diagram:
 
 ![Runbook execution diagram.](./media/runbook-automation/smaauth_runbookconcept.png)
 

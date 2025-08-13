@@ -1,8 +1,8 @@
 ---
-title: REST activities
+title: REST Activities
 description: The following configuration instructions apply to all activities in this integration pack. It lists event notifications.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: 8dfe35b3-d3bf-4b34-889d-703b51672ca0
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # REST activities
 
@@ -24,6 +23,8 @@ The following configuration instructions apply to all the activities in this int
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
 #### Configure the properties for an activity
+
+To configure the properties for an activity, follow these steps:
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
@@ -53,6 +54,8 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 #### To be notified when the activity takes longer than a specified time to run or fails to run
 
+To be notified of the events, follow these steps:
+
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
@@ -64,6 +67,8 @@ Published data is the foundation of a working runbook. It's the data produced as
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
 #### Use published data
+
+To use published data, follow these steps:
 
 1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 
@@ -77,4 +82,4 @@ For a list of data elements published by each activity, see the **Published Data
 
 This integration pack adds the **REST** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
--   [Invoke REST Service](invoke-rest-service.md)
+[Invoke REST Service](invoke-rest-service.md).
