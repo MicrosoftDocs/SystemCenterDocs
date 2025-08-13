@@ -1,10 +1,9 @@
 ---
 title: Troubleshoot Computer Problems with Tasks
 description: You can troubleshoot computer problems with Service Manager tasks.
-ms.topic: troubleshooting
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: troubleshooting-general
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/22/2025

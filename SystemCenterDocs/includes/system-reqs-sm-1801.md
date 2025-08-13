@@ -3,9 +3,8 @@ title: include file
 description: include file to describe the hardware, software, and other system requirements Service Manager 1801.
 ms.custom: na
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/14/2019
 ms.reviewer: na
 ms.suite: na

@@ -1,9 +1,8 @@
 ---
 title: System Center 2025 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2025 - Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/07/2024
 ms.service: system-center
 ms.assetid: 

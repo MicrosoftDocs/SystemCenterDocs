@@ -1,15 +1,14 @@
 ---
 title: Use the Administration Workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
 ms.date: 04/22/2025
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Use the Administration workspace in Operations Manager
@@ -81,7 +80,7 @@ In Operations Manager, operations such as resolving alerts, running tasks, overr
 For more information, see [Implement User Roles](manage-security-overview.md).  
 
 ## Settings  
-The following table summarizes the settings you can manage in **Settings** in the Administration workspace.  
+The following table summarizes the settings you can manage in **Settings** in the Administration workspace:  
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  

@@ -2,11 +2,10 @@
 ms.assetid: c3f7b5fa-cb86-4906-b151-24dfbfede61b
 title: Manage MPIO for Hyper-V hosts in the VMM fabric
 description: This article provides information about managing MPIO for Hyper-V hosts in VMM
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/09/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

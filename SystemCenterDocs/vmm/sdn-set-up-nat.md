@@ -1,12 +1,11 @@
 ---
 ms.assetid: d174e976-e265-4acc-9ef5-1c92b602f761
-title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM.
+title: Set up NAT for Traffic Forwarding in SDN Infrastructure by using VMM.
 description: This article describes how to configure NAT connection and NAT rules for traffic forwarding in the SDN infrastructure.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/10/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -20,7 +19,7 @@ This article describes how to set up Network Address Translation (NAT) for traff
 
 NAT allows virtual machines (VMs) in an isolated SDN virtual network to obtain external connectivity. VMM configures a Virtual IP (VIP) to forward the traffic to and from an external network.
 
-The following two NAT types are supported by VMM.
+The following two NAT types are supported by VMM:
 
 - **Outbound NAT** - Forwards the VM network traffic from a virtual network to external destinations.
 - **Inbound NAT** - Forwards the external traffic to a specific VM in a virtual network.
@@ -43,13 +42,14 @@ VMM 2025 and 2022 support dual stack. NAT rules to Dual stack VM networks isn't 
 
 ## Before you start
 
-Ensure the following:
+Here are some considerations before you set up NAT:
+
 - [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
 - An SDN VM network with network virtualization is created.
 
 ## Create a NAT connection
 
-Use the following procedure:
+To create a NAT connection, follow these steps:
 
 1. In the VMM console, select **VMs and Services** > **VM Networks**. Right-click the selected VM network for which you want to create the NAT connection and select **Properties**.
 2. Select **Connectivity** on the wizard page displayed.
@@ -70,6 +70,8 @@ A NAT connection will be created for this VM network.
 > - To enable inbound connectivity and forward an external traffic to a specific VM, you must add NAT rules to the NAT connection.
 
 ## Add rules to a NAT connection
+
+To add rules to a NAT connection, follow these steps:
 
 ::: moniker range="<=sc-vmm-2019"
 VMM 2022 supports dual stack. NAT rules to dual stack VM networks isn't supported at the VMM console. NAT rules can be specified using PowerShell cmdlets.
@@ -103,7 +105,7 @@ $natConnectionIPv4 = Add-SCNATConnection -VMNetwork $vmNetwork -Name "TenantDS_N
 Add-SCNATRule -Name "NATIPv4" -Protocol "TCP" -InternalIPAddress <IP From IPv4 subnet>" -ExternalPort <External Port> -NATConnection $natConnectionIPv4 -InternalPort <Internal Port>
 ```
 
-Use the following procedure to add rules to a NAT connection:
+To add rules to a NAT connection, follow these steps:
 
 1.	In the VMM console, select **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
 2.	Select **Network Address Translation** on the wizard.
@@ -123,13 +125,17 @@ Type the following details as appropriate:
 > Multiple NAT rules can be created to forward the traffic to multiple VMs that are part of the VM network.
 
 ## Remove a NAT rule
-Use the following procedure:
+
+To remove a NAT rule, follow these steps:
 
 1. In the VMM console, select **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
 2. Select **Network Address Translation** on the wizard.
 3. Select the NAT rule that you want to remove, select **Remove**, and then select **OK**.
 
 ## Remove a NAT connection
+
+To remove a NAT connection, follow these steps:
+
 1.	In the VMM console, select **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
 2. Select **Connectivity** on the wizard.
 3. Clear the option **Connect directly to an additional logical network** and select **OK**.

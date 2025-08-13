@@ -2,12 +2,12 @@
 title: Deploy Service activity in System Center - Orchestrator
 description: The Deploy Service activity is used in a runbook to create a service using a specified service template. The activity also publishes the required data.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: install-set-up-deploy
+author: jyothisuri
+ms.author: jsuri
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 # Deploy Service activity

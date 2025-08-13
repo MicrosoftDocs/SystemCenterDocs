@@ -4,10 +4,10 @@ description: This article describes all activities in the System Center Integrat
 ms.date: 04/22/2025
 ms.service: system-center
 ms.subservice: orchestrator
+ms.update-cycle: 1095-days
 ms.topic: how-to
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3
 ---
 # Service Manager activities
