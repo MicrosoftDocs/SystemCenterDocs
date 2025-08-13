@@ -2,7 +2,7 @@
 title: Get Lines
 description: This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.author: jsuri
 ---
 # Get Lines
 
-The Get Lines activity gets multiple lines from a text file according to criteria that you specify. You can use the Get Lines activity to get specific lines from any location in a text file.  
+This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify. You can use the Get Lines activity to get specific lines from any location in a text file.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
@@ -35,7 +35,7 @@ Use the following information to configure the Get Lines activity.
 
 ### Details Tab  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**File**|Enter the path and name of the file that you want to get the text from, or select the ellipsis button **(...)** and browse for it.|  
 |**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** dropdown list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  

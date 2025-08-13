@@ -23,7 +23,9 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
-## Determine the principal name of the Service Manager management server  
+## Determine the principal name of the Service Manager management server 
+
+To determine the principal name, follow these steps:
 
 To determine the principal name, follow these steps:
 
