@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 6cb84e98-be26-4aa5-b0d4-d1400a8852db
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update User Role Property
 

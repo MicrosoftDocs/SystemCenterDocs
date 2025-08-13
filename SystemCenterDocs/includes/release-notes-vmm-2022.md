@@ -4,7 +4,7 @@ title: Include file
 description: Include file to summarize the release notes for VMM 2019.
 author: jyothisuri
 ms.author: jsuri
-ms.date:  06/03/2025
+ms.date:  08/07/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -22,4 +22,4 @@ The following sections summarize the release notes for VMM 2022 and include the 
 
 ### Chinese language support for SCVMM
 
-Chinese characters that are part of GB18030 and appear in the names or properties of resources managed by SCVMM may not be recognized. To overcome this limitation, it is necessary to update the SQL database associated with SCVMM to [Cumulative Update 12](https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate12) and run this [SQL query](https://download.microsoft.com/download/aceff22d-08dc-44be-be76-24ff634fc405/GBIssueFixSQLQuery_new.sql) in the database.
+Chinese characters that are part of GB18030 and appear in the names or properties of resources managed by SCVMM may not be recognized. To overcome this limitation, it is necessary to update the SQL database associated with SCVMM to [Cumulative Update 12](/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate12) and run this [SQL query](https://download.microsoft.com/download/aceff22d-08dc-44be-be76-24ff634fc405/GBIssueFixSQLQuery_new.sql) in the database.

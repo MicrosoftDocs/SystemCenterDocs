@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 5ca6e7f3-d484-4311-a712-78daacfba9ba
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Recover SQL
 

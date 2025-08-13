@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: ad598fdd-5ced-4679-8fde-e1ec078ab4d1
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Start VM
 
