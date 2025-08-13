@@ -1,9 +1,8 @@
 ---
 title: Configure a Product Connector Subscription
 description: This article describes how to configure a product connector for integrating Operations Manager with an enterprise monitoring solution.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
@@ -13,8 +12,6 @@ ms.assetid: 5de28eac-5d62-47bf-bc20-0d1897868a5d
 ---
 
 # Configure a product connector subscription
-
-This article describes how to configure a product connector for integrating Operations Manager with an enterprise monitoring solution.
 
 System Center - Operations Manager supports the ability to synchronize alert data with other applications, such as other management systems, using product connectors. After a product connector is installed, by default, all alerts are forwarded through the product connector. In the following procedure, you use the Product Connector Subscription Wizard to specify which alerts you want the product connector to forward.  
 

@@ -4,12 +4,11 @@ ms.topic: article
 ms.service: system-center
 keywords:
 ms.date: 04/22/2025
-title: Offline Seeding Using Azure Data Box
+title: Offline Seeding using Azure Data Box
 ms.subservice: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '>=sc-dpm-2019'
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -76,7 +75,7 @@ Ensure that the required Data Box devices are in *Delivered* state before trigge
 
 ![Setup azure databox](./media/offline-seeding-azure-data-box/setup-azure-databox.png)
 
-## [Setup Azure Data Box devices](#tab/setup-azure-data-box-devices)
+## Setup Azure Data Box devices
 
 Once you receive the Azure Data Box device, depending on the Azure Data Box SKU you've ordered, perform the steps in the appropriate sections below to set up and prepare the Data Box devices for the DPM/MABS Server to identify and transfer the initial backup data.
 
@@ -87,7 +86,7 @@ If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the st
 > [!NOTE]
 > It's possible that the DPM/MABS server doesn't have a USB port. In such a scenario, you can connect your Azure Data Box disk to another server/client and expose the root of the device as a network share.
 
-## [Setup Azure Data Box](#tab/setup-azure-data-box)
+## Setup Azure Data Box
 
 If you ordered an Azure Data Box (up to 100 TB), follow the steps mentioned [here](/azure/databox/data-box-deploy-set-up) to set up your Data Box.
 
@@ -114,8 +113,6 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
     ```
 
 6. Once mounted, check if you can access X:  from your server. If you can, continue with the next section of this article.
-
----
 
 ## Transfer initial backup data to Azure Data Box devices
 
@@ -185,7 +182,7 @@ To transfer initial backup data to Azure Data Box devices, follow these steps:
 
     With this, the initial replication of the data occurs to the DPM/MABS disk. When it finishes the protection, the group status will show protection status as **OK** on the **Protection** page.
 
-17. Initiate the offline-backup copy to your Azure Data Box device. To initialize, do the following:
+17. Initiate the offline-backup copy to your Azure Data Box device by doing the following:
 
 Right-click the **Protection Group**, and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
@@ -210,10 +207,6 @@ Once the data backup to the Azure Data Box Disk is successful, follow these step
   > The DPM/MABS server triggers the backups at the times scheduled during protection group creation. However, these jobs will flag *Waiting for Azure Data Box job to be completed* until the time the job is complete.
 
 - After the DPM/MABS Server successfully creates a recovery point corresponding to the initial backup, you may delete the Storage Account (or specific contents) associated with the Azure Data Box job.
-
-
-
-::: zone pivot="troubleshooting"
 
 ## Troubleshooting
 
@@ -283,6 +276,3 @@ From the DPM/MABS server you're trying to configure offline backup, do the follo
 7. To get the value of thumbprint, double-click on the certificate, then select **Details**  and scroll-down until you see the thumbprint field. Select **Thumbprint** and copy the value.
 
    ![Thumbprint value](./media/offline-seeding-azure-data-box/certificate.png)
-
-
-::: zone-end
