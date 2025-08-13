@@ -1,12 +1,12 @@
 ---
-title: Import data and alerts from Operations Manager
+title: Import Data and Alerts from Operations Manager
 description: Describes how you can import data and alerts from Operations Manager into Service Manager.
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/11/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: e233cb46-69de-439d-a4f8-08d8ac993e64
@@ -70,6 +70,8 @@ To import Operations Manager management packs for an Operations Manager CI conne
 
 ### Import Operations Manager management packs for an Operations Manager CI connector
 
+To import Operations Manager management packs for an Operations Manager CI connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Management Packs**.
@@ -102,6 +104,8 @@ You have the option of defining Service Manager templates that run when alerts o
 There are two phases for creating the Alert connector. The first part involves creating the Alert connector on the Service Manager management server. The second part requires that you start the Operations Manager console and set up a subscription for the newly created connector. The subscription you create must be unique for the Alert connector; no connector that is created to point to Operations Manager should have a subscription that overlaps with another Operations Manager internal connector. Both phases are described in the following procedure.
 
 ### Create an Operations Manager alert connector
+
+To create an Operations Manager alert connector, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 
@@ -159,6 +163,8 @@ There are two phases for creating the Alert connector. The first part involves c
 
 ### Create an Operations Manager CI connector
 
+To create an Operations Manager CI connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -187,7 +193,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 ### Validate the creation of an Operations Manager CI connector
 
-- Confirm that the objects that Operations Manager discovered are listed as configuration items in Service Manager.
+Confirm that the objects that Operations Manager discovered are listed as configuration items in Service Manager.
 
 ### Confirm the status of an Operations Manager connector
 
@@ -212,6 +218,8 @@ When you create an Operations Manager alert connector for Service Manager, it po
 
 ### Manually synchronize an Operations Manager connector
 
+To manually synchronize an Operations Manager connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -224,6 +232,8 @@ When you create an Operations Manager alert connector for Service Manager, it po
 
 ### Validate Operations Manager connector synchronization
 
+To validate Operations Manager connector synchronization, follow these steps:
+
 1. In the Service Manager console, select **Configuration Items**.
 
 2. In the **Configuration Items** pane, expand **Computers**, and select **All Windows Computers**. Verify that any new computers that were discovered in Operations Manager appear in the **All Windows Computers** pane.
@@ -234,9 +244,11 @@ You can use the following procedures to disable or enable a System Center Operat
 
 For example, after you configure an Operations Manager connector, if you must perform maintenance operations on the Service Manager database, you can temporarily disable the connector and suspend the data import. You can resume the data import by re-enabling the connector.
 
-For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](/troubleshoot/system-center/scom/remove-old-product-connectors) on Kevin Holman's System Center blog.
+For more information about how to delete a product connector from System Center Operations Manager, see [Remove an Old Product Connector](/troubleshoot/system-center/scom/remove-old-product-connectors) on Kevin Holman's System Center blog.
 
 ### Disable an Operations Manager connector
+
+To disable an Operations Manager connector, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 
@@ -250,6 +262,8 @@ For more information about how to delete a product connector from System Center 
 
 ### Enable an Operations Manager connector
 
+To enable an Operations Manager connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -261,6 +275,8 @@ For more information about how to delete a product connector from System Center 
 5. In the **Enable Connector** dialog, select **OK**.
 
 ### Validate the status change of an Operations Manager connector
+
+To validate the status change of an Operations Manager connector, follow these steps:
 
 1. Wait 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
 
@@ -298,4 +314,4 @@ To edit an Operations Manager CI connector, follow these steps:
 
 ## Next steps
 
-- Learn about how to [Import data from Configuration Manager](import-data-cm.md).
+Learn about how to [Import data from Configuration Manager](import-data-cm.md).
