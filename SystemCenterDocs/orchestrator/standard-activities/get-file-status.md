@@ -2,7 +2,7 @@
 title: Get File Status
 description: This article describes the functionality of Get File Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/16/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -21,9 +21,9 @@ The Get File Status activity verifies that a file exists on the local file syste
 
 ## Configure the Get File Status Activity
 
- Before you configure the Get File Status activity, you need to determine the file name and path name you're checking.  
+Before you configure the Get File Status activity, you need to determine the file name and path name you're checking.  
 
- Use the following information to configure the Get File Status activity.  
+Use the following information to configure the Get File Status activity.  
 
 ### Details Tab  
 
@@ -36,7 +36,7 @@ The Get File Status activity verifies that a file exists on the local file syste
 
 ### Published Data
 
- The following table lists the published data items.  
+The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

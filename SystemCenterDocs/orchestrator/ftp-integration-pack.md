@@ -12,7 +12,7 @@ ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
 author: jyothisuri
 ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 11/01/2024
+ms.date: 04/16/2025
 ---
 
 # FTP integration pack
@@ -42,10 +42,11 @@ The Integration Pack for FTP requires the following software to be installed and
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an integration pack](how-to-add-an-integration-pack.md).
 
-## Configuring the FTP connections
+## Configure FTP connections
 
 A connection establishes a reusable link between Orchestrator and an FTP server. You can create as many connections as you require specifying links to multiple FTP servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
-To set up an FTP connection:
+
+To set up an FTP connection, follow these steps:
 
 1. In the **Orchestrator Runbook Designer**, select **Options**, and select **FTP**. The **FTP** dialog appears.
 2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
