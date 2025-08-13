@@ -11,9 +11,9 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Health Rolls Up in SQL Server Management Pack
+# Health rolls up in SQL Server Management Pack
 
-This article explains diagrams that show how the health state of objects roll up in Management Pack for SQL Server.
+This article explains diagrams that show how the health state of objects rolls up in Management Pack for SQL Server.
 
 ## Legend
 
@@ -21,13 +21,13 @@ The following figure explains how to read the diagram:
 
 ![Illustration of the Legend.](./media/sql-server-management-pack/health-rolls-up-legend.png)
 
-## Database Engine Health Rollup Diagram
+## Database Engine health rollup diagram
 
 The following diagram shows the inheritance model of the health state of Database Engine objects. The health state of child objects affects the health state of parent objects.
 
 ![The Health diagram.](./media/sql-server-management-pack/health-rollup-diagram.png)
 
-## Database Health Rollup Diagram
+## Database health rollup diagram
 
 The following diagram shows the inheritance model of the health state of database objects. The health state of child objects affects the health state of parent objects.
 
