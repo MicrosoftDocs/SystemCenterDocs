@@ -83,7 +83,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if the registry is modified incorrectly. Before making changes, back up the registries in case problems occur.
 >
-> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
+> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
 
 Use the following steps to modify SChannel protocols system-wide. We recommend explicitly enabling the TLS 1.2 protocol.
 
@@ -164,7 +164,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if the registry is modified incorrectly. Before making changes, back up the registries in case problems occur.
 >
-> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
+> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
 
 ::: moniker range="sc-om-2016"
 
