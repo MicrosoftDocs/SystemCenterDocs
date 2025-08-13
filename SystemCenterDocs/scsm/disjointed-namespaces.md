@@ -27,7 +27,6 @@ We recommend that you complete the following procedures before installing either
 
 To determine the principal name, follow these steps:
 
-To determine the principal name, follow these steps:
 
 1. Start a Service Manager console.  
 
