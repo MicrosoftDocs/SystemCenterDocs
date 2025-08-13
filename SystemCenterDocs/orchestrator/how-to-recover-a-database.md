@@ -1,5 +1,5 @@
 ---
-title: How to Recover a Database
+title: Recover a Database
 description: Describes how to restore a database from backup in System Center - Orchestrator.
 ms.date: 04/17/2025
 ms.service: system-center
