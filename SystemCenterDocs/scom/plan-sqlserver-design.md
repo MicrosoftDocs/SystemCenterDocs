@@ -4,7 +4,7 @@ title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/07/2025
+ms.date: 08/13/2025
 ms.update-cycle: 180-days
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
@@ -301,7 +301,7 @@ Start-ClusterResource <Listener Cluster Resource name>
 Start-ClusterGroup <Listener Cluster Group name>
 ```
 
-When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur. For configuration information, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
+When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur. For configuration information, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](/troubleshoot/system-center/scom/system-center-management-service-stops-responding).
 
 ## Optimize SQL Server
 
