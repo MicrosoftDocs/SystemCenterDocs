@@ -1,10 +1,10 @@
 ---
-title: Plan for System Center - Service Manager performance and scalability
+title: Plan for System Center - Service Manager Performance and Scalability
 description: This article describes general performance and scalability planning guidance for System Center - Service Manager.
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/10/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.topic: concept-article
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 This article describes general performance and scalability planning guidance for System Center - Service Manager. While Service Manager is built to meet a performance standard on minimum recommended hardware, the hardware requirements for your specific scenario may be higher or lower than the generalized guidelines presented here. This article also describes considerations for Service Manager software.  
 
- Service Manager is a three\-tiered application, consisting of a database, a data access module, and a console:  
+Service Manager is a three\-tiered application, consisting of a database, a data access module, and a console:  
 
 - Every Service Manager deployment topology—from the largest to smallest—includes all three tiers, whether physically or virtually.  
 - The smallest deployment topology that is supported requires two servers, either physical servers or virtual servers. The largest deployment topology contains more than four servers.  
@@ -25,7 +25,7 @@ This article describes general performance and scalability planning guidance for
 
 ## Service Manager Sizing Helper Tool
 
- The Service Manager Sizing Helper tool can help you size the hardware and software pieces that you will deploy using the details in this guide. The tool is included in the [Service Manager job aids](https://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\). Although the tool was created for a previous version of Service Manager, its recommendations are still valid.
+The Service Manager Sizing Helper tool can help you size the hardware and software pieces that you will deploy using the details in this guide. The tool is included in the [Service Manager job aids](https://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\). Although the tool was created for a previous version of Service Manager, its recommendations are still valid.
 
 Specifically, the sizing tool:  
 

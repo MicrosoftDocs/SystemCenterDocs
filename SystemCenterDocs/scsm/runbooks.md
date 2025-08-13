@@ -1,12 +1,12 @@
 ---
-title: Use runbooks
+title: Use Runbooks
 description: You can use Service Manager runbooks to automate procedures.
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
@@ -16,7 +16,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 # Use Service Manager runbooks to automate procedures
 
 
-Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
+Runbooks in Service Manager are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 
 ## Runbooks in Service Manager
 
@@ -47,7 +47,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 > [!IMPORTANT]
 > If you have extended root classes such as service request or release record, then you can map runbook activity parameter to extended properties only if the runbook activity template and service request templates are saved in same management pack where the definition extension is located.
 
-To create a runbook automation activity template, do the following:
+To create a runbook automation activity template, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 
@@ -81,7 +81,7 @@ After you import runbooks from Orchestrator into Service Manager, you can open t
 
 When you view the runbook, you can perform basic actions with the runbook, such as viewing the summary, jobs, instances, and definition of the runbook. You can also start and stop the runbook.
 
-To view a runbook, do the following:
+To view a runbook, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 
@@ -93,4 +93,5 @@ To view a runbook, do the following:
 
 ## Next steps
 
-- To customize how items are displayed in Service Manager, see [User interface customization](ui-customization.md).
+To customize how items are displayed in Service Manager, see [User interface customization](ui-customization.md).
+

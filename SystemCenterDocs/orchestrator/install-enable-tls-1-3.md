@@ -4,7 +4,7 @@ title: Set up TLS 1.3 for Orchestrator
 description: This article provides instructions for setting up TLS 1.3 with Orchestrator
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/28/2025
+ms.date: 08/07/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
@@ -32,7 +32,7 @@ Here are some considerations before you set up TLS 1.3 for Orchestrator:
 >[!IMPORTANT]
 >Even with TLS 1.3 support for TDS connections, TLS 1.2 is still required for starting up SQL Server satellite services. Don't disable TLS 1.2 on the machine.
 
-[Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16) the update for your SQL Server version.
+[Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16&preserve-view=true) the update for your SQL Server version.
 
 >[!NOTE]
 >- SQL Server 2019 (15.x) and earlier versions doesn't support TLS 1.3.

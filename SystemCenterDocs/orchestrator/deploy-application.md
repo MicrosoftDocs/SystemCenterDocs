@@ -13,7 +13,6 @@ ms.topic: install-set-up-deploy
 ms.assetid: b1197648-35b2-4366-886e-1c93dca4f1cf
 author: jyothisuri
 ms.author: jsuri
-ROBOTS: noindex
 ---
 
 # Deploy application activity

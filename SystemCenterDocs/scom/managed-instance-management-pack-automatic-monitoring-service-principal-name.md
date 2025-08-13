@@ -2,9 +2,8 @@
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance using service principal name
 description: This article explains how to configure automatic monitoring template with Service Principal Name in Management Pack for Azure SQL Managed Instance.
-author: fkornilov
-ms.author: v-fkornilov
-manager: evansma
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

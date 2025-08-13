@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: ab911e0f-d549-4e63-ba67-fe2641ca5136
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Manage Checkpoint
 

@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/04/2022
+ms.date: 08/07/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  
@@ -18,7 +18,7 @@ The following sections describe the minimum hardware and software configurations
 
 ## Hardware requirements
 
-The following configurations should be used.
+The following configurations should be used:
 
 |Performance component|Recommendation|
 |-------------------------|------------------|
@@ -27,7 +27,7 @@ The following configurations should be used.
 
 ## Software requirements
 
-The following software must be installed for each role.
+The following software must be installed for each role:
 
 |Role|Prerequisites|
 |--------|-----------------|
@@ -40,9 +40,11 @@ The following software must be installed for each role.
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
 
-Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2025:
+Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2025.
 
 #### Install .NET Framework 4.5 and HTTP Activation
+
+To install .NET Framework 4.5 and HTTP Activation, follow these steps:
 
 1. On the Windows **Start** screen, select the **Server Manager** tile.
 
@@ -68,7 +70,7 @@ Service Management Automation was tested by Microsoft by installing and using it
 
 ## Security Requirements
 
-The following ports must be opened for each role.
+The following ports must be opened for each role:
 
 |Role|Requirement|
 |--------|---------------|
@@ -76,7 +78,7 @@ The following ports must be opened for each role.
 |Automation web service|Default value: 9090. Configurable at install time port defaults to 9090. The installation program for Service Management Automation automatically opens the web service port on the local firewall.|
 |Windows PowerShell module|None|
 
-The following certificates are required for each component.
+The following certificates are required for each component:
 
 |Role|Requirement|
 |--------|---------------|

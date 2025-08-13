@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: d3f20506-1362-4290-af79-ef3f6d0f1b05
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Run Exchange PowerShell Command
 

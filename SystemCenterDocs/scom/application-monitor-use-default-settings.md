@@ -4,7 +4,6 @@ title: Application monitoring using the default settings
 description: This article provides an overview about application monitoring using the default settings.
 author: jyothisuri
 ms.author: jsuri
-
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center

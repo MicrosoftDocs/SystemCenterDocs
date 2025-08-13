@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 02bcec02-12cc-4dd1-858c-beecbb7cbd3c
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Incident with Template
 

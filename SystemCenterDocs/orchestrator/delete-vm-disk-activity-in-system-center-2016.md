@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: 496a3586-5ecd-4dd4-a885-33988cfea717
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: 'sc-orch-2016'
 ---
 # Delete VM Disk Activity in System Center 2016

@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 346a8baa-10d7-4d04-931e-82f12ebf6c58
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Move Request
 
