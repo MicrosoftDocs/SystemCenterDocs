@@ -40,8 +40,7 @@ To change the sensitivity threshold for server-side monitoring, follow these ste
 1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates**, select  **.NET Application Performance Monitoring**, right-click the application group that you want to configure, and then select  **Properties**.
 
    > [!NOTE]
-   > If you are currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for server-side monitoring, go to the  **Server-Side Configuration**  page and select  **Advanced Settings**.  Change the  **Sensitivity threshold** and select  **OK**.
-
+   > If you're currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for server-side monitoring, go to the  **Server-Side Configuration**  page and select  **Advanced Settings**.  Change the  **Sensitivity threshold** and select  **OK**.
 2. To change the sensitivity threshold for server-side monitoring, on the  **Properties**  page, select the  **Server-Side Monitoring**  tab, and then select the  **Advanced Settings**  button.
 3. Change the  **Sensitivity threshold**  and select  **OK**.
 
@@ -49,7 +48,7 @@ To change the sensitivity threshold for server-side monitoring, follow these ste
 
 To change the sensitivity threshold for client-side monitoring, follow these steps:
 
-1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates** , select  **.NET Application Performance Monitoring** , right-click the application group that you want to want to configure, and then select  **Properties**.
+1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates** , select  **.NET Application Performance Monitoring** , right-click the application group that you want to configure, and then select  **Properties**.
 
     > [!NOTE]
     > If you're currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for client-side monitoring, go to the  **Client-Side Configuration**  page and select  **Advanced Settings**. Change the  **Sensitivity threshold**  and select  **OK**.

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1d7cbdf6-687f-4d47-8d7e-cc9e07072e58
 title: Management pack for SQL Server Replication Delivery
-description: This article explains how to install Management pack for SQL Server Replication
+description: This article explains how to install management pack for SQL Server Replication
 author: Anastas1ya
 manager: evansma
 ms.date: 07/24/2025
@@ -43,7 +43,7 @@ After you download and unpack the **Microsoft.SQLServer.Windows.Replication.Mana
 
 ## Prerequisites
 
-Before you use management pack for SQL Server Replication, ensure that the environment that you use must meet the following prerequisites:
+Before you use management pack for SQL Server Replication, ensure that the environment you use must meet the following prerequisites:
 
 - Install **.NET Framework 4.5** or higher.
 
