@@ -90,7 +90,7 @@ Use the following information to configure the Query Database activity.
 ::: moniker range="sc-orch-2025"
 
 >[!Note]
->MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
+>MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
 
 ::: moniker-end
 
