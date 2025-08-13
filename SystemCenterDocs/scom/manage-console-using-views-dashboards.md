@@ -3,7 +3,7 @@ title: Use Views and Dashboards in Operations Manager
 description: This article describes how to use the views and dashboards in Operations Manager to visualize operational data from monitored services and their components.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/10/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -27,6 +27,6 @@ After you identify the IT services to monitor, the configuration of how to monit
 
 - [Standard views in Operations Manager](manage-console-standard-views.md)  
 
-- [Creating and scoping views in Operations Manager](manage-console-scope-views.md)  
+- [Create and scope views in Operations Manager](manage-console-scope-views.md) 
 
 - [Personalize a view in Operations Manager](manage-console-personalize-views.md)
