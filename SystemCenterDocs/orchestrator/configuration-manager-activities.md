@@ -5,11 +5,7 @@ ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-<<<<<<< HEAD
-ms.topic: article
-=======
 ms.topic: concept-article
->>>>>>> 514ff88bf71927f01716634de7955b7c0a0c063b
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3

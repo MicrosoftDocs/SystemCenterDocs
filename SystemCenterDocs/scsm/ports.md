@@ -4,10 +4,7 @@ description: Learn about the port assignments used by System Center - Service Ma
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-<<<<<<< HEAD
 ms.date: 04/21/2025
-=======
->>>>>>> 514ff88bf71927f01716634de7955b7c0a0c063b
 ms.subservice: service-manager
 ms.topic: concept-article
 ms.custom: engagement-fy24
