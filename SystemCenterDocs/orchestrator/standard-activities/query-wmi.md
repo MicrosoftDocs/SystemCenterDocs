@@ -43,7 +43,7 @@ Use the following information to configure the Query WMI activity:
 
 |Item|Description|  
 |----------|-----------------|  
-|Computer where the WMI query is performed|The name of the computer where the WMI query was ran.|  
+|Computer where the WMI query is performed|The name of the computer where the WMI query was run.|  
 |WMI Query|The WMI query that was sent to the computer.|  
 |WMI Query Result as a string|The result of the WMI query.|  
 |WMI Namespace|The WMI namespace that you queried.|
