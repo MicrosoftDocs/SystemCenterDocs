@@ -1,9 +1,9 @@
 ---
-title: Manage tenants and user roles in SPF
+title: Manage Tenants and User Roles in SPF
 description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMM
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/07/2023
+ms.date: 04/21/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
@@ -12,7 +12,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 #  Manage tenants and user roles in SPF
 
-
+This article provides information setting up SPF tenants, and creating self-service tenant roles in VMM.
 
 System Center - Service Provider Foundation (SPF) doesn't create user roles or define their scope. To set up tenants, you need a certificate public key that's used to validate claims made on behalf of a tenant.
 
@@ -22,7 +22,7 @@ If you don't have an existing CA certificate to use, you can generate a self-sig
 
 ## Obtain a self-signed certificate
 
-Create a certificate using `makecert.exe` (Certificate Creation Tool).
+To create a certificate using `makecert.exe` (Certificate Creation Tool), follow these steps:
 
 1.  Open a command prompt as administrator.  
 2.  Generate the certificate by running the following command:  
@@ -34,6 +34,8 @@ Create a certificate using `makecert.exe` (Certificate Creation Tool).
 3. This command puts the certificate in the Current User Certificate Store. To access it, on the **Start** screen, enter **certmgr.msc** and then in the **Apps** results, select **certmgr.msc**. In the **certmgr** window, select **Certificates \- Current User** > **Personal** > **Certificates** folder.  
 
 ### Export the public key
+
+To export the public key, follow these steps:
 
 1. Right-click the certificate > **All Tasks** >  **Export**.  
 2. In **Export Private Key**, choose **No, do not export the private key** > **Next**.  
@@ -53,6 +55,8 @@ PS C:\> $key = [Convert]::ToBase64String($cert.RawData)``
 
 ### Export the private key
 
+To export the private key, follow these steps:
+
 1. Right-click the certificate > **All Tasks** >  **Export**.  
 2. In **Export Private Key**, choose **Yes, export the private key** > **Next**. If this option isn't available and you generated a self-signed certificate, ensure it included the -pe option.
 3. In **Export File Format**, select **Personal Information Exchange - PKCS #12 (.PFX)**. Ensure **Include all certificates in the certification path if possible** is selected and select **Next**.  
@@ -64,6 +68,8 @@ PS C:\> $key = [Convert]::ToBase64String($cert.RawData)``
 Service Provider Foundation doesn't create user roles or define their scope (such as clouds), resources, or actions. Instead, the `New-SCSPFTenantUserRole` cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in System Center 2016 - Virtual Machine Manager.
 
 You can also create user roles by using the Admin OData protocol service using the [Developer's guide](/previous-versions/system-center/developer/jj643273(v=msdn.10)).
+
+To create a tenant, follow these steps:
 
 1.  Run the SPF command shell as an Administrator.  
 2.  Enter the following command to create the tenant. This command assumes that the `$key` variable contains the public key.  
@@ -81,6 +87,8 @@ You can also create user roles by using the Admin OData protocol service using t
     The next procedure uses the `$tenant` variable that you created.  
 
 ### Create a tenant administrator role in VMM  
+
+To create a tenant administrator role in VMM, follow these steps:
 
 1.  Enter the following command and agree to this elevation for the Windows PowerShell command shell:  
 
@@ -119,6 +127,8 @@ You can also create user roles by using the Admin OData protocol service using t
     The next procedure uses the `$TARole` variable that you created.  
 
 ## Create a tenant self-service user role in VMM
+
+To create a tenant self-service user role in VMM, follow these steps:
 
 1.  Enter the following command to create a self\-service user in SPF for the tenant you created:  
 
