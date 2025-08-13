@@ -3,8 +3,8 @@ description: You can use DPM to back up and restore your System Center VMM datab
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Back up and restore VMM servers
+ms.date: 08/07/2025
+title: Back up and Restore VMM Servers
 ms.subservice: data-protection-manager
 ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
 author: jyothisuri
@@ -18,7 +18,7 @@ System Center Data Protection Manager (DPM) can back up the SQL Server instances
 
 - You can do a regular SQL Server backup.
 
-- You can back up the SQL Server database using the VMM Express Writer component that appears under the VMM server in the DPM console.  The main advantage to this method is that you don't need to set up any special permissions on the SQL Server.
+- You can back up the SQL Server database using the VMM Express Writer component that appears under the VMM server in the DPM console. The main advantage to this method is that you don't need to set up any special permissions on the SQL Server.
 
 DPM can back up the VMM database using the VMM Express Writer component when VMM  is running on System Center 2012 onwards as a physical/virtual machine in the following deployment scenarios:
 
@@ -48,15 +48,19 @@ Before setting up a DPM backup for VMM using VMM Express Writer, remember the fo
 
 ## Before you start
 
+Before you back up and restore VMM servers, do the following:
+
 - Review the [release notes](dpm-release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
 - Ensure that the VMM machines you want to back up are in the DPM server domain or in a domain with a two-way trust relationship with the DPM domain.
 
 - **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-- You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
+- You'll need to deploy the DPM  protection agent on the VMM server. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Back up VMM
+
+To back up System Center Virtual Machines Manager, follow these steps:
 
 1. Select **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
@@ -73,7 +77,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer, remember the fo
     - When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
     - When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
-
+    
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also co-locate data from different protection groups on tape.

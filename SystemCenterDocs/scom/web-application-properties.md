@@ -1,10 +1,10 @@
 ---
 ms.assetid: 9332f5fb-b26f-4d05-9cc6-c13727cd5967
-title: Web application properties
+title: Web Application Properties
 description: This article provides information about how to manage the web application properties.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/02/2025
 ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Web Application Properties
 
- The following sections describe the settings available for a **Web Application Transaction Monitoring** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
+ The following sections describe the settings available for a **Web Application Transaction Monitoring** template in Operations Manager. You can set the properties of these requests by using the procedure in [Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
 
 ## Ignore server certificate errors
 
@@ -39,7 +39,9 @@ Operations Manager web application URL monitoring capability has been improved t
 
 ## General Tab
 
-Use the **General** tab to specify the general details of the web application. Available options are explained in the following table.
+Use the **General** tab to specify the general details of the web application.
+
+The following table lists the available options in the General tab:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -64,7 +66,9 @@ Use the **Watcher Node** tab to specify the watcher nodes that you want to use f
 
 ## Performance Criteria Tab
 
-Use the **Performance Criteria** tab to enable the **Transaction response time** monitor for the application to monitor the transaction time of all of the requests in the browser session. The various options are explained in the following table.
+Use the **Performance Criteria** tab to enable the **Transaction response time** monitor for the application to monitor the transaction time of all of the requests in the browser session.
+
+The following table lists the various options in the Performance Criteria tab:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -73,7 +77,9 @@ Use the **Performance Criteria** tab to enable the **Transaction response time**
 
 ## Performance Counter Tab
 
-Use the **Performance Counter** tab to enable collection of performance counters for the web application. The various options are explained in the following table.
+Use the **Performance Counter** tab to enable collection of performance counters for the web application.
+
+The following table lists the various options in the Performance Counter tab:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -83,5 +89,5 @@ Use the **Performance Counter** tab to enable collection of performance counters
 
 ## Next steps
 
-- [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md)
-- [Web Application Request Properties](web-application-request-properties.md)
+- [Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
+- [Web Application Request Properties](web-application-request-properties.md).

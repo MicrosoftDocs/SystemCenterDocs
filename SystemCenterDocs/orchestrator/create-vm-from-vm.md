@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 6ad6e788-460d-4c30-98d3-d34c411cbdbd
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create VM from VM
 

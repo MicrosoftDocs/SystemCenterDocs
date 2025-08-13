@@ -3,8 +3,7 @@ ms.assetid: d68fe81d-e14c-494f-b118-e9a421d551c1
 title: Features and enhancements in Management Pack for SQL Server Reporting Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Reporting Services
 author: epomortseva
-ms.author: v-vlchernov
-manager: evansma
+ms.author: jsuri
 ms.date: 06/30/2025
 ms.topic: concept-article
 ms.service: system-center

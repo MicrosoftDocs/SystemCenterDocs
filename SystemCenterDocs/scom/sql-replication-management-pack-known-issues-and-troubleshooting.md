@@ -3,8 +3,7 @@ ms.assetid: 08ad3749-84b9-4411-8a6c-559ce5e308e6
 title: Known issues and troubleshooting in Management Pack for SQL Server Replication
 description: This article explains Known Issues and Troubleshooting in Management Pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: troubleshooting-known-issue
 ms.service: system-center

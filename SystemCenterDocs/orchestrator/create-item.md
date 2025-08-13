@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: 5e06c804-4544-4479-a664-d4a92df0c20b
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Item
 

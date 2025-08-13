@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 73d76ac0-8eee-466a-b11b-3df39e045d6d
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Active Directory Activities
 

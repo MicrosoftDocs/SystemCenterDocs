@@ -13,7 +13,6 @@ ms.topic: how-to
 ms.assetid: f36431cf-1c54-4ae3-9aa5-ee41d39c7631
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Alert Activity

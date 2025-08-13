@@ -3,8 +3,7 @@ ms.assetid: 2ad571c2-f460-4b52-bccd-737e0936c5ff
 title: Instance view in Management Pack for SQL Server Dashboards
 description: This article explains Instance View
 author: Anastas1ya
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

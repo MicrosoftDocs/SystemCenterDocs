@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: bc24d516-db7f-4bb5-b435-34dd689626fc
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Delete Relationship
 
