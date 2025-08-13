@@ -2,7 +2,7 @@
 title: Get Organizational Unit
 description: You can use the Get Organizational Unit activity in a runbook to get the properties of an organizational unit in Active Directory Domain Services (AD DS).
 ms.custom: UpdateFrequency2
-ms.date: 11/01/2024
+ms.date: 04/02/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -24,6 +24,8 @@ The following tables list the required and optional properties and published dat
 
 ## Get Organizational Unit optional properties
 
+The following table lists the optional properties for Get Organizational Unit activity:
+
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | ReturnDNOnly | If true, only the Distinguished Name property will be returned instead of all the properties   | Boolean   |
@@ -31,6 +33,8 @@ The following tables list the required and optional properties and published dat
 | Search Scope | The scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree   | String   |
 
 ## Get Organizational Unit filter properties
+
+The following table lists the filter properties for Get Organizational Unit activity:
 
 | Element   | Description   | Filters   | Value Type |
 |:---|:---|:---|:---|
@@ -42,6 +46,8 @@ The following tables list the required and optional properties and published dat
 | Creation Date   | Date and time that the organizational unit was created   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 
 ## Get Organizational Unit published data
+
+The following table lists the published data for Get Organizational Unit activity:
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

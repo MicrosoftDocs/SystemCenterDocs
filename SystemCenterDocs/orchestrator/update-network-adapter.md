@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: b1f889d8-9b37-4e10-95ec-0f6034bf0a88
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Update Network Adapter
 

@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 0a9055f4-4ea0-4233-ad6a-60a8296865eb
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Remove User Role
 

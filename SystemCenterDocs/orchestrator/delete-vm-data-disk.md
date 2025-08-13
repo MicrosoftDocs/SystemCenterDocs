@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 16b29d57-c3d9-407d-949f-94dc8b4e4ef0
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete VM Data Disk

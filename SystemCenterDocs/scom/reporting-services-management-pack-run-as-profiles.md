@@ -2,10 +2,8 @@
 ms.assetid: e252996f-c52c-4688-8a97-c0e70734b365
 title: Reporting Services Run As Profiles in Management Pack for SQL Server Reporting Services
 description: This article explains Reporting Services Run As Profiles.
-author: epomortseva
-ms.author: v-fkornilov
-manager: evansma
 ms.date: 04/10/2025
+ms.author: jsuri
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager

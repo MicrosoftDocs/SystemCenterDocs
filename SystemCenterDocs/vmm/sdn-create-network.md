@@ -1,10 +1,10 @@
 ---
 ms.assetid: 2e2323c5-6ec6-4fd2-bec5-70537d328fbe
-title: Set up a virtual network in SDN in the VMM fabric
+title: Set up a Virtual Network in SDN in the VMM Fabric
 description: This article describes the procedure on how to create a VM network in SDN, using a VMM.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/08/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -39,7 +39,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
 ## Before you start
 
- Ensure the following:
+Here are some considerations before you set up a virtual network in SDN in the VMM fabric:
 
 - Network controller is deployed in the SDN fabric. [Learn more](sdn-controller.md).
 
@@ -53,6 +53,8 @@ The following two types of isolation settings are supported in SDN fabric:
 ::: moniker range="<=sc-vmm-2019"
 
 ## Create a VM network (network virtualization)
+
+To create a VM network, follow these steps:
 
 1. In the VMM fabric, select **VMs and Services** > **VM Networks** > **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name**, enter a name and optional description, and select a logical network that was created with network virtualization isolation settings.
@@ -72,7 +74,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option.  Select the **VPN gateway device** that you want to use and confirm the settings.
 
-     Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear. Complete the settings based on the information provided by the VPN admin.
+   Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear. Complete the settings based on the information provided by the VPN admin.
 
    - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
 
@@ -89,6 +91,8 @@ Once the job is successfully completed, you can view the newly created VM networ
 ::: moniker range="sc-vmm-2022"
 
 ## Create a VM network (network virtualization)
+
+To create a VM network, follow these steps:
 
 1. In the VMM fabric, select **VMs and Services** > **VM Networks** > **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name**, enter a name and optional description, and select a logical network that was created with network virtualization isolation settings.
@@ -108,6 +112,8 @@ Once the job is successfully completed, you can view the newly created VM networ
 
    >[!NOTE]
    > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
+
+
 
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option. Select the **VPN gateway device** that you want to use and confirm the settings.
 
@@ -129,6 +135,8 @@ Once the job is completed successfully, you can view the newly created VM networ
 > [!NOTE]
 > While creating the logical network, if you have chosen the option **Create VM network with same name to allow virtual machines to access this logical network directly**, then you can skip the following steps.
 
+To create a VM network, follow these steps:
+
 1. Select **VMs and Services** > **VM Networks** . **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name**, enter a name and optional description. Select a **One connected logical network** for this VM network. Select **Next**.
 3. In **Summary**, verify the settings and select **Finish**.
@@ -140,4 +148,4 @@ Once the job is successfully completed, you can view the newly created VM networ
 
 ## Next steps
 
-[Create an IP pool for a VM network](network-pool.md#set-up-an-ip-address-pool-on-a-vm-network)
+[Create an IP pool for a VM network](network-pool.md#set-up-an-ip-address-pool-on-a-vm-network).
