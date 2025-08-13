@@ -1,32 +1,32 @@
 ---
 ms.assetid: 61b25aa7-b725-445b-8f4c-40ce213714c2
-title: How to Configure Run As Accounts and Profiles for UNIX and Linux Access
+title: Configure Run As Accounts and Profiles for UNIX and Linux Access
 description: This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ---
 
-# How to configure Run As accounts and profiles for UNIX and Linux access
+# Configure Run As accounts and profiles for UNIX and Linux access
 
-
-
-If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Planning Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
+If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Plan Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).    
 
 >[!NOTE]
 >System Center Operations Manager does not support domain accounts for maintenance.
 
-## Configuring Run As accounts  
+This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
+
+## Configure Run As accounts  
 
 The **UNIX\/Linux Run As Accounts Wizard** creates Run As accounts that can be of two Run As account types:  
 
 -   A monitoring account  
 
--   An agent maintenance account.  
+-   An agent maintenance account  
 
 Use this wizard three or more times as needed so that you have the following Run As accounts:  
 
@@ -36,7 +36,7 @@ Use this wizard three or more times as needed so that you have the following Run
 
 -   An agent maintenance Run As account for upgrading, uninstalling, and other agent maintenance operations.  
 
-To run this wizard, you must have the following credentials information:  
+To run this wizard, you must have the following credentials information:
 
 -   Username and password for unprivileged access to the UNIX or Linux computer.  
 
@@ -46,13 +46,15 @@ To run this wizard, you must have the following credentials information:
 
     You can choose between su or sudo elevation. If the account is to be elevated using 'su', you will need the 'su' password.  
 
-#### To create a Run As account  
+#### Create a Run As account  
 
-1.  In the Operations console, click **Administration**.  
+To create a Run As account, follow these steps:
 
-2.  In **Run As Configuration**, click **UNIX\/Linux Accounts**.  
+1.  In the Operations console, select **Administration**.  
 
-3.  In the **Tasks** pane, click **Create Run As Account**.  
+2.  In **Run As Configuration**, select **UNIX\/Linux Accounts**.  
+
+3.  In the **Tasks** pane, select **Create Run As Account**.  
 
 4.  On the **Account Type** page, choose a **Monitoring Account** or an **Agent Maintenance Account**.  
 
@@ -62,11 +64,11 @@ To run this wizard, you must have the following credentials information:
 
 7.  On the **Distribution Security** page, select the **More Secure** or **Less Secure** option.  
 
-8.  Click **Create**.  
+8.  Select **Create**.  
 
 Repeat as needed until all the needed Run As accounts are created.  
 
-## Configuring Run As profiles  
+## Configure Run As profiles  
 
 Now that you have created the Run As accounts, you must add each Run As account to the applicable profile. There are three profiles to configure:  
 
@@ -85,13 +87,15 @@ Now that you have created the Run As accounts, you must add each Run As account 
 > [!NOTE]  
 > There is no need to run the **Create Run As Profile Wizard** unless you have authored a new management pack that requires it.  
 
-#### To add a Run As account to a profile  
+#### Add a Run As account to a profile  
 
-1.  In the Operations console, click **Administration**.  
+To add a Run As account, follow these steps:
 
-2.  In **Run As Configuration**, click **Profiles**.  
+1.  In the Operations console, select **Administration**.  
 
-3.  In the list of profiles, right click and then select **Properties** on one of the following profiles:  
+2.  In **Run As Configuration**, select **Profiles**.  
+
+3.  In the list of profiles, right-click and then select **Properties** on one of the following profiles:  
 
     -   UNIX\/Linux Action Account  
 
@@ -99,10 +103,10 @@ Now that you have created the Run As accounts, you must add each Run As account 
 
     -   UNIX\/Linux Agent Maintenance Account  
 
-4.  In the **Run As Profile** wizard, click **Next** until you get to the **Run As Accounts** page.  
+4.  In the **Run As Profile** wizard, select **Next** until you get to the **Run As Accounts** page.  
 
-5.  On the **Run As Accounts** page, click **Add** to add a Run As account that you created. Select the class, group, or object that will be accessed using the credentials in the Run As account.  
+5.  On the **Run As Accounts** page, select **Add** to add a Run As account that you created. Select the class, group, or object that will be accessed using the credentials in the Run As account.  
 
-6.  Click **Save**.  
+6.  Select **Save**.
 
 Repeat as needed until all three profiles have been configured with one or more Run As accounts.  

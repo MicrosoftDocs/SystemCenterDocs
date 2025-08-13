@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 7d59d0cc-f027-419b-89e3-50163c66fc8d
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Delete Document
 

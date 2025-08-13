@@ -13,7 +13,6 @@ ms.topic: concept-article
 ms.assetid: 9edd8363-704d-41dc-8cc6-0c168c27b901
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Create Mailbox
 

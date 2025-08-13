@@ -12,7 +12,6 @@ ms.topic: concept-article
 ms.assetid: 50b7bfd7-ecef-4c81-9172-854059cbc853
 author: jyothisuri
 ms.author: jsuri
-robots: noindex
 ---
 # Reset User Password
 

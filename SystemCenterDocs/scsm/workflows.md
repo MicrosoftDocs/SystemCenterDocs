@@ -2,12 +2,11 @@
 title: Configure Workflows
 description: Learn about configuring workflows in Service Manager.
 ms.topic: how-to
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 05/27/2025
+ms.date: 08/07/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3

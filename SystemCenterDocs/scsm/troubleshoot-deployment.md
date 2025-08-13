@@ -2,10 +2,9 @@
 title: Troubleshoot System Center - Service Manager Deployment Issues
 description: Describes how to troubleshoot System Center - Service Manager deployment issues.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 05/27/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting-general
