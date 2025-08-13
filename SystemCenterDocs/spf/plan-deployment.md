@@ -4,7 +4,7 @@ description: This article provides an overview of how to plan for a Service Prov
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/24/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
