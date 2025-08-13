@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-title: Create a Dashboard with the Topology Widget in the Web Console
+title: Create a dashboard with the Topology widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Topology widget.
 author: jyothisuri
 ms.author: jsuri
@@ -23,9 +23,7 @@ In System Center Operations Manager version 2019 and later, the Web console prov
 
 
 
-When created for the first time, the health state icons for the selected objects are displayed at the left-top section of the topology widget. These icons have to be placed manually in the appropriate position on the image.
-
-To manually place the icons, follow these steps:
+When created for the first time, the health state icons for the selected objects are displayed at the left-top section of the topology widget. These icons have to be placed manually in the appropriate position on the image by performing the following steps:
 
 1. Select on the ellipsis **…** next to the **X** on the right-most side of the widget crown, which is displayed when you hover over the widget.
 

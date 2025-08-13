@@ -18,8 +18,6 @@ This article shows a diagram that illustrates System Center - Service Management
 
 ## Features
 
-The Service Management Automation features are as follows:
-
 - The SMA web service communicates with Microsoft Azure Pack and authenticates users.
 - The SQL Server databases store and retrieve many components. These include runbooks, runbook assets, activities, integration modules, and runbook job information.
 - Runbook workers run the runbooks, and they can be used for load balancing.

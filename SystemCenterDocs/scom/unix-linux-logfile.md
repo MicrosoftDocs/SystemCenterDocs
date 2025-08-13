@@ -1,6 +1,6 @@
 ---
 ms.assetid: 7a8a492c-fede-4952-952a-6dec5b7be382
-title: UNIX or Linux Log File in Operations Manager Management Pack
+title: UNIX or Linux Log File in Operations Manager management pack
 description: This article provides an overview of UNIX or Linux log file
 author: jyothisuri
 ms.author: jsuri
@@ -15,7 +15,7 @@ ms.topic: concept-article
 
 
 
-This article provides an overview of UNIX or Linux log file. The  **UNIX/Linux Log File Monitoring**  template lets you create an alert when a particular text is detected in a log file.
+The  **UNIX/Linux Log File Monitoring**  template lets you create an alert when a particular text is detected in a log file. This article provides an overview of UNIX or Linux log file.
 
 ## Scenarios
 
@@ -64,7 +64,7 @@ To create a UNIX/Linux log file template, follow these steps:
 
    - If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
-2. Start the  Add Monitoring  wizard.
+2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Log File Monitoring**, and select  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, enter a name and description for this new template.
 5. Select a management pack in which you want to save the template or select  **New**  to create a new management pack. For more information, see [Select a Management Pack File](select-management-pack-file.md).

@@ -75,7 +75,7 @@ The HP Service Manager integration pack requires a connection to the HP Service 
 
 To avoid possible corruption, don't use alternate means to directly connect to the database. Always use the ODBC connection to ensure proper integration.
 
-### ::: zone pivot="client-SQLServerODBCconnectiontier"
+### Set up a SQL Server ODBC connection
 
 To set up a SQL Server ODBC connection, follow these steps:
 
@@ -97,9 +97,7 @@ To set up a SQL Server ODBC connection, follow these steps:
 16. When the test completes, select **OK**.
 17. Select **OK**.
 
-::: zone-end
-
-### ::: zone pivot="client-OracleODBCconnectiontier"
+### Set up an Oracle ODBC Connection
 
 To set up an Oracle ODBC connection, follow these steps:
 
@@ -116,9 +114,7 @@ To set up an Oracle ODBC connection, follow these steps:
 11. Select **OK**.
 12. Select **OK** to close the ODBC Data Source Administrator.
 
-::: zone-end
-
-###  ::: zone pivot="client-HPServiceManagerconnectiontier"
+### Set up an HP Service Manager connection
 
 To set up an HP Service Manager connection, follow these steps:
 
@@ -136,8 +132,6 @@ To set up an HP Service Manager connection, follow these steps:
 12. Select the **Refresh Field Cache** button to retrieve and store the custom configuration from the HP Service Manager server. This operation may take a few minutes to complete and is essential to allow the integration pack to connect correctly to a new HP Service Manager server.
 13. Add additional connections to other HP Service Manager servers, if applicable.
 14. Select **OK** to close the configuration dialog, and select **Finish**.
-
-::: zone-end
 
 >[!TIP]
 >For the DB Username and DB Password - If your HPSM database is on a computer running Windows server and you set up your ODBC DSN with Windows authentication, then you can enter anything for the username and password because the fields are only required not to be blank in order for the Test Connection button to work.
@@ -167,7 +161,7 @@ To expose a required field, follow these steps:
 - Certain permissions are required when dealing with Change tickets. These permissions are specified by assigning a user a Change Management Profile. While a user can have more than one profile, it can only belong to one profile per session. If the user is assigned more than one Change Management Profile, it will automatically use the first profile in the alphabetical order. To avoid confusion, it's recommended that the user configured for use with the integration pack is only assigned one Change Management Profile.
 - The user configured for use with the integration pack must have its time zone preferences set to Greenwich/Universal with a date format of mm/dd/yy.
 - In certain versions of HP Service Manager, the list of available categories when creating an incident displays Change, yet choosing it causes the object to fail with the following message: Please provide a valid category. This is a known issue with the HP Service Manager server. Ensure that the fields are visible to the web service (See Troubleshooting) and the HP Service Manager server is patched to the latest version.
-- The **Set as default** button available in the **Create Entry**, **Update Entry**, and **Close Entry** activities may report an error when selected. To work around this issue, do the following:
+- The **Set as default** button available in the **Create Entry**, **Update Entry**, and **Close Entry** activities may report an error when selected. Use the following procedure to work around this issue.
     1. Note the file path in the error message. For example, C:\\Users\\\[CurrentUser\]\\AppData\\Local\\Microsoft\\System Center 2012\\Orchestrator\\IntegrationPacks\\HPServiceManager\\\[GUID\]\\defaultFields.xml
     2. Ensure that each of the folders in the file path exists exactly as shown in the error message.
     3. Create any missing folders if necessary.
