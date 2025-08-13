@@ -15,6 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 # Manage Service Manager knowledge articles
 
 
+
 Knowledge articles in Service Manager can help service desk analysts and end-users understand and solve problems. Any employee can search for, view, and create knowledge articles so that end-users can help themselves and resolve IT problems before new work items are opened. Service desk analysts also have to link work items to knowledge articles.
 
 Use the procedures in this article to create and search for knowledge articles.

@@ -1,12 +1,12 @@
 ---
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
-title: Custom Query-Based Performance Rule in Management Pack for SQL Server
-description: This article explains how to configure custom query performance rule in Management Pack for SQL Server
+title: Custom Query-Based Performance Rule in management pack for SQL Server
+description: This article explains how to configure custom query performance rule in management pack for SQL Server
 manager: evansma
 author: epomortseva
-ms.author: v-fkornilov
+ms.author: jsuri
 ms.date: 04/15/2025
-ms.topic: how-to
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---

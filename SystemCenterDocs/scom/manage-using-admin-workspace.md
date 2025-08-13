@@ -14,6 +14,7 @@ ms.topic: article
 # Use the Administration workspace in Operations Manager
 
 
+
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
 When you first open the Administration workspace or when you select **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that haven't been completed yet.  
