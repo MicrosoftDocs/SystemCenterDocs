@@ -21,7 +21,7 @@ This article provides information about the tasks that you can do using System a
 
 The following table provides a brief description of tasks you can accomplish when using each System activity.  
 
-|Tasks|System activities|  
+|Tasks|System Activities|  
 |-----------|-----------------------|  
 |Run any program or command on any computer in your domain.|[Run Program](run-program.md)|  
 |Run scripts that parse data or run functions against available APIs.|[Run .NET Script](run-net-script.md)|  
