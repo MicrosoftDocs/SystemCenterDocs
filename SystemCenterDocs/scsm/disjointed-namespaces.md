@@ -3,15 +3,15 @@ title: Deployment Considerations with a Disjointed Namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
 ms.date: 04/23/2025
+author: jyothisuri
+ms.author: jsuri
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: how-to
+ms.topic: concept-article
 ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 ---
 

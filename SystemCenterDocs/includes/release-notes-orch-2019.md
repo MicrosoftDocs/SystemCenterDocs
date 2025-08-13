@@ -2,9 +2,8 @@
 ms.assetid: 3f002367-963a-4a35-bcd5-b2dd79b58ea2
 description: Include file to summarize the release notes for System Center 2019 - Orchestrator.
 ms.topic:  Include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:

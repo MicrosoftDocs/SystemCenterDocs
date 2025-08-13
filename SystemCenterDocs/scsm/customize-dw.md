@@ -3,15 +3,14 @@ title: Customize the data warehouse
 description: Provides an overview about customizing the Service Manager data warehouse.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 26cc6924-b9c7-4c0c-b20e-0ab85d9c2140
 ---
 

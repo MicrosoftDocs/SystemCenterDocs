@@ -3,10 +3,9 @@ ms.assetid: 847ad457-3a51-4ecd-8aac-dde7539339c5
 title: Managed instance monitoring pool in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure monitoring pool in Management Pack for Azure SQL Managed Instance
 author: epomortseva
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: engagement-fy23

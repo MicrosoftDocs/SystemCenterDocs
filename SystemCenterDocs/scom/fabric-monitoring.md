@@ -2,14 +2,14 @@
 ms.assetid: ea90aa0a-46e0-49f0-8560-5c35dd3a3c96
 title: Fabric Monitoring in System Center Operation Manager
 description: This article provides an overview of fabric monitoring.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/15/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Fabric Monitoring
@@ -30,7 +30,7 @@ The fabric of a private cloud consists of physical and virtual elements that fal
 
 ## Before you begin
 
-Virtual Machine Manager controls the private cloud. Before you can begin to monitor the fabric of your private clouds, you must integrate System Center Operations Manager and Virtual Machine Manager. For details, see [Configuring Operations Manager integration with VMM](plan-thirdparty-integration.md). During the integration, several management packs are imported automatically, including the Management Pack for System Center Virtual Machine Manager and the Management Pack for Virtual Machine Manager Fabric Health Dashboard.
+Virtual Machine Manager controls the private cloud. Before you can begin to monitor the fabric of your private clouds, you must integrate System Center Operations Manager and Virtual Machine Manager. For details, see [Configure Operations Manager integration with VMM](plan-thirdparty-integration.md). During the integration, several management packs are imported automatically, including the Management Pack for System Center Virtual Machine Manager and the Management Pack for Virtual Machine Manager Fabric Health Dashboard.
 
 The Management Pack for System Center Virtual Machine Manager monitors availability of VMM and the availability, health, and performance of all virtual machines and virtual machine hosts that VMM manages. You must install this management pack before you can configure the following VMM features: Performance and Resource Optimization (PRO), Maintenance Mode integration, Reporting in VMM, and Support for SQL Server Analysis Services (SSAS).
 
@@ -40,6 +40,6 @@ The VMM Fabric Health Dashboard management pack displays much of what the VMM ma
 
 ## Next steps
 
-- [Scoping the Fabric Health Dashboard to a specific cloud](scope-fabric-health-dashboard.md)
-- [Fabric Monitoring diagram view](fabric-monitoring-diagram-view.md)
-- [Monitor cloud fabric using System Center Advisor](use-system-center-advisor.md)
+- [Scope the Fabric Health Dashboard to a specific cloud](scope-fabric-health-dashboard.md).
+- [Fabric Monitoring diagram view](fabric-monitoring-diagram-view.md).
+- [Monitor cloud fabric using System Center Advisor](use-system-center-advisor.md).

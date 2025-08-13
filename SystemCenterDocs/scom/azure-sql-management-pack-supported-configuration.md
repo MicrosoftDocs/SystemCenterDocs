@@ -4,10 +4,10 @@ title: Scope and Supported Configuration in Management Pack for Azure SQL Databa
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Database
 ms.custom: engagement-fy23
 author: epomortseva
-ms.author: v-fkornilov
 manager: evansma
 ms.date: 04/23/2025
-ms.topic: article
+ms.author: jsuri
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---

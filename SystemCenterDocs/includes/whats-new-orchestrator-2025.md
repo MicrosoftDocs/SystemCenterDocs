@@ -2,10 +2,9 @@
 ms.assetid:
 title: include file
 description: This include file describes the new features in Orchestrator 2025.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 07/31/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
 ms.service: system-center
 monikerRange: 'sc-orch-2025'
 ms.subservice: orchestrator
@@ -18,11 +17,11 @@ The following sections introduce new and updated features in System Center Orche
 
 ### Support for OLEDB19
 
-SCO 2025 supports OLEDB19  which encrypts SQL Connection by default. Ensure to have Trusted Server certificate for successful SQL connection. [Learn more](/system-center/orchestrator/install?view=sc-orch-2025#secure-connection-to-sql-server).
+SCO 2025 supports OLEDB19  which encrypts SQL Connection by default. Ensure to have Trusted Server certificate for successful SQL connection. [Learn more](/system-center/orchestrator/install?view=sc-orch-2025#secure-connection-to-sql-server&preserve-view=true).
 
 ### Support for .NET 8
 
-System Center Orchestrator 2025 supports the latest and most secure .NET8 (LTSC). [Learn more](/system-center/orchestrator/system-requirements-orch?view=sc-orch-2025).
+System Center Orchestrator 2025 supports the latest and most secure .NET8 (LTSC). [Learn more](/system-center/orchestrator/system-requirements-orch?view=sc-orch-2025&preserve-view=true).
 
 ### Support for Transport Security Layer (TLS) protocol version 1.3
 

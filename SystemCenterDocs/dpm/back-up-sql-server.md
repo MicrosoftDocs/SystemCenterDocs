@@ -1,15 +1,14 @@
 ---
 description: You can use DPM to back up and recover SQL Server databases.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 03/05/2025
+ms.date: 08/07/2025
 title: Back up SQL Server with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23, engagement-fy24
 ---
 
@@ -43,7 +42,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 ::: moniker range="sc-dpm-2025"
 
 >[!NOTE]
->SQL Connections uses [OLEDB 19](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16) (19.3 and above), which must be installed on all SQL Server machines.
+>SQL Connections uses [OLEDB 19](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16&preserve-view=true) (19.3 and above), which must be installed on all SQL Server machines.
 
 ::: moniker-end
 
