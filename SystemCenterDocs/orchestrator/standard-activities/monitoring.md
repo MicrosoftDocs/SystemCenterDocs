@@ -11,15 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f7d2a4f1-97cf-4dc7-bf68-70c573b6fc08
 caps.latest.revision: 7
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Monitoring
 
 The following table provides a brief description of the tasks you can accomplish when using each Monitoring activity: 
 
-|Tasks|Monitoring activities|  
+|Tasks|Monitoring Activities|  
 |-----------|---------------------------|  
 |Invoke a runbook when new events that match a filter appear in the Windows Event Log|[Monitor Event Log](monitor-event-log.md)|  
 |Invoke a runbook when a service has been started or stopped|[Monitor Service](monitor-service.md)|  

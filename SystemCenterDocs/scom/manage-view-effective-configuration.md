@@ -14,7 +14,7 @@ ms.topic: article
 
 # View effective configuration of a monitored object
 
- In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
+In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
 
 From the results, you're able to see the following details:
 

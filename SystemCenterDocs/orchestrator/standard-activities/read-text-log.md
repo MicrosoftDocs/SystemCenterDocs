@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4b1150e4-ef0c-4fba-a358-53db2106399e
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Read Text Log
@@ -25,7 +24,7 @@ The Read Text Log activity will read lines in a structured text log file. If you
 
 ## Configure the Read Text Log activity
 
- Before you configure the Read Text Log activity, you need to determine the following:  
+Before you configure the Read Text Log activity, you need to determine the following:  
 
 - The log file name you're reading.  
 
@@ -69,7 +68,7 @@ Here are some examples of dates and their corresponding timestamp format:
 
 ### Published Data
 
- The following table lists the published data items:  
+The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
