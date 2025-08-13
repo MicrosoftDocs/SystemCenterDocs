@@ -6,7 +6,6 @@ manager: evansma
 author: epomortseva
 ms.author: jsuri
 ms.date: 04/15/2025
-ms.author: jsuri
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
