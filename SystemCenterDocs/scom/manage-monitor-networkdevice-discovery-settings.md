@@ -3,7 +3,7 @@ title: Network Device Discovery Settings
 description: This article describes how to configure discovery of network devices to be monitored by Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/17/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -40,7 +40,7 @@ Wildcard pattern matching is done from left to right, one character or basic wil
 
 Spaces are significant characters and are subject to matching.
 
-The wildcard patterns consist of the following.
+The wildcard patterns consist of the following:
 
 
 |                  Character                  |                                                                                                                     Description                                                                                                                     |                                                                                                                                                                       Example                                                                                                                                                                        |
@@ -55,10 +55,13 @@ The wildcard patterns consist of the following.
 |                      &                      |                                                                                                                      And also                                                                                                                       |                                                         \*NY\*ROUTER matches all strings containing NY and ROUTER<br /><br /><1-100>&\*[02468] matches all even numbers between 1 and 100.<br /><br />\*A\*&#124;\*B\*&\*C\* matches strings that contain either an A or a B, and also a C.                                                          |
 |                      ~                      |                                                                                                                       Except                                                                                                                        |                                                               10.20.30.\*~10.20.30.50 matches all hosts on 10.20.30 except for 10.20.30.50.<br><br>\*Router\*~\*Cisco\*&\*10.20.30.<5-10> matches routers except Cisco routers with the addresses between 10.20.30.5 and 10.20.30.10.                                                                |
 
-## Configuring a VLAN tag
-To differentiate between VLANs, you can configure a tag for a virtual local area network (VLAN) by editing the vlan-tag-settings.conf file on each management server that runs a network discovery rule. Vlan-tag-settings.conf is located in the Operations Manager installation directory in **\Server\NetworkMonitoring\conf\discovery**.
+## Configure a Virtual Local Area Network (VLAN) tag
 
-### To configure a VLAN tag
+To differentiate between VLANs, you can configure a tag for a VLAN by editing the vlan-tag-settings.conf file on each management server that runs a network discovery rule. Vlan-tag-settings.conf is located in the Operations Manager installation directory in **\Server\NetworkMonitoring\conf\discovery**.
+
+### Configure a VLAN tag
+
+To configure a VLAN tag, follow these steps:
 
 1.  On each management server that runs a network discovery rule, open vlan-tag-settings.conf in a text editor.
 
