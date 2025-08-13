@@ -1,13 +1,13 @@
 ---
-title: Optimize performance of .NET activities in System Center - Orchestrator
+title: Optimize Performance of .NET Activities in System Center - Orchestrator
 description: Describes how to configure runbook servers in System Center - Orchestrator, to optimize performance of .NET activities.
-ms.date: 11/01/2024
+ms.date: 04/09/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
@@ -22,6 +22,8 @@ Loading an assembly may cause a delay of up to 30 seconds. This delay can also o
 To remove the delay you can either deactivate `generatePublisherEvidence` in `PolicyModule.exe`, or you can create a profile for the service account.
 
 ### Deactivate `generatePublisherEvidence` in `policymodule.exe.config`
+
+To deactivate `generatePublisherEvidence` in `policymodule.exe.config`, follow these steps:
 
 ::: moniker range="<=sc-orch-2019"
 1. Locate the file `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Runbook Server\policymodule.exe.config` on the runbook server that executes runbooks containing an activity referencing a .NET assembly. 
@@ -41,7 +43,7 @@ To remove the delay you can either deactivate `generatePublisherEvidence` in `Po
 
 ### Create a profile for the service account
 
-1. On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
+On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
 
 ## Next steps
 

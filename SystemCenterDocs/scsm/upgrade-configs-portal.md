@@ -5,8 +5,9 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/14/2025
+ms.update-cycle: 180-days
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 monikerRange: 'sc-sm-2016'
 ms.custom: UpdateFrequency.5
 ---

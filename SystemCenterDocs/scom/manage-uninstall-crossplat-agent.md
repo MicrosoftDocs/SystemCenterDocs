@@ -2,14 +2,13 @@
 ms.assetid: 685eb5ff-d934-4426-8b3e-dd3e102d1c42
 title: Manually Uninstalling Agents from UNIX and Linux Computers
 description: This article describes how to manually uninstall the Operations Manager agent from UNIX and Linux computers.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Manually uninstalling agents from UNIX and Linux computers

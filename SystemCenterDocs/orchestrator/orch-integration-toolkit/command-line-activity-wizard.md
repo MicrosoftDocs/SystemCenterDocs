@@ -1,13 +1,12 @@
 ---
 title: Orchestrator Integration Toolkit Command Line Activity Wizard
 description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: how-to
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
@@ -23,9 +22,9 @@ An activity is a single functional part of an Orchestrator runbook. Activities a
 
 Activities range from simple to complex. You can create an activity using the Command-Line Activity Wizard that does nothing but echoes text to an output property. You can also create a single activity that performs a complex, multi-step action such as virtual machine deployment. It’s up to you to define what each activity will do. However, your goal should be to define activities that encapsulate single sets of functionality that allow for easy reuse in many different types of situations. The key is flexibility. It’s better to create a set of 10 different activities that each do something specific and be able to use those activities in 20 different ways, rather than create 20 different activities to solve the specific individual scenarios. More information about best practices is covered later in this document.  
 
-## Create a New Activity Assembly  
+## Create a New Activity Assembly
 
-Follow these steps to create a new command-line activity assembly:
+To create a new command-line activity assembly, follow these steps:
 
 1. Select **Start > All Programs > Microsoft System Center 2012 > Orchestrator > Integration Toolkit > Orchestrator Command-Line Activity Wizard**  
 
@@ -57,13 +56,13 @@ Follow these steps to create a new command-line activity assembly:
 
 10. When you're finished adding and modifying commands, select **Next**. The assembly file specified at the start of the wizard is compiled, and when the process is complete, the final wizard page displays.  
 
-11. If you wish to immediately build an Integration Pack from this new assembly, select the **Build Integration Pack** button, which launches the Integration Pack Wizard and pre-loads the information from the assembly. Then, follow the instructions in [Creating a New Integration Pack](integration-pack-wizard.md#create-a-new-integration-pack) to create the Integration Pack.  
+11. If you wish to immediately build an Integration Pack from this new assembly, select the **Build Integration Pack** button, which launches the Integration Pack Wizard and pre-loads the information from the assembly. Then, follow the instructions in [Create a New Integration Pack](integration-pack-wizard.md#create-a-new-integration-pack) to create the Integration Pack.  
 
 12. If you wish to test your assembly using the Invoke .NET activity or just skip the IP build process for now, select **Finish**.  
 
-## Add commands to an assembly  
+## Add commands to an assembly
 
-Follow these steps to add a command to an assembly:
+To add a command to an assembly, follow these steps:
 
 1. On the **Commands** page, you can define one or more commands (which become activities) which will be added to the assembly. To add a new command, select **Add**.  
 
@@ -147,7 +146,7 @@ Follow these steps to add a command to an assembly:
 
 ### Test an assembly
 
-Follow these steps to test an assembly:
+To test an assembly, follow these steps:
 
 1. Open the Runbook Designer.  
 
@@ -177,16 +176,16 @@ Follow these steps to test an assembly:
 
 ## QIK CLI Activity Migration
 
- If you've an assembly that was created using the Opalis 6.3 QIK CLI Wizard, you'll need to convert it to be compatible with Orchestrator before it can be used either in an Orchestrator Integration Pack or used directly in runbooks via the Invoke .NET activity. The conversion process is simple and only takes a few seconds per assembly.  
+If you've an assembly that was created using the Opalis 6.3 QIK CLI Wizard, you'll need to convert it to be compatible with Orchestrator before it can be used either in an Orchestrator Integration Pack or used directly in runbooks via the Invoke .NET activity. The conversion process is simple and only takes a few seconds per assembly.  
 
 > [!IMPORTANT]
 > The install for the Orchestrator Integration Toolkit won't fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it isn't present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before using the CLI.  
 
 ### Convert an Opalis QIK CLI Assembly  
 
-Follow these steps to convert an Opalis QIK CLI Assembly:
+To convert an Opalis QIK CLI Assembly, follow these steps:
 
-1. Launch the Orchestrator Command-Line Activity Wizard by selecting Start > All Programs > Microsoft System Center 2012 > Orchestrator > Command-Line Activity Wizard  
+1. Launch the Orchestrator Command-Line Activity Wizard by selecting Start > All Programs > Microsoft System Center 2012 > Orchestrator > Command-Line Activity Wizard.  
 
 2. When the wizard loads, select the **Load existing assembly** button on the first page.  
 
@@ -209,4 +208,4 @@ In addition to this online reference provided for System Center 2012 Orchestrato
 - [System Center home](https://www.microsoft.com/cloud-platform/system-center)
 - [System Center documentation](../index.yml)
 - [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
-- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
+- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)

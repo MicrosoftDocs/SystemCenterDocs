@@ -2,11 +2,11 @@
 ms.assetid: b6c7614a-e5af-42ae-b88d-9810b42a35f6
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.update-cycle: 180-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, engagement-fy24

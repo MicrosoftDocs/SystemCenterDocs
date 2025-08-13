@@ -1,15 +1,15 @@
 ---
 title:  System Center - Data Protection Manager release build versions
 description: This article provides the list of release builds for System Center - Data Protection Manager.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
