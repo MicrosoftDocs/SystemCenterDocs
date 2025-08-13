@@ -186,15 +186,15 @@ To transfer initial backup data to Azure Data Box devices, follow these steps:
 
 Right-click the **Protection Group**, and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
-    ![Create recovery point](./media/offline-seeding-azure-data-box/create-recovery-point.png)
+![Create recovery point](./media/offline-seeding-azure-data-box/create-recovery-point.png)
 
-    ![Recovery point](./media/offline-seeding-azure-data-box/recovery-point.png)
+![Recovery point](./media/offline-seeding-azure-data-box/recovery-point.png)
 
-   The DPM/MABS server will start backing up the data you selected to the Azure Data Box device. This might take from several hours to a few days, depending on the size of the data and connection speed between the DPM/MABS server and the Azure Data Box Disk.
+The DPM/MABS server will start backing up the data you selected to the Azure Data Box device. This might take from several hours to a few days, depending on the size of the data and connection speed between the DPM/MABS server and the Azure Data Box Disk.
 
-   You can monitor the status of the job in the **Monitoring** pane. Once the backup of the data is complete, you'll see a screen that resembles the one below:
+You can monitor the status of the job in the **Monitoring** pane. Once the backup of the data is complete, you'll see a screen that resembles the one below:
 
-   ![Administrator console](./media/offline-seeding-azure-data-box/administrator-console.png)
+![Administrator console](./media/offline-seeding-azure-data-box/administrator-console.png)
 
 ## Post-backup steps
 
