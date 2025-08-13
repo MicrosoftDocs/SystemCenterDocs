@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-title: Create a Dashboard with the Tile Widget in the Web Console
+title: Create a Dashboard with the Tile Widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Tile widget.
 ms.date: 04/22/2025
 author: jyothisuri

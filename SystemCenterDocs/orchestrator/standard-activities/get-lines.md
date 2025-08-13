@@ -17,7 +17,7 @@ ms.author: jsuri
 ---
 # Get Lines
 
-This article describes the Get Lines activity gets multiple lines from a text file according to criteria that you specify. You can use the Get Lines activity to get specific lines from any location in a text file.  
+This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify. You can use the Get Lines activity to get specific lines from any location in a text file.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 

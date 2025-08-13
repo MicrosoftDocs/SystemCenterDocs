@@ -42,7 +42,7 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 
 ## Before you start
 
-Here are some considerations before you start running a rolling upgrade:
+Here are some considerations before you run a rolling upgrade:
 
 - The cluster must be managed by VMM.
 ::: moniker range="sc-vmm-2016"
@@ -74,7 +74,7 @@ To run the upgrade, follow these steps:
 
 3. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new account. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select **IPMI**. DCMI is supported even though it's not listed. Ensure that the correct port is listed.
 
-4. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information as below:
+4. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
     - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to ensure the new name isn't in use.
     - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address within the logical network.
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
