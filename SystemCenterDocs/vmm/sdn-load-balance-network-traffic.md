@@ -1,12 +1,11 @@
 ---
 ms.assetid: 6f0852f2-ba7a-4d99-9c57-f096460b4347
-title: Load balance network traffic in an SDN fabric using VMM
+title: Load Balance Network Traffic in an SDN Fabric using VMM
 description: Learn how to configure Software load balancer (SLB) for the internal and external network traffic through a VIP in Software Define Networking (SDN).
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/15/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -31,7 +30,7 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
 ::: moniker range="sc-vmm-2019"
->[!Note]
+>[!NOTE]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.
 
@@ -39,14 +38,15 @@ This article provides information about how to configure the load balancing of w
 
 ## Before you start
 
-Ensure the following:
--  [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
+Before you configure the load balancing of workload VMs, ensure the following:
+
+- [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
 
 - Required VMs are created on appropriate networks and are identified for load balancing.
 
 ## Create a VIP template
 
-Use the following procedures to configure the VIPs to load balance the workload VMs (DIPs).
+To configure the VIPs to load balance the workload VMs (DIPs), follow these steps:
 
 1. In the VMM console, select **Fabric** > **VIP Templates**. Right-click and select **Create VIP Template**.
 

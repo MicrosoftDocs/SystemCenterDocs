@@ -2,11 +2,10 @@
 ms.assetid: cf35bc5c-aead-4dda-859f-201e37172ac5
 title: Upgrade System Center Service Provider Foundation
 description: This article details the upgrade information and procedures for Service Provider Foundation
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 07/28/2023
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/13/2024
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy23

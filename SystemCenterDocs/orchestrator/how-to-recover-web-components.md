@@ -2,26 +2,27 @@
 title: How to Recover Web Components
 description: Describes how to recover web components after restoring a System Center - Orchestrator environment.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/16/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: edc3c49a-93e9-4ec4-81e3-c454b54ae976
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Recover web components
 
 When you use the Database Configuration utility to modify the Orchestrator database, the tool won't modify the Web Service database reference (only the installer performs this task). You will need to manually modify it after updating with the database configuration utility.  
 
+This article describes about the Orchestrator Web components.
+
 ## Modify the Web Service database reference  
 
-Follow these steps to modify the Web Service database reference:
+To modify the Web Service database reference, follow these steps:
 
 ::: moniker range="<=sc-orch-2019"
 1. Open a Command Prompt using **Run as administrator**.  

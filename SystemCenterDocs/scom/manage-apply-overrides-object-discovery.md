@@ -2,13 +2,12 @@
 ms.assetid: f286e1fc-57f5-469f-bee5-e3756b560810
 title: Apply Overrides to Object Discoveries
 description: This article describes how to target and apply overrides to object discovery rules.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency2
 ---
 
@@ -24,7 +23,7 @@ The override to disable the discovery can apply to:
 
 - All objects in the class that the discovery applies to. If you use this selection for your override, you disable the discovery completely.
 
-- A group. Group membership can be defined explicitly or dynamically. When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, can't reference an element in a different unsealed management pack, such as a group. If you're going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group. For more information, see [Creating and Managing Groups](manage-create-manage-groups.md).
+- A group. Group membership can be defined explicitly or dynamically. When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, can't reference an element in a different unsealed management pack, such as a group. If you're going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group. For more information, see [Create and Manage groups](manage-create-manage-groups.md).
 
 - One or more specific objects in the class that the discovery applies to. Using this method, you can select from discovered objects.
 
@@ -40,6 +39,6 @@ After an object has already been discovered, if you want to delete the object an
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).
 
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) to understand how to configure the change.
+- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) to understand how to configure the change.
 
-- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](manage-mp-overview-override-targets.md).
+- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Use classes and groups for Overrides in Operations Manager](manage-mp-overview-override-targets.md).

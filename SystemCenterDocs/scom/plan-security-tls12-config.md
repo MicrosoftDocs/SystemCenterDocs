@@ -2,14 +2,13 @@
 ms.assetid:
 title: Enforce TLS 1.2 for Operations Manager
 description: This article describes how to configure System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 02/19/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/08/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Enforce TLS 1.2 for Operations Manager
@@ -34,7 +33,7 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 
 1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the web console server.  
 1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers and the web console server.
-1. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
+1. Install the [Required SQL Server update](/troubleshoot/sql/releases/download-and-install-latest-updates) that supports TLS 1.2.  
 1. Install a minimum of Update Rollup 4 for Operations Manager 2016 on all components.
 1. Ensure all servers have a minimum .NET Framework 4.6 installed as compatible with the OS version: [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies)
 
@@ -49,8 +48,8 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 
 ::: moniker range=">sc-om-2016"
 
-1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the web console server.
-1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers and the web console server.
+1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874&preserve-view=true) version 18.7.4 on all management servers and the web console server.
+1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106&preserve-view=true) version 17.10.6 on all management servers and the web console server.
 1. Configure Windows to only use TLS 1.2.  
 1. Configure .NET Framework to utilize higher levels of cryptography by default.
 
@@ -84,7 +83,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if the registry is modified incorrectly. Before making changes, back up the registries in case problems occur.
 >
-> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
+> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
 
 Use the following steps to modify SChannel protocols system-wide. We recommend explicitly enabling the TLS 1.2 protocol.
 
@@ -152,6 +151,7 @@ foreach ($Protocol in $ProtocolList)
     New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "0" -PropertyType DWORD -Force | Out-Null
   }
   Write-Output " "
+ }
 }
 ```
 
@@ -164,7 +164,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if the registry is modified incorrectly. Before making changes, back up the registries in case problems occur.
 >
-> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
+> For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
 
 ::: moniker range="sc-om-2016"
 

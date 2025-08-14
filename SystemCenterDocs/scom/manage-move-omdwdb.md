@@ -2,14 +2,14 @@
 ms.assetid: de589c7d-feaa-4486-a0b5-bd8c7a9c12eb
 title: Move the Reporting Data Warehouse Database
 description: This article describes how to move the Operations Manager Reporting data warehouse database to a different SQL Server instance after initial deployment.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Move the Reporting data warehouse database

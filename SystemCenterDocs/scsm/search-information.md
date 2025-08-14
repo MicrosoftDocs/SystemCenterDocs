@@ -1,17 +1,17 @@
 ---
-title: Search for information
+title: Search for Information
 description: Describes how to search for information in Service Manager.
 ms.custom: UpdateFrequency5, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/10/2025
+ms.update-cycle: 1825-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 8293095c-25ce-4d26-a910-55ebfd9a6ae9
 ---
 

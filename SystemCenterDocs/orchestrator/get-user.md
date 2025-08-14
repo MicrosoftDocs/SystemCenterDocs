@@ -2,17 +2,16 @@
 title: Get User
 description: You can use the Get User activity in a runbook to get the properties of a user in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 11/01/2024
+ms.date: 08/07/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: c058aab3-9e89-4c52-93d6-d66666d4ba2f
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get User
@@ -23,17 +22,17 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-## Get User optional properties
+## [Get User Optional properties](#tab/get-user-optional-properties)
 
-| Element   | Description   | Valid Values |
+| Element   | Description   | Valid values |
 |:---|:---|:---|
 | ReturnDNOnly | If true, only the Distinguished Name property will be returned instead of all properties   | Boolean   |
-| Search Root  | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts | String   |
-| Search Scope | The scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree   | String   |
+| Search Root  | Distinguished name of the node in the Active Directory Domain Services (AD DS) hierarchy where the search starts | String   |
+| Search Scope | Scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree   | String   |
 
-## Get User filter properties
+## [Get User Filter properties](#tab/get-user-filter-properties)
 
-| Element   | Description   | Filters   | Value Type |
+| Element   | Description   | Filters   | Value type |
 |:---|:---|:---|:---|
 | Account Expires   | Date that the account expires   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 | Disabled   | Specifies whether the account is currently disabled   | EqualTo, NotEqualTo   | Boolean   |
@@ -92,7 +91,7 @@ The following tables list the required and optional properties and published dat
 | Creation Date   | Date and time that the account was created   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo   | DateTime   |
 | Web Page   | User's primary web page   | EqualTo, NotEqualTo, Contains, DoesNotContain, EndsWith, StartsWith   | String   |
 
-## Get User published data
+## [Get User published data](#tab/get-user-published-data)
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -158,3 +157,6 @@ The following tables list the required and optional properties and published dat
 | Modification Date   | The date when the user account was last changed   | DateTime   |
 | Creation Date   | The date and time when the account was created   | DateTime   |
 | Web Page   | User's primary web page   | String   |
+
+
+---

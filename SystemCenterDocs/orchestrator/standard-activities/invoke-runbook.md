@@ -2,22 +2,21 @@
 title: Invoke Runbook
 description: This article describes the Invoke Runbook activity that launches a runbook that you have specified.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 03/28/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 78020370-0059-4788-9eed-2c1687aaf56e
 caps.latest.revision: 19
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Invoke Runbook
 
-The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.  
+The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.
 
  You can use the Invoke Runbook activity to invoke generic runbooks that only perform specific actions that don't depend on how the runbook is invoked. For example, you can create a runbook that calls separate runbooks to perform a backup maintenance procedure that in turn calls a runbook to shut down services, another runbook to back up data, and then a final runbook to restart the services.  
 
@@ -28,9 +27,9 @@ The Invoke Runbook activity launches a runbook that you've specified. You can tr
 
  Before you configure the Invoke Runbook activity, you need to know which runbook you're invoking.  
 
- Use the following information to configure the Invoke Runbook activity.  
-
 ### Details  
+
+Use the following information to configure the Invoke Runbook activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -42,7 +41,7 @@ The Invoke Runbook activity launches a runbook that you've specified. You can tr
 
 ### Published Data
 
- The following table lists the published data items from the Invoke Runbook activity.  
+ The following table lists the published data items from the Invoke Runbook activity:  
 
 |Item|Description|  
 |----------|-----------------|  
@@ -55,8 +54,8 @@ The Invoke Runbook activity launches a runbook that you've specified. You can tr
 
  If you use the Invoke Runbook activity and you use [Security Credentials](../common-activity-properties.md#security-credentials), the account you use must be a member of the Orchestrator System group to run successfully.  
 
-## See Also
+## Related content
 
-- [Initialize Data](initialize-data.md)
-- [Return Data](return-data.md)
-- [Security Credentials](../common-activity-properties.md#security-credentials)
+- [Initialize Data](initialize-data.md).
+- [Return Data](return-data.md).
+- [Security Credentials](../common-activity-properties.md#security-credentials).
