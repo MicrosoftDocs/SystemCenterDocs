@@ -240,7 +240,10 @@ VMM supports the use of gMSA for *Management server service account*.
 
 1. Start the VMM installation setup.
 2. On the **Service account configuration** page, select **Group Managed Service Account** as the option for VMM service account.
-3. Enter the gMSA account details in *Domain\gMSA account* format.
+3. Enter the gMSA account details in *Domain\gMSA account* format.<br /><br />
+
+
+
 
 
 
