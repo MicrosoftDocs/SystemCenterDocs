@@ -1,10 +1,11 @@
 ---
 ms.assetid: 23bf27ad-7914-4235-a254-95c94f9f5a85
-title: Known issues and troubleshooting in Management Pack for SQL Server Analysis Services
-description: This article explains known issues and troubleshooting in Management Pack for SQL Server Analysis Services
+title: Known Issues and Troubleshooting in management pack for SQL Server Analysis Services
+description: This article explains known issues and troubleshooting in management pack for SQL Server Analysis Services
 author: epomortseva
+manager: evansma
+ms.date: 04/23/2025
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.topic: troubleshooting-known-issue
 ms.service: system-center
 ms.subservice: operations-manager
@@ -23,7 +24,7 @@ This article lists the known issues for Management Pack for SQL Server Analysis 
 |The **Service State** monitor doesn't work on a clustered SQL Server Analysis Services instance|The **Service State** monitor doesn't work when the SQL Server Analysis Services server is used as a cluster instance.|No resolution.|
 |The console task output isn't produced after the execution of tasks related to SQL Server objects|System Center Operations Manager console shows no output in the **Task Status** dialog and the progress wheel keeps running continuously. Even though no output is produced and the task wizard appears to stop responding, the task being executed can still send commands to the target SQL Server instance object, forcing this object to execute the requested command. Task execution results are available in the **Task Status** view, which can be found in the System Center Operations Manager console.|No resolution.|
 
-To correct the corresponding .DLL file name in the Windows registry, perform the following steps:
+To correct the corresponding .DLL file name in the Windows registry, follow these steps:
 
 1. Start regedit.
 
