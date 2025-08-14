@@ -239,8 +239,10 @@ VMM supports the use of gMSA for *Management server service account*.
 **Use the following steps:**
 
 1. Start the VMM installation setup.
-2. On the **Service account configuration** page, select **Group Managed Service Account** as the option for VMM service account.
-3. Enter the gMSA account details in *Domain\gMSA account* format.
+1. On the **Service account configuration** page, select **Group Managed Service Account** as the option for VMM service account.
+1. Enter the gMSA account details in *Domain\gMSA account* format.
+
+    ![Setup screen for Microsoft System Center Virtual Machine Manager showing options to configure the service account and distributed key management, including account type selection and encryption key storage.](media/install/configure-service-account.png)
 
 ## Next Step
 
