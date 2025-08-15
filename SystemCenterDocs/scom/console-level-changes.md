@@ -10,7 +10,10 @@ ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: concept-article
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Console-level changes for group Managed Service Accounts (gMSAs)

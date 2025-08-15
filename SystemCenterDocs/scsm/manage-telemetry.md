@@ -9,7 +9,9 @@ ms.update-cycle: 180-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-manager
-ms.custom: UpdateFrequency.5
+ms.custom:
+  - UpdateFrequency.5
+  - sfi-image-nochange
 ---
 
 # Manage telemetry settings in Service Manager

@@ -5,10 +5,12 @@ description: This article describes how to create and configure groups for scopi
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.custom:
+  - UpdateFrequency2
+  - sfi-image-nochange
 ---
 
 # Create and manage groups

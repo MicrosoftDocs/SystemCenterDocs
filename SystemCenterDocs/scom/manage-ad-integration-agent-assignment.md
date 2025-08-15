@@ -4,11 +4,14 @@ description: This article describes how to configure and use Active Directory in
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Configure and use Active Directory Integration for agent assignment

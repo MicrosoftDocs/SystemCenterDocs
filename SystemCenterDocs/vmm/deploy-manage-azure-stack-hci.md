@@ -10,7 +10,12 @@ ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>=sc-vmm-2019 <=sc-vmm-2022'
-ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23, engagement-fy24
+ms.custom:
+  - UpdateFrequency.5
+  - intro-deployment
+  - engagement-fy23
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Deploy and manage Azure Local instances in VMM

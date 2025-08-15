@@ -7,7 +7,10 @@ ms.date: 08/07/2023
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-ropc-nochange
 ---
 
 # Manage usage metering in SPF

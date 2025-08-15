@@ -8,8 +8,11 @@ ms.date: 09/03/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy24
 monikerRange: '<=sc-vmm-2022'
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Add an Azure subscription in VMM

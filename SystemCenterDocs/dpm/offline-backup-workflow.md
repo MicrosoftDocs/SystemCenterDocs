@@ -9,8 +9,11 @@ ms.subservice: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
 author: jyothisuri
 ms.author: jsuri
-ms.custom: UpdateFrequency2, engagement-fy24
 monikerRange: '>=sc-dpm-2019'
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Offline seeding for DPM/MABS using customer-owned disks with Azure Import/Export

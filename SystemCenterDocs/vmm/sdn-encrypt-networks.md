@@ -10,7 +10,10 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom:
+  - UpdateFrequency3
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Configure encrypted networks in SDN using VMM
