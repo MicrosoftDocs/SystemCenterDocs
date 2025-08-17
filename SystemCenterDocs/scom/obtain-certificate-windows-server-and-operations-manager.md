@@ -40,7 +40,7 @@ If your organization doesn't use AD CS or uses an external certificate authority
 - Subject="CN=server.contoso.com" ; (this should be the FQDN of the target, or how the system shows in DNS)
 
 - [Key Usage]
-    Key Exportable = FALE  ; Private key is NOT exportable, unless creating on a domain machine for a non-domain machine, then use TRUE
+    Key Exportable = FALSE  ; Private key is NOT exportable, unless creating on a domain machine for a non-domain machine, then use TRUE
     HashAlgorithm = SHA256
     KeyLength = 2048  ; (2048 or 4096 as per Organization security requirement.)
     KeySpec = 1  ; AT_KEYEXCHANGE
