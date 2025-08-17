@@ -2,7 +2,7 @@
 title: Disable Mailbox
 description: For an on-premises environment, you can use the Disable Mailbox activity in a runbook to disable the mailbox of an existing user or InetOrgPerson object and remove that object's Exchange attributes from Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,7 @@ ms.author: jsuri
 
 # Disable Mailbox
 
-For an on-premises environment, you can use the Disable Mailbox activity in a runbook to disable the mailbox of an existing user or InetOrgPerson object and remove that object's Exchange attributes from Active Directory. The user account associated with the disabled mailbox remains in Active Directory, but it's no longer associated with any mailbox. The disabled mailbox isn't deleted. It can be reconnected to a user at a later time.
+In this article, you'll learn that for an on-premises environment, you can use the Disable Mailbox activity in a runbook to disable the mailbox of an existing user or InetOrgPerson object and remove that object's Exchange attributes from Active Directory. The user account associated with the disabled mailbox remains in Active Directory, but it's no longer associated with any mailbox. The disabled mailbox isn't deleted. It can be reconnected to a user at a later time.
 
 For an online cloud-based environment, the Disable Mailbox activity can be used with the Archive parameter to disable an archive for an existing mailbox.
 
