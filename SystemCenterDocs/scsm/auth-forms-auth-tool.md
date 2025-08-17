@@ -31,7 +31,7 @@ Use the following guidelines when you're authoring forms in the Service Manager 
 
 Use one of the following procedures to browse a form in the Service Manager Authoring Tool. In both the procedures, ensure that the properties in the **Details** pane are updated according to the class property that is bound to the selected control. Also, the **Binding Path** entry in the **Details** pane indicates the respective property that the field in the form represents.  
 
-### [Browse a form from the Form Browser](#tab/browse-a-form-from-the-form-browser)
+### Browse a form from the Form Browser  
 
 To browse a form from the Management Pack Explorer, follow these steps:
 
@@ -41,7 +41,7 @@ To browse a form from the Management Pack Explorer, follow these steps:
 4. Ensure that the **Details** pane is visible. If not, select **View** on the menu bar, and select **Details Window**. The properties of the form appear in the **Details** pane.  
 5. Select a control on the form.  
 
-### [Browse a form from the Management Pack Explorer](#tab/browse-a-form-from-the-management-pack-explorer) 
+### Browse a form from Management Pack Explorer  
 
 To browse a form from the Management Pack Explorer, follow these steps:
 
@@ -50,8 +50,6 @@ To browse a form from the Management Pack Explorer, follow these steps:
 3. In the **Management Pack Explorer**, select the opened management pack, and then expand **Forms**. Right-click the form that you want to view, and select **View form**. The form opens in the authoring pane.  
 4. Ensure that the **Details** pane is visible. If not, select **View** on the menu bar, and select **Details Window**. The properties of the form appear in the **Details** pane.  
 5. Select a control on the form.  
-
----
 
 ## Customize a form
 
@@ -98,7 +96,7 @@ The Authoring Tool includes form controls, such as the **Check Box**, **Date Pic
 
 The following sections describe how to create a new form in the Authoring Tool.  
 
-### [Create a form from a base class](#tab/create-a-form-from-a-base-class) 
+### Create a new form from a base class 
 
 > [!NOTE]  
 > When you create a form from a base class, the Authoring Tool doesn't support advanced capabilities. For example, there's no support for code-behind, complex rules such as field interdependency or calculated values.  
@@ -113,7 +111,7 @@ To create a new form from a base class, follow these steps:
 5. Customize the form by dragging controls from the **Form Customizations Toolbox** pane to the new form.  
 6. Save the management pack that contains the form that you created.  
 
-### [Create a form that is based on a custom WPF form](#tab/create-a-form-that-is-based-on-a-custom-wpf-form)
+### Create a new form that is based on a custom WPF form
 
 Sometimes a simple form isn't sufficient, and you must use advanced features, such as custom logic, in the form. In this case, you can develop a custom WPF form by using a tool other than the Authoring Tool instead of using Visual Studio. Then, instead of authoring a form from base class, you load that WPF form's assembly file into the Authoring Tool and use that as a starting point for further customizations to the form. The form customizations that you make in the Authoring Tool are stored in a management pack file.  
 
@@ -128,8 +126,6 @@ To create a new form that is based on a custom WPF form, follow these steps:
 5. Customize the form by dragging controls from the **Form Customizations Toolbox** pane to the form on the authoring pane.  
 6. Save the management pack that contains the customizations of the form.  
 7. Bundle the form's original assembly file, the management pack that contains the form customizations that you made in the Authoring Tool, and any other resource files that you need, to create an .mpb file.
-
----
 
 ## Add a check box control to a form
 
@@ -227,7 +223,7 @@ To add a single instance picker control to a form, follow these steps:
 
 A **Tab Control** control, combined with **Tab Item** controls, is used for arranging visual content in tabular form in the Service Manager Authoring Tool. You can modify the properties of these controls to customize characteristics such as the appearance and layout. Typically, the **Tab Control** control is accompanied by several **Tab Item** controls that enable selection of individual items inside the **Tab Control**.  
 
-### [Add a Tab Control control to a form](#tab/add-a-tab-control-control-to-a-form)  
+### Add a Tab Control control to a form  
 
 To add a Tab Control control to a form, follow these steps:
 
@@ -236,7 +232,7 @@ To add a Tab Control control to a form, follow these steps:
 3. Select any property in the **Details** pane to customize the properties of the **Tab Control** control.  
 4. Select **File**, and select **Save All** to save the custom form to a management pack.  
 
-### [Add a Tab Item control to a form](#tab/add-a-tab-item-control-to-a-form)  
+### Add a Tab Item control to a form  
 
 To add a Tab Item control to a form, follow these steps:
 
@@ -244,8 +240,6 @@ To add a Tab Item control to a form, follow these steps:
 2. Drag the **Tab Item** icon from the **Form Customization Toolbox** pane, and drop it on the **Tab Control** control that it should be associated with.  
 3. Right-click the **Tab Item** control, and select **Edit Content**. Enter the text that you want to appear as the label on the **Tab Item**. Select any property in the **Details** pane to customize other properties of the **Tab Item** control.  
 4. Select **File**, and select **Save All** to save the custom form to a management pack. 
-
----
 
 ## Add a text box control to a form
 
