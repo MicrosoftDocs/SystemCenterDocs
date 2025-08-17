@@ -152,8 +152,8 @@ The local and remote parameters are as follows:
 5. On the **Prerequisites** page, review and address any warnings or errors, and select **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    >- Installation of the System Center - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and select **Allow**.
-    >- Select **ASP.NET v4.8**, and select **Allow** (applicable for Operations Manager 2022).
+    >- Installation of the System Center - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319** (for SCOM 2016 and SCOM 2019), and select **Allow**.
+    >- For SCOM 2022 and newer: Select **ASP.NET v4.8**, and select **Allow**.
 
 6. If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
