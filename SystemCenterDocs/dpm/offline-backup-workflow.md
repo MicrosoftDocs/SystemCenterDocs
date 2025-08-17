@@ -176,7 +176,7 @@ To prepare SATA drives and ship to Azure, follow these steps:
    :::image type="content" source="./media/offline-backup-workflow/confirmation-after-successful-tool-run-inline.png" alt-text="Screenshot shows the confirmation after tool is run successfully." lightbox="./media/offline-backup-workflow/confirmation-after-successful-tool-run-expanded.png":::
 
    >[!IMPORTANT]
-   >The tool also displays the Azure data centre address to which the disks need to be shipped along with a list of supported carriers.
+   >The tool also displays the Azure data center address to which the disks need to be shipped along with a list of supported carriers.
 
 Ship the disks to the address that the tool provided. Keep the tracking number for future reference and update it in the Azure portal as soon as possible.
 
