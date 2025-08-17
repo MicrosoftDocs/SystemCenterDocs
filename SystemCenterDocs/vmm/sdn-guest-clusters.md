@@ -1,10 +1,10 @@
 ---
 ms.assetid: 59073d38-cfaf-4f49-a052-ff95b3086dcd
-title: Configure guest clusters in SDN using System Center Virtual Machine Manager.
+title: Configure Guest Clusters in SDN using System Center Virtual Machine Manager
 description: This article explains about how to configure guest clusters in SDN through VMM.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 07/24/2024
+ms.date: 04/22/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -38,9 +38,9 @@ Ensure the following prerequisite:
 
 Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](sdn-controller.md) and [SLB](sdn-slb.md). 
 
-## Procedure - configure guest clusters
+## Configure guest clusters
 
-**Use the following steps**:
+ To configure guest clusters, follow these steps:
 
 1. Create a cluster for your VMs using the information provided in [this article](/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
@@ -48,7 +48,7 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
    > Cluster must have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
    > Note the reserved IP address you're using for this cluster. This IP will be required later while creating a VIP using the VIP template.
 
-2. Create a VIP template. In the VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
+2. Create a VIP template. In the VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click, select **Add VIP Template**, and do the following:
 
    - In **Type**, under **Specify a template type**, select **Specific**. Select **Microsoft** from the Manufacturer dropdown and **Microsoft Network Controller** from the Model dropdown.
    - Select **Next**. 
