@@ -5,7 +5,7 @@ ms.custom: engagement-fy23
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 08/18/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -133,7 +133,7 @@ In this topology, the Self-Service portal is installed a server that doesn't hav
 
 ![Diagram of the sm&#45;ssp&#45;scenario&#45;03.](./media/learn-self-service-portal/deploy-sm-ssp-scenario-03.png)  
 
-In this configuration, the new Self-Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](https://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](/iis/configuration/system.webServer/security/authentication/basicAuthentication). As Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers. See [additional details on Basic Authentication for double-hop scenarios](#basic-authentication).
+In this configuration, the new Self-Service Portal and the secondary Service Manager server are installed on different servers and a double\-hop is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](/iis/configuration/system.webServer/security/authentication/basicAuthentication). As Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers. See [additional details on Basic Authentication for double-hop scenarios](#basic-authentication).
 
 Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can't be avoided.  
 
