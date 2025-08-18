@@ -20,7 +20,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 
 - Review the system requirements and [planning information](plan-install.md). Learn about [system requirements](system-requirements.md).
 - Ensure that you have at least local admin permissions on the computer before you run the setup.
-- The account being used for install must have SA rights on the SQL instance used to host the SCVMM database
+- The account being used for install must have the 'sysadmin' server role on the SQL Server instance used to host the SCVMM database.
 
 - The service account should be an administrator on the VMM server.
 ::: moniker range="sc-vmm-2025"
@@ -243,7 +243,7 @@ VMM supports the use of gMSA for *Management server service account*.
 1. Enter the gMSA account details in *Domain\gMSA account* format.
 
     ![Setup screen for Microsoft System Center Virtual Machine Manager showing options to configure the service account and distributed key management, including account type selection and encryption key storage.](media/install/configure-service-account.png)
-
+   
 ## Next Step
 
 [Install the VMM Console](install-console.md).
