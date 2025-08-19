@@ -3,7 +3,7 @@ title: System Center 2022 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2022 - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/10/2024
+ms.date: 08/18/2025
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -30,6 +30,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10610.0|[5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
 |10.22.10618.0|[5033752](https://support.microsoft.com/kb/5033752) | December 2023 | Update Rollup 2 Hotfix - Addresses Linux monitoring issues. |
 |10.22.10684.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 2 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
+|10.22.11642.0|[5059070](https://support.microsoft.com/kb/5059070) | August 2025 | Update Rollup 3 |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -38,6 +39,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10110.0|[5020318](https://support.microsoft.com/kb/5020318) | December 2022 | Update Rollup 1|
 |10.22.10208.0|[5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
 |10.22.10215.0|[5033752](https://support.microsoft.com/kb/5033752) | November 2023 | Update Rollup 2 hotfix |
+|10.22.10870.0|[5059070](https://support.microsoft.com/kb/5059070) | August 2025 | Update Rollup 3 |
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
@@ -53,5 +55,6 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1070.0|[v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024 |1.8.1-0 |Update Rollup 2 - Hotfix |
 |10.22.1072.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0) |April 2024 |1.9.0-0 |FIPS Crypto Policy Support |
 |10.22.1175.0|[v1.9.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.1-0)|September 2024 |1.9.1-0 |OpenSSL version 3.x Support|
+|10.22.1330.0| - | August 2025 | Update Rollup 3 |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*

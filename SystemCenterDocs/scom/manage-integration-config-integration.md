@@ -3,7 +3,7 @@ title: Configure a Product Connector Subscription
 description: This article describes how to configure a product connector for integrating Operations Manager with an enterprise monitoring solution.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,14 +13,14 @@ ms.assetid: 5de28eac-5d62-47bf-bc20-0d1897868a5d
 
 # Configure a product connector subscription
 
-
-
 System Center - Operations Manager supports the ability to synchronize alert data with other applications, such as other management systems, using product connectors. After a product connector is installed, by default, all alerts are forwarded through the product connector. In the following procedure, you use the Product Connector Subscription Wizard to specify which alerts you want the product connector to forward.  
 
 > [!NOTE]  
 > You must have a product connector installed prior to beginning this procedure. Install the product connector according to the product connector vendor's installation instructions.  
 
 ## Configure a subscription for a product connector  
+
+To configure a subscription for a product connector, follow these steps:
 
 1. Sign in to the computer with an account that is a member of the Operations Manager Administrators user role.  
 
@@ -41,4 +41,4 @@ System Center - Operations Manager supports the ability to synchronize alert dat
 
 ## Next steps
 
-To learn how to integrate Operations Manager with another monitoring platform or ITSM system using a product connector developed using the Operations Manager SDK, review [Connecting Operations Manager With Other Management Systems](manage-integration-thirdparty-overview.md).  
+To learn how to integrate Operations Manager with another monitoring platform or ITSM system using a product connector developed using the Operations Manager SDK, review [Connect Operations Manager with other management systems](manage-integration-thirdparty-overview.md).  
