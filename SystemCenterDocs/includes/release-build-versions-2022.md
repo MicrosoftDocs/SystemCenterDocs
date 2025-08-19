@@ -30,7 +30,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10610.0|[5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
 |10.22.10618.0|[5033752](https://support.microsoft.com/kb/5033752) | December 2023 | Update Rollup 2 Hotfix - Addresses Linux monitoring issues. |
 |10.22.10684.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 2 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
-|10.22.11642.0|[5055545](https://support.microsoft.com/kb/5055545) | August 2025 | Update Rollup 3 |
+|10.22.11642.0|[5055545](https://support.microsoft.com/topic/778f5f8b-ed9f-4a34-b742-48e48fce1b81) | August 2025 | Update Rollup 3 |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -39,7 +39,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10110.0|[5020318](https://support.microsoft.com/kb/5020318) | December 2022 | Update Rollup 1|
 |10.22.10208.0|[5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
 |10.22.10215.0|[5033752](https://support.microsoft.com/kb/5033752) | November 2023 | Update Rollup 2 hotfix |
-|10.22.10870.0|[5055545](https://support.microsoft.com/kb/5055545) | August 2025 | Update Rollup 3 |
+|10.22.10870.0|[5055545](https://support.microsoft.com/topic/778f5f8b-ed9f-4a34-b742-48e48fce1b81) | August 2025 | Update Rollup 3 |
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
