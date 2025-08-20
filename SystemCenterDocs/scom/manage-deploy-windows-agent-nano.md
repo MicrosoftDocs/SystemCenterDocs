@@ -4,7 +4,7 @@ title: Install Agent on Nano Server
 description: This article describes how to install the Operations Manager agent on Nano Server.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 07/24/2025
 ms.custom: intro-installation, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,6 +15,8 @@ monikerRange: 'sc-om-2016'
 # Install agent on Nano Server
 
 Windows Server 2016 Nano Server is a new installation option introduced in Windows Server 2016. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016  - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
+
+This article describes how to install the Operations Manager agent on Nano Server.
 
 ## Nano Server monitoring capabilities
 
@@ -68,7 +70,9 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 ## Manually install the Operations Manager agent on a Nano server
 
-1. Follow the instructions for manually installing Nano Server on either a physical computer or a virtual machine. See [Getting Started with Nano Server](/windows-server/get-started/getting-started-with-nano-server) for complete instructions.
+To manually install the Operations Manager agent on a Nano server, follow these steps:
+
+1. Follow the instructions for manually installing Nano Server on either a physical computer or a virtual machine. See [Get started with Nano Server](/windows-server/get-started/getting-started-with-nano-server) for complete instructions.
 
     > [!NOTE]
     > The Nano Server must be in the same domain as the Operations Manager Management Server.
@@ -78,7 +82,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 3. Join the Nano Server to the same domain as the Operations Manager Management Server.
 There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the article [Discover and install agent on Windows](~/scom/manage-deploy-windows-agent-console.md).
 
-Use the following procedure to install the agent with a PowerShell script:
+To install the agent with a PowerShell script, follow these steps:
 
 1. Copy the NanoServer directory from the System Center Operations Manager setup directory to the Nano Server.
 
@@ -101,7 +105,7 @@ Use the following procedure to install the agent with a PowerShell script:
    Net Start HealthService
    ```
 
-### Troubleshooting agent installation
+### Troubleshoot agent installation
 
 If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server, follow the checklist below for possible solutions.
 
@@ -114,6 +118,8 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 
 ### Validate that the Operations Manager agent has been successfully installed
 
+To validate the successful installation, follow these steps:
+
 1. Open the Services console on a computer joined to the same domain as the Nano Server by running the services.msc command.
 
 2. Connect to the Nano Server in the Action panel by specifying the Fully Qualified Domain Name (FQDN) of the Nano Server.
@@ -125,17 +131,23 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 > [!NOTE]
 > The following procedure is only required for a PowerShell-based agent installation.
 
+To start monitoring your Nano Server, follow these steps:
+
 1. Open the **Pending Management** section of the Administration pane in the Operations Manager console.
 
 2. Approve the Nano Server for management.
 
 ### Verify that you're monitoring your Nano Server
 
+To verify that you're monitoring your Nano Server, follow these steps:
+
 1. Open the **Agent Managed** list in the Device Management section of the Operations Manager Console Administration pane.
 
 2. Verify that the Health State is shown as Healthy.
 
 ## Remove the Operations Manager Agent from your Nano Server
+
+To remove the Operations Manager agent, follow these steps:
 
 1. Open a PowerShell window as an administrator on the Nano Server.
 
@@ -169,7 +181,7 @@ If you encounter any difficulties with removing the Operations Manager Agent on 
 
 The Nano agent can be updated by one of the following methods:
 
-1. Push updates from a management server.  
+1. Push updates from a management server  
 
     Updates are offered and installed automatically from Microsoft Update to an Operations Manager management server. With Operations Manager 2016, the management server updates will also include the updated files for Nano agent.  
 
@@ -191,4 +203,4 @@ Directly uninstalling the most recent update from the Nano agent isn't supported
 
 ## Next steps
 
-- After manually installing the Operations Manager agent on Windows and Nano Server, you need to [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md).
+After manually installing the Operations Manager agent on Windows and Nano Server, you need to [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md).
