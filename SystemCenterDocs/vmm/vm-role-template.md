@@ -1,10 +1,10 @@
 ---
 ms.assetid: e2581377-1e74-49c1-b02f-1fd245ccd478
-title: Create VM templates using VMM 2016 and Microsoft Azure Pack
+title: Create VM templates using VMM 2016 and Windows Azure Pack
 description: This article describes how to create VM role templates that can be used by tenants
 author: jyothisuri
 ms.author: jsuri
-ms.date: 09/17/2024
+ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -12,16 +12,16 @@ monikerRange: '<sc-vmm-2019'
 ms.custom: engagement-fy23, engagement-fy24
 ---
 
-# Create VM templates using VMM and Microsoft Azure Pack
+# Create VM templates using VMM and Windows Azure Pack
 
 
 
 
-As a hosting provider, you can use System Center Virtual Machine Manager (VMM) in combination with Microsoft Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises and in service provider hosting environments.
+As a hosting provider, you can use System Center Virtual Machine Manager (VMM) in combination with Windows Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises and in service provider hosting environments.
 
 ## Before you begin
 
-- Learn about [Microsoft Azure Pack](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10))
+- Learn about [Windows Azure Pack](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10))
 - Learn about how VMM manages resources in the [VMM library](manage-library-server.md)
 
 ## Download Azure Pack Gallery resources
@@ -74,7 +74,7 @@ Set-scvirtualharddisk –virtualharddisk $myVHD –OperatingSystem $WS2012Datace
 
 ### Specify the name and release
 
-1. The Familyname and Release properties of the virtual hard disk must be set in order for the Microsoft Azure Pack portal to display the virtual hard disk as an available disk for this Gallery Resource. These values are shown in the portal dropdown list.
+1. The Familyname and Release properties of the virtual hard disk must be set in order for the Windows Azure Pack portal to display the virtual hard disk as an available disk for this Gallery Resource. These values are shown in the portal dropdown list.
 
     - The Familyname property values should indicate the contents of the virtual hard disk, including the Windows Server release and edition. The Readme file of the Gallery Resource should include appropriate Familyname values.
     Release property values must conform to the Microsoft Azure versioning scheme of n.n.n.n. Examples include 1.0.0.0 and 1.0.0.1.
@@ -107,7 +107,7 @@ After you create the virtual hard disk, you must add it to the VMM library with 
 
 ## Import the Resource Definition packages
 
-After the Resource Extension and virtual hard disk are in the VMM library, you can import the Resource Definition package and publish the gallery item using the Service Administrator Portal in Microsoft Azure Pack. After these steps, the gallery item will be available to the tenant.
+After the Resource Extension and virtual hard disk are in the VMM library, you can import the Resource Definition package and publish the gallery item using the Service Administrator Portal in Windows Azure Pack. After these steps, the gallery item will be available to the tenant.
 
 - The Gallery Resource will include one or more Resource Definition Package files.
 - If it includes more than one, then the ReadMe file will specify the different configuration that each one will provide.

@@ -4,7 +4,7 @@ ms.topic: install-set-up-deploy
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 08/20/2025
 title: Deploy Service Management Automation
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 
 To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and set up the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation.
 
-You can install the web service on any machine that can communicate with Microsoft Azure Pack and an instance of SQL Server.
+You can install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.
 
 ## Install the Service Automation web service
 
@@ -55,7 +55,7 @@ You can install the web service on any machine that can communicate with Microso
 
 9. Enter the port number for the web service to use. By default, this is 9090.
 
-10. Choose the security certificate to use to encrypt communication between Microsoft Azure Pack and the SMA web service endpoint.
+10. Choose the security certificate to use to encrypt communication between Windows Azure Pack and the SMA web service endpoint.
 
     You can have the installer generate a self-signed certificate to use, or you can select an existing certificate in your local certificate store.
 
@@ -85,7 +85,7 @@ You can install the web service on any machine that can communicate with Microso
 
 3. Follow the instructions in the Setup wizard.
 
-After the installation is complete, use the administrative credentials to configure Automation in the Microsoft Azure Pack management portal.
+After the installation is complete, use the administrative credentials to configure Automation in the Windows Azure Pack management portal.
 
 >[!IMPORTANT]
 >Each SMA component is installed on an Internet Information Services (IIS) website that, by default, is configured with a self-signed certificate. Because these self-signed certificates are not issued by any of the trusted root certification authorities that your browser loads on startup, your browser displays a security warning when you attempt to connect to any of the sites. We recommend that you replace the self-signed certificates with certificates that are issued by a trusted root certification authority to avoid this experience.
@@ -184,7 +184,7 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 
 ## Set or change the SMA endpoint
 
-The **QuickStart** tab for Automation in Microsoft Azure Pack for Windows Server provides a link that enables you to set up or change the SMA endpoint. If the Service Management Automation endpoint isn't yet registered, select **Register the Service Management Automation endpoint** to configure it. To change the SMA endpoint settings after an endpoint has been set up, select **Current Service Management Automation endpoint**.
+The **QuickStart** tab for Automation in Windows Azure Pack for Windows Server provides a link that enables you to set up or change the SMA endpoint. If the Service Management Automation endpoint isn't yet registered, select **Register the Service Management Automation endpoint** to configure it. To change the SMA endpoint settings after an endpoint has been set up, select **Current Service Management Automation endpoint**.
 
 The SMA endpoint requires the following information:
 
@@ -200,4 +200,4 @@ Any of the SMA components can be removed in the **Control Panel** by selecting t
 
 ## Next steps
 
-Learn more about Microsoft Azure Pack for Windows Server [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
+Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).

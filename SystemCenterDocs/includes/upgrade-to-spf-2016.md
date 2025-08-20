@@ -3,7 +3,7 @@ title: include file
 description: This include file provides information about how to upgrade to System Center Service Provider Foundation (SPF) 2016
 author: jyothisuri
 ms.author: jsuri
-ms.date:  08/13/2025
+ms.date:  08/20/2025
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
@@ -21,16 +21,16 @@ The following sections provide information about how to upgrade from System Cent
 - SPF should be running update rollup [9](https://support.microsoft.com/kb/3133705) or later in order to upgrade to 2016.
 - The VMM server should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later in order to upgrade to 2016.
 - The VMM console machine should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later in order to upgrade to 2016.
-- Microsoft Azure Pack should be running on Windows Server 2012 R2 with at least update rollup [10](https://support.microsoft.com/kb/3158609).
+- Windows Azure Pack should be running on Windows Server 2012 R2 with at least update rollup [10](https://support.microsoft.com/kb/3158609).
 
 ## Assumptions
 The upgrade instructions in this article assume the following scenario:
 
 - SPF and VMM are running on System Center 2012 R2.
-- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Microsoft Azure Pack deployment.
+- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Windows Azure Pack deployment.
 - The VMM console is installed on a separate computer.
 - The upgrade uses the existing SPF server name.
-- These upgrade instructions assume that the VMM 2016 upgrade has already been completed, and that the necessary backups of the current Microsoft Azure Pack environment have been performed.
+- These upgrade instructions assume that the VMM 2016 upgrade has already been completed, and that the necessary backups of the current Windows Azure Pack environment have been performed.
 
 ## Upgrade order
 
@@ -41,8 +41,8 @@ Here's the recommended upgrade order for the above scenario
 
 ## Before you start
 
-1. Ensure Microsoft Azure Pack, SPF, and VMM are all running the required updates.
-2. We recommend that you shut down VMM and Microsoft Azure Pack servers, removing all database activity.
+1. Ensure Windows Azure Pack, SPF, and VMM are all running the required updates.
+2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
 3. Verify SPF [system requirements](../spf/system-requirements-spf.md?preserve-view=true&view=sc-spf-2016). Ensure that SPF must run on Windows Server 2016 - Core or Desktop experience.
 4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-2016#vmm-console-operating-system).
 
@@ -85,10 +85,10 @@ Here's the recommended upgrade order for the above scenario
     - The FQDN should be specified for the certification path instead of "localhost".
     - It should be located in the personal or web hosting store.
 
-## Test Microsoft Azure Pack
+## Test Windows Azure Pack
 
 Test everything's working as follows:
 
 1. Start VMM 2016.
-2. In the Microsoft Azure Pack 2012 R2 Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Ensure everything's working as expected.
-3. In the Microsoft Azure Pack 2012 R2 Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Ensure everything's working as expected.
+2. In the Windows Azure Pack 2012 R2 Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Ensure everything's working as expected.
+3. In the Windows Azure Pack 2012 R2 Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Ensure everything's working as expected.

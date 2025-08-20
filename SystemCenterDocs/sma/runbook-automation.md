@@ -1,18 +1,18 @@
 ---
-description: Provides details on how you can automate operations in your Microsoft Azure Pack environment with Service Management Automation
+description: Provides details on how you can automate operations in your Windows Azure Pack environment with Service Management Automation
 ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 08/07/2025
-title: Automate Microsoft Azure Pack Operations with Runbooks
+ms.date: 08/20/2025
+title: Automate Windows Azure Pack Operations with Runbooks
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
-# Automate Microsoft Azure Pack operations with Service Management Automation
+# Automate Windows Azure Pack operations with Service Management Automation
 
-You can use Service Management Automation (SMA) runbooks to automate routine operations in your Microsoft Azure Pack for Windows Server environment. There are two distinct types of SMA runbooks:
+You can use Service Management Automation (SMA) runbooks to automate routine operations in your Windows Azure Pack for Windows Server environment. There are two distinct types of SMA runbooks:
 
 | Type |  Description |
 |:---|:---|
