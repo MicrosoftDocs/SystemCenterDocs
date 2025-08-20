@@ -1,7 +1,7 @@
 ---
 ms.assetid: d406c771-aa85-4a70-bf35-fb27e04b8244
 title: Monitor Configuration in management pack for SQL Server Replication
-description: This article explains the monitoring configuration in Management Pack for SQL Server Replication
+description: This article explains the monitoring configuration in management pack for SQL Server Replication
 author: Anastas1ya
 manager: evansma
 ms.date: 07/24/2025
@@ -25,11 +25,11 @@ Replication objects discovered and monitored by the management pack are as follo
 - Publication
 - Subscription
 
-Each managed replication object is discovered and monitored using a number of rules and monitors.
+Each managed replication object is discovered and monitored using many rules and monitors.
 
 ## Many Publication Snapshots on the Same Drive
 
-Space monitoring introduced in this management pack may be noisy in environments where many publication snapshots share the same media. In such cases, an alert for a publication snapshot is generated when the amount of free space on the hard drive reaches the threshold.
+Space monitoring introduced in this management pack might be noisy in environments where many publication snapshots share the same media. In such cases, an alert for a publication snapshot is generated when the amount of free space on the hard drive reaches the threshold.
 
 To reduce the noise, turn off space monitors for **Snapshot Available Space (%)**, and use Operating System Management Pack to monitor space on the hard drive.
 
@@ -37,7 +37,7 @@ To reduce the noise, turn off space monitors for **Snapshot Available Space (%)*
 
 Replication uses maintenance jobs that are monitored by **MSSQL Replication: The Maintenance Job(s) Failed on Distributor Alert Rule**:
 
-- Reinitialize subscriptions having data validation failures
+- Reinitialization subscriptions having data validation failures
 - Agent history clean up: distribution
 - Replication monitoring refresher for distribution
 - Replication agents checkup
@@ -69,7 +69,7 @@ Management Pack for Microsoft SQL Server Replication defines a monitor targeted 
 
 This monitor checks if each of the required Replication Distributor securables is accessible under the configured Run As account.
 
-The following is a complete list of securables that are checked by the monitor targeted to the Replication Distributor:
+The following permissions are a complete list of securables that are checked by the monitor targeted to the Replication Distributor:
 
 - Server-Level permissions
   - VIEW SERVER STATE
@@ -93,7 +93,7 @@ The following is a complete list of securables that are checked by the monitor t
 
 This monitor checks if each of the required Replication Publisher securables is accessible under the configured Run As account.
 
-The following is a complete list of securables that are checked by the monitor targeted to the Replication Publisher:
+The following permissions are a complete list of securables that are checked by the monitor targeted to the Replication Publisher:
 
 - Server-Level permissions
   - VIEW SERVER STATE
@@ -108,7 +108,7 @@ The following is a complete list of securables that are checked by the monitor t
 
 This monitor checks if each of the required Replication Subscriber securables is accessible under the configured Run As account.
 
-The following is a complete list of securables that are checked by the monitor targeted to the Replication Subscriber:
+The following permissions are a complete list of securables that are checked by the monitor targeted to the Replication Subscriber:
 
 - Server-Level permissions
   - VIEW SERVER STATE

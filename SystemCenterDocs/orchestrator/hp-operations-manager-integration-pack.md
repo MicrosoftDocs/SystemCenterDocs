@@ -20,7 +20,7 @@ ms.date: 07/24/2025
 ::: moniker range="sc-orch-2019"
 
 >[!NOTE]
->HP Operations Manager Integration pack has been discontinued from System Center Orchestator 2022 and later.
+>HP Operations Manager (HPOM) Integration pack has been discontinued from System Center Orchestator 2022 and later.
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ To set up an HP Operations Manager configuration, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and select **HP Operations Manager**. The HP Operations Manager dialog appears.
 2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
-3. In the **Name** box, enter a name for the connection. This could be the name of the HP Operations Manager server or a descriptive name to distinguish the type of connection.
+3. In the **Name** box, enter a name for the connection. This entry could be the name of the HP Operations Manager server or a descriptive name to distinguish the type of connection.
 4. Select the ellipsis button **(...)** next to the Type field and then select **HPOM Configuration**.
 5. In the **HPOM Host** box, enter the name or IP address of the HP Operations Manager computer. If you're using the computer name, you can enter the NetBIOS name or the fully qualified domain name (FQDN).
 6. In the **HPOM Port** box, enter the port used to connect to the HP Operations Manager computer. By default the **HPOM Port** is set to 443.
