@@ -4,7 +4,7 @@ title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
 author: jyothisuri
 ms.author: jsuri
-ms.date: 09/02/2024
+ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
