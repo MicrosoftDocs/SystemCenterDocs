@@ -19,7 +19,7 @@ The following sections provide details about how to upgrade SMA 2012 R2 to SMA 2
 ## Prerequisites
 
 - Review the [system requirements](../sma/system-requirements-sma.md) to determine support requirements for SMA 2016.
-- Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can use standard tools and processes for [back up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+- Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can use standard tools and processes for [backing up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ## Upgrade
 

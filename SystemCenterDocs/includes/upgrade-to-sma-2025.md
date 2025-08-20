@@ -21,7 +21,7 @@ The following sections provide information about how to upgrade your existing Se
 ## Prerequisites to upgrade
 
 - Review the [System Requirements for Service Management Automation](../sma/system-requirements-sma.md) to determine whether your current version of SMA supports upgrade to SMA 2025.
-- Perform a full backup of the SMA database as a precaution. It's a standard SQL Server database, and you can use standard tools and processes for [back up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+- Perform a full backup of the SMA database as a precaution. It's a standard SQL Server database, and you can use standard tools and processes for [backing up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ## Upgrade to SMA 2025
 
