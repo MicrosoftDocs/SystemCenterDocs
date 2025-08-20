@@ -4,7 +4,7 @@ title: Back up and restore VMM
 description: This article describes how to back up and restore the VMM database, and hosts and virtual machines in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/02/2024
+ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -226,8 +226,8 @@ If the VMM database was configured by using SQL Server Always On Availability Gr
 
 ::: moniker range="<sc-vmm-2019"
 
-## Reinstall Microsoft Azure Pack
-If Microsoft Azure Pack was deployed in your environment to support tenants by using VMM, then you'll have to reinstall it after you restore the VMM environment. For more information about Microsoft Azure Pack for Windows Server, see [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
+## Reinstall Windows Azure Pack
+If Windows Azure Pack was deployed in your environment to support tenants by using VMM, then you'll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
 
 ::: moniker-end
 
