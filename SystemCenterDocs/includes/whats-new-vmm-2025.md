@@ -31,7 +31,7 @@ All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmwa
 
 ### Support for the latest Linux Guest Operating Systems
 
-With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9, and Rocky Linux 9 and 8.
+With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, Oracle Linux 9, and Rocky Linux 9 and 8.
 
 ### Enhanced VMware to Hyper-V VM conversion performance
 
