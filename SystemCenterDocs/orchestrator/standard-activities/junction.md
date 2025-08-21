@@ -2,7 +2,7 @@
 title: Junction
 description: This article describes the functionality of Junction activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.author: jsuri
 ---
 # Junction
 
-The Junction activity allows you to wait for multiple branches in a runbook to complete before continuing past the junction. This activity can also publish data again from any branch so that downstream activities past the Junction activity can consume the data. Data from different branches than the one you selected won't be available.  
+This article describes the functionality of Junction activity. The Junction activity allows you to wait for multiple branches in a runbook to complete before continuing past the junction. This activity can also publish data again from any branch so that downstream activities past the Junction activity can consume the data. Data from different branches than the one you selected won't be available.  
 
  You can choose to propagate no data from any of the branches previous to the Junction activity. When you select an activity, the junction runs once, regardless of the data provided in previous activities. For example, a Monitor File activity waits for files to be added to a folder. When the files are added, two branches in the runbook will copy the file to a new location and at the same time, read the lines of the files and add them to master file. The Junction activity waits for all these to complete and then propagates the data from the Copy File branch, and the Delete File activity will delete the original files.  
 
@@ -41,6 +41,6 @@ The Junction activity allows you to wait for multiple branches in a runbook to c
 |----------|-----------------|  
 |Selected branch|The activity that was selected to have its data published.|  
 
-## See Also
+## Related content
 
- [Standard Activities](../standard-activities.md)
+ [Standard Activities](../standard-activities.md).
