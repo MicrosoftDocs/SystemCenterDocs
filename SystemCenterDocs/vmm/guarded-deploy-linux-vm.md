@@ -1,11 +1,10 @@
 ---
-title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager
+title: Provision a Shielded Linux Virtual Machine in System Center Virtual Machine Manager
 description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM)  fabric.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 07/17/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/14/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24
@@ -23,6 +22,8 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
 ## Shield a Linux VM
 
+To shield a Linux VM, follow these steps:
+
 1.	Create a signed template disk.
 2.	Create a Linux shielded VM template in VMM.
 3.	Generate a shielding data file (PDK).
@@ -33,11 +34,15 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
 ### Prepare a template disk
 
+To prepare a template disk, follow these steps:
+
   1.  Follow [these steps](https://github.com/Microsoft/lsvmtools/blob/master/doc/LSVM_How_To.pdf) to create the template disk.
 
   2. In the **Preparing a Linux Image** section of the directions, before you install lsvmtools, [install the VMM specialization agent](./vm-linux.md#install-the-vmm-guest-agent).
 
 ### Sign the template disk
+
+To sign the template disk, follow these steps:
 
 1. Generate a certificate. You can use a self-signed certificate for testing.
 
@@ -58,6 +63,8 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 3. Copy the template disk and the signed image to the VMM library.  
 
 ## Create a Linux shielded VM template in VMM
+
+To create a Linux shielded VM template, follow these steps:
 
 1.	In the VMM console library, select **Create VM Template**.
 2.	In **Select Source**, select **Use an existing VM template**. Browse to select the signed template disk that you added to the VMM library. Then, select **Next**.
@@ -82,8 +89,7 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
 ## Generate the shielding data file
 
-Before you generate the shielding data file (PDK):
-
+Before you generate the shielding data file (PDK), ensure the following:
 
 1.	[Get the guardian metadata from the Host Guardian Service (HGS)](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics).
 2.	[Extract the volume signature catalog (VSC) file](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file).
@@ -104,6 +110,8 @@ $Guardian = Import-HgsGuardian -Path <<Import the xml from pre-step 1>> -Name '<
 New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Owner $Owner –Guardian $guardian –VolumeIDQualifier (New-VolumeIDQualifier -VolumeSignatureCatalogFilePath '<<Path to the .vsc file generated in pre-step 2>>' -VersionRule Equals) -AnswerFile '<<Path to LinuxOsConfiguration.xml>>' -policy Shielded
 ```
 ## Create a Linux shielded VM by using the VM template and the PDK
+To create a Linux shielded VM, follow these steps:
+
 1.	In the VMM console, select **Create Virtual Machine**.
 2.	Select **Use an existing virtual machine, VM template, or virtual hard disk**.
 3.	Select **Linux shielded VM template** > **Next**.

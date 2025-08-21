@@ -3,12 +3,13 @@ title: Get Item
 description: The Get Item activity is used in a runbook to retrieve details of existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 08/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: ba93f546-04de-40dc-b03b-08a12dc18818
 author: jyothisuri
 ms.author: jsuri

@@ -2,14 +2,13 @@
 ms.assetid: dd7742fd-dcec-4546-b0f3-59ddaf94459a
 title: Quick Reference to Operations Manager Tasks
 description: This article summarizes the common tasks to perform after installing Operations Manager in your environment.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/13/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Quick reference to Operations Manager tasks
@@ -33,7 +32,7 @@ The following table gives a quick reference for where to perform common tasks an
 |Give a user permission to view Operations Manager information or perform tasks.|In the **Administration** workspace, select **User Roles**, and then right-click a specific role and select **Properties**. For more information, see [Implementing User Roles](~/scom/manage-security-overview.md)|
 |Display a dashboard view on a SharePoint site.|You must deploy the Operations Manager Web Part to a SharePoint site, configure the Web Part to connect to a web console, and add the Web Part to a SharePoint page. For more information, see [Using SharePoint to View Operations Manager Data](/previous-versions/system-center/system-center-2012-R2/hh212924(v=sc.12)).|
 |Receive notifications of an alert in email, instant message, or text message.|Right-click an alert, point to **Notification subscription**, and select **Create**. For more information, see [Subscribing to Alert Notifications](/previous-versions/system-center/system-center-2012-R2/hh212725(v=sc.12)).|
-|Investigate a gray agent.|In the **Monitoring** workspace, in the **Operations Manager\Agent Details\Agent Health State** view, in the **Agent State from Health Service Watcher** section, select the gray agent, and then in the **Tasks** pane, select **Show Gray Agent Connectivity Data**. For more information, see [Not Monitored and Gray Agents](https://support.microsoft.com/help/10129/troubleshooting-gray-agent-states-in-operations-manager-2012).|
+|Investigate a gray agent.|In the **Monitoring** workspace, in the **Operations Manager\Agent Details\Agent Health State** view, in the **Agent State from Health Service Watcher** section, select the gray agent, and then in the **Tasks** pane, select **Show Gray Agent Connectivity Data**. For more information, see [Not Monitored and Gray Agents](/troubleshoot/system-center/scom/troubleshoot-gray-agent-states).|
 |Stop monitoring a computer temporarily.|In the **Monitoring** workspace, select **Windows Computers**, right-click the computer you want to stop monitoring, and select **Maintenance Mode**. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).|
 |Monitor health of management group|In the **Monitoring** workspace, navigate to **Operations Manager\Management Group Health** to see important health status information for components and agents in the management group. For more information, see [Monitor health of the management group](manage-monitor-health-mg.md).|
 |Migrate the Operations Manager databases|If you need to upgrade your SQL Server or move to a server on new hardware, perform the steps described in the following articles to move the operational or data warehouse database<br>-  [How to move the Operational database](manage-move-opsdb.md)<br>-  [How to move the Reporting DW database](manage-move-omdwdb.md).|

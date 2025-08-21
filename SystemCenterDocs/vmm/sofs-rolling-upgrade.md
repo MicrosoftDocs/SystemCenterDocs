@@ -1,12 +1,11 @@
 ---
 ms.assetid: 599241ef-28b7-4a9c-ad1f-d2c79f5dd784
-title: Run a rolling upgrade of a SOFS cluster to Windows Server in VMM
-description: This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+title: Run a Rolling Upgrade of a SOFS Cluster to Windows Server in VMM
+description: This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric.
+ms.date: 04/22/2025
+author: jyothisuri
+ms.author: jsuri
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -14,7 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Run a rolling upgrade of a SOFS cluster to Windows Server in VMM
 
-
+This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric.
 
 ::: moniker range="sc-vmm-2016"
 Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, or Hyper-V cluster, without stopping workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
@@ -43,6 +42,8 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 
 ## Before you start
 
+Here are some considerations before you run a rolling upgrade:
+
 - The cluster must be managed by VMM.
 ::: moniker range="sc-vmm-2016"
 - The cluster must be running Windows Server 2012 R2 or later.
@@ -64,6 +65,8 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 :::moniker-end
 
 ## Run the upgrade
+
+To run the upgrade, follow these steps:
 
 1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS > **Upgrade Cluster**.
 

@@ -1,23 +1,20 @@
 ---
 title: Install agent on UNIX and Linux computers from the command line
 description: Article to detail how to install the System Center Operations Manager agent manually on UNIX and Linux computers.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/01/2025
 ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Install agent on UNIX and Linux computers from the command line
 
-
-
 ::: moniker range="sc-om-2025"
 
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 2025. The agent packages can be found in the following folder on a management server - `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`. Import the required management packs for the specific version of UNIX/Linux you need to monitor. The management packs are available in the Operations Manager installation media, in the `\ManagementPacks` folder or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=104213).
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 2025. The agent packages can be found in the following folder on a management server - `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`. Import the required management packs for the specific version of UNIX/Linux you need to monitor. The management packs are available in the Operations Manager installation media, in the `\ManagementPacks` folder or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=106248).
 
 ::: moniker-end
 

@@ -3,12 +3,13 @@ title: Rename File
 description: This article describes the functionality of Rename File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 08/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: c2f45811-c1de-4b38-b52d-e4f329c36868
 caps.latest.revision: 11
 author: jyothisuri

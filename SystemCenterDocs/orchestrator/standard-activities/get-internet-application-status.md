@@ -3,12 +3,13 @@ title: Get Internet Application Status
 description: This article describes the functionality of Get Internet Application Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 08/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 83143603-d47b-4162-8932-f91eb9cac53b
 caps.latest.revision: 18
 author: jyothisuri

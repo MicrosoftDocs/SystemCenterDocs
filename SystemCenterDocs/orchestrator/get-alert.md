@@ -2,28 +2,28 @@
 title: Get Alert
 description: The Get Alert activity is used in a runbook to retrieve alerts from Operations Manager that match the criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/22/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: bbfd5c5d-8b67-4ee1-93d8-758e4cd03cd6
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Alert
 
-The Get Alert activity is used in a runbook to retrieve alerts from Operations Manager that match the criteria that you specify. You can use the Get Alert activity to retrieve an alert and replicate the information to a ticketing system for troubleshooting.
+The article describes the Get Alert activity used in a runbook to retrieve alerts from Operations Manager that match the criteria that you specify. You can use the Get Alert activity to retrieve an alert and replicate the information to a ticketing system for troubleshooting.
 
 The activity publishes all the data from the required and optional properties into published data. 
 
 The following tables list the required and optional properties and published data for this activity.
 
-## Get Alert Filters
+## Get Alert filters
 
 | Element   | Description   |
 |-----------------------------------|-------------------------------------------------------------------------------------------|

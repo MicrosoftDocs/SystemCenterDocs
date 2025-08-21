@@ -4,10 +4,9 @@ description: This article describes the SharePoint integration pack for System C
 ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23
 ---
 

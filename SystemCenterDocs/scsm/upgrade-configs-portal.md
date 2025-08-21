@@ -1,13 +1,13 @@
 ---
-title: Upgrade the Self-Service portal in System Center 2016 - Service Manager
+title: Upgrade the Self-Service Portal in System Center 2016 - Service Manager
 description: Use information in this article to upgrade the Service Manager Self-Service portal.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/14/2025
+ms.update-cycle: 180-days
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 monikerRange: 'sc-sm-2016'
 ms.custom: UpdateFrequency.5
 ---
@@ -27,6 +27,8 @@ The upgrade steps depend whether you're running the Self-Service Portal on a sta
 
 ## Upgrade from Silverlight on a standalone computer
 
+To upgrade from Silverlight on a standalone computer, follow these steps:
+
 1. On the Service Manager 2012 R2 Silverlight Self-Service Portal, uninstall the Silverlight-based Self-Service portal. Support for Silverlight was removed with Service Manager 2016.
 2. Install the new HTML5-based Self-Service Portal with [these instructions](~/scsm/deploy-self-service-portal.md).
 
@@ -42,6 +44,8 @@ Installing the Self-Service Portal on the same computer as the primary managemen
 6. Install the Service Manager 2016 version of the Self-Service Portal (HTML5) on the same computer as the secondary management server.
 
 ## Upgrade from Silverlight installed on the secondary management server
+
+To upgrade from Silverlight installed on the secondary management server, follow these steps:
 
 1. Uninstall Service Manager 2012 R2. This step uninstalls the management server role from the computer.
 2. Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
@@ -67,6 +71,8 @@ Installing the Self-Service portal on the same computer as the primary managemen
 
 ## Upgrade from HTML5 installed on the secondary management server
 
+To upgrade from HTML5 installed on the secondary management server, follow these steps:
+
 1. Don't uninstall the Self-Service Portal or Management Server; attempting uninstallation might create an unstable state.
 2. [Download](https://go.microsoft.com/fwlink/?LinkID=798214) the patch "SM2016SSP_UpgradeFix_20160601.exe".
 3. Install it on the server where the 2012 R2 Self Service Portal is installed.
@@ -74,4 +80,4 @@ Installing the Self-Service portal on the same computer as the primary managemen
 
 ## Next steps
 
-- [Set up a lab environment with production data to prepare for upgrade](set-up-lab-with-production-data.md).
+[Set up a lab environment with production data to prepare for upgrade](set-up-lab-with-production-data.md).

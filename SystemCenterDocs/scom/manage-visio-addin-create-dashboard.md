@@ -1,15 +1,16 @@
 ---
-title: Build a simple monitoring dashboard using the Visio Web Part
+title: Build a simple Monitoring Dashboard using the Visio Web Part
 description: This article provides a walk-through on how to create a basic monitoring dashboard in SharePoint linking to your Visio drawing.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
+
 ---
 
 # Build a simple monitoring dashboard using the Visio Web Part
@@ -18,7 +19,9 @@ ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
 
 SharePoint Enterprise edition includes a Web part for Visio Services called the Visio Web Access Web Part. You can add this Web part to any SharePoint Web part page to build a dashboard that uses published Visio diagrams to provide visualizations.  
 
-## Build a monitoring dashboard for your Visio diagram  
+## Build a monitoring dashboard for your Visio diagram 
+
+To build a monitoring dashboard for your Visio diagram, follow these steps: 
 
 1. In Internet Explorer, navigate to your SharePoint site.  
 
@@ -62,4 +65,4 @@ Your Web part should now display with the published diagram in the Visio Web Acc
 
 ## Next steps
 
-[Learn how to publish Visio diagrams that you’ve connected to Operations Manager data to a SharePoint document library](manage-visio-addin-publish-sharepoint.md)
+Learn how to [publish Visio diagrams](manage-visio-addin-publish-sharepoint.md) that you’ve connected to Operations Manager data to a SharePoint document library.
