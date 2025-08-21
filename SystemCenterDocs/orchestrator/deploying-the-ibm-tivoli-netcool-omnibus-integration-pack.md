@@ -1,7 +1,7 @@
 ---
-title: Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator
+title: Deploy the IBM Tivoli Netcool OMNIbus Integration Pack for System Center - Orchestrator
 description: This article provides information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center - Orchestrator.
-ms.date: 11/01/2024
+ms.date: 08/21/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
@@ -17,7 +17,7 @@ This article provides information about deploying the IBM Tivoli Netcool/OMNIbus
 
 ## System Requirements
 
-The integration pack for IBM Tivoli Netcool/OMNIbus requires the following software to be installed and configured before to implementing the integration.
+The integration pack for IBM Tivoli Netcool/OMNIbus requires the following software to be installed and configured before to implementing the integration:
 
 - IBM Tivoli Netcool/OMNIbus 7.3 or 8.1 or 8.3
 - 32-bit Java Standard Edition 7 on each runbook server and Runbook Designer using the integration pack.
@@ -35,43 +35,49 @@ After you download the integration pack file, you must register it with the Orch
 
 ### Register the  pack
 
+To register the pack, follow these steps:
+
 1. Copy the Netcool/OMNIbus integration pack file to the management server. Confirm that the file is not set to **Read Only**. This can prevent unregistering the integration pack later.
 
-2. From the **Start** menu, right-click **Deployment Manager**, and then click **Run as Administrator**.
+2. From the **Start** menu, right-click **Deployment Manager**, and then select **Run as Administrator**.
 
-3. In the left pane of the Deployment Manager, expand **Orchestrator Management Server**, right-click **Integration Packs**, and then click **Register IP with the Orchestrator Management Server**. The Integration Pack Registration Wizard opens.
+3. In the left pane of the Deployment Manager, expand **Orchestrator Management Server**, right-click **Integration Packs**, and then select **Register IP with the Orchestrator Management Server**. The Integration Pack Registration Wizard opens.
 
-4. Click **Next**.
+4. Select **Next**.
 
-5. In the **Integration Pack or Hotfix Selection** dialog box, click **Add**.
+5. In the **Integration Pack or Hotfix Selection** dialog box, select **Add**.
 
-6. Locate and select the Netcool/OMNIbus file that you copied to the management server and click **Open**. Click **Next**.
+6. Locate and select the Netcool/OMNIbus file that you copied to the management server and select **Open**. Select **Next**.
 
-7. Click **Finish**. The **End User License Agreement** dialog box appears.
+7. Select **Finish**. The **End User License Agreement** dialog box appears.
 
-8. Click **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
+8. Select **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
 
 ### Deploy the pack
 
-1. In the left pane of Deployment Manager, right-click **Integration Packs**, and then click **Deploy IP to Runbook Server or Runbook Designer**. The Integration Pack Deployment Wizard opens.
+To deploy the pack, follow these steps:
 
-2. Click **Next**.
+1. In the left pane of Deployment Manager, right-click **Integration Packs**, and then select **Deploy IP to Runbook Server or Runbook Designer**. The Integration Pack Deployment Wizard opens.
 
-3. Select **System Center Integration Pack for IBM Tivoli Netcool/OMNIbus** and then click **Next**.
+2. Select **Next**.
 
-4. Enter the name of the computer where you want to deploy the integration pack and then click **Add**. Click **Next**.
+3. Select **System Center Integration Pack for IBM Tivoli Netcool/OMNIbus** and then select **Next**.
 
-5. Select the **Installation Configuration** options that apply to this deployment, and then click **Next**.
+4. Enter the name of the computer where you want to deploy the integration pack and then select **Add**. Select **Next**.
 
-6. Click **Finish**. The **Log Entries** pane displays a confirmation message that the integration pack is successfully deployed.
+5. Select the **Installation Configuration** options that apply to this deployment, and then select **Next**.
+
+6. Select **Finish**. The **Log Entries** pane displays a confirmation message that the integration pack is successfully deployed.
 
 ## Configure the IBM Tivoli Netcool/OMNIbus connections
 
 A connection establishes a reusable link between Orchestrator and an IBM Tivoli Netcool/OMNIbus server. You can create as many connections as you require to link to multiple servers running IBM Tivoli Netcool/OMNIbus. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-1. In Runbook Designer, click **Options**, and then click **IBM Netcool/OMNIbus**. The **IBM Netcool/OMNIbus** dialog box appears.
+To configure the IBM Tivoli Netcool/OMNIbus connections, follow these steps:
 
-2. On the **Connections** tab, click **Add** to begin the connection setup. The **Netcool/OMNIbus Connection** dialog box appears.
+1. In Runbook Designer, select **Options**, and then select **IBM Netcool/OMNIbus**. The **IBM Netcool/OMNIbus** dialog box appears.
+
+2. On the **Connections** tab, select **Add** to begin the connection setup. The **Netcool/OMNIbus Connection** dialog box appears.
 
 3. In the **Name** box, enter a name for the connection. This can be a descriptive name to distinguish the type of connection.
 
@@ -83,15 +89,15 @@ A connection establishes a reusable link between Orchestrator and an IBM Tivoli 
    >[!NOTE]
    >The user needs to be assigned to the 'System' group to generate alerts within Netcool.
 
-   Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
+   Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection, do the following:
 
    1. Select the **Use Secure Socket Layer** checkbox.
    2. In the **Trust Store** box, enter the location of the trust store where the certificates are located.
        Enter a file name or browse for the file.
    3. In the **Trust Store Password** box, enter the password for the protected trust store.
 
-7. Click **Test Connection**. When the success message appears, click **OK**.
+7. Select **Test Connection**. When the success message appears, select **OK**.
 
 8. Add additional connections if applicable.
 
-9. Click **OK** to close the configuration dialog box, and then click **Finish**.
+9. Select **OK** to close the configuration dialog box, and then select **Finish**.
