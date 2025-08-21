@@ -1,8 +1,8 @@
 ---
 ms.assetid: d9355790-6253-48f5-bbb5-0561a4c8f232
-title: Favorite Reports in Web Console in System Center Operation Manager
+title: Favorite Reports in Web console in System Center Operation Manager
 description: This article describes about Favorite reports in Web console.
-ms.date: 04/25/2025
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24

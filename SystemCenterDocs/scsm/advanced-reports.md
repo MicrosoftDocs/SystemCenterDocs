@@ -3,7 +3,7 @@ title: Advanced Analytical Reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-ms.date: 04/25/2025
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
 ms.update-cycle: 1095-days
@@ -21,7 +21,7 @@ This article provides a reference of advanced analytical reports available in Se
 
 The following analytical reports - which are presented as [Microsoft Online Analytical Processing (OLAP) data cubes](olap-cubes-overview.md) - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
-## [Dimensions](#tab/dimensions)
+## Dimensions
 
 The following dimensions are contained in various data cubes. However, not all data cubes contain each dimension.  
 
@@ -106,7 +106,7 @@ The following dimensions are contained in various data cubes. However, not all d
 - PowerActivityRecordEventType
 - SoftwareUpdateDim  
 
-## [Work item data cube](#tab/work-item-data-cube)
+## Work item data cube
 
 The work item data cube contains the following measures:  
 
@@ -176,7 +176,7 @@ The work item data cube contains the following measures:
 - ComputerDimCount
 - ServiceDimCount  
 
-## [Power management data cube](#tab/power-management-data-cube)
+## Power management data cube
 
 The power management data cube contains the following measures:  
 
@@ -218,7 +218,7 @@ The power management data cube contains the following measures:
 - ServiceDimCount
 - ConfigItemDimCount  
 
-## [Software updates data cube](#tab/software-updates-data-cube)
+## Software updates data cube
 
 The software updates data cube contains the following measures:  
 
@@ -240,7 +240,7 @@ ComputerHostsOperatingSystemCount
  ServiceDimCount
 - ConfigItemDimCount  
 
-## [Service catalog data cube](#tab/service-catalog-data-cube)
+## Service catalog data cube
 
 The service catalog data cube contains the following measures:  
 
@@ -297,7 +297,7 @@ The service catalog data cube contains the following measures:
 - OfferingDimCount
 - ServiceDimCount  
 
-## [Configuration item data cube](#tab/configuration-item-data-cube)
+## Configuration item data cube
 
 The configuration item data cube contains the following measures:  
 
@@ -329,7 +329,7 @@ The configuration item data cube contains the following measures:
 - ServiceDimCount
 - DeployedComputerDimCount  
 
-## [Change and activity management data cube](#tab/change-and-activity-management-data-cube)
+## Change and activity management data cube
 
 The change and activity management data cube contains the following measures:  
 
@@ -373,4 +373,3 @@ The change and activity management data cube contains the following measures:
 - ReviewerDimCount
 - ServiceDimCount  
 
----

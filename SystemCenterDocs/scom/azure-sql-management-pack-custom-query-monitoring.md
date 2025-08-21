@@ -1,10 +1,10 @@
 ---
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
-title: Custom Query-based Monitoring in Management Pack for Azure SQL Database
-description: This article explains how to configure custom query monitoring in Management Pack for Azure SQL Database
+title: Custom Query-based Monitoring in management pack for Azure SQL Database
+description: This article explains how to configure custom query monitoring in management pack for Azure SQL Database
 author: epomortseva
 manager: evansma
-ms.date: 04/25/2025
+ms.date: 08/21/2025
 ms.author: jsuri
 ms.topic: concept-article
 ms.service: system-center
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 
 # Custom Query-Based Monitoring
 
-This article explains how to configure custom query monitoring in Management Pack for Azure SQL Database.
+This article describes how to configure custom query monitoring in Management Pack for Azure SQL Database.
 
 In addition to the standard [health and performance monitoring](azure-sql-management-pack-monitoring-types.md), you can configure custom query-based monitors for application-specific health state monitoring.
 
