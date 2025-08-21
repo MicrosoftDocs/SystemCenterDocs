@@ -3,15 +3,14 @@ title: Troubleshoot OLAP cubes
 description: Explains how you can troubleshoot Service Manager OLAP cubes.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/18/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.assetid: dfabe723-15b7-40e0-923a-66819be1e93c
 ---
 
@@ -75,7 +74,7 @@ C:\Windows\system32>netsh advfirewall firewall add rule name="Analysis Services"
 
     ```  
 
-2. Check the CoordinatorExecutionMode property on the SSAS service, and ensue that it's set properly. You can read more about this problem on the [SQL Server forums](https://go.microsoft.com/fwlink/p/?LinkId=403946).  
+2. Check the CoordinatorExecutionMode property on the SSAS service, and ensue that it's set properly. You can read more about this problem on the [SQL Server forums](https://techcommunity.microsoft.com/category/sql-server/discussions/sql_server).  
 
 ## The DWMaintenance task stops on the ManageCubePartitions or ManageCubeTranslations step
 

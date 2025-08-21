@@ -3,17 +3,17 @@ title: Invoke Web Services
 description: This article describes the Invoke Web Services activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: how-to
 ms.assetid: 44490141-2205-427b-a700-1e64ed61a561
 caps.latest.revision: 15
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Invoke Web Services
 

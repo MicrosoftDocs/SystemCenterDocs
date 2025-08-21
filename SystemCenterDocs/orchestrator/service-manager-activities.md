@@ -1,16 +1,18 @@
 ---
-title: System Center Service Manager activities
+title: System Center Service Manager Activities
 description: This article describes all activities in the System Center Integration Pack for System Center - Service Manager.
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.update-cycle: 1095-days
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3
 ---
 # Service Manager activities
+
+This article describes all activities in the System Center Integration Pack for System Center - Service Manager.
 
 The following configuration instructions apply to all the activities in the System Center Integration Pack for System Center - Service Manager. Links to this section are included in the configuration instructions for each activity.
 
@@ -20,21 +22,25 @@ Each activity has a set of required or optional properties that define the confi
 
 #### Configure the properties for an activity
 
+To configure the properties for an activity, follow these steps:
+
 1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
 2.  To save your configuration entries, select **Finish**.
 
 In the activity properties dialog, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
-## General tab
+## [General tab](#tab/general-tab)
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
-## Details tab
+## [Details tab](#tab/details-tab)
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the Connection property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Service Manager management server.
 
 #### Configure the Connection property
+
+To configure the Connection property, follow these steps:
 
 1.  Select the ellipsis **(...)** button next to the **Configuration** field.
 
@@ -75,7 +81,7 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **After**: The property of the message is after the date/time specified in the filter.
 -   **Before**: The property of the message is before the date/time specified in the filter.
 
-## Run Behavior tab
+## [Run Behavior tab](#tab/run-behavior-tab)
 
 This tab contains the properties that determine how the activity handles multi-value published data and what notifications will be sent if the activity fails or runs for an excessive period of time.
 
@@ -91,11 +97,15 @@ By default, the data from the Get activity will be passed on as multiple individ
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
+---
+
 ## Event notifications
 
 Some activities are expected to take a limited amount of time to complete. If they don't complete within that time, they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
 #### To be notified when the activity takes longer than a specified time to run or fails to run
+
+To be notified when the activity takes longer, follow these steps:
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
@@ -109,6 +119,8 @@ Published data is the foundation of a working runbook. It's the data produced as
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
 ### Use published data
+
+To use published data, follow these steps:
 
 1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 
@@ -138,5 +150,5 @@ The Service Manager Integration Pack adds the Service Manager category to the **
 
 The activities in the Service Manager Integration Pack use the classes, fields, and filters and produce the published data listed in the following topics:
 
-- [Classes, Fields, and Filters](classes-fields-and-filters.md)
-- [Service Manager Published Data](service-manager-published-data.md)
+- [Classes, Fields, and Filters](classes-fields-and-filters.md).
+- [Service Manager Published Data](service-manager-published-data.md).

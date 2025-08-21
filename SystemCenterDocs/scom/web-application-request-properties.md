@@ -1,12 +1,12 @@
 ---
 ms.assetid: 4380f888-a7fa-4913-8715-9f1f524d4590
-title: Web application request properties
+title: Web Application Request Properties
 description: This article provides information about how to manage the web application requests properties in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/21/2025
+author: jyothisuri
+ms.author: jsuri
+ms.update-cycle: 1095-days
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 monikerRange: '>=sc-om-2019'
@@ -15,7 +15,9 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Web Application Request Properties
 
-The following sections describe the settings available for each request in a **Web Application Transaction Monitor** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md). Each section in the following sections represents a tab in the **Request Properties** window.
+This article provides information about how to manage the web application requests properties in Operations Manager.
+
+The following sections describe the settings available for each request in a **Web Application Transaction Monitor** template in Operations Manager. You can set the properties of these requests by using the procedure in [Edit Settings or Requests in a Web Application](edit-web-application-settings.md). Each section in the following sections represents a tab in the **Request Properties** window.
 
 ## General tab
 
@@ -27,11 +29,11 @@ Use the **General** tab to specify the general details of the request. The diffe
 | HTTP Method | The method to use for the request. Most requests use a GET method. The POST method is typically used when selecting an option to submit information to a website, such as clicking a button to submit a name and password. |
 | HTTP Version | The version of HTTP that the request specifies to the receiving website. |
 | Request Body | Only enabled when the **HTTP method** is POST. This is the body of the request that the post submits. |
-| Insert Parameter | There's an **Insert parameter** button for both the **Request URL**  and the **Request Body**. Use these options to replace part of the text with a variable that is populated from a previous request. For more information, see [How to Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29). |
+| Insert Parameter | There's an **Insert parameter** button for both the **Request URL**  and the **Request Body**. Use these options to replace part of the text with a variable that is populated from a previous request. For more information, see [Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29). |
 
 ## HTTP headers tab
 
-The **HTTP Headers** tab is used to define the different fields that will be included in the header of the request. If the request is from a recorded session, it includes the headers that your browser used. If you manually created the request, it includes a default set of headers and values. You can use the  **Edit**  button to modify an existing header field or the **Add** button to add a new field. The **Insert parameter** options are used to replace part of the text with a variable that is populated from a previous request. For more information, see [How to Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
+The **HTTP Headers** tab is used to define the different fields that will be included in the header of the request. If the request is from a recorded session, it includes the headers that your browser used. If you manually created the request, it includes a default set of headers and values. You can use the  **Edit**  button to modify an existing header field or the **Add** button to add a new field. The **Insert parameter** options are used to replace part of the text with a variable that is populated from a previous request. For more information, see [Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
 
 ## Performance counter tab
 
@@ -64,9 +66,9 @@ The **Custom Warning** tab lets you specify error criteria for the request by us
 
 ## Extraction rules
 
-The **Extraction Rules** tab lets you extract a string of text from the body of the response of the request to use in one or more subsequent requests. For more information, see [How to Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
+The **Extraction Rules** tab lets you extract a string of text from the body of the response of the request to use in one or more subsequent requests. For more information, see [Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
 
 ## Next steps
 
-- [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md)
-- [Web Application Properties](web-application-properties.md)
+- [Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
+- [Web Application Properties](web-application-properties.md).

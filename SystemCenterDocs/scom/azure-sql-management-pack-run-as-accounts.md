@@ -3,10 +3,10 @@ ms.assetid: 1a7d9146-5782-4cad-8bb5-c69511b578d1
 title: Azure SQL Database Run As Accounts in Management Pack for Azure SQL Database
 description: This article explains how to configure Azure SQL Database run as accounts in Management Pack for Azure SQL Database
 author: Anastas1ya
-ms.author: v-fkornilov
 manager: evansma
 ms.date: 04/25/2025
-ms.topic: article
+ms.author: jsuri
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---

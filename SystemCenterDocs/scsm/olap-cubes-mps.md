@@ -3,21 +3,19 @@ title: Modeling OLAP cubes in management packs overview
 description: Provides an overview of modeling Service Manager OLAP cubes in management packs.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/18/2025
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 7f6da179-5a54-46fb-adc4-3fcaa7bd9864
 ---
 
 # Modeling Service Manager OLAP cubes in management packs overview
-
-
 
 The ability to define customized management pack elements was used to model the online analytical processing \(OLAP\) cube management pack elements that are included in Service Manager. These management pack elements make it possible for the user to declaratively define and customize an OLAP cube at a higher level of abstraction. Based on the definition, the deployment of these management pack elements creates the correct relationships, components, and fundamental building blocks of the OLAP cube at a greater level of detail, without any further user guidance. The following are the two main management pack elements that are included in OLAP cubes:  
 
@@ -144,7 +142,7 @@ The ability to define customized management pack elements was used to model the 
 
 ## ManyToManyRelationship
 
- The ManyToManyRelationship makes it possible for you, the cube designer, to add custom, many\-to\-many dimensions to an OLAP cube, for enabling advanced analytic scenarios. Defining many\-to\-many relationships is beyond the scope of this document. However, you can investigate this concept and its benefits. For more information about the ManyToManyRelationship, see [The Many\-to\-Many Revolution 2.0](https://go.microsoft.com/fwlink/p/?LinkId=246670).  
+ The ManyToManyRelationship makes it possible for you, the cube designer, to add custom, many\-to\-many dimensions to an OLAP cube, for enabling advanced analytic scenarios. Defining many\-to\-many relationships is beyond the scope of this document. However, you can investigate this concept and its benefits. For more information about the ManyToManyRelationship, see [The Many\-to\-Many Revolution 2.0](https://techcommunity.microsoft.com/category/sql-server/discussions/sql_server).  
 
  During cube deployment, Service Manager automatically adds many\-to\-many dimensions to the cube for all "one\-hop" relationships, without any interaction from you. However, Service Manager doesn't add many\-to\-many dimensions for cascading \(multi\-hop\) relationships because of the exponential increase of possible relationships that could be added. Adding all these relationships can significantly degrade performance when the OLAP cube is browsed. This is because the aggregations of many\-to\-many relationships are generally not calculated during processing and because the joins will be evaluated while the OLAP cube is browsed. If you want a specific, cascading, many\-to\-many relationship, you can define the relationship using a management pack element and it will be added to the OLAP cube. Conversely, you can overwrite an automatically generated, many\-to\-many relationship to use a different intermediate measure group in instances in which multiple intermediate groups exist. In this case, Service Manager automatically uses the first group that is encountered. The following is an example of a many\-to\-many management pack relationship element:  
 

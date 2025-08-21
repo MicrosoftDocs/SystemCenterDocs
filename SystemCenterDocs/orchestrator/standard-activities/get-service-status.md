@@ -3,17 +3,17 @@ title: Get Service Status
 description: This article describes about the Get Service Status activity and its use to check the status of a service on any computer.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 212191ed-8156-45f1-bb09-0ccda3823d16
 caps.latest.revision: 14
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Get Service Status
 

@@ -1,12 +1,12 @@
 ---
-title: Configure Desired Configuration Management to generate incidents
+title: Configure Desired Configuration Management to Generate Incidents
 description: Learn about how to configure Desired Configuration Management to generate incidents in Service Manager.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.date: 07/24/2025
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
@@ -30,6 +30,8 @@ In Service Manager, you can import configuration baselines from Configuration Ma
 You can use the following procedures to configure incident management to automatically generate desired configuration management-based incidents and validate that the desired configuration management is configured.
 
 ## Automatically generate management-based incidents
+
+To automatically generate management-based incidents, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 
@@ -62,6 +64,8 @@ You can use the following procedures to configure incident management to automat
 
 ### Validate that desired configuration management is configured
 
+To validate the configuration, follow these steps:
+
 1. Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management-based incident in Service Manager.
 
 2. In the Service Manager console, select **Work Items**
@@ -86,4 +90,4 @@ You can use the following procedures to configure incident management to automat
 
 ## Next steps
 
-- To create notifications in Service Manager when incidents or changes occur, see [Configure notifications](notifications.md).
+To create notifications in Service Manager when incidents or changes occur, see [Configure notifications](notifications.md).

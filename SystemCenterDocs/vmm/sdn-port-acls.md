@@ -2,11 +2,11 @@
 ms.assetid: fcb4ef4c-b511-402c-9ba6-724169598fe9
 title: Allow and block VM traffic with port ACLs in the SDN infrastructure using VMM
 description: This article describes how to allow and block network traffic to a particular VM using VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 07/24/2024
-ms.topic: article
+ms.date: 04/21/2025
+author: jyothisuri
+ms.author: jsuri
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
@@ -33,10 +33,12 @@ Using VMM PowerShell, you can also configure Hyper-V port ACLs. For more informa
 This article provides information on how to create and manage SDN port ACLs by using the VMM PowerShell cmdlets.
 
 ## Before you start
-Ensure that [SDN network controller](sdn-controller.md) is deployed.
+Before you configure and manage SDN port ACLs, ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 
 ## Create a port ACL
+
+To create a port ACL, follow these steps:
 
 1.	Open PowerShell in VMM.
 2.	Create a port ACL.
@@ -51,6 +53,8 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     > The cmdlets provided here use example values.
 
 ## Create a port ACL rule
+
+To create a port ACL rule, follow these steps:
 
 1.	Get an existing port ACL.
 
@@ -67,6 +71,8 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     > - Only TCP/UDP/Any protocol parameters are supported for creating ACL rules.
 
 ## Attach an ACL to a virtual network adapter
+
+To attach an ACL to a virtual network adapter, follow these steps:
 
 1.	Get the virtual network adapter.
 
@@ -87,6 +93,9 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 
 ## Detach a port ACL from a virtual network adapter
+
+To detach a port ACL from a virtual network adapter, follow these steps:
+
 1.	Get the virtual network adapter that you want to detach the port ACL from.
 
     ```powershell
@@ -102,6 +111,8 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 
 ## Attach an ACL to a VM subnet
+
+To attach an ACL to a VM subnet, follow these steps:
 
 1. Get the VM subnet to attach the ACL.
 
@@ -119,6 +130,8 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Detach a port ACL from a VM subnet
 
+To detach a port ACL from a VM subnet, follow these steps:
+
 1.	Get the VM subnet that you want to detach the port ACL from.
 
     ```powershell
@@ -131,6 +144,8 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     ```
 
 ## Remove a port ACL rule
+
+To remove a port ACL rule, follow these steps:
 
 1.	Get the port ACL rule that you want to remove.
 
@@ -145,6 +160,8 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     ```
 
 ## Remove a port ACL
+
+To remove a port ACL, follow these steps:
 
 1.	Get the port ACL that you want to remove.
 

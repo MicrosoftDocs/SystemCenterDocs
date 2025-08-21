@@ -3,17 +3,16 @@ title: Create Collection Activity
 description: This article provides guidance on how to configure the Create Collection activity for System Center 2016 Configuration Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: e9df3561-cd3d-440c-afce-f47e3d0d933d
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Create collection activity for System Center 2016 Configuration Manager

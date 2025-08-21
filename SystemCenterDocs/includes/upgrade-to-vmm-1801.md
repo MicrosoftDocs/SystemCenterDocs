@@ -2,10 +2,9 @@
 ms.assetid: 0fc1e4e6-616d-4930-9e9a-fef274e9ac16
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 1801.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 02/19/2021
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/20/2025
 ms.topic: include
 ms.service:  system-center
 ms.subservice: virtual-machine-manager
@@ -56,9 +55,9 @@ If you're running more than one System Center components, they should be upgrade
 7. Virtual Machine Manager (VMM)
 8. App Controller
 9. Service Provider Foundation
-10. Microsoft Azure Pack for Windows Server
+10. Windows Azure Pack for Windows Server
 11. Service Bus Clouds
-12. Microsoft Azure Pack
+12. Windows Azure Pack
 13. Service Reporting
 
 
