@@ -2,10 +2,9 @@
 ms.assetid: 4c078131-cb8b-4c43-b651-182f8060c19f
 title: Configure Encrypted Networks in System Center Virtual Machine Manager
 description: This article explains about how to configure encrypted networks in SDN using VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/25/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/21/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -32,10 +31,10 @@ This feature is managed through the SDN Network Controller (NC). If you don't al
 
 ## Before you start
 
-Here are some considerations before you start configuring encrypted networks:
+Ensure the following prerequisites are met:
 
-- Ensure at least two hosts for tenant VMs to validate the encryption.
-- Ensure HNV-based VM network with encryption is enabled and have a certificate, which can be created and distributed by fabric administrator. 
+- At least two hosts for tenant VMs to validate the encryption.
+- HNV-based VM network with encryption enabled and a certificate, which can be created and distributed by fabric administrator. 
     > [!NOTE]
     > The certificate, along with its private key, must be stored in the local certificate store of all the hosts where the VMs (of that network) reside.
 

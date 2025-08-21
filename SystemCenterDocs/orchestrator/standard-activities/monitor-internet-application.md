@@ -2,7 +2,7 @@
 title: Monitor Internet Application
 description: This article provides the details about Monitor Internet Application activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/25/2025
+ms.date: 08/21/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2cebdeb0-09dd-47b7-ae13-0b478fc77a6d
 caps.latest.revision: 17
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Monitor Internet Application
 

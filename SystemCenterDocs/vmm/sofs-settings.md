@@ -2,10 +2,9 @@
 ms.assetid: aa0580cc-884b-42bc-8326-ff0b4291d703
 title: Manage SOFS Settings in the VMM Fabric
 description: This article describes how to manage SOFS settings in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 04/25/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/21/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

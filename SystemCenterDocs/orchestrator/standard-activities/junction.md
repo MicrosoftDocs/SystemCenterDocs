@@ -2,7 +2,7 @@
 title: Junction
 description: This article describes the functionality of Junction activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/25/2025
+ms.date: 08/21/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 834609dd-c152-4a8e-8c59-069e5857f365
 caps.latest.revision: 15
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Junction
 

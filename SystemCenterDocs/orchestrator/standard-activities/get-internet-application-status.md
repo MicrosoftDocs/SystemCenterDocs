@@ -2,7 +2,7 @@
 title: Get Internet Application Status
 description: This article describes the functionality of Get Internet Application Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/25/2025
+ms.date: 08/21/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 83143603-d47b-4162-8932-f91eb9cac53b
 caps.latest.revision: 18
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Get Internet Application Status
 
@@ -21,7 +20,7 @@ This article describes the functionality of Get Internet Application Status acti
 
 ## Configure the Get Internet Application Status Activity
 
- Use the following information to configure the Get Internet Application Status activity.  
+Use the following information to configure the Get Internet Application Status activity.  
 
 > [!NOTE]
 > You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
