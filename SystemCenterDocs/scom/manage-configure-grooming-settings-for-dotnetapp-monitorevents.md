@@ -1,9 +1,9 @@
 ---
 title: Configure Grooming Settings for .NET Application Performance Monitoring Events
 description: This article describes how to configure grooming of the APM data from the Operations Manager DBs.
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.assetid: bf667946-eae3-4958-96dc-e27d8ea7081a
 
 # Configure grooming settings for .NET Application performance monitoring events
 
-
+This article describes how to configure grooming of the APM data from the Operations Manager DBs.
 
 When you've been monitoring applications using .NET Application Performance Monitoring (APM), a new data type, APM events, will begin to take up space. Eventually, you'll want to groom your database for APM events. Changing the grooming settings for your database for APM events requires the following procedures. You can groom APM events in three locations:  
 
@@ -28,6 +28,8 @@ When you've been monitoring applications using .NET Application Performance Moni
 In Application Diagnostics, you can select how many APM events you want in the Operations database and how long you want to keep them.  
 
 ![Screenshot of Application Diagnostics Operations Database page.](./media/om2016-appdiagnostics-groomingsettings.png)  
+
+To use Application Diagnostics to configure grooming settings, follow these steps:
 
 1. Application Diagnostics is installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, the Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics`
 
@@ -47,6 +49,8 @@ In Application Diagnostics, you can select how many APM events you want in the O
 In Application Advisor, you can choose how long you want to keep APM events that have a Deleted or By Design status in Data Warehouse.  
 
 ![Screenshot showing Application Advisor Operations Database page.](./media/om2016-appadvisor-groomingsettings.png)  
+
+To use Application Advisor to configure grooming settings, follow these steps:
 
 1. Application Advisor is installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, the Application Advisor console address is: `http(s)://<web host>/AppAdvisor`.
 
@@ -75,6 +79,8 @@ The Performance Counter setting is intended for hourly performance aggregations,
 ![Screenshot of the Override Properties page.](./media/om2016-appmonitor-datatransrule.png)  
 
 ### Use the Data Transfer Rule to configure grooming settings for APM events in the Data Warehouse
+
+To use the Data Transfer Rule to configure grooming settings, follow these steps:
 
 1. In the Operations Manager Operations console, in the navigation pane, select **Authoring**, and select **Management Pack Objects**.  
 
