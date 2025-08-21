@@ -1,16 +1,15 @@
 ---
-title: Woodgrove Bank customization sample scenario
+title: Woodgrove Bank Customization Sample Scenario
 description: Provides an overview and the steps needed to complete the Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/11/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: ea9bb90e-5a00-4346-b2a2-f6076c203778
 ms.custom: engagement-fy23
 ---
@@ -21,7 +20,7 @@ ms.custom: engagement-fy23
 
 To provide real-world context to the step-by-step procedures for the Service Manager Authoring Tool, we've created a fictitious scenario that takes place at a fictitious company, Woodgrove Bank.  
 
- The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services (AD DS) so that the group software policies apply to the new computers.  
+The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services (AD DS) so that the group software policies apply to the new computers.  
 
 > [!NOTE]  
 > Some procedures in the Woodgrove Bank customization scenario rely on standard usage of the Service Manager console in Service Manager. This guide doesn't provide details for these common procedures.
@@ -73,11 +72,15 @@ The primary goal of the Woodgrove Bank customization scenario is to create a new
 
 ### Open the management pack  
 
+To open the management pack, follow these steps:
+
 1. Start the Authoring Tool.  
 2. Select **File**, point to **Open**, and select **File**.  
 3. In the **Open File** dialog, select the **Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml** file to open the management pack.  
 
 ### Explore the Automated Activity: Add Computer to AD Group class  
+
+To explore the Automated Activity, follow these steps:
 
 1. In the Authoring Tool, if the **Class Browser** isn't visible, select **View**, and select **Class Browser**.  
 2. Locate and expand the **Automated Activity: Add Computer to AD Group** class, and then view the class properties, such as **ComputerName** and **GroupName**.  
@@ -90,11 +93,15 @@ The second step in the Woodgrove Bank customization scenario is to customize the
 
 ### View the System.AddComputerForm form  
 
+To view the System.AddComputerForm form, follow these steps:
+
 1. In the Authoring Tool, expand **Forms** in the **Management Pack Explorer** pane. Right-click the **System.AddComputerForm** form, and select **Customize** to open the form in the authoring pane.  
 2. In the authoring pane, ensure that the **Details** pane is visible. If it isn't visible, select **View**, and select **Details Window**.  
 3. Select a field on the form. Note that the properties in the **Details** pane are updated according to the class property that is bound to the field that you selected. Note the **Binding Path** entry in the **Details** pane. This entry indicates the property that the field in the form represents.  
 
 ### Customize the default Change Request form  
+
+To customize the default Change Request form, follow these steps:
 
 1. In the Authoring Tool, select **File**, point to **Open**, and select **File**. In the **Open File** dialog, locate the **ServiceManager.ChangeManagement.Library.mp** management pack. For example, the path to the management pack might be as follows:  
      D:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\>  Authoring\\Library\\ServiceManager.ChangeManagement.Library.mp.  
@@ -147,17 +154,21 @@ Ken uses this procedure to add the WF activities **Add AD DS Computer to Group**
 
 #### Add WF activities to the workflow  
 
+To add WF activities to the workflow, follow these steps:
+
 1. In the **Management Pack Explorer**, expand **Workflows**, right-click **AddComputerToADGroupWF**, and select **Edit**.  
 2. In the **Activities Toolbox** pane, locate the **Active Directory Activities** group.  
 3. Drag **Add AD DS Computer to Group** to the authoring pane, and drop it between the Workflow Start and End icons.  
 4. Drag **Set Activity Status to Completed**, and drop it between the previous activity and the End icon.  
 For general information about these steps, see [How to Add an Activity to a Workflow](add-workflow-activities.md).  
 
-### Configure the Activity Properties  
+### Configure the activity properties  
 
 Ken uses this procedure to set the **Computer Name** and **Group Name** properties of the **Add AD DS Computer to Group** activity to retrieve the values of the **Automated Activity: Add Computer To AD Group** properties **Computer Name**, **Group Name**, and **Activity ID** from the change request. In addition, they set the **Computer Domain name** property of the **Add AD DS Computer to Group** activity to a constant value.  
 
-#### Configure the activity properties  
+#### Configure the activity properties
+
+To configure the activity properties, follow these steps:
 
 1. In the **Details** pane, select **Computer Name**, select the ellipsis button (**...**), select **Use a class property**, select **ComputerName**, and select **OK**.  
 2. In the **Details** pane for the **Add AD DS Computer to Group** activity, select **Group Name**, select the ellipsis button (**...**), select **Use a class property**, select **GroupName**, and select **OK**.  
@@ -172,9 +183,11 @@ For general information about these steps, see [How to Set an Activity Property 
 
 In this step of the Woodgrove Bank customization scenario, in System Center - Service Manager Ken must move the workflow assembly file and the form assembly file to the Service Manager program directory to use the workflow with the Service Manager console.  
 
-For general information about deploying a workflow to Service Manager, see [How to Deploy a Workflow to Service Manager](deploy-workflow.md).  
+For general information about deploying a workflow to Service Manager, see [Deploy a Workflow to Service Manager](deploy-workflow.md).  
 
 ### Move the assembly files  
+
+To move the assembly files, follow these steps:
 
 1. In Windows Explorer, open the folder in which you saved the management pack, and copy the **AddComputerToADGroupWF.dll** and **AddComputerToGroupFormAssembly.dll** files.  
 2. Open the Service Manager installation folder (for example, C:\Program Files\Microsoft System Center\Service Manager), and paste the copied files in that folder.  
@@ -185,6 +198,8 @@ In this step of the Woodgrove Bank customization scenario, Ken needs to bundle t
 
 ### Bundle the management pack file with its associated resource files  
 
+To bundle the management pack file, follow these steps:
+
 1. Ensure that the Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml file and its associated resource files, such as the Woodgrovebank.jpg image file and the AddComputerToGroupFormAssembly.dll file, are in the same folder. For example, put all the files in the AuthoringSample folder.  
 2. Copy the folder that contains the files to the Service Manager management server.  
 3. Bundle the files using the Windows PowerShell cmdlet [New\-SCSMManagementPackBundle](/previous-versions/system-center/powershell/system-center-2012-r2/hh316263(v=sc.20)). For example:  
@@ -194,6 +209,8 @@ In this step of the Woodgrove Bank customization scenario, Ken needs to bundle t
     ```  
 
 ### Import the management pack into Service Manager  
+
+To import the management pack, follow these steps:
 
 1. In the Service Manager console, select **Administration**.  
 2. In the **Administration** pane, expand **Administration**, and select **Management Packs**.  
@@ -207,7 +224,9 @@ In this step of the Woodgrove Bank customization scenario, Ken extends the **Cha
 
 The following procedure provides only high-level steps for creating a new list item in the Service Manager console. For the complete procedure for creating a new list item, see [How to Add a List Item](group-queue-lists.md).  
 
-### Create a new list item  
+### Create a list item 
+
+To create a list item, follow these steps:
 
 1. In the Service Manager console, select **Change Area Enumeration** as the list to edit.  
 2. Specify **Compliance** as the new value to add to this list.  
@@ -222,6 +241,8 @@ When Ken works with a compliance change request, they need to easily access the 
 
 ### Create a new task  
 
+To create a new task, follow these steps:
+
 1. In the Service Manager console, specify the task name: **Start Active Directory Users and Computers**.  
 2. Specify the target class: **Change Request**.  
 3. Specify the management pack in which to save this customization: **Service Manager Change Management Configuration Library**.  
@@ -231,9 +252,13 @@ When Ken works with a compliance change request, they need to easily access the 
 
 ## Step 8 - Create a new view
 
+To create a view, follow these steps:
+
 To continue with the customizations in the Woodgrove Bank scenario, in this step, Ken creates the **Compliance Change Requests** view that will display only change requests of the **Compliance** type. Ken saves the new view to the **Service Manager Change Management Configuration Library** management pack. Users can monitor these change requests in the Service Manager console.  
 
-### Create a new view  
+### Create a new view 
+
+To create a view, follow these steps:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Change Management**.  
@@ -253,6 +278,8 @@ In this step of the Woodgrove Bank customization scenario, Ken creates a templat
 
 ### Create a new template  
 
+To create a template, follow these steps:
+
 1. In the Service Manager console, specify the following as the name of the template: **Apply AppLocker Software Policy to Computer**.  
 2. Set the class to **Change Request**.  
 3. Set the management pack to **WoodGrove Automated Activity: Add Computer to AD Group**.  
@@ -269,7 +296,9 @@ If System Center - Service Manager is configured with a Simple Mail Transfer Pro
 
 The following procedure provides only the high-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](./notifications.md).  
 
-### Create an email notification template and subscription  
+### Create an email notification template and subscription 
+
+To create an email notification template and subscription, follow these steps:
 
 1. In the Service Manager console, create a new notification email template. In the **Administration** pane, select **Notifications**, and select **Templates**. In the **Tasks** pane, select **Create E-mail Template**, and then complete the Create E-Mail Notification Template Wizard.  
 2. On the **General** page, specify the **Name** to be **AppLocker Policy Notification Template**, and specify the **Class** as **Automated Activity: Add Computer to AD Group**. Specify **Management pack** to be **Woodgrove Automated Activity - Add Computer To Group**.  
@@ -288,6 +317,8 @@ The following procedure provides only the high-level steps for creating the **Co
 In this final step of the Woodgrove Bank customization scenario for System Center - Service Manager, Ken tests the new change request process and uses all its related customized objects. Ken creates a compliance change request to add the new ADComputer1 computer to the GP_AUTHAPPS group in Active Directory Domain Services (AD DS). Ken follows the process in the Service Manager console as it changes status while progressing from the first activity to the next.  
 
 ### Create a compliance change request  
+
+To create a compliance change request, follow these steps:
 
 1. Start the Active Directory Users and Groups tool by using the **Start Active Directory Users and Computers** task. Ensure that it doesn't contain the **ADComputer1** computer that you're about to add.  
 2. In the Service Manager console, select **Work Items**, and then in the **Work Items** pane, expand **Change Management**.  

@@ -3,10 +3,9 @@ ms.assetid: 4cdcce73-c9a2-4795-89bc-6d51ee04cd3c
 title: Configuring Run As profiles in Management Pack for SQL Server Dashboards
 description: This article explains how to configure run as profiles
 author: Anastas1ya
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---

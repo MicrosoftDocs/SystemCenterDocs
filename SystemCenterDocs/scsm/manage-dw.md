@@ -5,13 +5,13 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/02/2025
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---

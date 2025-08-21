@@ -1,18 +1,18 @@
 ---
-title: Get Deployment Status activity.
+title: Get Deployment Status Activity
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 08/07/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
@@ -21,6 +21,8 @@ The Get Deployment Status activity is used to retrieve the status of an
 application, program, task sequence, or software update deployment
 assigned to a computer or collection to determine if a software
 deployment action has completed.
+
+This article describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 
 To deploy an application (using the new Configuration Manager
 application model), use the **Deploy Application** activity. To deploy a
@@ -38,7 +40,7 @@ activity.
     - Software Update
 - Filters: Filters available are dependent on the type of deployment selected. Filters modify the query sent to Configuration Manager so that the data returned to Orchestrator is already limited to desired results. This improves performance over returning all data and filtering at the Orchestrator server.
 
-To add new filter criteria:
+To add new filter criteria, follow these steps:
 
 1. Select **Add** and select the property on which to filter.
 2. Select a **Relation** and then enter a value for the filter.
@@ -49,6 +51,8 @@ To add new filter criteria:
 
 The following values are published in addition to the input values
 above:
+
+
 
 |Element|Description|
 |---|---|
@@ -151,7 +155,7 @@ Deployment Types.
 |AssignmentName|Name of the advertisement (deployment)|
 |AssignmentUniqueID|GUID of the application|
 |CollectionID|ID of the collection this resource belongs to|
-|CollectionName|The name of the collection|
+|CollectionName|Name of the collection|
 |DeviceName|Name of the device where the update is targeted|
 |IsCompliant|True or False|
 |IsMachineAssignedToUser|True or False. True if the machine is assigned to a user.|
@@ -175,13 +179,16 @@ Deployment Types.
 |UserID |User ID|
 |VMHostName|If the device is a virtual machine, the name of the host for the VM|
 
+
 ## Configure the Get Deployment Status activity
+
+To configure the Get Deployment Status activity, follow these steps:
 
 1. From the **Activities** pane, drag a **Get Deployment Status**
     activity to the active runbook.
 2. Double-click the **Get Deployment Status** activity icon. The
     **Properties** dialog opens.
-3. Configuring the **Details** tab:
+3. Configure the **Details** tab:
     1. In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
         connection that you want to use for this activity. Select **OK**.

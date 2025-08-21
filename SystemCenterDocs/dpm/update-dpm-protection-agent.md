@@ -1,12 +1,11 @@
 ---
 description: This article describes how to update protection agents for both connected and disconnected client computers.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
-title: Update the DPM protection agent
+ms.date: 04/22/2025
+title: Update the DPM Protection Agent
 ms.subservice: data-protection-manager
 ms.assetid: 
 ms.custom: na
@@ -26,7 +25,7 @@ To update a protection agent for a connected client computer, follow these steps
 
 2. Select the client computers on which you want to update the protection agent.
 
-     >[!Note]
+     >[!NOTE]
      >The **Agent Updates** column indicates the protection agent updates available for each protected computer. The **Update** action in the **Actions** pane isn't enabled when a protected computer is selected unless updates are available.
 
 3. To install updated protection agents on selected computers, select **Update** in the **Actions** pane.
@@ -39,7 +38,7 @@ To update a protection agent on a disconnected client computer, follow these ste
 
 2. Select the client computers on which you want to update the protection agent.
 
-     >[!Note]
+     >[!NOTE]
      >The **Agent Updates** column indicates the protection agent updates available for each protected computer. The **Update** action in the **Actions** pane isn't enabled when a protected computer is selected unless updates are available.
 
 3. To install updated protection agents on selected computers, select **Update**.
@@ -47,3 +46,5 @@ To update a protection agent on a disconnected client computer, follow these ste
       For client computers that aren't connected to the network, **Update Pending** appears in the **Agent Status** column until the computer is connected to the network.
 
       After a client computer is connected to the network, **Updating** appears on the **Agent Updates** column for the client computer.
+
+

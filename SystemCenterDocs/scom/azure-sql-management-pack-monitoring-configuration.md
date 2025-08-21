@@ -1,16 +1,15 @@
 ---
-title: Monitoring scenarios in Management Pack for Azure SQL Database
+title: Monitor Scenarios in Management Pack for Azure SQL Database
 description: Learn about monitoring configurations in Management Pack for Azure SQL Database.
-author: FKornilov
-ms.author: v-fkornilov
-manager: ebruersan
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/24/2025
+author: jyothisuri
+ms.author: jsuri
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Monitoring scenarios in Management Pack for Azure SQL Database
+# Monitor scenarios in Management Pack for Azure SQL Database
 
 This article describes monitoring scenarios that Management Pack for Azure SQL Database supports.
 
@@ -76,25 +75,17 @@ Elastic pools provide a simple resource allocation mechanism for managing and sc
 
 Most database performance monitors aren't active by default because the appropriate thresholds are determined based on monitored database applications.
 
-To turn on an inactive database application  monitor:
+To turn on an inactive database application  monitor, follow these steps:
 
 1. Determine the correct threshold values to use based on expected usage patterns or observed resource consumption.
 1. Override one or more of the monitors to adjust the thresholds and to make them active.
 
 The following monitors aren't active by default:
 
-- Connections
-  - Count of Failed Connection
-  - Count of connections blocked by the Firewall
-- Sessions
-  - Sessions Count
-  - Sessions Average Memory
-  - Sessions Rows Returned
-  - Sessions Total CPU Time
-  - Sessions Total I/O
-  - Sessions Total Memory
-- Transactions
-  - Transaction Locks Count
-  - Transaction Log Space Used
-  - Transaction Execution Time
-- Geo-Replication Link State
+|Title|Description|
+|-|-|
+|Connections| Count of Failed Connection <br> Count of connections blocked by the Firewall|
+|Sessions| Sessions Count <br> Sessions Average Memory <br> Sessions Rows Returned <br> Sessions Total CPU Time <br> Sessions Total I/O <br>  Sessions Total Memory|
+|Transactions| Transaction Locks Count <br> Transaction Log Space Used <br> Transaction Execution Time|
+|Geo-Replication Link State||
+

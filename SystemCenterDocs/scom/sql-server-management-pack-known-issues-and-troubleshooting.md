@@ -3,10 +3,9 @@ ms.assetid: 08ad3749-84b9-4411-8a6c-559ce5e308e6
 title: Known issues and troubleshooting in Management Pack for SQL Server
 description: This article explains known issues and troubleshooting in Management Pack for SQL Server
 author: epomortseva
-ms.author: v-fkornilov
-manager: evansma
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: troubleshooting-known-issue
 ms.service: system-center
 ms.subservice: operations-manager
 ---

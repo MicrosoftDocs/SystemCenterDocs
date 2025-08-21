@@ -3,17 +3,17 @@ title: Read Line
 description: This article describes the Read Line activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/25/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 0ab7c54c-88fa-41fd-87be-00f959384b7d
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Read Line
 

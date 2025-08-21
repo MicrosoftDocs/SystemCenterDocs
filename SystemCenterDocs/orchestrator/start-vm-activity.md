@@ -7,13 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: f16bf32e-0018-4d47-96c4-a90a79d1d37f
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Start VM Activity
 

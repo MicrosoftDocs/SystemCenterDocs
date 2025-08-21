@@ -3,17 +3,16 @@ title: Update Mailbox
 description: You can use the Update Mailbox activity to modify the settings of an existing mailbox in an on-premises or online environment.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 007cf7ee-d6d6-4d31-9279-65153f5f94fa
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 ---
 # Update Mailbox
 

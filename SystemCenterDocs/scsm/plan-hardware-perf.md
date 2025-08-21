@@ -1,19 +1,18 @@
 ---
-title: Plan for hardware performance
+title: Plan for Hardware Performance
 description: Describes planning considerations for Service Manager hardware performance.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/22/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: how-to
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Plan for Service Manager hardware performance
 
-
+This article describes planning considerations for Service Manager hardware performance.
 
 An important part of System Center - Service Manager performance depends on the hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you're planning for adequate hardware performance.  
 
@@ -21,12 +20,12 @@ An important part of System Center - Service Manager performance depends on the 
 
 The following are the hardware bottlenecks that are most noticeable in Service Manager, with a significant load and amount of data in the Service Manager database:  
 
-1. The most common bottleneck is memory and I/O on the computer that is running Microsoft SQL Server. If you've the resources, investing in more memory and a faster I/O subsystem to improve SQL Server I/O will achieve better performance.  
-2. If you expect to have many consoles connecting to a management server, you can improve performance to handle peak load by investing in additional CPUs and memory for the management server or by installing a secondary Service Manager management server.  
+- The most common bottleneck is memory and I/O on the computer that is running Microsoft SQL Server. If you've the resources, investing in more memory and a faster I/O subsystem to improve SQL Server I/O will achieve better performance.  
+- If you expect to have many consoles connecting to a management server, you can improve performance to handle peak load by investing in additional CPUs and memory for the management server or by installing a secondary Service Manager management server.  
 
 Be aware of the recommended minimum hardware for each role, as described in this document.  
 
-### The role of virtual machines  
+### Role of virtual machines  
 
 Many organizations use virtual machines to host Windows Server applications. Service Manager server roles, such as the management server and data warehouse server, are no exceptions. The use of virtual machines might range from all server roles being virtualized to some other combination of virtual and physical computers.  
 
@@ -74,4 +73,4 @@ Network latency was also tested in the baseline. Network latency was introduced 
 
 ## Next steps
 
-- To read general guidelines to consider when you're planning for Service Manager software performance, review [Service Manager performance](sm-perf.md).
+To read general guidelines to consider when you're planning for Service Manager software performance, review [Service Manager performance](sm-perf.md).

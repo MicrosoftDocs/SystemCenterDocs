@@ -1,18 +1,19 @@
 ---
 ms.assetid: 3b14cd1e-ad34-43e0-8139-50cc9bd10789
-title: Upgrade information for System Center Service Management Automation.
-description: This article details the upgrade information and procedures for Service Management Automation.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+title: Upgrade Information for System Center Service Management Automation
+description: This article details the upgrade information and procedures for Service Management Automation. 
+author: jyothisuri
+ms.author: jsuri
+ms.date: 07/24/2025
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Upgrade Service Management Automation
+
+This article details the upgrade information and procedures for Service Management Automation.
 
 ::: moniker range="=sc-sma-2025"
 
@@ -54,4 +55,4 @@ This article provides the upgrade information for System Center 2016 - Service M
 
 ## Next steps
 
-- [Author Runbooks](authoring-automation-runbooks.md).
+[Author Runbooks](authoring-automation-runbooks.md).

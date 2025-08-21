@@ -2,27 +2,29 @@
 title: System
 description: This article provides information about the tasks that you can do using System activities. 
 ms.custom: UpdateFrequency5, engagement-fy23, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/23/2025
+ms.update-cycle: 1825-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 441c0d81-a1d5-4218-bbe8-54184f1deb62
 caps.latest.revision: 6
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # System
+
+This article provides information about the tasks that you can do using System activities.
 
 The following table provides a brief description of tasks you can accomplish when using each System activity.  
 
 |Tasks|System Activities|  
 |-----------|-----------------------|  
 |Run any program or command on any computer in your domain.|[Run Program](run-program.md)|  
-|Run scripts that parse data or run functions against available APIs.|[Run .Net Script](run-net-script.md)|  
+|Run scripts that parse data or run functions against available APIs.|[Run .NET Script](run-net-script.md)|  
 |End processes that are running on the runbook server or on a remote computer.|[End Process](end-process.md)|  
 |Start, stop, pause, or restart a Windows service.|[Start/Stop Service](start-stop-service.md)|  
 |Restart a computer on your network.|[Restart System](restart-system.md)|  

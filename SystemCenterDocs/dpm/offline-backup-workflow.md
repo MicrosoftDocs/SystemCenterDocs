@@ -1,15 +1,14 @@
 ---
 description: This article explains the offline backup workflow for DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Offline backup for DPM
+ms.date: 04/24/2025
+title: Offline Backup for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 monikerRange: '>=sc-dpm-2019'
 ---
@@ -44,7 +43,7 @@ With the offline-seeding capability of Data Protection Manager and the Azure Imp
 
 ## Prerequisites
 
-Ensure that the following prerequisites are met before you start the offline backup workflow:
+Before you start the offline backup workflow, ensure that the following prerequisites are met:
 
 * A [Recovery Services vault](/azure/backup/backup-azure-recovery-services-vault-overview) has been created. To create one, follow the steps in [Create a Recovery Services vault](/azure/backup/tutorial-backup-windows-server-to-azure#create-a-recovery-services-vault).
 * Ensure that only the [latest version of Microsoft Azure Recovery Services agent](https://aka.ms/azurebackup_agent) is installed on the SC DPM or MABS and registered to Recovery Services vault.
@@ -56,13 +55,16 @@ Ensure that the following prerequisites are met before you start the offline bac
 * On the DPM or MABS server, ensure Microsoft Edge or Internet Explorer 11 is installed, and JavaScript is enabled.
 * Create an Azure Storage account in the same subscription as the Recovery Services vault.
 * Ensure that you have the [necessary permissions](/entra/identity/role-based-access-control/permissions-reference#application-administrator) to create the Microsoft Entra application. The Offline Backup workflow creates a Microsoft Entra application in the subscription associated with the **Azure Storage account**. This application allows the **Azure Backup Service** a *secure and scoped access* to the **Azure Import Service**, required for the Offline Backup workflow.
-* Register the Microsoft.DataBox resource provider with the subscription containing the Azure Storage account. To register the resource provider:
-    1. In the main menu, select **Subscriptions**.
-    2. If you're subscribed to multiple subscriptions, select the subscription you're using for the offline backup. If you use only one subscription, then your subscription appears.
-    3. In the subscription menu, select **Resource Providers** to view the list of providers.
-    4. In the list of providers scroll down to Microsoft.DataBox. If the Status is NotRegistered, select **Register**.
+* Register the Microsoft.DataBox resource provider with the subscription containing the Azure Storage account.
 
-       :::image type="content" source="./media/offline-backup-workflow/register-import-export-inline.png" alt-text="Screenshot shows how to register the resource provider." lightbox="./media/offline-backup-workflow/register-import-export-expanded.png":::
+To register the resource provider, follow these steps:
+
+1. In the main menu, select **Subscriptions**.
+2. If you're subscribed to multiple subscriptions, select the subscription you're using for the offline backup. If you use only one subscription, then your subscription appears.
+3. In the subscription menu, select **Resource Providers** to view the list of providers.
+4. In the list of providers scroll down to Microsoft.DataBox. If the Status is NotRegistered, select **Register**.
+
+    :::image type="content" source="./media/offline-backup-workflow/register-import-export-inline.png" alt-text="Screenshot shows how to register the resource provider." lightbox="./media/offline-backup-workflow/register-import-export-expanded.png":::
 
 * A staging location, which might be a network share or any additional drive on the computer, internal or external, with enough disk space to hold your initial copy, is created. For example, if you want to back up a 500-GB file server, ensure that the staging area is at least 500 GB. (A smaller amount is used due to compression.)
 * For disks sent to Azure, ensure that only 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](/azure/import-export/storage-import-export-requirements#supported-hardware) for the latest set of drives that the service supports.
@@ -73,6 +75,8 @@ Ensure that the following prerequisites are met before you start the offline bac
 The information in this section helps you complete the offline-backup workflow so that your data can be delivered to an Azure datacenter and uploaded to Azure Storage. If you have questions about the Import service or any aspect of the process, see the [Import service overview](/azure/import-export/storage-import-export-service) documentation referenced earlier.
 
 ## Initiate offline backup
+
+To initiate offline backup, follow these steps:
 
 1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and select **Next**.
 
@@ -109,6 +113,8 @@ The information in this section helps you complete the offline-backup workflow s
 ## Prepare SATA drives and ship to Azure
 
 The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent to the nearest Azure datacenter. This utility is available in the Data Protection Manager agent installation directory (in the following path): `*\Microsoft Azure Recovery Services Agent\Utils\\*`
+
+To prepare SATA drives and ship to Azure, follow these steps:
 
 1. Go to the directory and copy the **AzureOfflineBackupDiskPrep** directory to another computer where the SATA drives are connected. On the computer with the connected SATA drives, ensure:
 
@@ -169,8 +175,8 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
 
    :::image type="content" source="./media/offline-backup-workflow/confirmation-after-successful-tool-run-inline.png" alt-text="Screenshot shows the confirmation after tool is run successfully." lightbox="./media/offline-backup-workflow/confirmation-after-successful-tool-run-expanded.png":::
 
-   >[!Important]
-   >The tool also displays the Azure data centre address to which the disks need to be shipped along with a list of supported carriers.
+   >[!IMPORTANT]
+   >The tool also displays the Azure data center address to which the disks need to be shipped along with a list of supported carriers.
 
 Ship the disks to the address that the tool provided. Keep the tracking number for future reference and update it in the Azure portal as soon as possible.
 
@@ -185,7 +191,7 @@ This section helps you update the Azure import job shipping details, which inclu
 * Return-shipping details for your disks.
 * Modify the notification email for the import job.
 
-### Update the tracking details
+### [Update the tracking details](#tab/update-the-tracking-details)
 
 To update the tracking details, follow these steps:
 
@@ -207,7 +213,7 @@ To update the tracking details, follow these steps:
 
     :::image type="content" source="./media/offline-backup-workflow/shipping-information-inline.png" alt-text="Screenshot shows how to store shipping information." lightbox="./media/offline-backup-workflow/shipping-information-expanded.png":::
 
-### Add return-shipping details
+### [Add return-shipping details](#tab/add-return-shipping-details)
 
 To add the return-shipping details, follow these steps:
 
@@ -217,7 +223,7 @@ To add the return-shipping details, follow these steps:
 
  :::image type="content" source="./media/offline-backup-workflow/add-tracking-information-inline.png" alt-text="Screenshot shows how to add return shipping details." lightbox="./media/offline-backup-workflow/add-tracking-information-expanded.png":::
 
-### Edit notification email
+### [Edit notification email](#tab/edit-notification-email)
 
 To update the email addresses that are notified on the Import job progress, select **Edit notification details**.
 
@@ -226,16 +232,18 @@ To update the email addresses that are notified on the Import job progress, sele
 > [!IMPORTANT]
 > Ensure that the carrier information and tracking number are updated within two weeks of Azure import job creation. Failure to verify this information within two weeks can result in the job being deleted and drives not being processed.
 
-### Time to process the drives
+### [Time to process the drives](#tab/time-to-process-the-drives)
 
 The amount of time it takes to process an Azure import job varies. The process time depends on factors like shipping time, job type, type and size of the data being copied, and the size of the disks provided. The Azure Import/Export service doesn't have an SLA. After disks are received, the service strives to finish the backup data copy to your Azure storage account in 7 to 10 days. The next section describes how you can monitor the status of the Azure import job.
 
-### Monitor Azure import job status
+### [Monitor Azure import job status](#tab/monitor-azure-import-job-status)
 
 You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Azure Data Box](/azure/import-export/storage-import-export-view-drive-status?tabs=azure-portal-preview) page.
 
-### Complete the workflow
+### [Complete the workflow](#tab/complete-the-workflow)
 
 After the import job finishes, initial backup data is available in your storage account. At the time of the next scheduled backup, Data Protection Manager copies the contents of the data from the storage account to the Recovery Services vault.
 
 At the time of the next scheduled online replica creation job, Data Protection Manager performs incremental backup over the initial backup copy.
+
+---
