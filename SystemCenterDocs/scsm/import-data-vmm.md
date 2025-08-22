@@ -2,7 +2,7 @@
 title: Import Data from Virtual Machine Manager
 description: Describes how you can import data from Virtual Machine Manager into Service Manager.
 ms.topic: how-to
-ms.date: 04/28/2025
+ms.date: 08/22/2025
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Import data from Virtual Machine Manager into Service Manager
 
-This article describes how you can import data from Virtual Machine Manager into Service Manager.
+This article describes how to import data from Virtual Machine Manager into Service Manager.
 
 You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager (VMM) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
 
@@ -56,7 +56,7 @@ To create a System Center Virtual Machine Manager connector, follow these steps:
 
 ### Validate the creation of a System Center Virtual Machine Manager connector
 
-To validate the creation of an SCVMM connector, follow these steps:
+To validate the creation of a System Center Virtual Machine Manager, follow these steps:
 
 1. In the **Connectors** pane, locate the System Center Virtual Machine Manager connector that you created.
 
@@ -115,7 +115,7 @@ To manually synchronize a VMM connector, follow these steps:
 
 ### Validate the synchronization of a Virtual Machine Manager connector
 
-To validate that a VMM connector is synchronized, follow these steps:
+To validate the synchronization of a Virtual Machine Manager connector, follow these steps:
 
 1. In the Service Manager console, select **Connectors**.
 
@@ -128,7 +128,7 @@ To validate that a VMM connector is synchronized, follow these steps:
 
 You can use the following procedures to disable or enable a Virtual Machine Manager connector and validate the status of the connector.
 
-### [Disable a virtual Machine Manager connector](#tab/disable-a-virtual-machine-manager-connector)
+### Disable a virtual Machine Manager connector
 
 To disable a VMM connector, follow these steps:
 
@@ -142,7 +142,7 @@ To disable a VMM connector, follow these steps:
 
 5. In the **Disable Connector** dialog, select **OK**.
 
-### [Enable a virtual Machine Manager connector](#tab/enable-a-virtual-machine-manager-connector)
+### Enable a virtual Machine Manager connector
 
 To enable a VMM connector, follow these steps:
 
@@ -154,13 +154,11 @@ To enable a VMM connector, follow these steps:
 
 4. In the **Enable Connector** dialog, select **OK**.
 
-### [Validate the status change of a virtual Machine Manager connector](#tab/validate-the-status-change-of-a-virtual-machine-manager-connector)
+### Validate the status change of a virtual Machine Manager connector
 
 To validate the status change of a VMM connector, follow this step:
 
 In the middle pane, locate the connector for which you've changed status, and then verify the value in the **Enabled** column.
-
----
 
 ## Next steps
 

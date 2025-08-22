@@ -1,8 +1,8 @@
 ---
 ms.assetid: 715a0ed4-8936-4b43-ad1b-024465e0605e
-title: Add Knowledge to a Management Pack
+title: Add Knowledge to a management pack
 description: This article describes how to add custom knowledge to a workflow in a management pack.
-ms.date: 04/28/2025
+ms.date: 08/22/2025
 author: jyothisuri
 ms.author: jsuri
 ms.custom: na
@@ -30,7 +30,7 @@ To add or edit company knowledge, the computer must meet the following software 
 
 To add or edit company knowledge, you must have the Author or Administrator user role.  
 
-## To edit company knowledge 
+## Edit company knowledge
 
 To edit company knowledge, follow these steps:
 

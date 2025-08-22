@@ -2,7 +2,7 @@
 ms.assetid: 5523da23-09d3-4b34-b7a9-af2dbde9e64b
 title: Manage Mirrored SQL Servers
 description: This article provides information about how to manage mirrored SQL servers in System Center DPM.
-ms.date: 04/28/2025
+ms.date: 08/22/2025
 author: jyothisuri
 ms.author: jsuri
 ms.topic: concept-article
@@ -13,7 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Back up mirrored SQL servers with DPM
 
-This article provides information about how to manage mirrored SQL servers in System Center DPM. System Center – Data Protection Manager (DPM) protects SQL Server databases and clusters that use SQL Server mirroring technology. This support doesn't translate into any major changes in the procedure to protect or recover SQL Server databases in DPM.
+This article describes how to manage mirrored SQL servers in System Center DPM. System Center – Data Protection Manager (DPM) protects SQL Server databases and clusters that use SQL Server mirroring technology. This support doesn't translate into any major changes in the procedure to protect or recover SQL Server databases in DPM.
 
 The following sections call out any changes in the procedure:
 

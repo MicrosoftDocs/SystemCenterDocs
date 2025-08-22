@@ -2,7 +2,7 @@
 title: Get VM Instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/28/2025
+ms.date: 08/22/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
