@@ -405,7 +405,7 @@ Operations Manager generates an alert when an imported certificate for Managemen
 5. Select the option that best applies to what you want to do and follow the wizard.
 6. Once completed, run the `MOMCertImport.exe` tool to ensure Operations Manager has the new serial number of the certificate. For more information, see the [Import the certificate into Operations Manager](#import-the-certificate-into-operations-manager) section.
 
-If certificate renewal via this method isn't available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager.
+If certificate renewal via this method isn't available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager. 
 
 ### Optional: Configure certificate auto-enrollment and renewal
 
