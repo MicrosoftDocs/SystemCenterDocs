@@ -2,22 +2,21 @@
 title: Get Computer
 description: You can use the Get Computer activity in a runbook to get the properties of a computer in Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 11/01/2024
+ms.date: 04/24/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: a2d782b3-10c2-453c-bb23-47ff4f7b0047
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Computer
 
-You can use the Get Computer activity in a runbook to get the properties of a computer in Active Directory.
+In this article you'll learn about the Get Computer activity used in a runbook to get the properties of a computer in Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 

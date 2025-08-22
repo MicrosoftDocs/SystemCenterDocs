@@ -3,16 +3,16 @@ title: Get Remote Mailbox (Hybrid)
 description: You can use the Get Remote Mailbox (Hybrid) activity to retrieve the mail-related attributes of one or more users in on-premises Active Directory that are associated with mailboxes in the cloud-based service (hybrid environment).
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 8172f3a7-8890-4ef1-9c0f-ff6d81ec9f33
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Remote Mailbox (Hybrid)

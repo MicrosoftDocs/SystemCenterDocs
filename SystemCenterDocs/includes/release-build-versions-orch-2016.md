@@ -1,9 +1,8 @@
 ---
 title: System Center 2016 - Orchestrator Release Build Versions
 description: Include file that shows the list of release builds for System Center 2016 - Orchestrator.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/15/2023
 ms.custom: na
 ms.service: system-center

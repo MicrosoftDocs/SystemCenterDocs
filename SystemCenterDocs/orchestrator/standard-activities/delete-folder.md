@@ -1,23 +1,23 @@
 ---
-title: Delete Folder activity
+title: Delete Folder Activity
 description: This article describes the Delete Folder activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 7bd72977-b6e1-4d20-af6e-42354f986c5b
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Delete Folder
 
-The Delete Folder activity deletes a folder, subfolders, or the entire folder tree of a directory on the local file system or a network location specified using a UNC path. You can delete temporary folders that were created when a runbook runs or you can use this activity to purge data that has been recently archived.  
+This article describes the Delete Folder activity. The Delete Folder activity deletes a folder, subfolders, or the entire folder tree of a directory on the local file system or a network location specified using a UNC path. You can delete temporary folders that were created when a runbook runs or you can use this activity to purge data that has been recently archived.  
 
 ## Configure the Delete Folder Activity
 

@@ -2,22 +2,22 @@
 title: Read Line
 description: This article describes the Read Line activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 0ab7c54c-88fa-41fd-87be-00f959384b7d
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Read Line
 
-The Read Line activity reads lines from a text file. You can use the Read Line activity to read lines from a text file and pass them to another activity using published data.  
+This article describes the Read Line activity. The Read Line activity reads lines from a text file. You can use the Read Line activity to read lines from a text file and pass them to another activity using published data.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 

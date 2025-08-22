@@ -25,7 +25,7 @@
       href: deploy-spf.md
   - name: Manage
     items:
-    - name: Register SPF in Microsoft Azure Pack
+    - name: Register SPF in Windows Azure Pack
       href: manage-register-spf.md
     - name: Manage tenants and user roles
       href: manage-tenants.md

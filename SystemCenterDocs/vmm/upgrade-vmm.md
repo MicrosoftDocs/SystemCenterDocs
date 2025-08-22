@@ -2,11 +2,11 @@
 ms.assetid: 1d93218a-4fa8-4783-bf12-bd8d2b04fb9d
 title: Upgrade information for Virtual Machine Manager
 description: This article details the upgrade information and procedures for Virtual Machine Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.update-cycle: 180-days
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24

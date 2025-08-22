@@ -1,14 +1,13 @@
 ---
 description: This article describes the scheduling options for long-term protection.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.date: 04/22/2025
 title: Modify long-term backup schedule
 ms.subservice: data-protection-manager
 ms.assetid:
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Modify long-term backup schedule

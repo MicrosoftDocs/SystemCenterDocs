@@ -2,11 +2,10 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Set up TLS 1.3 for VMM
 description: This article provides instructions for setting up TLS 1.3 with VMM
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/13/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: sc-vmm-2025
@@ -28,7 +27,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 - Security fixes should be up to date on the VMM server and the server running the VMM database.
 - The VMM server should be running .NET version 4.6 or later. Follow [these instructions](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed) to determine which version of .NET is installed.
-- •	TLS 1.3. requires TLS 1.2. to be configured.
+- TLS 1.3. requires TLS 1.2. to be configured.
 - To work with TLS 1.3, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2.
 
 ## Configure the VMM server to use TLS 1.3

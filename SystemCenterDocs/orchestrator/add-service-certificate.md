@@ -8,12 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 5c12e8ec-fdc2-40c9-b217-5f598f9b93ad
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-robots: noindex
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ---
 # Add Service Certificate

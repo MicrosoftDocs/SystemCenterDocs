@@ -3,10 +3,10 @@ ms.assetid: 29b787f9-5c1f-4d08-a9a0-9c0a9b9075e1
 title: Manual Monitoring Template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure manual monitoring template in Management Pack for Azure SQL Managed Instance
 author: epomortseva
-ms.author: v-fkornilov
 manager: evansma
 ms.date: 04/28/2025
-ms.topic: how-to
+ms.author: jsuri
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
@@ -80,4 +80,4 @@ At this step, review all the configuration and connection settings and select **
 
 ## Related content
 
-[Security configuration in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-security-configuration.md)
+- [Security configuration in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-security-configuration.md)

@@ -1,14 +1,14 @@
 ---
 description: Descriptions of the new features in System Center DPM
-ms.topic: article
+ms.topic: whats-new
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 06/27/2025
+ms.update-cycle: 180-days
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
@@ -237,7 +237,7 @@ For issues fixed and the installation instructions for UR6, see [KB article](h
 DPM 2019 UR6 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](/system-center/dpm/monitor-dpm).
 
 >[!NOTE]
->If you have been using M365 SMTP with DPM 2019 UR5, you must re-enter the credentials using Basic Authentication.
+>If you have been using Microsoft 365 SMTP with DPM 2019 UR5, you must re-enter the credentials using Basic Authentication.
 
 ### Experience improvements for DPM backups to Azure
 
@@ -419,7 +419,7 @@ The new method has the following advantages:
 
 - Reduces backup time up to 15% since file catalog metadata (list of files in a recovery point) isn't generated during backup.
 
-- Item level recovery errors due to inconsistent file catalog metadata is avoided, since iSCSI mounts are used.
+- Item level recovery errors due to inconsistent file catalog metadata are avoided, since iSCSI mounts are used.
 
 - After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
 

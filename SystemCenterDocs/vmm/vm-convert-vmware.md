@@ -2,16 +2,14 @@
 ms.assetid: 28a3bb81-979c-4ebe-aa07-7ba7ecfb6efc
 title: Convert a VMware VM to Hyper-V in the VMM fabric
 description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 12/18/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/22/2025
+ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager
 ---
-
 
 # Convert a VMware VM to Hyper-V in the VMM fabric
 
@@ -97,7 +95,23 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 1. Select **VMs and Services** > **Home** > **Create** > **Create Virtual Machines** > **Convert Virtual Machine**.
 2. In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VMs you want to convert.
 3. In **Specify Virtual Machine Identity**, modify the machine name and description as required.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
+
 4. In **Virtual Machine Configuration**, specify the number of processors and memory settings.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+
+4. In **Virtual Machine Configuration**, specify the number of processors and memory settings. Choose **Generation 2** if the source VMware VM is configured with UEFI firmware or choose **Generation 1** if the source VMware VM is configured with BIOS firmware.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+
 5. In **Select Host**, select a Hyper-V host/Azure Local machine (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
 6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
@@ -105,40 +119,21 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
    Verify the VM's conversion in **VMs and Services** > **Home** > **Show** > **VMs**.
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+::: moniker range="sc-vmm-2016"
 
 ## Convert EFI-based VM to Hyper-V Generation 2 VM
 System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of Generation 2 features.
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+::: moniker range="sc-vmm-2022"
 
-The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
+>[!Note]
+>On converting VMware BIOS-based VMs with more than four disks, not all disks gets attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after converting the VM.
 
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
-
-- BIOS-based VMs are migrated to Hyper-V VM Generation 1.
-- EFI-based VMs are migrated to Hyper-V VM Generation 2.
-
-### Before you start
-
-Ensure the following prerequisites are met:
-
-- VMware VMs with firmware type as EFI
-- VMware ESXi Hosts added in System Center VMM
-
-### Conversion procedure
-
-1. To convert, follow the [above procedure](#convert-using-the-wizard) and select **Generation 2** in step 4.
-
-    :::image type="content" source="media/vm-convert-vmware/vm-conversion-select-gen2.png" alt-text="Screenshot of Configure VM conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-select-gen2.png":::
-
-2. Once the VM is converted, you can see the Generation 2 VM as shown in the image below:
-
-    :::image type="content" source="media/vm-convert-vmware/vm-conversion-gen2-created.png" alt-text="Screenshot of vm conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-gen2-created.png":::
 
 > [!NOTE]
 > - PowerShell commands allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
@@ -165,6 +160,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 ::: moniker-end
 
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+
 ## Convert VMware VMs to Hyper-V faster
 
 - As a prerequisite to start converting VMware VMs to Hyper-V four times faster, upgrade to SCVMM 2022 UR2 or later.
@@ -177,6 +173,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 
 :::moniker range="sc-vmm-2025"
+
 VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) conversion.
 
 >[!Important]
@@ -253,7 +250,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
-5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings.
+5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. Choose **Generation 2** if the source VMware VM is configured with UEFI firmware or choose **Generation 1** if the source VMware VM is configured with BIOS firmware.
 
 6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
@@ -262,6 +259,10 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 8.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
 9.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
+
+>[!Note]
+>On converting VMware BIOS-based VMs with more than four disks, not all disks gets attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after converting the VM.
+
 
 >[!Note]
 >After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
@@ -292,10 +293,11 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 >[!Note]
 >Non-Microsoft migration options are provided by Microsoft partners. These options are available to you at an additional cost but can help reduce the VM downtime during migration. The following non-Microsoft migration options are available:<br>
->- [Commvault](https://documentation.commvault.com/11.20/converting_from_vmware_to_hyper_v.html)
+>- [Commvault](https://docs.commvault.com/2024e/expert/converting_from_vmware_to_hyper_v.html)
 >- [Zerto](https://www.zerto.com/blog/migrations-data-mobility/how-to-easily-migrate-from-vmware-to-hyper-v-with-zerto/)
 >- [Veeam](https://www.veeam.com/blog/vmware-to-hyper-v-migration.html)
 >- [Carbonite](https://www.carbonite.com/business/products/migration/)
+>- [NAKIVO](https://www.nakivo.com/blog/how-to-convert-vmware-vm-to-hyper-v/)
 :::moniker-end
 
 ## Next steps

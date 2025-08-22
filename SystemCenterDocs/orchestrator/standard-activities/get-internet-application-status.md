@@ -2,31 +2,31 @@
 title: Get Internet Application Status
 description: This article describes the functionality of Get Internet Application Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 83143603-d47b-4162-8932-f91eb9cac53b
 caps.latest.revision: 18
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Get Internet Application Status
 
-The Get Internet Application Status activity checks the availability of an internet application server. You can check the availability of a Web (HTTP), Email (SMTP), Email (POP3), FTP, DNS, or custom server. You can also configure a server so that it's available after a power outage or a restart.  
+This article describes the functionality of Get Internet Application Status activity. The Get Internet Application Status activity checks the availability of an internet application server. You can check the availability of a Web (HTTP), Email (SMTP), Email (POP3), FTP, DNS, or custom server. You can also configure a server so that it's available after a power outage or a restart.  
 
 ## Configure the Get Internet Application Status Activity
 
- Use the following information to configure the Get Internet Application Status activity.  
+Use the following information to configure the Get Internet Application Status activity.  
 
 > [!NOTE]
 > You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
-### General Tab  
+### [General Tab](#tab/general-tab)  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -34,7 +34,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Description**|Enter a detailed description of the actions of the activity.|  
 |**Type**|Select the **Type** that matches the server that you want to monitor. The options include the following:<br /><br /> -   Web (HTTP)<br />-   E-mail (SMTP)<br />-   E-mail (POP3)<br />-   FTP<br />-   DNS<br />-   Custom<br /><br /> Configuration instructions for each **Details** tab **Type** are listed in the following tables.|  
 
-### Web (HTTP) Details Tab
+### [Web (HTTP) Details Tab](#tab/web-http-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -44,7 +44,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Check that the page contains this string**|Select and enter a string to search for when the page is retrieved from the web server. When this option is selected, the server is only considered available if the string can be found on the page that's specified by the **URL**.|  
 |**Search is case sensitive**|Select to make the string search case sensitive.|  
 
-### Email (SMTP) Details Tab
+### [Email (SMTP) Details Tab](#tab/email-smtp-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -55,7 +55,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**To**|Enter the address to send the email to.|  
 |**From**|Enter the address that the email is being sent from.|  
 
-### Email (POP3) Details Tab
+### [Email (POP3) Details Tab](#tab/email-pop3-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -66,7 +66,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Username**|Enter the username to use to sign in to the POP3 server.|  
 |**Password**|Enter the password that is associated with the **Username** that you've specified.|  
 
-### FTP Details Tab
+### [FTP Details Tab](#tab/ftp-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -77,7 +77,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Username**|Enter the username to use to sign in to the FTP server.|  
 |**Password**|Enter the password that's associated with the **Username** that you've specified.|  
 
-### DNS Details Tab
+### [DNS Details Tab](#tab/dns-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -86,7 +86,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Port**|Select to specify the port to use to connect to the DNS server.|  
 |**Test DNS table IP address**|Select to specify a computer name and the IP address that should be associated with that IP address. When this option is selected, the server is only considered available if the IP address is assigned to the computer that you specify.|  
 
-### Custom Details Tab
+### [Custom Details Tab](#tab/custom-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -98,9 +98,9 @@ The Get Internet Application Status activity checks the availability of an inter
 
  You can use a sequence of actions to test a custom Internet application that isn't part of the predefined list. You can perform actions such as opening and closing a port and communicating with the Internet application by sending and receiving information.  
 
-### Published Data
+### [Published Data](#tab/published-data)
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
@@ -119,3 +119,5 @@ The Get Internet Application Status activity checks the availability of an inter
 |Receive variable 8|The eighth variable retrieved when in Custom mode.|  
 |Receive variable 9|The ninth variable retrieved when in Custom mode.|  
 |Receive variable 10|The tenth variable retrieved when in Custom mode.|
+
+---

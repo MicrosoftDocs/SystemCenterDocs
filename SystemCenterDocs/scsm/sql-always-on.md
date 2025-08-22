@@ -1,13 +1,12 @@
 ---
-title: Using SQL Server AlwaysOn availability groups with Service Manager
+title: Using SQL Server AlwaysOn Availability Groups with Service Manager
 description: Use SQL Server AlwaysOn availability groups with Service Manager to support a failover environment.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.subservice: service-manager
 ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -41,10 +40,14 @@ Use the following tasks when you install a new management group with a SQL Alway
 
 ### Before installing Service Manager on an availability group
 
+Here are some considerations before you start installing Service Manager on an availability group:
+
 1. Ensure that you use the Group Listener Name and port when installing Service Manager for the databases that are going to be added to the availability databases.
 2. The first management server will use the Group Listener to get the primary SQL instance and will install the databases on that instance.
 
 ### After installing the first management server
+
+Here are some considerations after you have finished installing the first management server:
 
 1. Ensure that the recovery model of the database is full. Open **SQL Server Management Studio** and connect to the instance where the database(s) are installed. Right-click the targeted database, and select its **properties**  and then select  **Options**. If the recovery model isn't listed as **Full** , then select  **Full**  from the dropdown list.
 2. Create a full backup of the databases.
@@ -52,7 +55,7 @@ Use the following tasks when you install a new management group with a SQL Alway
 
 ## Use an existing management group
 
-Use the following series of tasks when using an existing management group with a SQL Server AlwaysOn availability group.
+Use the following series of tasks when using an existing management group with a SQL Server AlwaysOn availability group:
 
 1. Prepare SQL Server AlwaysOn setup separately. You might also consider SQL Server AlwaysOn with an FCI.
 2. Create an availability group listener(AGL) and choose an appropriate port number. Avoid the default port 1433. For example: AGL name = SMListener and AGL Port = 5122
@@ -66,4 +69,4 @@ To summarize, you're changing the computer name hosting the Service Manager data
 
 ## Next steps
 
-- To create a system image that contains the software needed for use as a template so that you can apply it to new servers, review [Create and deploy server images of Service Manager](deploy-sm-images.md).
+To create a system image that contains the software needed for use as a template so that you can apply it to new servers, review [Create and deploy server images of Service Manager](deploy-sm-images.md).

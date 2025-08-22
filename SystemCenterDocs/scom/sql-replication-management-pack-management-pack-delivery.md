@@ -1,17 +1,17 @@
 ---
 ms.assetid: 1d7cbdf6-687f-4d47-8d7e-cc9e07072e58
-title: Management Pack for SQL Server Replication delivery
-description: This article explains how to install Management Pack for SQL Server Replication
+title: Management pack for SQL Server Replication Delivery
+description: This article explains how to install management pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 07/24/2025
+ms.author: jsuri
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Management Pack for SQL Server Replication Delivery
+# Management pack for SQL Server Replication Delivery
 
 You can download Management Pack for SQL Server Replication from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=56204) or find it in the System Center Operations Manager Online Catalog.
 
@@ -43,17 +43,17 @@ After you download and unpack the **Microsoft.SQLServer.Windows.Replication.Mana
 
 ## Prerequisites
 
-The environment that you use must meet the following prerequisites before you start using Management Pack for SQL Server Replication:
+Before you use management pack for SQL Server Replication, ensure that the environment you use must meet the following prerequisites:
 
 - Install **.NET Framework 4.5** or higher.
 
 - Import both the **Management Pack for Windows Server Operating System** and the **Management Pack for SQL Server**
 
-- Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
+- Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enable Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
 
 >[!NOTE]
 >Management Pack for SQL Server Replication doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
-## Importing Management Pack
+## Import Management Pack
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
