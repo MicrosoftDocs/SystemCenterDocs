@@ -1,12 +1,12 @@
 ---
-title: Import data from Virtual Machine Manager
+title: Import Data from Virtual Machine Manager
 description: Describes how you can import data from Virtual Machine Manager into Service Manager.
 ms.topic: how-to
+ms.date: 08/22/2025
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Import data from Virtual Machine Manager into Service Manager
 
-
+This article describes how to import data from Virtual Machine Manager into Service Manager.
 
 You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager (VMM) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
 
@@ -55,6 +55,8 @@ To create a System Center Virtual Machine Manager connector, follow these steps:
     6. On the **Completion** page, ensure that you receive a *Virtual Machine Manager connector successfully created* message, and select **Close**.
 
 ### Validate the creation of a System Center Virtual Machine Manager connector
+
+To validate the creation of a System Center Virtual Machine Manager, follow these steps:
 
 1. In the **Connectors** pane, locate the System Center Virtual Machine Manager connector that you created.
 
@@ -101,6 +103,8 @@ To ensure that the Service Manager database is up to date, the Virtual Machine M
 
 ### Manually synchronize a Virtual Machine Manager connector
 
+To manually synchronize a VMM connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -109,7 +113,9 @@ To ensure that the Service Manager database is up to date, the Virtual Machine M
 
 4. In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
-### Validate that a Virtual Machine Manager connector synchronized
+### Validate the synchronization of a Virtual Machine Manager connector
+
+To validate the synchronization of a Virtual Machine Manager connector, follow these steps:
 
 1. In the Service Manager console, select **Connectors**.
 
@@ -124,6 +130,8 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 
 ### Disable a virtual Machine Manager connector
 
+To disable a VMM connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**.
 
 2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
@@ -136,6 +144,8 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 
 ### Enable a virtual Machine Manager connector
 
+To enable a VMM connector, follow these steps:
+
 1. In the Service Manager console, select **Administration**, and select **Connectors**.
 
 2. In the **Connectors** pane, select the Virtual Machine Manager connector that you want to enable.
@@ -146,8 +156,10 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 
 ### Validate the status change of a virtual Machine Manager connector
 
-1. In the middle pane, locate the connector for which you've changed status, and then verify the value in the **Enabled** column.
+To validate the status change of a VMM connector, follow this step:
+
+In the middle pane, locate the connector for which you've changed status, and then verify the value in the **Enabled** column.
 
 ## Next steps
 
-- Review the [Configuration items](config-items.md) article to learn about storing information about services, computers, software, software updates, users, and other undefined imported objects in the Service Manager database.
+Review the [Configuration items](config-items.md) article to learn about storing information about services, computers, software, software updates, users, and other undefined imported objects in the Service Manager database.

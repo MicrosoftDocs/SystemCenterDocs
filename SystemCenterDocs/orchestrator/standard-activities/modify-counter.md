@@ -2,7 +2,7 @@
 title: Modify Counter
 description: This article describes the functionality of Modify Counter activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/22/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.author: jsuri
 ---
 # Modify Counter
 
-The Modify Counter increments and decrements a counter, and resets it to its default value. It also sets it to a value you specify. Wherever you need to update the value of a counter, use the Modify Counter activity to update its value.  
+This article describes the functionality of Modify Counter activity. The Modify Counter increments and decrements a counter, and resets it to its default value. It also sets it to a value you specify. Wherever you need to update the value of a counter, use the Modify Counter activity to update its value.  
 
  The current value of a counter is specific for every runbook that uses that counter. The first time a counter is used, the default value that has been specified in the counters configuration will be used. You can only modify the value of counters in a runbook using the Modify Counter activity.  
 
@@ -29,7 +29,7 @@ The Modify Counter increments and decrements a counter, and resets it to its def
 
 - The type of update that will be made.  
 
-Use the following information to configure the Modify Counter activity.  
+Use the following information to configure the Modify Counter activity: 
 
 ### Details Tab  
 
@@ -41,7 +41,7 @@ Use the following information to configure the Modify Counter activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
