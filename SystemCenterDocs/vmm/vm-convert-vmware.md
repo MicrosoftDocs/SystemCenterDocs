@@ -4,7 +4,7 @@ title: Convert a VMware VM to Hyper-V in the VMM fabric
 description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 06/03/2025
+ms.date: 08/22/2025
 ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
@@ -293,7 +293,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 >[!Note]
 >Non-Microsoft migration options are provided by Microsoft partners. These options are available to you at an additional cost but can help reduce the VM downtime during migration. The following non-Microsoft migration options are available:<br>
->- [Commvault](https://documentation.commvault.com/11.20/converting_from_vmware_to_hyper_v.html)
+>- [Commvault](https://docs.commvault.com/2024e/expert/converting_from_vmware_to_hyper_v.html)
 >- [Zerto](https://www.zerto.com/blog/migrations-data-mobility/how-to-easily-migrate-from-vmware-to-hyper-v-with-zerto/)
 >- [Veeam](https://www.veeam.com/blog/vmware-to-hyper-v-migration.html)
 >- [Carbonite](https://www.carbonite.com/business/products/migration/)
