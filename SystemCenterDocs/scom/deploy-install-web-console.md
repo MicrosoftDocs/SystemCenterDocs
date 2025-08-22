@@ -19,7 +19,7 @@ You can install the web console when you install System Center - Operations Mana
 
 ::: moniker range=">=sc-om-2022"
 
-Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
+Installation of Reporting and Web Console will be successful, regardless of the updates installed on Operations Manager Management Server.
 
 ::: moniker-end
 
