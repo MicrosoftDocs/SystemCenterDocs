@@ -4,7 +4,7 @@ ms.topic: include
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 06/27/2025
+ms.date: 08/23/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -81,7 +81,7 @@ DPM 2022 UR2 supports item level recovery directly from online recovery points f
 DPM 2022 UR2 supports protection of VMware VMs running on vSphere 8.0. 
 
 >[!NOTE]
->Back up of vSphere [Data Sets](https://core.vmware.com/resource/vsphere-datasets) isn't supported. [Learn more](../dpm/back-up-vmware.md).
+>Back up of vSphere [Data Sets](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/managing-the-guest-operating-system-with-datasetsvsphere-vm-admin.html) isn't supported. [Learn more](../dpm/back-up-vmware.md).
 
 ### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
 
