@@ -10,6 +10,9 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
+>[!NOTE]
+>OpenSSL 3.0 is not supported.
+
 ## IBM AIX 7.2
 
 >[!NOTE]
