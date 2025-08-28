@@ -124,4 +124,4 @@ For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see t
 
 ### Support for latest guest Operating Systems
 
-With VMM 2022 UR3, you can run Windows Server 2025 VMs and Ubuntu Linux 24.04, RHEL 9, Debian 12, SLES 15, Rocky Linux 8 and 9 based Linux VMs.
+With VMM 2022 UR3, you can run Windows Server 2025 VMs and Ubuntu Linux 24.04, RHEL 9, Debian 12, Rocky Linux 8 and 9 based Linux VMs.
