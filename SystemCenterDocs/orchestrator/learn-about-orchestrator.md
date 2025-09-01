@@ -29,7 +29,7 @@ Using Orchestrator, you can:
 
 To know about the prerequisites, see [System requirements for System Center Orchestrator](./system-requirements-orch.md).
 
-For updates on the releases, capabilities and enhancements of Orchestrator, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog) for System Center.
+For updates on the releases, capabilities and enhancements of System Center, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog).
 
 ## Orchestrator architecture
 

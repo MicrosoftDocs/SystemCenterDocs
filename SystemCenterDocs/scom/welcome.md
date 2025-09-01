@@ -48,4 +48,4 @@ Welcome to System Center - Operations Manager. Operations Manager provides infra
 
     Read these articles to learn how to troubleshoot Operations Manager issues in your environment.
 
-For updates on the releases, capabilities and enhancements of Operations Manager, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog) for System Center.
+For updates on the releases, capabilities and enhancements of System Center, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog).

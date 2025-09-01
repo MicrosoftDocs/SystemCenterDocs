@@ -28,7 +28,7 @@ System Center - Service Manager provides an integrated platform for automating a
 - The [glossary section](glossary.md) is a list of terms and definitions used in Service Manager that have meaning specific to Service Manager.
 - The [release notes](release-notes-sm.md) article contains release notes apply to Service Manager. They contain descriptions and workarounds for known issues that you should be aware of before you deploy Service Manager.
 
-For updates on the releases, capabilities and enhancements of Service Manager, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog) for System Center.
+For updates on the releases, capabilities and enhancements of System Center, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog).
 
 ## Next steps
 
