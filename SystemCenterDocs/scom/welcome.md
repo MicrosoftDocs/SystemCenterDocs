@@ -4,7 +4,7 @@ title: Operations Manager
 description: This article is the main landing page for all content related to System Center - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
@@ -47,3 +47,5 @@ Welcome to System Center - Operations Manager. Operations Manager provides infra
 - [System Center - Operations Manager troubleshooting](/troubleshoot/system-center/scom/welcome-scom)
 
     Read these articles to learn how to troubleshoot Operations Manager issues in your environment.
+
+For updates on the releases, capabilities and enhancements of Operations Manager, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog) for System Center.

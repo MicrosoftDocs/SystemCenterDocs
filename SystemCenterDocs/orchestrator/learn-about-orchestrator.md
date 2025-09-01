@@ -3,7 +3,7 @@ title: Orchestrator overview
 description: This article provides an overview of System Center - Orchestrator
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/17/2024
+ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: orchestrator
@@ -28,6 +28,8 @@ Using Orchestrator, you can:
 - Connect systems from different vendors without having to know how to use scripting and programming languages.
 
 To know about the prerequisites, see [System requirements for System Center Orchestrator](./system-requirements-orch.md).
+
+For updates on the releases, capabilities and enhancements of Orchestrator, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog) for System Center.
 
 ## Orchestrator architecture
 
