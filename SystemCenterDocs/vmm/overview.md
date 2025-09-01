@@ -4,7 +4,7 @@ title: What is Virtual Machine Manager?
 description: This article provides an overview of System Center VMM and a summary of what it can do for your business.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
@@ -14,9 +14,9 @@ ms.custom: UpdateFrequency.5, intro-overview, engagement-fy24
 
 # What is Virtual Machine Manager?
 
+Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the System Center suite used to configure, manage, and transform traditional datacenters. It helps to provide a unified management experience across on-premises, service provider, and the Azure cloud. 
 
-
-Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the System Center suite used to configure, manage, and transform traditional datacenters. It helps to provide a unified management experience across on-premises, service provider, and the Azure cloud. VMM capabilities include:
+VMM capabilities include:
 
 - **Datacenter**: Configure and manage your datacenter components as a single fabric in VMM. Datacenter components include virtualization servers, networking components, and storage resources. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds.
 
