@@ -16,6 +16,9 @@ To deploy Service Management Automation (SMA), you must install the SMA Web Serv
 
 You can install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.
 
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
+
 ## Install the Service Automation web service
 
 1. In the folder containing the downloaded System Center - Orchestrator installation software, select **Setup** to start the Setup wizard.

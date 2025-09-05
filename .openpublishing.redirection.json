@@ -6,6 +6,10 @@
       "redirect_url" : "/system-center/index"
   },
   {
+     "source_path" : "SystemCenterDocs/sma/runbook-automation.md",
+     "redirect_url" : "/system-center/sma/overview-of-service-management-automation"
+  },
+  {
      "source_path" : "SystemCenterDocs/scom/whats-new-scom-managed-instance.md",
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/whats-new-scom-managed-instance"
   },
