@@ -17,6 +17,9 @@ As a Service Management Automation (SMA) administrator, you need to configure an
 - **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all the native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules so that their activities can be used when you author runbooks in Windows Azure Pack.
 - **SetAutomationModuleActivityMetadata**: Runs immediately after you import a module into SMA. This runbook extracts activities and activity metadata from a newly imported module so that its activities can be used when you author runbooks in Windows Azure Pack.
 
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
+
 ## Configure runbook workers
 
 By default, when you start a runbook job in SMA, it's picked by a random runbook worker. However, you might want to use a specific runbook worker. To do this, use the **RunbookWorker** property. [Learn more](runbook-automation.md) about runbook execution.
