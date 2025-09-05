@@ -16,6 +16,9 @@ This article shows a diagram that illustrates System Center - Service Management
 
 ![SMA architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
+
 ## Features
 
 - The SMA web service communicates with Windows Azure Pack and authenticates users.

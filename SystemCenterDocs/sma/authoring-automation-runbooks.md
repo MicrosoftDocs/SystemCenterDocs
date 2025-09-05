@@ -30,6 +30,9 @@ The additional services provided by Automation for working with Windows PowerShe
 
 - Set of cmdlets for managing and starting runbooks.
 
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
+
 ## Create or import a runbook
 
 You can add a runbook to Service Management Automation by either creating it in the management portal or by importing it from a file.
