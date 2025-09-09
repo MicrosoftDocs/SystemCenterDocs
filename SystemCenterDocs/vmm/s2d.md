@@ -4,7 +4,7 @@ title: Deploy and manage Storage Spaces Direct in VMM
 description: This article describes how to set up and manage Storage Spaces Direct in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/18/2024
+ms.date: 09/09/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -31,7 +31,7 @@ Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups phy
 
 ::: moniker range="sc-vmm-2025"
 > [!NOTE]
-> VMM 2025 supports [Azure Local (version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
+> VMM 2025 supports [Azure Local](deploy-manage-azure-stack-hci.md).
 ::: moniker-end
 
 ## How does it work?
