@@ -61,7 +61,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 - Ensure that you're running VMM 2019 or later.
 - Hyper-V hosts in a cluster must be running Windows Server 2019 or later with the Hyper-V Role installed and be configured to host VMs.
   > [!NOTE]
-  > VMM 2025 supports [Azure Local (version 22H2)](deploy-manage-azure-stack-hci.md).
+  > VMM 2025 supports [Azure Local](deploy-manage-azure-stack-hci.md).
 
 :::moniker-end
 

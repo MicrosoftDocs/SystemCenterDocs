@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23, engagement-fy24
 
 This article provides information about the management of an Azure Local instance in System Center Virtual Machine Manager (VMM).
 
-Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2025#support-for-azure-local-instances-23h2&preserve-view=true), VMM supports Azure Local machines that are updated to 2408.2 or 2411. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Local offering.
+Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2025#support-for-azure-local-instances-23h2&preserve-view=true), VMM supports Azure Local machines that are updated to 2408.2, 2411 or later. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Local offering.
 
 
 >[!IMPORTANT]

@@ -25,7 +25,7 @@ This article provides information about how to set up an Azure Local instance in
 
 ::: moniker range="sc-vmm-2019"
 
-[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2. The current product is Azure Local.
+[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2.
 
 ::: moniker-end
 
