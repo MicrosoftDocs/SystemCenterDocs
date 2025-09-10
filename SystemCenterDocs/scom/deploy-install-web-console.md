@@ -53,7 +53,7 @@ When you install the web console, the following three components are installed:
 > [!NOTE]
 > If Application Diagnostics console isn't installed, when viewing APM alerts, you won't be able to use the link embedded in the alert description to launch the APM event details. To use this feature, install the web console within the management group.
 
-If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770558(v=ws.11)). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
+If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/windows-server/networking/technologies/network-load-balancing). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
 
 > [!NOTE]
 > A Network Load Balancer isn't supported for the Operations Manager web console server.
