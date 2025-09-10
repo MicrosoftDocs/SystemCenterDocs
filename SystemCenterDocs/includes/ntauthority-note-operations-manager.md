@@ -11,4 +11,4 @@ ms.subservice: operations-manager
 ---
 
 >[!NOTE]
-> We recommend that you don't use the **NTAuthority\SYSTEM** user for the installation of System Center Operations Manager.
+> We recommend that you don't use the **NT Authority\SYSTEM** user for the installation of System Center Operations Manager.
