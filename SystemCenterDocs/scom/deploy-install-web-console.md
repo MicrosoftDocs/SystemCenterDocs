@@ -13,7 +13,7 @@ ms.topic: install-set-up-deploy
 
 # Install the Operations Manager Web console
 
-You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
+You can install the web console when you install System Center Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
 [!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
