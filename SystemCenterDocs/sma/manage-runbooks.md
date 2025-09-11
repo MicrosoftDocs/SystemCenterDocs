@@ -5,7 +5,7 @@ ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 07/22/2025
+ms.date: 08/20/2025
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -14,8 +14,11 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 As a Service Management Automation (SMA) administrator, you need to configure and run runbooks. Activities including setting up the runbook workers and scheduling and tracking runbooks. There are two system runbooks that are included with SMA in addition to the runbooks you author:
 
-- **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all the native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules so that their activities can be used when you author runbooks in Microsoft Azure Pack.
-- **SetAutomationModuleActivityMetadata**: Runs immediately after you import a module into SMA. This runbook extracts activities and activity metadata from a newly imported module so that its activities can be used when you author runbooks in Microsoft Azure Pack.
+- **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all the native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules so that their activities can be used when you author runbooks in Windows Azure Pack.
+- **SetAutomationModuleActivityMetadata**: Runs immediately after you import a module into SMA. This runbook extracts activities and activity metadata from a newly imported module so that its activities can be used when you author runbooks in Windows Azure Pack.
+
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
 
 ## Configure runbook workers
 
@@ -55,7 +58,7 @@ Get-SmaRunbookWorkerDeployment -WebServiceEndpoint $webServer -Port $port
 ```
 
 > [!NOTE]
-> You can't currently use the Microsoft Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets.
+> You can't currently use the Windows Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets.
 
 ## Schedule runbooks
 
@@ -271,4 +274,4 @@ Set-SmaRunbookConfiguration -WebServiceEndpoint $webServer -Port $port -Name $ru
 ## Next steps
 
 - Read about [managing global assets](manage-global-assets.md).
-- Learn about the [role of SMA](./runbook-automation.md) in a Microsoft Azure Pack implementation.
+- Learn about the [role of SMA](./runbook-automation.md) in a Windows Azure Pack implementation.

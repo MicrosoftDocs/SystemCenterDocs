@@ -1,10 +1,10 @@
 ---
 ms.assetid: 77b54fbe-b6c3-4934-8b42-c89c08e3ccfd
-title: Author strategies for .NET application monitoring
+title: Author Strategies for .NET Application Monitoring
 description: This article provides an overview about authoring strategies for .NET application monitoring.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 07/24/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,7 +17,7 @@ Here are some scenarios and settings to change during authoring that can help yo
 
 ## Monitor a new application
 
-Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-use-default-settings.md).
+Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-use-default-settings.md).
 
 ## Limit monitoring to a specific set of servers
 
@@ -35,20 +35,31 @@ You can adjust the sensitivity threshold for server-side and client-side monitor
 
 ### Change the sensitivity threshold for server-side monitoring
 
-1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates**, select  **.NET Application Performance Monitoring**, right-click the application group that you want to configure, and then select  **Properties**.
+To change the sensitivity threshold for server-side monitoring, follow these steps:
+
+1. To open properties for the application group that you want to reconfigure, do the following:
+   1. In the Operations Manager console, in the navigation pane, select **Authoring**.
+   2. Expand **Management Pack Templates**.
+   3. Select **.NET Application Performance Monitoring**.
+   4. Right-click the application group that you want to configure, and then select  **Properties**.
 
    > [!NOTE]
-   > If you are currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for server-side monitoring, go to the  **Server-Side Configuration**  page and select  **Advanced Settings**.  Change the  **Sensitivity threshold** and select  **OK**.
-
+   > If you're currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for server-side monitoring, go to the  **Server-Side Configuration**  page and select  **Advanced Settings**.  Change the  **Sensitivity threshold** and select  **OK**.
 2. To change the sensitivity threshold for server-side monitoring, on the  **Properties**  page, select the  **Server-Side Monitoring**  tab, and then select the  **Advanced Settings**  button.
 3. Change the  **Sensitivity threshold**  and select  **OK**.
 
 ### Change the sensitivity threshold for client-side monitoring
 
-1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates** , select  **.NET Application Performance Monitoring** , right-click the application group that you want to want to configure, and then select  **Properties**.
+To change the sensitivity threshold for client-side monitoring, follow these steps:
 
-    > [!NOTE]
-    > If you're currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for client-side monitoring, go to the  **Client-Side Configuration**  page and select  **Advanced Settings**. Change the  **Sensitivity threshold**  and select  **OK**.
+To open properties for the application group that you want to reconfigure, do the following:
+   1. In the Operations Manager console, in the navigation pane, select **Authoring**.
+   2. Expand **Management Pack Templates**.
+   3. Select **.NET Application Performance Monitoring**.
+   4. Right-click the application group that you want to configure, and then select  **Properties**.
+
+   > [!NOTE]
+   > If you're currently authoring a new .NET Application Performance Monitoring template, to change the sensitivity threshold for client-side monitoring, go to the  **Client-Side Configuration**  page and select  **Advanced Settings**. Change the  **Sensitivity threshold**  and select  **OK**.
 
 2. To change the sensitivity threshold for client-side monitoring, on the  **Properties**  page, select the  **Client-Side Monitoring**  tab, and select the  **Advanced Settings**  button.
 3. Change the  **Sensitivity threshold**  and select  **OK**.
@@ -61,21 +72,33 @@ You can turn off application failure alerts for server-side and client-side moni
 
 ### Turn off alerts for application failures for server-side monitoring
 
-1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates** , select  **.NET Application Performance Monitoring** , right-click the application group that you want to want to configure, and then select  **Properties**.
+To turn off alerts for application failures for server-side monitoring, follow these steps:
+
+To open properties for the application group that you want to reconfigure, do the following:
+   1. In the Operations Manager console, in the navigation pane, select **Authoring**.
+   2. Expand **Management Pack Templates**.
+   3. Select **.NET Application Performance Monitoring**.
+   4. Right-click the application group that you want to configure, and then select  **Properties**.
 
    > [!NOTE]
    > If you're currently authoring a new .NET Application Performance Monitoring template, to turn off alerts for application failures for server-side monitoring, go to the  **Server-Side Configuration**  page and select  **Advanced Settings**. Clear the  **Application failure alerts**  checkbox and select  **OK**.
 
 2. To turn off application failure alerts for server-side monitoring, on the  **Properties**  page, select the  **Server-Side Defaults**  tab, and select the  **Advanced Settings**  button.
-3. On the  **Advanced settings**  page and clear the  **Application failure alerts**  checkbox.
+3. On the  **Advanced settings**  page, clear the  **Application failure alerts**  checkbox.
 4. Select  **OK**.
 
 ### Turn off alerts for application failures for client-side monitoring
 
-1. To open properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates** , select  **.NET Application Performance Monitoring** , right-click the application group that you want to want to configure, and then select  **Properties**.
+To turn off alerts for application failures for client-side monitoring, follow these steps:
+
+To open properties for the application group that you want to reconfigure, do the following:
+   1. In the Operations Manager console, in the navigation pane, select **Authoring**.
+   2. Expand **Management Pack Templates**.
+   3. Select **.NET Application Performance Monitoring**.
+   4. Right-click the application group that you want to configure, and then select  **Properties**.
 
    > [!NOTE]
-   > If you are currently authoring a new .NET Application Performance Monitoring template, to turn off alerts for application failures for client-side monitoring, go to the  **Client-Side Configuration**  page and select  **Customize**. On the  **Modifying Settings**  page, in the  **Transactions** section, select  **Add**. On the  **Transaction Properties**  page, clear the  **Application failure**  checkbox and select  **OK**.
+   > If you're currently authoring a new .NET Application Performance Monitoring template, to turn off alerts for application failures for client-side monitoring, go to the  **Client-Side Configuration**  page and select  **Customize**. On the  **Modifying Settings**  page, in the  **Transactions** section, select  **Add**. On the  **Transaction Properties**  page, clear the  **Application failure**  checkbox and select  **OK**.
 
 2. To turn off application failure alerts for client-side monitoring, on the  **Properties**  page, select the  **Client-Side Monitoring**  tab, and select the  **Advanced Settings**  button.
 3. In the  **Transactions**  section, select **Add**.
@@ -84,7 +107,7 @@ You can turn off application failure alerts for server-side and client-side moni
 
 ## Only receive critical exceptions
 
-By default, .NET Application Performance Monitoring defines critical exceptions as exceptions handled by specific exception handlers provided by the .NET framework. These handlers catch top-level ASP.NET exceptions and web service exceptions that the monitored application failed to catch and handle internally. By adding exception handlers, you're adding to what application monitoring's definition of what a critical exception is. In effect, any exceptions handled by these functions will be considered critical exceptions. The advantage to using exception handlers is that you maintain the benefit of streamlined reporting of critical exceptions only, but you have the additional benefit of reporting functions that are of interest to you. For more information and a list of default exception handlers, see [Using Exception Handlers to Define Critical Exceptions](use-exception-handlers-define-critical-exceptions.md).
+By default, .NET Application Performance Monitoring defines critical exceptions as exceptions handled by specific exception handlers provided by the .NET framework. These handlers catch top-level ASP.NET exceptions and web service exceptions that the monitored application failed to catch and handle internally. By adding exception handlers, you're adding to what application monitoring's definition of what a critical exception is. In effect, any exceptions handled by these functions will be considered critical exceptions. The advantage to using exception handlers is that you maintain the benefit of streamlined reporting of critical exceptions only, but you have the another benefit of reporting functions that are of interest to you. For more information and a list of default exception handlers, see [Use Exception Handlers to Define Critical Exceptions](use-exception-handlers-define-critical-exceptions.md).
 
 ## Improve client-side monitoring performance
 
@@ -92,16 +115,21 @@ You might also want to adjust the sampling rate to control the performance impac
 
 ### Change the sampling rate for client-side monitoring
 
-1. To open client-side properties for the application group that you want to reconfigure, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, expand  **Management Pack Templates** , select  **.NET Application Performance Monitoring** , right-click the application group that you want to want to reconfigure, and then select  **Properties**.
+To change the sampling rate for client-side monitoring, follow these steps:
 
-   On the  **Properties**  page, select the  **Client-Side Defaults**  tab, and select the  **Advanced Settings**  button.
+To open client-side properties for the application group that you want to reconfigure, do the following:
+   1. In the Operations Manager console, in the navigation pane, select **Authoring**.
+   2. Expand **Management Pack Templates**.
+   3. Select **.NET Application Performance Monitoring**.
+   4. Right-click the application group that you want to reconfigure, and then select  **Properties**.
+   5. On the  **Properties**  page, select the  **Client-Side Defaults**  tab, and select  **Advanced Settings**.
 
    > [!NOTE]
-   > Because you can change the sampling rate for both the application group and each application component, changes to the application group settings will not automatically be applied to the component settings when the component settings have been previously customized.
+   > Because you can change the sampling rate for both the application group and each application component, changes to the application group settings won't automatically be applied to the component settings when the component settings have been previously customized.
 
 2. In the  **Sampling**  section, use the dropdown menu to select the percentage of incoming requests that you want to monitor. For example, if you select  **50%**, you'll monitor 50 percent of the incoming requests. Select  **25%**  and you'll monitor 25 percent of the incoming requests, and so on. To get helpful information, you don't have to monitor all of the incoming requests.
 3. When you have set the sampling rate, select  **OK**.
 
-## See also
+## Related content
 
-- [How to Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
+[Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29).

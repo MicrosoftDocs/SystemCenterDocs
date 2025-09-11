@@ -5,15 +5,13 @@ ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.subservice: service-manager
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # About System Center - Service Manager
-
-
 
 System Center - Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
 
@@ -29,6 +27,8 @@ System Center - Service Manager provides an integrated platform for automating a
 - The [disaster recovery](disaster-recovery.md) article helps you create a recovery plan for potential software and equipment failures in your Service Manager environment. It also helps you create a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases.
 - The [glossary section](glossary.md) is a list of terms and definitions used in Service Manager that have meaning specific to Service Manager.
 - The [release notes](release-notes-sm.md) article contains release notes apply to Service Manager. They contain descriptions and workarounds for known issues that you should be aware of before you deploy Service Manager.
+
+For updates on the releases, capabilities and enhancements of System Center, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog).
 
 ## Next steps
 

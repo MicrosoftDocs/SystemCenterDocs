@@ -1,10 +1,10 @@
 ---
 ms.assetid: ba58d433-17ea-4ddc-af8d-42748ad2d349
-title: Encrypt SMA web service to SQL connection by using SSL
+title: Encrypt SMA Web Service to SQL Connection by using SSL
 description: This article provides information about how to encrypt SMA web service to SQL connection by using SSL.
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -23,7 +23,7 @@ This article provides information about how to encrypt SMA Web Service to SQL co
 >[!NOTE]
 > Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows aren't viable.
 
-Use the following procedure to securely connect SMA web service with the SQL server:
+To securely connect SMA web service with the SQL server, follow these steps:
 
 1. Open an elevated PowerShell console.
 2. Navigate to your .NET Framework home directory (for example, C:\Windows\Microsoft.NET\Framework64\v4.0.30319).
@@ -51,10 +51,12 @@ Use the following procedure to securely connect SMA web service with the SQL ser
 
 ## Encrypt SMA Runbook worker connection
 
-Use the following steps to secure the connection between Runbook worker and the SQL server.
+
 
 >[!NOTE]
 > To encrypt the connection, you must run these steps on each of the Runbook worker computers.
+
+To securely connect between Runbook worker and the SQL server, follow these steps:
 
 1. Navigate to the installation path of SMA and locate the `Orchestrator.Settings.config` file.
 2. Add the following under the (root) `configuration` key:

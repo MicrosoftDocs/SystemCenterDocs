@@ -2,7 +2,7 @@
 title: Scheduling 
 description: This article describes the tasks you can accomplish when using each Scheduling activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,6 +17,7 @@ ms.author: jsuri
 ---
 # Scheduling
 
+This article describes the tasks you can accomplish when using each Scheduling activity.
 The following table provides a brief description of tasks you can accomplish when using each Scheduling activity.  
 
 |Tasks|Scheduling Activities|  

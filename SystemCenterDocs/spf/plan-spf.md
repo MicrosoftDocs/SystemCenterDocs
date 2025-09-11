@@ -1,9 +1,9 @@
 ---
-title: Plan SPF deployment
+title: Plan SPF Deployment
 description: This article provides an overview of how to plan for a Service Provider Foundation installation.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/07/2023
+ms.date: 07/24/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
@@ -93,4 +93,4 @@ There are two database scenario configurations:
 
 ## Next steps
 
-- [Deploy SPF](deploy-spf.md)
+[Deploy SPF](deploy-spf.md)

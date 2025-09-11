@@ -1,11 +1,11 @@
 ---
-title: Workflow activity reference
+title: Workflow Activity Reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
 ms.custom: na, UpdateFrequency2, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 07/24/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -18,7 +18,7 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 This article provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 
- For information about how to use WF activities and WF workflows with Service Manager, see [Automating IT Processes with Workflows](automate-processes-workflows.md).  
+ For information about how to use WF activities and WF workflows with Service Manager, see [Automate IT Processes with Workflows](automate-processes-workflows.md).  
 
 ## Active Directory activities
 

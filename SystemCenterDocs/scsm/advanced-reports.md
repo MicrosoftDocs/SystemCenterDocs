@@ -1,11 +1,11 @@
 ---
-title: Advanced analytical reports in Service Manager
+title: Advanced Analytical Reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
@@ -16,6 +16,8 @@ ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 ---
 
 # Advanced analytical reports available in Service Manager
+
+This article provides a reference of advanced analytical reports available in Service Manager.
 
 The following analytical reports - which are presented as [Microsoft Online Analytical Processing (OLAP) data cubes](olap-cubes-overview.md) - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
@@ -370,3 +372,4 @@ The change and activity management data cube contains the following measures:
 - ProcessTimePerChangeInDaysSum
 - ReviewerDimCount
 - ServiceDimCount  
+

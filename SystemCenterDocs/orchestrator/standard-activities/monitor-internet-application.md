@@ -2,7 +2,7 @@
 title: Monitor Internet Application
 description: This article provides the details about Monitor Internet Application activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.author: jsuri
 ---
 # Monitor Internet Application
 
-The Monitor Internet Application activity will invoke a runbook when an internet application server becomes unavailable or becomes available. You can monitor a Web, Email (POP3 or SMTP), FTP, or DNS server.  You can also configure your external FTP or Web servers to be reachable through the internet and then automatically restart the server if it's found to be unavailable.  
+This article provides the details about Monitor Internet Application activity. The Monitor Internet Application activity will invoke a runbook when an internet application server becomes unavailable or becomes available. You can monitor a Web, Email (POP3 or SMTP), FTP, or DNS server.  You can also configure your external FTP or Web servers to be reachable through the internet and then automatically restart the server if it's found to be unavailable.  
 
 ## Configure the Monitor Internet Application Activity
 
@@ -26,7 +26,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 > [!NOTE]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
-### General Tab  
+### [General Tab](#tab/general-tab)  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -34,7 +34,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Description**|Enter a detailed description of the actions of the activity.|  
 |**Type**|Select the **Type** that matches the server that you want to monitor. The options include the following:<br /><br /> -   Web (HTTP)<br />-   E-mail (SMTP)<br />-   E-mail (POP3)<br />-   FTP<br />-   DNS<br /><br /> Configuration instructions for each **Details** tab **Type** are listed in the following tables.|  
 
-### Web (HTTP) Details Tab
+### [Web (HTTP) Details Tab](#tab/web-http-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -45,7 +45,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Check that the page contains this string**|Select and enter a string to search for when the page is retrieved from the web server. When this option is selected, the server is only considered available if the string can be found on the page that is specified by the **URL**.|  
 |**Search is case sensitive**|Select to make the string search case sensitive.|  
 
-### Email (SMTP) Details Tab
+### [Email (SMTP) Details Tab](#tab/email-smtp-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -57,7 +57,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**To**|Enter the address to send the email to.|  
 |**From**|Enter the address that the email is being sent from.|  
 
-### Email (POP3) Details Tab
+### [Email (POP3) Details Tab](#tab/email-pop3-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -69,7 +69,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Username**|Enter the username to use to sign in to the POP3 server.|  
 |**Password**|Enter the password that is associated with the **Username** that you've specified.|  
 
-### FTP Details Tab
+### [FTP Details Tab](#tab/ftp-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -81,7 +81,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Username**|Enter the username to use to sign in to the FTP server.|  
 |**Password**|Enter the password that's associated with the **Username** that you've specified.|  
 
-### DNS Details Tab
+### [DNS Details Tab](#tab/dns-details-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -91,14 +91,14 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Test DNS table IP Address**|Select to specify a computer name and the IP address that should be associated with that IP address. When this option is selected, the server is only considered available if the IP address is assigned to the computer that you specify.|  
 |**Test frequency**|Specify the amount of time to wait between each connection test to the server.|  
 
-### Advanced Tab
+### [Advanced Tab](#tab/advanced-tab)
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Trigger if test succeeds**|Select to invoke the Monitor Internet Application activity when the server that you're checking becomes available.|  
 |**Trigger if test fails**|Select to invoke the Monitor Internet Application activity when the server that you're checking becomes unavailable.|  
 
-### Published Data
+### [Published Data](#tab/published-data)
 
  The following table lists the published data items.  
 
@@ -109,3 +109,5 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |Protocol|The protocol of the Internet application. For example, HTTP or FTP.|  
 |Server Greeting|The greeting message received from the Internet application.|  
 |Web page|The HTML of the web page that was retrieved when in Web (HTTP) mode.|
+
+---

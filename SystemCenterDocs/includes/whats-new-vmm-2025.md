@@ -4,7 +4,7 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/18/2024
+ms.date: 09/09/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -19,9 +19,9 @@ See the following sections for new features and feature updates supported in VMM
 
 VMM 2025 supports Windows Server 2025 hosts and Virtual Machines.
 
-### Support for management of VMs on Azure Local instances 23H2
+### Support for management of VMs on Azure Local instances
 
-With VMM 2025, you can manage the virtual machines running on Azure Local 23H2 instances.
+With VMM 2025, you can manage the virtual machines running on Azure Local instances.
 
 ### Enhanced security posture
 
@@ -31,7 +31,7 @@ All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmwa
 
 ### Support for the latest Linux Guest Operating Systems
 
-With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9, and Rocky Linux 9 and 8.
+With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, Oracle Linux 9, and Rocky Linux 9 and 8.
 
 ### Enhanced VMware to Hyper-V VM conversion performance
 

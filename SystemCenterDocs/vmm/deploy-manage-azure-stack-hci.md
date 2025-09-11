@@ -4,7 +4,7 @@ title: Deploy and manage Azure Local instances in VMM
 description: This article describes how to set up an Azure Local instance in VMM.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/18/2024
+ms.date: 09/09/2025
 ms.update-cycle: 180-days
 ms.topic: install-set-up-deploy
 ms.service: system-center
@@ -30,7 +30,7 @@ This article provides information about how to set up an Azure Local instance in
 
 ::: moniker range="sc-vmm-2019"
 
-[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2. The current product is Azure Local, version 23H2.
+[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2.
 
 ::: moniker-end
 

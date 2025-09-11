@@ -3,7 +3,7 @@ title: Manage usage metering in SPF
 description: Provides information about setting up usage metering in SPF
 author: jyothisuri
 ms.author: jsuri
-ms.date: 08/07/2023
+ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
@@ -24,7 +24,7 @@ You can configure System Center - Service Provider Foundation (SPF) to aggregate
 Here's what you need:
 
 - Servers running SPF, VMM, and Operations Manager. If needed, all these components can be on the same computer.
-- The Microsoft Azure Pack for Windows Server and API to provision IaaS.
+- The Windows Azure Pack for Windows Server and API to provision IaaS.
 - The Operations Manager server should have an Operations Manager Data Warehouse(OMDW) database. VMM management packs should be installed.
 - A server running SQL Server with the Operations Manager Data Warehouse (OMDW).
 - You can have the database for the OMDW and the database for Service Provider Foundation on the same server. Connection settings are stored in the Service Provider Foundation database.
@@ -43,7 +43,7 @@ Then set up metering as follows:
 1. Create an instance of a server \(using the `New\-SCSPFServer` cmdlet\) with the *ServerType* as OMDW.
 2. Use the `New\-SCSPFSetting` cmdlet to create a setting on that server (the one created in the previous step) that has the connection string to OperationsManagerDW database on the OMDW server.
 3. Verify that the Application Pool account under which SPF\_Usage runs has the ability to query OMDW.
-4. Verify that the Microsoft Azure Pack calling account is a member of the SPF\_User local security group on the server that has SPFinstalled.
+4. Verify that the Windows Azure Pack calling account is a member of the SPF\_User local security group on the server that has SPFinstalled.
 5. Run the `New\-SCSPFSetting` command with the parameters described in the following table: 
 
     |New\-SCSPFSetting Parameter|Value|  

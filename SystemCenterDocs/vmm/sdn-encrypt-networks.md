@@ -1,10 +1,10 @@
 ---
 ms.assetid: 4c078131-cb8b-4c43-b651-182f8060c19f
-title: Configure encrypted networks in System Center Virtual Machine Manager
+title: Configure Encrypted Networks in System Center Virtual Machine Manager
 description: This article explains about how to configure encrypted networks in SDN using VMM.
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 07/24/2024
 ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
@@ -42,9 +42,9 @@ Ensure the following prerequisites are met:
     > [!NOTE]
     > The certificate, along with its private key, must be stored in the local certificate store of all the hosts where the VMs (of that network) reside.
 
-## Procedure - configure encrypted networks
+## Configure encrypted networks
 
-Follow these steps to configure encrypted networks:
+To configure encrypted networks, follow these steps:
 
 1. Create a certificate and then place the certificate in the local certificate store of all the hosts where you plan to place the tenant VMs for this validation.
 

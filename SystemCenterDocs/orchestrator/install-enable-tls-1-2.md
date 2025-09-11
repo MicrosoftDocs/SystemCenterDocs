@@ -28,8 +28,8 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Install a SQL Server update for TLS 1.2 support
 
-1. Open [KB 3135244](https://support.microsoft.com/help/3135244).
-2. [Download and install](https://support.microsoft.com/help/3135244) the update for your SQL Server version.
+1. Open [KB 3135244](/troubleshoot/sql/database-engine/connect/tls-1-2-support-microsoft-sql-server).
+2. [Download and install](/troubleshoot/sql/database-engine/connect/tls-1-2-support-microsoft-sql-server) the update for your SQL Server version.
     - You don't need this update if you're running SQL Server 2016 or later.
     - SQL Server 2008 R2 doesn't support TLS 1.2.
 

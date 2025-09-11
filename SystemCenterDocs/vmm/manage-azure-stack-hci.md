@@ -4,7 +4,7 @@ title: Manage Azure Local instances in VMM
 description: This article describes how to manage an Azure Local instance in VMM.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/18/2024
+ms.date: 09/09/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.service: system-center
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23, engagement-fy24
 
 This article provides information about the management of an Azure Local instance in System Center Virtual Machine Manager (VMM).
 
-Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2025#support-for-azure-local-instances-23h2&preserve-view=true), VMM supports Azure Local, 23H2 machines that are updated to 2408.2 or 2411. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Local offering.
+Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2025#support-for-azure-local-instances-23h2&preserve-view=true), VMM supports Azure Local machines that are updated to 2408.2, 2411 or later. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Local offering.
 
 
 >[!IMPORTANT]
@@ -38,7 +38,7 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 **Unsupported Azure Local management scenarios with VMM**
 
-- Creation of Azure Local instance using SCVMM. See the [deployment methods for Azure Local 23H2 instances](/azure/azure-local/deploy/deployment-introduction#about-deployment-methods).
+- Creation of Azure Local instance using SCVMM. See the [deployment methods for Azure Local instances](/azure/azure-local/deploy/deployment-introduction#about-deployment-methods).
 
 - Management of Azure Stack HCI [stretched clusters](/azure/azure-local/concepts/stretched-clusters).
 

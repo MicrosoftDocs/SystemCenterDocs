@@ -4,7 +4,7 @@ title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2016
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/13/2023
+ms.date: 08/20/2025
 ms.topic: include
 ms.service:  system-center
 ms.subservice: virtual-machine-manager
@@ -57,9 +57,9 @@ If you're running more than one System Center component, they should be upgraded
 7. Virtual Machine Manager (VMM)
 8. App Controller
 9. Service Provider Foundation
-10. Microsoft Azure Pack for Windows Server
+10. Windows Azure Pack for Windows Server
 11. Service Bus Clouds
-12. Microsoft Azure Pack
+12. Windows Azure Pack
 13. Service Reporting
 
 ## Upgrade a standalone VMM server

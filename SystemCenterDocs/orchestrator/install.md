@@ -58,6 +58,10 @@ This article provides detailed installation instructions for the various Orchest
 ::: moniker-end
 
 ## Install an Orchestrator management server
+::: moniker range="sc-orch-2025"
+>[!NOTE]
+>Although Orchestrator 2025 supports gMSA, installation with gMSA account is not supported. You need to migrate from domain account to gMSA account once the installation is done successfully.
+::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"
 

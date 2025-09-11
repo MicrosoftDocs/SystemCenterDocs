@@ -5,7 +5,7 @@ ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24
@@ -19,15 +19,20 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 ::: moniker-end
 
-Service Management Automation (SMA) is a set of tools that is integrated as the SMA extension in Microsoft Azure Pack for Windows Server. IT pros and IT developers can use SMA to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes. SMA runbooks run on the Windows PowerShell engine.
+Service Management Automation (SMA) is a set of tools that is integrated as the SMA extension in Windows Azure Pack for Windows Server. IT pros and IT developers can use SMA to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes. SMA runbooks run on the Windows PowerShell engine.
+
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
+
+For updates on the releases, capabilities and enhancements of System Center, see the [Tech Community blog](https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog).
 
 ## SMA components
 
-SMA uses the following three underlying components that are connected to Microsoft Azure Pack through the SMA service endpoint:
+SMA uses the following three underlying components that are connected to Windows Azure Pack through the SMA service endpoint:
 
 ### Web service
 
-- Connects to Microsoft Azure Pack
+- Connects to Windows Azure Pack
 
 - Distributes runbook jobs to runbook workers
 
@@ -51,19 +56,19 @@ The System Center - Orchestrator component enables you to automate business proc
 
 SMA enables you to automate business processes and IT operations via PowerShell. With the support for the latest PowerShell features, you can use SMA to automate the management of any software that provides PowerShell cmdlets, including other System Center components (even Orchestrator). If you would like to automate via PowerShell, use Service Management Automation to manage all your automation from a single place.
 
-SMA also has deep integration with Microsoft Azure Pack; however, you no longer need to use Microsoft Azure Pack portal for authoring SMA runbooks. Authoring can be done within PowerShell ISE through [PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit/). SMA now also supports native PowerShell script type runbooks. You can know more about the new features in SMA over [here](./whats-new-in-sma.md)
+SMA also has deep integration with Windows Azure Pack; however, you no longer need to use Windows Azure Pack portal for authoring SMA runbooks. Authoring can be done within PowerShell ISE through [PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit/). SMA now also supports native PowerShell script type runbooks. You can know more about the new features in SMA over [here](./whats-new-in-sma.md)
 
-The following diagram illustrates each of the SMA features, and the communication with a Microsoft Azure Pack installation.
+The following diagram illustrates each of the SMA features, and the communication with a Windows Azure Pack installation.
 
 ![SMA Architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
-- The SMA web service communicates with Microsoft Azure Pack, and authenticates users.
+- The SMA web service communicates with Windows Azure Pack, and authenticates users.
 
 - The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
 
 - Runbook workers run the runbooks, and they can be used for load balancing.
 
-- The management portal in Microsoft Azure Pack is where you author, debug, and start and stop runbooks.
+- The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
 
 > [!IMPORTANT]
 > The [SMA Developer's Guide](/previous-versions/system-center/developer/dn688344(v=msdn.10)) is now available. This guide is a set of REST API reference documentation for the SMA web service.

@@ -1,10 +1,10 @@
 ---
 ms.assetid: d9355790-6253-48f5-bbb5-0561a4c8f232
-title: Favorite reports in Web console in System Center Operation Manager
+title: Favorite Reports in Web console in System Center Operation Manager
 description: This article describes about Favorite reports in Web console.
+ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
@@ -18,7 +18,7 @@ ms.topic: concept-article
 
 This article provides information about how to create and view favorite reports in Operations Manager 2019 UR2 and later.
 
-> [!Note]
+> [!NOTE]
 > This feature isn't supported in 2019 RTM/UR1.
 
 In Operations Manager 2019 UR2 and later, you can run and view favorite reports from **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2.
@@ -36,6 +36,8 @@ You can run and view favorite reports from **Web Console** > **My Workspace**.
 You can create a report in operations console and view them as *Favorite reports* in the HTML5 web console.
 
 ## Before you begin
+
+Here are some considerations before you start creating and viewing favorite reports:
 
 - Ensure you've any of the following five roles to sign in to the web console. These permissions remain the same as in earlier supported versions of Operations Manager.  
 
@@ -57,7 +59,7 @@ You can create a report in operations console and view them as *Favorite reports
 
 ## Save a report as favorite from Operations console
 
-Use the following procedure to save a report from Operations console:
+To save a report from Operations console, follow these steps:
 
 1. Go to operations console and run any report.
 2. After the report is generated, go to **File** and select **Save to favorites**.
@@ -66,7 +68,7 @@ Use the following procedure to save a report from Operations console:
 
 ## Run favorite reports in Web console
 
-Use the following procedure to run favorite reports in Web console:
+To run favorite reports in Web console, follow these steps:
 
 1. Open a web browser on any computer and enter http://\<web host>/Operations Manager, where web host is the name of the computer hosting web console.
 2. Navigate to **My Workspace** and select **Favorite reports** in the left pane.
@@ -77,6 +79,8 @@ Use the following procedure to run favorite reports in Web console:
 ## Configure Windows authentication
 
 Use the following procedure to configure Windows authentication (Kerberos) between Operations Manager Report Server and Management Server:
+
+To configure Windows authentication, follow these steps:
 
 1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at \<PATH\>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
 
@@ -122,4 +126,4 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
 ## Next steps
 
-[How to run, save, and export a report](manage-reports-run-save-export.md)
+[Run, save, and export a report](manage-reports-run-save-export.md).

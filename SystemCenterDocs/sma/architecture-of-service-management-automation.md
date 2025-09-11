@@ -5,7 +5,7 @@ ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 04/15/2025
+ms.date: 08/20/2025
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -16,12 +16,15 @@ This article shows a diagram that illustrates System Center - Service Management
 
 ![SMA architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
+>[!NOTE]
+>As Windows Azure Pack is now deprecated, you can use PowerShell ISE add-on as an alternative. For more information, see [Introducing Service Management Automation ISE add-on](https://techcommunity.microsoft.com/blog/systemcenterblog/introducing-service-management-automation-ise-add-on/351500).
+
 ## Features
 
-- The SMA web service communicates with Microsoft Azure Pack and authenticates users.
+- The SMA web service communicates with Windows Azure Pack and authenticates users.
 - The SQL Server databases store and retrieve many components. These include runbooks, runbook assets, activities, integration modules, and runbook job information.
 - Runbook workers run the runbooks, and they can be used for load balancing.
-  The management portal in Microsoft Azure Pack is where you author, debug, start, and stop runbooks.
+  The management portal in Windows Azure Pack is where you author, debug, start, and stop runbooks.
 
 ## Next steps
 
