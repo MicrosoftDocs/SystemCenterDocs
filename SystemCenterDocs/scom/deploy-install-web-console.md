@@ -181,7 +181,7 @@ The local and remote parameters are as follows:
 3. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
-    > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
+    > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
     >
     > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
