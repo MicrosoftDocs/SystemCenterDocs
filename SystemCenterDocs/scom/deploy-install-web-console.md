@@ -13,7 +13,7 @@ ms.topic: install-set-up-deploy
 
 # Install the Operations Manager Web console
 
-You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
+You can install the web console when you install System Center Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
 [!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
@@ -40,7 +40,7 @@ Installation of Reporting and Web Console will be successful, regardless of the 
  For information about the prerequisites, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!IMPORTANT]
-> If you install a standalone web console on a server, you won't be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously or install the management server before you install the web console.
+> If you install a stand-alone web console on a server, you won't be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously or install the management server before you install the web console.
 
 When you install the web console, the following three components are installed:
 
@@ -53,7 +53,7 @@ When you install the web console, the following three components are installed:
 > [!NOTE]
 > If Application Diagnostics console isn't installed, when viewing APM alerts, you won't be able to use the link embedded in the alert description to launch the APM event details. To use this feature, install the web console within the management group.
 
-If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770558(v=ws.11)). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
+If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/windows-server/networking/technologies/network-load-balancing). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
 
 > [!NOTE]
 > A Network Load Balancer isn't supported for the Operations Manager web console server.
@@ -119,7 +119,7 @@ The local and remote parameters are as follows:
 
 7. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and select **Next**.
 
-8. On the **Configuration**, **Specify a management server** page, enter the name of a management server that only the web console uses, and select **Next**.
+8. On the **Configuration**, **Specify a management server** page, enter the name of a management server in the management group, and select **Next**.
 
 9. On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and select **Next**.
 
@@ -129,7 +129,7 @@ The local and remote parameters are as follows:
 10. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and select **Next**.
 
     > [!NOTE]
-    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
+    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principal Names and configure constraint delegations, as described in [Running the Web Console Server on a stand-alone server using Windows Authentication](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
 
 11. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
 
@@ -170,7 +170,7 @@ The local and remote parameters are as follows:
 12. On the **Setup is complete** page, select **Close**.
 
 > [!IMPORTANT]
-> The Default website must have an http or https binding configured. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost hostname, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
+> The **Default Web Site** must have an http or https binding configured. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost hostname, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
 
 ### Install a Web console by using the Command Prompt window
 
@@ -181,7 +181,7 @@ The local and remote parameters are as follows:
 3. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
-    > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
+    > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
     >
     > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
