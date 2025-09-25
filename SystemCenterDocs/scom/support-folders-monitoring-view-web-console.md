@@ -55,6 +55,7 @@ To create a folder, follow these steps:
    ![Screenshot of Create folder.](./media/support-for-folders/create-folder-in-client.png)
 
 > [!NOTE]
+>
 > - You can save a folder inside a preexisting folder. To do this, select the desired folder instead of Monitoring, and follow the same procedure mentioned above.
 > - These folders can be deleted from the operations console.
 
@@ -63,12 +64,15 @@ To create a folder, follow these steps:
 To save a dashboard inside a folder, follow these steps:
 
 1. Open the web console and navigate to **Monitoring**.
+
 2. Select **New dashboard**.
+
 3. Enter the name of the dashboard.
+
 4. Select the folder from the list where you want to store the dashboard.
    Management pack selection will be based on root folder.
-5. Select **Save**.
-   The dashboard is stored inside the selected folder and can be seen in the left navigation pane.
+
+5. Select **Save**. The dashboard is stored inside the selected folder and can be seen in the left navigation pane.
 
    ![Screenshot of save dashboard.](./media/support-for-folders/new-dashboard-folder-in-client.png)
 
@@ -84,51 +88,51 @@ You can use the following REST APIs to create folders in Web console and save da
 > [!NOTE]
 > This feature is applicable to System Center Operations Manager 2019 UR2 and later versions.
 
-**Data/monitoringTreeForRootFolders**
+### Data/monitoringTreeForRootFolders
 
 - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders. The output of this request can be used for below POST requests.
 
-**monitoring/folder**
+### monitoring/folder
 
-- Request of type POST to create a new folder inside a management pack.
+- Request of type `POST` to create a new folder inside a management pack.
 
-    Parameters required:
+    Required parameters:
 
     | Name | Type  | Definition |
     |----|---|------|
-    |  path  | string  |Name of the new folder. |
-    | mpId|string| ID of the management pack where you want to create the new folder.  |
+    | `path` | string  |Name of the new folder. |
+    | `mpId` | string`| ID of the management pack where you want to create the new folder.  |
 
 - Request of type POST to create a new folder inside a pre-existing folder
 
-    Parameters required:
+    Required parameters:
 
     | Name | Type  | Definition |
     |----|---|------|
-    |  component ID  | string  |Folder ID of the parent where you want to store the new folder. |
-    | path|string| Name of the new folder.  |
+    | `component ID` | string  |Folder ID of the parent where you want to store the new folder. |
+    | `path` | string | Name of the new folder.  |
 
-**monitoring/dashboard/**
+### monitoring/dashboard/
 
 - Request of type POST to save a dashboard inside a new folder.
 
-     Parameters required:
+     Required parameters:
 
      | Name | Type  | Definition |
      |----|------|-----|
-     |  name | string  |Name of the new dashboard. |
-     | path|string| Folder ID where you want to save the new dashboard.  |
+     | `name` | string  | Name of the new dashboard. |
+     | `path` | string| Folder ID where you want to save the new dashboard.  |
 
-- Request of type POST to save a dashboard inside the root monitoring.
+- Request of type `POST` to save a dashboard inside the root monitoring.
 
-     Parameters required:
+     Required parameters:
 
      | Name | Type  | Definition |
      |----|----|-----|
-     |  mpId  | string  |ID of the management pack where you want to store the dashboard. |
-     | name |string| Name of the new dashboard.  |
+     | `mpId`  | string  | ID of the management pack where you want to store the dashboard. |
+     | `name` | string| Name of the new dashboard.  |
 
-## Next Steps
+## Related content
 
 - [Standard views in management pack](manage-console-standard-views.md).
 - [Scope the views in management packs](manage-console-scope-views.md).

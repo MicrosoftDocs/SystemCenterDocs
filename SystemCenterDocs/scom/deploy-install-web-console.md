@@ -157,23 +157,19 @@ If you run **Repair** on the web console after installation, the settings that y
 12. On the **Setup is complete** page, select **Close**.
 
 > [!IMPORTANT]
-> The **Default Web Site** must have an http or https binding configured. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost hostname, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
+> You must have an HTTP or HTTPS binding configured for **Default Web Site**. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost host name, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
 
 ## Install a web console by using the Command Prompt window
 
-1. Sign in to the computer with an account that has local administrative credentials.
+1. Sign in to the computer by using an account that has local administrative credentials.
 
 2. Open a Command Prompt window by using the **Run as Administrator** option.
 
-3. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+3. Change the path to where the Operations Manager **setup.exe** file is located by running the following command. Keep this parameter information in mind:
 
-    > [!IMPORTANT]
-    > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
-    >
-    > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
-
-    > [!NOTE]
-    > The /ManagementServer parameter is only required when you're installing the web console on a server that isn't a management server.
+   - Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
+   - For a default web installation, specify `Default Web Site` for the `/WebSiteName` parameter.
+   -  The `/ManagementServer` parameter is required only when you're installing the web console on a server that isn't a management server.
 
     ```
     setup.exe /silent /install /components:OMWebConsole
@@ -184,11 +180,9 @@ If you run **Repair** on the web console after installation, the settings that y
     /AcceptEndUserLicenseAgreement: [0|1]
     ```
 
-## Configure permissions inheritance for the web console
+## Configure permission inheritance for the web console
 
-The following steps are for configuring permission inheritance for the System Center - Operations Manager web console.  
-
-1. In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, `C:\Program Files\System Center <version>\Operations Manager\WebConsole\MonitoringView`), right-click the TempImages folder, and select **Properties**.
+1. In File Explorer, go to the **MonitoringView** folder in the installation directory for the web console (by default, `C:\Program Files\System Center <version>\Operations Manager\WebConsole\MonitoringView`). Right-click the **TempImages** folder, and then select **Properties**.
 
 2. On the **Security** tab, select **Advanced**.
 
@@ -196,77 +190,71 @@ The following steps are for configuring permission inheritance for the System Ce
 
 ::: moniker range="<sc-om-2019"
 
-4. Select the **Include inheritable permissions from this object's parent** checkbox. Skip this step for Windows 2016 and later.
+4. For Windows Server 2012 and earlier, select the **Include inheritable permissions from this object's parent** checkbox. Skip this step for Windows Server 2016 and later.
 
-5. In **Permission entries**, select **Administrators**, and select **Remove**. Repeat for the **SYSTEM** entry, and select **OK**.
+5. In **Permission entries**, select **Administrators** > **Remove**. Repeat for the **SYSTEM** entry, and then select **OK**.
 
-6. Select **OK** to close **Advanced Security Settings for TempImages**, and select **OK** to close **TempImages Properties**.
+6. Select **OK** to close **Advanced Security Settings for TempImages**, and then select **OK** to close **TempImages Properties**.
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
-4. In **Permission entries**, select **Administrators**, and select **Remove**. Repeat for the **SYSTEM** entry, and select **OK**.
+4. In **Permission entries**, select **Administrators** > **Remove**. Repeat for the **SYSTEM** entry, and then select **OK**.
 
-5. Select **OK** to close **Advanced Security Settings for TempImages**, and select **OK** to close **TempImages Properties**.
+5. Select **OK** to close **Advanced Security Settings for TempImages**, and the select **OK** to close **TempImages Properties**.
 
 ::: moniker-end
 
-All information and content at https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345 is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
+## Configure the IIS application pool identity
 
-## Configure the IIS Application Pool Identity
-
-By default, the IIS application pool identity of the web console is the built-in account named **ApplicationPoolIdentity**. When connecting to SQL, this account uses the Windows computer login to access the Operations Manager databases. To improve security, it is recommended that you change the web console identity to a dedicated Active Directory user account.
+By default, the IIS application pool identity of the web console is the built-in account named **ApplicationPoolIdentity**. When this account connects to SQL Server, it uses the Windows computer login to access the Operations Manager databases. To improve security, we recommend that you change the web console identity to a dedicated Active Directory user account.
 
 To change the web console identity, follow these steps:
 
 1. Create a user account in Active Directory to use as the web console identity.
 
-1. Add the user to the local Administrators group on the web console server.
+1. Add the user to the Local Administrators group on the web console server.
 
-1. Open **Local Security Policy** on the web console server, expand **Security Settings** > **Local Policies** > **User Rights Assignment** and grant the following rights to the user:
+1. On the web console server, open **Local Security Policy**. Expand **Security Settings** > **Local Policies** > **User Rights Assignment** and grant the following rights to the user:
 
-   1. **Log on as a service**
+   - **Log on as a service**
+   - **Generate security audits**
+   - **Replace a process level token**
 
-   1. **Generate security audits**
+1. Open **SQL Server Management Studio**, and connect to the SQL Server instance that hosts the OperationsManager database.
 
-   1. **Replace a process level token**
+1. Expand **Security**, right-click **Logins**, and then select **New Login**.
 
-1. Open **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
-
-1. Expand **Security**, right-click **Logins** and select **New Login**.
-
-1. For **Login name**, enter the username of the account you created in Step 1 using *domain*\\*user* format. Alternatively, select **Search** and search Active Directory for the account.
+1. For **Login name**, enter the username of the account that you created in step 1 by using *domain*\\*user* format. Alternatively, select **Search** and search for the account in Active Directory.
 
 1. Select **User Mapping**.
 
-1. Select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane and select **OK**.
+1. Select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane, and then select **OK**.
 
-1. Repeat steps 4-8 for the OperationsManagerDW database.
+1. Repeat steps 4 to 8 for the **OperationsManagerDW** database.
 
 1. On the web console server, open **IIS Manager** and select **Application Pools**.
 
-1. Right-click **DefaultAppPool** and select **Advanced Settings**.
+1. Right-click **DefaultAppPool**, and then select **Advanced Settings**.
 
-1. In Advanced Settings, find the **Identity** setting and select the three dots next to **ApplicationPoolIdentity**.
+1. In **Advanced Settings**, find the **Identity** setting and select the three dots next to **ApplicationPoolIdentity**.
 
-1. Select **Custom account** and select **Set**.
+1. Select **Custom account** > **Set**.
 
-1. Enter the username in *domain*\\*user* format and the password of the account you created in Step 1 and select **OK** three times to return to the main IIS Manager window.
+1. Enter the username in *domain*\\*user* format and the password of the account that you created in step 1. Then select **OK** three times to return to the main **IIS Manager** window.
 
-1. Repeat Steps 11-14 for the following application pools:
+1. Repeat steps 11 to 14 for the following application pools:
 
-   1. MonitoringView
+   - **MonitoringView**
+   - **OperationsManager**
+   - **OperationsManagerAppMonitoring**
 
-   1. OperationsManager
+1. Return to **SQL Server Management Studio** and connect to the SQL Server instance that hosts the **OperationsManager** database.
 
-   1. OperationsManagerAppMonitoring
+1. Expand **Security** > **Logins**, find the computer account of the web console server, and delete or disable the login.
 
-1. Return to **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
-
-1. Expand **Security** > **Logins,** find the computer account of the web console server and delete or disable the login.
-
-1. Repeat Steps 16-17 for the OperationsManagerDW database.
+1. Repeat steps 16 to 17 for the **OperationsManagerDW** database.
 
 ## Related content
 
