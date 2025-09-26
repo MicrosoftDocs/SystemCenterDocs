@@ -15,26 +15,6 @@ ms.topic: install-set-up-deploy
 
 You can install the web console when you install System Center Operations Manager, or you can install it separately. You can install a standalone web console or install it on an existing management server that meets the prerequisites.
 
-[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
-
-::: moniker range=">=sc-om-2022"
-
-You can successfully install the web console regardless of the updates installed on Operations Manager management server.
-
-::: moniker-end
-
-::: moniker range="=sc-om-2019"
-
-Operations Manager 2019 UR1 and later support a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
-
-::: moniker-end
-
-::: moniker range=">=sc-om-2022"
-
-Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
-
-::: moniker-end
-
 If you install a standalone web console on a server, you won't be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously or install the management server before you install the web console.
 
 ## Console components
@@ -48,23 +28,6 @@ If the Application Diagnostics console isn't installed, when you're viewing Appl
 
 A network load balancer isn't supported for the Operations Manager web console server. If you plan to use network load balancing with the Application Diagnostics console and the Application Advisor console, be sure to use sticky sessions. This action ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/windows-server/networking/technologies/network-load-balancing). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
 
-## Important considerations
-
-The web console operates with sensitive data, such as clear-text user credentials, server names, and IP addresses. If this data is exposed on the network, it can represent a significant security risk. If Internet Information Services (IIS) doesn't have Secure Sockets Layer (SSL) configured, we advise you to configure it manually. For more information about security, see [Data encryption for web console and reporting server connections](plan-data-encryption-server-roles.md).
-
-If the web console doesn't have sufficient access to the operational database or the data warehouse database, you receive a warning during the web console configuration step. You can proceed with Setup, but the web console won't be configured correctly for .NET application monitoring. To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and the data warehouse database:
-
-```
-EXEC [apm].GrantRWPermissionsToComputer N'[LOGIN]'
-```
-
-The local and remote parameters are as follows:
-
-- For local installation, `LOGIN` is `IIS APPPOOL\OperationsManagerAppMonitoring`.
-- For remote installation, `LOGIN` is `Domain\MachineName$`.
-
-If you run **Repair** on the web console after installation, the settings that you selected during installation are restored. Any changes that you manually make to the web console configuration after the installation will be reset.
-
 ## Prerequisites
 
 - Ensure that your server meets the minimum [system requirements for Operations Manager](./system-requirements.md).
@@ -74,7 +37,52 @@ If you run **Repair** on the web console after installation, the settings that y
   1. In IIS Manager, select the web server, and then double-click **ISAPI and CGI Restrictions**.
   1. For Operations Manager 2016 or 2019, select **ASP.NET v4.0.30319**. For Operations Manager 2022 or later, select **ASP.NET v4.8**. Then select **Allow**.
 
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
+
+## Important considerations
+
+- The web console operates with sensitive data, such as clear-text user credentials, server names, and IP addresses. If this data is exposed on the network, it can represent a significant security risk. If Internet Information Services (IIS) doesn't have Secure Sockets Layer (SSL) configured, we advise you to configure it manually. For more information about security, see [Data encryption for web console and reporting server connections](plan-data-encryption-server-roles.md).
+
+- If the web console doesn't have sufficient access to the operational database or the data warehouse database, you receive a warning during the web console configuration step. You can proceed with Setup, but the web console won't be configured correctly for .NET application monitoring.
+
+  To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and the data warehouse database:
+
+  ```
+  EXEC [apm].GrantRWPermissionsToComputer N'[LOGIN]'
+  ```
+
+  The local and remote parameters are as follows:
+
+  - For local installation, `LOGIN` is `IIS APPPOOL\OperationsManagerAppMonitoring`.
+  - For remote installation, `LOGIN` is `Domain\MachineName$`.
+
+::: moniker range="sc-om-2016"
+
+- If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 web console role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way that you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
+
+::: moniker-end
+
+- If you run **Repair** on the web console after installation, the settings that you selected during installation are restored. Any changes that you manually make to the web console configuration after the installation are reset.
+
 - Installing the web console on a computer that has SharePoint installed isn't supported.
+
+::: moniker range=">=sc-om-2022"
+
+- You can successfully install the web console regardless of the updates installed on the Operations Manager management server.
+
+::: moniker-end
+
+::: moniker range="=sc-om-2019"
+
+- Operations Manager 2019 UR1 and later support a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2022"
+
+- Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
+
+::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
@@ -83,13 +91,6 @@ If you run **Repair** on the web console after installation, the settings that y
 ::: moniker-end
 
 ## Install a standalone web console
-
-::: moniker range="sc-om-2016"
-
-> [!NOTE]
-> If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 web console role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way that you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
-
-::: moniker-end
 
 1. Sign in to the computer that will host the web console. Use an account that has local administrative credentials.
 
@@ -120,7 +121,7 @@ If you run **Repair** on the web console after installation, the settings that y
 10. On the **Configuration** > **Select an authentication mode for use with the Web console** page, select your option, and then select **Next**.
 
     > [!NOTE]
-    > If you install the management server on a server by using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select **Mixed Authentication**, you might need to register service principal names and configure constraint delegations. For more information, see [HTTP 500 error when you connect to the Operations Manager web console remotely](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
+    > If you install the management server on a server by using a domain account for System Center Configuration service and System Center Data Access service, and then you install the web console on a different server and select **Mixed Authentication**, you might need to register service principal names and configure constraint delegations. For more information, see [HTTP 500 error when you connect to the Operations Manager web console remotely](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
 
 11. On the **Diagnostic and Usage Data** page, review data collection terms, and then select **Next**.  
 
@@ -210,7 +211,7 @@ If you run **Repair** on the web console after installation, the settings that y
 
 By default, the IIS application pool identity of the web console is the built-in account named **ApplicationPoolIdentity**. When this account connects to SQL Server, it uses the Windows computer login to access the Operations Manager databases. To improve security, we recommend that you change the web console identity to a dedicated Active Directory user account.
 
-To change the web console identity, follow these steps:
+To change the web console identity:
 
 1. Create a user account in Active Directory to use as the web console identity.
 
@@ -230,7 +231,7 @@ To change the web console identity, follow these steps:
 
 1. Select **User Mapping**.
 
-1. Select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane, and then select **OK**.
+1. Select the **OperationsManager** database, make sure that the **public** role membership is selected on the lower pane, and then select **OK**.
 
 1. Repeat steps 4 to 8 for the **OperationsManagerDW** database.
 
@@ -252,7 +253,7 @@ To change the web console identity, follow these steps:
 
 1. Return to **SQL Server Management Studio** and connect to the SQL Server instance that hosts the **OperationsManager** database.
 
-1. Expand **Security** > **Logins**, find the computer account of the web console server, and delete or disable the login.
+1. Expand **Security** > **Logins**, find the computer account of the web console server. Delete or disable the login.
 
 1. Repeat steps 16 to 17 for the **OperationsManagerDW** database.
 
