@@ -76,26 +76,32 @@ To disable NTLM, you must meet these requirements:
 
 ## Verify that SSRS is configured correctly
 
-1. Verify that the **ReportServer** and **ReportServerTempDB** databases in SQL Server Management Studio are located on the standalone server. Open **SQL Server Management Studio**, and then connect to the default database instance. Open the **Databases** node, and verify that the two Reporting Services databases exist under this node.
+1. Verify that the **ReportServer** and **ReportServerTempDB** databases in SQL Server Management Studio are located on the standalone server:
 
-2. Verify the correct configuration of SSRS. Select **Start**, point to **Programs**, point to the appropriate offering of Microsoft SQL Server, point to **Configuration Tools**, and select **Reporting Services Configuration Manager**. Connect to the instance on which you installed Reporting Services.
+   1. Open SQL Server Management Studio and connect to the default database instance.
+   1. Open the **Databases** node and verify that the two SSRS databases exist under this node.
 
-3. In the navigation pane, select the `<servername>\SQLinstance`. This displays the Report Server status in the results pane. Ensure that the **Report Server Status** is **Started**.
+2. Verify the correct configuration of SSRS:
 
-4. In the navigation pane, select **Scale-out Deployment**, and ensure that the **Status** column has the value of **Joined**.
+   1. Select **Start**, point to **Programs**, point to the appropriate SQL Server offering, point to **Configuration Tools**, and then select **Reporting Services Configuration Manager**.
+   1. Connect to the instance on which you installed SSRS.
+
+3. On the left pane, select **\<servername>\SQLinstance**. This step displays the reporting server's status on the results pane. Ensure that the **Report Server Status** value is **Started**.
+
+4. On the left pane the navigation pane, select **Scale-out Deployment**. Ensure that the **Status** column has the value of **Joined**.
 
 5. If **Report Server** isn't started and the **Scale out Deployment** isn't joined, check the configuration of **Service Account**, **Web Service URL**, and **Database**.
 
     > [!NOTE]
-    > While SSRS supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it isn't supported with Operations Manager. Operations Manager Reporting installs a custom security extension as part of the setup of the front-end components, which can't be replicated across the web farm.
+    > Although SSRS supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it isn't supported with Operations Manager. Operations Manager reporting installs a custom security extension as part of the setup of the front-end components. This extension can't be replicated across the web farm.
 
-6. Confirm that the SSRS service is running. On the taskbar, select **Start**, point to **Administrative Tools**, and select **Services**.
+6. Confirm that the SSRS service is running. On the taskbar, select **Start**, point to **Administrative Tools**, and then select **Services**.
 
-7. In the **Name** column, find the **SQL Server Reporting Services** instance service and verify that its status reads **Started** and that the **Startup Type** is **Automatic**.
+7. In the **Name** column, find **SQL Server Reporting Services**. Verify that its status reads **Started** and that the **Startup Type** value is **Automatic**.
 
-8. In the **Name** column, find the **SQL Server Agent** service and verify that its status reads **Started** and that its **Startup Type** is **Automatic**.
+8. In the **Name** column, find **SQL Server Agent**. Verify that its status reads **Started** and that its **Startup Type** value is **Automatic**.
 
-9. Verify that the Report Server website is functioning and available by browsing to `http://<servername>/reportserver/_<$instance>`. You should see a page with the `<servername>/ReportServer/_<$instance>` and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
+9. Verify that the reporting server's website is functioning and available by browsing to `http://<servername>/reportserver/_<$instance>`. You should see a page with the `<servername>/ReportServer/_<$instance>` and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
 
 10. Verify that the Report Manager website is configured correctly by opening **Internet Explorer** and browsing to `http://<servername>/reports/_<$instance>`.
 
