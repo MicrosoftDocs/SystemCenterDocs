@@ -90,7 +90,7 @@ You can use the `monitoring/folder` request of type `POST` to create a new folde
 | `path` | string |Name of the new folder. |
 | `mpId` | string | ID of the management pack where you want to create the new folder.  |
 
-You can also use the `monitoring/folder` request of type `POST` to create a new folder inside a pre-existing folder. Here are the required parameters:
+You can also use the `monitoring/folder` request of type `POST` to create a new folder inside a preexisting folder. Here are the required parameters:
 
 | Name | Type  | Definition |
 |----|---|------|

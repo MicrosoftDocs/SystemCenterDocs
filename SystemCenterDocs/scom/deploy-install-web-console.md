@@ -15,7 +15,7 @@ ms.topic: install-set-up-deploy
 
 You can install the web console when you install System Center Operations Manager, or you can install it separately. You can install a standalone web console or install it on an existing management server that meets the prerequisites.
 
-If you install a standalone web console on a server, you won't be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously or install the management server before you install the web console.
+If you install a standalone web console on a server, you can't add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously or install the management server before you install the web console.
 
 ## Console components
 
@@ -24,7 +24,7 @@ When you install the web console, the following components are also installed:
 - Application Diagnostics console
 - Application Advisor console
 
-If the Application Diagnostics console isn't installed, when you're viewing Application Performance Monitoring (APM) alerts, you won't be able to use the link embedded in the alert description to open the APM event details. To use this feature, install the web console within the management group.
+If the Application Diagnostics console isn't installed, when you're viewing Application Performance Monitoring (APM) alerts, you can't use the link embedded in the alert description to open the APM event details. To use this feature, install the web console within the management group.
 
 A network load balancer isn't supported for the Operations Manager web console server. If you plan to use network load balancing with the Application Diagnostics console and the Application Advisor console, be sure to use sticky sessions. This action ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/windows-server/networking/technologies/network-load-balancing). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
 
@@ -253,7 +253,7 @@ To change the web console identity:
 
 1. Return to **SQL Server Management Studio** and connect to the SQL Server instance that hosts the **OperationsManager** database.
 
-1. Expand **Security** > **Logins**, find the computer account of the web console server. Delete or disable the login.
+1. Expand **Security** > **Logins** and find the computer account of the web console server. Delete or disable the login.
 
 1. Repeat steps 16 to 17 for the **OperationsManagerDW** database.
 

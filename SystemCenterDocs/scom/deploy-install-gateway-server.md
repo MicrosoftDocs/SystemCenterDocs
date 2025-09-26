@@ -43,7 +43,7 @@ Before you proceed with the gateway role installation in a standard scenario, ce
 
 ### Certificates for authentication
 
-Deployment of gateway servers in domains without a two-way transitive trust, or in a workgroup, requires the use of certificates for authentication. The primary and failover management servers need a certificate, in addition to the gateway that's connecting to them. These certificates can come from a Microsoft Certificate Services certificate authority (CA) or a non-Microsoft CA, if it's configured correctly for Operations Manager.
+Deployment of gateway servers in domains without a two-way transitive trust, or in a workgroup, requires the use of certificates for authentication. The primary and failover management servers need a certificate, in addition to the gateway that's connecting to them. These certificates can come from a Microsoft Certificate Services certificate authority (CA) or a non-Microsoft CA, if they're configured correctly for Operations Manager.
 
 If you need assistance with creating these certificates, see [Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md).
 

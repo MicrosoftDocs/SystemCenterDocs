@@ -83,7 +83,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
    - If you're hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.
    - If the database is part of a SQL Server AG, replace `computer\<instance>` with the AG listener. For **SQL Server port**, enter the port number of the AG listener.
 
-   As you enter the values for the server and instance names, a red circle with a white **X** appears to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values aren't validated yet. The black text indicates that you haven't entered any illegal characters. If you enter illegal characters, the text itself turns red.
+   As you enter the values for the server and instance names, a red circle with a white **X** appears to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values aren't validated yet. The black text indicates that you didn't enter any illegal characters. If you enter illegal characters, the text itself turns red.
 
    The white **X** appears under the following circumstances:
 
@@ -176,7 +176,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
    - If you're hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.
    - If the database is part of a SQL Server AG, replace `computer\<instance>` with the AG listener. For **SQL Server port**, enter the port number of the AG listener.
 
-   As you enter the values for the server and instance names, a red circle with a white **X** appears to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values aren't validated yet. The black text indicates that you haven't entered any illegal characters. If you enter illegal characters, the text itself turns red.
+   As you enter the values for the server and instance names, a red circle with a white **X** appears to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values aren't validated yet. The black text indicates that you didn't enter any illegal characters. If you enter illegal characters, the text itself turns red.
 
    The white **X** appears under the following circumstances:
 
