@@ -55,26 +55,26 @@ Although SSRS is installed on the standalone server, you don't access Operations
 
 ::: moniker-end
 
-## Install SSRS
+## Install and configure SSRS
 
-An installation of SSRS that Operations Manager uses *can't be shared with any other application*. The reason is that changes the base SSRS installation undergoes changes to accommodate user roles and authentication with Operations Manager. If any reports exist on the SSRS instance where the Operations Manager installer for reporting services runs, all existing data and reports are overwritten.
+An installation of SSRS that Operations Manager uses *can't be shared with any other application*. The reason is that the base SSRS installation undergoes changes to accommodate user roles and authentication with Operations Manager. If any reports exist on the SSRS instance where the Operations Manager installer for reporting services runs, all existing data and reports are overwritten.
 
 For information about how to install and configure SSRS, see the [SQL Server installation guide](/sql/database-engine/install-windows/install-sql-server).
 
-## Install SSRS on NTLM-hardened enterprises
+### Install SSRS on NTLM-hardened enterprises
 
 In Operations Manager 2016 and later, disabling NTLM as an organizational policy affects Operations Manager reporting services. If your organization disabled NTLM, you can select the reporting manager's **Authentication Type** value as **Windows Negotiate** while installing SSRS. NTLM is the default option.
 
 > [!NOTE]
-> Authentication type options are available only when you install the reporting manager on a remote server.
+> Options for authentication type are available only when you install the reporting manager on a remote server.
 
 To disable NTLM, you must meet these requirements:
 
 - If SSRS and SQL Server are both installed on remote servers, ensure that [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SQL Server](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections) service principal names (SPNs) are set.
-- If SSRS is installed on a remote server and SQL Server and the management server are installed on the same machine, [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) and [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server) SPNs are required.
-- If SQL Server is installed on remote server and SSRS and the management server are installed on the same machine, ensure that [SQL Server](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) SPNs are set.
+- If SSRS is installed on a remote server, and SQL Server and the management server are installed on the same machine, [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) and [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server) SPNs are required.
+- If SQL Server is installed on remote server, and SSRS and the management server are installed on the same machine, ensure that [SQL Server](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) SPNs are set.
 
-## Verify that SSRS is configured correctly
+### Verify that SSRS is configured correctly
 
 1. Verify that the **ReportServer** and **ReportServerTempDB** databases in SQL Server Management Studio are located on the standalone server:
 
@@ -88,9 +88,9 @@ To disable NTLM, you must meet these requirements:
 
 3. On the left pane, select **\<servername>\SQLinstance**. This step displays the reporting server's status on the results pane. Ensure that the **Report Server Status** value is **Started**.
 
-4. On the left pane the navigation pane, select **Scale-out Deployment**. Ensure that the **Status** column has the value of **Joined**.
+4. On the left pane, select **Scale-out Deployment**. Ensure that the **Status** column has the value of **Joined**.
 
-5. If **Report Server** isn't started and the **Scale out Deployment** isn't joined, check the configuration of **Service Account**, **Web Service URL**, and **Database**.
+5. If **Report Server** isn't started and **Scale out Deployment** isn't joined, check the configuration of **Service Account**, **Web Service URL**, and **Database**.
 
     > [!NOTE]
     > Although SSRS supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it isn't supported with Operations Manager. Operations Manager reporting installs a custom security extension as part of the setup of the front-end components. This extension can't be replicated across the web farm.
@@ -99,61 +99,55 @@ To disable NTLM, you must meet these requirements:
 
 7. In the **Name** column, find **SQL Server Reporting Services**. Verify that its status reads **Started** and that the **Startup Type** value is **Automatic**.
 
-8. In the **Name** column, find **SQL Server Agent**. Verify that its status reads **Started** and that its **Startup Type** value is **Automatic**.
+8. In the **Name** column, find **SQL Server Agent**. Verify that its status is **Started** and that its **Startup Type** value is **Automatic**.
 
-9. Verify that the reporting server's website is functioning and available by browsing to `http://<servername>/reportserver/_<$instance>`. You should see a page with the `<servername>/ReportServer/_<$instance>` and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
+9. Verify that the reporting server website is functioning and available by browsing to `http://<servername>/reportserver/_<$instance>`. A page should appear with `<servername>/ReportServer/_<$instance>` and the text **Microsoft SQL Server Reporting Services Version ##.#.####.##**, where the number signs represent the version number of your SQL Server installation.
 
-10. Verify that the Report Manager website is configured correctly by opening **Internet Explorer** and browsing to `http://<servername>/reports/_<$instance>`.
+10. Verify that the reporting manager website is configured correctly by opening a browser and going to `http://<servername>/reports/_<$instance>`.
 
-11. In the Report Manager website, select **New Folder** to create a new folder. Enter a name and description, and select **OK**. Ensure that the new, created folder is visible on the Report Manager website.
+11. On the reporting manager website, select **New Folder** to create a folder. Enter a name and description, and then select **OK**. Ensure that the newly created folder is visible on the reporting manager website.
 
 ## Install Operations Manager reporting
 
 > [!IMPORTANT]
-> The Operations Manager Reporting role must be installed directly on the SQL Server Reporting Server. Remote SSRS instances are not supported and will not appear in the installation wizard.
-
-Follow these steps to install Operations Manager reporting:
+> The Operations Manager reporting role must be installed directly on the SSRS server. Remote SSRS instances are not supported and don't appear in the installation wizard.
 
 1. Sign in to the SSRS server as a local administrator.
 
-2. On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
+2. On the Operations Manager installation media, run **Setup.exe**, and then select **Install**.
 
-3. On the **Getting Started**, **Select features to install** page, select the **Reporting server** feature. To read more about each feature and its requirements, select **Expand all**, or expand the buttons next to each feature, and select **Next**.
+3. On the **Getting Started** > **Select features to install** page, select the **Reporting server** feature. To read more about each feature and its requirements, select **Expand all** (or expand the button next to each feature). Then select **Next**.
 
-4. On the **Getting Started**, **Select installation location** page, accept the default value, or enter a new location or browse to one, and select **Next**.
+4. On the **Getting Started** > **Select installation location** page, accept the default value. Or you can enter a new location or browse to one. Then select **Next**.
 
-5. On the **Prerequisites** page, review and resolve any warnings or errors, and select **Verify Prerequisites Again** to recheck the system.
+5. On the **Prerequisites** page, review and resolve any warnings or errors. Then select **Verify Prerequisites Again** to recheck the system.
 
-6. If the Prerequisites checker doesn't return any warnings or errors, continue to the **Prerequisites**, **Proceed with Setup** page. Select **Next**.
+6. If the prerequisites checker doesn't return any warnings or errors, the **Prerequisites** > **Proceed with Setup** page appears. Select **Next**.
 
-7. On the **Configuration**, **Specify a Management server** page, enter the name of a management server that is used by the Reporting features only. Then select **Next**.
+7. On the **Configuration** > **Specify a Management server** page, enter the name of a management server that that only the reporting features use. Then select **Next**.
 
-8. On the **Configuration**, **SQL Server instance for reporting services** page, select the instance of SQL Server that hosts SSRS, and select **Next**.
+8. On the **Configuration** > **SQL Server instance for reporting services** page, select the instance of SQL Server that hosts SSRS. Then select **Next**.
 
-9. On the **Configuration**, **Configure Operations Manager accounts** page, enter the credentials for the **Data Reader account**, and select **Next**.
+9. On the **Configuration** > **Configure Operations Manager accounts** page, enter the credentials for **Data Reader account**. Then select **Next**.
 
-10. On the **Configuration**, **Help improve System Center - Operations Manager** page, select your options, and select **Next**.
+10. On the **Configuration** > **Help improve System Center - Operations Manager** page, select your options, and then select **Next**.
 
-11. If Windows Update isn't activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and select **Next**.
+11. If Windows Update isn't activated on the computer, the **Configuration** > **Microsoft Update** page appears. Select your options, and then select **Next**.
 
-12. Review the options on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
+12. Review the options on the **Configuration** > **Installation Summary** page, and then select **Install**.
 
-13. When the Setup is finished, the **Setup is complete** page appears. Select **Close**.
+13. When Setup finishes, the **Setup is complete** page appears. Select **Close**.
 
 ## Install Operations Manager reporting from the command prompt
-
-Follow these steps to install Operations Manager reporting from the command prompt:
 
 1. Sign in to the server by using an account that has local administrative credentials.
 
 2. Open the Command Prompt window by using the **Run as Administrator** option.
 
-3. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+3. Change the path to where the Operations Manager **setup.exe** file is located, and run the following command. Keep this parameter information in mind:
 
-    > [!NOTE]
-    >
-    > - The `/ManagementServer` parameter is only required when you're installing reporting on a server that isn't a management server.
-    > - The `/SRSInstance` parameter is the name of the local SSRS instance, for example 'SSRS'.
+    - The `/ManagementServer` parameter is required only when you're installing reporting on a server that isn't a management server.
+    - The `/SRSInstance` parameter is the name of the local SSRS instance; for example, `SSRS`.
 
     ```cmd
     setup.exe /silent /install /components:OMReporting
@@ -168,22 +162,20 @@ Follow these steps to install Operations Manager reporting from the command prom
 
 ## Confirm the health of Operations Manager reports
 
-Follow these steps to confirm the health of Operations Manager reports:
-
-1. Open the Operations console, and select the **Reporting** workspace.
+1. Open the operations console, and select the **Reporting** workspace.
 
     > [!NOTE]
     > After the initial deployment, reports can require up to 30 minutes to appear.
 
 2. Select **Microsoft ODR Report Library**, and double-click any of the reports listed. The selected report is then generated and displayed in a new window.
 
-    By default, you should see the following reports:
+    By default, the following reports should appear:
 
-    - Alerts Per Day
-    - Instance Space
-    - Management Group
-    - Management Packs
-    - Most Common Alerts
+    - **Alerts Per Day**
+    - **Instance Space**
+    - **Management Group**
+    - **Management Packs**
+    - **Most Common Alerts**
 
 3. Close the report window.
 
