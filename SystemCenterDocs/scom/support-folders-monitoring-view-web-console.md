@@ -13,7 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
-# Create folders from the web console in Operations Manager
+# Create folders from the Operations Manager web console
 
 You can create folders by using the System Center Operations Manager web console and then store dashboards inside them.
 

@@ -14,7 +14,7 @@ ms.topic: concept-article
 
 # Distributed deployment of Operations Manager
 
-A distributed installation of management groups forms the foundation of most System Center Operations Manager deployments. It allows for the distribution of features and services across multiple servers, for scalability. It can include all Operations Manager server roles and supports the monitoring of devices across trust boundaries by using the gateway server.
+A distributed installation of management groups forms the foundation of most System Center Operations Manager deployments. It enhances scalability by allowing for the distribution of features and services across multiple servers. It can include all Operations Manager server roles, and it supports the monitoring of devices across trust boundaries by using the gateway server.
 
 ## Operations Manager features
 
@@ -49,10 +49,10 @@ This configuration supports all Operations Manager server roles:
 This section of the deployment guide contains the following topics:
 
 - [Install an Operations Manager management server](deploy-install-mgmt-server.md)
-- [Install the operations console](deploy-install-ops-console.md)
+- [Install the Operations Manager operations console](deploy-install-ops-console.md)
 - [Install the Operations Manager web console](deploy-install-web-console.md)
 - [Create folders from the Operations Manager web console](support-folders-monitoring-view-web-console.md)
 - [Install an Audit Collection Services collector and database](deploy-install-acs.md)
-- [Install the Operations Manager reporting server](deploy-install-reporting-server.md)
+- [Install an Operations Manager reporting server](deploy-install-reporting-server.md)
 - [Connect to the reporting data warehouse across a firewall](deploy-connect-reportingdw-firewall.md)
-- [Install a gateway server](deploy-install-gateway-server.md)
+- [Install an Operations Manager gateway server](deploy-install-gateway-server.md)

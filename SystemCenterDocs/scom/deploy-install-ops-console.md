@@ -11,7 +11,7 @@ ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
 ---
 
-# Install the operations console
+# Install the Operations Manager operations console
 
 After you install System Center Operations Manager, you can install the operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 
