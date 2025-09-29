@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.custom: sfi-image-nochange
 ---
 
 # Create a Service Principal

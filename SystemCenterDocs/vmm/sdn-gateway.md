@@ -8,7 +8,11 @@ ms.date: 04/22/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Set up an SDN RAS gateway in the VMM fabric

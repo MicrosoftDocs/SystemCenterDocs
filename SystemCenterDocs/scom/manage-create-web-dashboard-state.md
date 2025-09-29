@@ -5,11 +5,13 @@ description: This article describes how to create a new HTML5 dashboard in Syste
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/02/2025
-ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.custom:
+  - UpdateFrequency2
+  - sfi-image-nochange
 ---
 
 # Create a dashboard with the State widget in the Web console

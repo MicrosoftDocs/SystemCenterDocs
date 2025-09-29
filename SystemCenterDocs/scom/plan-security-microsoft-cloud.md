@@ -5,10 +5,13 @@ description: This article provides design guidance on how to authenticate and se
 ms.date: 08/21/2025
 author: jyothisuri
 ms.author: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Security Considerations for Microsoft Azure and Microsoft 365

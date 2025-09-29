@@ -8,7 +8,11 @@ ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: engagement-fy23, UpdateFrequency2, engagement-fy24
+ms.custom:
+  - engagement-fy23
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Set up an SDN network controller in the VMM fabric

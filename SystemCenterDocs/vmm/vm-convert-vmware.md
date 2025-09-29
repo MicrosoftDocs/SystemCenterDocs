@@ -7,8 +7,10 @@ ms.author: jsuri
 ms.date: 08/22/2025
 ms.topic: how-to
 ms.service: system-center
-ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager
+ms.custom:
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Convert a VMware VM to Hyper-V in the VMM fabric

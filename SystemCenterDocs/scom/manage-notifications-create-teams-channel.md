@@ -4,11 +4,14 @@ description: This article describes how to set up a Microsoft Teams notification
 author: jyothisuri
 ms.author: jsuri
 ms.date: 02/27/2025
-ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 MonikerRange: '>=sc-om-2022'
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Set up a Microsoft Teams notification channel in System Center Operations Manager

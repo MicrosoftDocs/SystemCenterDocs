@@ -7,7 +7,9 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
-ms.custom: engagement-fy23
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Integration pack for SharePoint

@@ -9,6 +9,7 @@ ms.author: jsuri
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.custom: sfi-image-nochange
 ---
 
 # Manual monitoring template

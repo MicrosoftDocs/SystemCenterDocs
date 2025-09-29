@@ -1,13 +1,15 @@
 ---
 title: Monitoring Types in management pack for Azure SQL Database
 description: Learn how to set up Azure REST API and T-SQL monitoring in management pack for Azure SQL Database.
-ms.custom: engagement-fy23
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/02/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Monitoring types

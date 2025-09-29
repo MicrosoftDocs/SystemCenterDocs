@@ -7,7 +7,10 @@ ms.subservice: orchestrator
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - sfi-ropc-nochange
 ---
 
 # Modify the Orchestrator database

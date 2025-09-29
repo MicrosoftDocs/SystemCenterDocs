@@ -9,6 +9,7 @@ ms.date:  2/8/2018
 title:  Upgrade to DPM 1801
 ms.subservice: data-protection-manager
 ms.assetid:
+ms.custom: sfi-image-nochange
 ---
 
 ## Upgrade to DPM 1801

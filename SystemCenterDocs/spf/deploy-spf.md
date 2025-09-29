@@ -7,7 +7,11 @@ ms.date: 04/09/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: service-provider-foundation
-ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - intro-deployment
+  - engagement-fy24
+  - sfi-ropc-nochange
 ---
 
 # Deploy SPF

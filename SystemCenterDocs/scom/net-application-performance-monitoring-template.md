@@ -5,10 +5,12 @@ description: This article provides an overview of .NET application performance m
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.custom:
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # .NET application performance monitoring template

@@ -1,7 +1,6 @@
 ---
 title: New Self-Service portal deployment scenarios and troubleshooting
 description: This article helps you understand what you need to know before you deploy the new Service Manager Self-Service portal, and troubleshoot its installation.
-ms.custom: engagement-fy23
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -12,6 +11,9 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting-general
 ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Learn about deploying the new Self-Service portal and troubleshoot installation issues
