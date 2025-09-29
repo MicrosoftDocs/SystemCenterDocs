@@ -14,7 +14,13 @@ ms.topic: install-set-up-deploy
 
 # Install an Audit Collection Services collector and database
 
-Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Both procedures are performed on the computer that's designated as your ACS collector for System Center Operations Manager.
+Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Perform the procedures on the computer that's designated as your ACS collector for System Center Operations Manager.
+
+## Prerequsites
+
+The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of SQL Server. To complete the installation procedure, you must be a member of the Local Administrators group on both the ACS collector and ACS database computers. You must also be a database administrator on the ACS database. As a best practice for security, consider using **Run As** to perform this procedure.
+
+## Important considerations
 
 ::: moniker range="sc-om-2019"
 
@@ -27,8 +33,6 @@ Operations Manager 2019 UR1 and later support a single installer for all support
 Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
 
 ::: moniker-end
-
-The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of SQL Server. To complete the installation procedure, you must be a member of the Local Administrators group on both the ACS collector and ACS database computers. You must also be a database administrator on the ACS database. As a best practice for security, consider using **Run As** to perform this procedure.
 
 ## Install an ACS collector and an ACS database
 
