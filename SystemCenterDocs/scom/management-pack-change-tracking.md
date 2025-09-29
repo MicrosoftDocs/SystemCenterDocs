@@ -9,7 +9,9 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 MonikerRange: '>=sc-om-2019'
-ms.custom: engagement-fy23
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Track changes in Operations Manager

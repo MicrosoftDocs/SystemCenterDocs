@@ -8,7 +8,11 @@ ms.date: 04/07/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - intro-deployment
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Deploy a Storage Spaces Direct disaggregated cluster in VMM

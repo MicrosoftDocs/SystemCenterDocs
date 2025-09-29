@@ -10,7 +10,10 @@ ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
 author: jyothisuri
 ms.author: jsuri
 monikerRange: '>=sc-dpm-2019'
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Offline seeding using Azure Data Box for DPM and MABS

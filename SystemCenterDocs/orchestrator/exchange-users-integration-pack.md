@@ -1,7 +1,6 @@
 ---
 title: Exchange Users Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. Integration packs optimize IT operations across various environments.
-ms.custom: engagement-fy24
 ms.date: 11/19/2024
 ms.service: system-center
 ms.reviewer: na
@@ -12,6 +11,9 @@ ms.topic: how-to
 ms.assetid: 2a7359ab-604e-4e05-89f3-09eb13a14c58
 author: jyothisuri
 ms.author: jsuri
+ms.custom:
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Exchange Users integration pack

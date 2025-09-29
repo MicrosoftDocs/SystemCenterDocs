@@ -5,10 +5,14 @@ description: This article describes Operations Manager installation with RC4 dis
 author: jyothisuri
 ms.author: jsuri
 ms.date: 02/17/2025
-ms.custom: na, intro-installation, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.custom:
+  - na
+  - intro-installation
+  - UpdateFrequency2
+  - sfi-image-nochange
 ---
 
 # Disable RC4 while installing Operations Manager

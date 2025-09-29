@@ -8,7 +8,11 @@ ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
+ms.custom:
+  - UpdateFrequency.5
+  - intro-installation
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Install System Center - Orchestrator

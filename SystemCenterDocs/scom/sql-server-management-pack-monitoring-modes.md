@@ -8,6 +8,7 @@ ms.date: 11/26/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.custom: sfi-image-nochange
 ---
 
 # Monitoring Modes

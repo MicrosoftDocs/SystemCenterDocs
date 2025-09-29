@@ -4,11 +4,13 @@ description: This article describes the different view types available in the Op
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: f36bccfb-e038-4a3a-9999-3195fe738bd3
+ms.custom:
+  - UpdateFrequency2
+  - sfi-image-nochange
 ---
 
 # View types in Operations Manager

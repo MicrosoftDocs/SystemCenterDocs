@@ -9,7 +9,10 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '<=sc-vmm-2022'
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Azure update management

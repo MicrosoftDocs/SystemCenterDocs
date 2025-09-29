@@ -8,7 +8,10 @@ ms.date: 08/02/2024
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-deployment, engagement-fy24
+ms.custom:
+  - intro-deployment
+  - engagement-fy24
+  - sfi-ropc-nochange
 ---
 # Deploy SQL Server for VMM high availability
 

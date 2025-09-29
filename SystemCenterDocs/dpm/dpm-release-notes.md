@@ -9,7 +9,12 @@ ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: release-notes
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom:
+  - UpdateFrequency.5
+  - engagement-fy23
+  - engagement-fy24
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # System Center DPM Release Notes

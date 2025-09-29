@@ -8,7 +8,11 @@ ms.author: jsuri
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 

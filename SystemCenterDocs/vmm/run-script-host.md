@@ -8,7 +8,10 @@ ms.date: 08/09/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Run a script on a remote host using Run Script command
