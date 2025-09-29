@@ -20,15 +20,17 @@ Use the following procedures to install an Audit Collection Services (ACS) colle
 
 The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of SQL Server. To complete the installation procedure, you must be a member of the Local Administrators group on both the ACS collector and ACS database computers. You must also be a database administrator on the ACS database. As a best practice for security, consider using **Run As** to perform this procedure.
 
-## Important considerations
-
 ::: moniker range="sc-om-2019"
+
+## Important considerations
 
 Operations Manager 2019 UR1 and later support a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2022"
+
+## Important considerations
 
 Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.
 
@@ -54,9 +56,9 @@ Operations Manager supports a single installer for all supported languages, inst
 
 7. On the **Database** page, if the database is on a separate server than the ACS collector, select **Remote Database Server**, and then enter the computer name of the database server that will host the database for this installation of ACS. Otherwise, select **Database server running locally**.
 
-8. In the **Database server instance name** field, enter the name of the server and the name of the SQL Server instance (if it isn't the default instance) for the database server that will host the ACS database.
+8. In the **Database server instance name** box, enter the name of the server and the name of the SQL Server instance (if it isn't the default instance) for the database server that will host the ACS database.
 
-9. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Then select **Next**.
+9. In the **Database name** box, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Then select **Next**.
 
     > [!NOTE]
     > The database name can't contain the hyphen (`-`) character.
@@ -71,7 +73,7 @@ Operations Manager supports a single installer for all supported languages, inst
 
 14. In the **Number of days to retain events** box, enter the number of days that ACS should keep events in the ACS database before the events are removed during database grooming. The default value is 14 days. Then select **Next**.
 
-15. On the **ACS Stored Timestamp Format** page, choose **Local** or **Universal Coordinated Time**. Then select **Next**.
+15. On the **ACS Stored Timestamp Format** page, select **Local** or **Universal Coordinated Time**. Then select **Next**.
 
 16. The **Summary** page displays a list of actions that the installation program will perform to install ACS. Review the list, and then select **Next** to begin the installation.
 

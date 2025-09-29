@@ -24,15 +24,17 @@ Ensure that your server meets the minimum [system requirements for Operations Ma
 
 [!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
-## Important considerations
-
 ::: moniker range="sc-om-2016"
+
+## Important considerations
 
 If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way that you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2022"
+
+## Important considerations
 
 You can set up and upgrade Operations Manager databases by using an existing SQL Server Always On setup, without any need for post-configuration changes.
 

@@ -18,19 +18,19 @@ ms.custom:
 
 # Install an Operations Manager gateway server
 
-Organizations typically use gateway servers in System Center Operations Manager to enable monitoring of client computers that are outside the Kerberos trust boundary of management groups. However, gateways are also useful within the same domain. For example, you might have a requirement to segment the network and reduce the number of firewall ports opened. Another scenario is to use gateways for agents that are too "far away" to connect reliably a management server within the five-minute heartbeat interval.
+Organizations typically use gateway servers in System Center Operations Manager to enable monitoring of client computers that are outside the Kerberos trust boundary of management groups. However, gateways are also useful within the same domain. For example, you might have a requirement to segment the network and reduce the number of opened firewall ports. Another scenario is to use gateways for agents that are too far away to connect reliably a management server within the five-minute heartbeat interval.
 
-Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain.
+Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. You can place multiple gateway servers in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, you can configure a single gateway server to fail over between management servers so that no single point of failure exists in the communication chain.
 
 The gateway server acts as a proxy for agent-to-management server communication. It enables only one port to be opened between networks, in place of many.
 
-Certificates must be used to establish each computer's identity when it's outside the Kerberos trust boundary. Without certificates, the systems might connect but refuse to communicate because they can't authenticate the connection.
+You must use certificates to establish each computer's identity when it's outside the Kerberos trust boundary. Without certificates, the systems might connect but refuse to communicate because they can't authenticate the connection.
 
 ## Prerequisites
 
 - Ensure that your server meets the minimum [system requirements for Operations Manager](./system-requirements.md).
 
-- Ensure that port 5723 is open between the gateway and management server, as defined in [Configuring a firewall for Operations Manager](plan-security-config-firewall.md).
+- Ensure that port 5723 is open between the gateway and management server, as defined in [Configure a firewall for Operations Manager](plan-security-config-firewall.md).
 
 [!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
@@ -38,23 +38,23 @@ Certificates must be used to establish each computer's identity when it's outsid
 
 ## Important considerations
 
-If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role fails because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
+If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role fails because the setup media doesn't include the updates to support TLS 1.2. The only way that you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 ::: moniker-end
 
 ## Generate certificates and perform name resolution
 
-Before you proceed with the gateway role installation in a standard scenario, certificates need to be generated for the gateway and management servers and installed in the certificate stores. If you're using the gateway and client servers in a workgroup scenario, the clients also need certificates.
+Before you proceed with the gateway role installation in a standard scenario, you need to generate certificates for the gateway and management servers and install them in the certificate stores. If you're using the gateway and client servers in a workgroup scenario, the clients also need certificates.
 
 ### Certificates for authentication
 
 Deployment of gateway servers in domains without a two-way transitive trust, or in a workgroup, requires the use of certificates for authentication. The primary and failover management servers need a certificate, in addition to the gateway that's connecting to them. These certificates can come from a Microsoft Certificate Services certificate authority (CA) or a non-Microsoft CA, if they're configured correctly for Operations Manager.
 
-If you need assistance with creating these certificates, see [Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md).
+If you need assistance with creating these certificates, see [Obtain a certificate for use with Windows Server and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md).
 
 Keep these points in mind:
 
 - Gateway servers that are in the same domain or in a shared trust boundary as the management group don't require certificates.
-- If the gateway and agents are in a workgroup, you need certificates for each management server, gateway, and client computer, because there's no domain within a workgroup to facilitate authentication of systems.
+- If the gateway and agents are in a workgroup, you need certificates for each management server, gateway, and client computer. There's no domain within a workgroup to facilitate authentication of systems.
 
 ### Reliable name resolution
 
@@ -83,25 +83,24 @@ Perform these steps from a management server, preferably your primary or Root Ma
     Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /Action=Create
     ```
 
-    > [!NOTE]
-    > To prevent the gateway server from initiating communication with a management server, use the `/ManagementServerInitiatesConnection=True` parameter in the command. By default, the gateway initiates communication. But this parameter is useful if you want to avoid any inbound access to the primary domain from the network where the gateway is located. For example:
-    >
-    > ```cmd
-    > Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /ManagementServerInitiatesConnection=True /Action=Create
-    > ```
+    To prevent the gateway server from initiating communication with a management server, you can use the `/ManagementServerInitiatesConnection=True` parameter in the command. By default, the gateway initiates communication. But this parameter is useful if you want to avoid any inbound access to the primary domain from the network where the gateway is located. For example:
+
+    ```cmd
+    Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /ManagementServerInitiatesConnection=True /Action=Create
+    ```
 
 1. If the approval is successful, the message `The approval of server <GatewayFQDN> completed successfully` appears.
 
 1. If you need to remove the gateway server from the management group, run the same command but substitute `/Action=Create` for the `/Action=Delete` flag.
 
-1. Open the operations console to the **Monitoring** view. Select the **Discovered Inventory** view to verify that the gateway server is present. It should also be viewable under **Administration** > **Device Management** > **Management Servers**.
+1. Open the operations console in the **Monitoring** view. Select the **Discovered Inventory** view to verify that the gateway server is present. The server should also be viewable under **Administration** > **Device Management** > **Management Servers**.
 
 ## Install the gateway role
 
 After the intended gateway server is registered with the management group, it's time to install the role on the new gateway.
 
 > [!NOTE]
-> An installation fails when you start Windows Installer (for example, installing a gateway server by double-clicking `MOMGateway.msi`) if the local security policy **User Account Control: Run all administrators in Admin Approval Mode** is enabled.
+> If the local security policy **User Account Control: Run all administrators in Admin Approval Mode** is enabled, an installation fails when you start Windows Installer. For example, this problem can happen when you install a gateway server by double-clicking `MOMGateway.msi`.
 >
 > If you experience problems during installation, you can find the logs in `%LocalAppData%\SCOM\Logs`.
 
@@ -120,8 +119,8 @@ After the intended gateway server is registered with the management group, it's 
 1. On the **Management Group Configuration** page, make the following selections, and then select **Next**:
 
    - In the **Management Group Name** box, enter the name of the target management group.
-   - In the **Management Server** field, enter the name of the target management server.
-   - Check that the **Management Server Port** field is **5723**.
+   - In the **Management Server** box, enter the name of the target management server.
+   - Check that the **Management Server Port** value is **5723**.
 
 1. On the **Gateway Action Account** page, select the **Local System** account option, unless you're using a gateway action account that's based on the domain or the local computer. Then select **Next**.
 
@@ -139,10 +138,10 @@ After the intended gateway server is registered with the management group, it's 
 
 1. Run one of the following commands. Keep these points about the commands in mind:
 
-   - `path\to\Installer` is the path of the installation media.
+   - The `path\to\Installer` part is the path of the installation media.
    - You can find `MOMGateway.msi` in the Operations Manager installation media under `..\gateway\amd64\`.
    - The action account password can't contain illegal characters in the command prompt, such as: `& < > ( ) @ ^ | "`. If it does, the installation fails because it can't parse the string. Change the password to not contain these characters, and then wrap it in double quotation marks within the command.
-   - The caret (`^`) character allows for multiple-line input in the command prompt for better readability and easier editing. If the command doesn't work in your environment, remove the `^` characters and ensure that the command is on a single line.
+   - The caret (`^`) character allows for multiline input in the command prompt for better readability and easier editing. If the command doesn't work in your environment, remove the `^` characters and ensure that the command is on a single line.
 
    If you're using the local system as the action account, use this command:
 
@@ -187,7 +186,7 @@ Perform this operation on each gateway and management server, along with any cli
 
 1. In the installation media, find the `MOMCertImport.exe` file under `..\SupportTools\amd64\`.
 
-1. Copy this file to the root directory of the target server or to the Operations Manager installation directory. For example: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`.
+1. Copy the file to the root directory of the target server or to the Operations Manager installation directory. For example: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`.
 
 1. Open a command prompt as an administrator, and change the directory to the directory that contains `MOMCertImport.exe`. For example: `cd %ProgramFiles%\Microsoft System Center\Operations Manager\Server`.
 
@@ -198,7 +197,7 @@ Perform this operation on each gateway and management server, along with any cli
 1. If the import is successful, the Microsoft Monitoring Agent service is restarted and event ID 20053 is logged to the Operations Manager event log. If this event ID isn't present, observe the details of one of the following IDs for any problems and make corrections accordingly: 20049, 20050, 20052, 20066, 20069, 20077.
 
 > [!TIP]
-> After the certificate is successfully imported, you can see a mirrored version of the thumbprint in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`.
+> After the certificate is successfully imported, a mirrored version of the thumbprint appears in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`.
 
 ## Configure gateway servers for failover between management servers
 
