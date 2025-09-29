@@ -16,7 +16,7 @@ ms.topic: install-set-up-deploy
 
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Perform the procedures on the computer that's designated as your ACS collector for System Center Operations Manager.
 
-## Prerequsites
+## Prerequisites
 
 The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of SQL Server. To complete the installation procedure, you must be a member of the Local Administrators group on both the ACS collector and ACS database computers. You must also be a database administrator on the ACS database. As a best practice for security, consider using **Run As** to perform this procedure.
 

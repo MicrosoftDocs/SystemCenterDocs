@@ -78,7 +78,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 
 1. On the **Configuration** > **Please read the license terms** page, review the Microsoft Software License Terms. Select **I have read, understood and agree with the license terms**, and then select **Next**.
 
-1. When the **Configuration** > **Configure the operational database** page opens, fill in the **Server name and instance name** box. Enter the name of the server and the name of the SQL Server instance for the database server that will host the operational database.
+1. When the **Configuration** > **Configure the operational database** page opens, fill in the **Server name and instance name** box. Enter the name of the server and the name of the SQL Server instance for the database server that will host the operational database. Keep these points in mind:
 
    - If you installed SQL Server by using the default instance, you only have to enter the server name.
    - If you changed the default SQL Server port, you must enter the new port number in the **SQL Server port** box.
@@ -115,7 +115,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 
     The SQL Server `model` database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL Server due to user permissions. To resolve the problem, you must reduce the size of the `model` database.
 
-1. When the **Configuration** > **Configure the data warehouse database** page opens, fill in the **Server name and instance name** box. Enter the name of the server and the name of the SQL Server instance for the database server that will host the data warehouse database.
+1. When the **Configuration** > **Configure the data warehouse database** page opens, fill in the **Server name and instance name** box. Enter the name of the server and the name of the SQL Server instance for the database server that will host the data warehouse database. Keep these points in mind:
 
    - If you installed SQL Server by using the default instance, you only have to enter the server name.
    - If you changed the default SQL Server port, you must enter the new port number in the **SQL Server port** box.
@@ -163,7 +163,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 
 1. On the **Getting Started** > **Select features to install** page, select the **Management server** feature.
 
-   You can also select any of the additional features listed. For example, to install the Operations console, select **Operations console**. To read more about each feature and its requirements, select **Expand all** (or expand the button next to each feature). Then select **Next**.
+   You can also select any of the additional features listed. For example, to install the operations console, select **Operations console**. To read more about each feature and its requirements, select **Expand all** (or expand the button next to each feature). Then select **Next**.
 
 1. On the **Getting Started** > **Select installation location** page, accept the default value. Or you can enter a new location or browse to one. Then select **Next**.
 
@@ -171,7 +171,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 
 1. On the **Configuration** > **Please read the license terms** page, review the Microsoft Software License Terms. Select **I have read, understood and agree with the license terms**, and then select **Next**.
 
-1. When the **Configuration** > **Configure the operational database** page opens, fill in the **Server name and instance name** box. Enter the name of the server and the name of the SQL Server instance for the database server that will host the operational database.
+1. When the **Configuration** > **Configure the operational database** page opens, fill in the **Server name and instance name** box. Enter the name of the server and the name of the SQL Server instance for the database server that will host the operational database. Keep these points in mind:
 
    - If you installed SQL Server by using the default instance, you only have to enter the server name.
    - If you changed the default SQL Server port, you must enter the new port number in the **SQL Server port** box.
@@ -196,7 +196,7 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 1. On the **Configuration** > **Configure Operations Manager accounts** page, we recommend that you use the **Domain Account** option for **Management server action account** and the **System Center Configuration service and System Center Data Access service** account. Neither of them should have domain administrator credentials. Select **Next**.
 
    > [!IMPORTANT]  
-   > For **Management server action account** and the **System Center Configuration service and System Center Data Access service** account, you must provide the same credentials that you provided when you created the first management server in your management group.
+   > For these accounts, you must provide the same credentials that you provided when you created the first management server in your management group.
 
 1. On the **Configuration** > **Diagnostic and Usage Data** page, review the information and select **Next**.
 
@@ -218,9 +218,9 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 
 1. Open the Command Prompt window by using the **Run as Administrator** option.
 
-   Setup.exe requires administrator privileges because the setup process requires access to system processes that only a local administrator can use.
+   **Setup.exe** requires administrator privileges because the setup process requires access to system processes that only a local administrator can use.
 
-1. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+1. Change the path to where the Operations Manager **Setup.exe** file is located, and run the following command.
 
    > [!IMPORTANT]  
    > The following command assumes that you specified the local system for the management server action account (`/UseLocalSystemActionAccount`) and the Data Access service account (`/UseLocalSystemDASAccount`). To specify a domain and user name for these accounts, you must provide these parameters instead:
@@ -255,9 +255,9 @@ You can set up and upgrade Operations Manager databases by using an existing SQL
 
 1. Open the Command Prompt window by using the **Run as Administrator** option.
 
-   Setup.exe requires administrator privileges because the setup process requires access to system processes that only a local administrator can use.
+   **Setup.exe** requires administrator privileges because the setup process requires access to system processes that only a local administrator can use.
 
-1. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+1. Change the path to where the Operations Manager **Setup.exe** file is located, and run the following command.
 
    > [!IMPORTANT]  
    > The following command assumes that you specified the local system for the management server action account (`/UseLocalSystemActionAccount`) and the Data Access service account (`/UseLocalSystemDASAccount`). To specify a domain and user name for these accounts, you must provide these parameters instead:
