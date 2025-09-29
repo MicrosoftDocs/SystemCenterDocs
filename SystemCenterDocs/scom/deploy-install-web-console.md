@@ -121,7 +121,7 @@ A network load balancer isn't supported for the Operations Manager web console s
 10. On the **Configuration** > **Select an authentication mode for use with the Web console** page, select your option, and then select **Next**.
 
     > [!NOTE]
-    > If you install the management server on a server by using a domain account for System Center Configuration service and System Center Data Access service, and then you install the web console on a different server and select **Mixed Authentication**, you might need to register service principal names and configure constraint delegations. For more information, see [HTTP 500 error when you connect to the Operations Manager web console remotely](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
+    > If you install the management server on a server by using a domain account for the System Center Configuration service and System Center Data Access service, and then you install the web console on a different server and select **Mixed Authentication**, you might need to register service principal names and configure constraint delegations. For more information, see [HTTP 500 error when you connect to the Operations Manager web console remotely](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
 
 11. On the **Diagnostic and Usage Data** page, review data collection terms, and then select **Next**.  
 
@@ -158,7 +158,7 @@ A network load balancer isn't supported for the Operations Manager web console s
 12. On the **Setup is complete** page, select **Close**.
 
 > [!IMPORTANT]
-> You must have an HTTP or HTTPS binding configured for **Default Web Site**. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost host name, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
+> You must have an HTTP or HTTPS binding configured for **Default Web Site**. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the `localhost` host name, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
 
 ## Install a web console by using the Command Prompt window
 
@@ -168,9 +168,9 @@ A network load balancer isn't supported for the Operations Manager web console s
 
 3. Change the path to where the Operations Manager **setup.exe** file is located by running the following command. Keep this parameter information in mind:
 
-   - Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
+   - Use the `/WebConsoleUseSSL` parameter only if your website has SSL activated.
    - For a default web installation, specify `Default Web Site` for the `/WebSiteName` parameter.
-   -  The `/ManagementServer` parameter is required only when you're installing the web console on a server that isn't a management server.
+   - The `/ManagementServer` parameter is required only when you're installing the web console on a server that isn't a management server.
 
     ```
     setup.exe /silent /install /components:OMWebConsole
@@ -203,7 +203,7 @@ A network load balancer isn't supported for the Operations Manager web console s
 
 4. In **Permission entries**, select **Administrators** > **Remove**. Repeat for the **SYSTEM** entry, and then select **OK**.
 
-5. Select **OK** to close **Advanced Security Settings for TempImages**, and the select **OK** to close **TempImages Properties**.
+5. Select **OK** to close **Advanced Security Settings for TempImages**, and then select **OK** to close **TempImages Properties**.
 
 ::: moniker-end
 
@@ -223,7 +223,7 @@ To change the web console identity:
    - **Generate security audits**
    - **Replace a process level token**
 
-1. Open **SQL Server Management Studio**, and connect to the SQL Server instance that hosts the OperationsManager database.
+1. Open **SQL Server Management Studio**, and connect to the SQL Server instance that hosts the **OperationsManager** database.
 
 1. Expand **Security**, right-click **Logins**, and then select **New Login**.
 

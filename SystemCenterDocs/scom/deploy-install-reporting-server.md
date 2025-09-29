@@ -61,7 +61,7 @@ An installation of SSRS that Operations Manager uses *can't be shared with any o
 
 For information about how to install and configure SSRS, see the [SQL Server installation guide](/sql/database-engine/install-windows/install-sql-server).
 
-### Install SSRS on NTLM-hardened enterprises
+### Install SSRS in NTLM-hardened enterprises
 
 In Operations Manager 2016 and later, disabling NTLM as an organizational policy affects Operations Manager reporting services. If your organization disabled NTLM, you can select the reporting manager's **Authentication Type** value as **Windows Negotiate** while installing SSRS. NTLM is the default option.
 
@@ -97,9 +97,9 @@ To disable NTLM, you must meet these requirements:
 
 6. Confirm that the SSRS service is running. On the taskbar, select **Start**, point to **Administrative Tools**, and then select **Services**.
 
-7. In the **Name** column, find **SQL Server Reporting Services**. Verify that its status reads **Started** and that the **Startup Type** value is **Automatic**.
+7. In the **Name** column, find **SQL Server Reporting Services**. Verify that its status is **Started** and that the **Startup Type** value is **Automatic**.
 
-8. In the **Name** column, find **SQL Server Agent**. Verify that its status is **Started** and that its **Startup Type** value is **Automatic**.
+8. In the **Name** column, find **SQL Server Agent**. Verify that its status is **Started** and that the **Startup Type** value is **Automatic**.
 
 9. Verify that the reporting server website is functioning and available by browsing to `http://<servername>/reportserver/_<$instance>`. A page should appear with `<servername>/ReportServer/_<$instance>` and the text **Microsoft SQL Server Reporting Services Version ##.#.####.##**, where the number signs represent the version number of your SQL Server installation.
 
@@ -109,8 +109,7 @@ To disable NTLM, you must meet these requirements:
 
 ## Install Operations Manager reporting
 
-> [!IMPORTANT]
-> The Operations Manager reporting role must be installed directly on the SSRS server. Remote SSRS instances are not supported and don't appear in the installation wizard.
+The Operations Manager reporting role must be installed directly on the SSRS server. Remote SSRS instances are not supported and don't appear in the installation wizard.
 
 1. Sign in to the SSRS server as a local administrator.
 
@@ -144,7 +143,7 @@ To disable NTLM, you must meet these requirements:
 
 2. Open the Command Prompt window by using the **Run as Administrator** option.
 
-3. Change the path to where the Operations Manager **setup.exe** file is located, and run the following command. Keep this parameter information in mind:
+3. Change the path to where the Operations Manager **Setup.exe** file is located, and run the following command. Keep this parameter information in mind:
 
     - The `/ManagementServer` parameter is required only when you're installing reporting on a server that isn't a management server.
     - The `/SRSInstance` parameter is the name of the local SSRS instance; for example, `SSRS`.
@@ -162,12 +161,11 @@ To disable NTLM, you must meet these requirements:
 
 ## Confirm the health of Operations Manager reports
 
+After the initial deployment, reports can take up to 30 minutes to appear. Then you can check their health.
+
 1. Open the operations console, and select the **Reporting** workspace.
 
-    > [!NOTE]
-    > After the initial deployment, reports can require up to 30 minutes to appear.
-
-2. Select **Microsoft ODR Report Library**, and double-click any of the reports listed. The selected report is then generated and displayed in a new window.
+2. Select **Microsoft ODR Report Library**, and double-click any of the listed reports. The selected report is then generated and displayed in a new window.
 
     By default, the following reports should appear:
 

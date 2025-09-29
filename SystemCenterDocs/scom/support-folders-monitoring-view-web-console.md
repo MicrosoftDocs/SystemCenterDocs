@@ -19,7 +19,7 @@ You can create folders by using the System Center Operations Manager web console
 
 ::: moniker range="sc-om-2019"
 
-In Operations Manager 2016 and later, you can create a folder and place dashboards and views inside it by using the operations console. However, this feature isn't available from the web console. With 2019 UR2, by using the web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
+In Operations Manager 2016 and later, you can create a folder and place dashboards and views inside it by using the operations console. However, this feature isn't available from the web console. With Operations Manager 2019 UR2, by using the web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
 
 ::: moniker-end
 
@@ -75,11 +75,11 @@ Folders and views created from the operations console can be viewed in the web c
 
 You can use the following REST API requests to create folders in the web console and save dashboards inside them.
 
-This feature is applicable only to System Center Operations Manager 2019 UR2 and later versions.
+This feature is applicable only to Operations Manager 2019 UR2 and later versions.
 
 ### Data/monitoringTreeForRootFolders
 
-`Data/monitoringTreeForRootfolders` is a `GET` request that returns all the folders stored in unsealed management packs inside which you can store dashboards and folders. You can use the output of this request for the following `POST` requests.
+`Data/monitoringTreeForRootfolders` is a `GET` request that returns all the folders stored in unsealed management packs where you can store dashboards and folders. You can use the output of this request for the following `POST` requests.
 
 ### monitoring/folder
 
