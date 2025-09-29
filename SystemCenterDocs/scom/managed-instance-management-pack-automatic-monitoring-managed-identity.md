@@ -8,6 +8,7 @@ ms.date: 02/27/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.custom: sfi-image-nochange
 ---
 
 # Automatic monitoring template with Managed Identity

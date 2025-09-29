@@ -5,10 +5,12 @@ ms.author: jsuri
 description: This topic describes how to identify particular computers in your environment that have triggered an alert.
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.custom:
+  - UpdateFrequency3
+  - sfi-image-nochange
 ---
 
 # Identify the computer experiencing a problem

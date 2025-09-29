@@ -1,7 +1,6 @@
 ---
 title: How to Recover Web Components
 description: Describes how to recover web components after restoring a System Center - Orchestrator environment.
-ms.custom: UpdateFrequency2, engagement-fy23
 ms.date: 04/16/2025
 ms.service: system-center
 ms.reviewer: na
@@ -12,6 +11,10 @@ ms.topic: how-to
 ms.assetid: edc3c49a-93e9-4ec4-81e3-c454b54ae976
 author: jyothisuri
 ms.author: jsuri
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - sfi-ropc-nochange
 ---
 
 # Recover web components

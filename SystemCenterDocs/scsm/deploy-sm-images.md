@@ -1,7 +1,6 @@
 ---
 title: Create and Deploy Server Images of Service Manager
 description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
-ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -13,6 +12,10 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
+ms.custom:
+  - UpdateFrequency3
+  - engagement-fy24
+  - sfi-ropc-nochange
 ---
 
 # Create and deploy server images of Service Manager

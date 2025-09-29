@@ -10,6 +10,7 @@ ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.custom: sfi-image-nochange
 ---
 # Overview of the Orchestration console
 

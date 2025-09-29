@@ -8,7 +8,10 @@ ms.date: 04/17/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 

@@ -10,7 +10,10 @@ ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
-ms.custom: UpdateFrequency3,  engagement-fy24
+ms.custom:
+  - UpdateFrequency3
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Configure notifications in Service Manager

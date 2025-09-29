@@ -8,8 +8,12 @@ ms.date: 04/16/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 monikerRange: '<=sc-vmm-2022'
+ms.custom:
+  - UpdateFrequency2
+  - engagement-fy23
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Manage VMs using Microsoft Entra ID-based authentication & authorization and region-specific Azure subscriptions

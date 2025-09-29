@@ -11,7 +11,11 @@ ms.assetid:
 author: jyothisuri
 ms.author: jsuri
 monikerRange: '>sc-dpm-2016'
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom:
+  - UpdateFrequency.5
+  - engagement-fy23
+  - engagement-fy24
+  - sfi-image-nochange
 ---
 
 # Use DPM to back up and restore VMware virtual machines
