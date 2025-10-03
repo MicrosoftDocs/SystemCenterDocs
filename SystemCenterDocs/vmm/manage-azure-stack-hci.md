@@ -40,7 +40,11 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 - Creation of Azure Local instance using SCVMM. See the [deployment methods for Azure Local instances](/azure/azure-local/deploy/deployment-introduction#about-deployment-methods).
 
-- Management of Azure Stack HCI [stretched clusters](/azure/azure-local/concepts/stretched-clusters).
+- Networking configuration of Azure Local hosts and clusters. VMM doesn't support Network ATC and can't recognize Arc-enabled Software Defined Networking configuration.
+
+- Management of Azure Local hosts and clusters which are deployed with AD-less methods like [local identity](/azure/azure-local/deploy/deployment-local-identity-with-key-vault).
+
+- Management of Azure Local [stretched clusters](/azure/azure-local/concepts/stretched-clusters).
 
 - Registration and deregistration of Azure Local instances is supported only through Azure.
 
