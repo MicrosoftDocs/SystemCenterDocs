@@ -58,7 +58,7 @@ Operations Manager supports a single installer for all supported languages, inst
 
 8. In the **Database server instance name** box, enter the name of the server and the name of the SQL Server instance (if it isn't the default instance) for the database server that will host the ACS database.
 
-9. In the **Database name** box, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Then select **Next**.
+9. In the **Database** box, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Then select **Next**.
 
     > [!NOTE]
     > The database name can't contain the hyphen (`-`) character.
