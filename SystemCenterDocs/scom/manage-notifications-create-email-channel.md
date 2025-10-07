@@ -1,8 +1,8 @@
 ---
 title: How to Enable an Email Notification Channel
 description: This article describes the steps to configure an email notification channel to send alerts to subscribers from an email server.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager

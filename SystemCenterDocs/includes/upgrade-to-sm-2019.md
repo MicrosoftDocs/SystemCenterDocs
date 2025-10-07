@@ -3,8 +3,8 @@ title: include file
 description: include file that outlines planning considerations and the order to upgrade to System Center 2019 - Service Manager.  
 ms.custom: na
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/14/2019
 ms.reviewer: na
 ms.suite: na

@@ -4,8 +4,8 @@ description: Provides guidelines about how to customize and author forms with th
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.date: 04/24/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na

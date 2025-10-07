@@ -4,8 +4,8 @@ description: Describes how you can automatically move Orchestrator between envir
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: upgrade-and-migration-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/13/2025
 ms.update-cycle: 1095-days
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24

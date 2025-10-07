@@ -2,8 +2,8 @@
 ms.assetid: 9d758a26-a2dd-42f0-87a6-eafbbb8a2dbf
 title: Deploy a Hyper-converged or Disaggregated Cluster with Storage Spaces Direct in VMM
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center

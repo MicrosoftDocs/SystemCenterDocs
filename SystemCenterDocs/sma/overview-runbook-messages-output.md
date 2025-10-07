@@ -1,8 +1,8 @@
 ---
 description: Provides an overview of how you can use different output stream in your runbooks.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 02/26/2025

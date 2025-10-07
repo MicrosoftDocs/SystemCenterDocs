@@ -2,8 +2,8 @@
 ms.assetid: 686ba922-5d20-4c0b-b99b-c2ecde1d7bb2
 title: Configure Fallback HGS in System Center Virtual Machine Manager
 description: This article explains about how to configure the fallback HGS in VMM
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/24/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to

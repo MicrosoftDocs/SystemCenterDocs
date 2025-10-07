@@ -1,8 +1,8 @@
 ---
 description: This article provides the new features and feature updates supported by System Center DPM 2022.
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 08/23/2025
 title: What's new in System Center DPM

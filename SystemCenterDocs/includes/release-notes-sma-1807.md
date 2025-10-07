@@ -2,8 +2,8 @@
 ms.assetid:
 description: include file to detail the Release Notes for System Center 1807-Service Management Automation
 ms.topic:  include file
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-management-automation
 keywords:

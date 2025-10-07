@@ -3,8 +3,8 @@ ms.assetid: ddb56d8e-703c-4145-b301-99ab3e8f8fbd
 title: Application Monitoring using the Default Settings
 description: This article provides an overview about application monitoring using the default settings.
 ms.date: 04/22/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

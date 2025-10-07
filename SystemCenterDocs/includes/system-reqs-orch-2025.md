@@ -2,8 +2,8 @@
 ms.assetid:
 title: include file
 description: include file to provide system requirements for Orchestrator 2025, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/08/2024
 ms.custom: na
 ms.service: system-center

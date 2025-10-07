@@ -2,8 +2,8 @@
 ms.assetid: ffcc04ad-91ac-40cc-bdfc-65e33de7c390
 title: Designing for High Availability and Disaster Recovery
 description: This article provides high availability and disaster recovery design guidance for an Operations Manager management group.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: engagement-fy23, UpdateFrequency2
 ms.service: system-center

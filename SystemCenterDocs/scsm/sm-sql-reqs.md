@@ -2,8 +2,8 @@
 title: SQL Server requirements for Service Manager
 description: The article describes SQL Server requirements for Service Manager.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

@@ -3,8 +3,8 @@ title: Work with management pack XML files
 description: Describes how to work with management pack XML files for Service Manager authoring.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.reviewer: na
 ms.suite: na

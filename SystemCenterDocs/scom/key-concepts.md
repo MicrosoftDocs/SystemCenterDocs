@@ -2,8 +2,8 @@
 ms.assetid: 55045642-0eba-407d-9482-33494b41a21e
 title: Operations Manager Key Concepts
 description: This article provides a high-level overview of what Operations Manager is and what capabilities it provides as a monitoring platform.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24

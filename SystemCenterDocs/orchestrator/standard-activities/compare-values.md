@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: concept-article
 caps.latest.revision: 12
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Compare Values
 

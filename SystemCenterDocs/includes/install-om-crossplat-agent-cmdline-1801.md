@@ -2,8 +2,8 @@
 ms.assetid:
 title: include file
 description: include article to detail the detail how to install the Operations Manager version 1801 agent manually on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  07/01/2024
 ms.topic:  include
 ms.service:  system-center

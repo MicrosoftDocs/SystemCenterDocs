@@ -8,8 +8,8 @@ ms.update-cycle: 180-days
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '>sc-dpm-2016'
 ms.custom:
   - UpdateFrequency.5

@@ -3,8 +3,8 @@ title: Manage and use the Analysis Libraries
 description: Explains how to manage and use the analysis libraries in the Service Manager console.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/16/2025
 ms.update-cycle: 1095-days
 ms.reviewer: na

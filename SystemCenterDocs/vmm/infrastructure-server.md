@@ -2,8 +2,8 @@
 ms.assetid: 1e66b2cf-70f3-4992-b2d8-a71e02fb712d
 title: Set up infrastructure servers in the VMM compute fabric
 description: This article describes how to manage infrastructure servers in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/09/2024
 ms.topic: how-to
 ms.service: system-center

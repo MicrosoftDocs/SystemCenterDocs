@@ -3,8 +3,8 @@ title: Complete Service Manager Deployment by Backing Up the Encryption Key
 description: After you deploy Service Manager, you should back up the encryption key to help prepare for disaster recovery.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/11/2025
 ms.update-cycle: 1095-days
 ms.reviewer: na

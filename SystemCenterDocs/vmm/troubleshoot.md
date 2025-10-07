@@ -2,8 +2,8 @@
 ms.assetid: d8bfec1d-83c8-44aa-a672-2dfc4f50074c
 title: Resources for troubleshooting VMM
 description: This article summarizes troubleshooting resources available for System Center Virtual Machine Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.update-cycle: 1825-days
 ms.topic: troubleshooting-general

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 22f388d5-ad23-4722-a3f5-25e26893dba8
 caps.latest.revision: 15
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Get Computer/IP Status
 

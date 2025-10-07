@@ -1,8 +1,8 @@
 ---
 title: Configure Agent Failover to Multiple Gateway Servers
 description: This article describes how to use PowerShell to configure failover between multiple Gateway servers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center

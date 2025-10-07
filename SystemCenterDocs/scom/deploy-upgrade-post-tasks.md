@@ -2,8 +2,8 @@
 ms.assetid: 0bbddc74-0324-4cf5-8613-ab7e85c3d0d3
 title: Post-Upgrade Tasks When Upgrading to System Center Operations Manager
 description: This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center

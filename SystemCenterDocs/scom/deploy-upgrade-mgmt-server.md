@@ -2,8 +2,8 @@
 ms.assetid: aabf9661-6b4c-4495-845d-7d30de3cff93
 title: Upgrade a Management Server - Upgrade a Distributed Management Group
 description: This article describes how to upgrade a management server in a distributed deployment of Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24

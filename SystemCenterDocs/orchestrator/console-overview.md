@@ -7,8 +7,8 @@ ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: sfi-image-nochange
 ---

@@ -5,8 +5,8 @@ ms.date: 03/27/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: intro-deployment
 ---
 

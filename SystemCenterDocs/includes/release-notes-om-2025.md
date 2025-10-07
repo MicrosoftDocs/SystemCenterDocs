@@ -1,8 +1,8 @@
 ---
 title: include file
 description: include file that summarizes the release notes for Operations Manager 2025.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 10/01/2024
 ms.service: system-center
 ms.assetid:

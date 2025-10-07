@@ -2,8 +2,8 @@
 description: Provides an overview of how you can scale out a machine tier.
 ms.topic: concept-article
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 keywords:
 ms.date: 11/01/2024
 title: Scale Service Management Automation

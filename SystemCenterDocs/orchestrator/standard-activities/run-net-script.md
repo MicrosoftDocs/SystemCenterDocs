@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: how-to
 ms.assetid: ad8a97f1-9c63-4824-890d-02af0021115b
 caps.latest.revision: 29
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Run .NET Script
 

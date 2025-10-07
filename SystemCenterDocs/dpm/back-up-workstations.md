@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Back up client computers with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

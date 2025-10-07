@@ -4,8 +4,8 @@ description: Provides a reference of advanced analytical reports available in Se
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.date: 08/21/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na

@@ -2,8 +2,8 @@
 ms.assetid: 160253fe-35c3-4526-83dd-ca1e172d1b22
 title: Configure virtual machine settings in the VMM compute fabric
 description: This article describes how to configure settings for VMs in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/30/2024
 ms.topic: how-to
 ms.service: system-center

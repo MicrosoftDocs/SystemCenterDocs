@@ -1,8 +1,8 @@
 ---
 title: Network Device Discovery Settings
 description: This article describes how to configure discovery of network devices to be monitored by Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/17/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center

@@ -4,8 +4,8 @@ description: This article provides information on how to configure the activitie
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/09/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3

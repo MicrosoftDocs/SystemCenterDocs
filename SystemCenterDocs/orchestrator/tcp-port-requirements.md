@@ -2,8 +2,8 @@
 title:  TCP port requirements in System Center Orchestrator
 description: This article describes the port requirements for System Center Orchestrator.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

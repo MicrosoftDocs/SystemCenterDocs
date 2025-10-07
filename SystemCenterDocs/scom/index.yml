@@ -9,8 +9,8 @@ metadata:
   ms.service: system-center
   ms.subservice: operations-manager
   ms.topic: landing-page # Required
-  author: jyothisuri #Required; your GitHub user alias, with correct capitalization.
-  ms.author: jsuri #Required; microsoft alias of author; optional team alias.
+  author: Jeronika-MS #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-gajeronika #Required; microsoft alias of author; optional team alias.
   ms.date: 04/05/2017 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

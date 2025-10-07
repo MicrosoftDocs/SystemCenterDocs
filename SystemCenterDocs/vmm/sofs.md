@@ -2,8 +2,8 @@
 ms.assetid: 0faa4dae-5d87-4e43-bc68-dfe3c6ffe0f4
 title: Manage SOFS in the VMM Fabric
 description: This article describes how to manage SOFS in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/09/2025
 ms.topic: concept-article
 ms.service: system-center

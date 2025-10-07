@@ -1,8 +1,8 @@
 ---
 title: Install Orchestrator
 description: Provides instructions for installing System Center - Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.update-cycle: 180-days
 ms.service: system-center

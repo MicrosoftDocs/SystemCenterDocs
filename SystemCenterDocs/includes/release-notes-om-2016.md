@@ -2,8 +2,8 @@
 title:  include file
 description: include file to summarize the release notes for OM 2016.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: operations-manager
 ms.date: 05/23/2017

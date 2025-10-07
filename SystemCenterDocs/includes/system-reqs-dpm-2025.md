@@ -1,8 +1,8 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2025 in your environment.
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 02/17/2025

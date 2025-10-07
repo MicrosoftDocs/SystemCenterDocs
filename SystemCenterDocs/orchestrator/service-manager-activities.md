@@ -6,8 +6,8 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.update-cycle: 1095-days
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency3
 ---
 # Service Manager activities

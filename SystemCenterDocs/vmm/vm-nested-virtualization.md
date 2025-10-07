@@ -2,8 +2,8 @@
 ms.assetid: 12c2e82d-a325-4111-9ff8-147e949ce95e
 title: Enable nested virtualization in System Center VMM
 description: This article explains about how to enable and use nested virtualization in VMM
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center

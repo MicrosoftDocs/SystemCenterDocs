@@ -1,8 +1,8 @@
 ---
 title: Upgrade a single-server Management Group
 description: This article describes how to upgrade a single-server management group to the newest release of Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
