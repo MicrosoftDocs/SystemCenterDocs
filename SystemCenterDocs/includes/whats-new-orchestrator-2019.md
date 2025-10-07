@@ -2,8 +2,8 @@
 ms.assetid:
 title: include file
 description: This include file describes the new features in Orchestrator 2019.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/31/2024
 ms.service: system-center
 monikerRange: 'sc-orch-2019'

@@ -3,8 +3,8 @@ title: Troubleshoot OLAP cubes
 description: Explains how you can troubleshoot Service Manager OLAP cubes.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/18/2025
 ms.reviewer: na
 ms.suite: na

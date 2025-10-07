@@ -2,8 +2,8 @@
 ms.assetid: c4e5dc66-173a-4e8a-bace-a00a0d8e704c
 title: Run a live migration in the VMM fabric
 description: This article describes how to run a live migration in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/30/2024
 ms.topic: how-to
 ms.service: system-center

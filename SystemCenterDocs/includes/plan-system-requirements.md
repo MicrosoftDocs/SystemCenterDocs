@@ -2,8 +2,8 @@
 ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
 title: include file
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/21/2025
 ms.custom: na
 ms.service: system-center

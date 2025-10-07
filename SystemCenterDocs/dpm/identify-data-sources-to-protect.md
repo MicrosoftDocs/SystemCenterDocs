@@ -8,8 +8,8 @@ title: Identify Data Sources you want to Protect
 ms.update-cycle: 1095-days
 ms.subservice: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

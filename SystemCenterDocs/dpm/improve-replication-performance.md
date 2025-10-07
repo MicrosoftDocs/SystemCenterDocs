@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Improve replication performance
 ms.subservice: data-protection-manager
 ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

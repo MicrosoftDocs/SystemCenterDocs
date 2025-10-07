@@ -2,8 +2,8 @@
 ms.assetid: c4e4d992-340a-4ab9-8c98-6640c37adda2
 title: Suspend Monitoring Temporarily by Using Maintenance Mode
 description: This article describes how to put a monitored object into maintenance mode on-demand or using a schedule.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 12/13/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center

@@ -8,8 +8,8 @@ ms.update-cycle: 180-days
 title: System Center DPM Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy23, updateFrequency.5, engagement-fy24
 ---
 

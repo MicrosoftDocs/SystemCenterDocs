@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Set up DPM logging
 ms.subservice: data-protection-manager
 ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

@@ -2,8 +2,8 @@
 ms.assetid: 8b01d791-e5b9-475a-b789-6162e6120397
 title: Configuring SSL Ciphers
 description: This article describes how to configure SSL encrypted communication for UNIX and Linux computers and Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center

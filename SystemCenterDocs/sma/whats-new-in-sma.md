@@ -2,8 +2,8 @@
 ms.assetid: 611518a9-0a8e-48e7-a966-50bed52223e8
 title: What's new in System Center Service Management Automation
 description: This article describes the new features supported in Service Management Automation.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: whats-new
 ms.service: system-center

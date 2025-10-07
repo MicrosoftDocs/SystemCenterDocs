@@ -1,8 +1,8 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2022.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:
 ms.date:  08/06/2024

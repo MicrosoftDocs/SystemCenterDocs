@@ -1,8 +1,8 @@
 ---
 title: Install System Center Orchestrator 2022
 description: Provides instructions for installing System Center 2022 - Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/13/2022
 ms.service: system-center
 ms.subservice: orchestrator

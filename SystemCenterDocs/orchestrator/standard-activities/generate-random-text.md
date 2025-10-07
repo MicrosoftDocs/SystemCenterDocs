@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: d20f8d7c-c7d7-4e2a-95c3-3c514514733d
 caps.latest.revision: 12
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Generate Random Text
 

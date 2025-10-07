@@ -2,8 +2,8 @@
 ms.assetid: bba9d228-4b0b-4d37-9423-dd54c9499bcf
 title: Monitoring Performance and Limitations in Management Pack for SQL Server
 description: This article explains monitoring performance metrics and limitations in Management Pack for SQL Server
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/13/2025
 ms.topic: concept-article
 ms.service: system-center

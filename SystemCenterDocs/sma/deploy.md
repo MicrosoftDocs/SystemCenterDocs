@@ -1,8 +1,8 @@
 ---
 description: Provides step by step instructions for setting up Service Management Automation.
 ms.topic: install-set-up-deploy
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 08/20/2025
 title: Deploy Service Management Automation

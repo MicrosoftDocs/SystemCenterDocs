@@ -2,8 +2,8 @@
 ms.assetid: 383a3286-5e1e-410b-a3b9-216af2febd97
 title: Design Integration with other Enterprise Management Products
 description: This article provides design guidance for integrating Operations Manager with third-party enterprise management platforms.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days

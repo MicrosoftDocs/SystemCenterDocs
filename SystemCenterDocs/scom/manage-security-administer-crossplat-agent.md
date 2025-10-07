@@ -2,8 +2,8 @@
 ms.assetid: 5a64b832-1af6-4a01-981b-13e1bcb7a17c
 title: Administer and Configure the UNIX - Linux Agent
 description: This article describes options to administer and configure the UNIX and Linux agent Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24

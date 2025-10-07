@@ -2,8 +2,8 @@
 ms.assetid:
 title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 01/31/2024
 ms.custom: na
 ms.service: system-center

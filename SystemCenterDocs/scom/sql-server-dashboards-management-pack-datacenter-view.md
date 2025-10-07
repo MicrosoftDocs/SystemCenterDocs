@@ -5,7 +5,7 @@ description: This article explains datacenter view
 author: Anastas1ya
 manager: evansma
 ms.date: 04/21/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager

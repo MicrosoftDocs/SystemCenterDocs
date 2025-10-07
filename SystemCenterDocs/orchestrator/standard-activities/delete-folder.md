@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 7bd72977-b6e1-4d20-af6e-42354f986c5b
 caps.latest.revision: 12
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Delete Folder
 

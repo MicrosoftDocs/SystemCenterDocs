@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 43f5cfc6-df95-4c03-80b4-c2157bc7f88f
 caps.latest.revision: 13
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Write Web Page
 

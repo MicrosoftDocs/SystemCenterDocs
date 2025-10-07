@@ -1,8 +1,8 @@
 ---
 title: Include file
 description: Include file for the validation section in installation articles.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  03/19/2025
 ms.topic:  include
 ms.service: system-center

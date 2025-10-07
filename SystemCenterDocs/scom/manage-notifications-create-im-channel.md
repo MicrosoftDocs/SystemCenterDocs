@@ -1,8 +1,8 @@
 ---
 title: How to Enable an Instant Message Notification Channel
 description: This article describes how to create an instant message notification channel for Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/14/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center

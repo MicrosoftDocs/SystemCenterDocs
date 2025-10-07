@@ -2,8 +2,8 @@
 ms.assetid: 8b9770b0-4700-4871-82df-158f1d8c9869
 title: Upgrade from an evaluation version of Operations Manager
 description: This article describes how to upgrade from an evaluation version of Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center

@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.assetid: d79a77be-37ae-4831-b7f9-42f2528c589f
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack

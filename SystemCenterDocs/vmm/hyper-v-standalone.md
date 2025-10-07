@@ -2,8 +2,8 @@
 ms.assetid: 9148e441-d7c0-4ee5-b784-df93de8394ab
 title: Provision a cluster from Hyper-V standalone hosts in the VMM fabric
 description: This article provides about provisioning a Hyper-V cluster in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/14/2025
 ms.topic: how-to
 ms.service: system-center

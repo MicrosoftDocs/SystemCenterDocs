@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 0e47a137-5f4b-41a2-a13a-59bcaae8e750
 caps.latest.revision: 13
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Write to Database
 

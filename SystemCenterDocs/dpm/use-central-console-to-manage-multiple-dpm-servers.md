@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Manage multiple DPM servers with Central Console
 ms.subservice: data-protection-manager
 ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Manage multiple DPM servers with Central Console

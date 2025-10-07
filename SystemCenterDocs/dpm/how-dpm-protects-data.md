@@ -1,8 +1,8 @@
 ---
 description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 03/27/2025

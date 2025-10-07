@@ -2,8 +2,8 @@
 ms.assetid: 40d9b3b7-3e5a-463c-bbc0-161450e59714
 title: Manage Azure Local instances in VMM
 description: This article describes how to manage an Azure Local instance in VMM.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 09/09/2025
 ms.update-cycle: 180-days
 ms.topic: how-to

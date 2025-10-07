@@ -7,8 +7,8 @@ keywords:
 ms.date: 11/01/2024
 ms.subservice: data-protection-manager
 ms.assetid: c0f4201b-53f7-45c8-af16-5522d0f10c6e
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
