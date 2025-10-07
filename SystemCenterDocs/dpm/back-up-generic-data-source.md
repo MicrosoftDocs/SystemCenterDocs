@@ -8,8 +8,8 @@ ms.update-cycle: 1095-days
 title: Prepare to back up a generic data source
 ms.subservice: data-protection-manager
 ms.assetid: 8ad00a50-108a-4212-ad43-c12a8f8f5587
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

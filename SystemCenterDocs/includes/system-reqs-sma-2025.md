@@ -1,8 +1,8 @@
 ---
 description: include file to provide the information about the minimum hardware and software requirements for a full installation of Service Management Automation 2025.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 08/07/2025

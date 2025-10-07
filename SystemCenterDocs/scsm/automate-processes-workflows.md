@@ -3,8 +3,8 @@ title: Automate IT Processes with Workflows
 description: Learn about how you can automate IT processes with workflows in Service Manager.
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/22/2025
 ms.update-cycle: 1095-days
 ms.reviewer: na

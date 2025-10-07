@@ -2,8 +2,8 @@
 ms.assetid:
 title: Sample Linux log file management pack
 description: This article describes a sample management pack for creating an alert from a log file on Linux in System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center

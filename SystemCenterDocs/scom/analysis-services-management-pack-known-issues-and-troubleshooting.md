@@ -5,7 +5,7 @@ description: This article explains known issues and troubleshooting in managemen
 author: epomortseva
 manager: evansma
 ms.date: 04/23/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.topic: troubleshooting-known-issue
 ms.service: system-center
 ms.subservice: operations-manager

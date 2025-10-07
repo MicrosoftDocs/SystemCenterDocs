@@ -2,8 +2,8 @@
 ms.assetid: e41aa1d-89fa-477d-8746-258525e48e17
 title: include file
 description: include file to provide information about hardware and software system requirements for System Center  2019 - Service Provider Foundation
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  03/14/2019
 ms.topic:  include
 ms.service:  system-center

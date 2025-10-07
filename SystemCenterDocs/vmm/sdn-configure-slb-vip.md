@@ -2,8 +2,8 @@
 ms.assetid: 1e144c7f-4ab3-4f06-abd9-1c45dea099f9
 title: Configure SLB VIPs using VMM service templates in System Center - Virtual Machine Manager
 description: This article explains about how to configure SLB VIPs through VMM service templates using VMM.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/24/2024
 ms.update-cycle: 1095-days
 ms.topic: how-to

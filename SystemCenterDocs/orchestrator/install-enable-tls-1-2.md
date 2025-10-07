@@ -2,8 +2,8 @@
 ms.assetid: 958fdc2f-73b1-4648-94d0-b9c45b51b719
 title: Set up TLS 1.2 for Orchestrator
 description: This article provides instructions for setting up TLS 1.2 with Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center

@@ -5,7 +5,7 @@ description: This article explains how to configure low-privilege configuration 
 author: Anastas1ya
 manager: evansma
 ms.date: 08/22/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager

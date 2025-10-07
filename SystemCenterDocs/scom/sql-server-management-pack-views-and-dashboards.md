@@ -2,8 +2,8 @@
 ms.assetid: 876c7d8c-0b45-4cb2-b3c0-d8748603875a
 title: Views and Dashboards in management pack for SQL Server
 description: This article explains views and dashboards in management pack for SQL Server
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/09/2025
 ms.topic: concept-article
 ms.service: system-center

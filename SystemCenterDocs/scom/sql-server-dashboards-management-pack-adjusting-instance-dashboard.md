@@ -3,7 +3,7 @@ ms.assetid: 5cd69170-bfb6-4f02-a1a7-da8ab2a83ceb
 title: Adjusting instance dashboard in Management Pack for SQL Server Dashboards
 description: This article explains how to adjust instance dashboard
 author: Anastas1ya
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

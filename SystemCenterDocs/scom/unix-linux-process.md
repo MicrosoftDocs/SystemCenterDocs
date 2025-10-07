@@ -2,8 +2,8 @@
 ms.assetid: d12f1b76-178f-4f30-a452-d47eb7fd5e3c
 title: UNIX or Linux Process in Operations Manager management pack
 description: This article provides an overview of UNIX or Linux process.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.custom: engagement-fy24
 ms.service: system-center

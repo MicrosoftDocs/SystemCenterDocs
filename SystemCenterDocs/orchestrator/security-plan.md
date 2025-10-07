@@ -5,8 +5,8 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.assetid: 
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 monikerRange: 'sc-orch-2025'
 zone_pivot_groups: orchestrator-security-planning

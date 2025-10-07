@@ -2,8 +2,8 @@
 ms.assetid: 6dea2e1e-2a33-417c-8a65-785b5dd2cd9b
 title: The Fabric Monitoring Diagram View displaying health states of cloud environments in System Center Operations Manager
 description: This article provides an overview of the Fabric Monitoring diagram view.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24

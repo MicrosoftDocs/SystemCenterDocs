@@ -3,8 +3,8 @@ title: include file
 description: include file to describe the hardware, software, and other system requirements  Service Manager 2025.
 ms.custom: na
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 09/26/2024
 ms.reviewer: na
 ms.suite: na

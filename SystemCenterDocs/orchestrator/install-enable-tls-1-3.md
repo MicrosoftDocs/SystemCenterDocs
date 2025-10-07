@@ -2,8 +2,8 @@
 ms.assetid:
 title: Set up TLS 1.3 for Orchestrator
 description: This article provides instructions for setting up TLS 1.3 with Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.topic: how-to
 ms.service: system-center

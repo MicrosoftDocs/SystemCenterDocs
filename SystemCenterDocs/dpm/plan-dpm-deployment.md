@@ -7,8 +7,8 @@ ms.date: 08/06/2025
 title: Get ready to deploy DPM servers
 ms.subservice: data-protection-manager
 ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy24
 ---
 

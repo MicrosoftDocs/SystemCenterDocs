@@ -2,8 +2,8 @@
 ms.assetid: d830d226-80d0-4132-8b3c-d3de545f5fa2
 title: Create and Manage Groups
 description: This article describes how to create and configure groups for scoping in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager

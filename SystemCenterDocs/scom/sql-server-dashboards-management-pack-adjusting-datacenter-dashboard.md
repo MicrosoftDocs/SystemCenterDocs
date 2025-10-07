@@ -3,7 +3,7 @@ ms.assetid: 0ba80a26-4bbc-4051-b4a3-24502c8ba906
 title: Adjusting datacenter dashboard in Management Pack for SQL Server Dashboards
 description: This article explains how to adjust datacenter dashboard
 author: Anastas1ya
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center

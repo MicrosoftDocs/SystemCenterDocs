@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Overview of offline backup
 ms.subservice: data-protection-manager
 ms.assetid: 87b6a324-15df-41ae-86a3-546901bdd369
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '>=sc-dpm-2019'
 ms.custom: UpdateFrequency2, engagement-fy24
 ---

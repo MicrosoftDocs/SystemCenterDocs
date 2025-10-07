@@ -9,8 +9,8 @@ ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
 ms.date: 12/17/2024
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy23
 ---
 # Runbook permissions

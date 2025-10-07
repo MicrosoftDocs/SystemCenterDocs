@@ -11,8 +11,8 @@ ms.topic: concept-article
 ms.assetid: 4c06b17d-fd0d-4a98-8013-f5e5954606ed
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Orchestrator logs
 

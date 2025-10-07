@@ -4,8 +4,8 @@ description: This article describes how the Modify VM Disk activity is used in a
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 04/22/2025
 ms.update-cycle: 1095-days

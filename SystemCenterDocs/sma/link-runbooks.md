@@ -1,8 +1,8 @@
 ---
 description: Provides an overview of how you can call one or more child runbooks.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 04/22/2025
 title: Child Runbooks in Service Management Automation

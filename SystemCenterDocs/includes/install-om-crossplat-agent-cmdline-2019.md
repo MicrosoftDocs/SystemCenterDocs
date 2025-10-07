@@ -2,8 +2,8 @@
 ms.assetid: 9f2b0ea3-acdb-4242-8cd4-425b2f3766aa
 title: include file
 description: include article to detail how to install the Operations Manager version 2019 agent manually on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  07/01/2024
 ms.topic:  include
 ms.service: system-center

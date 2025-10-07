@@ -1,8 +1,8 @@
 ---
 title: include file
 description: This include file provides information about how to upgrade to System Center Service Provider Foundation (SPF) 2016
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  08/20/2025
 ms.topic:  include
 ms.service:  system-center

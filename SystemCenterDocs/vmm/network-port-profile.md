@@ -2,8 +2,8 @@
 ms.assetid: ad08f7a3-65dc-40e4-8e9f-a3df4ef39eba
 title: Set up port profiles in the VMM fabric
 description: This article describes how to create port profiles in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/21/2024
 ms.topic: how-to
 ms.service: system-center
