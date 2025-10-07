@@ -2,13 +2,10 @@
 title: Delete Folder Activity
 description: This article describes the Delete Folder activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 08/21/2025
+ms.date: 08/29/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
-ms.reviewer: ""
-ms.suite: ""
 ms.subservice: orchestrator
-ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 7bd72977-b6e1-4d20-af6e-42354f986c5b
 caps.latest.revision: 12
@@ -48,3 +45,9 @@ Use the following information to configure the Delete Folder activity.
 |Base Folder to start deletion from|The **Path** that was specified on the **Details** tab.|  
 |Delete folder options|The options that you selected for the delete folder operation.|  
 |Name and path of the folder|The name and path of the folder that was deleted.|
+
+## Delete subfolder
+
+On the **Delete Folder Properties** window, under **Details**, enter the path to subfolder and select **Delete all files and sub-folders**.
+
+![Screenshot showing deleter folder properties.](./media/delete-folder/delete-folder-properties.png)

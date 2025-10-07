@@ -2,13 +2,10 @@
 title: Send Event Log Message
 description: This article describes the functionality of Send Event Log Message activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 08/29/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
-ms.reviewer: ""
-ms.suite: ""
 ms.subservice: orchestrator
-ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 02ca2b81-a6a5-444a-8ddd-f3695ca5afd4
 caps.latest.revision: 10
@@ -17,7 +14,7 @@ ms.author: jsuri
 ---
 # Send Event Log Message
 
-The Send Event Log Message activity creates an entry in the Windows Event Log within the Application folder. This activity can be used to create audit logs in the Windows Event Log that document any problems that occur while trying to correct issues by using an automated runbook.  
+The Send Event Log Message activity creates an entry in the Windows Event Log within the Application folder. This activity can be used to create audit logs in the Windows Event Log that document any problems that occur while trying to correct issues by using an automated runbook.
 
 ## Configure the Send Event Log Message Activity
 
@@ -45,3 +42,7 @@ Use the following information to configure the Send Event Log Message activity.
 |----------|-----------------|  
 |Computer|The computer where the event log message was created.|  
 |Log entry description|The description of the event log message.|
+
+Send Event Log Message is one of the activity of Notification. Find the activity, add it to runbook, and then right-click **Properties** to set the details tab.
+
+![Screenshot showing Send Event Log Notification.](./media/send-event-log-message/send-event-log-message.png)
