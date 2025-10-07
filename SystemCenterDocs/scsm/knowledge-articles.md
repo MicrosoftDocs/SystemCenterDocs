@@ -2,8 +2,8 @@
 title: Manage Knowledge Articles
 description: Describes how to manage Service Manager knowledge articles.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 04/15/2025

@@ -5,7 +5,7 @@ description: This article provides an overview about how to select a management 
 author: Anastas1ya
 manager: evansma
 ms.date: 04/14/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager

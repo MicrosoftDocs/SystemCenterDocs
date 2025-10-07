@@ -1,8 +1,8 @@
 ---
 title: Register the SPF Endpoint in Windows Azure Pack
 description: Provides information about registering the SPF endpoint in Windows Azure Pack
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center

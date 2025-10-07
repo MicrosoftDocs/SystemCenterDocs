@@ -5,8 +5,8 @@ ms.date: 04/17/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy23
 ---
 

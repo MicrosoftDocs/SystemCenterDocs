@@ -2,8 +2,8 @@
 title: Manage Release Records
 description: Provides an overview and describes how to manage Service Manager release records.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/14/2025
 ms.subservice: service-manager
 ms.topic: how-to

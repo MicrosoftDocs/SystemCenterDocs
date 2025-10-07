@@ -6,8 +6,8 @@ ms.service: system-center
 ms.date: 11/01/2024
 ms.subservice: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: sc-dpm-2019||sc-dpm-2016
 ms.custom: intro-migration, UpdateFrequency2, engagement-fy24
 ---

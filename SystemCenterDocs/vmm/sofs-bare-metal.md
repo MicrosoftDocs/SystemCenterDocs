@@ -2,8 +2,8 @@
 ms.assetid: 6cc028a5-1e33-4c8c-afaf-be1eb26bcf3f
 title: Provision a Scale-out File Server (SOFS) Cluster from Bare Metal Computers
 description: This article provides about provisioning an SOFS in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/11/2025
 ms.topic: how-to
 ms.service: system-center

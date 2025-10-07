@@ -1,8 +1,8 @@
 ---
 title: Install an operating system on a VM in the System Center VMM fabric
 description: This article describes how to install an operating system on a VM in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/30/2024
 ms.topic: install-set-up-deploy
 ms.service: system-center

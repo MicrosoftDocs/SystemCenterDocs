@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid:
 caps.latest.revision: 12
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # List of Integration Packs for Orchestrator
 

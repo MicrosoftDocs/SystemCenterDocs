@@ -2,8 +2,8 @@
 ms.assetid: ba0053b2-0dc5-43a7-92a5-af36de9b3a08
 title: VMM collate mappings
 description: This article describes the VMM server collate mapping from VMM code.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/22/2017
 ms.update-cycle: 1095-days
 ms.topic: concept-article

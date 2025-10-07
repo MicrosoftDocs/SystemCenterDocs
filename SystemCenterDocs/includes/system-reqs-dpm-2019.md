@@ -1,8 +1,8 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2019 in your environment.
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 10/08/2024

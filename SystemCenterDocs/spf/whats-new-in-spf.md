@@ -2,8 +2,8 @@
 title: What's new in System Center Service Provider Foundation
 description: This article describes the new features and other changes in System Center Service Provider Foundation.
 ms.topic: whats-new
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 07/28/2023
 ms.subservice: service-provider-foundation

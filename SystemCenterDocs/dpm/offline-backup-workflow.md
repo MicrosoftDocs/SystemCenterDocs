@@ -7,8 +7,8 @@ ms.date: 04/24/2025
 title: Offline Backup for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '>=sc-dpm-2019'
 ms.custom:
   - UpdateFrequency2

@@ -2,8 +2,8 @@
 ms.assetid: 315fec65-847e-4621-92ce-1cf50296b43b
 title: Using Operations Manager Shell
 description: This article describes how to use the Operations Manager shell to perform administrative tasks with PowerShell.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center

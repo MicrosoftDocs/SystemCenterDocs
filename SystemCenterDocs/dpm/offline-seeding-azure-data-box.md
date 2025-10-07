@@ -7,8 +7,8 @@ ms.date: 04/22/2025
 title: Offline Seeding using Azure Data Box
 ms.subservice: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '>=sc-dpm-2019'
 ms.custom:
   - UpdateFrequency2

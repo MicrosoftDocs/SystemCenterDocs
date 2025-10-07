@@ -4,8 +4,8 @@ description: This article describes the integration pack for VMware vSphere in S
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/19/2024
 ---
 # VMware vSphere integration pack

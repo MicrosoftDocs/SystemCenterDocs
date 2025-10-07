@@ -1,8 +1,8 @@
 ---
 description: This article explains how to upgrade your DPM installation.
 ms.topic: upgrade-and-migration-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

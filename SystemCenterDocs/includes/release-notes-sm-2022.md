@@ -1,8 +1,8 @@
 ---
 description: include file to detail the release notes for Service Manager 2022
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:

@@ -1,8 +1,8 @@
 ---
 title: Reset Health
 description: This article describes how to reset health for a monitor after correcting the issue identified.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center

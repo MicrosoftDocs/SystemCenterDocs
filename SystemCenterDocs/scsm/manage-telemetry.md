@@ -2,8 +2,8 @@
 ms.assetid: 3040bfd2-3b31-40e4-94f9-911641e4b8c4
 title: Manage telemetry settings in Service Manager
 description: This article provides information about how to manage the telemetry settings in System Center Service Manager
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 180-days
 ms.topic: how-to

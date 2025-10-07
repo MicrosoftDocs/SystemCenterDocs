@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Prepare machines in workgroups and untrusted domains for backup
 ms.subservice: data-protection-manager
 ms.assetid: e63b86d4-1f83-48ef-82bb-636b9dc745e2
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

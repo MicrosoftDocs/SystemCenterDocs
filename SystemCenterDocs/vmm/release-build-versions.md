@@ -4,8 +4,8 @@ title: Release build versions for System Center Virtual Machine Manager
 description: This article details the release builds in Virtual Machine Manager
 ms.date: 04/16/2025
 ms.update-cycle: 180-days
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

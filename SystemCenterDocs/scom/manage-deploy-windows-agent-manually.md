@@ -2,8 +2,8 @@
 ms.assetid: 46f21e10-1ba5-4715-a99c-d4ceb861a093
 title: Install Windows Agent Manually Using MOMAgent.msi
 description: This article describes how to manually install the Operations Manager agent manually on Windows computers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager

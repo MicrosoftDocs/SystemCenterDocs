@@ -1,8 +1,8 @@
 ---
 description: This article explains the supported deployment options for Data Protection Manager.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 08/07/2025

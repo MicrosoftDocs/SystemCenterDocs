@@ -3,8 +3,8 @@ title: Search for Information
 description: Describes how to search for information in Service Manager.
 ms.custom: UpdateFrequency5, engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/10/2025
 ms.update-cycle: 1825-days
 ms.reviewer: na

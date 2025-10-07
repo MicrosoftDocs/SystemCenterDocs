@@ -2,8 +2,8 @@
 ms.assetid: 6c063660-b105-4f68-915e-3adc9021a14a
 title: Manage the SDN infrastructure in the VMM fabric
 description: This article describes how to manage SDN networking elements in the System Center VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/24/2024
 ms.topic: concept-article
 ms.service: system-center

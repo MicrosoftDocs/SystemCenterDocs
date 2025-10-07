@@ -2,8 +2,8 @@
 ms.assetid: 306caff2-9555-4f41-995c-65714ed97057
 title: Release build versions for System Center Service Manager
 description: This article details the release builds in Service Manager
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/19/2025
 ms.topic: concept-article
 ms.service: system-center
