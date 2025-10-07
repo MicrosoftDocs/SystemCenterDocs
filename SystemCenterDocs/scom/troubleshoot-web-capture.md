@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Web capture
 description: This article describes how to resolve issues with the Web Recorder feature in System Center Operations Manager 2025.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
