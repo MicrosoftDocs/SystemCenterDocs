@@ -26,14 +26,14 @@ This article describes how to determine your current Microsoft System Center –
 ::: moniker range="sc-dpm-2019"
 
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means that you do not need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2019 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means that you don't need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2019 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2016"
 
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means that you do not need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means that you don't need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 ::: moniker-end
 
