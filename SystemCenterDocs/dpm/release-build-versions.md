@@ -4,7 +4,7 @@ description: This article provides the list of release builds for System Center 
 ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 10/07/2025
 ms.update-cycle: 180-days
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
@@ -26,14 +26,14 @@ This article describes how to determine your current Microsoft System Center –
 ::: moniker range="sc-dpm-2019"
 
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means that you do not need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2019 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means that you don't need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2019 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2016"
 
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means that you do not need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means that you don't need to apply the update rollups in order; you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ The following table lists the build versions for Data Protection Manager 2019.
 | 10.19.379.0 | [4563392](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager) | August 2020 |Update Rollup 2 for System Center 2019 Data Protection Manager    |
 | 10.19.458.0 | [5001202](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d) | March 2021 | Update Rollup 3 for System Center 2019 Data Protection Manager    |
 | 10.19.577.0 | [5014054](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da) | June 2022 | Update Rollup 4 for System Center 2019 Data Protection Manager    |
-| 10.19.677.0 | [5024231](https://support.microsoft.com/help/5024231) | April 2023| Update Rollup 5 for System Center 2019 Data Protection Manager |
+| 10.19.677.0 | [5024231](https://support.microsoft.com/topic/update-rollup-5-for-system-center-2019-data-protection-manager-e04ff3fd-2a23-48d6-8ba5-6349ea5ed86f) | April 2023| Update Rollup 5 for System Center 2019 Data Protection Manager |
 | 10.19.861.0 | [5035307](https://support.microsoft.com/help/5035307) | March 2024 | Update Rollup 6 for System Center 2019 Data Protection Manager |
 
 ::: moniker-end
