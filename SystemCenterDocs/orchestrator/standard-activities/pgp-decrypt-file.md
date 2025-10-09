@@ -54,7 +54,7 @@ gpg.exe --decrypt <Encrypted File Path>
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Enter the path of the files that you want to decrypt. You can use wildcards, **?** and * to specify the files that you're decrypting. This field will only accept characters from the current system locale. If you use other characters, the activity will fail.|  
+|**Path**|Enter the path of the files that you want to decrypt. You can use wildcards, **?** and * to specify the files that you're decrypting. This field will only accept characters from the current system locale. If you use other characters, the activity fails.|  
 |**Include sub-directories**|Select this option to find all files that match the file name that you specified in all subdirectories under the folder that you specified in the path.|  
 |**Output folder**|Enter the path of the folder where you want the decrypted files to be stored.|  
 |**Skip**|Select this option to skip decrypting a file when a file with the same name is found in the **Output folder**.|  
@@ -65,8 +65,8 @@ gpg.exe --decrypt <Encrypted File Path>
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you'll use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
-|**Passphrase**|Enter the passphrase that is associated with the keyring file.|  
+|**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
+|**Passphrase**|Enter the passphrase that's associated with the keyring file.|  
 
 ### Published Data
 
