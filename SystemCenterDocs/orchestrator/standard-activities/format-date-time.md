@@ -2,7 +2,7 @@
 title: Format Date-Time
 description: This article describes the functionality of Format Date/Time activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 10/09/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -73,6 +73,10 @@ Use the following information to configure the Format Date/Time activity.
 |M/d/yy h &#58;m&#58;s tt|8/5/06 3:5:15 PM|  
 |ddd MMM dd yyyy|Sat Aug 05 2006|  
 |dddd, MMMM dd yyyy|Saturday, August 05 2006|  
+
+The following screenshot shows example of how to apply formatting:
+
+![Diagram that illustrates how to apply foramtting.](media/format-date-time/format-date-time.png)
 
 ### Published Data
 

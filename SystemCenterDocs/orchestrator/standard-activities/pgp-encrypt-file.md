@@ -1,7 +1,7 @@
 ---
 title: PGP Encrypt File
 description: This article describes the PGP Encrypt File activity.
-ms.date: 11/01/2024
+ms.date: 10/09/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -31,8 +31,14 @@ GnuPG is an open-source program used by the standard activities PGP Encrypt file
 
 Use the following steps:
 
-1. Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
+1. Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/download/index.html).
 2. Save gpg.exe and iconv.dll to the \<System drive\>:\Program Files (x86)\Common Files\Microsoft System Center \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+
+For example, 
+
+Go to [GnuPG](https://www.gnupg.org/download/index.html), under **GNUPG BINARY RELEASES**, download Gpg4win, and installer for GnuPG.
+
+If you download and install gnupg-w32-2.4.8_20250514.exe, *gpg.exe, gpg-agent.exe, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll* are found in `<System drive>:\Program Files\GnuPG\bin` and *iconv.dll* in Gpg4win installer file `<System drive>:\Program Files\Gpg4win\bin`.
 
 ### Install GnuPG version 2.x
 
@@ -41,6 +47,12 @@ Use the following steps:
 1. Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
 
 2. Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+
+For example, 
+
+Go to [GnuPG](https://www.gnupg.org/download/index.html), under **GNUPG BINARY RELEASES**, download Gpg4win, and installer for GnuPG.
+
+If you download and install gnupg-w32-2.4.8_20250514.exe, *gpg.exe, gpg-agent.exe, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll* are found in `<System drive>:\Program Files\GnuPG\bin` and *iconv.dll* in Gpg4win installer file `<System drive>:\Program Files\Gpg4win\bin`.
 
 ## Configure the PGP Encrypt File Activity
 

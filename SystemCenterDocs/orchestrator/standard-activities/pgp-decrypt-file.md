@@ -1,7 +1,7 @@
 ---
 title: PGP Decrypt File
 description: This article describes the functionality of PGP Decrypt File activity.
-ms.date: 08/29/2025
+ms.date: 10/09/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
@@ -35,11 +35,11 @@ Use the following steps:
 
 2. Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
-### Command to encrypt and decrypt
+### Encrypt and decrypt
 
 To encrypt and decrypt, run the following command:
  
-```
+```PowerShell
 gpg.exe -r <Public Key ID> -o <Output File Path> --encrypt <Source File Path>
 gpg --list-keys
 gpg --full-generate-key
