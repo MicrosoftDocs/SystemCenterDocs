@@ -7,11 +7,12 @@ ms.date:  03/19/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.subservice: operations-manager
 ---
 
-## Installer validation (recommended) 
+## Installer validation (recommended)
 
-After you download the installation media (zip), we recommend verifying that the file isn't corrupted. Following is the checksum for the file:
+After you download the installation media (.zip), we recommend verifying that the file isn't corrupted. Following is the checksum for the file:
 
 ::: moniker range="sc-om-2025"
 ```
@@ -39,4 +40,4 @@ $zipFilePath = "ENTER_ZIP_Path\<product>_<version>.zip"
 $expectedChecksum -eq (Get-FileHash -Path $zipFilePath -Algorithm SHA256).Hash
 ```
 
-When validation passes, you see **True** printed. If you see **False** printed, the downloaded file isn't valid and you need to download it again.
+When validation passes, **True** is printed. If **False** is printed, the downloaded file isn't valid and you need to download it again.
