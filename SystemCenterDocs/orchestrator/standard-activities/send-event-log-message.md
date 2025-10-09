@@ -2,7 +2,7 @@
 title: Send Event Log Message
 description: This article describes the functionality of Send Event Log Message activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 08/29/2025
+ms.date: 10/09/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
@@ -24,6 +24,10 @@ The Send Event Log Message activity creates an entry in the Windows Event Log wi
 
 - The severity of the event.
 
+Send Event Log Message is one of the activity of Notification. Find the activity, add it to runbook, and then right-click **Properties** to set the details tab.
+
+![Screenshot showing Send Event Log Notification.](./media/send-event-log-message/send-event-log-message.png)
+
 Use the following information to configure the Send Event Log Message activity.  
 
 ### Details Tab  
@@ -42,7 +46,3 @@ Use the following information to configure the Send Event Log Message activity.
 |----------|-----------------|  
 |Computer|The computer where the event log message was created.|  
 |Log entry description|The description of the event log message.|
-
-Send Event Log Message is one of the activity of Notification. Find the activity, add it to runbook, and then right-click **Properties** to set the details tab.
-
-![Screenshot showing Send Event Log Notification.](./media/send-event-log-message/send-event-log-message.png)
