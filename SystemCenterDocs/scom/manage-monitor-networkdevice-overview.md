@@ -1,8 +1,8 @@
 ---
 title: Monitoring Networks by Using Operations Manager
 description: This article provides an overview of how you can monitor network devices with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center

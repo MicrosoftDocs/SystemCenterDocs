@@ -2,8 +2,8 @@
 ms.assetid: 48acfa8f-eef3-4129-b8b7-aa4a41345ea7
 title: Upgrade information for System Center Orchestrator
 description: This article details the upgrade information and procedures for Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/18/2025
 ms.update-cycle: 180-days
 ms.topic: upgrade-and-migration-article

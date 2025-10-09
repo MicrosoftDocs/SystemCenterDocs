@@ -2,8 +2,8 @@
 ms.assetid: 0b604566-dab0-4e9e-90e1-ff62861c4396
 title: include file
 description: include article to detail the system requirements for VMM 1801
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  04/26/2018
 ms.topic:  include
 ms.service:  system-center

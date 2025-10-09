@@ -3,7 +3,7 @@ ms.assetid: cddb1bfe-0eff-4417-ab61-e0b2da55c5ed
 title: Disabling monitoring of specified SQL Servers and databases in Management Pack for SQL Server
 description: This section explains how to disable monitoring of SQL Servers and Databases
 author: Anastas1ya
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 12/09/2024
 ms.topic: concept-article
 ms.service: system-center

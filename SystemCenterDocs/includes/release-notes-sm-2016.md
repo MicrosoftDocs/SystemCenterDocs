@@ -1,8 +1,8 @@
 ---
 description: include file to detail the release notes for System Center 2016 - Service Manager
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:

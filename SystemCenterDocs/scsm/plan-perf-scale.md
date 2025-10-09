@@ -2,8 +2,8 @@
 title: Plan for System Center - Service Manager Performance and Scalability
 description: This article describes general performance and scalability planning guidance for System Center - Service Manager.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/10/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager

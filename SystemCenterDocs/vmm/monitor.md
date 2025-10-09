@@ -2,8 +2,8 @@
 ms.assetid: 00667742-29ba-44ea-8dda-587d8944f4a8
 title: Monitor VMM
 description: This article describes how to monitor VMM with VMM jobs, and System Center Operations Manager
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 09/02/2024
 ms.update-cycle: 1095-days
 ms.topic: concept-article

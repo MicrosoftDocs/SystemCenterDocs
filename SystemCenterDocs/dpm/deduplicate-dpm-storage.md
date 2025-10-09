@@ -7,8 +7,8 @@ ms.date: 11/01/2024
 title: Deduplicate DPM storage
 ms.subservice: data-protection-manager
 ms.assetid: af49cdc3-1f63-4c10-843a-d1cd27af473a
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy24
 ---
 

@@ -2,8 +2,8 @@
 ms.assetid: ca2c5b46-d017-465f-b970-1594724776b9
 title: include file
 description: include file to provide system requirements for Orchestrator 2019, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 12/18/2020
 ms.custom: na
 ms.service: system-center

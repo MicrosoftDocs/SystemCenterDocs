@@ -1,8 +1,8 @@
 ---
 title: System Center 2022 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2022 - Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/18/2025
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26

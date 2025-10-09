@@ -2,8 +2,8 @@
 ms.assetid: e7d1bf48-453f-49a4-bb4f-e85bbf3fc302
 title: Perform a rolling upgrade of a Hyper-V host cluster to Windows Server in VMM
 description: This article provides guidance on upgrading Hyper-V host clusters
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: upgrade-and-migration-article
 ms.service: system-center

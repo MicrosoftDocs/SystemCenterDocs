@@ -2,8 +2,8 @@
 title: Operations Manager Deployment Consideration in System Center - Service Manager
 description: This article contains information to be aware of when you're combining Operations Manager and Service Manager.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/31/2025 
 ms.subservice: service-manager
 ms.topic: concept-article

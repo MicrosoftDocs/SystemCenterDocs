@@ -7,8 +7,8 @@ ms.date: 03/27/2025
 title: Back up system state and bare metal
 ms.subservice: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy23, UpdateFrequency2, engagement-fy24
 ---
 

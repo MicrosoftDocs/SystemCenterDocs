@@ -2,8 +2,8 @@
 ms.assetid:
 description: Include file to summarize the release notes for System Center 2025 - Orchestrator
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:

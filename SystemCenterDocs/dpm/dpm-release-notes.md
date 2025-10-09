@@ -2,9 +2,9 @@
 ms.assetid:
 title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 2019, 2022 and 2025 releases.
-author: jyothisuri
-ms.author: jsuri
-ms.date: 08/07/2025
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 10/07/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: data-protection-manager
@@ -171,13 +171,13 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 
 ### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2.
 
-**Description**: DPM 2022 RTM and UR1 did not support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/help/5021128) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
+**Description**: DPM 2022 RTM and UR1 didn't support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/topic/kb5021128-description-of-the-security-update-for-sql-server-2016-sp3-azure-connect-feature-pack-february-14-2023-89e54794-460a-41bd-981f-998290e7d46e) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
 
 **Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
 
 ## DPM 2022 UR2 release notes
 
-We are recalling the release of Update Rollup 2 for System Center DPM 2022 due to the known issues listed below:
+We're recalling the release of Update Rollup 2 for System Center DPM 2022 due to the known issues listed below:
 
 1. Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check.
      Error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*

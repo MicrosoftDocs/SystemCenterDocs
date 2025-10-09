@@ -4,8 +4,8 @@ description: The Delete VM Disk activity is used in a runbook to remove or delet
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days

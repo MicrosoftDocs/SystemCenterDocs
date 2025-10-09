@@ -4,8 +4,8 @@ ms.topic: install-set-up-deploy
 ms.date: 08/07/2025
 ms.update-cycle: 180-days
 title: Install Data Protection Manager
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24

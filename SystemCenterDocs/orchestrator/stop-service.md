@@ -7,8 +7,8 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.assetid: 488bb198-73fc-4983-b0ef-14a8c7176f9c
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Stop Service activity

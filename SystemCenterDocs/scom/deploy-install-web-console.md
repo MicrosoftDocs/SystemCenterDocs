@@ -2,8 +2,8 @@
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title: Install the Operations Manager Web Console
 description: This article describes how to install the web console for System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/19/2025
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
@@ -39,6 +39,12 @@ A network load balancer isn't supported for the Operations Manager web console s
 
 [!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
+::: moniker range=">=sc-om-2022"
+
+You can successfully install the web console regardless of the updates installed on the Operations Manager management server.
+
+::: moniker-end
+
 ## Important considerations
 
 - The web console operates with sensitive data, such as clear-text user credentials, server names, and IP addresses. If this data is exposed on the network, it can represent a significant security risk. If Internet Information Services (IIS) doesn't have Secure Sockets Layer (SSL) configured, we advise you to configure it manually. For more information about security, see [Data encryption for web console and reporting server connections](plan-data-encryption-server-roles.md).
@@ -65,12 +71,6 @@ A network load balancer isn't supported for the Operations Manager web console s
 - If you run **Repair** on the web console after installation, the settings that you selected during installation are restored. Any changes that you manually make to the web console configuration after the installation are reset.
 
 - Installing the web console on a computer that has SharePoint installed isn't supported.
-
-::: moniker range=">=sc-om-2022"
-
-- You can successfully install the web console regardless of the updates installed on the Operations Manager management server.
-
-::: moniker-end
 
 ::: moniker range="=sc-om-2019"
 

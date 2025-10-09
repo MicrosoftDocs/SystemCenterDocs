@@ -2,8 +2,8 @@
 ms.assetid: 5a960834-3382-437d-a0bf-d09654726ab0
 title: Set up the VMM networking fabric
 description: This article describes how to set up infrastructure servers in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/21/2024
 ms.topic: how-to
 ms.service: system-center

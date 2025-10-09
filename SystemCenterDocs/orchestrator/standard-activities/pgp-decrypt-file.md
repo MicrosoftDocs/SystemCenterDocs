@@ -10,8 +10,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: cf1b4f0c-2694-405b-9940-1fdb88c9228b
 caps.latest.revision: 16
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # PGP Decrypt File
 

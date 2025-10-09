@@ -1,8 +1,8 @@
 ---
 title: View Configuration of a Monitored Object
 description: This article describes how to view the effective configuration of a monitored object in the Operations Manager HTML5 Web console.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/09/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center

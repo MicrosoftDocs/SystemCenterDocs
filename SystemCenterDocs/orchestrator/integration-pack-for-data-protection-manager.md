@@ -5,8 +5,8 @@ ms.date: 04/11/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy24
 ---
 

@@ -1,8 +1,14 @@
 ---
 title: Include file
+<<<<<<< HEAD
 description: Include file for the validation section in installation articles.
 author: jyothisuri
 ms.author: jsuri
+=======
+description: Include file for Validation section in Install docs.
+author: Jeronika-MS
+ms.author: v-gajeronika
+>>>>>>> e802f9439ad09223deeee0d47d883366ad6cda9c
 ms.date:  03/19/2025
 ms.topic:  include
 ms.service: system-center

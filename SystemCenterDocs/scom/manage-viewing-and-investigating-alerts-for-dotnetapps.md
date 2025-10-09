@@ -1,8 +1,8 @@
 ---
 title: View and Investigate Alerts for .NET Applications (Server-side Perspective)
 description: This article describes the .NET application monitoring feature and how to use it for the first time.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/15/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

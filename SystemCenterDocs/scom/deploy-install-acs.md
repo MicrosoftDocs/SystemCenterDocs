@@ -2,8 +2,8 @@
 ms.assetid: ed1c51df-2507-4f34-b051-04540896ac17
 title: Install an Audit Collection Services (ACS) Collector and Database
 description: This article describes how to install the Operations Manager ACS collector and database.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 
 ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
@@ -73,7 +73,7 @@ Operations Manager supports a single installer for all supported languages, inst
 
 14. In the **Number of days to retain events** box, enter the number of days that ACS should keep events in the ACS database before the events are removed during database grooming. The default value is 14 days. Then select **Next**.
 
-15. On the **ACS Stored Timestamp Format** page, select **Local** or **Universal Coordinated Time**. Then select **Next**.
+15. On the **ACS Stored Timestamp Format** page, select **Local** or **Universal Coordinated Time**. (Universal Coordinated Time was formerly called Greenwich Mean Time.) Then select **Next**.
 
 16. The **Summary** page displays a list of actions that the installation program will perform to install ACS. Review the list, and then select **Next** to begin the installation.
 

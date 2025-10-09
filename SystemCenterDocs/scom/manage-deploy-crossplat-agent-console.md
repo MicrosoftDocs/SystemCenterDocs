@@ -2,8 +2,8 @@
 ms.assetid: 706132d8-a84c-4331-97bc-cf68c551a6fe
 title: Install Agent on UNIX and Linux Using the Discovery Wizard
 description: This article describes how to install the Operations Manager agent on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.service: system-center

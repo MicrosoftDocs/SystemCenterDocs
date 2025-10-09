@@ -2,7 +2,7 @@
 title: Export event log task in Management Pack for Azure SQL Managed Instance
 description: This article explains how to run the export event log task for DB Engine in Azure SQL Managed Instance Management Pack
 author: epomortseva
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center

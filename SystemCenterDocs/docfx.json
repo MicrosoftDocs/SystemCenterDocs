@@ -248,24 +248,24 @@
     },
     "fileMetadata": {
       "author": {
-        "SystemCenterDocs/scom/*.md": "jyothisuri",
-        "SystemCenterDocs/includes/*.md": "jyothisuri",
-        "SystemCenterDocs/orchestrator/*.md": "jyothisuri",
-        "SystemCenterDocs/dpm/*.md": "jyothisuri",
-        "SystemCenterDocs/scsm/*.md": "jyothisuri",
-        "SystemCenterDocs/sma/*.md": "jyothisuri",
-        "SystemCenterDocs/spf/*.md": "jyothisuri",
-        "SystemCenterDocs/vmm/*.md": "jyothisuri"
+        "SystemCenterDocs/scom/*.md": "Jeronika-MS",
+        "SystemCenterDocs/includes/*.md": "Jeronika-MS",
+        "SystemCenterDocs/orchestrator/*.md": "Jeronika-MS",
+        "SystemCenterDocs/dpm/*.md": "Jeronika-MS",
+        "SystemCenterDocs/scsm/*.md": "Jeronika-MS",
+        "SystemCenterDocs/sma/*.md": "Jeronika-MS",
+        "SystemCenterDocs/spf/*.md": "Jeronika-MS",
+        "SystemCenterDocs/vmm/*.md": "Jeronika-MS"
       },
       "author": {
-        "SystemCenterDocs/scom/*.md": "jyothisuri",
-        "SystemCenterDocs/includes/*.md": "jyothisuri",
-        "SystemCenterDocs/orchestrator/*.md": "jyothisuri",
-        "SystemCenterDocs/dpm/*.md": "jyothisuri",
-        "SystemCenterDocs/scsm/*.md": "jyothisuri",
-        "SystemCenterDocs/sma/*.md": "jyothisuri",
-        "SystemCenterDocs/spf/*.md": "jyothisuri",
-        "SystemCenterDocs/vmm/*.md": "jyothisuri"
+        "SystemCenterDocs/scom/*.md": "Jeronika-MS",
+        "SystemCenterDocs/includes/*.md": "Jeronika-MS",
+        "SystemCenterDocs/orchestrator/*.md": "Jeronika-MS",
+        "SystemCenterDocs/dpm/*.md": "Jeronika-MS",
+        "SystemCenterDocs/scsm/*.md": "Jeronika-MS",
+        "SystemCenterDocs/sma/*.md": "Jeronika-MS",
+        "SystemCenterDocs/spf/*.md": "Jeronika-MS",
+        "SystemCenterDocs/vmm/*.md": "Jeronika-MS"
       },
       "manager": {
         "SystemCenterDocs/scom/*.md": "akashdubey",

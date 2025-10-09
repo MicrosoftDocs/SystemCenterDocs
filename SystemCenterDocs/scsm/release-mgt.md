@@ -2,8 +2,8 @@
 title: Configure Release Management settings
 description: Learn about how to configure Release Management settings in Service Manager.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

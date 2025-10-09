@@ -7,8 +7,8 @@ ms.date: 08/07/2025
 title: Monitor DPM
 ms.subservice: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom:
   - engagement-fy23
   - UpdateFrequency2

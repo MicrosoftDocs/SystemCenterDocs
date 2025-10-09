@@ -2,8 +2,8 @@
 ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
 title: Install an Operations Manager Reporting Server
 description: This article describes how to install the Operations Manager reporting server role.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/19/2025
 ms.custom: engagement-fy23
 ms.service: system-center
@@ -15,7 +15,8 @@ ms.topic: install-set-up-deploy
 
 This article shows you how to install a System Center Operations Manager reporting server on a standalone server that's hosting the SQL Server database and SQL Server Reporting Services (SSRS).
 
-Although SSRS is installed on the standalone server, you don't access Operations Manager reports on this server. Instead, you access them in the **Reporting** workspace on the operations console.
+> [!WARNING]
+> Although SSRS is installed on the standalone server, you don't access Operations Manager reports on this server. Instead, you access them in the **Reporting** workspace on the operations console.
 
 ## Prerequisites
 

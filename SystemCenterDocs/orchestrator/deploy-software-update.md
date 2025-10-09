@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.assetid: d7300764-da0a-40de-ad3e-26ec34c0bf1c
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Deploy Software Update activity for Configuration Manager Integration Pack

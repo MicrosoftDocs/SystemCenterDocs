@@ -1,8 +1,8 @@
 ---
 title: include file
 description: include file to summarize the release notes for OM 1807.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/25/2018
 ms.service: system-center
 ms.assetid: 4f84c864-ef52-4e81-a186-a03bf15b266e

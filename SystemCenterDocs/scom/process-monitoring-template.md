@@ -2,8 +2,8 @@
 ms.assetid: 9a250872-da2d-43d6-ac0e-9882c068311f
 title: Process Monitoring template in Operations Manager management pack
 description: This article provides an overview about process monitoring template
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 
 ms.date: 11/01/2024
 ms.custom: engagement-fy24

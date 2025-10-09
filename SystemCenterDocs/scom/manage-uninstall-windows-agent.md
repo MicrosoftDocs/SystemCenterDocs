@@ -2,8 +2,8 @@
 ms.assetid: 11d9cf46-2880-493f-bdf1-29263e2949f0
 title: Uninstall Agent from Windows-based Computers
 description: This article describes the different methods to uninstall the Operations Manager agent from Windows computers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center

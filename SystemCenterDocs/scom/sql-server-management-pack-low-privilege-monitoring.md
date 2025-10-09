@@ -3,7 +3,7 @@ ms.assetid: e357ab3b-45b3-417e-8a41-84c4cc66b4a0
 title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
 author: Anastas1ya
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/26/2024
 ms.topic: concept-article
 ms.service: system-center

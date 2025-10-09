@@ -2,8 +2,8 @@
 ms.assetid: cc13696a-7a15-4899-9b6f-d38e9e03b32a
 title: include file
 description: This article describes how to create logical switches in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  08/21/2024
 ms.topic:  include
 ms.service:  system-center

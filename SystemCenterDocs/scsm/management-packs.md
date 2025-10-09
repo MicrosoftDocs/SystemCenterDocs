@@ -2,8 +2,8 @@
 title: Use management packs
 description: You use management packs to add functionality to Service Manager.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

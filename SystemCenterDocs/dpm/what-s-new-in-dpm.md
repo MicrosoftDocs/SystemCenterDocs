@@ -2,13 +2,13 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: whats-new
 ms.service: system-center
-ms.date: 06/27/2025
+ms.date: 10/07/2025
 ms.update-cycle: 180-days
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
@@ -190,7 +190,7 @@ With DPM 2019 UR4, you can restore previously backed up data even after DPM agen
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR5.
 
-For issues fixed and the installation instructions for UR5, see the [KB article](https://support.microsoft.com/help/5024231).
+For issues fixed and the installation instructions for UR5, see the [KB article](https://support.microsoft.com/topic/update-rollup-5-for-system-center-2019-data-protection-manager-e04ff3fd-2a23-48d6-8ba5-6349ea5ed86f).
 
 ### Support for SQL Server 2022
 
