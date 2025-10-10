@@ -2,7 +2,7 @@
 title: Send SNMP Trap activity
 description: This article describes about how to configure the Send SNMP Trap activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 10/10/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -34,9 +34,13 @@ The Send SNMP Trap activity will raise an SNMP event that can be detected by a n
 > [!NOTE]
 > You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
- Use the following information to configure the Send SNMP Trap activity.  
+The following screenshot shows all the tabs on **Send SNMP Trap Properties** page:
 
- You can also add more information to the SNMP trap. Each item that you add becomes a published data item.  
+![Screenshot shows the tabs on Send SNMP Trap Properties page.](media/send-snmp-trap/send-snmp-trap-tabs.png)
+
+Use the following information to configure the Send SNMP Trap activity.  
+
+You can also add more information to the SNMP trap. Each item that you add becomes a published data item.  
 
 ### Details Tab  
 
