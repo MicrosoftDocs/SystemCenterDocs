@@ -1,12 +1,9 @@
 ---
 title: PGP Decrypt File
 description: This article describes the functionality of PGP Decrypt File activity.
-ms.date: 11/01/2024
+ms.date: 10/10/2025
 ms.service: system-center
-ms.reviewer: ""
-ms.suite: ""
 ms.subservice: orchestrator
-ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: cf1b4f0c-2694-405b-9940-1fdb88c9228b
 caps.latest.revision: 16
@@ -38,6 +35,17 @@ Use the following steps:
 
 2. Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
+### Encrypt and decrypt
+
+To encrypt and decrypt, run the following command:
+ 
+```PowerShell
+gpg.exe -r <Public Key ID> -o <Output File Path> --encrypt <Source File Path>
+gpg --list-keys
+gpg --full-generate-key
+gpg.exe --decrypt <Encrypted File Path>
+```
+
 ## Configure the PGP Decrypt Activity
 
  Use the following information to configure the PGP Decrypt File activity.  
@@ -46,7 +54,7 @@ Use the following steps:
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Enter the path of the files that you want to decrypt. You can use wildcards, **?** and * to specify the files that you're decrypting. This field will only accept characters from the current system locale. If you use other characters, the activity will fail.|  
+|**Path**|Enter the path of the files that you want to decrypt. You can use wildcards, **?** and * to specify the files that you're decrypting. This field will only accept characters from the current system locale. If you use other characters, the activity fails.|  
 |**Include sub-directories**|Select this option to find all files that match the file name that you specified in all subdirectories under the folder that you specified in the path.|  
 |**Output folder**|Enter the path of the folder where you want the decrypted files to be stored.|  
 |**Skip**|Select this option to skip decrypting a file when a file with the same name is found in the **Output folder**.|  
@@ -57,8 +65,8 @@ Use the following steps:
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you'll use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
-|**Passphrase**|Enter the passphrase that is associated with the keyring file.|  
+|**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
+|**Passphrase**|Enter the passphrase that's associated with the keyring file.|  
 
 ### Published Data
 
