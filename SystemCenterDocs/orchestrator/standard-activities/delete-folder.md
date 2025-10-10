@@ -2,15 +2,15 @@
 title: Delete Folder Activity
 description: This article describes the Delete Folder activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 08/29/2025
+ms.date: 10/10/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.assetid: 7bd72977-b6e1-4d20-af6e-42354f986c5b
 caps.latest.revision: 12
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Delete Folder
 

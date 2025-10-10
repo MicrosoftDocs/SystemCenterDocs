@@ -1,14 +1,14 @@
 ---
 title: PGP Decrypt File
 description: This article describes the functionality of PGP Decrypt File activity.
-ms.date: 10/09/2025
+ms.date: 10/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.assetid: cf1b4f0c-2694-405b-9940-1fdb88c9228b
 caps.latest.revision: 16
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # PGP Decrypt File
 
