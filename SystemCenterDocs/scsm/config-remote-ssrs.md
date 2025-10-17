@@ -112,7 +112,7 @@ In the Service Manager Data Warehouse (DW), the following known issue is observe
 
 If SQL Server Reporting Services (SSRS) is running locally on the Data Warehouse Management Server, and SSRS is 2017 or later, the Data Warehouse Setup completes successfully, but might not configure the specified local SSRS instance properly.
 
-Use [this script](https://microsoft.github.io/CSS-SystemCenter-ServiceManager/Verify_SSRS_for_SCSM/) to verify if the **LOCAL** SSRS installation is configured correctly and can be used with the Service Manager Data Warehouse.
+Use [this script](https://aka.ms/Verify_SSRS_for_SCSM) to verify if the **LOCAL** SSRS installation is configured correctly and can be used with the Service Manager Data Warehouse.
 
 >[!NOTE]
 >This PowerShell script can be executed after a Service Manager Data Warehouse installation. The script won't make any changes to the configuration but verifies it. You can run the script as many times as required.
