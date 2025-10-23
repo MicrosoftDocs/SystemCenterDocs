@@ -4,7 +4,7 @@ ms.topic: include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 08/23/2025
+ms.date: 10/23/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -99,3 +99,24 @@ DPM 2022 UR2 supports falling back to crash consistent recovery points via a reg
 DPM 2022 UR2 supports listing of online recovery points for a data source along with the expiry time and soft-delete status. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
 
 DPM 2022 UR2 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
+
+## New features in DPM 2022 UR3
+
+See the following sections for information about the new features/feature updates supported in DPM 2022 UR3. 
+
+### Windows Server 2025 Support
+
+DPM 2022 supports the protection of Windows Server 2025. For more information on supported versions for Windows Servers, see system requirements.
+
+### Updated runtime dependent version to be compliant and secure
+
+DPM 2022 UR3 onwards, DPM is dependent on Visual C++ Redistributable 2015-2022 (Latest) x64 package. It is no longer dependent on older version of the same. 
+
+>[!Note]
+>A fresh install of DPM agent might still require Visual C++ Redistributable 2013 X64 as the RTM version of agent is built using the same. Post install, Visual C++ 2013 Redistributable can be uninstalled.
+
+### Added Support for Exchange Subscription Edition
+
+DPM 2025 now supports Exchange Subscription Edition as an application aware backup. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022#applications-backup-1)
+
+
