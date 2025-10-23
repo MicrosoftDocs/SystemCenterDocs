@@ -111,6 +111,32 @@ You can use the `scomuser` account by using the SSH key and sudo elevation for s
 >
 > :::image type="content" source="media/manage-security-create-crossplat-sudo-sshkeys/puttygen-key-generator-private-key-file-parameters.png" alt-text="Screenshot of PuTTY Key Generator showing that where to select the PPK file version for the private key.":::
 
+#### Known Issues and Troubleshooting
+
+If you are getting the below error when discovering in SCOM in the ETL trace or the Operations Manager Module Logging:
+```Log
+An exception (-1073479162) caused the SSH command to fail - Disconnected: No supported authentication methods available
+```
+
+> [!NOTE]
+> Sometimes the console error might be unclear as below, to see the actual error you will need to enable module logging or check the task status in monitoring view.
+> ```Object reference is not set to an instance of an object.```
+
+This is because newer distributions of Linux disable SSH-RSA and SSH-DSS by default, in order to allow the SSH key to work, add the below the sshd_config and replace the user with the SCOM user:
+
+```
+Match User opsmgradminsvc
+    PasswordAuthentication no
+    ChallengeResponseAuthentication no
+    AuthenticationMethods publickey
+    PubkeyAcceptedAlgorithms +ssh-rsa,ssh-dss
+```
+
+For further troubleshooting, you can edit /etc/ssh/sshd_config and add the below line, then reload the SSH service, you should see verbose logging in the secure log.
+``` 
+LogLevel=DEBUG3
+```
+
 ## Next steps
 
 - Review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md) to understand how to authenticate and monitor your UNIX and Linux computers.
