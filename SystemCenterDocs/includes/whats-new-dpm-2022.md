@@ -4,7 +4,7 @@ ms.topic: include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 08/23/2025
+ms.date: 10/23/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -104,12 +104,16 @@ DPM 2022 UR2 supports stopping protection and retaining data by the policy durat
 
 See the following sections for information about the new features/feature updates supported in DPM 2022 UR3. 
 
->[!NOTE]
->DPM now relies on VCRedist 2015-2022 package and no longer supports the 2012 or 2013 packages. For a fresh agent installation VCRedist 2013 is required which can be uninstalled post installation of agent.
-
 ### Windows Server 2025 Support
 
-DPM 2022 supports the installation of DPM 2022 on Windows Server 2025 and the protection of Windows Server 2025 workloads. For more information on supported versions for Windows Servers, see system requirements.
+DPM 2022 supports the protection of Windows Server 2025. For more information on supported versions for Windows Servers, see system requirements.
+
+### Updated runtime dependent version to be compliant and secure
+
+DPM 2022 UR3 onwards, DPM is dependent on Visual C++ Redistributable 2015-2022 (Latest) x64 package. It is no longer dependent on older version of the same. 
+
+>[!Note]
+>A fresh install of DPM agent might still require Visual C++ Redistributable 2013 X64 as the RTM version of agent is built using the same. Post install, Visual C++ 2013 Redistributable can be uninstalled.
 
 ### Added Support for Exchange Subscription Edition
 
