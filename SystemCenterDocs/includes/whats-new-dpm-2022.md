@@ -99,3 +99,20 @@ DPM 2022 UR2 supports falling back to crash consistent recovery points via a reg
 DPM 2022 UR2 supports listing of online recovery points for a data source along with the expiry time and soft-delete status. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
 
 DPM 2022 UR2 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
+
+## New features in DPM 2022 UR3
+
+See the following sections for information about the new features/feature updates supported in DPM 2022 UR3. 
+
+>[!NOTE]
+>DPM now relies on VCRedist 2015-2022 package and no longer supports the 2012 or 2013 packages. For a fresh agent installation VCRedist 2013 is required which can be uninstalled post installation of agent.
+
+### Windows Server 2025 Support
+
+DPM 2022 supports the installation of DPM 2022 on Windows Server 2025 and the protection of Windows Server 2025 workloads. For more information on supported versions for Windows Servers, see system requirements.
+
+### Added Support for Exchange Subscription Edition
+
+DPM 2025 now supports Exchange Subscription Edition as an application aware backup. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022#applications-backup-1)
+
+
