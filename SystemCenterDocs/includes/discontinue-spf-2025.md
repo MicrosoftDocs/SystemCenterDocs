@@ -4,7 +4,7 @@ title: include file
 description: include file with notes on end of support information for 1801 and 1807, notes for use in all articles under 1801 and 1807 monikers
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date:  08/18/2025
+ms.date:  10/27/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: data-protection-manager
