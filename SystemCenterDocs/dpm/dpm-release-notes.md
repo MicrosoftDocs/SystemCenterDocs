@@ -4,7 +4,7 @@ title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 2019, 2022 and 2025 releases.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 10/07/2025
+ms.date: 11/13/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: data-protection-manager
@@ -43,6 +43,10 @@ In addition, following are the improvements:
 - Upgrading a licensed DPM server to Eval build is blocked.
 - Upgrading Eval to a licensed build is blocked.
 - Improved/fixed duplicate summary manager jobs post upgrade.
+
+## DPM 2025 UR1 release notes
+
+The following issues were identified after the release of DPM 2025 UR1 (KB 5068307) and are fixed in Hotfix for DPM 2025 UR1 (KB 5068307); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/kb/5068307) for the Hotfix.
 
 ::: moniker-end
 

@@ -6,8 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
-keywords:
-ms.date: 07/30/2024
+ms.date: 11/13/2025
 title:  include file
 ---
 
@@ -45,3 +44,7 @@ The following sections summarize the known issues and workarounds in System Cent
 ```cmd
 taskkill /f /pid {pid of the service} 
 ```
+
+## Orchestrator 2025 UR1 release notes
+
+The following issues were identified after the release of Orchestrator 2025 UR1 (KB 5068306) and are fixed in Hotfix for Orchestrator 2025 UR1 (KB 5068306); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/kb/5068306) for the Hotfix.
