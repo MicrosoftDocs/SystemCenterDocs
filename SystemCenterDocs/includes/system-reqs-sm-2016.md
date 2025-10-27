@@ -4,7 +4,7 @@ description: include file to describe the system requirements for Service Manage
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 10/08/2021
+ms.date: 10/27/2025
 ms.subservice: service-manager
 ms.topic: include
 ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
@@ -126,14 +126,3 @@ The following table summarizes the support for SQL Server 64-bit Enterprise and 
 
 - System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter isn't used in Service Manager connection strings.
 - SQL Server AlwaysOn Availability Groups are supported in System Center 2016 - Service Manager. [Learn more](../scsm/sql-always-on.md).
-- To install or upgrade Service Manager, SQL Server machines that host databases must be configured to allow updates. Otherwise, an error appears when Service Manager tries to create a database:
-    - *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
-    - You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
-        ```
-        sp_configure 'allow updates'
-        ```
-        In the results table, examine the value for "run_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
-
-        ```
-        sp_configure 'allow updates',0 reconfigure with override
-        ```
