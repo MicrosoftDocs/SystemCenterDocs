@@ -4,7 +4,7 @@ title: Release build versions for System Center Orchestrator
 description: This article details the release builds in Orchestrator
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 05/14/2025
+ms.date: 11/13/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: orchestrator
