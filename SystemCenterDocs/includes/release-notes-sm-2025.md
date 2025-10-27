@@ -6,7 +6,7 @@ ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:
-ms.date: 03/31/2025
+ms.date: 11/13/2025
 title: Include file
 ms.assetid:
 ---
@@ -57,3 +57,7 @@ Continue using System Center 2019 Web API until we fix this. System Center 2025 
 This issue is observed in Service Manager 2016 and later.
 
 **Workaround**: Perform the steps [detailed here](../scsm/config-remote-ssrs.md).
+
+## Service Manager 2025 UR1 release notes
+
+The following issues were identified after the release of Service Manager 2025 UR1 (KB 5068305) and are fixed in Hotfix for Service Manager 2025 UR1 (KB 5068305); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/kb/5068305) for the Hotfix.
