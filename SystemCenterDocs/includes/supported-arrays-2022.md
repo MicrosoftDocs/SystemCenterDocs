@@ -4,7 +4,7 @@ title: include file
 description: Include file to summarize the supported storage arrays for VMM 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/13/2025
+ms.date: 11/04/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,8 +17,8 @@ ms.subservice: virtual-machine-manager
 
 | **Device** | **Protocol** | **Min Controller Firmware** | **SMI-S** | **Details** |
 | --- | --- | --- | --- | --- |
-|NetApp<br /><br /> AFF, ASA|iSCSI/FC/SMB3|ONTAP 9.15.1 or later|SMI-S 5.2.7|[Link](https://www.netapp.com/data-storage/)|
-| Hewlett Packard Enterprise<br/><br/> 3PAR | SMI-S | 3PAR: 3PAR v. 3.2.2 MU3 or later<br/><br/> 3PAR 8000 & 20000, 7000 & 10000 | SMI-S CIM version 1.5 | [Link](https://www.hpe.com/us/en/storage/3par.html) |
+|NetApp<br /><br /> AFF, ASA, FAS | iSCSI/FC/SMB3 | ONTAP 9.15.1 or later | SMI-S 5.2.7 | [Link](https://www.netapp.com/data-storage/) |
+|Hewlett Packard Enterprise<br/><br/> 3PAR | SMI-S | 3PAR: 3PAR v. 3.2.2 MU3 or later<br/><br/> 3PAR 8000 & 20000, 7000 & 10000 | SMI-S CIM version 1.5 | [Link](https://www.hpe.com/us/en/storage/3par.html) |
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS: 7.4.2 or later <br/><br/> DSM: 2019 R1 or later <br/><br/> DSM 2020 R1 (20.1.1) or later <br/><br/> | SMI-S <br/>version 1.6 | [Link](https://www.dell.com/en-us/work/shop/cty/sf/disk-arrays?dgc=IR&cid=emcstorcat&lid=1) |
 |HPE <br/><br/> Primera	| SMI-S	| 4.0.0| 4.0.0 | [Link](https://www.hpe.com/us/en/storage/hpe-primera.html) |
 |Pure Storage <br/><br/> FlashArray - X, C, M	| iSCSI/FC	| Purity 5.3.0+ 6.0.0+ and 6.1.0+ |version 1.6.1 | [Link](https://www.purestorage.com/products/nvme/flasharray-x.html) |
