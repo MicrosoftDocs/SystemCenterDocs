@@ -10,7 +10,7 @@ ms.topic: concept-article
 ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 11/05/2025
 ms.custom: engagement-fy23
 ---
 
@@ -169,6 +169,10 @@ Follow these steps to test the runbook:
 13. Close **Runbook Tester**.  
 
 14. On the **Runbook Designer** toolbar, select **Check In**.  
+
+To access the published data, right-click in the text input box and select **Subscribe** > **Published Data**.
+
+:::image type="content" source="./media/monitor-a-folder-within-a-runbook/send-event-log-message-properties.png" alt-text="Screenshot of send event log message properties page.":::
 
 ## Next steps
 

@@ -57,12 +57,12 @@ Use the following information to configure the Get Lines activity.
 
 1. In the **Runbook Designer**, right-click the Runbooks, select **New**, and then select **Runbook**.
 2. Enter the name of the runbook, and select **Enter**.
-3.In the **Activities** pane, select **Text File Management** to expand the category, and then drag the Get Lines activity into the **Runbook Designer Design** workspace.
+3.In the **Activities** pane, select **Text File Management** to expand the category, and then drag the Get Lines activity into the **Runbook Designer** Design workspace.
 4.Double-click **Get Lines activity**, and set the Properties as shown in the following screenshot:
   
   :::image type="content" source="./media/get-lines/get-lines-properties.png" alt-text="Screenshot of get lines properties page.":::
 
   Range indicates line range.
   For example, 1-2 indicates from first line to second line.
-5. Select **Finish** and then select **Check-In**.
+5. Select **Finish** and then select **Check In**.
 6. Select **Run**.

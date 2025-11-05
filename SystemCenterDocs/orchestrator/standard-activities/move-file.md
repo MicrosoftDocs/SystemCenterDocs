@@ -75,10 +75,10 @@ Use the following information to configure the Move File activity.
 1. Prepare the file that needs to be moved. For example, `C:\TestFiles\test.txt`.
 2. In the **Runbook Designer**, right-click the Runbooks, select **New**, and then select **Runbook**.
 3. Enter the name of the runbook, and select **Enter**.
-4. In the **Activities** pane, select **File Management** to expand the category, and then drag the Move File activity into the **Runbook Designer Design** workspace.
+4. In the **Activities** pane, select **File Management** to expand the category, and then drag the Move File activity into the **Runbook Designer** Design workspace.
 5.Double-click **Move File activity**, and set the Properties as shown in the following screenshot:
  
   :::image type="content" source="./media/move-file/move-file-properties.png" alt-text="Screenshot of move file properties page.":::
 
-6. Select **Finish** and then select **Check-In**.
+6. Select **Finish** and then select **Check In**.
 7. Select **Run**.

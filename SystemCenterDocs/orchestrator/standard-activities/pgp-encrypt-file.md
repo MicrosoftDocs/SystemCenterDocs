@@ -60,7 +60,7 @@ To install GnuPG on new Outlook, download Gpg4win and select **GpgOL** checkbox.
 
 :::image type="content" source="./media/pgp-encrypt-file/install.png" alt-text="Screenshot of Install screen.":::
 
-:::image type="content" source="./media/pgp-encrypt-file/gpg4win-setup.png" alt-text="Screenshot of Gpg4win-setup page.":::
+:::image type="content" source="./media/pgp-encrypt-file/setup.png" alt-text="Screenshot of Gpg4win-setup page.":::
 
 ## Configure the PGP Encrypt File Activity
 

@@ -85,7 +85,7 @@ Use the following information to configure the Send Email activity:
 
 1. In the **Runbook Designer**, right-click the Runbooks, select **New**, and then select **Runbook**.
 2. Enter the name of the runbook, and select **Enter**.
-3. In the **Activities** pane, select **Email** to expand the category, and then drag the Send email activity into the **Runbook Designer Design** workspace.
+3. In the **Activities** pane, select **Email** to expand the category, and then drag the Send email activity into the **Runbook Designer** Design workspace.
 4. Double-click **Send email activity** to open the **Properties** window.
 5. Configure the following Email Details:
    - **General**
