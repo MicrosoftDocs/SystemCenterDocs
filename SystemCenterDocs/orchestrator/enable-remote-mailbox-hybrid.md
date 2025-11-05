@@ -30,7 +30,7 @@ A full hybrid deployment requires at least one on-premises Exchange server, not 
 - **Staged mailbox migration**: Move mailboxes in batches or individually, and even move them back.
 - **Centralized management**: Continue using on-prem Exchange Admin Center while leveraging cloud features like archiving and compliance.
 
-## Minimum requirements
+## Requirements
 
 - One supported Exchange server (Exchange 2016 or 2019 with latest CU).
 - Directory synchronization via Microsoft Entra Connect (formerly Azure AD Connect).
