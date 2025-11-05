@@ -3,22 +3,21 @@ title: HP Service Manager Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists the Activities links.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-ms.reviewer: na
-ms.suite: na
 ms.subservice: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 583b948b-5ea2-43e3-afad-f5281b83090a
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
-ms.date: 11/01/2024
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ---
 
 # HP Service Manager Activities
 
 The following configuration instructions apply to all the activities in this integration pack.
+
+For supported printers and devices, see [HP Security Manager - Supported printers and devices](https://support.hp.com/ca-en/document/ish_10733339-10598917-16).
 
 ## Activity Properties
 
@@ -29,7 +28,7 @@ Each activity has a set of required or optional properties that define the confi
 1. Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 2. To save your configuration entries, select **Finish**.
 
-In the activity properties dialog, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs from activity to activity
+In the activity properties dialog, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs from activity to activity.
 
 #### General Tab
 

@@ -2,7 +2,7 @@
 title: Send Email 
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/21/2025
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: Jeronika-MS
 ms.author: v-gajeronika
 ---
+
 # Send Email
 
 The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system. 
@@ -26,7 +27,7 @@ In this article, you'll learn about the Send Email activity.
 
 ## Configure the Send Email Activity
 
- Before you configure the Send Email activity, you'll need to determine the following:  
+Before you configure the Send Email activity, you'll need to determine the following:  
 
 - Your SMTP server information.
 
@@ -79,3 +80,18 @@ Use the following information to configure the Send Email activity:
 |Outgoing mail server (SMTP)|The name of the SMTP server used to send the email.|  
 |Outgoing mail server port number|The port used to communicate with the SMTP server.|  
 |Outgoing mail server SSL enabled|Indicates whether the mail server has SSL enabled.|
+
+**Example**
+
+1. In the **Runbook Designer**, right-click the Runbooks, select **New**, and then select **Runbook**.
+2. Enter the name of the runbook, and select **Enter**.
+3. In the **Activities** pane, select **Email** to expand the category, and then drag the Send email activity into the **Runbook Designer Design** workspace.
+4. Double-click **Send email activity** to open the **Properties** window.
+5. Configure the following Email Details:
+   - **General**
+     -  **Subject**: Enter the email subject.
+   - **Details**
+     - **To / CC / BCC**: Add the recipient email addresses.
+     - **Message**: Type the email body text.
+6. Configure SMTP Connection
+7. Select **Finish** to save the settings.
