@@ -172,7 +172,7 @@ Follow these steps to test the runbook:
 
 To access the published data, right-click in the text input box and select **Subscribe** > **Published Data**.
 
-:::image type="content" source="/media/monitor-a-folder-within-a-runbook/send-event-log-message-properties.png" alt-text="Screenshot of send event log message properties page.":::
+:::image type="content" source="media/monitor-a-folder-within-a-runbook/send-event-log-message-properties.png" alt-text="Screenshot of send event log message properties page.":::
 
 ## Next steps
 
