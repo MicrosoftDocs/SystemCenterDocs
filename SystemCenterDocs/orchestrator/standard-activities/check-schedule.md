@@ -2,7 +2,7 @@
 title: Check Schedule
 description: This article describes the check schedule activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/24/2025
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -28,6 +28,10 @@ To configure the Check Schedule activity, follow these steps:
 2. Double-click the **Check Schedule** activity icon to open the **Properties** dialog.  
 
 3. Select the **Details** tab, and next to the **Schedule Template** box, select the ellipsis **(...)** button and in the **Select a Schedule** dialog, select the **Schedule** that you want to verify.  
+
+To set up schedule templates, go to **Global Settings** and right-click **Schedules** > **New** > **Schedule**.
+
+:::image type="content" source="./media/check-schedule/schedule.png" alt-text="Screenshot of check schedule page.":::
 
 ### Published Data
 
