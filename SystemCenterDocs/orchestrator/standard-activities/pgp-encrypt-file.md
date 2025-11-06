@@ -76,7 +76,7 @@ Use the following information to configure the PGP Encrypt File activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Enter the path of the files that you want to encrypt. You must use the full path name. You can use wildcards ? and * to specify the files that you want to encrypt. This field only accepts characters from the current system locale.|  
+|**Path**|Enter the path of the files that you want to encrypt. You must use the full path name. You can use wildcards? and * to specify the files that you want to encrypt. This field only accepts characters from the current system locale.|  
 |**Include sub-directories**|Select this option to find all the files that match the filename that you specified in all the subfolders of the folder that you specified in the path.|  
 |**Output folder**|Enter the path of the folder where you want the encrypted files to be stored.|  
 |**Skip**|Select this option to skip encrypting a file when a file with the same name is found in the Output folder.|  

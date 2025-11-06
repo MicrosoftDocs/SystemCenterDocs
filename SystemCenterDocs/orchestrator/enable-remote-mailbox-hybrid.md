@@ -19,16 +19,16 @@ ms.author: v-gajeronika
 
 A Hybrid deployment connects your on-premises Exchange organization with Exchange Online (Microsoft 365) so they operate as a single, unified messaging environment. It enables coexistence and migration, allowing organizations to move mailboxes to the cloud gradually without disrupting users.
 
-A full hybrid deployment requires at least one on-premises Exchange server, not just Active Directory. The Hybrid Configuration Wizard (HCW) needs an Exchange server to configure connectors, mail flow, and coexistence.Active Directory alone cannot provide mailbox management or mail routing.
+A full hybrid deployment requires at least one on-premises Exchange server, not just Active Directory. The Hybrid Configuration Wizard (HCW) needs an Exchange server to configure connectors, mail flow, and coexistence. Active Directory alone cannot provide mailbox management or mail routing.
 
-## Key Features
+## Key features
 
 - **Shared domain namespace**: Both environments use the same domain (e.g., @contoso.com).
 - **Unified Global Address List (GAL)**: Users can see all mailboxes regardless of location.
 - **Cross-environment calendar and free/busy sharing**: Simplifies meeting scheduling.
-- **Secure mail routing**: Encrypted mail flow between on-prem and cloud.
+- **Secure mail routing**: Encrypted mail flow between on-premises and cloud.
 - **Staged mailbox migration**: Move mailboxes in batches or individually, and even move them back.
-- **Centralized management**: Continue using on-prem Exchange Admin Center while leveraging cloud features like archiving and compliance.
+- **Centralized management**: Continue using on-premises Exchange Admin Center while leveraging cloud features like archiving and compliance.
 
 ## Requirements
 
@@ -116,7 +116,7 @@ The following tables list the required properties, optional properties, and publ
 | Extension Custom Attribute 4   | Extension Custom Attribute 4.   | String   |
 | Extension Custom Attribute 5   | Extension Custom Attribute 5.   | String   |
 | Extensions   | Extension List.   | String   |
-| External Directory Object Id   | ID of the mailbox in the external directory.   | String   |
+| External Directory Object ID   | ID of the mailbox in the external directory.   | String   |
 | Forwarding Address   | Forwarding Address defined for the mailbox.   | String   |
 | GUID   | Mailbox GUID.   | String   |
 | Grant Send On Behalf to   | List of users who are allowed to send messages on the owner's behalf.   | String   |
