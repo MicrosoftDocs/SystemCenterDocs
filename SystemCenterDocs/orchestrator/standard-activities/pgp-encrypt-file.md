@@ -1,7 +1,7 @@
 ---
 title: PGP Encrypt File
 description: This article describes the PGP Encrypt File activity.
-ms.date: 10/10/2025
+ms.date: 11/05/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -53,6 +53,14 @@ For example,
 Go to [GnuPG](https://www.gnupg.org/download/index.html), under **GNUPG BINARY RELEASES**, download Gpg4win, and installer for GnuPG.
 
 If you download and install gnupg-w32-2.4.8_20250514.exe, *gpg.exe, gpg-agent.exe, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll* are found in `<System drive>:\Program Files\GnuPG\bin` and *iconv.dll* in Gpg4win installer file `<System drive>:\Program Files\Gpg4win\bin`.
+
+### Install GnuPG on new Outlook
+
+To install GnuPG on new Outlook, download Gpg4win and select **GpgOL** checkbox.
+
+:::image type="content" source="./media/pgp-encrypt-file/install.png" alt-text="Screenshot of Install screen.":::
+
+:::image type="content" source="./media/pgp-encrypt-file/setup.png" alt-text="Screenshot of Gpg4win-setup page.":::
 
 ## Configure the PGP Encrypt File Activity
 

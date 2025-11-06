@@ -2,7 +2,7 @@
 title: Get Lines
 description: This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/22/2025
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -52,3 +52,17 @@ Use the following information to configure the Get Lines activity.
 |#Name# line text|For each item that you add in the lines list of the dialog, a new published data item is created. This item displays the line text of each item in the Lines list. #Name# represents the name that you assigned in the Name field.|  
 |#Name# line numbers|For each item that you add in the Lines list of the dialog, a new published data item is created. This item displays the line numbers where text was found from each item in the Lines list. #Name# represents the name that you assigned in the Name field.|  
 |Total Number of Lines in the Ranges Specified|The total number of lines that were found in the ranges that were specified.|
+
+**Example**
+
+1. In the **Runbook Designer**, right-click the Runbooks, select **New**, and then select **Runbook**.
+2. Enter the name of the runbook, and select **Enter**.
+3.In the **Activities** pane, select **Text File Management** to expand the category, and then drag the Get Lines activity into the **Runbook Designer** Design workspace.
+4.Double-click **Get Lines activity**, and set the Properties as shown in the following screenshot:
+  
+  :::image type="content" source="./media/get-lines/get-lines-properties.png" alt-text="Screenshot of get lines properties page.":::
+
+  Range indicates line range.
+  For example, 1-2 indicates from first line to second line.
+5. Select **Finish** and then select **Check In**.
+6. Select **Run**.

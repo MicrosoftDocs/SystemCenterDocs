@@ -2,7 +2,7 @@
 title: Generate Random Text
 description: This article describes the functionality of Generate Random Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/15/2025
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -40,3 +40,11 @@ The Generate Random Text activity generates random strings of text. This article
 |----------|-----------------|  
 |Random text|The string of random text that this activity creates.|  
 |Random text length|The length of the text that was generated.|
+
+## Configure random text activity in new outlook
+
+To configure random text activity in new outlook, follow these steps:
+
+1. Open New Outlook and start composing an email.
+2. In the message body, enter one of the functions. For example, *=rand(5,3)*
+3. Select **Enter** for the placeholder text to appear.

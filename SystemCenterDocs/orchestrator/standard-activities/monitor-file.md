@@ -2,7 +2,7 @@
 title: Monitor File
 description: This article describes the functionality of Monitor File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.author: v-gajeronika
 ---
 # Monitor File
 
-The Monitor File activity invokes a runbook when files that you specify in folders and sub-folders have changed. You can monitor a file that indicates the completion of a transaction. For example, there are nightly transfers sent to your runbook server, and when the transfer is complete a file with the name "Complete" is written to the folder. This activity can automatically invoke a runbook that processes all the files in the folder when the "Complete" file is created.  
+The Monitor File activity invokes a runbook when files that you specify in folders and sub-folders have changed. You can monitor a file that indicates the completion of a transaction. For example, there are nightly transfers sent to your runbook server, and when the transfer is complete a file with the name **Complete** is written to the folder. This activity can automatically invoke a runbook that processes all the files in the folder when the **Complete** file is created. Monitor file uses polling mechanism and files are monitored for every 10 seconds. 
 
 ## Configure the Monitor File Activity
 

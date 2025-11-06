@@ -2,7 +2,7 @@
 title: Enable Remote Mailbox (Hybrid)
 description: 'You can use the Enable Remote Mailbox (Hybrid) activity to create a mailbox in the cloud-based service for an existing user in the on-premises Active Directory (hybrid environment).'
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
@@ -16,6 +16,26 @@ ms.author: v-gajeronika
 ---
 
 # Enable Remote Mailbox (Hybrid)
+
+A Hybrid deployment connects your on-premises Exchange organization with Exchange Online (Microsoft 365) so they operate as a single, unified messaging environment. It enables coexistence and migration, allowing organizations to move mailboxes to the cloud gradually without disrupting users.
+
+A full hybrid deployment requires at least one on-premises Exchange server, not just Active Directory. The Hybrid Configuration Wizard (HCW) needs an Exchange server to configure connectors, mail flow, and coexistence. Active Directory alone cannot provide mailbox management or mail routing.
+
+## Key features
+
+- **Shared domain namespace**: Both environments use the same domain (e.g., @contoso.com).
+- **Unified Global Address List (GAL)**: Users can see all mailboxes regardless of location.
+- **Cross-environment calendar and free/busy sharing**: Simplifies meeting scheduling.
+- **Secure mail routing**: Encrypted mail flow between on-premises and cloud.
+- **Staged mailbox migration**: Move mailboxes in batches or individually, and even move them back.
+- **Centralized management**: Continue using on-premises Exchange Admin Center while leveraging cloud features like archiving and compliance.
+
+## Requirements
+
+- One supported Exchange server (Exchange 2016 or 2019 with latest CU).
+- Directory synchronization via Microsoft Entra Connect (formerly Azure AD Connect).
+
+If all mailboxes are moved to the cloud, you can remove the full Exchange server but keep Exchange Management Tools for managing Active Directory attributes.
 
 You can use the Enable Remote Mailbox (Hybrid) activity to create a mailbox in the cloud-based service for an existing user in the on-premises Active Directory (hybrid environment).
 
@@ -96,7 +116,7 @@ The following tables list the required properties, optional properties, and publ
 | Extension Custom Attribute 4   | Extension Custom Attribute 4.   | String   |
 | Extension Custom Attribute 5   | Extension Custom Attribute 5.   | String   |
 | Extensions   | Extension List.   | String   |
-| External Directory Object Id   | ID of the mailbox in the external directory.   | String   |
+| External Directory Object ID   | ID of the mailbox in the external directory.   | String   |
 | Forwarding Address   | Forwarding Address defined for the mailbox.   | String   |
 | GUID   | Mailbox GUID.   | String   |
 | Grant Send On Behalf to   | List of users who are allowed to send messages on the owner's behalf.   | String   |
