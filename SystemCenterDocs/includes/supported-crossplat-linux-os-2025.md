@@ -4,7 +4,7 @@ title: Supported UNIX and Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 04/09/2025
+ms.date: 11/06/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -36,7 +36,7 @@ ms.subservice: operations-manager
 
 Supported versions:
 
-- Debian 8, 9, 10, 11, and 12
+- Debian 9, 10, 11, 12, and 13
 - Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!Note]
@@ -53,17 +53,18 @@ Supported versions:
 
 Supported versions:
 
-- Oracle Linux 7, 8, and 9
+- Oracle Linux 7, 8, 9 and 10
 - SLES 15
 - openSUSE Leap 15t
-- Rocky 8 and 9
-- Alma 8 and 9
-- Red Hat Enterprise Linux (RHEL) Server 8 and 9
-- CentOS 7 and 8
+- Rocky 8, 9, and 10
+- Alma 8, 9, and 10
+- Red Hat Enterprise Linux (RHEL) Server 8, 9, and 10
 
 >[!Note]
 >- Oracle Linux 9, Rocky 9, and Alma 9 are supported from Operations Manager 2022 UR1 and later when you apply this [hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+>- Oracle Linux 10, Rocky 10, and Alma 10 are supported from Operations Manager 2025 UR1 and later when you apply this hotfix.
 >- RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
+>- RHEL 10 is supported from Operations Manager 2025 UR1 and later when you apply this hotfix.
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 |Required package|Description|Minimum version|
