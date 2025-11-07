@@ -17,4 +17,4 @@ The following table lists the release history for Orchestrator 2025.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.25.1.7|-|November 2024 |General Availability|
-| - | [5068306](https://support.microsoft.com/kb/5068306) | November 2025 | Update Rollup 1 |
+| 10.25.1.94 | [5068306](https://support.microsoft.com/kb/5068306) | November 2025 | Update Rollup 1 |
