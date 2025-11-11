@@ -51,7 +51,7 @@ Operations Manager 2025 now supports SQL server 2025 for improved performance an
 The following new platforms are supported for monitoring in Operations Manager 2025 UR1. [Learn more](/system-center/scom/plan-supported-crossplat-linux-os?view=sc-om-2025).
 
 - Oracle Linux 10
-- Rocky 10.
+- Rocky 10
 - Alma 10
 - Red Hat Enterprise Linux (RHEL) Server 10
 - Debian 13
