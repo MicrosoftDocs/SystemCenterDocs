@@ -16,7 +16,7 @@ The following sections summarize the release notes for Orchestrator 2025 UR1, an
 
 For the problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068306).
 
-- Conform GB18030-2022 amendment standard
+- Conform GB18030-2022 amendment standard.
 - Identifiers are shown instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity Name is included as a property in the Log View area.
 
 ## Orchestrator 2025 release notes
