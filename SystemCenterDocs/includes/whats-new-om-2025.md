@@ -38,6 +38,14 @@ The following sections introduce the new features or feature updates supported i
 
 For problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068304).
 
+### Support for TLS v1.3
+
+Operations Manager 2025 now supports TLS v1.3 enhancing the security and compliance with the latest encryption standards.
+
+### Support for Microsoft SQL Server 2025
+
+Operations Manager 2025 now supports SQL server 2025 for improved performance and scalability.
+
 ### Other updates
 
 The following new platforms are supported for monitoring in Operations Manager 2025 UR1. [Learn more](/system-center/scom/plan-supported-crossplat-linux-os?view=sc-om-2025).
