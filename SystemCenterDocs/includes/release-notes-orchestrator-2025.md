@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
-ms.date: 11/13/2025
+ms.date: 11/11/2025
 title:  include file
 ---
 
@@ -14,13 +14,10 @@ title:  include file
 
 The following sections summarize the release notes for Orchestrator 2025 UR1, and include the known issues and workarounds.
 
-For the problems fixed in UR3 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068306).
+For the problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068306).
 
-### Confirm GB18030-2022 amendment standard
-
-**Description**: Identifiers are shown instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity Name is included as a property in the Log View area.
-
-**Workaround**: None
+- Conform GB18030-2022 amendment standard
+- Identifiers are shown instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity Name is included as a property in the Log View area.
 
 ## Orchestrator 2025 release notes
 
