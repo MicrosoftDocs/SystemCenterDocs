@@ -16,7 +16,3 @@ This article summarizes the release notes for Operations Manager 2025.
 
 - Fixed broken behaviour of Web Console where allow-popups and allow-forms settings were not added after applying security changes.
 - Fixed failure of favourite reports with `HttpParseException` in Web Console.
-
-## Operations Manager 2025 UR1 release notes
-
-The following issues were identified after the release of Operations Manager 2025 UR1 (KB 5068304) and are fixed in Hotfix for Operations Manager 2025 UR1 (KB 5068304); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/kb/5068304) for the Hotfix.
