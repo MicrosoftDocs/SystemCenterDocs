@@ -3,7 +3,7 @@ description: This article contains the procedures for backing up and recovery of
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 07/22/2025
+ms.date: 11/14/2025
 title: Back up Hyper V virtual machines
 ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -368,13 +368,13 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 
 1. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a Hyper-V VM or folder, the **Recovery points for** pane displays the available recovery points.
 
-    ![Screenshot of "Recovery points for" pane to recover files from Hyper-v VM.](./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk.png)
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk.png" alt-text="Screenshot of 'Recovery points for' pane to recover files from Hyper-v VM.":::
 
 1. In the **Recovery Points for** pane, use the calendar to select the date that contains the desired recovery point(s). Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct **Recovery time**. If the selected date has multiple recovery points, choose your recovery point by selecting it in the Recovery time dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the Path pane.
 
 1. To find the files you want to recover, in the **Path** pane, double-click the item in the Recoverable item column to open it. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item. Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the Up button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
 
-    ![Screenshot of Review Recovery Selection in Hyper-v VM.](./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk-selection.png)
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk-selection.png" alt-text="Screenshot of Review Recovery Selection in Hyper-v VM.":::
 
 1. Once you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**. In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
 
@@ -384,7 +384,7 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 
 1. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
 
-    ![Screenshot of Specify location to recover files from Hyper-v VM.](./media/back-up-hyper-v-virtual-machines/hyper-v-vm-specify-destination.png)
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-specify-destination.png" alt-text="Screenshot of Specify location to recover files from Hyper-v VM.":::
 
 1. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 
@@ -448,5 +448,108 @@ To restore an individual file from a Hyper-V VM, follow these steps:
 
 >[!TIP]
 >You can perform item-level restore of online recovery points for Hyper-V VMs running Windows also from Add external DPM Server to recover VM files and folders quickly.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+## Exclude disk from Hyper-V VM backup
+
+> [!NOTE]
+> This feature is applicable for DPM 2025 UR1 and later.
+
+With DPM 2025 UR1, you can exclude the specific disk from Hyper-V VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
+
+To configure the disk exclusion, follow the steps below:
+
+**Identify the Hyper-V VM and disk details to be excluded**
+
+  1. On the Hyper-V Manager console, go to VM settings for which you want to exclude the disk.
+  2. Select the disk that you want to exclude and note the path for that disk.
+
+        For example, to exclude the 6gs1disk1.vhdx from the HypervSc1, the path for 6gs1disk1.vhdx is **F:\HypervSc1\6gs1disk1.vhdx**.
+
+        :::image type="content" source="./media/back-up-hyper-v-virtual-machines/test-virtual-machine.png" alt-text="Screenshot of test vm.":::
+
+**Configure DPM Server**
+
+Navigate to DPM server where the Hyper-V VM is configured for protection to configure disk exclusion.
+
+  1. Get DPMProductionServer information using DPMServerName and Hyper-V ServerName.
+
+        ```powershell
+        PS C:\> $ps = Get-DPMProductionServer -DPMServerName " DPMServerName " | Where-Object {$_.ServerName -eq " Hyper-V ServerName "} 
+        ```
+
+  2. Select the Hyper-V host and list the VMs protection for the Hyper-V host.
+
+        ```powershell
+        PS C:\> $vmDsInfo = $vmDsInfo = Get-DPMDatasource -ProductionServer $ps 
+        PS C:\> $vmDsInfo
+        ```
+
+  3. Select the VM for which you want to exclude a disk.
+
+        ```powershell
+        PS C:\> $vmDsInfo[8] 
+        ```
+
+     :::image type="content" source="./media/back-up-hyper-v-virtual-machines/powershell-script.png" alt-text="Screenshot of PowerShell script.":::
+
+  4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
+
+     **Add/remove the disk from exclusion, run the following command:**
+
+      ```powershell
+      ./ExcludeDisk.ps1 -Datasource $vmDsInfo[8] [-Add|Remove] "F:\HypervSc1\6gs1disk1.vhdx"
+      ```
+
+     **Example: Add the disk exclusion for HypervSc1, run the following command**
+
+       ```powershell
+       PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[8] -Add "F:\HypervSc1\6gs1disk1.vhdx" 
+
+       Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml 
+
+       Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list. 
+       ```
+       :::image type="content" source="./media/back-up-hyper-v-virtual-machines/disk-exclusion.png" alt-text="Screenshot of PowerShell script to add disk exclusion.":::
+
+5. Verify that the disk has been added for exclusion
+
+   **View the existing exclusion for specific VMs, run the following command:**
+
+    ```powershell
+    .\ExcludeDisk.ps1 -Datasource $vmDsInfo[8] -View
+    ```
+
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/view-exclusion.png" alt-text="Screenshot of PowerShell script to view the exisiting exclusion.":::
+
+  Once you configure the protection for this VM, the excluded disk won't be listed during protection.
+
+  > [!NOTE]
+  > If you're performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
+
+**Remove the disk from exclusion**
+
+To remove the disk from exclusion, run the following command:
+
+```powershell
+PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[8] -Remove "F:\HypervSc1\6gs1disk1.vhdx" 
+```
+
+**Possibilities for scenarios and recovery points**
+
+|Scenario|Recovery Point Type|OLR|ALR|
+|---|---|---|---|
+|There is no Disk Exclusion|Take the recovery points|Possible|Possible|
+|Exclude the disk before the VM is protected|Take the recovery points|Possible|Not possible|
+|Exclude the disk after enabling protection|With recovery points created before exclusion|Possible|Possible|
+|Exclude the disk after enabling protection|With recovery points created after exclusion|Possible|Not possible|
+|Include the disk which is excluded|With recovery points created before inclusion|Possible|Not possible|
+|Include the disk which is excluded|With recovery points created after inclusion|Possible|Possible|
+
+>[!NOTE] 
+>Alternate location restore of a Hyper-V VM with excluded disks is currently not supported. 
 
 ::: moniker-end
