@@ -49,14 +49,14 @@ For issues fixed and the installation instructions for UR1, see [KB article](htt
 
 DPM 2025 UR1 allows admins to exclude specific disks from a Hyper-V VM backup.
  
-The backup omits the excluded disk contents from the restore points. As a result, when the VM would be restored, the excluded disks wouldn't be overwritten by backup data. [Learn more](/system-center/dpm/back-up-hyper-v-virtual-machines?view=sc-dpm-2025#exclude-disk-from-hyper-v-vm-backup).
+The backup omits the excluded disk contents from the restore points. As a result, when the VM gets restored, the excluded disks wouldn't be overwritten by backup data. [Learn more](/system-center/dpm/back-up-hyper-v-virtual-machines?view=sc-dpm-2025#exclude-disk-from-hyper-v-vm-backup).
  
-### Runtime dependent version is now compliant and secure
+### Runtime dependent version is compliant and secure
 
-DPM 2025 UR1 is dependent on Visual C++ Redistributable 2013, 2015-2022 (Latest) x64 package. It is no longer on older version of the same.
- 
+DPM 2025 UR1 requires the latest Visual C++ Redistributable 2013, 2015-2022 (latest) x64 packages.
+
 >[!NOTE]
->A fresh install of DPM agent might still require Visual C++ Redistributable 2013 X64 as the RTM version of agent is built using the same. Post DPM installation, uninstall Visual C++ 2013 Redistributable.
+>A fresh installation of DPM agent requires Visual C++ Redistributable 2013 X64 as the RTM version of agent is built using the same. Post DPM installation, uninstall Visual C++ 2013 Redistributable.
  
 ### Support for Exchange Subscription Edition
 
