@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: whats-new
 ms.service: system-center
-ms.date: 10/07/2025
+ms.date: 11/14/2025
 ms.update-cycle: 180-days
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
