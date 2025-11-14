@@ -368,13 +368,13 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 
 1. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a Hyper-V VM or folder, the **Recovery points for** pane displays the available recovery points.
 
-    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk.png" alt-text="Screenshot of 'Recovery points for' pane to recover files from Hyper-v VM.":::
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk.png" alt-text="Screenshot of 'Recovery points for' pane to recover files from Hyper-V VM." lightbox="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk.png":::
 
 1. In the **Recovery Points for** pane, use the calendar to select the date that contains the desired recovery point(s). Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct **Recovery time**. If the selected date has multiple recovery points, choose your recovery point by selecting it in the Recovery time dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the Path pane.
 
 1. To find the files you want to recover, in the **Path** pane, double-click the item in the Recoverable item column to open it. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item. Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the Up button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
 
-    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk-selection.png" alt-text="Screenshot of Review Recovery Selection in Hyper-v VM.":::
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk-selection.png" alt-text="Screenshot of Review Recovery Selection in Hyper-V VM." lightbox="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk-selection.png":::
 
 1. Once you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**. In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
 
@@ -384,7 +384,7 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 
 1. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
 
-    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-specify-destination.png" alt-text="Screenshot of Specify location to recover files from Hyper-v VM.":::
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-specify-destination.png" alt-text="Screenshot of Specify location to recover files from Hyper-V VM." lightbox="./media/back-up-hyper-v-virtual-machines/hyper-v-vm-specify-destination.png":::
 
 1. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 
@@ -523,7 +523,7 @@ Navigate to DPM server where the Hyper-V VM is configured for protection to conf
     .\ExcludeDisk.ps1 -Datasource $vmDsInfo[8] -View
     ```
 
-    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/view-exclusion.png" alt-text="Screenshot of PowerShell script to view the exisiting exclusion.":::
+    :::image type="content" source="./media/back-up-hyper-v-virtual-machines/view-exclusion.png" alt-text="Screenshot of PowerShell script to view the existing exclusion." lightbox="./media/back-up-hyper-v-virtual-machines/view-exclusion.png":::
 
   Once you configure the protection for this VM, the excluded disk won't be listed during protection.
 
