@@ -5,7 +5,7 @@ ms.topic: whats-new
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 11/11/2025
+ms.date: 11/17/2025
 ms.update-cycle: 180-days
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
