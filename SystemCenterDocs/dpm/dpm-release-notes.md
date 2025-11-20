@@ -44,10 +44,6 @@ In addition, following are the improvements:
 - Upgrading Eval to a licensed build is blocked.
 - Improved/fixed duplicate summary manager jobs post upgrade.
 
-## DPM 2025 UR1 release notes
-
-The following issues were identified after the release of DPM 2025 UR1 (KB 5068307) and are fixed in Hotfix for DPM 2025 UR1 (KB 5068307); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/kb/5068307) for the Hotfix.
-
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
