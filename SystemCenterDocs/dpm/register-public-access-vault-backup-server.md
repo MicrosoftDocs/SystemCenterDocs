@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/20/2025
 ms.topic: how-to
-monikerRange: sc-om-2025
+monikerRange: sc-dpm-2025
 ms.service: system-center
 ms.subservice: data-protection-manager
 ---
