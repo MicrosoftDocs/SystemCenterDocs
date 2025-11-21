@@ -20,9 +20,9 @@ This article describes how to allow System Center Operations Manager to utilize 
 Operations Manager adheres to the protocol configuration defined at the Operating system level. When all protocols are enabled, Operations Manager negotiates the connection using the protocols in the order of preference determined by Windows Schannel, starting from the highest to the lowest supported version.
 
 1. TLS 1.3 (Windows Server 2022/Windows 11 and later) 
-1. TLS version 1.0
-1. TLS version 1.1
 1. TLS version 1.2
+1. TLS version 1.1
+1. TLS version 1.0
 
 The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
 
@@ -30,7 +30,7 @@ Perform the following steps to implement TLS protocol version 1.3 in Operations 
 
 1. Install the latest Microsoft OLE DB Driver (x64) on all management servers and the web console server.
 1.  the latest Microsoft ODBC Driver (x64) on all management servers and the web console server.
-1. Configure Windows to only use TLS 1.3.  
+1. Configure Windows to use TLS 1.3.  
 1. Configure .NET Framework to utilize higher levels of cryptography by default.
 
 1. Configure Audit Collection Services if installed.
