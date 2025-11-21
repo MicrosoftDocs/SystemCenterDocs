@@ -3,7 +3,7 @@ title: System Center 2025 - Orchestrator Release Build Versions
 description: Include file that shows the list of release builds for System Center 2025 - Orchestrator.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/13/2025
+ms.date: 11/25/2025
 ms.service: system-center
 ms.assetid: 
 ms.subservice: orchestrator

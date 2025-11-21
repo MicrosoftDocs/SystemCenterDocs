@@ -4,7 +4,7 @@ ms.topic: include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 11/14/2025
+ms.date: 11/25/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -47,7 +47,7 @@ For issues fixed and the installation instructions for UR1, see [KB article](htt
  
 ### Hyper-V select disk exclusion
 
-DPM 2025 UR1 allows admins to exclude specific disks from a Hyper-V VM backup.
+DPM 2025 UR1 allows administrators to exclude specific disks from a Hyper-V VM backup.
  
 The backup omits the excluded disk contents from the restore points. As a result, when the VM gets restored, the excluded disks wouldn't be overwritten by backup data. [Learn more](/system-center/dpm/back-up-hyper-v-virtual-machines?view=sc-dpm-2025#exclude-disk-from-hyper-v-vm-backup).
  

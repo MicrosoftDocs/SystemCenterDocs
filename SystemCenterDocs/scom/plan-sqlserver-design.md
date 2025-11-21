@@ -4,7 +4,7 @@ title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/21/2025
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center

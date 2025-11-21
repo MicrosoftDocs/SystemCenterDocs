@@ -3,7 +3,7 @@ title: Enforce TLS 1.3 for Operations Manager 2025 UR1
 description: This article describes how to configure System Center Operations Manager to utilize Transport Layer Security (TLS) 1.3.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/20/2025
+ms.date: 11/25/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
