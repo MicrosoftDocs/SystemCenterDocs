@@ -20,9 +20,9 @@ This article describes how to allow System Center Operations Manager to utilize 
 Operations Manager adheres to the protocol configuration defined at the Operating system level. When all protocols are enabled, Operations Manager negotiates the connection using the protocols in the order of preference determined by Windows Schannel, starting from the highest to the lowest supported version.
 
 1. TLS 1.3 (Windows Server 2022/Windows 11 and later) 
-1. TLS version 1.2
-1. TLS version 1.1
-1. TLS version 1.0
+1. TLS 1.2
+1. TLS 1.1
+1. TLS 1.0
 
 The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
 
