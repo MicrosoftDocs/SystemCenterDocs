@@ -46,7 +46,7 @@ The following table lists the build versions for Data Protection Manager 2025.
 | Build Number | KB |Release Date | Description |
 | --- | --- |-------------| --- |
 |10.25.25.0| |November 2024 |General Availability|
-| - | [5068307](https://support.microsoft.com/kb/5068307) | November 2025 | Update Rollup 1 |
+| 10.25.39.0 | [5068307](https://support.microsoft.com/kb/5068307) | November 2025 | Update Rollup 1 |
 
 ::: moniker-end
 
