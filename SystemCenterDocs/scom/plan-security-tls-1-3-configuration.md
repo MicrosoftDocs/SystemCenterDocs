@@ -232,7 +232,7 @@ For Audit Collection Services (ACS), additional changes must be made in the regi
    - For example, if ODBC 18 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql18.dll`.
    - Check the name of the DLL for the current version of the ODBC driver installed if different.
 
-#### Registry File
+#### Registry file
 
 Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
