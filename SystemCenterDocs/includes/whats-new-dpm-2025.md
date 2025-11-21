@@ -60,4 +60,4 @@ DPM 2025 UR1 requires the latest Visual C++ Redistributable 2013, 2015-2022 (lat
  
 ### Support for Exchange Subscription Edition
 
-DPM 2025 UR1 now supports Exchange Subscription Edition as an application aware backup. [Learn More](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2025#applications-backup-1).
+DPM 2025 UR1 supports Exchange Subscription Edition as an application aware backup. [Learn More](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2025#applications-backup-1).

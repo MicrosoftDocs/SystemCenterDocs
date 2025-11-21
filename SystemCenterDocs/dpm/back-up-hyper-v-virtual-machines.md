@@ -456,7 +456,7 @@ To restore an individual file from a Hyper-V VM, follow these steps:
 ## Exclude disk from Hyper-V VM backup
 
 > [!NOTE]
-> This feature is applicable for DPM 2025 UR1 and later.
+> This feature is applicable for DPM 2025 UR1.
 
 With DPM 2025 UR1, you can exclude the specific disk from Hyper-V VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
 
