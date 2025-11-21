@@ -4,7 +4,7 @@ title: Release build versions for System Center Operations Manager
 description: This article details the release builds in Operations Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/13/2025
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center

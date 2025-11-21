@@ -4,7 +4,7 @@ title: Supported Linux operating system versions
 description: This article lists the supported versions of Linux operating system for System Center Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/07/2025
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager

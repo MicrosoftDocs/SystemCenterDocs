@@ -3,7 +3,7 @@ description: This article contains the procedures for backing up and recovery of
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/14/2025
+ms.date: 11/25/2025
 title: Back up Hyper V virtual machines
 ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb

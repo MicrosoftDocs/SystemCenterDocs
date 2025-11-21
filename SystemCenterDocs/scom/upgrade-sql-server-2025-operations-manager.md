@@ -3,7 +3,7 @@ title: Upgrade Operations Manager databases to SQL Server 2025
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/20/2025
+ms.date: 11/25/2025
 ms.service: system-center
 monikerRange: 'sc-om-2025'
 ms.assetid:

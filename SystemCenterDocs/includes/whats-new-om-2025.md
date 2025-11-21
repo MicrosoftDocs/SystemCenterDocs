@@ -4,7 +4,7 @@ title: What's new in Operations Manager
 description: This article describes the new features supported in Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/07/2025
+ms.date: 11/25/2025
 ms.custom: intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
