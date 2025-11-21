@@ -37,4 +37,4 @@ The following sections introduce the new features and feature updates supported 
 
 ### Support for SQL Server 2025
 
-System Center Orchestrator 2025 UR1 now supports SQL Server 2025. [Learn more](/system-center/orchestrator/system-requirements-orch?view=sc-orch-2025#sql-server).
+System Center Orchestrator 2025 UR1 supports SQL Server 2025. [Learn more](/system-center/orchestrator/system-requirements-orch?view=sc-orch-2025#sql-server).
