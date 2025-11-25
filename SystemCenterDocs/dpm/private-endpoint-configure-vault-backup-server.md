@@ -23,6 +23,10 @@ Azure Backup now provides an enhanced experience in creation and use of private 
 
 [Learn more about the enhanced capabilities of private endpoints](/azure/backup/backup-azure-private-endpoints-concept#key-enhancements) (v2 Experience).
 
+>[!Note]
+>Private endpoints work only with DPM server 2022 (10.22.123.0) or later.
+
+
 ## Considerations
 
 Before you configure private endpoints for Azure Backup, ensure that you review the following considerations:
