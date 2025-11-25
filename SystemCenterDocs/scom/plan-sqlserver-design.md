@@ -4,7 +4,7 @@ title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/13/2025
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
@@ -36,8 +36,17 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2022"
+::: moniker range="sc-om-2022"
 
+- SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
+- SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
+- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+- SQL Server 2025 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2025)
 - SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)

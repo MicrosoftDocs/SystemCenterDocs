@@ -4,7 +4,7 @@ title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 2019, 2022 and 2025 releases.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 10/07/2025
+ms.date: 11/13/2025
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: data-protection-manager

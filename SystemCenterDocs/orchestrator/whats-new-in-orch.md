@@ -5,7 +5,7 @@ ms.topic: whats-new
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 05/15/2025
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
@@ -35,7 +35,7 @@ This article details the new features supported in System Center 2019 - Orchestr
 
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
-This article provides details of the new features supported in System Center 2025 - Orchestrator.
+This article provides details of the new features supported in System Center 2025 - Orchestrator and Orchestrator 2025 UR1.
 
 [!INCLUDE [whats-new-orchestrator-2025.md](../includes/whats-new-orchestrator-2025.md)]
 
