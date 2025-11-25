@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2025, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/08/2024
+ms.date: 11/25/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: Orchestrator
@@ -66,6 +66,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 **SQL version** | **Supported**
 --- | ---
+**SQL Server 2025** | Y (supported from Orchestrator 2025 UR1)
 **[SQL Server 2022](https://www.microsoft.com/sql-server/sql-server-2022)** | Y
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y

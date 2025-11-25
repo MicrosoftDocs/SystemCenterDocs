@@ -4,7 +4,7 @@ description: This article provides the list of release builds for System Center 
 ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 10/07/2025
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
@@ -46,6 +46,7 @@ The following table lists the build versions for Data Protection Manager 2025.
 | Build Number | KB |Release Date | Description |
 | --- | --- |-------------| --- |
 |10.25.25.0| |November 2024 |General Availability|
+| 10.25.39.0 | [5068307](https://support.microsoft.com/kb/5068307) | November 2025 | Update Rollup 1 |
 
 ::: moniker-end
 

@@ -4,7 +4,7 @@ title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center
