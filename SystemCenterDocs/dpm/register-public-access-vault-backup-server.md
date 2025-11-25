@@ -4,7 +4,7 @@ description: Learn how to reregister your DPM server with an Azure Backup Recove
 #customer intent: As a DPM user, I want to register my server with a Recovery Services vault using private endpoints so that I can back up on-premises data securely.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/20/2025
+ms.date: 11/25/2025
 ms.topic: how-to
 monikerRange: sc-dpm-2025
 ms.service: system-center
@@ -13,9 +13,9 @@ ms.subservice: data-protection-manager
 
 # Reregister the DPM server with Recovery Services vault using public access
 
-This article describes how to configure your System Center Data Protection Manager (DPM) server to use public access of the Recovery Services vault after deleting private endpoints.
-
 If you don't want to continue using private endpoints for backup, delete them from the vault and re-register DPM. You don’t need to stop protection.
+
+This article describes how to delete private endpoints and reregister your System Center Data Protection Manager (DPM) server to use public access of the Recovery Services vault after deleting private endpoints.
 
 ## Delete private endpoints
 

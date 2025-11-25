@@ -4,7 +4,7 @@ description: Learn how to configure private endpoints for Azure Backup when usin
 #customer intent: As a DPM user, I want to register my server with a Recovery Services vault using private endpoints so that I can back up on-premises data securely.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/20/2025
+ms.date: 11/25/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: data-protection-manager
@@ -112,11 +112,11 @@ To create private endpoints for Azure Backup, follow these steps:
 
 ## Approve private endpoints for the Recovery Services vault
 
-Private endpoints are autoapproved when created by the vault owner. If you're not the owner, private endpoints require manual approval in the Azure portal.
+Private endpoints are auto approved when created by the vault owner. If you're not the owner, private endpoints require manual approval in the Azure portal.
 
 This section describes the manual approval process of private endpoints through the Azure portal.
 
- The following screenshot shows an autoapproved private endpoint that the owner creates.
+ The following screenshot shows an auto approved private endpoint that the owner creates.
 
 :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-approval-status.png" alt-text="Screenshot shows the private endpoint approval status in Azure portal." lightbox="media/private-endpoint-vault-backup-server/private-endpoint-approval-status.png":::
 
