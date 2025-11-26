@@ -104,7 +104,7 @@ PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 Windows Server 2019 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N
-[Azure Local OS (version 2408.2 or later in the OS: 25398.xxxx series)](../vmm/manage-azure-stack-hci.md)| Y | N | N | N
+[Azure Local OS (version 2408.2 or later in the 23H2 (25398.xxxx) OS series)](../vmm/manage-azure-stack-hci.md) | Y | N | N | N
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2025 | Y | Y | Y | Y
