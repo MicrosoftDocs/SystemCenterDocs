@@ -4,7 +4,7 @@ title: include file
 description: include article to detail the system requirements for VMM 2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 09/09/2025
+ms.date: 11/26/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -28,7 +28,7 @@ Services | 1000
 User roles | 1000
 Clouds | 20
 Virtual networks| 2000
-logical networks| 20
+Logical networks| 20
 Library resources| 1000
 Library Objects (templates, profiles)| 100
 
@@ -104,7 +104,7 @@ PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 Windows Server 2019 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N
-[Azure Local OS (version 2408.2 or later)](../vmm/deploy-manage-azure-stack-hci.md)| Y | N | N | N
+[Azure Local OS (version 2408.2 or later in the 23H2 (25398.xxxx) OS series)](../vmm/manage-azure-stack-hci.md) | Y | N | N | N
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2025 | Y | Y | Y | Y
