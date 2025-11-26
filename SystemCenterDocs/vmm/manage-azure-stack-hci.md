@@ -4,7 +4,7 @@ title: Manage Azure Local instances in VMM
 description: This article describes how to manage an Azure Local instance in VMM.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 09/09/2025
+ms.date: 11/26/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.service: system-center
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23, engagement-fy24
 
 This article provides information about the management of an Azure Local instance in System Center Virtual Machine Manager (VMM).
 
-Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2025#support-for-azure-local-instances-23h2&preserve-view=true), VMM supports Azure Local machines that are updated to 2408.2, 2411 or later. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Local offering.
+Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2025#support-for-azure-local-instances-23h2&preserve-view=true), VMM supports Azure Local machines that are updated to 2408.2, 2411 or later in the [23H2 (25398.xxxx) OS series](/azure/azure-local/release-information-23h2). [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Local offering.
 
 
 >[!IMPORTANT]
@@ -54,8 +54,6 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 > [!NOTE]
 > Live migration between Azure Local instances works, as well as between Windows Server clusters.
-
-- The only storage type available for Azure Local is Storage Spaces Direct (S2D). If you need to use any other type of storage, for example SANs, use Windows Server as the virtualization host.
 
 ## Manage the storage pool and create CSVs
 
