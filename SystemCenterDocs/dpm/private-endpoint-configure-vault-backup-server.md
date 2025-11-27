@@ -92,27 +92,27 @@ To create private endpoints for Azure Backup, follow these steps:
 
 1. On the **Create a private endpoint** pane, specify the required details for creating your private endpoint connection by following these steps.
 
-    1. On the **Basics** tab, enter the basic details for your private endpoints. The region should be the same as the vault and the resource for backup.
+   1. On the **Basics** tab, enter the basic details for your private endpoints. The region should be the same as the vault and the resource for backup.
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/basic-private-endpoint-configuration.png" alt-text="Screenshot shows the private endpoint basics configuration page.":::
 
-    1. On the **Resource** tab, select the PaaS resource for which you want to create your connection, **Resource type** as `Microsoft.RecoveryServices/vaults` . Then, choose the name of your Recovery Services vault as the **Resource** and **AzureBackup** as the **Target sub-resource**.
+   1. On the **Resource** tab, select the PaaS resource for which you want to create your connection, **Resource type** as `Microsoft.RecoveryServices/vaults` . Then, choose the name of your Recovery Services vault as the **Resource** and **AzureBackup** as the **Target sub-resource**.
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-resource-details.png" alt-text="Screenshot shows the private endpoint resource selection configuration." lightbox="media/private-endpoint-vault-backup-server/private-endpoint-resource-details.png":::
 
-    1. On the **Virtual Network** tab, specify the virtual network and subnet where you want the private endpoint to be created (the virtual network where the Virtual Machine (VM) is located).
+   1. On the **Virtual Network** tab, specify the virtual network and subnet where you want the private endpoint to be created (the virtual network where the Virtual Machine (VM) is located).
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-virtual-network-configuration.png" alt-text="Screenshot shows the private endpoint configuration settings for virtual network and subnet.":::
 
-    1. On the **DNS** tab, configure a DNS record to connect privately through your private endpoint. We recommend integrating the private endpoint with a private DNS zone. Alternatively, you can use your own DNS servers or create DNS records in the host files on your virtual machines.
+   1. On the **DNS** tab, configure a DNS record to connect privately through your private endpoint. We recommend integrating the private endpoint with a private DNS zone. Alternatively, you can use your own DNS servers or create DNS records in the host files on your virtual machines.
 
       The following screenshot shows that the private endpoint is integrated with Private DNS Zone.
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-dns-configuration.png" alt-text="Screenshot shows the DNS configuration settings for private endpoint integration." lightbox="media/private-endpoint-vault-backup-server/private-endpoint-dns-configuration.png":::
 
-    1. (Optional) On the **Tags** tab, add tags for your private endpoint.
+   1. (Optional) On the **Tags** tab, add tags for your private endpoint.
 
-    1. On the **Review + create** tab, review your settings. When the validation completes, select **Create** to create the private endpoint.
+   1. On the **Review + create** tab, review your settings. When the validation completes, select **Create** to create the private endpoint.
 
 ## Approve private endpoints for the Recovery Services vault
 
