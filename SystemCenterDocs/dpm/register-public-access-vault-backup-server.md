@@ -49,4 +49,4 @@ To reregister the DPM Server with the vault, follow these steps:
 
 1. Select **Register** and wait for the registration process to complete.
 
-   :::image type="content" source="media/private-endpoint-vault-backup-server/backup-server-reregistration.png" alt-text="Screenshot shows the backup server re-registration process and encryption settings.":::
+   :::image type="content" source="media/private-endpoint-vault-backup-server/backup-server-re-registration.png" alt-text="Screenshot shows the backup server re-registration process and encryption settings.":::
