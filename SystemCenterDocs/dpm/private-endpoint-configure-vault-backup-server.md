@@ -96,23 +96,23 @@ To create private endpoints for Azure Backup, follow these steps:
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/basic-private-endpoint-configuration.png" alt-text="Screenshot shows the private endpoint basics configuration page.":::
 
-   1. On the **Resource** tab, select the PaaS resource for which you want to create your connection, **Resource type** as `Microsoft.RecoveryServices/vaults` . Then, choose the name of your Recovery Services vault as the **Resource** and **AzureBackup** as the **Target sub-resource**.
+    1. On the **Resource** tab, select the PaaS resource for which you want to create your connection, **Resource type** as `Microsoft.RecoveryServices/vaults` . Then, choose the name of your Recovery Services vault as the **Resource** and **AzureBackup** as the **Target sub-resource**.
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-resource-details.png" alt-text="Screenshot shows the private endpoint resource selection configuration." lightbox="media/private-endpoint-vault-backup-server/private-endpoint-resource-details.png":::
 
-   1. On the **Virtual Network** tab, specify the virtual network and subnet where you want the private endpoint to be created (the virtual network where the Virtual Machine (VM) is located).
+    1. On the **Virtual Network** tab, specify the virtual network and subnet where you want the private endpoint to be created (the virtual network where the Virtual Machine (VM) is located).
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-virtual-network-configuration.png" alt-text="Screenshot shows the private endpoint configuration settings for virtual network and subnet.":::
 
-   1. On the **DNS** tab, configure a DNS record to connect privately through your private endpoint. We recommend integrating the private endpoint with a private DNS zone. Alternatively, you can use your own DNS servers or create DNS records in the host files on your virtual machines.
+    1. On the **DNS** tab, configure a DNS record to connect privately through your private endpoint. We recommend integrating the private endpoint with a private DNS zone. Alternatively, you can use your own DNS servers or create DNS records in the host files on your virtual machines.
 
       The following screenshot shows that the private endpoint is integrated with Private DNS Zone.
 
       :::image type="content" source="media/private-endpoint-vault-backup-server/private-endpoint-dns-configuration.png" alt-text="Screenshot shows the DNS configuration settings for private endpoint integration." lightbox="media/private-endpoint-vault-backup-server/private-endpoint-dns-configuration.png":::
 
-   1. (Optional) On the **Tags** tab, add tags for your private endpoint.
+    1. (Optional) On the **Tags** tab, add tags for your private endpoint.
 
-   1. On the **Review + create** tab, review your settings. When the validation completes, select **Create** to create the private endpoint.
+    1. On the **Review + create** tab, review your settings. When the validation completes, select **Create** to create the private endpoint.
 
 ## Approve private endpoints for the Recovery Services vault
 
@@ -170,7 +170,7 @@ To validate and  integrate virtual network links for the preceding  **private DN
 
 ### Configure custom DNS servers or host files
 
-- If you're using a custom DNS server, you can use conditional forwarder for backup service, blob, and queue FQDNs to redirect the DNS requests to Azure DNS (168.63.129.16). Azure DNS redirects it to Azure Private DNS zone. In such setup, ensure that a virtual network link for Azure Private DNS zone exists as mentioned in [this article](/azure/backup/private-endpoints#when-using-custom-dns-server-or-host-files).
+If you're using a custom DNS server, you can use conditional forwarder for backup service, blob, and queue FQDNs to redirect the DNS requests to Azure DNS (168.63.129.16). Azure DNS redirects it to Azure Private DNS zone. In such setup, ensure that a virtual network link for Azure Private DNS zone exists as mentioned in [this article](/azure/backup/private-endpoints#when-using-custom-dns-server-or-host-files).
 
 The following table lists the Azure Private DNS zones required by Azure Backup:
 
@@ -203,11 +203,9 @@ When you use the MARS Agent for backup, ensure your on-premises network is peere
 
 1. [Register your DPM Server to the vault](register-public-access-vault-backup-server.md#reregister-the-dpm-server-with-vault) you created with private endpoints.
 
-   :::image type="content" source="media/private-endpoint-vault-backup-server/register-backup-server-vault.png" alt-text="Screenshot shows the DPM server registration to vault with private endpoints." lightbox="media/private-endpoint-vault-backup-server/register-backup-server-vault.png":::
-
 1. Enable backup on DPM Server for disk and online
 
-   :::image type="content" source="media/private-endpoint-vault-backup-server/backup-configuration-backup-server-protection.png" alt-text="Screenshot shows the backup configuration on DPM server for disk and online protection.":::
+   :::image type="content" source="media/private-endpoint-vault-backup-server/backup-configuration-backup-server-protection.png" alt-text="Screenshot shows the backup configuration on DPM server for disk and online protection." lightbox="media/private-endpoint-vault-backup-server/backup-configuration-backup-server-protection.png":::
 
    After the registration, wait for the Initial Replica to complete. The online backup operation starts as per the schedule, or you can manually trigger backups for your data sources.
 
