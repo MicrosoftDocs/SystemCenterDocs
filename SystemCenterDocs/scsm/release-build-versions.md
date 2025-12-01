@@ -4,7 +4,7 @@ title: Release build versions for System Center Service Manager
 description: This article details the release builds in Service Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/13/2025
+ms.date: 12/01/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-manager
@@ -33,7 +33,7 @@ The following table lists the build versions for Service Manager 2025.
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
 |10.25.1523.0|-| November 2024 | General Availability |
-| - | [5068305](https://support.microsoft.com/kb/5068305) | November 2025 | Update Rollup 1 |
+|10.25.1523.1| [5068305](https://support.microsoft.com/kb/5068305) | December 2025 | Update Rollup 1 |
 
 ::: moniker-end
 
