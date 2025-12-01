@@ -33,7 +33,6 @@ The following table lists the build versions for Service Manager 2025.
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
 |10.25.1523.0|-| November 2024 | General Availability |
-| - | [5068305](https://support.microsoft.com/kb/5068305) | November 2025 | Update Rollup 1 |
 
 ::: moniker-end
 
