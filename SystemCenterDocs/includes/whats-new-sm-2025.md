@@ -45,7 +45,3 @@ Service Manager 2025 UR1 supports MSOLEDBSQL 19. [Learn more](/system-center/scs
 ### Support for SCO Web API 
 
 Service Manager 2025 UR1 supports connecting to System Center Orchestrator Web API 2022 or 2025, while retaining compatibility with the existing SCO 2019 Web Service. Learn more.
-
-### Bug fixes 
-
-This release of System Center Service Manager contains all the bug fixes shipped until the Update Rollup 1 of Service Manager 2025.
