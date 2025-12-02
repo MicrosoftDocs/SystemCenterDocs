@@ -135,8 +135,6 @@ The following steps provide information about upgrading to SQL 2022.
 
 ## Upgrade to SQL 2025 (supported from Service Manager 2025 UR1)
 
-The following steps provide information about upgrading to SQL 2025.
-
  > [!NOTE]  
  > - Service Manager supports SQL 2025 and all its Cumulative Updates.
  > - Use ODBC 17.3 to 18.5.2.1, and MSOLEDBSQL 18.2 to 19.4.1. 
@@ -153,7 +151,7 @@ The following steps provide information about upgrading to SQL 2025.
 
 ### Enable CLR strict security
 
-   Optional. Use the following script to enable CLR strict security.
+   [Optional]. Use the following script to enable CLR strict security.
 
    ```
    -- Do this only for SQL server version 2017 and more
