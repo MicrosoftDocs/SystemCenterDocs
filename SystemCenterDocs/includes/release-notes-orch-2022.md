@@ -11,6 +11,14 @@ ms.date: 12/03/2025
 title:  include file
 ---
 
+## Orchestrator 2022 UR3 GB issues hotfix Release notes
+
+The following sections summarize the release notes for Orchestrator 2022 UR3 GB issues hotfix, and include the known issues and workarounds.
+
+For the problems fixed in UR3 GB issues hotfix and the installation instructions for UR3 GB issue hotfix, see the [KB article](https://support.microsoft.com/kb/5072592).
+
+- Conform GB18030-2022 Amendment standard. 
+
 ## Orchestrator 2022 UR3 Release notes
 
 The following sections summarize the release notes for Orchestrator 2022 UR3, and include the known issues and workarounds.
@@ -132,11 +140,3 @@ The Orchestrator 2022 release includes all issues fixed until [Orchestrator 2019
 
 >[!NOTE]
 >System Center Orchestrator 2019 IPs aren't supported on System Center Orchestrator 2022. 
-
-## Orchestrator 2022 Update Rollup 3 GB issues hotfix
-
-The following sections summarize the release notes for Orchestrator 2022 UR3 GB issues hotfix, and include the known issues and workarounds.
-
-For the problems fixed in UR3 GB issues hotfix and the installation instructions for UR3 GB issue hotfix, see the [KB article](https://support.microsoft.com/kb/5072592).
-
-- Conform GB18030-2022 Amendment standard. 
