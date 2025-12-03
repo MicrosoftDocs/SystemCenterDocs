@@ -8,7 +8,7 @@ ms.date: 11/25/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: data-protection-manager
-monikerRange: >sc-dpm-2019
+monikerRange: sc-dpm-2022, sc-dpm 2025
 ---
 
 # Reregister the DPM server with Recovery Services vault using public access
