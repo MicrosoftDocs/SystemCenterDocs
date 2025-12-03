@@ -1,5 +1,5 @@
 ---
-title: Reregister the DPM server with Recovery Services vault using public access
+title: Re-register the DPM server with Recovery Services vault using public access
 description: Learn how to reregister your DPM server with an Azure Backup Recovery Services vault using public access after deleting private endpoints.
 #customer intent: As a DPM user, I want to register my server with a Recovery Services vault using private endpoints so that I can back up on-premises data securely.
 author: Jeronika-MS
@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: data-protection-manager
 ---
 
-# Reregister the DPM server with Recovery Services vault using public access
+# Re-register the DPM server with Recovery Services vault using public access
 
 If you don't want to continue using private endpoints for backup, delete them from the vault and re-register DPM. You don’t need to stop protection.
 
@@ -50,3 +50,10 @@ To reregister the DPM Server with the vault, follow these steps:
 1. Select **Register** and wait for the registration process to complete.
 
    :::image type="content" source="media/private-endpoint-vault-backup-server/backup-server-re-registration.png" alt-text="Screenshot shows the backup server re-registration process and encryption settings.":::
+
+## Related content
+
+- [About private endpoints (v1 experience) for Azure Backup](/azure/backup/private-endpoints-overview).
+- [About private endpoints (v2 experience) for Azure Backup](/azure/backup/backup-azure-private-endpoints-concept).
+- [Configure private endpoint in Azure Backup vaults for backup using MABS server](/azure/backup/private-endpoint-configure-vault-backup-server).
+- [Reregister the MABS server with Recovery Services vault using public access](/azure/backup/register-public-access-vault-backup-server).
