@@ -3,7 +3,7 @@ title: System Center 2022 - Orchestrator Release Build Versions
 description: Include file that shows the list of release builds for System Center 2022 - Orchestrator.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 05/14/2025
+ms.date: 12/03/2025
 ms.service: system-center
 ms.assetid: 
 ms.subservice: orchestrator
@@ -25,3 +25,4 @@ The following table lists the release history for Orchestrator 2022.
 |10.22.8.29|[5029810](https://support.microsoft.com/kb/5029810)|July 2023 |Conforms to [GB18030-2022](/azure/compliance/offerings/offering-china-gb-18030) standard |
 |10.22.9.2|[5033099](https://support.microsoft.com/kb/5033099)|November 2023|Update Rollup 2|
 |10.22.10.2|[5059072](https://support.microsoft.com/kb/5059072)|May 2025|Update Rollup 3|
+|10.22.10.3|[5072592](https://support.microsoft.com/kb/5072592)|December 2025|Conforms to GB18030-2022 Amendment standard|
