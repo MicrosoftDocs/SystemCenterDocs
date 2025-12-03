@@ -75,7 +75,7 @@
     items:
     - name: Configure private endpoints
       href: private-endpoint-configure-vault-backup-server.md
-    - name: Reregister DPM using public access
+    - name: Re-register DPM using public access
       href: register-public-access-vault-backup-server.md
   - name: Protect Workloads
     items:

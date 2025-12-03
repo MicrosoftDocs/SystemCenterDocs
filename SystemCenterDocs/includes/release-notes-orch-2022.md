@@ -7,9 +7,17 @@ ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
-ms.date: 05/15/2025
+ms.date: 12/03/2025
 title:  include file
 ---
+
+## Orchestrator 2022 UR3 GB issues hotfix Release notes
+
+The following sections summarize the release notes for Orchestrator 2022 UR3 GB issues hotfix, and include the known issues and workarounds.
+
+For the problems fixed in UR3 GB issues hotfix and the installation instructions for UR3 GB issue hotfix, see the [KB article](https://support.microsoft.com/kb/5072592).
+
+- Conform GB18030-2022 Amendment standard. 
 
 ## Orchestrator 2022 UR3 Release notes
 
