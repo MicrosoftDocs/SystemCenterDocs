@@ -8,7 +8,7 @@ ms.date: 11/25/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: data-protection-manager
-monikerRange: sc-dpm-2025
+monikerRange: '>=sc-dpm-2022'
 ---
 
 # Configure private endpoint in Azure Backup vaults for backup using DPM server
