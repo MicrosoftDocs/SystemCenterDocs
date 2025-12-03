@@ -8,7 +8,7 @@ ms.date: 11/25/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: data-protection-manager
-monikerRange: sc-dpm-2025
+monikerRange: '>=sc-dpm-2022'
 ---
 
 # Configure private endpoint in Azure Backup vaults for backup using DPM server
@@ -220,3 +220,10 @@ When you use the MARS Agent for backup, ensure your on-premises network is peere
 ## Next steps
 
 - [Reregister the DPM server with Recovery Services vault using public access](register-public-access-vault-backup-server.md).
+
+## Related content
+
+- [About private endpoints (v1 experience) for Azure Backup](/azure/backup/private-endpoints-overview).
+- [About private endpoints (v2 experience) for Azure Backup](/azure/backup/backup-azure-private-endpoints-concept).
+- [Configure private endpoint in Azure Backup vaults for backup using MABS server](/azure/backup/private-endpoint-configure-vault-backup-server).
+- [Reregister the MABS server with Recovery Services vault using public access](/azure/backup/register-public-access-vault-backup-server).
