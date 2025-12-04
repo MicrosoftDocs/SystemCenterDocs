@@ -133,22 +133,6 @@ The following steps provide information about upgrading to SQL 2022.
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2022.
 
-## Upgrade to SQL 2025 (supported from Service Manager 2025 UR1)
-
- > [!NOTE]  
- > - Service Manager supports SQL 2025 and all its Cumulative Updates.
- > - Use ODBC 17.3 to 18.5.2.1, and MSOLEDBSQL 18.2 to 19.4.1. 
- > - Upgrade process to SQL 2025 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
-
- **Use the following steps to upgrade from SQL 2022 to 2025**:
-
-1. Upgrade to SQL 2025.
-2. Install SQL 2025 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
-3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2025.
-4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
-5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2025.
-
-
 ### Enable CLR strict security
 
    [Optional]. Use the following script to enable CLR strict security.
