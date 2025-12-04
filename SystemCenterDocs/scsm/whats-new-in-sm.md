@@ -4,7 +4,7 @@ title: What's new in System Center Service Manager
 description: This article describes the new features supported in Service Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 12/01/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 ms.service: system-center
