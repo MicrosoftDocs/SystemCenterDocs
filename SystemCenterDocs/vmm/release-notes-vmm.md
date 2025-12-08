@@ -4,7 +4,7 @@ title: Release notes for Virtual Machine Manager
 description: This article details the known issues and issues fixed in Virtual Machine Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/03/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: release-notes
 ms.service: system-center
@@ -16,9 +16,11 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 ::: moniker range="sc-vmm-2025"
 
-Virtual Machine Manager (VMM) 2025 does not have any known issues.
-
 For new features in VMM 2025, see [What's new](whats-new-in-vmm.md).
+
+## Known issues
+
+- Virtual Machine Manager (VMM) does not recognize VM Recovery checkpoints and it is not recommended to take Recovery checkpoints on VMs managed by VMM. VM Production and Standard checkpoints are fully supported by VMM.
 
 ::: moniker-end
 
