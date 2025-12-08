@@ -3,7 +3,7 @@ title: System Center 2022 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2022 - Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/18/2025
+ms.date: 12/08/2025
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -18,6 +18,7 @@ ms.topic: include
 The following tables list the release history for Operations Manager 2022.
 
 ### Management Server (and other components*)
+
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.10118.0||March 2022 |General Availability |
@@ -31,6 +32,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10618.0|[5033752](https://support.microsoft.com/kb/5033752) | December 2023 | Update Rollup 2 Hotfix - Addresses Linux monitoring issues. |
 |10.22.10684.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 2 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
 |10.22.11642.0|[5055455](https://support.microsoft.com/kb/5055455) | August 2025 | Update Rollup 3 |
+|10.22.11951.0|[5071859](https://support.microsoft.com/kb/5071859) | December 2025 | Update Rollup 3 GB Hotfix and Linux Monitoring Issue. |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
