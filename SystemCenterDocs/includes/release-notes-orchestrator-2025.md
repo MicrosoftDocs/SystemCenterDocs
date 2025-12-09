@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
-ms.date: 11/25/2025
+ms.date: 12/09/2025
 title:  include file
 ---
 
@@ -18,6 +18,12 @@ For the problems fixed in UR1 and the installation instructions for UR1, see the
 
 - Conform GB18030-2022 amendment standard.
 - Identifiers are shown instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity Name is included as a property in the Log View area.
+
+The following sections summarize the known issues and workarounds in System Center Orchestrator 2025 UR1:
+
+### Upgrade from Orchestrator 2022 to Orchestrator 2025 might have Web Console errors due to time out issue
+
+**Workaround**: For better web console performance, [download the SQL script](https://download.microsoft.com/download/9/f/b/9fba34ab-dee3-4735-8771-dc7c7c5da341/SCO22_UR2_SP_Update%201.sql), open SQL Server Management Studio, connect to your Orchestrator database, and execute the script.
 
 ## Orchestrator 2025 release notes
 
