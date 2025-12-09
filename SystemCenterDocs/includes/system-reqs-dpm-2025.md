@@ -41,7 +41,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2025 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-server/sql-server-2022)
+DPM 2025 | - SQL Server 2025 as detailed [here](https://www.microsoft.com/en-in/sql-server) <br/><br/> - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-server/sql-server-2022)
 
 ### SQL Server requirements
 
