@@ -5,7 +5,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 02/17/2025
+ms.date: 12/09/2025
 title: Preparing your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid:
