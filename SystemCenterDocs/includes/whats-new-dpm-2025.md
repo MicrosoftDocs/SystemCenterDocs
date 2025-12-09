@@ -4,7 +4,7 @@ ms.topic: include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 11/25/2025
+ms.date: 12/09/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
