@@ -53,7 +53,7 @@ The backup omits the excluded disk contents from the restore points. As a result
 
 ### Support for SQL Server 2025
 
-DPM 2025 UR1 supports SQL Server 2025 both as a protected workload and DPM database. [Learn more](https://learn.microsoft.com/en-us/system-center/dpm/prepare-environment-for-dpm#sql-server-database)
+DPM 2025 UR1 supports SQL Server 2025 both as a protected workload and DPM database. [Learn more](https://learn.microsoft.com/en-us/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
  
 ### Runtime dependent version is compliant and secure
 
