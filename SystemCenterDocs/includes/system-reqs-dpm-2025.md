@@ -5,7 +5,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 02/17/2025
+ms.date: 12/09/2025
 title: Preparing your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -41,7 +41,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2025 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-server/sql-server-2022)
+DPM 2025 | - SQL Server 2025 as detailed [here](https://www.microsoft.com/sql-server) <br/><br/> - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-server/sql-server-2022)
 
 ### SQL Server requirements
 
