@@ -2,7 +2,7 @@
 ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Release build versions for System Center Virtual Machine Manager
 description: This article details the release builds in Virtual Machine Manager
-ms.date: 11/06/2025
+ms.date: 12/10/2025
 ms.update-cycle: 180-days
 author: Jeronika-MS
 ms.author: v-gajeronika
@@ -27,7 +27,7 @@ The following table lists the release history for Virtual Machine Manager 2025.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-| 10.25.1200.0 | n/a | November 2024 | General Availability |
+| 10.25.1200.0 / 10.25.1226.0 | n/a | November 2024 | General Availability |
 | 10.25.1345.0 | [5068697](https://support.microsoft.com/kb/5068697) | November 2025 | GB18030-2022 Hotfix |
 
 :::moniker-end
