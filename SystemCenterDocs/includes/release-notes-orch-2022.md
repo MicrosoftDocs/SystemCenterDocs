@@ -19,12 +19,6 @@ For the problems fixed in UR3 GB issues hotfix and the installation instructions
 
 - Conform GB18030-2022 Amendment standard. 
 
-The following sections summarize the known issues and workarounds in System Center Orchestrator 2022 UR3 hotfix:
-
-### Upgrade from Orchestrator 2019 to Orchestrator 2022 might have Web Console errors due to time out issue
-
-**Workaround**: For better web console performance, [download the SQL script](https://download.microsoft.com/download/9/f/b/9fba34ab-dee3-4735-8771-dc7c7c5da341/SCO22_UR2_SP_Update%201.sql), open SQL Server Management Studio, connect to your Orchestrator database, and execute the script.
-
 ## Orchestrator 2022 UR3 Release notes
 
 The following sections summarize the release notes for Orchestrator 2022 UR3, and include the known issues and workarounds.
