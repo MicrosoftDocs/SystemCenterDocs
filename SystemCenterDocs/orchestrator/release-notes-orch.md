@@ -4,7 +4,7 @@ title: Release notes for Orchestrator
 description: This article details the known issues and issues fixed in Orchestrator
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 12/03/2025
+ms.date: 12/09/2025
 ms.update-cycle: 180-days
 ms.topic: release-notes
 ms.service: system-center
