@@ -129,10 +129,10 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 ##### Additional requirements  
 
 - [Microsoft .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21), which you can download from the Microsoft Download Center.  
-- Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
+- Microsoft Visual Studio 2015 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2015 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
-    > During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 isn't installed and you've verified that it's installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
+    > During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2015 isn't installed and you've verified that it's installed, then the Visual Studio 2015 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2015 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
 
 #### Set up the Authoring Tool
 
