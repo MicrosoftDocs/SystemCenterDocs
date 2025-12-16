@@ -46,7 +46,7 @@ Using live migration provides many benefits:
 
 :::moniker range=">=sc-vmm-2025"
 > [!IMPORTANT]
-> On Windows Server 2025 and later, live migration fails if using CredSSP delegation due to Credential Guard blocking saved or SSO credentials. For more information, see [Live migration with Hyper-V breaks when upgrading to Windows Server 2025](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/considerations-known-issues#live-migration-with-hyper-v-breaks-when-upgrading-to-windows-server-2025). For steps on configuring Kerberos for live migrations in Hyper-V, see [Set up hosts for live migration - Configure constrained delegation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/set-up-hosts-for-live-migration-without-failover-clustering#step-1-configure-constrained-delegation-optional).
+> On Windows Server 2025 and later, live migration fails if using CredSSP delegation due to Credential Guard blocking saved or SSO credentials. For more information, see [Live migration with Hyper-V breaks when upgrading to Windows Server 2025](https://learn.microsoft.com/windows/security/identity-protection/credential-guard/considerations-known-issues#live-migration-with-hyper-v-breaks-when-upgrading-to-windows-server-2025). For steps on configuring Kerberos for live migrations in Hyper-V, see [Set up hosts for live migration - Configure constrained delegation](https://learn.microsoft.com/windows-server/virtualization/hyper-v/deploy/set-up-hosts-for-live-migration-without-failover-clustering#step-1-configure-constrained-delegation-optional).
 
 :::moniker-end
 
