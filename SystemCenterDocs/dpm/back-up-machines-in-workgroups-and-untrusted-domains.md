@@ -3,7 +3,7 @@ description: Use DPM to protect computers that are in untrusted domains or workg
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 02/01/2026
 title: Prepare machines in workgroups and untrusted domains for backup
 ms.subservice: data-protection-manager
 ms.assetid: e63b86d4-1f83-48ef-82bb-636b9dc745e2
@@ -36,7 +36,7 @@ Before you start, check the supported protection scenarios and required network 
 |System State|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM authentication only|
 |SQL Server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Mirroring not supported.<br /><br />NTLM and certificate authentication for single server. Certificate authentication only for cluster.|
 |Hyper-V server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM and certificate authentication|
-|Hyper-V cluster|Workgroup: Not supported<br /><br />Untrusted Domain: Supported (certificate authentication only)|
+|Hyper-V cluster|Workgroup: Not supported <br> (either protecting as a cluster or protecting individual cluster nodes as standalone servers) <br /><br />Untrusted Domain: Supported (certificate authentication only)|
 |Exchange Server|Workgroup: Not applicable<br /><br />Untrusted Domain: Supported for single server only. Cluster not supported. CCR, SCR, DAG not supported. LCR supported.<br /><br />NTLM authentication only|
 |Secondary DPM server (For backup of primary DPM server)<br /><br /> Note that both Primary and Secondary DPM Servers are in same or two-way forest transitive trusted domain.|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
 |SharePoint|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
