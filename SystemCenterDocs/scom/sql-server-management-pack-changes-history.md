@@ -14,7 +14,13 @@ ms.subservice: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## July 2025 – 7.10.6 RTM
+## January 2026 - 7.12 RTM
+
+What's New
+
+- Support for SQL Server 2025
+
+- ## July 2025 – 7.10.6 RTM
 
 ### What’s New
 
