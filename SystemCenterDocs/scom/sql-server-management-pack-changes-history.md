@@ -16,11 +16,21 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## January 2026 - 7.12 RTM
 
-What's New
+### What's New
 
 - Support for SQL Server 2025
 
-- ## July 2025 – 7.10.6 RTM
+  - Includes support for the following editions of SQL Server 2025 (Enterprise, Standard, Enterprise Developer, Standard Developer, Evaluation, and Express)
+  
+- Reverts back to the System.Data.SqlClient
+
+- Reverts SQL Server Management Objects (SMO) back to version 15
+
+### Bug Fixes
+
+- Fixed a bug where Availability Group monitors were not functioning as expected for some customers.
+
+## July 2025 – 7.10.6 RTM
 
 ### What’s New
 
