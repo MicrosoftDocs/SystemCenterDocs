@@ -22,9 +22,9 @@ This section covers new functionality and improvements in Management Pack for SQ
 
   - Includes support for the following editions of SQL Server 2025 (Enterprise, Standard, Enterprise Developer, Standard Developer, Evaluation, and Express)
   
-- Reverts back to the System.Data.SqlClient
+- Replaced Microsoft.Data.SqlClient with the System.Data.SqlClient 
 
-- Reverts SQL Server Management Objects (SMO) back to version 15
+- Reverts SQL Server Management Objects (SMO) to version 15
 
 ### Bug Fixes
 
