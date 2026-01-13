@@ -1,11 +1,11 @@
 ---
-description: You can back up file data on server and client computers with DPM.
+description: This article describes how you can back up file data on server and client computers with DPM.
 ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.service: system-center
-keywords:
-ms.date: 11/01/2024
+ms.date: 01/13/2026
 title: Back up file data with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 98626f09-e4b1-4cbb-9195-651d54e118d1
@@ -75,7 +75,7 @@ After you set up your DPM infrastructure, you can enable protection machines tha
 
 12. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](/azure/backup/backup-azure-backup-import-export).
+13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Learn more](/azure/backup/backup-azure-backup-import-export).
 
 14. On the **Summary** page, review your settings. After you select **Create Group**, initial replication of the data occurs. When it finishes, the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 

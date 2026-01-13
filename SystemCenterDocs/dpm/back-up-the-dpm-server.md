@@ -2,13 +2,13 @@
 description: This article helps you create a strategy for backing up the DPM server.
 ms.topic: how-to
 ms.service: system-center
-keywords:
-ms.date: 11/01/2024
+ms.date: 01/13/2026
 title: Back up the DPM server
 ms.subservice: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
@@ -92,7 +92,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS1, DS2|DS4|
 |DS4 \(secondary\)|DS3|\-|
 
-![Scenario with four DPM servers chained](./media/back-up-the-dpm-server/dpm2012_drdeployment_chaining.png)
+:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-drdeployment-chaining.png" alt-text="Screenshot of a scenario with four DPM servers chained.":::
 
 #### Chaining example 2
 
@@ -109,7 +109,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-![Diagram of alternate scenario with four DPM servers chained.](./media/back-up-the-dpm-server/dpm2012_dr_chainings1.png)
+:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-dr-chainings1.png" alt-text="Diagram of alternate scenario with four DPM servers chained.":::
 
 ### Cyclic protection
 
@@ -127,7 +127,7 @@ Scenario 3 shows a scenario using cyclic protection.
 |DS3 \(primary\)|PS4|DS2|
 |DS3 \(secondary\)|DS2|DS2|
 
-![Diagram of example of cyclic protection scenario.](./media/back-up-the-dpm-server/dpm2012_drdeployment_cyclic.png)
+:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-drdeployment-cyclic.png" alt-text="Diagram of example of cyclic protection scenario.":::
 
 ### Configure chaining
 
@@ -158,7 +158,7 @@ Use the following steps:
 After switching protection, the replica appears as inconsistent, until the check runs.
 
 **Example:**
-![Diagram of Switch protection.](./media/back-up-the-dpm-server/secondary-protection.png)
+:::image type="content" source="./media/back-up-the-dpm-server/secondary-protection.png" alt-text="Diagram of Switch protection.":::
 
 >[!NOTE]
 > - To switch the protection back to the primary server, do the same steps as above.
