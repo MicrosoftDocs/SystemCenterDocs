@@ -109,7 +109,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-dr-chainings1.png" alt-text="Diagram of alternate scenario with four DPM servers chained.":::
+:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-chainings.png" alt-text="Diagram of alternate scenario with four DPM servers chained.":::
 
 ### Cyclic protection
 
