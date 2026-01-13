@@ -4,7 +4,7 @@ title: Migrate a virtual machine in the VMM fabric
 description: This article describes how to migrate a VM in VMM
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 01/13/2026
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,9 +14,14 @@ ms.custom: intro-migration, UpdateFrequency2, engagement-fy24
 
 # Migrate a virtual machine in the VMM fabric
 
-
-
 This article describes how to migrate a VM in System Center Virtual Machine Manager (VMM).
+
+::: moniker range="sc-vmm-2025"
+
+>[!Important]
+>If the source host or the destination host is running Windows Server 2025, it is recommended to use Kerberos authentication mechanism to perform live migration. VMM 2025 by default has Kerberos if the source host or the destination host is running Windows Server 2025. To configure Kerberos for live migrations in Hyper-V, see [Set up hosts for live migration - Configure constrained delegation](/windows-server/virtualization/hyper-v/deploy/set-up-hosts-for-live-migration-without-failover-clustering#step-1-configure-constrained-delegation-optional). Windows Server 2025 has Credential Guard enabled by default which blocks saving of credentials and Single Sign-On and hence, blocking CredSSP to be used as the authentication mechanism. For more information, see [Live migration with Hyper-V breaks when upgrading to Windows Server 2025](/windows/security/identity-protection/credential-guard/considerations-known-issues#live-migration-with-hyper-v-breaks-when-upgrading-to-windows-server-2025).
+
+::: moniker-end
 
 To perform a migration, you can do any of the following:
 
