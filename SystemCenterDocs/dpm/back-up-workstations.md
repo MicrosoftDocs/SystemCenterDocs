@@ -1,14 +1,15 @@
 ---
-description: You can use DPM to back up client computers.
+description: This article explains how to use Data Protection Manager to back up client computers.
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 01/13/2026
 title: Back up client computers with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
@@ -65,7 +66,7 @@ Before you deploy DPM to protect client computer data, verify the deployment pre
 
 ## Well known folders to back up on client computers
 
-If you're looking to back up certain common folders in your client machines, you can select these folders from the *Well Known Folder* list in DPM, and DPM will take backup of these folders on your client computers in subsequent backup cycles. Below is the list of the well known folders that you can back up with DPM:
+If you're looking to back up certain common folders in your client machines, you can select these folders from the *Well Known Folder* list in DPM, and DPM will take backup of these folders on your client computers in subsequent backup cycles. Following is the list of the well known folders that you can back up with DPM:
 
 | **Well Known Folder**    | **Location to all or every user on the client machine**                                  |
 |--------------------------|------------------------------------------------------------------------------------------|
@@ -91,7 +92,7 @@ If you're looking to back up certain common folders in your client machines, you
 >To backup *Links*, *Downloads*, *Slides Shows*, and *Quick Launch*, you need to add to the registry location
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders for every user.
 
-The details of the registry entry are below. Modify the value USERNAME according to your username of the client computer.
+The details of the registry entry are as follows. Modify the value USERNAME according to your username of the client computer.
 
 - reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links`
 
@@ -108,7 +109,7 @@ The details of the registry entry are below. Modify the value USERNAME according
 
 1. Select **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2. In **Select protection group** type, select **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads, select server. Learn more in [Deploy protection groups](create-dpm-protection-groups.md)
+2. In **Select protection group** type, select **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads, select server. Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
 
 3. In **Select Group Members**, select **Add Multiple Computers**. You can add the client computers you want to back up in a text file. In the file, you'll need to enter each computer on a new line. We recommend that you provide the FQDN target computers. For example, enter multiple computers in a .txt file as follows:
 
@@ -160,14 +161,14 @@ The details of the registry entry are below. Modify the value USERNAME according
 
 ::: moniker range=">=sc-dpm-2019"
 
->[!Note]
->Online backups have a dependency on new local disk based backup prior to running. Ensure the Online protection schedule is compatible with the Express backup time and frequency.
+   >[!Note]
+   >Online backups have a dependency on new local disk based backup prior to running. Ensure the Online protection schedule is compatible with the Express backup time and frequency.
 
 ::: moniker-end
 
 12. In **Specify online retention policy**, specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](/azure/backup/backup-azure-backup-import-export).
+13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Learn more](/azure/backup/backup-azure-backup-import-export).
 
 14. On the **Summary** page, review your settings. After you select **Create Group**, initial replication of the data occurs. When it finishes, the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
@@ -272,7 +273,8 @@ DPM enables you to recover files and folders from backups stored on the DPM serv
 To recover data from backups stored on the DPM server, follow these steps:
 
 1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**.
-     Alternately, you can select the DPM Client icon ![An icon that signifies DPM client.](media/back-up-workstations/icon-data-protection-manager-client.png) in the system tray.
+     Alternately, you can select the DPM Client icon :::image type="content" source="media/back-up-workstations/icon-data-protection-manager-client.png" alt-text="Screenshot of an icon that signifies DPM client."::: in the system tray.
+
 
 2. In the **Data Protection Manager Client** page, select **Recovery** tab.
 
