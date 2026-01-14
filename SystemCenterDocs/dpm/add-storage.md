@@ -536,7 +536,7 @@ Follow these steps to add volumes to DPM storage:
    After the volumes are added, you can give them a friendly name.
 3. Select **OK** to format the volumes to ReFS, so that DPM can use them as MBS.
 
-    :::image type="content" source="./media/add-storage/dpm2016-add-storage-7.png" alt-text="Screenshot showing Add volume to Disk Storage":::
+    :::image type="content" source="./media/add-storage/dpm2016-add-storage-7.png" alt-text="Screenshot showing Add volume to Disk Storage.":::
 
 ## Disable Write Auto Tiering at file system level
 

@@ -92,7 +92,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS1, DS2|DS4|
 |DS4 \(secondary\)|DS3|\-|
 
-:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-drdeployment-chaining.png" alt-text="Screenshot of a scenario with four DPM servers chained.":::
+:::image type="content" source="./media/back-up-the-dpm-server/data-protection-manager-2012-disaster-recovery-deployment-chaining.png" alt-text="Screenshot of a scenario with four DPM servers chained.":::
 
 #### Chaining example 2
 
@@ -109,7 +109,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-chainings.png" alt-text="Diagram of alternate scenario with four DPM servers chained.":::
+:::image type="content" source="./media/back-up-the-dpm-server/data-protection-manager-2012-chainings.png" alt-text="Diagram of alternate scenario with four DPM servers chained.":::
 
 ### Cyclic protection
 
@@ -127,7 +127,7 @@ Scenario 3 shows a scenario using cyclic protection.
 |DS3 \(primary\)|PS4|DS2|
 |DS3 \(secondary\)|DS2|DS2|
 
-:::image type="content" source="./media/back-up-the-dpm-server/dpm2012-drdeployment-cyclic.png" alt-text="Diagram of example of cyclic protection scenario.":::
+:::image type="content" source="./media/back-up-the-dpm-server/data-protection-manager-2012-disaster-recovery-deployment-cyclic.png" alt-text="Diagram of example of cyclic protection scenario.":::
 
 ### Configure chaining
 
