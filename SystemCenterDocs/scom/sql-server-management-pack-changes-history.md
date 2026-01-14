@@ -14,6 +14,22 @@ ms.subservice: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
+## January 2026 - 7.12 RTM
+
+### What's New
+
+- Support for SQL Server 2025
+
+  - Includes support for the following editions of SQL Server 2025 (Enterprise, Standard, Enterprise Developer, Standard Developer, Evaluation, and Express)
+  
+- Replaced Microsoft.Data.SqlClient with the System.Data.SqlClient 
+
+- Reverts SQL Server Management Objects (SMO) to version 15
+
+### Bug Fixes
+
+- Fixed a bug where Availability Group monitors were not functioning as expected for some customers.
+
 ## July 2025 – 7.10.6 RTM
 
 ### What’s New
