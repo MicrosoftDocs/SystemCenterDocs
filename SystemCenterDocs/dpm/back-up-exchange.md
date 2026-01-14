@@ -1,11 +1,11 @@
 ---
-description: Back up Exchange mailbox databases with DPM.
+description: This article explains how to back up Exchange mailbox databases with DPM.
 ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.service: system-center
-keywords:
-ms.date: 11/01/2024
+ms.date: 01/13/2026
 title: Back up Exchange with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
@@ -36,17 +36,17 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
         For example, in a typical installation, enter: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
-         > [!NOTE]
-         > The *Eseutil* isn't forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server version. <br>To avoid this, we recommend you to use a separate DPM server for protecting each version of the Exchange Server with respective *Eseutil* version installed on the DPM server. If that isn't feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
+        > [!NOTE]
+        > The *Eseutil* isn't forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server version. <br>To avoid this, we recommend you to use a separate DPM server for protecting each version of the Exchange Server with respective *Eseutil* version installed on the DPM server. If that isn't feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
 
 - Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
 - To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node.
 
- > [!NOTE]
- > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+     > [!NOTE]
+     > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
-- DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
+- DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determines the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
 - DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
@@ -351,7 +351,7 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 
 ::: moniker range="sc-dpm-2019"
 
-- DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
+- DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determines the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
 ::: moniker-end
 
