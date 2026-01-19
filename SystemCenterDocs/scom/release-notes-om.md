@@ -4,7 +4,8 @@ title: Release notes for System Center Operations Manager
 description: This article details the known issues and workarounds in Operations Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/13/2025
+ms.reviewer: v-gajeronika
+ms.date: 01/19/2026
 ms.update-cycle: 180-days
 ms.topic: release-notes
 ms.service: system-center
