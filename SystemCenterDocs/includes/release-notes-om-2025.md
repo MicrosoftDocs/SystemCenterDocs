@@ -1,6 +1,6 @@
 ---
 title: include file
-description: include file that summarizes the release notes for Operations Manager 2025.
+description: Include file that summarizes the release notes for Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 01/19/2026
@@ -35,5 +35,5 @@ Disable TLS 1.3 in the Windows registry until a permanent fix is available and u
 
 This article summarizes the release notes for Operations Manager 2025.
 
-- Fixed broken behavior of Web Console where allow-popups and allow-forms settings were not added after applying security changes.
+- Fixed broken behavior of Web Console where allow-popups and allow-forms settings weren't added after applying security changes.
 - Fixed failure of favorite reports with `HttpParseException` in Web Console.
