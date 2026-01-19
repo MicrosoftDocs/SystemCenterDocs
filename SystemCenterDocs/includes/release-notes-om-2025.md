@@ -10,7 +10,7 @@ ms.subservice: operations-manager
 ms.topic: include
 ---
 
-## Orchestrator 2025 UR1 Release notes
+## Operations Manager 2025 UR1 Release notes
 
 The following sections summarize the release notes for Operations Manager 2025 UR1, and include the known issues and workarounds.
 
