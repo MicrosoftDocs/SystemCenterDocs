@@ -73,7 +73,7 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 
 ::: moniker-end
 
-By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\MonitoringView is the default path) and updating the existing `<connection>` element. IF the `<connection>` element doesn't already include the attributes, add *autoSignOutInterval* (and optionally *autoSignIn*) to the existing tag. Set *autoSignOutInterval* to a shorter or longer interval, or disable the session limit by setting it to **0**, as shown in the following example.  
+By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\MonitoringView is the default path) and updating the existing `<connection>` element. If the `<connection>` element doesn't already include the attributes, add *autoSignOutInterval* (and optionally *autoSignIn*) to the existing tag. Set *autoSignOutInterval* to a shorter or longer interval, or disable the session limit by setting it to **0**, as shown in the following example.  
 
 Before
 ```  
