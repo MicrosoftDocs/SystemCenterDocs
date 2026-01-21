@@ -1,13 +1,14 @@
 ---
-title: System Center - Data Protection Manager volume to volume migration
-description: This article describes volume to volume migration.
+title: System Center Data Protection Manager volume to volume migration
+description: This article describes System Center Data Protection Manager volume to volume migration.
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 01/21/2026
 ms.subservice: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 monikerRange: sc-dpm-2019||sc-dpm-2016
 ms.custom: intro-migration, UpdateFrequency2, engagement-fy24
 ---
@@ -56,15 +57,15 @@ Follow these steps:
 
 2. In the **Protection** workspace, select the data source you want to migrate.
 
-   ![Select target workload](./media/volume-volume-migration/move-disk-storage.png)
+   :::image type="content" source="./media/volume-volume-migration/move-disk-storage.png" alt-text="Screenshot of Select target workload.":::
 
 3. Select **Move Disk Storage**.
 
-   ![Move disk storage](./media/volume-volume-migration/select-target-disk-storage.png)
+   :::image type="content" source="./media/volume-volume-migration/select-target-disk-storage.png" alt-text="Screenshot of Move disk storage.":::
 
 4. Select the *target disk storage* that you want to migrate to and select **OK**.
 
-   ![Select target disk storage](./media/volume-volume-migration/select-workload.png)
+   :::image type="content" source="./media/volume-volume-migration/select-workload.png" alt-text="Screenshot of select target disk storage.":::
 
    This begins the migration process. For monitoring scheduled jobs, you can open another DPM console in parallel while the migration is in progress.
 
@@ -99,14 +100,14 @@ Use the following tabs to view the required information:
    - **Oldest recovery point** – displays the oldest recovery point across both the volumes.
    - **Total recovery point** – displays the sum of recovery points on both the volumes.
 
-   ![Screenshot of inactive data sources.](./media/volume-volume-migration/inactive-datasources-on-disk.png)
+   :::image type="content" source="./media/volume-volume-migration/inactive-datasources-on-disk.png" alt-text="Screenshot of inactive data sources.":::
 
 - In the **Management** tab:
 
    - Migrated data source is listed under **Protected data sources on this disk** on the new volume.
 
-     ![Screenshot of storage consumed.](./media/volume-volume-migration/storage-consumed.png)
+     :::image type="content" source="./media/volume-volume-migration/storage-consumed.png" alt-text="Screenshot of storage consumed.":::
 
    - On the existing volume, the data source is displayed under **Inactive data sources on this disk**. As per the retention policies, the inactive data source and the recovery points are purged.
 
-     ![Screenshot of Protected data sources.](./media/volume-volume-migration/protected-datasource-on-disk.png)
+     :::image type="content" source="./media/volume-volume-migration/protected-datasource-on-disk.png" alt-text="Screenshot of Protected data sources.":::
