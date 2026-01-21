@@ -1,11 +1,12 @@
 ---
-description: This article explains how to upgrade your DPM installation.
+description: This article explains how to upgrade your Data Protection Manager installation.
 ms.topic: upgrade-and-migration-article
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 01/21/2026
 ms.update-cycle: 180-days
 title: Upgrade your System Center DPM
 ms.subservice: data-protection-manager

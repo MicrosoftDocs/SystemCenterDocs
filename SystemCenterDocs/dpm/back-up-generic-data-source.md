@@ -1,15 +1,16 @@
 ---
-description: You can back up a generic data source with DPM.
+description: You can back up a generic data source with Data Protection Manager.
 ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 01/21/2026
 ms.update-cycle: 1095-days
 title: Prepare to back up a generic data source
 ms.subservice: data-protection-manager
 ms.assetid: 8ad00a50-108a-4212-ad43-c12a8f8f5587
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
@@ -37,15 +38,21 @@ You'll need to run the Modify-RegisteredWriters command to add, remove, or modif
 
 **Syntax**
 
+```
 Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-List] [\<CommonParameters\>]
+```
 
+```
 Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Remove] [-Writers] \<String\> [\<CommonParameters\>]
+```
 
+```
 Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Add] [-Writers] \<String\> [\<CommonParameters\>]
+```
 
 |Parameter|Type|Description|
 |-------------|--------|---------------|
-|DPMServerNAme|String|Specifies the DPM server against which this command should run. By default, the command is run against the local DPM server.|
+|DPMServerName|String|Specifies the DPM server against which this command should run. By default, the command is run against the local DPM server.|
 |List|SwitchParameter|Indicates that the command should display the list of registered writer IDs.|
 |Add|SwitchParameter|Indicates that the command should add the list of writer IDs to the list of the writer IDs that's registered with DPM.|
 |Remove|SwitchParameter|Indicates that the given list of writer IDs must be removed from the list of the writer IDs that's registered with DPM.|
