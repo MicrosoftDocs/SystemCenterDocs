@@ -96,904 +96,902 @@
       href: common-activity-properties.md
     - name: Computer groups
       href: computer-groups.md
-- name: Reference
+- name: Standard Activities
   items:
-  - name: Standard Activities
+  - name: Orchestrator standard activities
+    href: standard-activities.md
+  - name: Alphabetical list of Standard Activities
+    href: ./standard-activities/alphabetical-list-of-standard-activities.md
+  - name: Ports and protocols of Standard Activities
+    href: ./standard-activities/ports-and-protocols-of-standard-activities.md
+  - name: System
+    href: ./standard-activities/system.md
     items:
-    - name: Orchestrator standard activities
-      href: standard-activities.md
-    - name: Alphabetical list of Standard Activities
-      href: ./standard-activities/alphabetical-list-of-standard-activities.md
-    - name: Ports and protocols of Standard Activities
-      href: ./standard-activities/ports-and-protocols-of-standard-activities.md
-    - name: System
-      href: ./standard-activities/system.md
+    - name: Run Program
+      href: ./standard-activities/run-program.md
+    - name: Run .NET Script
+      href: ./standard-activities/run-net-script.md
+    - name: End Process
+      href: ./standard-activities/end-process.md
+    - name: Start/Stop Service
+      href: ./standard-activities/start-stop-service.md
+    - name: Restart System
+      href: ./standard-activities/restart-system.md
+    - name: Save Event Log
+      href: ./standard-activities/save-event-log.md
+    - name: Query WMI
+      href: ./standard-activities/query-wmi.md
+    - name: Run SSH Command
+      href: ./standard-activities/run-ssh-command.md
+    - name: Get SNMP Variable
+      href: ./standard-activities/get-snmp-variable.md
+    - name: Monitor SNMP Trap
+      href: ./standard-activities/monitor-snmp-trap.md
+    - name: Send SNMP Trap
+      href: ./standard-activities/send-snmp-trap.md
+    - name: Set SNMP Variable
+      href: ./standard-activities/set-snmp-variable.md
+  - name: Scheduling
+    href: ./standard-activities/scheduling.md
+    items:
+    - name: Monitor Date/Time
+      href: ./standard-activities/monitor-date-time.md
+    - name: Check Schedule
+      href: ./standard-activities/check-schedule.md
+  - name: Monitoring
+    href: ./standard-activities/monitoring.md
+    items:
+    - name: Monitor Event Log
+      href: ./standard-activities/monitor-event-log.md
+    - name: Monitor Service
+      href: ./standard-activities/monitor-service.md
+    - name: Get Service Status
+      href: ./standard-activities/get-service-status.md
+    - name: Monitor Process
+      href: ./standard-activities/monitor-process.md
+    - name: Get Process Status
+      href: ./standard-activities/get-process-status.md
+    - name: Monitor Computer/IP
+      href: ./standard-activities/monitor-computer-ip.md
+    - name: Get Computer/IP Status
+      href: ./standard-activities/get-computer-ip-status.md
+    - name: Monitor Disk Space
+      href: ./standard-activities/monitor-disk-space.md
+    - name: Get Disk Space Status
+      href: ./standard-activities/get-disk-space-status.md
+    - name: Monitor Internet Application
+      href: ./standard-activities/monitor-internet-application.md
+    - name: Get Internet Application Status
+      href: ./standard-activities/get-internet-application-status.md
+    - name: Monitor WMI
+      href: ./standard-activities/monitor-wmi.md
+  - name: File Management
+    href: ./standard-activities/file-management.md
+    items:
+    - name: Compress File
+      href: ./standard-activities/compress-file.md
+    - name: Copy File
+      href: ./standard-activities/copy-file.md
+    - name: Create Folder
+      href: ./standard-activities/create-folder.md
+    - name: Decompress File
+      href: ./standard-activities/decompress-file.md
+    - name: Delete File
+      href: ./standard-activities/delete-file.md
+    - name: Delete Folder
+      href: ./standard-activities/delete-folder.md
+    - name: Get File Status
+      href: ./standard-activities/get-file-status.md
+    - name: Monitor File
+      href: ./standard-activities/monitor-file.md
+    - name: Monitor Folder
+      href: ./standard-activities/monitor-folder.md
+    - name: Move File
+      href: ./standard-activities/move-file.md
+    - name: Move Folder
+      href: ./standard-activities/move-folder.md
+    - name: PGP Decrypt File
+      href: ./standard-activities/pgp-decrypt-file.md
+    - name: PGP Encrypt File
+      href: ./standard-activities/pgp-encrypt-file.md
+    - name: Print File
+      href: ./standard-activities/print-file.md
+    - name: Rename File
+      href: ./standard-activities/rename-file.md
+  - name: Email
+    href: ./standard-activities/email.md
+    items:
+    - name: Send Email
+      href: ./standard-activities/send-email.md
+  - name: Notification
+    href: ./standard-activities/notification.md
+    items:
+    - name: Send Event Log Message
+      href: ./standard-activities/send-event-log-message.md
+    - name: Send Syslog Message
+      href: ./standard-activities/send-syslog-message.md
+    - name: Send Platform Event
+      href: ./standard-activities/send-platform-event.md
+  - name: Utilities
+    href: ./standard-activities/utilities.md
+    items:
+    - name: Apply XSLT
+      href: ./standard-activities/apply-xslt.md
+    - name: Query XML
+      href: ./standard-activities/query-xml.md
+    - name: Map Published Data
+      href: ./standard-activities/map-published-data.md
+    - name: Compare Values
+      href: ./standard-activities/compare-values.md
+    - name: Write Web Pages
+      href: ./standard-activities/write-web-page.md
+    - name: Read Text Log
+      href: ./standard-activities/read-text-log.md
+    - name: Write to Database
+      href: ./standard-activities/write-to-database.md
+    - name: Query Database
+      href: ./standard-activities/query-database.md
+    - name: Monitor Counter
+      href: ./standard-activities/monitor-counter.md
+    - name: Get Counter Value
+      href: ./standard-activities/get-counter-value.md
+    - name: Modify Counter
+      href: ./standard-activities/modify-counter.md
+    - name: Invoke Web Services
+      href: ./standard-activities/invoke-web-services.md
+    - name: Format Date/Time
+      href: ./standard-activities/format-date-time.md
+    - name: Generate Random Text
+      href: ./standard-activities/generate-random-text.md
+    - name: Map Network Path
+      href: ./standard-activities/map-network-path.md
+    - name: Disconnect Network Path
+      href: ./standard-activities/disconnect-network-path.md
+    - name: Get Dial-up Status
+      href: ./standard-activities/get-dial-up-status.md
+    - name: Connect/Disconnect Dial-up
+      href: ./standard-activities/connect-disconnect-dial-up.md
+  - name: Text File Management
+    href: ./standard-activities/text-file-management.md
+    items:
+    - name: Append Line
+      href: ./standard-activities/append-line.md
+    - name: Delete Line
+      href: ./standard-activities/delete-line.md
+    - name: Find Text
+      href: ./standard-activities/find-text.md
+    - name: Get Lines
+      href: ./standard-activities/get-lines.md
+    - name: Insert Line
+      href: ./standard-activities/insert-line.md
+    - name: Read Line
+      href: ./standard-activities/read-line.md
+    - name: Search and Replace Text
+      href: ./standard-activities/search-and-replace-text.md
+  - name: Runbook Control
+    href: ./standard-activities/runbook-control.md
+    items:
+    - name: Invoke Runbook
+      href: ./standard-activities/invoke-runbook.md
+    - name: Initialize Data
+      href: ./standard-activities/initialize-data.md
+    - name: Junction
+      href: ./standard-activities/junction.md
+    - name: Return Data
+      href: ./standard-activities/return-data.md
+- name: Orchestrator Integration Toolkit
+  href: ./orch-integration-toolkit/oit-landing-page.md
+  items:
+  - name: Overview of Orchestrator Integration Toolkit
+    href: ./orch-integration-toolkit/orchestrator-integration-toolkit-overview.md
+  - name: Installation
+    href: ./orch-integration-toolkit/installation.md
+  - name: Command Line Activity Wizard
+    href: ./orch-integration-toolkit/command-line-activity-wizard.md
+  - name: Integration Pack Wizard
+    href: ./orch-integration-toolkit/integration-pack-wizard.md
+- name: Integration Packs
+  href: list-of-orchestrator-integration-packs.md
+  items:
+  - name: Active Directory
+    href: active-directory-integration-pack.md
+    items:
+    - name: Active Directory activities
+      href: active-directory-activities.md
       items:
-      - name: Run Program
-        href: ./standard-activities/run-program.md
-      - name: Run .NET Script
-        href: ./standard-activities/run-net-script.md
-      - name: End Process
-        href: ./standard-activities/end-process.md
-      - name: Start/Stop Service
-        href: ./standard-activities/start-stop-service.md
-      - name: Restart System
-        href: ./standard-activities/restart-system.md
-      - name: Save Event Log
-        href: ./standard-activities/save-event-log.md
-      - name: Query WMI
-        href: ./standard-activities/query-wmi.md
-      - name: Run SSH Command
-        href: ./standard-activities/run-ssh-command.md
-      - name: Get SNMP Variable
-        href: ./standard-activities/get-snmp-variable.md
-      - name: Monitor SNMP Trap
-        href: ./standard-activities/monitor-snmp-trap.md
-      - name: Send SNMP Trap
-        href: ./standard-activities/send-snmp-trap.md
-      - name: Set SNMP Variable
-        href: ./standard-activities/set-snmp-variable.md
-    - name: Scheduling
-      href: ./standard-activities/scheduling.md
+      - name: Add Computer To Group
+        href: add-computer-to-group.md
+      - name: Add Group To Group
+        href: add-group-to-group.md
+      - name: Add User To Group
+        href: add-user-to-group.md
+      - name: Create Computer
+        href: create-computer.md
+      - name: Create Group
+        href: create-group.md
+      - name: Create User
+        href: create-user.md
+      - name: Delete Computer
+        href: delete-computer.md
+      - name: Delete Group
+        href: delete-group.md
+      - name: Delete User
+        href: delete-user.md
+      - name: Disable Computer
+        href: disable-computer.md
+      - name: Disable User
+        href: disable-user.md
+      - name: Enable Computer
+        href: enable-computer.md
+      - name: Enable User
+        href: enable-user.md
+      - name: Get Computer
+        href: get-computer.md
+      - name: Get Group
+        href: get-group.md
+      - name: Get Organizational Unit
+        href: get-organizational-unit.md
+      - name: Get User
+        href: get-user.md
+      - name: Move Computer
+        href: move-computer.md
+      - name: Move Group
+        href: move-group.md
+      - name: Move User
+        href: move-user.md
+      - name: Remove Computer From Group
+        href: remove-computer-from-group.md
+      - name: Remove Group From Group
+        href: remove-group-from-group.md
+      - name: Remove User From Group
+        href: remove-user-from-group.md
+      - name: Rename Group
+        href: rename-group.md
+      - name: Rename User
+        href: rename-user.md
+      - name: Reset User Password
+        href: reset-user-password.md
+      - name: Unlock User
+        href: unlock-user.md
+      - name: Update Computer
+        href: update-computer.md
+      - name: Update Group
+        href: update-group.md
+      - name: Update User
+        href: update-user.md
+  - name: Azure Integration Pack
+    href: windows-azure-integration-pack.md
+    items:
+    - name: Azure Integration Pack activities
+      href: windows-azure-activities.md
       items:
-      - name: Monitor Date/Time
-        href: ./standard-activities/monitor-date-time.md
-      - name: Check Schedule
-        href: ./standard-activities/check-schedule.md
-    - name: Monitoring
-      href: ./standard-activities/monitoring.md
+      - name: Add management certificate
+        href: add-management-certificate.md
+      - name: Add OS Image
+        href: add-OS-image.md
+      - name: Add Service Certificate
+        href: add-service-certificate.md
+      - name: Add VM Data Disk
+        href: add-vm-data-disk.md
+      - name: Add VM Disk
+        href: add-vm-disk.md
+      - name: Add VM Endpoint
+        href: add-vm-endpoint.md
+      - name: Add VM Instance
+        href: add-vm-instance.md
+      - name: Capture VM Instance
+        href: capture-vm-instance.md
+      - name: Change Deployment Configuration
+        href: change-deployment-configuration.md
+      - name: Change Deployment OS
+        href: change-deployment-os.md
+      - name: Check Cloud Service Name Availability
+        href: check-cloud-service-name-availability.md
+      - name: Copy Blob
+        href: copy-blob.md
+      - name: Create Affinity Group
+        href: create-affinity-group.md
+      - name: Create Cloud Service
+        href: create-cloud-service.md
+      - name: Create Container
+        href: create-container.md
+      - name: Create Deployment
+        href: create-deployment.md
+      - name: Create Storage Account
+        href: create-storage-account.md
+      - name: Create VM Deployment
+        href: create-vm-deployment.md
+      - name: Delete Blob
+        href: delete-blob.md
+      - name: Delete Cloud Service
+        href: delete-cloud-service.md
+      - name: Delete Container
+        href: delete-container.md
+      - name: Delete Deployment
+        href: delete-deployment.md
+      - name: Delete Management Certificate
+        href: delete-management-certificate.md
+      - name: Delete OS Image
+        href: delete-os-image.md
+      - name: Delete Service Certificate
+        href: delete-service-certificate.md
+      - name: Delete Storage account
+        href: delete-storage-account.md
+      - name: Delete VM Data Disk
+        href: delete-vm-data-disk.md
+      - name: Delete VM Disk
+        href: delete-vm-disk.md
+      - name: Delete VM Instance
+        href: delete-vm-instance.md
+      - name: Download Blob
+        href: download-blob.md
+      - name: Get Deployment
+        href: get-deployment.md
+      - name: Get Operating Systems
+        href: get-operating-systems.md
+      - name: Get Operation Status
+        href: get-operation-status.md
+      - name: Get Storage Account Keys
+        href: get-storage-account-keys.md
+      - name: Get Storage Account Properties
+        href: get-storage-account-properties.md
+      - name: Get VM Data Disk
+        href: get-vm-data-disk.md
+      - name: Get VM Instance
+        href: get-vm-instance.md
+      - name: Get VM RDP File
+        href: get-vm-rdp-file.md
+      - name: List Blob
+        href: list-blob.md
+      - name: List Cloud Service
+        href: list-cloud-service.md
+      - name: List Container
+        href: list-container.md
+      - name: List Management Certificate
+        href: list-management-certificate.md
+      - name: List OS Images
+        href: list-os-images.md
+      - name: List Service Certificate
+        href: list-service-certificate.md
+      - name: List Storage Account
+        href: list-storage-account.md
+      - name: List VM Disks
+        href: list-vm-disks.md
+      - name: Put Blob
+        href: put-blob.md
+      - name: Reboot Role Instance
+        href: reboot-role-instance.md
+      - name: Regenerate Storage Account Key
+        href: regenerate-storage-account-key.md
+      - name: Reimage VM Instance
+        href: reimage-vm-instance.md
+      - name: Remove VM Endpoint
+        href: remove-vm-endpoint.md
+      - name: Restart VM Instance
+        href: restart-vm-instance.md
+      - name: Rollback Update Or Upgrade
+        href: rollback-update-or-upgrade.md
+      - name: Shutdown VM Instance
+        href: shutdown-vm-instance.md
+      - name: Snapshot Blob
+        href: snapshot-blob.md
+      - name: Start VM Instance
+        href: start-vm-instance.md
+      - name: Swap Deployment
+        href: swap-deployment.md
+      - name: Update Deployment Status
+        href: update-deployment-status.md
+      - name: Update OS Image
+        href: update-os-image.md
+      - name: Update Storage Account
+        href: update-storage-account.md
+      - name: Update VM Instance
+        href: update-vm-instance.md
+      - name: Upgrade Deployment
+        href: upgrade-deployment.md
+      - name: Walk Upgrade Domain
+        href: walk-upgrade-domain.md
+  - name: Exchange administrator
+    href: exchange-admin-integration-pack.md
+    items:
+    - name: Exchange administrator activities
+      href: exchange-administrator-activities.md
       items:
-      - name: Monitor Event Log
-        href: ./standard-activities/monitor-event-log.md
-      - name: Monitor Service
-        href: ./standard-activities/monitor-service.md
-      - name: Get Service Status
-        href: ./standard-activities/get-service-status.md
-      - name: Monitor Process
-        href: ./standard-activities/monitor-process.md
-      - name: Get Process Status
-        href: ./standard-activities/get-process-status.md
-      - name: Monitor Computer/IP
-        href: ./standard-activities/monitor-computer-ip.md
-      - name: Get Computer/IP Status
-        href: ./standard-activities/get-computer-ip-status.md
-      - name: Monitor Disk Space
-        href: ./standard-activities/monitor-disk-space.md
-      - name: Get Disk Space Status
-        href: ./standard-activities/get-disk-space-status.md
-      - name: Monitor Internet Application
-        href: ./standard-activities/monitor-internet-application.md
-      - name: Get Internet Application Status
-        href: ./standard-activities/get-internet-application-status.md
-      - name: Monitor WMI
-        href: ./standard-activities/monitor-wmi.md
-    - name: File Management
-      href: ./standard-activities/file-management.md
+      - name: Create Mailbox
+        href: create-mailbox.md
+      - name: Create Move Request
+        href: create-move-request.md
+      - name: Create Remote Mailbox Hybrid
+        href: create-remote-mailbox-hybrid.md
+      - name: Disable mailbox
+        href: disable-mailbox.md
+      - name: Disable Remote Mailbox Hybrid
+        href: disable-remote-mailbox-hybrid.md
+      - name: Enable Mailbox
+        href: enable-mailbox.md
+      - name: Enable Remote Mailbox Hybrid
+        href: enable-remote-mailbox-hybrid.md
+      - name: Get Mailbox
+        href: get-mailbox.md
+      - name: Get Move Request Statistics
+        href: get-move-request-statistics.md
+      - name: Get Move Request
+        href: get-move-request.md
+      - name: Get Remote Mailbox Hybrid
+        href: get-remote-mailbox-hybrid.md
+      - name: Remove Mailbox
+        href: remove-mailbox.md
+      - name: Remove Remote Mailbox Hybrid
+        href: remove-remote-mailbox-hybrid.md
+      - name: Run Exchange PowerShell Command
+        href: run-exchange-powershell-command.md
+      - name: Update Mailbox
+        href: update-mailbox.md
+      - name: Update Move Request
+        href: update-move-request.md
+      - name: Update Remote Mailbox Hybrid
+        href: update-remote-mailbox-hybrid.md
+  - name: Exchange Users Integration Pack
+    href: exchange-users-integration-pack.md
+    items:
+    - name: Exchange user activities
+      href: exchange-users-activities.md
       items:
-      - name: Compress File
-        href: ./standard-activities/compress-file.md
-      - name: Copy File
-        href: ./standard-activities/copy-file.md
-      - name: Create Folder
-        href: ./standard-activities/create-folder.md
-      - name: Decompress File
-        href: ./standard-activities/decompress-file.md
-      - name: Delete File
-        href: ./standard-activities/delete-file.md
-      - name: Delete Folder
-        href: ./standard-activities/delete-folder.md
-      - name: Get File Status
-        href: ./standard-activities/get-file-status.md
-      - name: Monitor File
-        href: ./standard-activities/monitor-file.md
-      - name: Monitor Folder
-        href: ./standard-activities/monitor-folder.md
-      - name: Move File
-        href: ./standard-activities/move-file.md
-      - name: Move Folder
-        href: ./standard-activities/move-folder.md
-      - name: PGP Decrypt File
-        href: ./standard-activities/pgp-decrypt-file.md
-      - name: PGP Encrypt File
-        href: ./standard-activities/pgp-encrypt-file.md
-      - name: Print File
-        href: ./standard-activities/print-file.md
-      - name: Rename File
-        href: ./standard-activities/rename-file.md
-    - name: Email
-      href: ./standard-activities/email.md
-      items:
+      - name: Create And Send Email
+        href: create-and-send-e-mail.md
+      - name: Create Item
+        href: create-item.md
+      - name: Delete Item
+        href: delete-item.md
+      - name: Find Appointment
+        href: find-appointments.md
+      - name: Forward Item
+        href: forward-item.md
+      - name: Get item
+        href: get-item.md
+      - name: Monitor Item
+        href: monitor-item.md
+      - name: Move Or Copy Item
+        href: move-or-copy-item.md
+      - name: Reply To Email
+        href: reply-to-e-mail.md
       - name: Send Email
-        href: ./standard-activities/send-email.md
-    - name: Notification
-      href: ./standard-activities/notification.md
-      items:
-      - name: Send Event Log Message
-        href: ./standard-activities/send-event-log-message.md
-      - name: Send Syslog Message
-        href: ./standard-activities/send-syslog-message.md
-      - name: Send Platform Event
-        href: ./standard-activities/send-platform-event.md
-    - name: Utilities
-      href: ./standard-activities/utilities.md
-      items:
-      - name: Apply XSLT
-        href: ./standard-activities/apply-xslt.md
-      - name: Query XML
-        href: ./standard-activities/query-xml.md
-      - name: Map Published Data
-        href: ./standard-activities/map-published-data.md
-      - name: Compare Values
-        href: ./standard-activities/compare-values.md
-      - name: Write Web Pages
-        href: ./standard-activities/write-web-page.md
-      - name: Read Text Log
-        href: ./standard-activities/read-text-log.md
-      - name: Write to Database
-        href: ./standard-activities/write-to-database.md
-      - name: Query Database
-        href: ./standard-activities/query-database.md
-      - name: Monitor Counter
-        href: ./standard-activities/monitor-counter.md
-      - name: Get Counter Value
-        href: ./standard-activities/get-counter-value.md
-      - name: Modify Counter
-        href: ./standard-activities/modify-counter.md
-      - name: Invoke Web Services
-        href: ./standard-activities/invoke-web-services.md
-      - name: Format Date/Time
-        href: ./standard-activities/format-date-time.md
-      - name: Generate Random Text
-        href: ./standard-activities/generate-random-text.md
-      - name: Map Network Path
-        href: ./standard-activities/map-network-path.md
-      - name: Disconnect Network Path
-        href: ./standard-activities/disconnect-network-path.md
-      - name: Get Dial-up Status
-        href: ./standard-activities/get-dial-up-status.md
-      - name: Connect/Disconnect Dial-up
-        href: ./standard-activities/connect-disconnect-dial-up.md
-    - name: Text File Management
-      href: ./standard-activities/text-file-management.md
-      items:
-      - name: Append Line
-        href: ./standard-activities/append-line.md
-      - name: Delete Line
-        href: ./standard-activities/delete-line.md
-      - name: Find Text
-        href: ./standard-activities/find-text.md
-      - name: Get Lines
-        href: ./standard-activities/get-lines.md
-      - name: Insert Line
-        href: ./standard-activities/insert-line.md
-      - name: Read Line
-        href: ./standard-activities/read-line.md
-      - name: Search and Replace Text
-        href: ./standard-activities/search-and-replace-text.md
-    - name: Runbook Control
-      href: ./standard-activities/runbook-control.md
-      items:
-      - name: Invoke Runbook
-        href: ./standard-activities/invoke-runbook.md
-      - name: Initialize Data
-        href: ./standard-activities/initialize-data.md
-      - name: Junction
-        href: ./standard-activities/junction.md
-      - name: Return Data
-        href: ./standard-activities/return-data.md
-  - name: Orchestrator Integration Toolkit
-    href: ./orch-integration-toolkit/oit-landing-page.md
+        href: send-e-mail.md
+      - name: Update Item
+        href: update-item.md
+  - name: FTP Integration Pack
+    href: ftp-integration-pack.md
     items:
-    - name: Overview of Orchestrator Integration Toolkit
-      href: ./orch-integration-toolkit/orchestrator-integration-toolkit-overview.md
-    - name: Installation
-      href: ./orch-integration-toolkit/installation.md
-    - name: Command Line Activity Wizard
-      href: ./orch-integration-toolkit/command-line-activity-wizard.md
-    - name: Integration Pack Wizard
-      href: ./orch-integration-toolkit/integration-pack-wizard.md
-  - name: Integration Packs
-    href: list-of-orchestrator-integration-packs.md
+    - name: FTP activities
+      href: integration-pack-activities.md
+      items:
+      - name: Create Folder
+        href: create-folder.md
+      - name: Delete File
+        href: delete-file.md
+      - name: Delete Folder
+        href: delete-folder.md
+      - name: Download File
+        href: download-file.md
+      - name: List Folders or Files
+        href: list-folders-or-files.md
+      - name: Rename Folders or Files
+        href: rename-file-or-folder.md
+      - name: Resume File Download
+        href: resume-file-download.md
+      - name: Synchronize Folder or File
+        href: synchronize-folder-or-file.md
+      - name: Upload File
+        href: upload-file.md
+  - name: Hewlett Packard Integrated Lights-Out
+    href: hp-ilo-and-oa-integration-pack.md
     items:
-    - name: Active Directory
-      href: active-directory-integration-pack.md
+    - name: Hewlett Packard Integrated Lights-Out activities
+      href: hp-ilo-and-oa-activities.md
       items:
-      - name: Active Directory activities
-        href: active-directory-activities.md
-        items:
-        - name: Add Computer To Group
-          href: add-computer-to-group.md
-        - name: Add Group To Group
-          href: add-group-to-group.md
-        - name: Add User To Group
-          href: add-user-to-group.md
-        - name: Create Computer
-          href: create-computer.md
-        - name: Create Group
-          href: create-group.md
-        - name: Create User
-          href: create-user.md
-        - name: Delete Computer
-          href: delete-computer.md
-        - name: Delete Group
-          href: delete-group.md
-        - name: Delete User
-          href: delete-user.md
-        - name: Disable Computer
-          href: disable-computer.md
-        - name: Disable User
-          href: disable-user.md
-        - name: Enable Computer
-          href: enable-computer.md
-        - name: Enable User
-          href: enable-user.md
-        - name: Get Computer
-          href: get-computer.md
-        - name: Get Group
-          href: get-group.md
-        - name: Get Organizational Unit
-          href: get-organizational-unit.md
-        - name: Get User
-          href: get-user.md
-        - name: Move Computer
-          href: move-computer.md
-        - name: Move Group
-          href: move-group.md
-        - name: Move User
-          href: move-user.md
-        - name: Remove Computer From Group
-          href: remove-computer-from-group.md
-        - name: Remove Group From Group
-          href: remove-group-from-group.md
-        - name: Remove User From Group
-          href: remove-user-from-group.md
-        - name: Rename Group
-          href: rename-group.md
-        - name: Rename User
-          href: rename-user.md
-        - name: Reset User Password
-          href: reset-user-password.md
-        - name: Unlock User
-          href: unlock-user.md
-        - name: Update Computer
-          href: update-computer.md
-        - name: Update Group
-          href: update-group.md
-        - name: Update User
-          href: update-user.md
-    - name: Azure Integration Pack
-      href: windows-azure-integration-pack.md
+      - name: Run iLO Command
+        href: run-ilo-command.md
+      - name: Run OA Command
+        href: run-oa-command.md
+  - name: Hewlett Packard Operations Manager
+    href: hp-operations-manager-integration-pack.md
+    items:
+    - name: Hewlett Packard Operations Manager activities
+      href: hp-operations-manager-activities.md
       items:
-      - name: Azure Integration Pack activities
-        href: windows-azure-activities.md
-        items:
-        - name: Add management certificate
-          href: add-management-certificate.md
-        - name: Add OS Image
-          href: add-OS-image.md
-        - name: Add Service Certificate
-          href: add-service-certificate.md
-        - name: Add VM Data Disk
-          href: add-vm-data-disk.md
-        - name: Add VM Disk
-          href: add-vm-disk.md
-        - name: Add VM Endpoint
-          href: add-vm-endpoint.md
-        - name: Add VM Instance
-          href: add-vm-instance.md
-        - name: Capture VM Instance
-          href: capture-vm-instance.md
-        - name: Change Deployment Configuration
-          href: change-deployment-configuration.md
-        - name: Change Deployment OS
-          href: change-deployment-os.md
-        - name: Check Cloud Service Name Availability
-          href: check-cloud-service-name-availability.md
-        - name: Copy Blob
-          href: copy-blob.md
-        - name: Create Affinity Group
-          href: create-affinity-group.md
-        - name: Create Cloud Service
-          href: create-cloud-service.md
-        - name: Create Container
-          href: create-container.md
-        - name: Create Deployment
-          href: create-deployment.md
-        - name: Create Storage Account
-          href: create-storage-account.md
-        - name: Create VM Deployment
-          href: create-vm-deployment.md
-        - name: Delete Blob
-          href: delete-blob.md
-        - name: Delete Cloud Service
-          href: delete-cloud-service.md
-        - name: Delete Container
-          href: delete-container.md
-        - name: Delete Deployment
-          href: delete-deployment.md
-        - name: Delete Management Certificate
-          href: delete-management-certificate.md
-        - name: Delete OS Image
-          href: delete-os-image.md
-        - name: Delete Service Certificate
-          href: delete-service-certificate.md
-        - name: Delete Storage account
-          href: delete-storage-account.md
-        - name: Delete VM Data Disk
-          href: delete-vm-data-disk.md
-        - name: Delete VM Disk
-          href: delete-vm-disk.md
-        - name: Delete VM Instance
-          href: delete-vm-instance.md
-        - name: Download Blob
-          href: download-blob.md
-        - name: Get Deployment
-          href: get-deployment.md
-        - name: Get Operating Systems
-          href: get-operating-systems.md
-        - name: Get Operation Status
-          href: get-operation-status.md
-        - name: Get Storage Account Keys
-          href: get-storage-account-keys.md
-        - name: Get Storage Account Properties
-          href: get-storage-account-properties.md
-        - name: Get VM Data Disk
-          href: get-vm-data-disk.md
-        - name: Get VM Instance
-          href: get-vm-instance.md
-        - name: Get VM RDP File
-          href: get-vm-rdp-file.md
-        - name: List Blob
-          href: list-blob.md
-        - name: List Cloud Service
-          href: list-cloud-service.md
-        - name: List Container
-          href: list-container.md
-        - name: List Management Certificate
-          href: list-management-certificate.md
-        - name: List OS Images
-          href: list-os-images.md
-        - name: List Service Certificate
-          href: list-service-certificate.md
-        - name: List Storage Account
-          href: list-storage-account.md
-        - name: List VM Disks
-          href: list-vm-disks.md
-        - name: Put Blob
-          href: put-blob.md
-        - name: Reboot Role Instance
-          href: reboot-role-instance.md
-        - name: Regenerate Storage Account Key
-          href: regenerate-storage-account-key.md
-        - name: Reimage VM Instance
-          href: reimage-vm-instance.md
-        - name: Remove VM Endpoint
-          href: remove-vm-endpoint.md
-        - name: Restart VM Instance
-          href: restart-vm-instance.md
-        - name: Rollback Update Or Upgrade
-          href: rollback-update-or-upgrade.md
-        - name: Shutdown VM Instance
-          href: shutdown-vm-instance.md
-        - name: Snapshot Blob
-          href: snapshot-blob.md
-        - name: Start VM Instance
-          href: start-vm-instance.md
-        - name: Swap Deployment
-          href: swap-deployment.md
-        - name: Update Deployment Status
-          href: update-deployment-status.md
-        - name: Update OS Image
-          href: update-os-image.md
-        - name: Update Storage Account
-          href: update-storage-account.md
-        - name: Update VM Instance
-          href: update-vm-instance.md
-        - name: Upgrade Deployment
-          href: upgrade-deployment.md
-        - name: Walk Upgrade Domain
-          href: walk-upgrade-domain.md
-    - name: Exchange administrator
-      href: exchange-admin-integration-pack.md
+      - name: Acknowledge Message
+        href: acknowledge-message.md
+      - name: Add Annotation To Message
+        href: add-annotation-to-message.md
+      - name: Create Message
+        href: create-message.md
+      - name: Delete Annotation
+        href: delete-annotation.md
+      - name: Delete Custom Attribute
+        href: delete-custom-attribute.md
+      - name: Get Annotation
+        href: get-annotation.md
+      - name: Get Message
+        href: get-message.md
+      - name: Launch Tool
+        href: launch-tool.md
+      - name: Monitor Message
+        href: monitor-message.md
+      - name: Own Or Disown Message
+        href: own-or-disown-message.md
+      - name: Set Custom Attribute
+        href: set-custom-attribute.md
+      - name: Update Annotation
+        href: update-annotation.md
+      - name: Update Message
+        href: update-message.md
+  - name: Hewlett Packard Service Manager Integration Pack
+    href: hp-service-manager-integration-pack.md
+    items:
+    - name: HP Service Manager activities
+      href: hp-service-manager-activities.md
       items:
-      - name: Exchange administrator activities
-        href: exchange-administrator-activities.md
-        items:
-        - name: Create Mailbox
-          href: create-mailbox.md
-        - name: Create Move Request
-          href: create-move-request.md
-        - name: Create Remote Mailbox Hybrid
-          href: create-remote-mailbox-hybrid.md
-        - name: Disable mailbox
-          href: disable-mailbox.md
-        - name: Disable Remote Mailbox Hybrid
-          href: disable-remote-mailbox-hybrid.md
-        - name: Enable Mailbox
-          href: enable-mailbox.md
-        - name: Enable Remote Mailbox Hybrid
-          href: enable-remote-mailbox-hybrid.md
-        - name: Get Mailbox
-          href: get-mailbox.md
-        - name: Get Move Request Statistics
-          href: get-move-request-statistics.md
-        - name: Get Move Request
-          href: get-move-request.md
-        - name: Get Remote Mailbox Hybrid
-          href: get-remote-mailbox-hybrid.md
-        - name: Remove Mailbox
-          href: remove-mailbox.md
-        - name: Remove Remote Mailbox Hybrid
-          href: remove-remote-mailbox-hybrid.md
-        - name: Run Exchange PowerShell Command
-          href: run-exchange-powershell-command.md
-        - name: Update Mailbox
-          href: update-mailbox.md
-        - name: Update Move Request
-          href: update-move-request.md
-        - name: Update Remote Mailbox Hybrid
-          href: update-remote-mailbox-hybrid.md
-    - name: Exchange Users Integration Pack
-      href: exchange-users-integration-pack.md
+      - name: Close Entry
+        href: close-entry.md
+      - name: Create Entry
+        href: create-entry.md
+      - name: Get Entry
+        href: get-entry.md
+      - name: Monitor Entry
+        href: monitor-entry.md
+      - name: Update Entry
+        href: update-entry.md
+  - name: Netcool Integration Pack
+    href: tivoli-netcool-omnibus-integration-pack.md
+    items:
+    - name: Deploy the IBM Netcool Tivoli Iteration Pack
+      href: deploying-the-ibm-tivoli-netcool-omnibus-integration-pack.md
+    - name: IBM Netcool activities
+      href: tivoli-netcool-omnibus-activities.md
       items:
-      - name: Exchange user activities
-        href: exchange-users-activities.md
-        items:
-        - name: Create And Send Email
-          href: create-and-send-e-mail.md
-        - name: Create Item
-          href: create-item.md
-        - name: Delete Item
-          href: delete-item.md
-        - name: Find Appointment
-          href: find-appointments.md
-        - name: Forward Item
-          href: forward-item.md
-        - name: Get item
-          href: get-item.md
-        - name: Monitor Item
-          href: monitor-item.md
-        - name: Move Or Copy Item
-          href: move-or-copy-item.md
-        - name: Reply To Email
-          href: reply-to-e-mail.md
-        - name: Send Email
-          href: send-e-mail.md
-        - name: Update Item
-          href: update-item.md
-    - name: FTP Integration Pack
-      href: ftp-integration-pack.md
+      - name: Create Alert
+        href: create-alert-activity.md
+      - name: Delete Alert
+        href: delete-alert-activity.md
+      - name: Get Alerts
+        href: get-alerts-activity.md
+      - name: Monitor Alert
+        href: monitor-alerts-activity.md
+      - name: Update Alert
+        href: update-alert-activity.md
+  - name: REST
+    href: representational-state-transfer-rest-integration-pack.md
+    items:
+    - name: REST activities
+      href: rest-activities.md
       items:
-      - name: FTP activities
-        href: integration-pack-activities.md
-        items:
-        - name: Create Folder
-          href: create-folder.md
-        - name: Delete File
-          href: delete-file.md
-        - name: Delete Folder
-          href: delete-folder.md
-        - name: Download File
-          href: download-file.md
-        - name: List Folders or Files
-          href: list-folders-or-files.md
-        - name: Rename Folders or Files
-          href: rename-file-or-folder.md
-        - name: Resume File Download
-          href: resume-file-download.md
-        - name: Synchronize Folder or File
-          href: synchronize-folder-or-file.md
-        - name: Upload File
-          href: upload-file.md
-    - name: Hewlett Packard Integrated Lights-Out
-      href: hp-ilo-and-oa-integration-pack.md
+      - name: Invoke REST service
+        href: invoke-rest-service.md
+  - name: SharePoint
+    href: integration-pack-for-microsoft-sharepoint.md
+    items:
+    - name: SharePoint activities
+      href: sharepoint-activities.md
       items:
-      - name: Hewlett Packard Integrated Lights-Out activities
-        href: hp-ilo-and-oa-activities.md
-        items:
-        - name: Run iLO Command
-          href: run-ilo-command.md
-        - name: Run OA Command
-          href: run-oa-command.md
-    - name: Hewlett Packard Operations Manager
-      href: hp-operations-manager-integration-pack.md
+      - name: Create List Item
+        href: create-list-item.md
+      - name: Delete Attachment
+        href: delete-attachment.md
+      - name: Delete Document
+        href: delete-document.md
+      - name: Delete List Item
+        href: delete-list-item.md
+      - name: Download Attachment
+        href: download-attachment.md
+      - name: Download Document
+        href: download-document.md
+      - name: Get Attachments
+        href: get-attachments.md
+      - name: Get Documents
+        href: get-documents.md
+      - name: Get List Items
+        href: get-list-items.md
+      - name: Get View Items
+        href: get-view-items.md
+      - name: Monitor List Items
+        href: monitor-list-items.md
+      - name: Query List
+        href: query-list.md
+      - name: Update List Item
+        href: update-list-item.md
+      - name: Upload Attachment
+        href: upload-attachment-sharepoint.md
+      - name: Upload Document
+        href: upload-document.md
+  - name: VMware vSphere
+    href: vsphere-integration-pack.md
+    items:
+    - name: Deploy the VMware vSphere Integration Pack
+      href: deploying-the-vmware-vsphere-integration-pack.md
+    - name: VMware vSphere activities
+      href: vsphere-activities.md
       items:
-      - name: Hewlett Packard Operations Manager activities
-        href: hp-operations-manager-activities.md
-        items:
-        - name: Acknowledge Message
-          href: acknowledge-message.md
-        - name: Add Annotation To Message
-          href: add-annotation-to-message.md
-        - name: Create Message
-          href: create-message.md
-        - name: Delete Annotation
-          href: delete-annotation.md
-        - name: Delete Custom Attribute
-          href: delete-custom-attribute.md
-        - name: Get Annotation
-          href: get-annotation.md
-        - name: Get Message
-          href: get-message.md
-        - name: Launch Tool
-          href: launch-tool.md
-        - name: Monitor Message
-          href: monitor-message.md
-        - name: Own Or Disown Message
-          href: own-or-disown-message.md
-        - name: Set Custom Attribute
-          href: set-custom-attribute.md
-        - name: Update Annotation
-          href: update-annotation.md
-        - name: Update Message
-          href: update-message.md
-    - name: Hewlett Packard Service Manager Integration Pack
-      href: hp-service-manager-integration-pack.md
+      - name: Add Network Adapter
+        href: add-network-adapter-activity.md
+      - name: Add VM Disk
+        href: add-vm-disk-activity.md
+      - name: Clone Linux VM
+        href: clone-linux-vm-activity.md
+      - name: Clone Windows VM
+        href: clone-windows-vm-activity.md
+      - name: Create vm activity
+        href: create-vm-activity.md
+      - name: Customize VM
+        href: customize-vm-activity.md
+      - name: Delete Network Adapter
+        href: delete-network-adapter-activity-in-system-center-2016.md
+      - name: Delete VM
+        href: delete-vm-activity.md
+      - name: Delete VM Disk
+        href: delete-vmware-vm-disk.md
+      - name: Get Cluster Properties
+        href: get-cluster-properties-activity.md
+      - name: Get Datastore Capacity
+        href: get-datastore-capacity-activity.md
+      - name: Get Host Datastores
+        href: get-host-datastores-activity.md
+      - name: Get Host Properties
+        href: get-host-properties-activity.md
+      - name: Get Hosts
+        href: get-hosts-activity.md
+      - name: Get Resource Pool Properties
+        href: get-resource-pool-properties-activity.md
+      - name: Get Resource Pools
+        href: get-resource-pools-activity.md
+      - name: Get VM List
+        href: get-vm-list-activity.md
+      - name: Get VM Properties
+        href: get-vm-properties-activity.md
+      - name: Get VM Status
+        href: get-vm-status-activity.md
+      - name: Maintenance Mode
+        href: maintenance-mode-activity.md
+      - name: Migrate VM
+        href: migrate-vm-activity.md
+      - name: Modify VM Disk
+        href: modify-vm-disk.md
+      - name: Move VM
+        href: move-vm-activity.md
+      - name: Reconfigure VM
+        href: reconfigure-vm-activity.md
+      - name: Reset VM
+        href: reset-vm-activity.md
+      - name: Revert VM Snapshot
+        href: revert-vm-snapshot-activity.md
+      - name: Set VM CD or DVD to ISO Image
+        href: set-vm-cd-or-dvd-to-iso-image-activity.md
+      - name: Set VM Networks
+        href: set-vm-networks-activity.md
+      - name: Start VM
+        href: start-vm-activity.md
+      - name: Stop VM
+        href: stop-vm-activity.md
+      - name: Suspend VM
+        href: suspend-vm-activity.md
+      - name: Take VM Snapshot
+        href: take-vm-snapshot-activity.md
+  - name: Data Protection Manager
+    href: integration-pack-for-data-protection-manager.md
+    items:
+    - name: Data Protection Manager activities
+      href: data-protection-manager-activities.md
       items:
-      - name: HP Service Manager activities
-        href: hp-service-manager-activities.md
-        items:
-        - name: Close Entry
-          href: close-entry.md
-        - name: Create Entry
-          href: create-entry.md
-        - name: Get Entry
-          href: get-entry.md
-        - name: Monitor Entry
-          href: monitor-entry.md
-        - name: Update Entry
-          href: update-entry.md
-    - name: Netcool Integration Pack
-      href: tivoli-netcool-omnibus-integration-pack.md
+      - name: Create Recovery Point
+        href: create-recovery-point.md
+      - name: Get Data Source
+        href: get-data-source.md
+      - name: Get DPM Server Capacity
+        href: get-dpm-server-capacity.md
+      - name: Get Recovery Point
+        href: get-recovery-point.md
+      - name: Protect Data Source
+        href: protect-data-source.md
+      - name: Recover SharePoint
+        href: recover-sharepoint.md
+      - name: Recover SQL Server
+        href: recover-sql.md
+      - name: Recover VM
+        href: recover-vm.md
+      - name: Run DPM PowerShell Script
+        href: run-dpm-powershell-script.md
+  - name: Configuration Manager
+    href: configuration-manager-integration-pack.md
+    items:
+    - name: Configuration Manager activities
+      href: configuration-manager-activities.md
       items:
-      - name: Deploy the IBM Netcool Tivoli Iteration Pack
-        href: deploying-the-ibm-tivoli-netcool-omnibus-integration-pack.md
-      - name: IBM Netcool activities
-        href: tivoli-netcool-omnibus-activities.md
-        items:
-        - name: Create Alert
-          href: create-alert-activity.md
-        - name: Delete Alert
-          href: delete-alert-activity.md
-        - name: Get Alerts
-          href: get-alerts-activity.md
-        - name: Monitor Alert
-          href: monitor-alerts-activity.md
-        - name: Update Alert
-          href: update-alert-activity.md
-    - name: REST
-      href: representational-state-transfer-rest-integration-pack.md
+      - name: Add Collection Rule
+        href: add-collection-rule.md
+      - name: Create Collection
+        href: create-collection.md
+      - name: Delete Collection
+        href: delete-collection.md
+      - name: Delete Collection Rule
+        href: delete-collection-rule.md
+      - name: Deploy Application
+        href: deploy-application.md
+      - name: Deploy Configuration Baseline
+        href: deploy-configuration-baseline.md
+      - name: Deploy Program
+        href: deploy-program.md
+      - name: Deploy Software Update
+        href: deploy-software-update.md
+      - name: Deploy Task Sequence
+        href: deploy-task-sequence.md
+      - name: Get Collection Member
+        href: get-collection-member.md
+      - name: Get Deployment Status
+        href: get-deployment-status.md
+      - name: Perform Client Action
+        href: perform-client-action.md
+      - name: Query Configuration Manager
+        href: query-configuration-manager.md
+      - name: Update Collection Membership
+        href: update-collection-membership.md
+  - name: Operations Manager
+    href: integration-pack-for-operations-manager.md
+    items:
+    - name: Operations Manager activities
+      href: operations-manager-activities.md
       items:
-      - name: REST activities
-        href: rest-activities.md
-        items:
-        - name: Invoke REST service
-          href: invoke-rest-service.md
-    - name: SharePoint
-      href: integration-pack-for-microsoft-sharepoint.md
+      - name: Create Alert
+        href: create-alert.md
+      - name: Get Alert
+        href: get-alert.md
+      - name: Get Monitor
+        href: get-monitor.md
+      - name: Monitor Alert
+        href: monitor-alert.md
+      - name: Monitor State
+        href: monitor-state.md
+      - name: Start Maintenance Mode
+        href: start-maintenance-mode.md
+      - name: Stop Maintenance Mode
+        href: stop-maintenance-mode.md
+      - name: Update Alert
+        href: update-alert.md
+  - name: Service Manager
+    href: integration-pack-for-service-manager.md
+    items:
+    - name: Service Manager published data
+      href: service-manager-published-data.md
       items:
-      - name: SharePoint activities
-        href: sharepoint-activities.md
-        items:
-        - name: Create List Item
-          href: create-list-item.md
-        - name: Delete Attachment
-          href: delete-attachment.md
-        - name: Delete Document
-          href: delete-document.md
-        - name: Delete List Item
-          href: delete-list-item.md
-        - name: Download Attachment
-          href: download-attachment.md
-        - name: Download Document
-          href: download-document.md
-        - name: Get Attachments
-          href: get-attachments.md
-        - name: Get Documents
-          href: get-documents.md
-        - name: Get List Items
-          href: get-list-items.md
-        - name: Get View Items
-          href: get-view-items.md
-        - name: Monitor List Items
-          href: monitor-list-items.md
-        - name: Query List
-          href: query-list.md
-        - name: Update List Item
-          href: update-list-item.md
-        - name: Upload Attachment
-          href: upload-attachment-sharepoint.md
-        - name: Upload Document
-          href: upload-document.md
-    - name: VMware vSphere
-      href: vsphere-integration-pack.md
+      - name: Service Manager activities
+        href: service-manager-activities.md
+      - name: Classes fields and filters
+        href: classes-fields-and-filters.md
+      - name: Create Change With Template
+        href: create-change-with-template.md
+      - name: Create Incident With Template
+        href: create-incident-with-template.md
+      - name: Create Object
+        href: create-object.md
+      - name: Create Related Object
+        href: create-related-object.md
+      - name: Create Relationship
+        href: create-relationship.md
+      - name: Delete Relationship
+        href: delete-relationship.md
+      - name: Get Activity
+        href: get-activity.md
+      - name: Get Object
+        href: get-object.md
+      - name: Get Relationship
+        href: get-relationship.md
+      - name: Monitor Object
+        href: monitor-object.md
+      - name: Update Activity
+        href: update-activity.md
+      - name: Update Object
+        href: update-object.md
+      - name: Upload Attachment
+        href: upload-attachment.md
+  - name: Virtual Machine Manager
+    href: integration-pack-for-virtual-machine-manager.md
+    items:
+    - name: Virtual Machine Manager activities
+      href: virtual-machine-manager-activities.md
       items:
-      - name: Deploy the VMware vSphere Integration Pack
-        href: deploying-the-vmware-vsphere-integration-pack.md
-      - name: VMware vSphere activities
-        href: vsphere-activities.md
-        items:
-        - name: Add Network Adapter
-          href: add-network-adapter-activity.md
-        - name: Add VM Disk
-          href: add-vm-disk-activity.md
-        - name: Clone Linux VM
-          href: clone-linux-vm-activity.md
-        - name: Clone Windows VM
-          href: clone-windows-vm-activity.md
-        - name: Create vm activity
-          href: create-vm-activity.md
-        - name: Customize VM
-          href: customize-vm-activity.md
-        - name: Delete Network Adapter
-          href: delete-network-adapter-activity-in-system-center-2016.md
-        - name: Delete VM
-          href: delete-vm-activity.md
-        - name: Delete VM Disk
-          href: delete-vmware-vm-disk.md
-        - name: Get Cluster Properties
-          href: get-cluster-properties-activity.md
-        - name: Get Datastore Capacity
-          href: get-datastore-capacity-activity.md
-        - name: Get Host Datastores
-          href: get-host-datastores-activity.md
-        - name: Get Host Properties
-          href: get-host-properties-activity.md
-        - name: Get Hosts
-          href: get-hosts-activity.md
-        - name: Get Resource Pool Properties
-          href: get-resource-pool-properties-activity.md
-        - name: Get Resource Pools
-          href: get-resource-pools-activity.md
-        - name: Get VM List
-          href: get-vm-list-activity.md
-        - name: Get VM Properties
-          href: get-vm-properties-activity.md
-        - name: Get VM Status
-          href: get-vm-status-activity.md
-        - name: Maintenance Mode
-          href: maintenance-mode-activity.md
-        - name: Migrate VM
-          href: migrate-vm-activity.md
-        - name: Modify VM Disk
-          href: modify-vm-disk.md
-        - name: Move VM
-          href: move-vm-activity.md
-        - name: Reconfigure VM
-          href: reconfigure-vm-activity.md
-        - name: Reset VM
-          href: reset-vm-activity.md
-        - name: Revert VM Snapshot
-          href: revert-vm-snapshot-activity.md
-        - name: Set VM CD or DVD to ISO Image
-          href: set-vm-cd-or-dvd-to-iso-image-activity.md
-        - name: Set VM Networks
-          href: set-vm-networks-activity.md
-        - name: Start VM
-          href: start-vm-activity.md
-        - name: Stop VM
-          href: stop-vm-activity.md
-        - name: Suspend VM
-          href: suspend-vm-activity.md
-        - name: Take VM Snapshot
-          href: take-vm-snapshot-activity.md
-    - name: Data Protection Manager
-      href: integration-pack-for-data-protection-manager.md
-      items:
-      - name: Data Protection Manager activities
-        href: data-protection-manager-activities.md
-        items:
-        - name: Create Recovery Point
-          href: create-recovery-point.md
-        - name: Get Data Source
-          href: get-data-source.md
-        - name: Get DPM Server Capacity
-          href: get-dpm-server-capacity.md
-        - name: Get Recovery Point
-          href: get-recovery-point.md
-        - name: Protect Data Source
-          href: protect-data-source.md
-        - name: Recover SharePoint
-          href: recover-sharepoint.md
-        - name: Recover SQL Server
-          href: recover-sql.md
-        - name: Recover VM
-          href: recover-vm.md
-        - name: Run DPM PowerShell Script
-          href: run-dpm-powershell-script.md
-    - name: Configuration Manager
-      href: configuration-manager-integration-pack.md
-      items:
-      - name: Configuration Manager activities
-        href: configuration-manager-activities.md
-        items:
-        - name: Add Collection Rule
-          href: add-collection-rule.md
-        - name: Create Collection
-          href: create-collection.md
-        - name: Delete Collection
-          href: delete-collection.md
-        - name: Delete Collection Rule
-          href: delete-collection-rule.md
-        - name: Deploy Application
-          href: deploy-application.md
-        - name: Deploy Configuration Baseline
-          href: deploy-configuration-baseline.md
-        - name: Deploy Program
-          href: deploy-program.md
-        - name: Deploy Software Update
-          href: deploy-software-update.md
-        - name: Deploy Task Sequence
-          href: deploy-task-sequence.md
-        - name: Get Collection Member
-          href: get-collection-member.md
-        - name: Get Deployment Status
-          href: get-deployment-status.md
-        - name: Perform Client Action
-          href: perform-client-action.md
-        - name: Query Configuration Manager
-          href: query-configuration-manager.md
-        - name: Update Collection Membership
-          href: update-collection-membership.md
-    - name: Operations Manager
-      href: integration-pack-for-operations-manager.md
-      items:
-      - name: Operations Manager activities
-        href: operations-manager-activities.md
-        items:
-        - name: Create Alert
-          href: create-alert.md
-        - name: Get Alert
-          href: get-alert.md
-        - name: Get Monitor
-          href: get-monitor.md
-        - name: Monitor Alert
-          href: monitor-alert.md
-        - name: Monitor State
-          href: monitor-state.md
-        - name: Start Maintenance Mode
-          href: start-maintenance-mode.md
-        - name: Stop Maintenance Mode
-          href: stop-maintenance-mode.md
-        - name: Update Alert
-          href: update-alert.md
-    - name: Service Manager
-      href: integration-pack-for-service-manager.md
-      items:
-      - name: Service Manager published data
-        href: service-manager-published-data.md
-        items:
-        - name: Service Manager activities
-          href: service-manager-activities.md
-        - name: Classes fields and filters
-          href: classes-fields-and-filters.md
-        - name: Create Change With Template
-          href: create-change-with-template.md
-        - name: Create Incident With Template
-          href: create-incident-with-template.md
-        - name: Create Object
-          href: create-object.md
-        - name: Create Related Object
-          href: create-related-object.md
-        - name: Create Relationship
-          href: create-relationship.md
-        - name: Delete Relationship
-          href: delete-relationship.md
-        - name: Get Activity
-          href: get-activity.md
-        - name: Get Object
-          href: get-object.md
-        - name: Get Relationship
-          href: get-relationship.md
-        - name: Monitor Object
-          href: monitor-object.md
-        - name: Update Activity
-          href: update-activity.md
-        - name: Update Object
-          href: update-object.md
-        - name: Upload Attachment
-          href: upload-attachment.md
-    - name: Virtual Machine Manager
-      href: integration-pack-for-virtual-machine-manager.md
-      items:
-      - name: Virtual Machine Manager activities
-        href: virtual-machine-manager-activities.md
-        items:
-        - name: Apply Pending Service Update
-          href: apply-pending-service-update.md
-        - name: Configure Service Deployment
-          href: configure-service-deployment.md
-        - name: Create Checkpoint
-          href: create-checkpoint.md
-        - name: Create Network Adapter
-          href: create-network-adapter.md
-        - name: Create New Disk From VHD
-          href: create-new-disk-from-vhd.md
-        - name: Create New Disk
-          href: create-new-disk.md
-        - name: Create User Role
-          href: create-user-role.md
-        - name: Create VM From Template
-          href: create-vm-from-template.md
-        - name: Create VM From VHD
-          href: create-vm-from-vhd.md
-        - name: Create VM From VM
-          href: create-vm-from-vm.md
-        - name: Delete VM disk activity
-          href: delete-vm-disk-activity-in-system-center-2016.md
-        - name: Deploy Service
-          href: deploy-service.md
-        - name: Get Checkpoint
-          href: get-checkpoint.md
-        - name: Get Cloud
-          href: get-cloud.md
-        - name: Get Disk
-          href: get-disk.md
-        - name: Get Network Adapter
-          href: get-network-adapter.md
-        - name: Get Service Configuration
-          href: get-service-configuration.md
-        - name: Get Service
-          href: get-service.md
-        - name: Get Service template
-          href: get-service-template.md
-        - name: Get Tier
-          href: get-tier.md
-        - name: Get User Role Quota
-          href: get-user-role-quota.md
-        - name: Get User Role
-          href: get-user-role.md
-        - name: Get VM Host
-          href: get-vm-host.md
-        - name: Get VM Network
-          href: get-vm-network.md
-        - name: Get VM Subnet
-          href: get-vm-subnet.md
-        - name: Get VM
-          href: get-vm.md
-        - name: Manage Checkpoint
-          href: manage-checkpoint.md
-        - name: Modify VM disk activity
-          href: modify-vm-disk-activity-in-system-center-2016.md
-        - name: Monitor VMM Job
-          href: monitor-vmm-job-in-system-center-2016.md
-        - name: Move VM
-          href: move-vm.md
-        - name: Remove User Role
-          href: remove-user-role.md
-        - name: Remove VM
-          href: remove-vm.md
-        - name: Repair VM
-          href: repair-vm.md
-        - name: Resume VM
-          href: resume-vm.md
-        - name: Run VMM PowerShell Script
-          href: run-vmm-powershell-script.md
-        - name: Scale Tier In
-          href: scale-tier-in.md
-        - name: Scale Tier Out
-          href: scale-tier-out.md
-        - name: Set Pending Service Update
-          href: set-pending-service-update.md
-        - name: Shut Down VM
-          href: shut-down-vm.md
-        - name: Start VM
-          href: start-vm.md
-        - name: Stop Service
-          href: stop-service.md
-        - name: Stop VM
-          href: stop-vm.md
-        - name: Suspend VM
-          href: suspend-vm.md
-        - name: Update Disk
-          href: update-disk.md
-        - name: Update Network Adapter
-          href: update-network-adapter.md
-        - name: Update User Role Property
-          href: update-user-role-property.md
-        - name: Update User Role Quota
-          href: update-user-role-quota.md
-        - name: Update VM
-          href: update-vm.md
-  - name: Orchestrator logs
-    href: orchestrator-logs.md
+      - name: Apply Pending Service Update
+        href: apply-pending-service-update.md
+      - name: Configure Service Deployment
+        href: configure-service-deployment.md
+      - name: Create Checkpoint
+        href: create-checkpoint.md
+      - name: Create Network Adapter
+        href: create-network-adapter.md
+      - name: Create New Disk From VHD
+        href: create-new-disk-from-vhd.md
+      - name: Create New Disk
+        href: create-new-disk.md
+      - name: Create User Role
+        href: create-user-role.md
+      - name: Create VM From Template
+        href: create-vm-from-template.md
+      - name: Create VM From VHD
+        href: create-vm-from-vhd.md
+      - name: Create VM From VM
+        href: create-vm-from-vm.md
+      - name: Delete VM disk activity
+        href: delete-vm-disk-activity-in-system-center-2016.md
+      - name: Deploy Service
+        href: deploy-service.md
+      - name: Get Checkpoint
+        href: get-checkpoint.md
+      - name: Get Cloud
+        href: get-cloud.md
+      - name: Get Disk
+        href: get-disk.md
+      - name: Get Network Adapter
+        href: get-network-adapter.md
+      - name: Get Service Configuration
+        href: get-service-configuration.md
+      - name: Get Service
+        href: get-service.md
+      - name: Get Service template
+        href: get-service-template.md
+      - name: Get Tier
+        href: get-tier.md
+      - name: Get User Role Quota
+        href: get-user-role-quota.md
+      - name: Get User Role
+        href: get-user-role.md
+      - name: Get VM Host
+        href: get-vm-host.md
+      - name: Get VM Network
+        href: get-vm-network.md
+      - name: Get VM Subnet
+        href: get-vm-subnet.md
+      - name: Get VM
+        href: get-vm.md
+      - name: Manage Checkpoint
+        href: manage-checkpoint.md
+      - name: Modify VM disk activity
+        href: modify-vm-disk-activity-in-system-center-2016.md
+      - name: Monitor VMM Job
+        href: monitor-vmm-job-in-system-center-2016.md
+      - name: Move VM
+        href: move-vm.md
+      - name: Remove User Role
+        href: remove-user-role.md
+      - name: Remove VM
+        href: remove-vm.md
+      - name: Repair VM
+        href: repair-vm.md
+      - name: Resume VM
+        href: resume-vm.md
+      - name: Run VMM PowerShell Script
+        href: run-vmm-powershell-script.md
+      - name: Scale Tier In
+        href: scale-tier-in.md
+      - name: Scale Tier Out
+        href: scale-tier-out.md
+      - name: Set Pending Service Update
+        href: set-pending-service-update.md
+      - name: Shut Down VM
+        href: shut-down-vm.md
+      - name: Start VM
+        href: start-vm.md
+      - name: Stop Service
+        href: stop-service.md
+      - name: Stop VM
+        href: stop-vm.md
+      - name: Suspend VM
+        href: suspend-vm.md
+      - name: Update Disk
+        href: update-disk.md
+      - name: Update Network Adapter
+        href: update-network-adapter.md
+      - name: Update User Role Property
+        href: update-user-role-property.md
+      - name: Update User Role Quota
+        href: update-user-role-quota.md
+      - name: Update VM
+        href: update-vm.md
+- name: Orchestrator logs
+  href: orchestrator-logs.md
