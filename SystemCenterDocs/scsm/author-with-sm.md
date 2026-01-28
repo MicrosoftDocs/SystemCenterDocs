@@ -85,9 +85,14 @@ After you modify or create a management pack, you must save it and then import i
 
 Before you set up the Authoring Tool in Service Manager, ensure that the server on which you plan to install the Authoring Tool meets all the following server and operating system requirements.  
 
+::: moniker range="sc-sm-2025"
+
 ##### Server requirements  
 
-You can install the Authoring Tool on a server that hosts the Service Manager management server, or you can install it on a separate server.  
+Install the Authoring Tool on a server that does not host the Service Manager management server. 
+
+::: moniker-end
+
 
 ##### Operating system requirements  
 
