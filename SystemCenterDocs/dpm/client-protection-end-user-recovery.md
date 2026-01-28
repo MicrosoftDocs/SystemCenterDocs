@@ -52,9 +52,9 @@ To allow administrators and designated users to recover their own files, follow 
 8. For each client machine, add permissions for each administrator and other user accounts (optionally) who must be able to recover their own file.
 
       1. Select one of the machine accounts > **Role Assignments** and then select **guid$client** object.
-         2. Under **Name**, right-click **guid$client** entry and select **Properties**.
+      2. Under **Name**, right-click **guid$client** entry and select **Properties**.
       3. Select **Members** tab and then select **Select…** to add the users.
-         4. Add the domain administrator and any other domain users, and then select **Check Names**.
+      4. Add the domain administrator and any other domain users, and then select **Check Names**.
       5. Select **OK**.
      
       :::image type="content" source="media/client-protection-end-user-recovery/console-inline.png" alt-text="Screenshot of Data Protection Manager console." lightbox="media/client-protection-end-user-recovery/console-expanded.png":::
