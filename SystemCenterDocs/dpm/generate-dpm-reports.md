@@ -1,26 +1,27 @@
 ---
-description: This article describes how to create DPM reports using SQL Server Reporting Services.
+description: This article describes how to create Data Protection Manager reports using SQL Server Reporting Services.
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Generate DPM reports
+ms.date: 01/28/2026
+title: Generate Data Protection Manager reports
 ms.subservice: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Generate DPM reports
 
-System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
+System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, manage settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 
 ## DPM reports
 
 DPM provides many different reports:
 
-- **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
+- **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. Use this report to track and verify recovery point metrics.
 
 - **Protection report**: Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
 
@@ -28,7 +29,7 @@ DPM provides many different reports:
 
 - **Disk utilization report**: Summarizes disk capacity, disk allocation, and disk usage in the DPM storage pool. Use this report to identify trends in disk usage and make decisions about modifying space allocations.
 
-- **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
+- **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning and to verify that the free media threshold isn't exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
 
@@ -81,7 +82,7 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_Media**|LibraryName|String|The name of the library in which the tape exists.<br /><br />NULL if tape is offline|
 |**Vw_DPM_Media**|MediaSlotNumber|Integer|The slot number in which the tape exists.<br /><br />NULL if tape is offline<br /><br />If in a drive, this represents the home slot of the tape (to which the tape returns on a dismount).|
 |**Vw_DPM_Media**|PGName|String|The name of the protection group in which the tape exists.|
-|**Vw_DPM_Media**|MediaExpiryDate|Date and time|The time when all data sets on this tape will expire.<br /><br />Can have the date in the past or NULL if the tape is free.|
+|**Vw_DPM_Media**|MediaExpiryDate|Date and time|The time when all data sets on this tape expire.<br /><br />Can have the date in the past or NULL if the tape is free.|
 |**Vw_DPM_MediaPool_Media**<br /><br />Tape counts for a given library.|LibraryName|String|The name of the library|
 |**Vw_DPM_MediaPool_Media**|FreeMedia|Integer|Number of tapes that are free in this library|
 |**Vw_DPM_MediaPool_Media**|FreeMediaThreshold|Integer|The threshold below which this library generates an alert|
@@ -102,7 +103,7 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_RecoveryJob**<br /><br />Detailed information about recent recovery jobs.|DataSourceName|String|The data source for which recovery was run|
 |**Vw_DPM_RecoveryJob**|ServerName|String|The server to which recovery was performed|
 |**Vw_DPM_RecoveryJob**|CreationTime|Date and time|Time at which the recovery job was run|
-|**Vw_DPM_RecoveryJob**|FailureCode|Integer|Error code in case of failure of the recovery job|
+|**Vw_DPM_RecoveryJob**|FailureCode|Integer|Error code in case failure of the recovery job|
 |**Vw_DPM_RecoveryJob**|Status|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|Status of the recovery job|
 |**Vw_DPM_RecoveryPointDisk**<br /><br />Status of recent recovery point creation jobs on disk.|String|The data source for which the backup was created|String|
 |**Vw_DPM_RecoveryPointDisk**|String|The server on which the data source exists|String|
@@ -127,8 +128,8 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_Server**|DomainName|String|Domain in which the computer belongs|
 |**Vw_DPM_Server**|IsRG|Integer|If this computer represents a Resource Group|
 |**Vw_DPM_TapeRecoveryPoints**<br /><br />Counts for tape recovery points available for each data source.|DataSourceName|String|The name of the protected data source|
-|**Vw_DPM_TapeRecoveryPoints**|PGId|GUID|The unique identifierentifier for the protection group to which this data source belongs|
-|**Vw_DPM_TapeRecoveryPoints**|ServerId|GUID|The unique identifierentifier for the server to which this data source belongs|
+|**Vw_DPM_TapeRecoveryPoints**|PGId|GUID|The unique identifier for the protection group to which this data source belongs|
+|**Vw_DPM_TapeRecoveryPoints**|ServerId|GUID|The unique identifier for the server to which this data source belongs|
 |**Vw_DPM_TapeRecoveryPoints**|Frequency|Integer|The number of available recovery points|
 |**Vw_DPM_TapeRecoveryPoints**|Term|Integer<br /><br />0 = ShortTerm; 1 = LongTerm|The schedule to which the recovery point corresponds|
 |**Vw_DPM_TapeStat**<br /><br />Historical information on tape usage counts.|StartDateTime|Date and time||
@@ -147,7 +148,7 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_Total_Disk_Trend**|ScheduleType|Integer|Integer<br /><br />0 = Weekly<br /><br />1 = Monthly<br /><br />2 = Quarterly<br /><br />3 = Yearly|
 |**Vw_DPM_Total_Disk_Trend**|DiskSpaceCapacity|Big integer|The total storage in storage pool at end-time|
 |**Vw_DPM_Total_Disk_Trend**|PreviousDiskSpaceCapacity|Big integer|Total storage in storage pool in previous corresponding period|
-|**Vw_DPM_Total_Disk_Trend**|DiskSpaceAllocated|Big integer|The disk space from storage pool that has been allocated|
+|**Vw_DPM_Total_Disk_Trend**|DiskSpaceAllocated|Big integer|The disk space from storage pool that you allocated|
 |**Vw_DPM_Total_Disk_Trend**|PreviousDiskSpaceAllocated|Big integer|The disk space from storage pool that was allocated in the previous corresponding period|
 |**Vw_DPM_Total_Disk_Trend**|DiskSpaceUsed|Big integer|The actual disk space usage|
 |**Vw_DPM_Total_Disk_Trend**|PreviousDiskSpaceUsed|Big integer|The used disk space in the previous corresponding period|
@@ -163,7 +164,7 @@ Select the required tab for steps to schedule, view, print, or send reports:
 
 # [Schedule reports](#tab/Schedule)
 
-Reports aren't scheduled by default in DPM. To start creating and saving historical reports, create a report schedule. Each report type has an independent schedule. A report only has a single schedule. Schedule a report as follows:
+DPM doesn't schedule reports by default. To start creating and saving historical reports, create a report schedule. Each report type has an independent schedule. A report only has a single schedule. Schedule a report as follows:
 
 1. In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and select **Schedule**.
 
@@ -173,13 +174,13 @@ Reports aren't scheduled by default in DPM. To start creating and saving histori
 
 # [View reports](#tab/View)
 
-In the DPM Administrator Console, you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
+In the DPM Administrator Console, you can display both new and historical reports in Internet Explorer. Use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
 
-1. You can request a new report with the following settings:
+1. Request a new report by using the following settings:
 
-    - Display - You can view a report group by protected computer or protection group.
+    - Display - View a report group by protected computer or protection group.
 
-    - You can specify or exclude a specific time period. You can set report granularity as follows:
+    - Specify or exclude a specific time period. Set report granularity as follows:
 
         - Week - Seven days - from Sunday through Saturday
 
@@ -189,14 +190,14 @@ In the DPM Administrator Console, you can display both new and historical report
 
         - Annual - January 1 to December 31 of a particular year
 
-2. You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report so that you can retain the maximum number of copies at all times.
+2. View an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that the process saves replaces the oldest copy of the report so that you can retain the maximum number of copies at all times.
 
 # [Print reports](#tab/Print)
 
-Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats aren't editable, so you can't modify the report to fit other paper sizes.
+Reports in DPM are designed to print on A4 paper without splitting the information horizontally across pages. You can't edit the MHTML and PDF formats, so you can't modify the report to fit other paper sizes.
 
 > [!NOTE]
-> If you experience any issues with reports on fitting on A4 paper, try changing the dimensions of the report page width to 8.27 in and the height to 11.69 in. See details on how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
+> If you have problems with reports fitting on A4 paper, try changing the dimensions of the report page width to 8.27 in and the height to 11.69 in. For more information, see Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
 
 #### Print MHTML reports
 
@@ -206,7 +207,7 @@ Follow these steps to print MHTML reports:
 
 2. Set paper size to A4 and select **Orientation** > **Portrait**.
 
-3. Set **Margins** to values no greater than the following (in inches): **Left:** 0.11, **Right:** 0.11, **Top:** 0.11, **Bottom:** 0.11. Then print the report.
+3. Set **Margins** to values no greater than the following values (in inches): **Left:** 0.11, **Right:** 0.11, **Top:** 0.11, **Bottom:** 0.11. Then print the report.
 
 #### Print a PDF report
 
@@ -220,7 +221,7 @@ Follow these steps to print PDF reports:
 
 #### Print a report using Microsoft Excel
 
-Follow these steps to print reports using Microsoft Excel:
+Follow these steps to print reports by using Microsoft Excel:
 
 1. Open the file in Excel.
 
@@ -238,17 +239,17 @@ Follow these steps to print reports using Microsoft Excel:
 
 You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports, do the following:
 
-1. Specify the SMTP server that DPM will use to send reports.
+1. Specify the SMTP server that DPM uses to send reports.
 
 2. In the Reporting view, on the display pane, right-click the report to which you want to subscribe and select **Schedule**.
 
-3. On the **E-mail** tab, in **Recipients**, enter the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
+3. On the **E-mail** tab, in **Recipients**, enter the email addresses of all the subscribers. Add only email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 
 ---
 
 ## Generate DPM reports in Operations Manager
 
-Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information, you can use predefined views or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
+Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information, you can use predefined views or search for data and objects by using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
 DPM provides many predefined views that you can use to search more simply than defining your own query or filter.
 
 DPM provides many predefined views that you can use to search more simply than defining your own query or filter.
