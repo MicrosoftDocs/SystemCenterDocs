@@ -61,4 +61,4 @@ To allow administrators and designated users to recover their own files, follow 
 
 After you complete these steps for each client machine, the administrator and other added users can recover data from any new recovery points that are created after you add them.
 
-:::image type="content" source="media/client-protection-end-user-recovery/client.png" alt-text="Screenshot of client.":::
+:::image type="content" source="media/client-protection-end-user-recovery/client-recovery-tab.png" alt-text="Screenshot of client.":::
