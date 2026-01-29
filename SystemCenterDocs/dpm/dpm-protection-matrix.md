@@ -3,7 +3,7 @@ description: A complete matrix of all workloads, data types, and installations t
 ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 10/13/2025
+ms.date: 01/29/2026
 ms.update-cycle: 180-days
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
@@ -118,7 +118,7 @@ The following sections provide details of the protection support matrix for DPM:
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
+|Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.<br /><br />**Note**: Item Level Recovery isn't supported for Virtual Machine volumes that have BitLocker enabled.|
 |VMware VMs | VMware server 6.0, 6.5, 6.7, 7.0, 8.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.<br /><br />vSphere 6.0 isn't supported in 2022 UR1 and later. <br/><br/>vSphere 8.0 is supported from 2022 UR2.|
 
 ### Linux
@@ -146,7 +146,7 @@ The following sections provide details of the protection support matrix for DPM:
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2025, 2022, 2019|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
+|Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2025, 2022, 2019|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.<br /><br/>**Note**: Item Level Recovery isn't supported for Virtual Machine volumes that have BitLocker enabled.|
 |VMware VMs | VMware server 6.5, 6.7, 7.0, 8.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.|
 
 ### Linux
