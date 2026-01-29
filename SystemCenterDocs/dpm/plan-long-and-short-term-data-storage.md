@@ -3,9 +3,10 @@ description: Information to help you identify your storage needs and to prepare 
 ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 01/29/2026
 title: Prepare data storage
 ms.subservice: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -14,7 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Prepare data storage
 
-A major part of your System Center Data Protection Manager (DPM) deployment will be figuring out how to store data backed-up by DPM. Learn about:
+A major part of your System Center Data Protection Manager (DPM) deployment is figuring out how to store data backed up by DPM. Learn about:
 
 - [Add Modern Backup Storage](add-storage.md)
 
@@ -28,34 +29,34 @@ A major part of your System Center Data Protection Manager (DPM) deployment will
 
 ## <a name="BKMK_Storage"></a>Short and long-term storage overview
 
-In DPM, you'll need to select short and long-term storage for backed up data.
+In DPM, you select short and long-term storage for backed up data.
 
 |Storage|Short-term|Long-term|Characteristics|
 |-----------|---------------|--------------|-------------------|
 |Azure cloud|Suitable for short-term storage|Suitable for long-term storage|-   Efficient and cost-effective offsite storage solution for short and long-term storage.<br />-   Azure can be used as storage for Hyper-V, SQL Server, and file server data. Azure can only be used to back up data from servers running Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 with SP1.<br />-   DPM must be running on System Center 2012 SP1 or later to use Azure Backup.|
-|Tape|Some workloads can be backed-up directly to tape (D2T) for short-term storage.<br /><br />These include file data (volumes, shares, folders), system state, SQL Server, Hyper-V, and Exchange databases not configured on a DAG.|All workloads can be backed up to tape for long-term offsite storage (D2D2T)|-   Short-term backup to tape might be useful for data that doesn't change often and thus doesn't require frequent backup.<br />-   Long-term offsite tape storage is useful for data, which must be kept to fulfill statutory obligations<br />-   If you're using tape for both long-term and short-term protection, DPM creates copies of the latest short-term full backup to generate the long-term tape backup. We recommend that you schedule the short-term protection backup to run a day before the long-term backup. That way you can be sure you're using the latest short-term backup to create the long-term backup.<br />-   If you're using disk for short-term backup and tape for long-term, the long-term backup will be taken from the disk replica.<br />-   Data recovery from tape might be slow, and thus better suited to data with a high recovery point objective (RPO) that doesn't need to be accessed and recovered within a short critical period after failure.<br />-   You can't free up or erase a tape that contains valid recovery points. You'll need to remove the sources from a protection group and expire the recovery points or modify the protection group settings to clear tape protection. To expire a tape, you mark it as free and then unmark it and recatalog.<br />-   Tape backup and recovery might require manual intervention such as tape rotations.<br />-   Long-term storage capacity can be increased by adding more tapes.<br />-   A tape library or standalone tape drive must be physically attached to the DPM server. The tape library can be direct SCSI attached or SAN.|
-|Disk|All data backed-up to DPM can be stored on disk for short-term storage (D2D)|No long-term storage on disk.|-   Disks provide a quick method of data backup and recovery. It's useful for data that has a low RPO and thus needs to be recovered quickly after failure.<br />-   Disks can provide redundancy using disk technologies such as RAID.<br />-   Maximum disk retention is 448 days.<br />-   Disk backup has no impact on running workloads.|
+|Tape|Some workloads back up directly to tape (D2T) for short-term storage.<br /><br />These workloads include file data (volumes, shares, folders), system state, SQL Server, Hyper-V, and Exchange databases not configured on a DAG.|All workloads back up to tape for long-term offsite storage (D2D2T)|-   Short-term backup to tape might be useful for data that doesn't change often and thus doesn't require frequent backup.<br />-   Long-term offsite tape storage is useful for data, which must be kept to fulfill statutory obligations<br />-   If you're using tape for both long-term and short-term protection, DPM creates copies of the latest short-term full backup to generate the long-term tape backup. Schedule the short-term protection backup to run a day before the long-term backup. That way you can be sure you're using the latest short-term backup to create the long-term backup.<br />-   If you're using disk for short-term backup and tape for long-term, the long-term backup takes from the disk replica.<br />-   Data recovery from tape might be slow, and thus better suited to data with a high recovery point objective (RPO) that doesn't need to be accessed and recovered within a short critical period after failure.<br />-   You can't free up or erase a tape that contains valid recovery points. You need to remove the sources from a protection group and expire the recovery points or modify the protection group settings to clear tape protection. To expire a tape, you mark it as free and then unmark it and recatalog.<br />-   Tape backup and recovery might require manual intervention such as tape rotations.<br />-   Long-term storage capacity can be increased by adding more tapes.<br />-   A tape library or standalone tape drive must be physically attached to the DPM server. The tape library can be direct SCSI attached or SAN.|
+|Disk|All data backed up to DPM stores on disk for short-term storage (D2D)|No long-term storage on disk.|-   Disks provide a quick method of data backup and recovery. It's useful for data that has a low RPO and thus needs to be recovered quickly after failure.<br />-   Disks can provide redundancy using disk technologies such as RAID.<br />-   Maximum disk retention is 448 days.<br />-   Disk backup has no impact on running workloads.|
 
 ## <a name="BKMK_Azure"></a>Prepare cloud storage (Azure Backup)
 
-You can back up protected DPM data to Azure using the Azure Backup service. This is useful in a couple of scenarios:
+You can back up protected DPM data to Azure by using the Azure Backup service. This feature is useful in a couple of scenarios:
 
-- **DPM is deployed on-premises as a physical server or virtual machine** - If you deploy DPM as a physical server or as an on-premises Hyper-V virtual machine you can back up data with Azure Backup in addition to backing data up to disk and tape.
+- **DPM is deployed on-premises as a physical server or virtual machine** - If you deploy DPM as a physical server or as an on-premises Hyper-V virtual machine, you can back up data by using Azure Backup in addition to backing up data to disk and tape.
 
-- **DPM is deployed as a virtual machine in Azure** - If DPM is deployed as an Azure virtual machine (possible from System Center 2012 R2 with Update 3) you can back up data to Azure disks attached to the DPM Azure virtual machine and then offload data storage with backup to Azure Backup.
+- **DPM is deployed as a virtual machine in Azure** - If you deploy DPM as an Azure virtual machine (possible from System Center 2012 R2 with Update 3), you can back up data to Azure disks attached to the DPM Azure virtual machine and then offload data storage by using backup to Azure Backup.
 
 When you set up a protection group in DPM, you select the disk for short-term storage and then you enable online backup to Azure.  Note that:
 
 - There are a number of prerequisites and limitations. [Read more](/azure/backup/backup-azure-dpm-introduction#requirements-and-limitations).
 
-- You'll need to set up Azure Backup before you enable backup to the cloud for a protection group in the DPM console. [Learn](/azure/backup/backup-azure-dpm-introduction) how to set up Azure Backup with DPM.
+- You need to set up Azure Backup before you enable backup to the cloud for a protection group in the DPM console. [Learn](/azure/backup/backup-azure-dpm-introduction) how to set up Azure Backup with DPM.
 
 ## <a name="BKMK_Disk"></a>Prepare disk storage
 
-DPM backs up data to disk for short-term storage by saving data to the DPM storage pool. The storage pool is the set of disks and volumes on which the DPM  server stores the recovery points for the protected data. Before you can store data on a disk, you'll need at least one disk or volume in a storage pool. You can use any of the following for the storage pool:
+DPM backs up data to disk for short-term storage by saving data to the DPM storage pool. The storage pool is the set of disks and volumes on which the DPM  server stores the recovery points for the protected data. Before you can store data on a disk, you need at least one disk or volume in a storage pool. You can use any of the following options for the storage pool:
 
 > [!NOTE]
-> Network-attached storage (NAS)  and thin provisioned virtual disks are not supported for use in the DPM storage pool.
+> Network-attached storage (NAS) and thin provisioned virtual disks aren't supported for use in the DPM storage pool.
 
 - Direct attached storage (DAS)
 
@@ -67,11 +68,11 @@ DPM backs up data to disk for short-term storage by saving data to the DPM stora
 
 |Best practice|Details|
 |-----------------|-----------|
-|Disk limitations|-   The DPM server needs at least two disks installed. A dedicated disk for the startup, system, and DPM installation files; and one dedicated to the storage pool. In DPM, a disk is defined as any disk device manifested as a disk in the Windows Disk Management tool. DPM does not add any disks containing startup files, system files, or any component of the DPM installation to the storage pool.<br />-   Disks added to the storage pool shouldn't have partitions. To prepare disks, DPM reformats the disks and erases any data.<br />- The storage pool supports most disk types, including IDE,  SATA, and SCSI, and the storage pool supports both the master boot record (MBR) and GUID partition table (GPT) partition styles. Microsoft strongly recommends you use GPT disks.<br />- If you use a SAN for the storage pool, Microsoft recommends you create a separate zone for the disk and tape. Don't mix devices in a single zone.<br />-   DPM doesn't support USB/1394 disks in the storage pool.<br />- Some original equipment manufacturers (OEMs) include a diagnostic partition installed from the media they provide. The diagnostic partition can also be named the OEM partition, or the EISA partition. EISA partitions must be removed from disks before you can add the disk to the storage pool.<br />-   You can substitute custom volumes that you define in Disk Management for volumes in the storage pool.<br />-   We recommend you use extensible hardware so you can add more capacity if you need to.|
+|Disk limitations|-   The DPM server needs at least two disks installed. Use a dedicated disk for the startup, system, and DPM installation files, and one dedicated disk for the storage pool. In DPM, a disk is any disk device that appears as a disk in the Windows Disk Management tool. DPM doesn't add to the storage pool any disks that contain startup files, system files, or any component of the DPM installation.<br />-   Don't add partitions to disks in the storage pool. DPM prepares disks by reformatting them and erasing any data.<br />- The storage pool supports most disk types, including IDE, SATA, and SCSI. It supports both the master boot record (MBR) and GUID partition table (GPT) partition styles. Microsoft strongly recommends you use GPT disks.<br />- If you use a SAN for the storage pool, create a separate zone for the disk and tape. Don't mix devices in a single zone.<br />-   DPM doesn't support USB/1394 disks in the storage pool.<br />- Some original equipment manufacturers (OEMs) include a diagnostic partition installed from the media they provide. The diagnostic partition can also be named the OEM partition, or the EISA partition. You must remove EISA partitions from disks before you can add the disk to the storage pool.<br />-   You can substitute custom volumes that you define in Disk Management for volumes in the storage pool.<br />-   Use extensible hardware so you can add more capacity if you need to.|
 |Dedup support|DPM running as a Hyper-V virtual machine can store backup data to VHDs in shared folders on a Windows File Server with data deduplication enabled. For more information, see [Deduplicate DPM storage](~/dpm/deduplicate-dpm-storage.md).|
 |Capacity requirements|Capacity requirements depend primarily on the size of protected data, the daily recovery point size, the expected volume data growth rate, and retention range objectives.<br /><br />Daily recovery point size refers to the total size of changes made to protected data during a single day. It is roughly equivalent to the size of an incremental backup. Retention range refers to the number of days for which you want to store recovery points of protected data on disk. For files, DPM can store a maximum of 64 recovery points for each volume included in a protection group, and it can create a maximum of 8 scheduled recovery points for each protection group each day.<br /><br />The retention range is the number of days you want to store recovery points of protected data on disk. For files, DPM can store a maximum of 64 recovery points for each volume included in a protection group, and it can create a maximum of 8 scheduled recovery points for each protection group each day. The limit of 64 recovery points for files is a Volume Shadow Copy Service (VSS) limitation. The recovery point limit doesn't apply to application data.<br /><br />We recommend you make the storage pool twice the size of the protected data. This assumes a daily recovery point size that's 10% of the protected data size and a 10 days retention range. To get a good estimate of size, review an incremental backup for an average day. For example, if the incremental backup for 100 GB of data includes 10 GB of data, your daily recovery point size will probably be around 10 GB. You'll need to adjust for the 10% and 10-day estimation doesn't work for your organization.<br /><br />Note that the longer your retention range, the fewer recovery points you can create each day. For example, if your retention range objective is 64 days, you can create just one recovery point each day. If it's 8 days, you can create 8 recovery points each day. With a retention range objective of 10 days, you can create approximately 6 recovery points a day.|
-|Disk configuration|If you're using direct-attached storage for the  storage pool, you can use any hardware-based configuration of a redundant array of independent disks (RAID), or you can use a "just a bunch of disks" (JBOD) configuration. Don't create a software-based RAID configuration on disks that you will add to the storage pool.<br /><br />To decide on disk configuration, consider the relative importance of capacity, cost, reliability, and performance in your environment. For example, because JBOD doesn't consume disk space for storing parity data, it'll make maximum use of storage capacity. For the same reason, the reliability of JBOD configurations is poor; a single disk failure inevitably results in data loss.<br /><br />For a typical deployment, DPM recommends a RAID 5 configuration, which offers an effective compromise between capacity, cost, reliability, and performance.<br /><br />To help you evaluate options for configuring the disks in your storage pool, the table below compares the trade-offs between JBOD and the various levels of RAID, on a scale from 4 (very good) to 1 (acceptable).|
-|Custom values|In some cases you might want to use a custom volume, where a custom volume isn't in the storage pool and is used to store the replica and recovery points for a protection group member. For example, you might want a greater amount of control over storage for specific data sources or critical data needs to be stored using a high-performance LUN on a SAN.<br /><br />Any volume that's attached to the DPM server can be selected as a custom volume, except the volume that contains the system and program files. To use custom volumes for a protection group member, two custom volumes must be available: one volume to store the replica and one volume to store the recovery points.<br /><br />DPM can't manage the space in custom volumes. If DPM alerts you that a custom replica volume or recovery point volume is running out of space, you'll need to manually change the size of the custom volume by using Disk Management.<br /><br />You can't change the selection of storage pool or custom volume for a protection group member after the group is created. To do this you'll need to stop protecting the data source and then add it again to a protection group.|
+|Disk configuration|If you're using direct-attached storage for the  storage pool, you can use any hardware-based configuration of a redundant array of independent disks (RAID), or you can use a "just a bunch of disks" (JBOD) configuration. Don't create a software-based RAID configuration on disks that you add to the storage pool.<br /><br />To decide on disk configuration, consider the relative importance of capacity, cost, reliability, and performance in your environment. For example, because JBOD doesn't consume disk space for storing parity data, it makes maximum use of storage capacity. For the same reason, the reliability of JBOD configurations is poor; a single disk failure inevitably results in data loss.<br /><br />For a typical deployment, DPM recommends a RAID 5 configuration, which offers an effective compromise between capacity, cost, reliability, and performance.<br /><br />To help you evaluate options for configuring the disks in your storage pool, the following table compares the trade-offs between JBOD and the various levels of RAID, on a scale from 4 (very good) to 1 (acceptable).|
+|Custom values|In some cases, you might want to use a custom volume. A custom volume isn't in the storage pool and is used to store the replica and recovery points for a protection group member. For example, you might want a greater amount of control over storage for specific data sources or critical data needs to be stored using a high-performance LUN on a SAN.<br /><br />Any volume that's attached to the DPM server can be selected as a custom volume, except the volume that contains the system and program files. To use custom volumes for a protection group member, two custom volumes must be available: one volume to store the replica and one volume to store the recovery points.<br /><br />DPM can't manage the space in custom volumes. If DPM alerts you that a custom replica volume or recovery point volume is running out of space, you need to manually change the size of the custom volume by using Disk Management.<br /><br />You can't change the selection of storage pool or custom volume for a protection group member after the group is created. To make this change, you need to stop protecting the data source and then add it again to a protection group.|
 
 ### Compare disk options
 
@@ -87,13 +88,13 @@ DPM backs up data to disk for short-term storage by saving data to the DPM stora
 
 ### Configure the storage pool
 
-After you have at least one disk set up in accordance with the prerequisites, you can add it to the storage pool.
+After you set up at least one disk that meets the prerequisites, add the disk to the storage pool.
 
 - In DPM Administrator Console, select **Management** > **Disks**.
 
-- Select **Add** on the tool ribbon, and in **Add Disks to Storage Pool** select the disk you want to add from the **Available disks** list.
+- Select **Add** on the tool ribbon. In **Add Disks to Storage Pool**, select the disk you want to add from the **Available disks** list.
 
-After the storage pool is set up, when you create protection groups that include data sources you want to back up, you'll be able to configure the disk as short-term storage for that backed up data.
+After you set up the storage pool, you can configure the disk as short-term storage when you create protection groups that include data sources you want to back up.
 
 ## <a name="BKMK_Tape"></a>Prepare tape backup
 
@@ -155,19 +156,19 @@ After the storage pool is set up, when you create protection groups that include
 
 7. The library server is a computer on which DPM is installed, the library-sharing command has been run, and the medium changer is enabled.
      A library client is a computer on which DPM is installed, the library-sharing command has been run, and the medium changer is not enabled.
-    We recommend that the system configuration of the library server computer and all library client computers be as similar as possible and that you do not configure any protection groups on the library server.
+    We recommend that the system configuration of the library server computer and all library client computers be as similar as possible. Don't configure any protection groups on the library server.
 
-8. All DPM servers using a shared library must use a similar SQL Server setup for hosting DPM databases. For example, they should all use a local instance of the DPM database or all of them should use a remote instance. You cannot have some DPM servers using a local instance and others using a remote instance.
+8. All DPM servers using a shared library must use a similar SQL Server setup for hosting DPM databases. For example, they should all use a local instance of the DPM database or all of them should use a remote instance. You can't have some DPM servers using a local instance and others using a remote instance.
 
-After you've set up tapes, when you create a protection group including data sources you want to protect, you'll be able to select tape for long-term and short-term data storage.
+After you set up tapes, when you create a protection group that includes data sources you want to protect, you can select tape for long-term and short-term data storage.
 
-If you want to use a shared library for multiple DPM servers continue to the next procedure.
+If you want to use a shared library for multiple DPM servers, continue to the next procedure.
 
 #### Set up tape sharing
 
 1. On the computer that will be the library server for the shared library, use Device Manager to enable the medium changer.
 
-    On each library client computer, ensure that the medium changer is not enabled.
+    On each library client computer, ensure that the medium changer isn't enabled.
 
 2. Enable the Named Pipes protocol for the SQL Server instances of the library server and library client computers. Then restart the SQL service.
 
@@ -192,10 +193,10 @@ If you want to use a shared library for multiple DPM servers continue to the nex
 6. In DPM Administrator Console on the library server, perform a rescan. Then perform a rescan or refresh on each of the library client computers.
 
     The quickest way to see all media on all of the DPM servers is to perform a rescan on each, followed by a detailed inventory. Next, on any one of the servers, mark a number of media as free, and then perform a refresh on the other servers.
-    After you've configured library sharing, you can use the shared tape library as if it were attached to each DPM server.
+    After you configure library sharing, you can use the shared tape library as if it were attached to each DPM server.
 
 ## Next steps
 
-After planning your storage, if you are considering tape storage, see the article, [Identify compatible tape libraries](identify-compatible-tape-libraries.md).
+After planning your storage, if you want to use tape storage, see [Identify compatible tape libraries](identify-compatible-tape-libraries.md).
 
-If you are ready to install DPM, see the article, [Install DPM](install-dpm.md).
+When you're ready to install DPM, see [Install DPM](install-dpm.md).
