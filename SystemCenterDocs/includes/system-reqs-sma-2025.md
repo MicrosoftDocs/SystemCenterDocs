@@ -37,8 +37,8 @@ The following software must be installed for each role:
 
 **SQL version** | **Supported**
 --- | ---
-**[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
-**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
+**[SQL Server 2025](/lifecycle/products/?terms=SQL+Server+2025)** | Y
+**[SQL Server 2022](/lifecycle/products/?terms=SQL+Server+2022)** | Y
 
 Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2025.
 
