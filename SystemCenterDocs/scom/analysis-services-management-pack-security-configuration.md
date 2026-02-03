@@ -4,28 +4,29 @@ title: Security configuration in Management Pack for SQL Server Analysis Service
 description: This article explains the security configuration in Management Pack for SQL Server Analysis Services
 author: Anastas1ya
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.reviewer: v-gajeronika
+ms.date: 02/03/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Security Configuration in Management Pack for SQL Server Analysis Services
+# Security configuration in Management Pack for SQL Server Analysis Services
 
-By default, all discoveries and monitors configured in [Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md) use accounts defined in the **Default Action Account** Run As profile.
+By default, all discoveries and monitors that you configure in the [Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md) use accounts that you define in the **Default Action Account** Run As profile.
 
-If the default action account for the given system doesn't have the necessary permissions to discover and monitor instances of SQL Server Analysis Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
+If the default action account for the system doesn't have the necessary permissions to discover and monitor instances of SQL Server Analysis Services, you can bind those systems to more specific credentials in **Microsoft SQL Server** Run As profiles.
 
 >[!NOTE]
 >This management pack doesn't support least-privilege monitoring configurations and requires an action account to be a local administrator on SSAS servers.
 
 ## Default Run As Profiles
 
-After importing the management pack, the following default Run As profiles are created:
+When you import the management pack, you create the following default Run As profiles:
 
 - **Microsoft SQL Server Discovery Run As Profile**
 
-    This profile is associated with discoveries:
+    Associate this profile with discoveries for:
 
     - Multidimensional DB
     - Multidimensional Instance
@@ -36,7 +37,7 @@ After importing the management pack, the following default Run As profiles are c
 
 - **Microsoft SQL Server Monitoring Run As Profile**
 
-    This profile is associated with monitors and rules:
+    Associate this profile with monitors and rules for:
 
     - Monitors
         - Blocking Duration
@@ -106,7 +107,7 @@ After importing the management pack, the following default Run As profiles are c
 
 ## SQL Server and SQL Server Analysis Services Run As Profiles
 
-To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create three different Windows accounts, and configure each account in each Run As profile according to the following table.
+To use separate accounts for monitoring the DB Engine, SSRS, and SSAS, create three different Windows accounts. Then, configure each account in each Run As profile according to the following table.
 
 |Monitoring Account|[Association] Used for|
 |-|-|
