@@ -4,7 +4,8 @@ title: Operations Manager Key Concepts
 description: This article provides a high-level overview of what Operations Manager is and what capabilities it provides as a monitoring platform.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.reviewer: v-gajeronika
+ms.date: 02/03/2026
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
@@ -20,61 +21,61 @@ Operations Manager, a component of Microsoft System Center, is software that hel
 
 ## What Operations Manager does
 
-Businesses, small and large, are typically dependent on the services and applications provided by their computing environment. IT departments are responsible for ensuring the performance and availability of those critical services and applications. That means that IT departments need to know when there's a problem, identify where the problem is, and figure out what is causing the problem, ideally before the users of the applications encounter the problems. The more the computers and devices in the business, the more challenging this task becomes.
+Businesses, small and large, typically depend on the services and applications provided by their computing environment. IT departments are responsible for ensuring the performance and availability of those critical services and applications. IT departments need to know when there's a problem, identify where the problem is, and figure out what is causing the problem, ideally before the users of the applications encounter the problems. The more computers and devices in the business, the more challenging this task becomes.
 
 Using Operations Manager in the environment makes it easier to monitor multiple computers, devices, services, and applications. The Operations console, shown in the following image, enables you to check the health, performance, and availability for all the monitored objects in the environment and helps you identify and resolve problems.
 
-![Screenshot of the Operations Console.](./media/key-concepts/om2016-operations-console-monitoring-view.png)
+:::image type="content" source="./media/key-concepts/om2016-operations-console-monitoring-view.png" alt-text="Screenshot of the Operations Console.":::
 
 > [!NOTE]
 > To learn more about the Operations Manager consoles, see [Comparing the Operations Manager Consoles](manage-consoles-comparison.md) in the Operations Guide.
 
-Operations Manager will tell you, which monitored objects aren't healthy, send alerts when problems are identified, and provide information to help you identify the cause of a problem and possible solutions. As the administrator, you configure what will be monitored by selecting computers and devices to be monitored and importing management packs that provide monitoring for specific features and applications. To decide which objects to monitor and what to monitor for, you need to understand the features that comprise the Operations Manager infrastructure and how Operations Manager works.
+Operations Manager tells you which monitored objects aren't healthy, sends alerts when problems are identified, and provides information to help you identify the cause of a problem and possible solutions. As the administrator, you configure what the system monitors by selecting computers and devices to monitor and importing management packs that provide monitoring for specific features and applications. To decide which objects to monitor and what to monitor for, you need to understand the features that comprise the Operations Manager infrastructure and how Operations Manager works.
 
 ## The Operations Manager infrastructure
 
-Installing Operations Manager creates a *management group*. The management group is the basic unit of functionality. At a minimum, a management group consists of a *management server*, the *operational database*, and the *reporting data warehouse database*.
+When you install Operations Manager, create a *management group*. The management group is the basic unit of functionality. At a minimum, a management group consists of a *management server*, the *operational database*, and the *reporting data warehouse database*.
 
-- The **management server** is the focal point for administering the management group and communicating with the database. When you open the Operations console and connect to a management group, you connect to a management server for that management group. Depending on the size of your computing environment, a management group can contain a single management server or multiple management servers.
+- The **management server** acts as the focal point for administering the management group and communicating with the database. When you open the Operations console and connect to a management group, you connect to a management server for that management group. Depending on the size of your computing environment, a management group can contain a single management server or multiple management servers.
 
-- The **operational database** is a SQL Server database that contains all configuration data for the management group and stores all monitoring data that is collected and processed for the management group. The operational database retains short-term data, by default 7 days.
+- The **operational database** is a SQL Server database that contains all configuration data for the management group. It stores all monitoring data that the management group collects and processes. By default, the operational database retains short-term data for seven days.
 
-- The **data warehouse database** is a SQL Server database that stores monitoring and alerting data for historical purposes. Data that is written to the Operations Manager database is also written to the data warehouse database, so reports always contain current data. The data warehouse database retains long-term data.
+- The **data warehouse database** is a SQL Server database that stores monitoring and alerting data for historical purposes. Data that you write to the Operations Manager database is also written to the data warehouse database, so reports always contain current data. The data warehouse database retains long-term data.
 
-When Operations Manager reporting functionality is installed, the management group also contains a *Reporting server*, which builds and presents reports from data in the data warehouse database.
+When you install Operations Manager reporting functionality, the management group also contains a *Reporting server*, which builds and presents reports from data in the data warehouse database.
 
-These core components of a management group can exist on a single server, or they can be distributed across multiple servers, as shown in the following image.
+These core components of a management group can exist on a single server, or you can distribute them across multiple servers, as shown in the following image.
 
-![Illustration of the Basic Management Group.](./media/key-concepts/om2016-basic-management-group.png)
+:::image type="content" source="./media/key-concepts/om2016-basic-management-group.png" alt-text="Illustration of the Basic Management Group.":::
 
-For information about installing management group features, see [Operations Manager Deployment Guide](deploy-overview.md).
+For more information about installing management group features, see [Operations Manager Deployment Guide](deploy-overview.md).
 
 ### Management servers
 
-The role of the management server is to administer the management group configuration, administer and communicate with agents, and communicate with the databases in the management group.
+The management server administers the management group configuration. It administers and communicates with agents, and communicates with the databases in the management group.
 
-The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload. When a new management server is added, the new management server automatically picks up some of the work from the existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool won't manage the same object at the same time.
+You can add multiple management servers to a management group to provide extra capacity and continuous availability. When you add two or more management servers to a management group, the management servers become part of a *resource pool* and work spreads across the members of the pool. If a member of the resource pool fails, other members in the resource pool pick up that member’s workload. When you add a new management server, it automatically picks up some of the work from the existing members in the resource pool. All members in the resource pool manage a distinct set of remote objects. At any given time, two members in the same pool don't manage the same object.
 
 A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Planning a management group design](plan-mgmt-group-design.md#gateway-server).
 
 ### Agents
 
-An Operations Manager *agent* is a service that is installed on a computer. The agent collects data, compares sample data to predefined values, creates alerts, and runs responses. A management server receives and distributes configurations to agents on monitored computers.
+An Operations Manager *agent* is a service that you install on a computer. The agent collects data, compares sample data to predefined values, creates alerts, and runs responses. A management server receives and distributes configurations to agents on monitored computers.
 
-Every agent reports to a management server in the management group. This management server is referred to as the agent's primary management server.
+Every agent reports to a management server in the management group. This management server is the agent's primary management server.
 
-Agents watch data sources on the monitored computer and collect information according to the configuration that is sent to it from its management server. The agent also calculates the health state of the monitored computer and objects on the monitored computer and reports back to the management server. When the health state of a monitored object changes or other criteria is met, an alert can be generated from the agent. This lets operators know that something requires attention. By providing health data about the monitored object to the management server, the agent provides an up-to-date picture of the health of the device and all the applications that it hosts.
+Agents watch data sources on the monitored computer and collect information according to the configuration that the management server sends. The agent calculates the health state of the monitored computer and objects on the monitored computer and reports back to the management server. When the health state of a monitored object changes or other criteria are met, the agent can generate an alert. This process lets operators know that something requires attention. By providing health data about the monitored object to the management server, the agent provides an up-to-date picture of the health of the device and all the applications that it hosts.
 
-An agent can be configured to act as a *proxy agent*. A proxy agent is an agent that can forward data to a management server on behalf of a computer or network device other than its host computer. For example, an agent that is installed on the physical node of an SQL cluster can be enabled to act as proxy to monitor the cluster resource. Proxy agents enable monitoring of computers and devices on which an agent can't be installed. For more information, see [Agentless Monitoring](manage-agentless-monitoring.md).
+You can configure an agent to act as a *proxy agent*. A proxy agent is an agent that can forward data to a management server on behalf of a computer or network device other than its host computer. For example, you can enable an agent that you install on the physical node of an SQL cluster to act as proxy to monitor the cluster resource. Proxy agents enable monitoring of computers and devices on which an agent can't be installed. For more information, see [Agentless Monitoring](manage-agentless-monitoring.md).
 
 ### Services
 
-On a monitored computer, the Operations Manager agent is listed as the Microsoft Monitoring Agent service. The Microsoft Monitoring Agent service collects performance data, executes tasks, and so on. Even when the service is unable to communicate with the management server it reports to, the service continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
+On a monitored computer, the Operations Manager agent appears as the Microsoft Monitoring Agent service. The Microsoft Monitoring Agent service collects performance data, executes tasks, and more. Even when the service can't communicate with the management server, it continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
 
 > [!NOTE]
 > The Microsoft Monitoring Agent service is sometimes referred to as the Health Service.
 
-The Microsoft Monitoring Agent service also runs on management servers. On a management server, the service runs monitoring workflows and manages credentials. To run workflows, the service initiates MonitoringHost.exe processes using specified credentials. These processes monitor and collect event log data, performance counter data, Windows Management Instrumentation (WMI) data, and run actions such as scripts.
+The Microsoft Monitoring Agent service also runs on management servers. On a management server, the service runs monitoring workflows and manages credentials. To run workflows, the service initiates MonitoringHost.exe processes by using specified credentials. These processes monitor and collect event log data, performance counter data, Windows Management Instrumentation (WMI) data, and run actions such as scripts.
 
 Management servers also run the System Center Data Access service and the System Center Management Configuration service.
 
@@ -84,9 +85,9 @@ The System Center Management Configuration service manages the relationships and
 
 ### Management packs
 
-The workflows that the System Center Management service runs are defined by *management packs*. Management packs define the information that the agent collects and returns to the management server for a specific application or technology. For example, the BizTalk Server Management Pack contains rules and monitors that collect and evaluate events and operations that are important to ensuring the health and efficiency of the BizTalk Server application.
+*Management packs* define the workflows that the System Center Management service runs. They specify the information that the agent collects and returns to the management server for a specific application or technology. For example, the BizTalk Server Management Pack contains rules and monitors that collect and evaluate events and operations that are important to ensuring the health and efficiency of the BizTalk Server application.
 
-After Operations Manager installs an agent on a computer, it sends an initial configuration to the agent. The initial configuration includes *object discoveries* from management packs. The management pack defines the types of objects, such as applications and features that will be monitored on computers that have been discovered by Operations Manager. Agents send data to the management server that identifies the instances of objects discovered on the computer. The management server then sends the agents the elements of management packs that apply to the discovered objects for each computer, such as rules and monitors.
+After Operations Manager installs an agent on a computer, it sends an initial configuration to the agent. The initial configuration includes *object discoveries* from management packs. The management pack defines the types of objects, such as applications and features that Operations Manager monitors on computers. Agents send data to the management server that identifies the instances of objects discovered on the computer. The management server then sends the agents the elements of management packs that apply to the discovered objects for each computer, such as rules and monitors.
 
 A *rule* defines the events and performance data to collect from computers and what to do with the information after it's collected. A simple way to think about rules is as an If/Then statement. For example, a management pack for an application might contain rules such as the following:
 
@@ -96,29 +97,29 @@ A *rule* defines the events and performance data to collect from computers and w
 
 As these examples show, rules can create alerts and collect events or performance data, which the agent sends to the management server. Rules can also run scripts, such as allowing a rule to attempt to restart a failed application.
 
-Discovered objects have a health state, which is reflected in the Operations console as green (successful or healthy), yellow (warning), or red (critical or unhealthy). *Monitors* define the health states for particular aspects of the monitored object. For example, a monitor for disk drive capacity might define green as less than 85 percent full, yellow as over 85 percent full, and red as over 90 percent full. A monitor can be configured to generate an alert when a state change occurs.
+Discovered objects have a health state, which the Operations console reflects as green (successful or healthy), yellow (warning), or red (critical or unhealthy). *Monitors* define the health states for particular aspects of the monitored object. For example, a monitor for disk drive capacity might define green as less than 85 percent full, yellow as over 85 percent full, and red as over 90 percent full. You can configure a monitor to generate an alert when a state change occurs.
 
-## Discover and monitor Objects
+## Discover and monitor objects
 
-The following image is a simplified illustration of how objects are discovered and monitored.
+The following image is a simplified illustration of how Operations Manager discovers and monitors objects.
 
-![Illustration of a Discovery and Monitoring Overview.](./media/key-concepts/om2016-windows-computer-discovery.png)
+:::image type="content" source="./media/key-concepts/om2016-windows-computer-discovery.png" alt-text="Illustration of a Discovery and Monitoring Overview.":::
 
 1. The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Agent deployment planning](plan-planning-agent-deployment.md).
 
-2. Computers that meet the specified criteria and aren't already managed are identified.
+2. Operations Manager identifies computers that meet the specified criteria and aren't already managed.
 
-3. An Operations Manager agent is installed on the discovered computer.
+3. Operations Manager installs an agent on the discovered computer.
 
-4. The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs, which includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
+4. The agent requests configuration data. The management server sends the agent configuration data from installed management packs, which includes classes to discover. For example, if the Windows Server operating system management packs are installed, the management server sends the agent the operating system classes.
 
-5. The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2019 operating system is on the computer.
+5. The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent returns to the management server that an instance of Windows Server 2019 operating system is on the computer.
 
-6. The management server sends the agent all monitoring logic from the installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2019.
+6. The management server sends the agent all monitoring logic from the installed management packs that applies to the discovered objects. For example, the agent receives all monitoring logic that applies to Windows Server 2019.
 
 7. The agent applies the monitoring logic, such as rules and monitors, runs workflows, and returns data to the management server.
 
-8. As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends the updated monitoring logic.
+8. As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server. The management server sends the updated monitoring logic.
 
 > [!NOTE]
 > Operations Manager can also discover and monitor network devices, computers running UNIX, and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](/previous-versions/system-center/system-center-2012-R2/hh212763(v=sc.12)) in the Operations Guide.
@@ -127,7 +128,7 @@ The following image is a simplified illustration of how objects are discovered a
 
 The Operations Manager agent sends alert and discovery data to the primary management server, which writes the data to the operational database. The agent also sends events, performance, and state data to the primary management server for that agent, which writes the data to the operational and data warehouse databases simultaneously.
 
-The agent sends data according to the schedule parameters for each rule and monitor. For optimized collection rules, data is only transmitted if a sample of a counter differs from the previous sample by a specified tolerance, such as 10%. This helps reduce network traffic and the volume of data stored in the operational database.
+The agent sends data according to the schedule parameters for each rule and monitor. For optimized collection rules, data is only transmitted if a sample of a counter differs from the previous sample by a specified tolerance, such as 10%. This condition helps reduce network traffic and the volume of data stored in the operational database.
 
 Additionally, all agents send a packet of data, called a *heartbeat*, to the management server on a regular schedule, by default every 60 seconds. The purpose of the heartbeat is to validate the availability of the agent and communication between the agent and the management server. For more information on heartbeats, see [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md).
 
