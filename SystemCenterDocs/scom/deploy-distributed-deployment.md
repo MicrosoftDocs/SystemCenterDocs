@@ -4,8 +4,8 @@ title: Distributed Deployment of Operations Manager
 description: This article highlights the distributed deployment configuration of Operations Manager and references each role to install.
 author: Jeronika-MS
 ms.author: v-gajeronika
-
-ms.date: 11/01/2024
+ms.reviewer: v-gajeronika
+ms.date: 02/03/2026
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,7 +14,7 @@ ms.topic: concept-article
 
 # Distributed deployment of Operations Manager
 
-A distributed installation of management groups forms the foundation of most System Center Operations Manager deployments. It enhances scalability by allowing for the distribution of features and services across multiple servers. It can include all Operations Manager server roles, and it supports the monitoring of devices across trust boundaries by using the gateway server.
+Most System Center Operations Manager deployments use a distributed installation of management groups. This installation enhances scalability by distributing features and services across multiple servers. A distributed deployment can include all Operations Manager server roles. By using the gateway server, it supports monitoring devices across trust boundaries.
 
 ## Operations Manager features
 
