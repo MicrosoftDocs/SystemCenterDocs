@@ -54,16 +54,16 @@ You can monitor a computer without an agent by using either agentless monitoring
 
     1. Select either **Automatic computer discovery** or **Advanced discovery**. Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard returns, such as computer names starting with WKS. If you select **Automatic computer discovery**, select **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.  
 
-        2. In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.    
+    2. In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.    
 
-        3. In the **Management Server** list, select the management server or gateway server to discover the computers.    
+    3. In the **Management Server** list, select the management server or gateway server to discover the computers.    
 
-        4. If you selected **Servers and Clients**, you can select the **Verify discovered computers can be contacted** checkbox. This selection is likely to increase the success rate of agent deployment, but discovery can take longer.    
+    4. If you selected **Servers and Clients**, you can select the **Verify discovered computers can be contacted** checkbox. This selection is likely to increase the success rate of agent deployment, but discovery can take longer.    
 
-        > [!NOTE]  
-        > If the Active Directory catalog doesn't contain the NetBIOS names for computers in a domain, select **Verify discovered computers can be contacted**. Otherwise, the **Browse, or Type In** option fails to find computers. This condition affects computers in the same domain as the management server, in another domain with a full trust relationship, and in untrusted domains by using a gateway server.  
+    > [!NOTE]  
+    > If the Active Directory catalog doesn't contain the NetBIOS names for computers in a domain, select **Verify discovered computers can be contacted**. Otherwise, the **Browse, or Type In** option fails to find computers. This condition affects computers in the same domain as the management server, in another domain with a full trust relationship, and in untrusted domains by using a gateway server.  
 
-        5. Select **Next**.    
+    5. Select **Next**.
 
     > [!NOTE]  
     > The wizard can return approximately 4,000 computers if you select **Verify discovered computers can be contacted**, and it can return 10,000 computers if you don't select this option. Automatic computer discovery verifies that discovered computers can be contacted. A computer that the management group already manages isn't returned.  
@@ -74,9 +74,9 @@ You can monitor a computer without an agent by using either agentless monitoring
 
     1. If it isn't already selected, select **Scan Active Directory**, and select **Configure**.  
 
-        2. In the **Find Computers** dialog, enter the criteria that you want to use for discovering computers, and select **OK**.    
+    2. In the **Find Computers** dialog, enter the criteria that you want to use for discovering computers, and select **OK**.    
 
-        3. In the **Domain** list, select the domain of the computers that you want to discover.    
+    3. In the **Domain** list, select the domain of the computers that you want to discover.    
 
     If you want to browse Active Directory Domain Services or enter the computer names, complete the following steps:  
 
@@ -84,7 +84,7 @@ You can monitor a computer without an agent by using either agentless monitoring
 
     - In the **Browse for, or type-in computer names** box, enter the computer names, separated by a semicolon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDNs).  
 
-7. Select **Next**, and on the **Administrator Account** page, complete one of the following steps:    
+7. Select **Next**, and on the **Administrator Account** page, complete one of the following steps:
 
     - Select **Use selected Management Server Action Account** if it isn't already selected.  
 
@@ -102,22 +102,22 @@ You can monitor a computer without an agent by using either agentless monitoring
 
     1. Select the computers that you want to be agent-managed computers.  
 
-        2. In the **Management Mode** list, select **Agentless** and select **Next**.    
+    2. In the **Management Mode** list, select **Agentless** and select **Next**.    
 
-        3. Select **Change**, select the proxy agent that you want to use, select **OK**, and then select **Next**.    
+    3. Select **Change**, select the proxy agent that you want to use, select **OK**, and then select **Next**.
 
-10. On the **Summary** page, enter the following information:    
+10. On the **Summary** page, enter the following information:
 
     1. Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or enter an installation path.  
 
-        > [!IMPORTANT]  
-        > If you specify a different **Agent installation directory**, the root of the path must exist on the targeted computer or the agent installation fails. The installation process creates subdirectories, such as **\Agent**, if they don't exist.  
+    > [!IMPORTANT]  
+    > If you specify a different **Agent installation directory**, the root of the path must exist on the targeted computer or the agent installation fails. The installation process creates subdirectories, such as **\Agent**, if they don't exist.  
 
-        2. Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent uses to perform actions.    
+    2. Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent uses to perform actions.
 
-        3. Select **Finish**.    
+    3. Select **Finish**.
 
-11. In the **Agent Management Task Status** dialog, the **Status** for each selected computer changes from **Queued** to **Success**. The computers are ready to be managed.    
+11. In the **Agent Management Task Status** dialog, the **Status** for each selected computer changes from **Queued** to **Success**. The computers are ready to be managed.
 
     > [!NOTE]  
     > If the task fails for a computer, select the targeted computer. The **Task Output** text box displays the reason for the failure.  
