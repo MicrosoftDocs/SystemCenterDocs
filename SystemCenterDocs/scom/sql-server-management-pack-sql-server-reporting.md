@@ -2,9 +2,9 @@
 ms.assetid: b4dbae9a-cf0d-4598-96d8-421e10681e45
 title: SQL Server Reporting in management pack for SQL Server
 description: This article explains SQL Server reporting
-author: Anastas1ya
+author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/07/2025
+ms.date: 02/05/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -54,3 +54,12 @@ Once these rules and discoveries have had time to collect data to report on, the
     A space usage forecast can be reviewed in a separate table.
 
     ![Screenshot showing Forecast space usage.](./media/sql-server-management-pack/forecast-space-usage.png)
+
+## Build custom reports
+
+To build custom reports, follow these steps:
+
+1. Create your own report in SQL Server Data Tools (SSDT).
+1. Query the OperationsManager and OperationsManagerDW databases.
+1. Deploy the report to the SCOM Reporting server.
+1. View the report in the SCOM Console under **Reporting**.
