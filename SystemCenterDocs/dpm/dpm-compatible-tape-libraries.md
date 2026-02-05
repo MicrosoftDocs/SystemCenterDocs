@@ -311,6 +311,13 @@ Data Protection Manager (DPM) in System Center 2019 and 2022 can be deployed usi
 | Total Storage 3584 (TS4500/TS3500) |   | 6.2.6.6 | 1413/G060 | LTO8 | 6.2.6.6 | J4D0 |
 | Total Storage 3573 (TS4300/TS3200/TS3100) |   | 6.2.6.6 | 1112/F00 | LTO8 | 6.2.6.6 | J4D0/J4D1 |
 | Total Storage 3572 (TS2900) |   | 6.2.6.6 | 0080 | LTO8 | 6.2.6.6 | HB83 |
+| Total Storage 3584 (TS4500) |   | 7.0.1.7 | 11201 | LTO9 | 7.0.1.7 | S2S0 |
+| Total Storage 4882/4883/4884 (Diamondback) |   | 7.0.1.7 | 21105 | LTO9 | 7.0.1.7 | S2S0 |
+| Total Storage 3573 (TS4300) |   | 7.0.1.7 | 1711 | LTO9 | 7.0.1.7 | S2S0 |
+| Total Storage 3572 (TS2900) |   | 7.0.1.7 | 0206 | LTO9 | 7.0.1.7 | S2S1 |
+| Total Storage 3584 (TS4500) |   | 7.0.1.7 | 11201 | LTO10 | 7.0.1.7 | SBN0 |
+| Total Storage 4882/4883/4884 (Diamondback) |   | 7.0.1.7 | 21105 | LTO10 | 7.0.1.7 | SBN0 |
+| Total Storage 3573 (TS4300) |   | 7.0.1.7 | 1711 | LTO10 | 7.0.1.7 | SBN0 |
 
 > [!Tip]
 > The following registry key needs to be added to enable support for TS 2900: DWORD **RSMCompatMode** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent` and set it to 29 (decimal).
