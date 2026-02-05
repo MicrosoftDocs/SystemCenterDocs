@@ -51,7 +51,7 @@ If you want more information on the different sources that generate multiple ale
 
 If you need to configure the override against a different target, select **Overrides**, and target the configuration change against **all objects of class**, a **group**, **objects of another class**, **specific object of class**, or **objects of another class**. The override functionality and the **View or Edit settings of monitor or rule** are consistent in behavior with the other methods you can apply overrides in the console.  
 
-The alert level information and the source level information provide you more insight into the alerts being generated in your environment. By using the other methods available in Operations Manager to evaluate alert volume, you can determine where you need to make further changes to improve monitoring and alert accuracy.
+The alert level information and the source level information provide you with more insight into the alerts being generated in your environment. By using the other methods available in Operations Manager to evaluate alert volume, you can determine where you need to make further changes to improve monitoring and alert accuracy.
 
 ## Change view settings
 

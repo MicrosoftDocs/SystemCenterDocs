@@ -35,17 +35,11 @@ The icons that indicate state are as follows:
 |Icon|Meaning|  
 |--------|-----------|  
 |:::image type="content" source="./media/manage-consoles-overview-healthexplorer/om2016-unknownicon.png" alt-text="White button indicates unknown status.":::|Unknown, unmonitored (blank)|
-
 |:::image type="content" source="./media/manage-consoles-overview-healthexplorer/om2016-healthyicon.png" alt-text="Green check icon indicates healthy.":::|Success, health is OK (green)|
-
 |:::image type="content" source="./media/manage-consoles-overview-healthexplorer/om2016-warningicon.png" alt-text="Yellow triangle and exclamation mark is warning.":::|Warning (yellow)|
-
 |:::image type="content" source="./media/manage-consoles-overview-healthexplorer/om2016-criticalicon.png" alt-text="Red button with white X indicates critical state.":::|Critical (red)|
-
 |:::image type="content" source="./media/manage-consoles-overview-healthexplorer/om2016-maintenancemodeicon.png" alt-text="Wrench icon indicates maintenance mode.":::|Maintenance mode (gray)|
-
 |:::image type="content" source="./media/manage-consoles-overview-healthexplorer/om2016-healthygrayicon.png" alt-text="Grayed-out healthy icon.":::|Out of contact (gray)|
-
 
 By default, when the Health Explorer window first opens, it expands all the monitors that are in a failed or red state. If a monitor contains other monitors, as in the case of a roll-up monitor, Health Explorer shows all monitors in a hierarchical layout so that monitoring data for all dependent services and applications is displayed. If you want to view more details on any dependent monitor, right-click that monitor and then select **Monitor Properties** to open another Health Explorer window.  
 

@@ -15,8 +15,6 @@ ms.topic: concept-article
 
 # Operations Manager key concepts
 
-
-
 Operations Manager, a component of Microsoft System Center, is software that helps you monitor services, devices, and operations for many computers from a single console. This article explains the basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
 
 ## What Operations Manager does
@@ -66,7 +64,7 @@ Every agent reports to a management server in the management group. This managem
 
 Agents watch data sources on the monitored computer and collect information according to the configuration that the management server sends. The agent calculates the health state of the monitored computer and objects on the monitored computer and reports back to the management server. When the health state of a monitored object changes or other criteria are met, the agent can generate an alert. This process lets operators know that something requires attention. By providing health data about the monitored object to the management server, the agent provides an up-to-date picture of the health of the device and all the applications that it hosts.
 
-You can configure an agent to act as a *proxy agent*. A proxy agent is an agent that can forward data to a management server on behalf of a computer or network device other than its host computer. For example, you can enable an agent that you install on the physical node of an SQL cluster to act as proxy to monitor the cluster resource. Proxy agents enable monitoring of computers and devices on which an agent can't be installed. For more information, see [Agentless Monitoring](manage-agentless-monitoring.md).
+You can configure an agent to act as a *proxy agent*. A proxy agent is an agent that can forward data to a management server on behalf of a computer or network device other than its host computer. For example, you can enable an agent that you install on the physical node of a SQL cluster to act as proxy to monitor the cluster resource. Proxy agents enable monitoring of computers and devices on which an agent can't be installed. For more information, see [Agentless Monitoring](manage-agentless-monitoring.md).
 
 ### Services
 
