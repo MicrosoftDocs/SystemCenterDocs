@@ -538,6 +538,41 @@ The **Installing features** page appears and displays the installation progress.
 
 ::: moniker-end
 
+## Additional security for Web API & Console
+System Center Orchestrator 2022 hosts the **Web Console** and **Web API** as IIS websites. Customers may need to apply additional **security‑specific HTTP response headers** to these IIS sites to comply with organizational security baselines or industry best practices.
+
+There is a **supported workaround** for configuring standard IIS HTTP security headers for Orchestrator 2022. These settings are applied **at the IIS layer only**, do not require changes to Orchestrator binaries, and can be reverted using standard IIS configuration.
+
+1. Supported scenario  
+Customers may configure **standard HTTP security response headers** on the IIS websites that host:  
+  •	Orchestrator Web Console  
+  •	Orchestrator Web API  
+This is commonly done to meet security or compliance requirements.  
+Examples of commonly requested headers include (but are not limited to):  
+  •	Content-Security-Policy  
+  •	X-Frame-Options  
+  •	Enforcing HTTPS‑only access  
+  •	HTTP Strict Transport Security (HSTS)  
+These headers are enforced by IIS. Orchestrator does not process or interpret these headers internally.  
+
+3. Important considerations  
+  a.IIS security headers must be configured in a way that **does not block required Web Console or Web API functionality**.  
+  b.Overly restrictive policies (for example, a strict Content-Security-Policy) may prevent the Web Console UI from loading correctly.  
+  c.Customers are responsible for validating their chosen header values in a **test environment** before deploying to production.  
+
+5. Limitations  
+  a.This guidance **does not introduce new product features** or installer‑level configuration options.  
+  b.Microsoft does not validate or guarantee every possible combination of HTTP security header values.  
+  c.Only the **IIS‑level configuration approach** is covered by this supported workaround.  
+
+6. Rollback  
+If issues occur after applying IIS security headers:  
+  a. Remove the custom HTTP response headers from the IIS site configuration.  
+  b.Restart the affected IIS website.  
+  c.Verify that the Orchestrator Web Console and Web API function normally.  
+
+::: moniker-end
+
 ::: moniker range="<=sc-orch-2019"
 
 ## Install the Orchestrator Runbook Designer on a single computer
