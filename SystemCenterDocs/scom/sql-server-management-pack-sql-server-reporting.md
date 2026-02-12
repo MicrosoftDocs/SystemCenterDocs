@@ -2,9 +2,9 @@
 ms.assetid: b4dbae9a-cf0d-4598-96d8-421e10681e45
 title: SQL Server Reporting in management pack for SQL Server
 description: This article explains SQL Server reporting
-author: Anastas1ya
+author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/07/2025
+ms.date: 02/05/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,7 +19,7 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 - File space consumption forecast (GB)
 
 > [!IMPORTANT]
-> The **Database Files Space Usage Forecast** report relies on several performance collection rules and discoveries that are disabled by default. These ***must*** be enabled and allowed to run for *several days* before this report will generate any data. Please create overrides for the below rules and discoveries for either All Objects of Class, or individual objects if you only want to collect data from certain SQL instances:
+> The **Database Files Space Usage Forecast** report relies on several performance collection rules and discoveries that are disabled by default. You need to enable these rules and discoveries and let them run for *several days* before this report generates any data. Create overrides for the following rules and discoveries for either All Objects of Class, or individual objects if you only want to collect data from certain SQL instances:
 > 
 >**Discoveries**
 > - MSSQL on Windows: Discover SQL Server DB Files
@@ -29,7 +29,7 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 > - MSSQL on Windows: ROWS Data Allocated Free Space (MB)
 > - MSSQL on Windows: ROWS Data Free Space Total (MB) 
 > - MSSQL on Windows: ROWS Data Allocated Free Space (%)
-> - MSSQL on Windows: ROWS Data Free Space Total (%)To open the report, perform the following steps:
+> - MSSQL on Windows: ROWS Data Free Space Total (%)
 
 Once these rules and discoveries have had time to collect data to report on, the report can be executed by following these steps:
 
@@ -37,7 +37,7 @@ Once these rules and discoveries have had time to collect data to report on, the
 
     ![Screenshot showing Database usage forecast.](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
    
-1. Using the **Add Group** option in the parameters, add a group of DB Engine objects, a default option is "MSSQL on Windows: DB Engine Group". If adding an individual object, use the **Add Object** option and ensure to select the **DB Engine** object for the SQL Instance you want a forecast report for.
+1. Using the **Add Group** option in the parameters, add a group of DB Engine objects. A default option is "MSSQL on Windows: DB Engine Group". If you want to add an individual object, use the **Add Object** option. Make sure you select the **DB Engine** object for the SQL Instance you want a forecast report for.
 
     ![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
    
@@ -51,6 +51,15 @@ Once these rules and discoveries have had time to collect data to report on, the
 
     ![Screenshot showing Forecast chart.](./media/sql-server-management-pack/forecast-chart.png)
 <br>
-    A space usage forecast can be reviewed in a separate table.
+    You can review a space usage forecast in a separate table.
 
     ![Screenshot showing Forecast space usage.](./media/sql-server-management-pack/forecast-space-usage.png)
+
+## Build custom reports
+
+To build custom reports, follow these steps:
+
+1. Create your own report in SQL Server Data Tools (SSDT).
+1. Query the OperationsManager and OperationsManagerDW databases.
+1. Deploy the report to the System Center Operations Manager Reporting server.
+1. View the report in the System Center Operations Manager Console under **Reporting**.
