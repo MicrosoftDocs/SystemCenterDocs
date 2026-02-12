@@ -5,7 +5,7 @@ description: This article describes how to install an Operations Manager gateway
 author: sepaugh
 ms.author: lornesepaugh
 manager: amanan
-ms.date: 02/17/2025
+ms.date: 02/12/2026
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
@@ -186,9 +186,9 @@ Perform this operation on each gateway and management server, along with any cli
 
 1. In the installation media, find the `MOMCertImport.exe` file under `..\SupportTools\amd64\`.
 
-1. Copy the file to the root directory of the target server or to the Operations Manager installation directory. For example: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`.
+1. Copy the file to the root directory of the target server or to the Operations Manager installation directory. For example: `%ProgramFiles%\System Center Operations Manager\Gateway`.
 
-1. Open a command prompt as an administrator, and change the directory to the directory that contains `MOMCertImport.exe`. For example: `cd %ProgramFiles%\Microsoft System Center\Operations Manager\Server`.
+1. Open a command prompt as an administrator, and change the directory to the directory that contains `MOMCertImport.exe`. For example: `cd %ProgramFiles%\System Center Operations Manager\Gateway`.
 
 1. Run the command `MOMCertImport.exe /SubjectName subjectNameFQDN`, where `subjectNameFQDN` is the defined subject on the certificate.
 
