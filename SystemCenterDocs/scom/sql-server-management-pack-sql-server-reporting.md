@@ -61,5 +61,5 @@ To build custom reports, follow these steps:
 
 1. Create your own report in SQL Server Data Tools (SSDT).
 1. Query the OperationsManager and OperationsManagerDW databases.
-1. Deploy the report to the SCOM Reporting server.
-1. View the report in the SCOM Console under **Reporting**.
+1. Deploy the report to the System Center Operations Manager Reporting server.
+1. View the report in the System Center Operations Manager Console under **Reporting**.
