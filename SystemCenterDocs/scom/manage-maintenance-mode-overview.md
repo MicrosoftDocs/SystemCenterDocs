@@ -4,7 +4,7 @@ title: Suspend Monitoring Temporarily by Using Maintenance Mode
 description: This article describes how to put a monitored object into maintenance mode on-demand or using a schedule.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 12/13/2024
+ms.date: 02/04/2026
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -87,7 +87,7 @@ Follow these steps to put a monitored object into maintenance mode:
 
 3. In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
 
-4. In the **Windows Computers** pane, right-click the computer that you want to place into maintenance mode, select **Maintenance Mode**, and select **Start Maintenance Mode**. You can use ctrl+click or shift+click to select multiple computers to place into maintenance mode.
+4. In the **Windows Computers** pane, right-click the windows computer that you want to place into maintenance mode, select **Maintenance Mode**, and select **Start Maintenance Mode**. You can use ctrl+click or shift+click to select multiple computers to place into maintenance mode.
 
 5. In the **Maintenance Mode Settings** dialog, under **Apply to**, select **Selected objects only** if the computer is to be placed into maintenance mode; otherwise, select **Selected objects and all their contained objects**.
 
