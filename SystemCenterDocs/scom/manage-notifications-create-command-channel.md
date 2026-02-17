@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 230eadbd-2a79-4987-903f-4bd0c85536fd
+ms.update-cycle: 1095-days
 ---
 
 # How to enable a command notification channel

@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 93f9a932-d99d-41b2-ad0c-f5e179f1cccf
+ms.update-cycle: 1095-days
 ---
 
 # How to enable a text message (SMS) notification channel

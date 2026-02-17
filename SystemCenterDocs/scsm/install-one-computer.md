@@ -8,6 +8,7 @@ ms.date: 03/19/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
+ms.update-cycle: 1095-days
 ms.custom: intro-installation, UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

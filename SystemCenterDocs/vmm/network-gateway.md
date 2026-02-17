@@ -8,6 +8,7 @@ ms.author: v-gajeronika
 ms.date: 08/21/2024
 ms.topic: how-to
 ms.service: system-center
+ms.update-cycle: 1095-days
 ms.subservice: virtual-machine-manager
 ---
 

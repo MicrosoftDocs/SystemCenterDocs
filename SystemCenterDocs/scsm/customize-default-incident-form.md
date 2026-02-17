@@ -11,6 +11,7 @@ ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.assetid: 2af8b9d4-f736-4f96-b058-a96b10a64aca
 ---
 

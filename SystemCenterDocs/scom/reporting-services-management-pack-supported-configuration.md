@@ -8,6 +8,7 @@ ms.author: v-gajeronika
 ms.date: 03/31/2025
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server Reporting Services

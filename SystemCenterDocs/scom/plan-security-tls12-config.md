@@ -5,7 +5,7 @@ description: This article describes how to configure System Center Operations Ma
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/08/2025
-ms.custom: na
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

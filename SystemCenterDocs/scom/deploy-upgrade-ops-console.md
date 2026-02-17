@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations console to the 
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 07/22/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager

@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d7e061b0-5d6e-49de-b93f-85215f7c4b73
+ms.update-cycle: 1095-days
 ---
 
 # Subscribe to notifications from an alert

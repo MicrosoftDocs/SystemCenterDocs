@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 180-days
 ---
 
 # Quick reference to Operations Manager tasks

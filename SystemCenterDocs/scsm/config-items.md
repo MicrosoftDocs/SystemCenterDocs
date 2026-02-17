@@ -6,6 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 keywords:
+ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d

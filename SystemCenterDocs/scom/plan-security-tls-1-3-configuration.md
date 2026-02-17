@@ -8,6 +8,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 monikerRange: sc-om-2025
+ms.update-cycle: 1095-days
 ---
 
 # Enforce TLS 1.3 for Operations Manager 2025 UR1

@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: sfi-image-nochange
+ms.update-cycle: 1095-days
 ---
 
 # Azure SQL Database Run As Accounts

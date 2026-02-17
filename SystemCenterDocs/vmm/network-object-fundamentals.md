@@ -5,7 +5,7 @@ description: This article describes about network object fundamentals.
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 06/27/2024
-ms.update-cycle: 1095-days
+ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

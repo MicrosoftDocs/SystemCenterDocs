@@ -6,7 +6,7 @@ author: Anastas1ya
 manager: evansma
 ms.date: 04/14/2025
 ms.author: v-gajeronika
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

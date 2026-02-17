@@ -4,7 +4,7 @@ title: Plan Security Credentials for Accessing Unix and Linux Computers
 description: This article provides design guidance to understand how to securely manage Linux and UNIX computers with Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-
+ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center

@@ -6,6 +6,7 @@ ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
 ms.date: 02/04/2026
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

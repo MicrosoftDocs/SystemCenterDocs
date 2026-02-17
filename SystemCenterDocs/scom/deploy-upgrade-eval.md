@@ -9,6 +9,7 @@ ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: upgrade-and-migration-article
+ms.update-cycle: 1095-days
 ---
 
 # Upgrade from the evaluation version of Operations Manager

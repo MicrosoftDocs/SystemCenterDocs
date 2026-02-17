@@ -6,6 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.subservice: service-manager
+ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---

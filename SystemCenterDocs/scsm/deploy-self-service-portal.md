@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 365-days
 ms.custom:
   - intro-deployment
   - sfi-image-nochange

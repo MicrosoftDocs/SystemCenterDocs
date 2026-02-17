@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ms.assetid: 0e4aec83-1bbf-4cbb-86ec-0bf9e3710dc5
 ---
 

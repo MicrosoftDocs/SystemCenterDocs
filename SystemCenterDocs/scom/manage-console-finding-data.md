@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
+ms.update-cycle: 1095-days
 ---
 
 # Find data and objects in the Operations Manager consoles

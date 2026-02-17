@@ -5,7 +5,7 @@ description: This article provides a high-level overview of how to manage the li
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 03/26/2025
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

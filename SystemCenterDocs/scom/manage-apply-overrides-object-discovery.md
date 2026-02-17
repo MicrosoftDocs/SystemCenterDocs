@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.custom: UpdateFrequency2
+ms.update-cycle: 1095-days
 ---
 
 # Apply overrides to object discoveries

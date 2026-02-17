@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 225d3776-a502-485d-a7ea-096b14f590a6
+ms.update-cycle: 1095-days
 ---
 
 # Use the Visio Add-in and SharePoint Visio Services Data Provider

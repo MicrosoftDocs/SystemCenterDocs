@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
+ms.update-cycle: 1095-days
 ---
 
 # Personalize a view in Operations Manager

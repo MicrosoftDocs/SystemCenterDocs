@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
 ms.assetid: 8b1c21ab-529b-4c04-9384-717a503f3df7
+ms.update-cycle: 1095-days
 ---
 
 # Install and configure the Visio Services Data Provider

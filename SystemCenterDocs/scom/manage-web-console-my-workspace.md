@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 monikerRange: '>sc-om-2016'
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.assetid:
 ---
 

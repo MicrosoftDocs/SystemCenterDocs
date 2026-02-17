@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 365-days
 ---
 
 

@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: sfi-image-nochange
+ms.update-cycle: 365-days
 ---
 
 # Monitoring Modes

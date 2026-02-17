@@ -5,10 +5,11 @@ description: This article provides an overview of the design decisions with reso
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: na, UpdateFrequency2
+ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Resource pool design considerations

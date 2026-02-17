@@ -10,6 +10,7 @@ ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ---
 
 # Manage dashboard and widget configuration in the Web console

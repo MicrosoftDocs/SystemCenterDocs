@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
+ms.update-cycle: 1095-days
 ---
 
 # Use SharePoint to view Operations Manager data

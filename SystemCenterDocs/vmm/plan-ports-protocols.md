@@ -6,6 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/15/2024
 ms.topic: how-to
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24

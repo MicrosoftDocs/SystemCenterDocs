@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 6842cddc-b875-4358-8f00-f4b8ab784739
+ms.update-cycle: 365-days
 ---
 
 # Monitoring Failover Cluster with Operations Manager

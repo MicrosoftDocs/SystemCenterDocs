@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/16/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

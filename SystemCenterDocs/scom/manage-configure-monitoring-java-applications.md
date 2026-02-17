@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: ec45bdd7-cc61-4c81-8d1c-a4aae303f892
+ms.update-cycle: 1095-days
 ---
 
 # Configure Monitoring for Java applications

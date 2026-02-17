@@ -8,6 +8,7 @@ ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 365-days
 ms.custom:
   - UpdateFrequency2
   - engagement-fy24

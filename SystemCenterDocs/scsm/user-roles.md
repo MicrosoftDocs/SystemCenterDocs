@@ -8,6 +8,7 @@ ms.service: system-center
 ms.date: 10/27/2025
 ms.subservice: service-manager
 ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

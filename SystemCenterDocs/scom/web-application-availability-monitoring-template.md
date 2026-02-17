@@ -8,6 +8,7 @@ ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 365-days
 ms.custom:
   - engagement-fy24
   - sfi-image-nochange

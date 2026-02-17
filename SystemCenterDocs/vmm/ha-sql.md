@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 08/02/2024
 ms.topic: install-set-up-deploy
 ms.service: system-center
+ms.update-cycle: 1095-days
 ms.subservice: virtual-machine-manager
 ms.custom:
   - intro-deployment

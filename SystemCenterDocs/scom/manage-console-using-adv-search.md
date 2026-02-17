@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
+ms.update-cycle: 1095-days
 ---
 
 # Use advanced search

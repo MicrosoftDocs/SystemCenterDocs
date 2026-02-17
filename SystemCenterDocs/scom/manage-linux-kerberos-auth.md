@@ -10,6 +10,7 @@ ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 365-days
 ---
 
 # Kerberos Authentication Support for Unix and Linux computers

@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: ac556a83-37b4-4388-b033-d1a59c52ab79
+ms.update-cycle: 1095-days
 ---
 
 # Create and scope views in Operations Manager

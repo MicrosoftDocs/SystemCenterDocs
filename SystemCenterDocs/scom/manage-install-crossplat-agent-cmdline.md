@@ -8,6 +8,7 @@ ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 180-days
 ---
 
 # Install agent on UNIX and Linux computers from the command line

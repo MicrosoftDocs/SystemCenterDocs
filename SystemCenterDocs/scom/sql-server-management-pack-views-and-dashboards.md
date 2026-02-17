@@ -8,6 +8,7 @@ ms.date: 04/09/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Views and Dashboards in Management Pack for SQL Server

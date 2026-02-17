@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # Azure SQL Managed Instance Monitoring Pool

@@ -5,10 +5,10 @@ description: This article describes the new features supported in Service Manage
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 12/01/2025
-ms.update-cycle: 180-days
 ms.topic: whats-new
 ms.service: system-center
 ms.subservice: service-manager
+ms.update-cycle: 365-days
 ms.custom: UpdateFrequency.5, intro-whats-new
 ---
 

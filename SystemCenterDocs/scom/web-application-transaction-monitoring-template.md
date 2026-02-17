@@ -9,6 +9,7 @@ ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Web Application Transaction Monitoring template

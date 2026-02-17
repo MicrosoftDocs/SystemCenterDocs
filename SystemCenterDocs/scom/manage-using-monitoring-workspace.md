@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 83921ac3-655e-4279-8f16-88818c88349f
+ms.update-cycle: 1095-days
 ---  
 
 # Use the Operations Manager Operations console

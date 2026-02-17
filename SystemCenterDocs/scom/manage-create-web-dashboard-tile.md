@@ -10,6 +10,7 @@ ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ---
 
 # Create a dashboard with the Tile widget in the Web console
