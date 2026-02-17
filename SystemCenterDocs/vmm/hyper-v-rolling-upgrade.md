@@ -8,6 +8,7 @@ ms.date: 11/01/2024
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 365-days
 ms.custom: engagement-fy24
 ---
 

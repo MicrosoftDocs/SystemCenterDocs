@@ -8,6 +8,7 @@ ms.date: 08/22/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 180-days
 ms.custom:
   - engagement-fy24
   - sfi-image-nochange

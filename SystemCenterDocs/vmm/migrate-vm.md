@@ -8,6 +8,7 @@ ms.date: 01/13/2026
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ms.custom: intro-migration, UpdateFrequency2, engagement-fy24
 ---
 

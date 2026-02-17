@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # Plan VMM deployment

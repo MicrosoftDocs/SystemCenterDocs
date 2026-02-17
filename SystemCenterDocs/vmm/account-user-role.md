@@ -5,7 +5,7 @@ description: This article describes how to set up VMM roles and permissions
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 06/04/2025
-ms.update-cycle: 1095-days
+ms.update-cycle: 365-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
