@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.subservice: service-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

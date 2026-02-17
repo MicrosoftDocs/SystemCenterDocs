@@ -8,6 +8,7 @@ ms.date: 12/17/2024
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-manager
+ms.update-cycle: 365-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

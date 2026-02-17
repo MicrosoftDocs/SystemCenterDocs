@@ -5,7 +5,7 @@ ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-keywords:
+ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac

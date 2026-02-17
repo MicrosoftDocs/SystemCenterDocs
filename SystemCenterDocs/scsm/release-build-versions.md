@@ -8,6 +8,7 @@ ms.date: 12/12/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-manager
+ms.update-cycle: 365-days
 ms.custom: engagement-fy23
 ---
 

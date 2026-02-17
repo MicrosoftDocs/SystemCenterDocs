@@ -11,6 +11,7 @@ ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 ---
 

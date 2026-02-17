@@ -7,7 +7,7 @@ ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 12/01/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 ms.custom: UpdateFrequency.5, engagement-fy24

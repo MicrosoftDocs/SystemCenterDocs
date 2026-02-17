@@ -9,6 +9,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.assetid: ea9bb90e-5a00-4346-b2a2-f6076c203778
 ms.custom: engagement-fy23
