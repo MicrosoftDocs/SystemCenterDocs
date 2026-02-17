@@ -8,7 +8,9 @@ ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
+
 # Disabling monitoring of specified SQL Servers in Management Pack SQL Server Reporting Services
 
 This section explains how to disable monitoring of SQL Servers Reporting Services.

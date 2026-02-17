@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 5de28eac-5d62-47bf-bc20-0d1897868a5d
+ms.update-cycle: 1095-days
 ---
 
 # Configure a product connector subscription

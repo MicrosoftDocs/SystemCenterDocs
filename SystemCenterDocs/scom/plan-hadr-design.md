@@ -9,6 +9,7 @@ ms.custom: engagement-fy23, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 365-days
 ---
 
 # High Availability and Disaster Recovery

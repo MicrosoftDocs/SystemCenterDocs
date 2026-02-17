@@ -8,6 +8,7 @@ ms.date: 07/22/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Enable Agent Proxy Option

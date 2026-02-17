@@ -9,6 +9,7 @@ ms.date: 01/04/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 180-days
 ---
 
 # Obtain a certificate for use with Windows Servers and System Center Operations Manager

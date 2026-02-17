@@ -8,6 +8,7 @@ ms.date: 07/08/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 180-days
 ---
 
 # Microsoft Management Packs

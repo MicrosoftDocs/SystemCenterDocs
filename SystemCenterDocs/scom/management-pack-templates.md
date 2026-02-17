@@ -5,7 +5,7 @@ description: This article provides an overview of management pack templates
 author: Anastas1ya
 ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

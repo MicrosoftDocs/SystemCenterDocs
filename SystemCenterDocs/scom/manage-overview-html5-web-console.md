@@ -10,6 +10,7 @@ ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Overview of HTML5 Web console and dashboards

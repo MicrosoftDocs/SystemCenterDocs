@@ -8,6 +8,7 @@ ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 365-days
 ---
 
 # Monitoring Configuration in Management Pack for SQL Server

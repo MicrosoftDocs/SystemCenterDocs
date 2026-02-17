@@ -6,7 +6,7 @@ ms.author: v-gajeronika
 ms.date: 11/25/2025
 ms.service: system-center
 monikerRange: 'sc-om-2025'
-ms.assetid:
+ms.update-cycle: 1095-days
 ms.subservice: operations-manager
 ms.topic: upgrade-and-migration-article
 ---

@@ -9,6 +9,7 @@ ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 365-days
 ---
 
 # Install the Operations Manager web console

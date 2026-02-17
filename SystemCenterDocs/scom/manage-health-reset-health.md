@@ -8,6 +8,7 @@ ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.assetid: 87da70aa-607a-47ec-bab5-39345ea53258
 ---
 

@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 180-days
 ms.topic: install-set-up-deploy
 ms.custom:
   - UpdateFrequency2

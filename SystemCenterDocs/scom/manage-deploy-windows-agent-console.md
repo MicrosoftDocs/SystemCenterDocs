@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 365-days
 ---
 
 # Install Agent on Windows Using the Discovery Wizard

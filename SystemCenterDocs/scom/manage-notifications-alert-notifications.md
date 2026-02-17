@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
+ms.update-cycle: 1095-days
 ---
 
 # Subscribe to alert notifications in Operations Manager

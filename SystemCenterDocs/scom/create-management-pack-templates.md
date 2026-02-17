@@ -5,7 +5,7 @@ description: This article provides an overview of creating management pack templ
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 07/22/2025
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

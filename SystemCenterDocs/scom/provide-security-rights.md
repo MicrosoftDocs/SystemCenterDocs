@@ -4,7 +4,7 @@ title: Provide security rights for gMSA in System Center Operations Manager
 description: This article provides information on how to provide security rights to group manages service accounts (gMSA), a new feature supported in System Center Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-
+ms.update-cycle: 365-days
 ms.date: 11/01/2024
 ms.service: system-center
 monikerRange: '>=sc-om-2019'

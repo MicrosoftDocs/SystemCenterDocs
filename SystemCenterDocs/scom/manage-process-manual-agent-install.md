@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.custom: UpdateFrequency2, engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # Process manual agent installations

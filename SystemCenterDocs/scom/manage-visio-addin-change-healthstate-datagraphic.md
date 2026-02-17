@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: f6b1c3b7-4354-4a2d-ab0f-c2f859456caa
+ms.update-cycle: 1095-days
 ---
 
 # Change the way health state is represented in Visio

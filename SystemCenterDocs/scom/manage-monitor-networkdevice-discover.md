@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: b23cc152-e396-4499-bf7c-cf208bf3741f
+ms.update-cycle: 1095-days
 ---
 
 # How to discover network devices in Operations Manager

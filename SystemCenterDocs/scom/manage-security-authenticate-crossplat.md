@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Access UNIX and Linux computers in Operations Manager

@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21
+ms.update-cycle: 1095-days
 ---
 
 # How to create notification subscriptions

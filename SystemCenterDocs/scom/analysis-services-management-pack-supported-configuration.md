@@ -8,6 +8,7 @@ ms.date: 5/22/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server Analysis Services

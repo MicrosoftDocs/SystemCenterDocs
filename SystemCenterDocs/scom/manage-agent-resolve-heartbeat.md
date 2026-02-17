@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: b0f9ef5e-e8bf-4cd3-a358-02a7aafa82a9
+ms.update-cycle: 365-days
 ---
 
 # Resolve heartbeat alerts

@@ -9,6 +9,7 @@ ms.custom: intro-overview, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 365-days
 ---
 
 # What is in an Operations Manager management pack?

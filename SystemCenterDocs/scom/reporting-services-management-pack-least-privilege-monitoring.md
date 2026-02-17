@@ -8,6 +8,7 @@ ms.date: 08/07/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Least-Privilege Monitoring Configuration

@@ -10,6 +10,7 @@ ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Database

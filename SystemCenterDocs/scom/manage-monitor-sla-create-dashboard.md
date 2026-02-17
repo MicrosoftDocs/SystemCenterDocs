@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 08ea756b-01dd-4f6c-8326-4fec3ab3706e
+ms.update-cycle: 1095-days
 ---
 
 # Creating a service level dashboard

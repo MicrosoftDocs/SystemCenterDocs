@@ -8,6 +8,7 @@ ms.date: 11/01/2024
 ms.topic: troubleshooting-known-issue
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance

@@ -8,6 +8,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: f36bccfb-e038-4a3a-9999-3195fe738bd3
+ms.update-cycle: 1095-days
 ms.custom:
   - UpdateFrequency2
   - sfi-image-nochange

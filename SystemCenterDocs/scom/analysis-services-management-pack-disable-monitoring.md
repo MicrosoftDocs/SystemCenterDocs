@@ -9,6 +9,7 @@ ms.date: 02/03/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 # Disable monitoring of specified SQL Servers and databases in Management Pack SQL Server Analysis Services
 

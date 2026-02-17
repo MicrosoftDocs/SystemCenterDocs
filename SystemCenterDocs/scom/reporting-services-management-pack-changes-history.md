@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: sfi-ropc-nochange
+ms.update-cycle: 1095-days
 ---
 
 # Features and enhancements in Management Pack for SQL Server Reporting Services

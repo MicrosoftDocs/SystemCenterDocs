@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: dab97fc0-0cd9-40cf-a5bb-2e304490fef4
+ms.update-cycle: 1095-days
 ---
 
 # Configure automatic alert resolution

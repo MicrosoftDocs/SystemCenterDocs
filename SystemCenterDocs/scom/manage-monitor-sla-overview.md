@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: c7f7aac4-41b4-4094-bad6-3a509ff71bba
+ms.update-cycle: 1095-days
 ---
 
 # Monitoring service level objectives by using Operations Manager

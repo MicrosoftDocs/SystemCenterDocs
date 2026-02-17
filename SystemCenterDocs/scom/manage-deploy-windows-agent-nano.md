@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
 monikerRange: 'sc-om-2016'
+ms.update-cycle: 1095-days
 ---
 
 # Install agent on Nano Server

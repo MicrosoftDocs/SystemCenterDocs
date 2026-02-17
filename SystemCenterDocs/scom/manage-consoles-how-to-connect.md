@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
+ms.update-cycle: 365-days
 ---
 
 # Connect to the Operations and Web Console

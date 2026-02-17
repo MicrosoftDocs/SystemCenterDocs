@@ -10,6 +10,7 @@ ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ---
 
 # Linux Log file monitoring in System Center Operations Manager

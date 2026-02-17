@@ -9,6 +9,7 @@ ms.date: 02/03/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Security configuration in Management Pack for SQL Server Analysis Services

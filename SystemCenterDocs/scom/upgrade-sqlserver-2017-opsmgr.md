@@ -4,10 +4,9 @@ description: This article describes how to upgrade the SQL Server supporting Sys
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
-ms.assetid:
 ms.subservice: operations-manager
 ms.topic: upgrade-and-migration-article
 ---

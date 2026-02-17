@@ -9,6 +9,7 @@ ms.author: v-gajeronika
 ms.topic: troubleshooting-known-issue
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Known Issues and Troubleshooting in Management Pack for SQL Server Analysis Services

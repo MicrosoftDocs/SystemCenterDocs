@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 4a96716d-49f8-48a8-ac34-ca69e8f6363b
+ms.update-cycle: 365-days
 ---
 
 # Not monitored and gray agents

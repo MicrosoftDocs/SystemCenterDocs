@@ -8,6 +8,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 577548a5-16ba-473a-b95d-7ff93810962e
+ms.update-cycle: 1095-days
 ms.custom:
   - engagement-fy23
   - engagement-fy24

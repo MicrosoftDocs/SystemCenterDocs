@@ -9,7 +9,8 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
 ms.assetid: ac69f3db-00ab-4ca3-a2fc-f87d4503f1ed
-monikerRange: 'sc-om-2016'
+monikerRange: sc-om-2016
+ms.update-cycle: 365-days
 ---
 
 # Install the Visio Add-in

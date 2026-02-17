@@ -4,7 +4,7 @@ title: Supported UNIX operating system versions
 description: This article lists the supported versions of UNIX operating system for System Center Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-
+ms.update-cycle: 365-days
 ms.date: 01/29/2025
 ms.service: system-center
 ms.subservice: operations-manager

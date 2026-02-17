@@ -8,6 +8,7 @@ ms.date: 04/02/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # SQL Server Monitoring Pool

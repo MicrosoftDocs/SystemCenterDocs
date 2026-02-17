@@ -8,6 +8,7 @@ ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: troubleshooting-general
+ms.update-cycle: 1095-days
 ---
 
 # Troubleshoot discovery error - Azure Linux and Arc Linux machines are unsupported

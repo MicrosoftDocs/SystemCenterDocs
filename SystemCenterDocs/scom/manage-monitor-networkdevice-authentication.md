@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: f3631fac-5b64-4903-8343-8254b107db15
+ms.update-cycle: 1095-days
 ---
 
 # Run As accounts for network monitoring in Operations Manager
