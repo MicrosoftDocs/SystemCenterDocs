@@ -8,6 +8,7 @@ ms.date: 12/01/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
+ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.custom: UpdateFrequency.5
 ---

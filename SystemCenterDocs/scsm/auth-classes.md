@@ -7,6 +7,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.reviewer: na
+ms.update-cycle: 1095-days
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na

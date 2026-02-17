@@ -6,6 +6,7 @@ ms.service: system-center
 ms.date: 04/21/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager

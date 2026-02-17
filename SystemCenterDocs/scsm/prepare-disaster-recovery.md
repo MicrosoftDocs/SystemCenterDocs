@@ -10,6 +10,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.assetid: e481f3b8-4074-4b51-9faa-93e35f4ffe68
 

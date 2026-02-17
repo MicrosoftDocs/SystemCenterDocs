@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/13/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.topic: release-notes
 ms.service: system-center
 ms.subservice: service-manager

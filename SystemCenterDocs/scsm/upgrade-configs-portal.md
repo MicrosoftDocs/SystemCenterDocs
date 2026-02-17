@@ -5,7 +5,7 @@ ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/14/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.topic: upgrade-and-migration-article
 monikerRange: 'sc-sm-2016'
