@@ -3,7 +3,7 @@ title: Run Program
 description: This article details about the Run Program activity
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
-ms.update-cycle: 1095-days
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

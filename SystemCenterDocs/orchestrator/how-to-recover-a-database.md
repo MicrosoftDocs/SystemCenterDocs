@@ -8,6 +8,7 @@ ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom: engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # Recover a database

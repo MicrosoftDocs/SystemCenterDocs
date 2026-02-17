@@ -9,6 +9,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/07/2025
 monikerRange: 'sc-orch-2025'
+ms.update-cycle: 1095-days
 zone_pivot_groups: orchestrator-security-planning
 ---
 # Orchestrator Security Planning

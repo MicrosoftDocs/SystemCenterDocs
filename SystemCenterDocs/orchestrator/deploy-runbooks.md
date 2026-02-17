@@ -8,6 +8,7 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
 ms.custom: intro-deployment, engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # Deploy runbooks

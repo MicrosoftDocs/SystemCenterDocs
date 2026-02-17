@@ -13,7 +13,9 @@ ms.assetid: 22f388d5-ad23-4722-a3f5-25e26893dba8
 caps.latest.revision: 15
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Get Computer/IP Status
 
 This article describes the Get Computer/IP Status activity. The Get Computer/IP Status activity sends a ping to a remote computer or IP address and waits for a response. If a response is received, then the Get Computer/IP Status activity succeeds. If a response isn't received, the activity fails.  

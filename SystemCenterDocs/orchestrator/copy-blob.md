@@ -13,7 +13,9 @@ ms.assetid: b3512761-a75f-44f0-8fbb-42c683dc2391
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Copy Blob
 
 The **Copy Blob** activity copies a blob to a destination within the storage account. It's part of the **Azure Storage** category activity.

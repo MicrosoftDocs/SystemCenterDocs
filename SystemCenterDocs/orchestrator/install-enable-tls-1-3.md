@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 moniker range: sc-orch-2025
+ms.update-cycle: 1095-days
 ---
 
 # Set up TLS 1.3 for Orchestrator

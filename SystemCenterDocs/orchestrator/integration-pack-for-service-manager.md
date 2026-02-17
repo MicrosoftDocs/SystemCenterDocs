@@ -7,6 +7,7 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 
 # Integration pack for System Center - Service Manager

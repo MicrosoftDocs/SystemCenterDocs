@@ -11,6 +11,7 @@ ms.topic: concept-article
 ms.assetid: c9917c4f-376f-4a60-88b5-c141e4200c9f
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ---
 # Reconfigure VM activity

@@ -12,7 +12,9 @@ ms.topic: concept-article
 ms.assetid: 602441b9-6c17-42bf-8eef-1ab814d0adbc
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Create Group
 
 You can use the Create Group activity in a runbook to create a group in the Microsoft Active Directory.

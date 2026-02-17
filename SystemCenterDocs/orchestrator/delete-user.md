@@ -11,6 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 7db21ed7-b166-44a5-a8f1-70ede936fbef
 author: Jeronika-MS
+ms.update-cycle: 1095-days
 ms.author: v-gajeronika
 ---
 # Delete User

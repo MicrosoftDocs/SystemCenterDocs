@@ -9,6 +9,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom: intro-deployment
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
 
 # Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator

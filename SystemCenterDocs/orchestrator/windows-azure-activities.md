@@ -13,7 +13,9 @@ ms.assetid: 69fc38af-c6bf-43bd-85c6-06875a321561
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Windows Azure Activities
 
 The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.

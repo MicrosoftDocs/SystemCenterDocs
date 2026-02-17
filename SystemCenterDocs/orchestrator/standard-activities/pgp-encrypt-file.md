@@ -12,6 +12,7 @@ ms.assetid: 1866b4f2-8755-43d0-89a3-dbeaa948a508
 caps.latest.revision: 20
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 # PGP Encrypt File
 

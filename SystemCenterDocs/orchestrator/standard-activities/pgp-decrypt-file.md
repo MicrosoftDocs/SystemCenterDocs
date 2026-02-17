@@ -6,6 +6,7 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.assetid: cf1b4f0c-2694-405b-9940-1fdb88c9228b
+ms.update-cycle: 180-days
 caps.latest.revision: 16
 author: Jeronika-MS
 ms.author: v-gajeronika
