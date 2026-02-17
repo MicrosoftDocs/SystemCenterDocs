@@ -13,7 +13,9 @@ ms.assetid: e63b5b72-d93e-44af-b021-5854baa4da27
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Add Management Certificate
 
 The **Add Management Certificate** activity is used in a runbook to add a certificate to the list of management certificates. It is part of the **Azure Certificates** category activity.

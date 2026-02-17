@@ -7,7 +7,9 @@ ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/19/2024
+ms.update-cycle: 1095-days
 ---
+
 # VMware vSphere integration pack
 
 The integration pack for VMware vSphere is an add-on for System Center - Orchestrator. It assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.

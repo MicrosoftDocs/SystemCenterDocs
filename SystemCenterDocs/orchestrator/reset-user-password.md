@@ -12,6 +12,7 @@ ms.topic: concept-article
 ms.assetid: 50b7bfd7-ecef-4c81-9172-854059cbc853
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 # Reset User Password
 

@@ -12,7 +12,9 @@ ms.topic: concept-article
 ms.assetid: 73d76ac0-8eee-466a-b11b-3df39e045d6d
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Active Directory Activities
 
 The following configuration instructions apply to all activities in this integration pack.

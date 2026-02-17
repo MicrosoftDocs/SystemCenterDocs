@@ -12,7 +12,9 @@ ms.topic: concept-article
 ms.assetid: 38b183fe-a0ef-45f2-a6f6-615b33c072fc
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Add User To Group
 
 You can use the Add User To Group activity in a runbook to add a user to a group in the Microsoft Active Directory.

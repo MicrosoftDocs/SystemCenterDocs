@@ -13,7 +13,9 @@ ms.assetid: 991105e1-71ad-43eb-b20e-1b31323a275f
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Create Cloud Service
 
 The **Create Cloud Service** activity creates a new cloud service in Azure. It's part of **the Azure Cloud Services** category activity.

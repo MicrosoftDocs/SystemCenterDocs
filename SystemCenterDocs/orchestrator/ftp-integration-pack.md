@@ -9,6 +9,7 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
+ms.update-cycle: 1095-days
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'

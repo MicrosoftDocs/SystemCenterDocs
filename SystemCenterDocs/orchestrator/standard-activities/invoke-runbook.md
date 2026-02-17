@@ -13,7 +13,9 @@ ms.assetid: 78020370-0059-4788-9eed-2c1687aaf56e
 caps.latest.revision: 19
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Invoke Runbook
 
 The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.

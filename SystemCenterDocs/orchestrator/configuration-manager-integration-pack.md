@@ -11,6 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 4d2feb46-3f4c-4ed6-adbf-50097f94ea61
 author: Jeronika-MS
+ms.update-cycle: 1095-days
 ms.author: v-gajeronika
 ---
 # Configuration Manager Integration Pack for System Center - Orchestrator

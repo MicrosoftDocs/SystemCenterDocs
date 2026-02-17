@@ -8,6 +8,7 @@ ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Recommendations for antivirus exclusions that relate to Orchestrator

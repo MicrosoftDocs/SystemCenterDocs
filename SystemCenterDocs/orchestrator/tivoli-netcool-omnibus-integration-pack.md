@@ -13,7 +13,9 @@ ms.assetid: dcdd6577-1783-4f61-9aae-dd4c590bb2e3
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # IBM Tivoli Netcool OMNIbus Integration Pack for System Center  - Orchestrator
 
 ::: moniker range="sc-orch-2019"

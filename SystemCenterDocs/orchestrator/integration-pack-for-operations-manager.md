@@ -8,6 +8,7 @@ ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # The integration pack for System Center Operations Manager

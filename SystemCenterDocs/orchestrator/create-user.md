@@ -12,6 +12,7 @@ ms.topic: concept-article
 ms.assetid: bc69c0d8-bcbb-4b59-b1b1-03a4b0a33d8d
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 # Create User
 

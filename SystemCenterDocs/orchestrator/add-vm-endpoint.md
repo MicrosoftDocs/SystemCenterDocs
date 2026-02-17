@@ -13,7 +13,9 @@ ms.assetid: b6ddabeb-d6fb-4f7f-9b8e-afe7f88b01ba
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Add VM Endpoint
 
 The **Add VM Endpoint** activity adds an external endpoint to the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.

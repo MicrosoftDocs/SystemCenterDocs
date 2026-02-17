@@ -12,7 +12,9 @@ ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
+
 # Audit Trail
 
 The *Audit Trail* is a collection of text log files that contain information about the interaction of a runbook with external tools and systems. By using the Audit Trail, you can report on configuration and change compliance of processes and identify changes made to a non-Microsoft system for audit purposes or to remediate a change that causes service interruption.  
