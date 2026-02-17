@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 316d9611-b4a4-495f-8272-8273b6012efe
+ms.update-cycle: 1095-days
 ---
 
 # View an Operations Manager distributed application diagram in Visio

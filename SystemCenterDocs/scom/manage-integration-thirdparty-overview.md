@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 7fd5ca6b-cde4-4610-ba6d-6fbb7ca57373
+ms.update-cycle: 1095-days
 ---
 
 # Connect Operations Manager with other management systems

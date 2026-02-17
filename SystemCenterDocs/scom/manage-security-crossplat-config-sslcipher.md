@@ -5,7 +5,7 @@ description: This article describes how to configure SSL encrypted communication
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

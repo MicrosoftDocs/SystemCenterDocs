@@ -8,6 +8,7 @@ ms.date: 06/30/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Features and enhancements in Management Pack for Azure SQL Managed Instance

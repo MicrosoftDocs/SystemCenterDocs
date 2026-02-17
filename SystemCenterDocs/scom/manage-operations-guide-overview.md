@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: c2b63b0a-4c6e-40b3-a75e-2ca514df3bc4
+ms.update-cycle: 180-days
 ---
 
 # Operations Guide for System Center Operations Manager

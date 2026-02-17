@@ -4,7 +4,7 @@ title: Install an Audit Collection Services (ACS) Collector and Database
 description: This article describes how to install the Operations Manager ACS collector and database.
 author: Jeronika-MS
 ms.author: v-gajeronika
-
+ms.update-cycle: 365-days
 ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center

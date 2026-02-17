@@ -7,7 +7,7 @@ ms.date: 04/09/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
-ms.assetid:
+ms.update-cycle: 1095-days
 ms.subservice: operations-manager
 ms.topic: how-to
 ---

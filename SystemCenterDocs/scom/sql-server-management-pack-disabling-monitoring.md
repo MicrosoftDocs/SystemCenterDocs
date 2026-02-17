@@ -8,6 +8,7 @@ ms.date: 12/09/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Disabling Monitoring of Specified SQL Servers and Databases

@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: c6b6b917-1fbc-43aa-b1ba-317d0fa7c882
+ms.update-cycle: 1095-days
 ---
 
 # Impact of closing an alert

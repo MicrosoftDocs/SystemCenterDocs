@@ -8,8 +8,8 @@ ms.date: 02/17/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 365-days
 ms.custom:
-  - na
   - intro-installation
   - UpdateFrequency2
   - sfi-image-nochange

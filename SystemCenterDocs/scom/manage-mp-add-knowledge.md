@@ -5,7 +5,7 @@ description: This article describes how to add custom knowledge to a workflow in
 ms.date: 08/22/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

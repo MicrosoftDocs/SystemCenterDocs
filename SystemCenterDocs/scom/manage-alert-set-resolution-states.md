@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d2717f98-84fc-43d7-8c06-bdd5aaf386c0
+ms.update-cycle: 1095-days
 ---
 
 # Set alert resolution states

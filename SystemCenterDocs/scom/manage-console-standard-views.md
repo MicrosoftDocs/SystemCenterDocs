@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: e6c36fe0-9fde-474f-a862-446598da5973
+ms.update-cycle: 1095-days
 ---
 
 # Standard views in Operations Manager

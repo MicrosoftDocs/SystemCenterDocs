@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ---
 
 # Control access by using the Health Service Lockdown Tool in Operations Manager

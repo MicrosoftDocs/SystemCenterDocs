@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 monikerRange: '>=sc-om-2019'
+ms.update-cycle: 180-days
 ---
 
 # Enable Service Log on for run as accounts

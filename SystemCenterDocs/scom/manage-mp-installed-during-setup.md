@@ -5,7 +5,7 @@ description: This article describes what management packs are installed with Ope
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 02/17/2025
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

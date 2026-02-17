@@ -8,7 +8,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
-ms.assetid:
+ms.update-cycle: 1095-days
 ---
 
 # Operations Manager Monitoring Scenarios

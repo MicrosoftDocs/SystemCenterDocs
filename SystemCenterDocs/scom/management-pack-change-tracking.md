@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 MonikerRange: '>=sc-om-2019'
+ms.update-cycle: 1095-days
 ms.custom:
   - engagement-fy23
   - sfi-image-nochange

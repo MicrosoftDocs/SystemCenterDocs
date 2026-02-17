@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 42973387-51b3-4276-a2e4-522f1eba2435
+ms.update-cycle: 1095-days
 ---
 
 # Monitoring the Health of the Management Group

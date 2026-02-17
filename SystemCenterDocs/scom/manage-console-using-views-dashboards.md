@@ -4,7 +4,7 @@ description: This article describes how to use the views and dashboards in Opera
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/10/2025
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: abf93e05-3b1d-499c-bb23-1fbe7cc8bd93
+ms.update-cycle: 1095-days
 ---
 
 # Alert generation in Operations Manager

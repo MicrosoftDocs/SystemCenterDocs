@@ -4,7 +4,7 @@ title: Process Monitoring template in Operations Manager management pack
 description: This article provides an overview about process monitoring template
 author: Jeronika-MS
 ms.author: v-gajeronika
-
+ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center

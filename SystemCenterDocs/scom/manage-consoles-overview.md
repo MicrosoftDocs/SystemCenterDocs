@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
+ms.update-cycle: 1095-days
 ---
 
 # Manage Operations console and Web console in Operations Manager

@@ -6,6 +6,7 @@ ms.author: v-gajeronika
 ms.date: 02/27/2025
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 365-days
 ms.topic: how-to
 MonikerRange: '>=sc-om-2022'
 ms.custom:

@@ -9,7 +9,9 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 13f2661d-ad31-4d01-92b4-fb9b2e7173f8
+ms.update-cycle: 1095-days
 ---
+
 # Monitoring Java applications
 
 

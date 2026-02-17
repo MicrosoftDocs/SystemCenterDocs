@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 5ec7aa58-3789-4589-a051-63fdd6f2dec1
+ms.update-cycle: 1095-days
 ---
 
 # View all rules and monitors running on an agent-managed computer

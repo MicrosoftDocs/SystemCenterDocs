@@ -8,6 +8,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # Security configuration in Management Pack for Azure SQL Managed Instance

@@ -9,6 +9,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
+ms.update-cycle: 365-days
 ---
 
 # Suspend monitoring temporarily by using maintenance mode

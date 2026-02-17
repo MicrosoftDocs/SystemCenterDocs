@@ -10,6 +10,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 365-days
 ---
 
 # Single-server deployment of Operations Manager

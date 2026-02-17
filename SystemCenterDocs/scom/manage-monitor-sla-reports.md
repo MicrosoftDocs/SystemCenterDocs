@@ -9,6 +9,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 4b55aeec-869a-4072-89f5-0ae8e5a860ea
+ms.update-cycle: 1095-days
 ---
 
 # Running a service level tracking report

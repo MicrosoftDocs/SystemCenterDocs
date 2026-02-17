@@ -9,6 +9,7 @@ ms.custom: intro-deployment, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 180-days
 ---
 
 # Deploy System Center Operations Manager

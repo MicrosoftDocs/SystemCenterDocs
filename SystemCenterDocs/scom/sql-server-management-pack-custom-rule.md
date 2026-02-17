@@ -9,6 +9,7 @@ ms.date: 04/15/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Custom Query-Based Performance Rule

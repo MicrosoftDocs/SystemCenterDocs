@@ -8,6 +8,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
 ms.custom: engagement-fy23, engagement-fy24
+ms.update-cycle: 365-days
 ---
 
 # Install an Operations Manager management server
