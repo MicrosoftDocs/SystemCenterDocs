@@ -8,6 +8,7 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.custom: intro-installation
+ms.update-cycle: 1095-days
 ---
 
 # Installation
