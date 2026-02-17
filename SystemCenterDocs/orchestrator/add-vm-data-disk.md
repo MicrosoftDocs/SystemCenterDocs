@@ -13,7 +13,9 @@ ms.assetid: 29ca91cb-1d7f-43b1-a967-23e7cdf2918c
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Add VM Data Disk
 
 The **Add VM Data Disk** activity adds a data disk to a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.

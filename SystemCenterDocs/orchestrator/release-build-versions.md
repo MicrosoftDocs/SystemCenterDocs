@@ -8,6 +8,7 @@ ms.date: 12/03/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: orchestrator
+ms.update-cycle: 180-days
 ---
 
 # System Center - Orchestrator build versions

@@ -3,7 +3,7 @@ title: Format Date-Time
 description: This article describes the functionality of Format Date/Time activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 10/10/2025
-ms.update-cycle: 1095-days
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

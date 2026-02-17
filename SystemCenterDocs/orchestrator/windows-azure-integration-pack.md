@@ -13,7 +13,9 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom: engagement_fy23 
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Windows Azure Integration Pack for Orchestrator in System Center
 
 ::: moniker range="sc-orch-2019"

@@ -7,6 +7,7 @@ ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
+ms.update-cycle: 365-days
 ms.custom: engagement-fy23, engagement-fy23
 ---
 # Build and test runbooks

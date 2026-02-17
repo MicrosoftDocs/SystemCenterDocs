@@ -13,7 +13,9 @@ ms.assetid: c361dda5-c55c-4743-8053-1bdf57667fa3
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Create Affinity Group
 
 The **Create Affinity Group** activity creates a new affinity group for the specified subscription. It's part of the **Azure Cloud Services** category activity.

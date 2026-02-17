@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: UpdateFrequency2
+ms.update-cycle: 1095-days
 ---
 
 # Manage telemetry settings in Orchestrator

@@ -13,7 +13,9 @@ ms.assetid: 568d336c-ed98-4ca1-8783-265a8dd0c6db
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Capture VM Instance
 
 The **Capture VM Instance** activity makes a running virtual machine available as an image for reuse. For Windows-based virtual machines, the image should be sysprepped before capture. After performing the capture, the virtual machine is deleted. This activity is part of the **Azure Virtual Machines** category activity.

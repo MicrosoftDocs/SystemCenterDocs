@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: engagement-fy24
 moniker range: <=sc-orch-2022
+ms.update-cycle: 1095-days
 ---
 
 # Set up TLS 1.2 for Orchestrator

@@ -12,7 +12,9 @@ ms.topic: concept-article
 ms.assetid: 9ddbe80a-4efb-4679-b880-bda7228c167e
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Update Group
 
 You can use the Update Group activity in a runbook to update properties of a group in Microsoft Active Directory.

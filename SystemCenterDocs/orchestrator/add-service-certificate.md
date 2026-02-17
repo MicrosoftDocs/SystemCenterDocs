@@ -13,7 +13,9 @@ ms.assetid: 5c12e8ec-fdc2-40c9-b217-5f598f9b93ad
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Add Service Certificate
 
 The **Add Service Certificate** activity is used in a runbook to add a certificate to a cloud service. It's part of the **Azure Certificates** category activity.

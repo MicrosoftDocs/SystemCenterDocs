@@ -13,7 +13,9 @@ ms.assetid: 88be6019-d575-4212-b57e-a0fe71f19090
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Change Deployment OS
 
 The **Change Deployment OS** activity changes the underlying guest operating system of a deployment. It's part of the **Azure Deployments** category activity.

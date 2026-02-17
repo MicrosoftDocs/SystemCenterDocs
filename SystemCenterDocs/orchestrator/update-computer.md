@@ -12,7 +12,9 @@ ms.topic: concept-article
 ms.assetid: 339881aa-8c21-4037-b4de-af1cc534546e
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Update Computer
 
 You can use the Update Computer activity in a runbook to update the properties of a computer in Microsoft Active Directory.

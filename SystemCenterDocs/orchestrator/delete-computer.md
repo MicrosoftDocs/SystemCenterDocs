@@ -12,6 +12,7 @@ ms.topic: concept-article
 ms.assetid: 45b7c571-5ae6-46a9-8154-531927a1dfb3
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 # Delete Computer
 

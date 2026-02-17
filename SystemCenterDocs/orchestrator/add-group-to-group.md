@@ -12,7 +12,9 @@ ms.topic: concept-article
 ms.assetid: 3017b8c2-be10-44cf-a806-e7ec13d4e8c7
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Add Group To Group
 
 You can use the Add Group To Group activity in a runbook to add a group to a group in the Microsoft Active Directory.

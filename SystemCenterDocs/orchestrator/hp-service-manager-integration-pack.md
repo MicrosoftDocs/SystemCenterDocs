@@ -9,6 +9,7 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 6eb5a088-0b37-456c-bd38-8af868e5ae82
+ms.update-cycle: 1095-days
 author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
