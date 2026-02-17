@@ -9,7 +9,6 @@ ms.update-cycle: 1095-days
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.update-cycle: 1095-days
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 

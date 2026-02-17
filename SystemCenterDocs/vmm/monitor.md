@@ -9,7 +9,6 @@ ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.update-cycle: 365-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
