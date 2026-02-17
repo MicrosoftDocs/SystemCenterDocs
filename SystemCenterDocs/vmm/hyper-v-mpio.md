@@ -6,6 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/09/2024
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

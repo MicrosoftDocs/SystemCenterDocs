@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: <=sc-vmm-2022
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Set up TLS 1.2 for VMM

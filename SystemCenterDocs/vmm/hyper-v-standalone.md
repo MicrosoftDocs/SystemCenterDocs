@@ -8,6 +8,7 @@ ms.date: 04/14/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 365-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '<sc-vmm-2019'
+ms.update-cycle: 1095-days
 ms.custom: engagement-fy23, engagement-fy24
 ---
 

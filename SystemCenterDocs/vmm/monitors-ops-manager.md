@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 05/15/2025
 ms.topic: how-to
 ms.service: system-center
+ms.update-cycle: 180-days
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23, engagement-fy24
 ---

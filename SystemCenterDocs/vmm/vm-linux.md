@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 08/30/2024
 ms.topic: install-set-up-deploy
 ms.service: system-center
+ms.update-cycle: 365-days
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---

@@ -5,7 +5,7 @@ description: This article describes how to manage an Azure Local instance in VMM
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/26/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager

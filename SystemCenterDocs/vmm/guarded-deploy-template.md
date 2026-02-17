@@ -8,6 +8,7 @@ ms.date: 03/31/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ms.custom: engagement-fy24
 ---
 

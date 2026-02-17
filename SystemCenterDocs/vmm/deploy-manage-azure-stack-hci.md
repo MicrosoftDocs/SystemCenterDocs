@@ -5,7 +5,7 @@ description: This article describes how to set up an Azure Local instance in VMM
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 09/09/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
