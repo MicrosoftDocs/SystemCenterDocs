@@ -4,7 +4,6 @@ ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 06/27/2025
-ms.update-cycle: 180-days
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
