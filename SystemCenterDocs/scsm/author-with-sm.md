@@ -1,4 +1,4 @@
----
+---test
 title: Author with Service Manager
 description: Provides an overview of using, authoring, and customizing management packs, which enable customizations in Service Manager.
 ms.service: system-center
