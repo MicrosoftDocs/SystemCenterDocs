@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 #  Manage tenants and user roles in SPF

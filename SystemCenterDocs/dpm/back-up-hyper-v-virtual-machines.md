@@ -10,6 +10,7 @@ ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom: engagement-fy23
+ms.update-cycle: 180-days
 ---
 
 # Back up Hyper-V virtual machines

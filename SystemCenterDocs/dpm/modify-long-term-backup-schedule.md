@@ -8,6 +8,7 @@ ms.subservice: data-protection-manager
 ms.assetid:
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 
 # Modify long-term backup schedule

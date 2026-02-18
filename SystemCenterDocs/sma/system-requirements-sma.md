@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/07/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-management-automation

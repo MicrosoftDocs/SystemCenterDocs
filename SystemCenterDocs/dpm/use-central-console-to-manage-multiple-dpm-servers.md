@@ -10,6 +10,7 @@ ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 
 # Manage multiple DPM servers with Central Console

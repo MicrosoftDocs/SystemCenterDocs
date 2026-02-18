@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: data-protection-manager
 monikerRange: '>=sc-dpm-2022'
+ms.update-cycle: 1095-days
 ---
 
 # Re-register the DPM server with Recovery Services vault using public access

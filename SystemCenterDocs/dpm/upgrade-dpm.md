@@ -7,7 +7,7 @@ ms.reviewer: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 01/21/2026
-ms.update-cycle: 180-days
+ms.update-cycle: 365-days
 title: Upgrade your System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:

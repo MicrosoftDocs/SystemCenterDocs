@@ -4,7 +4,7 @@ ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 05/05/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 title: System Center DPM Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
