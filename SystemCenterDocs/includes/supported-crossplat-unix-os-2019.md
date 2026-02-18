@@ -12,7 +12,7 @@ ms.update-cycle: 1095-days
 ---
 
 >[!NOTE]
->OpenSSL 3.0 is not supported. 
+>OpenSSL 3.0 is not supported.
 
 ## IBM AIX 7.2
 
