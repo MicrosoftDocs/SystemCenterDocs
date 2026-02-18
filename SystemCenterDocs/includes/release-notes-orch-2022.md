@@ -9,6 +9,7 @@ ms.subservice: Orchestrator
 keywords:
 ms.date: 12/09/2025
 title:  include file
+ms.update-cycle: 1095-days
 ---
 
 ## Orchestrator 2022 UR3 GB issues hotfix Release notes

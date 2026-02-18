@@ -8,6 +8,7 @@ ms.date:  11/29/2021
 ms.topic:  include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Install Operations Manager 2025 agent on UNIX and Linux computers

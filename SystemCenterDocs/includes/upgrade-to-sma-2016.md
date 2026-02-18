@@ -9,6 +9,7 @@ ms.date: 07/24/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid: f13edf4f-5708-4a50-94ca-9afb5c266839
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2016 - Service Management Automation

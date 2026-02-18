@@ -8,6 +8,7 @@ ms.date: 11/26/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## VMM 2022 system requirements

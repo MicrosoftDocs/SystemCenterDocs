@@ -8,6 +8,7 @@ ms.date:  02/28/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## New features in VMM 2019

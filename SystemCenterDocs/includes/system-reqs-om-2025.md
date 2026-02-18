@@ -8,6 +8,7 @@ ms.date: 05/08/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Capacity limits for Operations Manager

@@ -9,6 +9,7 @@ ms.custom: na
 ms.service: system-center
 ms.subservice: Orchestrator
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 1801 - Orchestrator

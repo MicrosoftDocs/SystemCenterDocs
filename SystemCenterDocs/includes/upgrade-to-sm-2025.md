@@ -12,6 +12,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 21baa50d-4f34-489e-b3ce-f44e1b3a83aa
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2025 - Service Manager

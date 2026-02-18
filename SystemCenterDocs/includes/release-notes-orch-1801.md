@@ -9,6 +9,7 @@ ms.subservice: Orchestrator
 keywords:
 ms.date: 05/16/2018
 title:  include file
+ms.update-cycle: 1095-days
 ---
 
 ##  Release notes for System Center 1801 - Orchestrator

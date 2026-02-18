@@ -9,6 +9,7 @@ ms.subservice: service-management-automation
 keywords:
 ms.date: 06/09/2022
 title:  include file
+ms.update-cycle: 1095-days
 ---
 
 ## SMA 2022 release notes

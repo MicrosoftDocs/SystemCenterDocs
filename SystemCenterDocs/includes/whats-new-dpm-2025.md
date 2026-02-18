@@ -9,6 +9,7 @@ title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
 ms.custom: intro-whats-new
+ms.update-cycle: 1095-days
 ---
 
 ## New features in DPM 2025

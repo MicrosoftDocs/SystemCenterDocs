@@ -1,7 +1,7 @@
 ---
 title: include file
 description: include file to describe the hardware, software, and other system requirements  Service Manager 2025.
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

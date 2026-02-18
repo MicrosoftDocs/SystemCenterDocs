@@ -9,6 +9,7 @@ ms.service: system-center
 monikerRange: 'sc-orch-2025'
 ms.subservice: orchestrator
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## New features in Orchestrator 2025

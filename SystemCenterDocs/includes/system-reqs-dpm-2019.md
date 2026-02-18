@@ -9,6 +9,7 @@ ms.date: 10/08/2024
 title: Preparing your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid:
+ms.update-cycle: 1095-days
 ---
 
 ## DPM deployment considerations

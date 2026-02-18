@@ -8,6 +8,7 @@ ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Operations Manager 2019 build versions

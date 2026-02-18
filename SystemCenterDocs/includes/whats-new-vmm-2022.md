@@ -9,6 +9,7 @@ ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-whats-new
+ms.update-cycle: 1095-days
 ---
 
 ## New features in VMM 2022

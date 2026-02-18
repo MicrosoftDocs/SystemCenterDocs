@@ -8,6 +8,7 @@ ms.date: 11/04/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Supported storage arrays in VMM 2025

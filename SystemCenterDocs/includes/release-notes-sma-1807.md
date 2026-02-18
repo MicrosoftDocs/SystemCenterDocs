@@ -9,6 +9,7 @@ ms.subservice: service-management-automation
 keywords:
 ms.date: 07/24/2018
 title:  include
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 1807 - Service Management Automation

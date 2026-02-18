@@ -4,7 +4,7 @@ ms.topic:  include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service:  system-center
-keywords:  
+ms.update-cycle: 1095-days
 ms.date: 08/07/2025
 title:  include file
 ms.subservice:  service-management-automation

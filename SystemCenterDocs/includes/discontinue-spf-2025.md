@@ -8,6 +8,7 @@ ms.date:  10/27/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: data-protection-manager
+ms.update-cycle: 1095-days
 ---
 > [!IMPORTANT]
 >

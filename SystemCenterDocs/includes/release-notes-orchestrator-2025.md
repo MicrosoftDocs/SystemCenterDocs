@@ -8,6 +8,7 @@ ms.service:  system-center
 ms.subservice: Orchestrator
 ms.date: 12/09/2025
 title:  include file
+ms.update-cycle: 1095-days
 ---
 
 ## Orchestrator 2025 UR1 Release notes

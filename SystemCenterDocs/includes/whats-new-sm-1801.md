@@ -9,6 +9,7 @@ keywords:
 ms.date: 05/08/2018
 ms.subservice:  service-manager
 ms.assetid:  87385ef8-1875-477c-8e6c-efc05028aaa6
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in System Center 1801 - Service Manager

@@ -8,6 +8,7 @@ ms.date:  07/04/2022
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 2022 - Service Provider Foundation

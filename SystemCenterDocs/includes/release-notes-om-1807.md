@@ -8,6 +8,7 @@ ms.service: system-center
 ms.assetid: 4f84c864-ef52-4e81-a186-a03bf15b266e
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Operations Manager 1807 release notes
