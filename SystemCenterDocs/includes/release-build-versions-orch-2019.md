@@ -8,6 +8,7 @@ ms.service: system-center
 ms.assetid: 
 ms.subservice: orchestrator
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Orchestrator 2019 build versions

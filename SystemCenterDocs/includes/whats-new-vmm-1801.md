@@ -8,6 +8,7 @@ ms.date:  06/06/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in System Center 1801 - Virtual Machine Manager

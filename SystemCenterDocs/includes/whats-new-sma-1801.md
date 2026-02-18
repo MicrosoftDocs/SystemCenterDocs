@@ -9,6 +9,7 @@ keywords:
 ms.date: 02/05/2018
 ms.subservice:  service-management-automation
 ms.assetid:  63d6f604-f51c-4ea8-b2ce-a00bab78fd05
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in SMA 1801

@@ -8,6 +8,7 @@ ms.date:  07/24/2018
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in System Center 1807 - Virtual Machine Manager

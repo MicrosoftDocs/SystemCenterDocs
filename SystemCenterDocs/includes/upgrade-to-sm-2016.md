@@ -7,6 +7,7 @@ ms.author: v-gajeronika
 ms.date: 05/09/2018
 ms.subservice: service-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2016 - Service Manager

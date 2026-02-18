@@ -9,6 +9,7 @@ ms.subservice: service-management-automation
 keywords:
 ms.date: 03/14/2019
 title:  include file
+ms.update-cycle: 1095-days
 ---
 
 ## SMA 2019 release notes

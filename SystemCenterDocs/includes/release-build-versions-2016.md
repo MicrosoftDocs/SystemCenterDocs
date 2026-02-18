@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 10/02/2024
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager

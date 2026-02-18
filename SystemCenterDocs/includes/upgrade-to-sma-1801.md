@@ -9,6 +9,7 @@ ms.date: 05/31/2018
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  23356ae4-74ba-46f0-8484-22f896a5e0f5
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 1801 - Service Management Automation

@@ -8,6 +8,7 @@ ms.date:  o5/17/2018
 ms.service:  system-center
 ms.subservice:  orchestrator
 ms.topic:  include
+ms.update-cycle: 1095-days
 ---
 
 

@@ -8,6 +8,7 @@ keywords:
 ms.date: 01/22/2018
 title:  include file
 ms.subservice:  service-management-automation
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in SMA 2016

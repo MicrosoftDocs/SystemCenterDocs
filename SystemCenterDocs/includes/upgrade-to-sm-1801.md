@@ -12,6 +12,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 0584ca74-1a8e-462a-9578-c2e1a503a4fd
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 1801 - Service Manager

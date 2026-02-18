@@ -8,6 +8,7 @@ ms.topic:  include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
 ms.assetid: ad904874-7065-409f-923a-8571c99d36fe
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2016 -  Service Provider Foundation

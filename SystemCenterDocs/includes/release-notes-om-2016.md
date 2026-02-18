@@ -8,6 +8,7 @@ ms.service:  system-center
 ms.subservice: operations-manager
 ms.date: 05/23/2017
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
+ms.update-cycle: 1095-days
 ---
 
 ## Operations Manager 2016 release notes

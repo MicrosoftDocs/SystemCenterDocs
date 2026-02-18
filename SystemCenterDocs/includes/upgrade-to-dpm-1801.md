@@ -10,6 +10,7 @@ title:  Upgrade to DPM 1801
 ms.subservice: data-protection-manager
 ms.assetid:
 ms.custom: sfi-image-nochange
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to DPM 1801

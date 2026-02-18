@@ -8,6 +8,7 @@ keywords:
 ms.date:  2/8/2018
 title:  Update to DPM 1807
 ms.subservice: data-protection-manager
+ms.update-cycle: 1095-days
 ms.assetid:
 ---
 

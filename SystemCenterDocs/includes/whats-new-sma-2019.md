@@ -9,6 +9,7 @@ keywords:
 ms.date: 03/14/2019
 ms.subservice: service-management-automation
 ms.assetid:  c247a287-a48f-4e79-8f0a-ec2759c42db3
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in SMA 2019

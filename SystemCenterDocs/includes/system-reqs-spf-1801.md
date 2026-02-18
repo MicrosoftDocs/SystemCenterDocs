@@ -8,6 +8,7 @@ ms.date:  06/14/2018
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 1801 - Service Provider Foundation
