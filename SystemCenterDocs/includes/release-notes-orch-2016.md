@@ -10,6 +10,7 @@ keywords:
 ms.date: 05/17/2018
 title:  include
 monikerRange: 'sc-orch-2016'
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 2016 - Orchestrator

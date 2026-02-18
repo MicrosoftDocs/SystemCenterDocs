@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Back up mirrored SQL servers with DPM

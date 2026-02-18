@@ -8,6 +8,7 @@ ms.service: system-center
 ms.date: 08/20/2025
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Service Management Automation architecture

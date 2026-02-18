@@ -9,6 +9,7 @@ ms.subservice: orchestrator
 ms.topic: include
 ms.custom: intro-installation
 Moniker Range: 'sc-orch-2022'
+ms.update-cycle: 1095-days
 ---
 
 A complete Orchestrator installation includes

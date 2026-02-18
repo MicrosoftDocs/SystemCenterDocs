@@ -10,6 +10,7 @@ ms.assetid: e63b86d4-1f83-48ef-82bb-636b9dc745e2
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 365-days
 ---
 
 # Prepare machines in workgroups and untrusted domains for backup

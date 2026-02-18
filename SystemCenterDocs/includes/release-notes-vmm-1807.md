@@ -8,6 +8,7 @@ ms.date:  07/24/2018
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## VMM 1807 release notes

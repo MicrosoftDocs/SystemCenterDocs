@@ -9,6 +9,7 @@ ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 This article describes how to create logical networks in System Center Virtual Machine Manager (VMM). VMM offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.

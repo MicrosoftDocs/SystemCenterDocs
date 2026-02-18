@@ -8,6 +8,7 @@ ms.topic:  include
 ms.service:  system-center
 ms.subservice: orchestrator
 description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 1801.
+ms.update-cycle: 1095-days
 keywords:
 ---
 

@@ -8,6 +8,7 @@ ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Operations Manager 2022 release notes

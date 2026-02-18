@@ -8,6 +8,7 @@ ms.date: 12/13/2023
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2022 - Virtual Machine Manager

@@ -9,6 +9,7 @@ keywords:
 ms.date: 12/01/2025
 ms.subservice: service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
+ms.update-cycle: 1095-days
 ---
 
 ## New features in SM 2025

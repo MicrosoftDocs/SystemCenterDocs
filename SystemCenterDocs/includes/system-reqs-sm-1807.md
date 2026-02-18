@@ -12,6 +12,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 87d03428-968d-4036-8d1c-8064900756cb
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 1807 - Service Manager

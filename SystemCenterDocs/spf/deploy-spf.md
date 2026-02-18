@@ -7,6 +7,7 @@ ms.date: 04/09/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: service-provider-foundation
+ms.update-cycle: 1095-days
 ms.custom:
   - UpdateFrequency2
   - intro-deployment

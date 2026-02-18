@@ -5,10 +5,10 @@ description: The system requirements article provides general performance and sc
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/21/2025
-ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Capacity limits for Operations Manager

@@ -8,6 +8,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: how-to
+ms.update-cycle: 365-days
 ---
 
 # Configure firewall settings in DPM

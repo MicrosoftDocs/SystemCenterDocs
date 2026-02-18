@@ -8,6 +8,7 @@ ms.date:  03/14/2019
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 2019 - Service Provider Foundation

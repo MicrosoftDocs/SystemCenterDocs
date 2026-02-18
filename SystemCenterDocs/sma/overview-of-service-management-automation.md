@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 09/01/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 365-days
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---

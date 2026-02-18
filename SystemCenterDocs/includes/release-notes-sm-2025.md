@@ -9,6 +9,7 @@ keywords:
 ms.date: 11/13/2025
 title: Include file
 ms.assetid:
+ms.update-cycle: 1095-days
 ---
 
 ## Service Manager 2025 release notes

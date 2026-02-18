@@ -9,6 +9,7 @@ ms.service:  system-center
 ms.subservice: orchestrator
 description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 2022.
 keywords:
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2022 - Orchestrator

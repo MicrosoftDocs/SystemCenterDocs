@@ -9,6 +9,7 @@ ms.custom: intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## New features in Operations Manager 2025

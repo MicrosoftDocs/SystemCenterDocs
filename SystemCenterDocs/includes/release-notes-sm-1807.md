@@ -9,6 +9,7 @@ keywords:
 ms.date: 07/24/2018
 title: include file
 ms.assetid: 5e9ce306-b397-47a8-ba86-a77027bd7ca8
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 1807 - Service Manager

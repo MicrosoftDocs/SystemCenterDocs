@@ -8,6 +8,7 @@ ms.date: 11/01/2024
 title: Work with Integration Modules
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Work with integration modules

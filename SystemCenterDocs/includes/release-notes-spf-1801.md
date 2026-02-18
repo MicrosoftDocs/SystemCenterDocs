@@ -9,6 +9,7 @@ ms.subservice: service-provider-foundation
 keywords:
 ms.date: 02/05/2018
 title: include file
+ms.update-cycle: 1095-days
 ---
 
 ## SPF 1801 release notes

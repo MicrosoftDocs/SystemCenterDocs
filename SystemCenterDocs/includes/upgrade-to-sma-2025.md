@@ -8,6 +8,7 @@ keywords:
 ms.date: 07/24/2025
 title:  include file
 ms.subservice:  service-management-automation
+ms.update-cycle: 1095-days
 ms.assetid:
 ---
 

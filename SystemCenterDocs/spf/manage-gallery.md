@@ -8,6 +8,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Import gallery items in SPF

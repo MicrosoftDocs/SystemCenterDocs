@@ -9,6 +9,7 @@ ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 ## How to create logical switches

@@ -10,6 +10,7 @@ ms.service: system-center
 monikerRange: 'sc-om-1807'
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## New features in Operations Manager 1807

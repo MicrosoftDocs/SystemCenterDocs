@@ -10,6 +10,7 @@ title: Add Modern Backup Storage to DPM
 ms.subservice: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 ms.custom: engagement-fy23
+ms.update-cycle: 365-days
 ---
 
 # Add Modern Backup Storage to DPM
