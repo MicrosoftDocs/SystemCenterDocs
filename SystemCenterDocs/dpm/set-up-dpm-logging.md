@@ -11,6 +11,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Set up DPM logging

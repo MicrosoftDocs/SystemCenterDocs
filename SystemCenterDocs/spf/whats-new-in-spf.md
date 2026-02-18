@@ -10,6 +10,7 @@ ms.subservice: service-provider-foundation
 ms.assetid: 49342436-7e22-4c6b-9602-2adddf8f58c9
 monikerRange: '>sc-spf-2016'
 ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy23
+ms.update-cycle: 1095-days
 ---
 
 # What's new in System Center - Service Provider Foundation

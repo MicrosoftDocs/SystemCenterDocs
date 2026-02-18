@@ -10,6 +10,7 @@ title: Scale Service Management Automation
 ms.subservice: service-management-automation
 ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Scale Service Management Automation

@@ -10,7 +10,7 @@ ms.assetid:
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
-ms.custom:
+ms.update-cycle: 1095-days
 ---
 
 # Client protection End User Recovery (EUR) doesn't work

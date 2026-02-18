@@ -11,6 +11,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 monikerRange: '>=sc-dpm-2019'
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Overview of offline backup in DPM

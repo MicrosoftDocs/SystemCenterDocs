@@ -8,6 +8,7 @@ ms.author: v-gajeronika
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-management-automation
+ms.update-cycle: 1095-days
 ms.custom:
   - UpdateFrequency2
   - engagement-fy24

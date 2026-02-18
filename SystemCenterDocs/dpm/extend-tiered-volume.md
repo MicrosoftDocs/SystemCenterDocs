@@ -10,6 +10,12 @@ title:  Extend Tiered Volume in System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 ms.custom: UpdateFrequency2, engagement-fy24
+Hi Jyothi,
+ 
+Here is my focus area for the day:
+ 
+Updating the update cycle values to SCOM articles and will continue the same with other components.
+CAMP support if needed.
 ---
 
 # Extend tiered volume

@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: service-management-automation
 monikerRange: '>sc-sma-2016'
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Release notes for System Center - Service Management Automation

@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: service-provider-foundation
 monikerRange: '>sc-spf-2016'
 ms.custom: UpdateFrequency2
+ms.update-cycle: 1095-days
 ---
 
 # Release notes for System Center Service Provider Foundation

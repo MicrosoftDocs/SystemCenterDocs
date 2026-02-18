@@ -9,6 +9,7 @@ ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Upgrade Service Management Automation

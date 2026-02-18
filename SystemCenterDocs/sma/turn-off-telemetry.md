@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Turn off telemetry settings in Service Management Automation
