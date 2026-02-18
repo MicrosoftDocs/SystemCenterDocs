@@ -8,10 +8,11 @@ ms.date: 08/29/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 >[!NOTE]
->OpenSSL 3.0 is not supported. 
+>OpenSSL 3.0 is not supported.
 
 ## IBM AIX 7.2
 
