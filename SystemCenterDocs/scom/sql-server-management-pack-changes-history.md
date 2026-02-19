@@ -4,7 +4,7 @@ title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server.
 author: epomortseva
 ms.author: v-gajeronika
-ms.date: 06/30/2025
+ms.date: 02/19/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -37,7 +37,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 - Replaced System.Data.SqlClient with the Microsoft.Data.SqlClient data provider for SQL Server (MDS):
   - Actively maintained and enhanced by Microsoft.
-  - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
+  - Supports the latest protocols and features, including TDS 8.0, and Always Encrypted.
 
 - Upgraded Microsoft SQL Server Management Objects (SMO) from version 15 to version 17, enabled by the migration to Microsoft.Data.SqlClient. This update brings numerous improvements and adds support for new SQL Server features.
 - Added an "Only Running Jobs" override to the Job Duration monitor. This setting allows the monitor to measure either all jobs or only those currently running.
