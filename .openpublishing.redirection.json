@@ -15,7 +15,7 @@
   },
   {
      "source_path" : "SystemCenterDocs/scom/plan-security-tls-1-3-configuration.md",
-     "redirect_url" : "/azure/azure-monitor/scom/plan-security-tls12-config"
+     "redirect_url" : "/system-center/scom/plan-security-tls12-config"
   },
   {
      "source_path" : "SystemCenterDocs/scom/plan-supported-crossplat-os.md",
