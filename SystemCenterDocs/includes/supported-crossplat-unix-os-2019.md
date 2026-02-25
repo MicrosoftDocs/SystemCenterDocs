@@ -4,7 +4,7 @@ title: Supported UNIX operating system versions
 description: This article lists the supported versions of UNIX operating system for System Center Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/29/2025
+ms.date: 02/24/2026
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -27,6 +27,9 @@ ms.update-cycle: 1095-days
 
 ## Solaris 10 SPARC
 
+>[!NOTE]
+>Operations Manager 2019 supports only x64 components; x86 components aren't supported.
+
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |SUNWlibC |Sun Workshop Compilers Bundled libC|5.10, REV=2004.12.22|
@@ -39,6 +42,9 @@ ms.update-cycle: 1095-days
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
 
 ## Solaris 11 SPARC
+
+>[!NOTE]
+>Operations Manager 2019 supports only x64 components; x86 components aren't supported.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
