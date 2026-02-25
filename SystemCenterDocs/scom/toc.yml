@@ -51,8 +51,6 @@
         href: plan-security-config-firewall.md
       - name: Configure TLS 1.2 encryption
         href: plan-security-tls12-config.md
-      - name: Configure TLS 1.3 encryption
-        href: plan-security-tls-1-3-configuration.md
       - name: Configure antivirus exclusions
         href: plan-security-antivirus.md
       - name: Service, user, and security accounts

@@ -5,7 +5,7 @@ description: This article lists the supported versions of UNIX operating system 
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.update-cycle: 365-days
-ms.date: 01/29/2025
+ms.date: 02/24/2026
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
