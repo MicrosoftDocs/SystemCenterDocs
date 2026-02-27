@@ -44,6 +44,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
+
 ### Bug Fixes
 
 - Fixed an issue in the "Table Clustered Index Fragmentation" monitor caused by collation differences with the master database.

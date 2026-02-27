@@ -27,6 +27,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Included minor enhancements and routine maintenance updates to improve system stability and overall reliability.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
+
 ## December 2022 - 7.0.42.0 RTM
 
 ### What's New
