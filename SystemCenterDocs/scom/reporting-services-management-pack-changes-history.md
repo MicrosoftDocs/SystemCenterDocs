@@ -28,6 +28,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
+
 ### Known Issues
 
 - To maintain backward compatibility with prior versions, the parameter `TrustServerCertificate=true` is included in the connection string.
