@@ -21,7 +21,7 @@ This article covers new functionality and improvements in Management Pack for Az
 
 - Replaced System.Data.SqlClient with the Microsoft.Data.SqlClient data provider for SQL Server (MDS):
   - Actively maintained and enhanced by Microsoft.
-  - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
+  - Supports the latest protocols and features, including TDS 8.0, and Always Encrypted.
 - Upgraded Microsoft SQL Server Management Objects (SMO) from version 15 to version 17, enabled by the migration to Microsoft.Data.SqlClient. This update brings numerous improvements and adds support for new SQL Server features.
 - Included minor enhancements and routine maintenance updates to improve system stability and overall reliability
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
