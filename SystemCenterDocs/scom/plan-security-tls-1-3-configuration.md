@@ -30,7 +30,7 @@ The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) t
 Perform the following steps to implement TLS protocol version 1.3 in Operations Manager:
 
 1. Install the latest Microsoft OLE DB Driver (x64) on all management servers and the web console server.
-1.  the latest Microsoft ODBC Driver (x64) on all management servers and the web console server.
+1. Install the latest Microsoft ODBC Driver (x64) on all management servers and the web console server.
 1. Configure Windows to use TLS 1.3.  
 1. Configure .NET Framework to utilize higher levels of cryptography by default.
 
