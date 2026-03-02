@@ -4,7 +4,7 @@ title: Manage Azure Local instances in VMM
 description: This article describes how to manage an Azure Local instance in VMM.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/26/2025
+ms.date: 03/02/2026
 ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
@@ -39,6 +39,8 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 **Unsupported Azure Local management scenarios with VMM**
 
 - Creation of Azure Local instance using SCVMM. See the [deployment methods for Azure Local instances](/azure/azure-local/deploy/deployment-introduction#about-deployment-methods).
+
+- Dual management of VMs from Azure and SCVMM. A VM should be managed either by SCVMM or by Azure interfaces associated with Azure Local. VMM can't recognize any operation performed on the VM from Azure and hence dual management will lead to incorrect VM states.
 
 - Configuring network settings of Azure Local hosts and clusters. Network ATC is enabled by default in Azure Local deployments and VMM doesn't support Network ATC. VMM can't recognize Arc-enabled Software Defined Networking configuration either.
 
