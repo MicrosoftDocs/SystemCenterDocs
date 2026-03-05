@@ -5,7 +5,7 @@ description: This article details the known issues and workarounds in Operations
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
-ms.date: 01/19/2026
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.topic: release-notes
 ms.service: system-center

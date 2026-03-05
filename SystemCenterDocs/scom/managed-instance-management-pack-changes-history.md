@@ -4,7 +4,7 @@ title: Features and enhancements in Management Pack for Azure SQL Managed Instan
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/30/2025
+ms.date: 03/03/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
