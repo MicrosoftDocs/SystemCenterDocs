@@ -18,7 +18,8 @@ ms.update-cycle: 1095-days
 
 # Get Dial-up Status
 
-[!INCLUDE [end-of-life-notes-windows-server-2008.md](/SystemCenterDocs/includes/end-of-life-notes-windows-server-2008.md)]
+> [!NOTE]
+> Windows Server 2008 and Windows Server 2008 R2 have reached End of Life (EOL). For more information, see, [End of support for Windows Server 2008 and Windows Server 2008 R2](/troubleshoot/windows-server/windows-server-eos-faq/end-of-support-windows-server-2008-2008r2) and [Perform in-place upgrade to Windows Server 2016, 2019, 2022, or 2025](/azure/virtual-machines/windows-in-place-upgrade#perform-in-place-upgrade-to-windows-server-2016-2019-2022-or-2025). Review your usage and plan OS upgrades and migrations accordingly.
 
 The Get Dial-up Status activity retrieves the status of a dial-up or VPN network connection on the Runbook server. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 
