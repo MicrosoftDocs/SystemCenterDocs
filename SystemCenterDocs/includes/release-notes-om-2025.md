@@ -17,7 +17,7 @@ The following sections summarize the release notes for Operations Manager 2025 U
 
 For the problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068304).
 
-### Known issues
+### Known issue
 
 The **About** page on Operations Console shows RTM version (10.25.10324.0) instead of UR1 version. The accurate version number will be displayed starting from Operations Manager 2025 UR2. To verify the accurate version, check **Operations Console** > **Management server** page
 
