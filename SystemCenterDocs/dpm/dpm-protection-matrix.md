@@ -3,7 +3,7 @@ description: A complete matrix of all workloads, data types, and installations t
 ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 01/30/2026
+ms.date: 02/27/2026
 ms.update-cycle: 180-days
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
@@ -160,6 +160,8 @@ The following sections provide details of the protection support matrix for DPM:
 ::: moniker range="<sc-dpm-2019"
 
 ## Protection support matrix
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
 
 |Workload|Version|DPM installation|DPM - System Center SAC|DPM - System Center 2016|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|

@@ -2,7 +2,7 @@
 title: Get Dial-up Status
 description: This article describes the functionality of Get Dial-up Status activity.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 02/27/2026
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,8 @@ ms.update-cycle: 1095-days
 ---
 
 # Get Dial-up Status
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](/SystemCenterDocs/includes/end-of-life-notes-windows-server-2008.md)]
 
 The Get Dial-up Status activity retrieves the status of a dial-up or VPN network connection on the Runbook server. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 
@@ -41,3 +43,4 @@ The following table lists the published data items.
 |----------|-----------------|  
 |Dial-up or VPN name|The name assigned to the dial-up connection|  
 |Line status|Indicates whether the network connection is connected or disconnected|
+

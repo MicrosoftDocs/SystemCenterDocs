@@ -2,7 +2,7 @@
 title: Connect-Disconnect Dial-up
 description: This article describes the Connect/Disconnect Dial-up activity.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 04/24/2025
+ms.date: 02/27/2026
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,8 @@ ms.update-cycle: 1095-days
 ---
 
 # Connect/Disconnect Dial-up
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](/SystemCenterDocs/includes/end-of-life-notes-windows-server-2008.md)]
 
 This article describes the Connect/Disconnect Dial-up activity. The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connection or VPN. The connection must be configured on the Runbook server before the activity can use it. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 

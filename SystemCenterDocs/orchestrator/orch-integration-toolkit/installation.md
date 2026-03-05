@@ -3,7 +3,7 @@ title: Orchestrator Integration Toolkit Installation
 description: This article explains how to install the Orchestrator Integration Toolkit.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/03/2025
+ms.date: 02/27/2026
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
@@ -20,6 +20,8 @@ This article provides the system requirements and steps to install the Orchestra
  The installation and use of the Orchestrator Integration Toolkit requires the following hardware and software when installed in a standalone environment.  
 
 ::: moniker range="<=sc-orch-2019"
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](/SystemCenterDocs/includes/end-of-life-notes-windows-server-2008.md)]
 
 |Component|Minimum requirement|  
 |---------------|-------------------------|  
@@ -113,3 +115,4 @@ In addition to this online reference provided for System Center Orchestrator, th
 - [System Center documentation](../index.yml).
 - [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/).
 - [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator).
+
