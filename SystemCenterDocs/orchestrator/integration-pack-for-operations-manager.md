@@ -1,7 +1,7 @@
 ---
 title: System Center - The Orchestrator integration pack for System Center Operations Manager
 description: Learn about the integration pack for Operations Manager, an add-in provided by System Center Orchestrator.
-ms.date: 11/19/2024
+ms.date: 02/27/2026
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
@@ -204,6 +204,8 @@ Follow these steps:
    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
 3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
+
+   [!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
 
    | Operating system | Required update |
    | --- | --- |

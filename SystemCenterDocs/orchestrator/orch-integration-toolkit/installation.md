@@ -3,7 +3,7 @@ title: Orchestrator Integration Toolkit Installation
 description: This article explains how to install the Orchestrator Integration Toolkit.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/03/2025
+ms.date: 02/27/2026
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
@@ -20,6 +20,9 @@ This article provides the system requirements and steps to install the Orchestra
  The installation and use of the Orchestrator Integration Toolkit requires the following hardware and software when installed in a standalone environment.  
 
 ::: moniker range="<=sc-orch-2019"
+
+> [!NOTE]
+> Windows Server 2008 and Windows Server 2008 R2 have reached End of Life (EOL). For more information, see, [End of support for Windows Server 2008 and Windows Server 2008 R2](/troubleshoot/windows-server/windows-server-eos-faq/end-of-support-windows-server-2008-2008r2) and [Perform in-place upgrade to Windows Server 2016, 2019, 2022, or 2025](/azure/virtual-machines/windows-in-place-upgrade#perform-in-place-upgrade-to-windows-server-2016-2019-2022-or-2025). Review your usage and plan OS upgrades and migrations accordingly.
 
 |Component|Minimum requirement|  
 |---------------|-------------------------|  
@@ -113,3 +116,4 @@ In addition to this online reference provided for System Center Orchestrator, th
 - [System Center documentation](../index.yml).
 - [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/).
 - [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator).
+
