@@ -3,7 +3,7 @@ title: System Center 2019 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2019 - Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 10/02/2024
+ms.date: 03/03/2026
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -37,6 +37,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10618.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages|
 |10.19.10649.0|[5035285](https://support.microsoft.com/kb/5035285) |March 2024|Update Rollup 6|
 |10.19.10652.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 6 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
+|10.19.10658.0|[5073251](https://support.microsoft.com/kb/5073251) |March 2026 |Update Rollup 6 MSRC hotfix |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
