@@ -5,7 +5,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 08/07/2025
+ms.date: 02/27/2026
 ms.update-cycle: 365-days
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
@@ -416,7 +416,10 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ### Support for protecting computers running server operating systems with DPM
 
-::: moniker range="<=sc-dpm-2016"
+::: moniker range="sc-dpm-2016"
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
+
 **Issue**: The following protection scenarios are supported:
 
 - Windows Server 2012 R2 can be protected with DPM 2012 R2 and later.
