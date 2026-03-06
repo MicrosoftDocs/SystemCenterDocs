@@ -21,20 +21,6 @@ For the problems fixed in UR1 and the installation instructions for UR1, see the
 
 The **About** page on Operations Console shows RTM version (10.25.10324.0) instead of UR1 version. The accurate version number will be displayed starting from Operations Manager 2025 UR2. To verify the accurate version, check **Operations Console** > **Management server** page
 
-### Enabling TLS 1.3 causes some functionality issues
-
-**Description**: Agents connected through the Gateway aren't sending heartbeats to the Management Server. 
-
-**Workaround**:
-Disable TLS 1.3 in the Windows registry until a permanent fix is available and update the following registry settings on both the Management Server and the Gateway Server.
-
-`[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client]`
-`"Enabled"dword:00000000`
-`"DisabledByDefault"=dword:00000001`
-
-`[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Server]`
-`"DisabledByDefault"=dword:00000001`
-`"Enabled"=dword:00000000`
 
 ## Operations Manager 2025 release notes
 
