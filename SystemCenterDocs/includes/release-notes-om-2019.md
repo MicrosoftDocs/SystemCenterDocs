@@ -3,7 +3,7 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2019.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 09/02/2020
+ms.date: 03/09/2026
 ms.service: system-center
 ms.assetid: 56adc06e-4317-4622-83f2-cc44a5f40c78
 ms.subservice: operations-manager
@@ -15,6 +15,36 @@ ms.update-cycle: 1095-days
 
 The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds.
 Also see [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](#operations-manager-2019-ur2-release-notes) release notes.
+
+### *Show/Hide Details* error in Web Console
+
+**Description**: In the System Center Operations Manager Web Console, the **Show/Hide Details** option in Health Explorer fails and shows a **ToggleDisplayMode is not defined** error.
+
+**Workaround**: Add the following script to *ViewTypeHealthExplorer.aspx* within the `head` section so the function is available in the global scope before UpdatePanel content is injected.
+
+```javascript
+<script type="text/javascript">
+function ToggleDisplayMode(node)
+{
+    var tableHeader = document.getElementById(node);
+
+    if (null != tableHeader)
+    {
+        var row = tableHeader.nextSibling;
+
+        while (row != null)
+        {
+            if (row.style.display != "none")
+                row.style.display = "none";
+            else
+                row.style.display = "";
+
+            row = row.nextSibling;
+        }
+    }
+}
+</script>
+```
 
 ### Health Service with Log on type as *Service* by default
 
