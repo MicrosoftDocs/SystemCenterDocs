@@ -4,7 +4,7 @@ title: Management Pack for SQL Server delivery
 description: This article explains how to install Management Pack for SQL Server
 author: epomortseva
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 03/10/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.update-cycle: 365-days
 
 # Management Pack for SQL Server Delivery
 
-You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=56203) or System Center Operations Manager Online Catalog.
+You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=108512) or System Center Operations Manager Online Catalog.
 
 The package includes the following files:
 
