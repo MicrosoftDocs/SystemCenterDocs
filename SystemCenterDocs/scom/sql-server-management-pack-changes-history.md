@@ -4,7 +4,7 @@ title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server.
 author: epomortseva
 ms.author: v-gajeronika
-ms.date: 03/03/2026
+ms.date: 03/11/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -27,6 +27,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 - Reverts SQL Server Management Objects (SMO) to version 15
 
+[Download Management Pack for SQL Server 7.12 RTM](https://www.microsoft.com/download/details.aspx?id=108512).
+
 ### Bug Fixes
 
 - Fixed a bug where Availability Group monitors were not functioning as expected for some customers.
@@ -44,6 +46,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
+[Download Management Pack for SQL Server 7.10.6 RTM](https://www.microsoft.com/download/details.aspx?id=108512).
 
 ### Bug Fixes
 
@@ -58,6 +61,9 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's new
 
 - Added an [inclusion override](sql-server-management-pack-disabling-monitoring.md#disabling-monitoring-of-specified-sql-agent-jobs-by-name) for SQL Agent Job discovery
+
+
+[Download Management Pack for SQL Server 7.8.4 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=56203).
 
 ### Bug fixes and improvements
 
