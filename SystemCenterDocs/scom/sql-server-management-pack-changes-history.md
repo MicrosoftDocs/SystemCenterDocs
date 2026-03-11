@@ -46,8 +46,6 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
-[Download Management Pack for SQL Server 7.10.6 RTM](https://www.microsoft.com/download/details.aspx?id=108512).
-
 ### Bug Fixes
 
 - Fixed an issue in the "Table Clustered Index Fragmentation" monitor caused by collation differences with the master database.
