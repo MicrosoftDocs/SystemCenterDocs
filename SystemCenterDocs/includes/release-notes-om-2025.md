@@ -3,7 +3,7 @@ title: include file
 description: Include file that summarizes the release notes for Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/06/2026
+ms.date: 03/09/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -29,7 +29,37 @@ The **About** page on Operations Console shows RTM version (10.25.10324.0) inste
 
 ## Operations Manager 2025 release notes
 
-This article summarizes the release notes for Operations Manager 2025.
+The following sections summarize the release notes for Operations Manager 2025, and include the known issues and workarounds.
 
 - Fixed broken behavior of Web Console where allow-popups and allow-forms settings weren't added after applying security changes.
 - Fixed failure of favorite reports with `HttpParseException` in Web Console.
+
+### *Show/Hide Details* error in Web Console
+
+**Description**: In the System Center Operations Manager Web Console, the **Show/Hide Details** option in Health Explorer fails and shows a **ToggleDisplayMode is not defined** error.
+
+**Workaround**: Add the following script to *ViewTypeHealthExplorer.aspx* within the `head` section so the function is available in the global scope before UpdatePanel content is injected.
+
+```javascript
+<script type="text/javascript">
+function ToggleDisplayMode(node)
+{
+    var tableHeader = document.getElementById(node);
+
+    if (null != tableHeader)
+    {
+        var row = tableHeader.nextSibling;
+
+        while (row != null)
+        {
+            if (row.style.display != "none")
+                row.style.display = "none";
+            else
+                row.style.display = "";
+
+            row = row.nextSibling;
+        }
+    }
+}
+</script>
+```
