@@ -32,7 +32,7 @@ For example, an override **2016,2017** instructs the management pack to skip ins
 
 After you import SQL Server Reporting Services Management Pack, you can exclude certain editions of SQL Server Reporting Services instances from monitoring.
 
-To exclude editions that you don't want to monitor, go to **Authoring** > **Management Pack Objects** > **Discoveries** and override the **Editions of SQL Server to be excluded** parameter in the **MSSQL Reporting Services: Instance Discovery (Native Mode)** discovery with the editions that you want to exclude. Use commas to specify multiple editions.
+To exclude editions that you don't want to monitor, go to **Authoring** > **Management Pack Objects** > **Discoveries**. Then override the **Editions of SQL Server to be excluded** parameter in the **MSSQL Reporting Services: Instance Discovery (Native Mode)** discovery with the editions that you want to exclude. Use commas to specify multiple editions.
 
 The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
 
