@@ -14,8 +14,6 @@ ms.topic: install-set-up-deploy
 
 # Install an Audit Collection Services collector and database
 
-test
-
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Perform the procedures on the computer that's designated as your ACS collector for System Center Operations Manager.
 
 ## Prerequisites
