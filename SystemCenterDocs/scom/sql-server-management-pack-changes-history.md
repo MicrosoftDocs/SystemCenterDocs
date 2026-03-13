@@ -46,6 +46,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
+[Download Management Pack for SQL Server 7.8.4 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=108242).
+
 ### Bug Fixes
 
 - Fixed an issue in the "Table Clustered Index Fragmentation" monitor caused by collation differences with the master database.
@@ -59,7 +61,6 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's new
 
 - Added an [inclusion override](sql-server-management-pack-disabling-monitoring.md#disabling-monitoring-of-specified-sql-agent-jobs-by-name) for SQL Agent Job discovery
-
 
 [Download Management Pack for SQL Server 7.8.4 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=56203).
 
