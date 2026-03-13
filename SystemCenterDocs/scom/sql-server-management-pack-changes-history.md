@@ -46,7 +46,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
-[Download Management Pack for SQL Server 7.8.4 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=108242).
+[Download Management Pack for SQL Server 7.10.6 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=108242).
 
 ### Bug Fixes
 
