@@ -41,7 +41,9 @@ In the Web console, only Monitoring and My Workspace are available:
 
 Be aware of a few differences between the Operations console and Web console:  
 
-- There are minor differences in sort. For example, in the Web console, when you sort alerts, only the alerts visible on the page are sorted rather than all alerts.  
+- Column sorting is not possible in classic state, alert, event, or performance views, nor in legacy dashboards created in the Operations Manager console.
+
+- Sorting is available only in HTML5 web console dashboards and comes with certain limitations. For example, when sorting alerts in the web console, the sort is applied only to the alerts currently visible on the page, not to the full alert set.
 
 - Fewer alerts display per page in the Web console.  
 
