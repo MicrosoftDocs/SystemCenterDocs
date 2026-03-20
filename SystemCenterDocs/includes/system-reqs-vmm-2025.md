@@ -4,7 +4,7 @@ title: include file
 description: include article to detail the system requirements for VMM 2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/26/2025
+ms.date: 03/23/2026
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -77,7 +77,7 @@ Windows Server 2025 Standard, Datacenter | Y
 --- | ---
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
 SQL Server 2022 as detailed [here](/lifecycle/products/?terms=SQL+Server+2022) | Y
-SQL Server command line utilities | Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/> or <br/> Install the SQL Server 2022 Command-Line Utilities from the Microsoft® SQL Server® 2022 Feature Pack.<br/><br/>Not required for VMM installation
+SQL Server 2025 as detailed [here](/lifecycle/products/?terms=SQL+Server+2025) | Y
 
 ## Virtualization
 
