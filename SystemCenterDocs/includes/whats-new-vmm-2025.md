@@ -4,7 +4,7 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 09/09/2025
+ms.date: 03/23/2026
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -49,3 +49,21 @@ Azure Arc-enabled System Center Virtual Machine Manager is the alternative for t
 ### System Center Service Provider Foundation (SPF) is discontinued
 
 Starting from System Center 2025, Service Provider Foundation (SPF) will be discontinued as its capabilities are now built into Azure Arc-enabled System Center Virtual Machine Manager.
+
+## New features in VMM 2025 UR1
+
+The following sections introduce the new features and enhancements shipped with VMM 2025 Update Rollup 1 (UR1).
+
+For problems fixed in VMM 2025 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7).
+
+### Support for virtual Trusted Platform Module (vTPM)
+
+VMM 2025 UR1 provides GUI and PowerShell experience to run vTPM-enabled Virtual Machines. vTPM can be enabled while creating a new Virtual Machine and while modifying the properties of an existing Virtual Machine, enabling you to improve your security posture. 
+
+### Support for SQL 2025 and SQL Contained Availability Group
+
+You can use SQL 2025 for VMM 2025's database. To improve your resiliency posture, you can choose to use a SQL Contained Availability Group.
+
+### Support for the latest Linux Guest Operating Systems and Linux network settings file format
+
+With VMM 2025 UR1, you can manage RHEL 10, SUSE Linux 15, Oracle Linux 10, Rocky Linux 10 and OpenEuler 24.03 flavored Linux Virtual Machines. Along with the updated Operating Systems support, VMM will recognize and support storing network settings of Linux machines is keyfile format. 
