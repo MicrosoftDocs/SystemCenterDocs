@@ -28,7 +28,7 @@ Before you upgrade Operations Manager databases to SQL Server 2025, ensure the f
 
 - Ensure that System Center Operations Manager 2025 UR1 is installed, and has a supported Windows Server version, ODBC 18 or later, and MSOLEDBSQL 19 or later drivers.
 - Stop Operations Manager services on all management servers (System Center Data Access, Microsoft Monitoring Agent, System Center Management Configuration).
-- Back up all three databases such as *OperationsManager*, *OperationsManagerDW*, and *ReportServer*.
+- Back up all three databases: *OperationsManager*, *OperationsManagerDW*, and *ReportServer*.
 
 ## Upgrade to SQL Server 2025
 
@@ -44,7 +44,7 @@ To validate the upgrade, follow these steps:
 
 1. Restart Operations Manager services.
 1. Verify connectivity by running the test queries against *OperationsManager* and *OperationsManagerDW*.
-1. Confirm that the Reporting Services loads custom reports, favorites, and schedules correctly.
+1. Confirm that the Reporting Services loads custom reports, favourites, and schedules correctly.
 1. Check event logs for SQL connectivity or schema errors.
 
 ## Stop the Operations Manager services
