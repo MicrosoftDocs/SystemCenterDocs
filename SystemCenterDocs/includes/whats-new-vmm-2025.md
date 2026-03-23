@@ -52,13 +52,13 @@ Starting from System Center 2025, Service Provider Foundation (SPF) will be disc
 
 ## New features in VMM 2025 UR1
 
-The following sections introduce the new features and enhancements shipped with VMM 2025 Update Rollup 1 (UR1).
+The following sections introduce the new enhancements shipped with VMM 2025 Update Rollup 1 (UR1).
 
 For problems fixed in VMM 2025 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7).
 
 ### Support for virtual Trusted Platform Module (vTPM)
 
-VMM 2025 UR1 provides GUI and PowerShell experience to run vTPM-enabled Virtual Machines. vTPM can be enabled while creating a new Virtual Machine and while modifying the properties of an existing Virtual Machine, enabling you to improve your security posture. 
+VMM 2025 UR1 provides GUI and PowerShell experience to run vTPM-enabled virtual machines. You can enable vTPM while creating a new virtual machine and while modifying the properties of an existing virtual machine, and thus improving your security posture. 
 
 ### Support for SQL 2025 and SQL Contained Availability Group
 
@@ -66,7 +66,7 @@ You can use SQL 2025 for VMM 2025's database. To improve your resiliency posture
 
 ### Support for the latest Linux Guest Operating Systems and Linux network settings file format
 
-With VMM 2025 UR1, you can manage RHEL 10, SUSE Linux 15, Oracle Linux 10, Rocky Linux 10 and OpenEuler 24.03 flavored Linux Virtual Machines. Along with the updated Operating Systems support, VMM will recognize and support storing network settings of Linux machines is keyfile format. 
+With VMM 2025 UR1, you can manage RHEL 10, SUSE Linux 15, Oracle Linux 10, Rocky Linux 10, and OpenEuler 24.03 flavored Linux virtual machines. Along with the updated Operating Systems support, VMM recognizes and supports storing network settings of Linux machines is _keyfile_ format. 
 
 ### Support for management of VMs on latest versions of Azure Local instances
 
