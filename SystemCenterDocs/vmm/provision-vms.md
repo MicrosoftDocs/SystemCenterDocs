@@ -123,8 +123,8 @@ In VMM, you can create Generation 1 and Generation 2 VMs.
 
 - In all wizards and PowerShell cmdlets, you'll be offered configuration options in line with the generation of the VM.
 
-- Generation 2 VMs support virtual Trusted Platform Module (vTPM) which adds cryptographic capabilites to the VMs. If vTPM is enabled for a VM, Hyper-V generates two self-signed certificates "**Shielded VM Encryption Certificate (UntrustedGuardian)(ComputerName)**" and 
-"**Shielded VM Signing Certificate (UntrustedGuardian)(ComputerName)**" on the VM's host. Before you migrate a vTPM-enabled VM, it is necessary to export these certificates to the target host. For seamless live migration, it is necessary for the two certificates of every vTPM-enabled VM to be present in every possible target host. [Learn more about importing and exporting vTPM certificates](https://techcommunity.microsoft.com/blog/itopstalkblog/hyper-v-virtual-tpms-certificates-vm-export-and-migration/4430584). 
+- Generation 2 VMs support virtual Trusted Platform Module (vTPM) which adds cryptographic capabilites to the VMs. If vTPM is enabled for a VM, Hyper-V generates two self-signed certificates **Shielded VM Encryption Certificate (UntrustedGuardian)(ComputerName)** and 
+**Shielded VM Signing Certificate (UntrustedGuardian)(ComputerName)** on the VM's host. Before you migrate a vTPM-enabled VM, it is necessary to export these certificates to the target host. For seamless live migration, it is necessary for the two certificates of every vTPM-enabled VM to be present in every possible target host. [Learn more about importing and exporting vTPM certificates](https://techcommunity.microsoft.com/blog/itopstalkblog/hyper-v-virtual-tpms-certificates-vm-export-and-migration/4430584). 
 
 - Generation 1 and 2 VMs don't handle boot order in the same way.
     - You can customize the start order for Generation 1 VMs in the VMM console in the hardware settings when you create a VM. You can also customize using the BootOrder PowerShell parameter.
