@@ -66,4 +66,4 @@ You can use SQL 2025 for VMM 2025's database. To improve your resiliency posture
 
 ### Support for the latest Linux Guest Operating Systems and Linux network settings file format
 
-With VMM 2025 UR1, you can manage RHEL 10, SUSE Linux 15, Oracle Linux 10, Rocky Linux 10, and OpenEuler 24.03 flavored Linux virtual machines. Along with the updated Operating Systems support, VMM recognizes and supports storing network settings of Linux machines in _keyfile_ format. 
+With VMM 2025 UR1, you can manage RHEL 10, SUSE Linux 15, Debian 13, Oracle Linux 10, Rocky Linux 10, and OpenEuler 24.03 flavored Linux virtual machines. Along with the updated Operating Systems support, VMM recognizes and supports storing network settings of Linux machines in _keyfile_ format. 
