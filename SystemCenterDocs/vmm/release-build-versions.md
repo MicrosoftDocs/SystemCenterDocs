@@ -33,6 +33,22 @@ The following table lists the release history for Virtual Machine Manager 2025.
 
 :::moniker-end
 
+::: moniker range="sc-vmm-2022"
+
+## Virtual Machine Manager 2022 build versions
+
+The following table lists the release history for Virtual Machine Manager 2022.
+
+| Build Number | KB | Release Date | Description |
+| --- | --- |--- |--- |
+| 10.22.1287.0 |n/a | March 2022 | System Center 2022 Virtual Machine Manager RTM |
+| 10.22.1508.0 | [5019202](https://support.microsoft.com/kb/5019202) | November 2022 | Update Rollup 1 |
+| 10.22.1711.0 | [5032369](https://support.microsoft.com/kb/5032369) | November 2023 | Update Rollup 2 |
+| 10.22.2112.0 | [5055459](https://support.microsoft.com/kb/5055459) | May 2025 | Update Rollup 3 |
+| 10.22.2163.0 | [5068698](https://support.microsoft.com/kb/5068698) | November 2025 | GB18030-2022 Hotfix |
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-2019"
 
 ## Virtual Machine Manager 2019 build versions
@@ -48,21 +64,6 @@ The following table lists the release history for Virtual Machine Manager 2019.
 |10.19.2729.0|[5024282](https://support.microsoft.com/kb/5024282) |April 2023 |Update Rollup 5 |
 |10.19.2883.0|[5035468](https://support.microsoft.com/kb/5035468) | March 2024 | Update Rollup 6 |
 
-::: moniker-end
-
-::: moniker range="sc-vmm-2022"
-
-## Virtual Machine Manager 2022 build versions
-
-The following table lists the release history for Virtual Machine Manager 2022.
-
-| Build Number | KB | Release Date | Description |
-| --- | --- |--- |--- |
-| 10.22.1287.0 |n/a | March 2022 | System Center 2022 Virtual Machine Manager RTM |
-| 10.22.1508.0 | [5019202](https://support.microsoft.com/kb/5019202) | November 2022 | Update Rollup 1 |
-| 10.22.1711.0 | [5032369](https://support.microsoft.com/kb/5032369) | November 2023 | Update Rollup 2 |
-| 10.22.2112.0 | [5055459](https://support.microsoft.com/kb/5055459) | May 2025 | Update Rollup 3 |
-| 10.22.2163.0 | [5068698](https://support.microsoft.com/kb/5068698) | November 2025 | GB18030-2022 Hotfix |
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
