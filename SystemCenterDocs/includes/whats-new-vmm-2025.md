@@ -54,7 +54,7 @@ Starting from System Center 2025, Service Provider Foundation (SPF) will be disc
 
 The following sections introduce the new enhancements shipped with VMM 2025 Update Rollup 1 (UR1).
 
-For problems fixed in VMM 2025 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7).
+For problems fixed in VMM 2025 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068308).
 
 ### Support for virtual Trusted Platform Module (vTPM)
 
