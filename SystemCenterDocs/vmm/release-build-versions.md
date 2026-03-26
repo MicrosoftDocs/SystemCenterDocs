@@ -15,10 +15,10 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 # System Center – Virtual Machine Manager build versions
 
-This article describes how to determine your current Microsoft System Center – Virtual Machine Manager version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the UR changes and links to the package downloads.
+This article describes how to determine your current Microsoft System Center – Virtual Machine Manager (VMM) version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the UR changes and links to the package downloads.
 
 > [!NOTE]
-> All System Center Virtual Machine Manager update rollups are cumulative. This means, you do not need to apply the URs in order; you can always apply the latest update. If you have deployed System Center – Virtual Machine Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Virtual Machine Manager update rollups are cumulative. This means, you don't need to apply the Update Rollups in order; you can always apply the latest update. If you have deployed System Center – Virtual Machine Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 :::moniker range="sc-vmm-2025"
 
