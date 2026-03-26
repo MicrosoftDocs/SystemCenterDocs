@@ -13,11 +13,11 @@ ms.update-cycle: 1095-days
 
 ## VMM 2025 system requirements
 
-The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 2025, and summarize the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for Virtual Machine Manager (VMM) 2025, and summarize the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center Virtual Machine Manager 2025. There are various factors that affect the scale limits, such as hardware configuration, network, topology, and others.
+The following table provides the scale limits that were tested for VMM 2025. There are various factors that affect the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
@@ -53,7 +53,7 @@ Windows Server 2025 Desktop experience| Y | Y | If supported by SQL Server versi
 Windows Server 2025 Server Core| Y | Y | If supported by SQL Server version
 
 >[!NOTE]
-> Ensure that VMM server operating system is the same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
+> Ensure that VMM server operating system is the same as the managed host operating system for the deployment of Hyper Converged Infrastructure.
 
 ## VMM console operating system
 
@@ -71,7 +71,7 @@ Windows Server 2025 Standard, Datacenter | Y
 
 >[!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - For the below supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
+> - For the supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
