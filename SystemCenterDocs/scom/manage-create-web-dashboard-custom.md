@@ -4,7 +4,7 @@ title: Create a dashboard with the Custom widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Custom widget.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 03/26/2026
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>sc-om-2016'
@@ -14,8 +14,6 @@ ms.update-cycle: 1095-days
 ---
 
 # Create a dashboard with the Custom widget in the Web console
-
-
 
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST. It executes the HTML code specified and visualizes the desired output in various visualizations.
 
@@ -164,85 +162,88 @@ Select the required tab to view the HTML code for the respective chart type:
 The following HTML code demonstrates rendering a bar chart with state data:
 
 ```html
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        var criticalCounter = 0;
-        var healthyCounter = 0;
-        var warningCounter = 0;
-        var unmonitoredCounter = 0;
+<script type="text/javascript">
 
-        window.onload = function () {
-            $.ajax({
-                url: "/OperationsManager/data/state",
-                type: "POST",
-                data: JSON.stringify({
-                    "classId": "System.Library!System.Computer",
-                    "objectIds": {
-                        // Key value pairs => id: 0 (For objects)/-1 (For groups)
-                        "1d62280e-f437-1369-316b-1e8659500e9a": -1
-                    },
-                    "criteria": "((HealthState = '0') OR (HealthState = '1') OR (HealthState = '2') OR (HealthState = '3') OR HealthState is null)",
-                    "displayColumns": [
-                        "healthstate",
-                        "displayname",
-                        "path",
-                        "maintenancemode"
-                    ]
-                }),
-                success: function (result) {
-                    for (var i = 0; i < result.rows.length; i++) {
-                        switch (result.rows[i].healthstate) {
-                            case "critical":
-                                criticalCounter++;
-                                break;
-                            case "healthy":
-                                healthyCounter++;
-                                break;
-                            case "warning":
-                                warningCounter++;
-                                break;
-                            case "unmonitored":
-                                unmonitoredCounter++;
-                                break;
-                        }
+    var criticalCounter = 0;
+    var healthyCounter = 0;
+    var warningCounter = 0;
+    var unmonitoredCounter = 0;
+
+    var requestHeaders = {
+        "Accept": "q=0.8;application/json;q=0.9",
+        "Content-Type": "application/json"
+    };
+
+    function initializeCSRFToken() {
+        var cookies = document.cookie.split("; ");
+        for (var i = 0; i < cookies.length; i++) {
+            var parts = cookies[i].split("=");
+            if (parts[0] === "SCOM-CSRF-TOKEN") {
+                requestHeaders["SCOM-CSRF-TOKEN"] = decodeURIComponent(parts[1]);
+                break;
+            }
+        }
+    }
+
+    window.onload = function () {
+        initializeCSRFToken();
+        loadStateData();
+    };
+
+    function loadStateData() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/OperationsManager/data/state", true);
+
+        for (var h in requestHeaders) {
+            xhr.setRequestHeader(h, requestHeaders[h]);
+        }
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var result = JSON.parse(xhr.responseText);
+
+                for (var i = 0; i < result.rows.length; i++) {
+                    switch (result.rows[i].healthstate) {
+                        case 0: healthyCounter++; break;
+                        case 1: warningCounter++; break;
+                        case 2: criticalCounter++; break;
+                        case 3: unmonitoredCounter++; break;
                     }
-                    renderChart();
                 }
-            });
-        }
 
-        function renderChart() {
-            var chart = new CanvasJS.Chart("chartContainer", {
-                title: {
-                    text: "Health State of Windows Computers"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { y: criticalCounter, label: "Critical", color: "Red" },
-                        { y: healthyCounter, label: "Healthy", color: "Green" },
-                        { y: warningCounter, label: "Warning", color: "Yellow" },
-                        { y: unmonitoredCounter, label: "Unmonitored", color: "Gray" }
-                    ]
-                }]
-            });
-            chart.render();
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
-    <title>CanvasJS Example</title>
+                renderChart();
+            }
+        };
+
+        xhr.send(JSON.stringify({
+            classId: "System.Library!System.Computer",
+            objectIds: {
+                "1d62280e-f437-1369-316b-1e8659500e9a": -1
+            },
+            criteria: "HealthState IS NOT NULL",
+            displayColumns: ["healthstate"]
+        }));
+    }
+
+    function renderChart() {
+        document.getElementById("chartContainer").innerHTML =
+            "<b>Critical:</b> " + criticalCounter + "<br/>" +
+            "<b>Warning:</b> " + warningCounter + "<br/>" +
+            "<b>Healthy:</b> " + healthyCounter + "<br/>" +
+            "<b>Unmonitored:</b> " + unmonitoredCounter;
+    }
+
+</script>
 </head>
 
 <body>
-    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+    <div id="chartContainer" style="font-size:14px;"></div>
 </body>
-
-</html>
 ```
+
 # [Spline chart (performance data)](#tab/Spline)
 
 The following HTML code demonstrates rendering a spline chart with performance data:
