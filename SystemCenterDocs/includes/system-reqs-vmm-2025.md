@@ -4,7 +4,7 @@ title: include file
 description: include article to detail the system requirements for VMM 2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/26/2025
+ms.date: 03/23/2026
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,11 +13,11 @@ ms.update-cycle: 1095-days
 
 ## VMM 2025 system requirements
 
-The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 2025, and summarize the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for Virtual Machine Manager (VMM) 2025, and summarize the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center Virtual Machine Manager 2025. There are various factors that affect the scale limits, such as hardware configuration, network, topology, and others.
+The following table provides the scale limits that were tested for VMM 2025. There are various factors that affect the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
@@ -53,7 +53,7 @@ Windows Server 2025 Desktop experience| Y | Y | If supported by SQL Server versi
 Windows Server 2025 Server Core| Y | Y | If supported by SQL Server version
 
 >[!NOTE]
-> Ensure that VMM server operating system is the same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
+> Ensure that VMM server operating system is the same as the managed host operating system for the deployment of Hyper Converged Infrastructure.
 
 ## VMM console operating system
 
@@ -71,13 +71,13 @@ Windows Server 2025 Standard, Datacenter | Y
 
 >[!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - For the below supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
+> - For the supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
 SQL Server 2022 as detailed [here](/lifecycle/products/?terms=SQL+Server+2022) | Y
-SQL Server command line utilities | Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/> or <br/> Install the SQL Server 2022 Command-Line Utilities from the Microsoft® SQL Server® 2022 Feature Pack.<br/><br/>Not required for VMM installation
+SQL Server 2025 as detailed [here](/lifecycle/products/?terms=SQL+Server+2025) | Y
 
 ## Virtualization
 
@@ -105,7 +105,7 @@ PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 Windows Server 2019 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N
-[Azure Local OS (version 2408.2 or later in the 23H2 (25398.xxxx) OS series)](../vmm/manage-azure-stack-hci.md) | Y | N | N | N
+[Azure Local OS (version 2408.2 or later)](../vmm/manage-azure-stack-hci.md) | Y | N | N | N
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2025 | Y | Y | Y | Y
