@@ -4,7 +4,7 @@ title: Provision and manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 03/23/2026
 ms.topic: how-to
 ms.service: system-center
 ms.update-cycle: 365-days
@@ -61,10 +61,10 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 - Ratings are based on individual hosts, and not on the relative suitability of all the available hosts. Ratings for one host don't change based on the ratings of the other hosts.
 - VMM calculates host ratings according to specific formulas, as described in the following table.
 
-    - **CPU rating**:  [1 – ( CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight
-    - **Memory (RAM) rating**: 	[ 1 – ( Memory Used / (Total Memory – Memory Reserve)) ] x Memory Weight
-    - **Disk I/O capacity rating**: 	[ 1 – ( Disk IOPS / Maximum Disk IOPS ) ] x Disk Weight
-    - **Network rating**: 	[ 1 – ( Network Utilization / (100 – Network Reserve)) ] x Network Weight
+    - **CPU rating**:  [1 – (CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight
+    - **Memory (RAM) rating**: 	[ 1 – (Memory Used / (Total Memory – Memory Reserve)) ] x Memory Weight
+    - **Disk I/O capacity rating**: 	[ 1 – (Disk IOPS / Maximum Disk IOPS) ] x Disk Weight
+    - **Network rating**: 	[ 1 – (Network Utilization / (100 – Network Reserve)) ] x Network Weight
 
 - A host is rated only when a virtual machine needs to be placed.
 - The information gathered about a host is compared to the information about the resources required by the VM, and a rating is assigned to the host.
@@ -122,6 +122,9 @@ In VMM, you can create Generation 1 and Generation 2 VMs.
 - If you create a hardware profile, you can choose between Generation 1 and 2. When you incorporate the profile into a VM or VM template, you specify the generation you want to use.
 
 - In all wizards and PowerShell cmdlets, you'll be offered configuration options in line with the generation of the VM.
+
+- Generation 2 VMs support virtual Trusted Platform Module (vTPM) which adds cryptographic capabilities to the VMs. If vTPM is enabled for a VM, Hyper-V generates two self-signed certificates **Shielded VM Encryption Certificate (UntrustedGuardian)(ComputerName)** and 
+**Shielded VM Signing Certificate (UntrustedGuardian)(ComputerName)** on the VM's host. Before you migrate a vTPM-enabled VM, it is necessary to export these certificates to the target host. For seamless live migration, it is necessary for the two certificates of every vTPM-enabled VM to be present in every possible target host. [Learn more about importing and exporting vTPM certificates](https://techcommunity.microsoft.com/blog/itopstalkblog/hyper-v-virtual-tpms-certificates-vm-export-and-migration/4430584). 
 
 - Generation 1 and 2 VMs don't handle boot order in the same way.
     - You can customize the start order for Generation 1 VMs in the VMM console in the hardware settings when you create a VM. You can also customize using the BootOrder PowerShell parameter.
