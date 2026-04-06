@@ -228,6 +228,8 @@
         items:
         - name: Web Application Transaction Monitoring template
           href: web-application-transaction-monitoring-template.md
+        - name: Troubleshoot Web capture
+          href: troubleshoot-web-capture.md
         - name: Replace parameters in a URL request
           href: how-to-replace-parameters-url-request.md
       - name: Windows Service template
