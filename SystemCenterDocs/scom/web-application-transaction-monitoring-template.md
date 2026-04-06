@@ -4,7 +4,7 @@ title: Web Application Transaction Monitoring template in Operations Manager man
 description: This article provides an overview of web application transaction monitoring template.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 04/06/2026
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,8 +13,6 @@ ms.update-cycle: 1095-days
 ---
 
 # Web Application Transaction Monitoring template
-
-
 
 The _Web Application Transaction Monitoring_ template lets you test a website or web-based application by sending requests over HTTP, validating their response, and measuring their performance. This can be a simple test to determine if the website is responding, or it can be a complex set of requests to simulate a user who is performing such actions as signing in to the site and browsing through a set of pages.
 
@@ -37,6 +35,9 @@ The  **Web Application Transaction Monitoring**  is more complex than the other 
 - [How to Capture Web Application Recording](/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29)
 
    This procedure explains how to use the  **Web Recorder**  to record a browser session with multiple requests. You can either use this session with no modification or edit the application and request settings once it's completed.
+
+   >[!NOTE]
+   >To troubleshoot issues with Web capture, see [Troubleshoot Web capture](troubleshoot-web-capture.md).
 
 - [How to Edit Settings or Requests in a Web Application](/previous-versions/system-center/system-center-2012-R2/hh457602%28v%3dsc.12%29)
 
