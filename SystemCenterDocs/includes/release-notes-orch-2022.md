@@ -2,14 +2,23 @@
 ms.assetid:
 description: include file to summarize the release notes for System Center 2022 - Orchestrator
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
-ms.date: 05/15/2025
+ms.date: 12/09/2025
 title:  include file
+ms.update-cycle: 1095-days
 ---
+
+## Orchestrator 2022 UR3 GB issues hotfix Release notes
+
+The following sections summarize the release notes for Orchestrator 2022 UR3 GB issues hotfix, and include the known issues and workarounds.
+
+For the problems fixed in UR3 GB issues hotfix and the installation instructions for UR3 GB issue hotfix, see the [KB article](https://support.microsoft.com/kb/5072592).
+
+- Conform GB18030-2022 Amendment standard. 
 
 ## Orchestrator 2022 UR3 Release notes
 

@@ -9,11 +9,13 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: eeca4cd9-edeb-42cd-8087-b89b16970bc9
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement_fy23 
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Windows Azure Integration Pack for Orchestrator in System Center
 
 ::: moniker range="sc-orch-2019"

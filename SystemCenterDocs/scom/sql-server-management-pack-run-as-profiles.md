@@ -3,12 +3,13 @@ ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
 title: SQL Server Run As profiles in Management Pack for SQL Server
 description: This article explains run as profiles in Management Pack for SQL Server
 author: epomortseva
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/26/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: sfi-image-nochange
+ms.update-cycle: 1095-days
 ---
 
 # SQL Server Run As Profiles

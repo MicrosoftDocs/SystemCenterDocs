@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 2cebdeb0-09dd-47b7-ae13-0b478fc77a6d
 caps.latest.revision: 17
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Monitor Internet Application
 

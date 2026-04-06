@@ -10,8 +10,9 @@ ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.date: 04/10/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 
 # Capture activity events to monitor runbooks

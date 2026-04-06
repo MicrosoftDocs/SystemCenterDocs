@@ -2,7 +2,7 @@
 title: Get Dial-up Status
 description: This article describes the functionality of Get Dial-up Status activity.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 02/27/2026
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -11,10 +11,15 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: ab465f97-ef96-41b8-bae5-57c5413af14a
 caps.latest.revision: 5
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Get Dial-up Status
+
+> [!NOTE]
+> Windows Server 2008 and Windows Server 2008 R2 have reached End of Support (EOS). For more information, see, [End of support for Windows Server 2008 and Windows Server 2008 R2](/troubleshoot/windows-server/windows-server-eos-faq/end-of-support-windows-server-2008-2008r2) and [Perform in-place upgrade to Windows Server 2016, 2019, 2022, or 2025](/azure/virtual-machines/windows-in-place-upgrade#perform-in-place-upgrade-to-windows-server-2016-2019-2022-or-2025). Review your usage and plan OS upgrades and migrations accordingly.
 
 The Get Dial-up Status activity retrieves the status of a dial-up or VPN network connection on the Runbook server. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 
@@ -39,3 +44,4 @@ The following table lists the published data items.
 |----------|-----------------|  
 |Dial-up or VPN name|The name assigned to the dial-up connection|  
 |Line status|Indicates whether the network connection is connected or disconnected|
+

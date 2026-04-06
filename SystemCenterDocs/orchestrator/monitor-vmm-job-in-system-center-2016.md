@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: a7410fd9-8ecd-4d52-9899-323996331943
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: 'sc-orch-2016'
 ---
 # Monitor VMM Job in System Center 2016

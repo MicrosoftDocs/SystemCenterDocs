@@ -2,10 +2,10 @@
 ms.assetid: 38b426f5-5b76-4599-8ef9-66a02723a88a
 title: Release notes for Service Manager
 description: This article details the known issues and issues fixed in Service Manager
-author: jyothisuri
-ms.author: jsuri
-ms.date: 03/31/2025
-ms.update-cycle: 180-days
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 11/13/2025
+ms.update-cycle: 1095-days
 ms.topic: release-notes
 ms.service: system-center
 ms.subservice: service-manager

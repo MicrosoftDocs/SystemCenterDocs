@@ -2,13 +2,14 @@
 ms.assetid: 74defbac-c24a-4e32-8445-f29a853942aa
 title: Set storage QoS for clusters
 description: This article describes how to set storage QoS policies for clusters
-author: jyothisuri
-ms.author: jsuri
-ms.date: 09/09/2025
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 11/27/2025
 ms.custom: engagement-fy24
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 monikerRange: '>sc-vmm-2016'
 ---
 
@@ -40,8 +41,6 @@ Windows server 2019 and later allows the deployments to use the storage QoS feat
 
 VMM 2025 supports QoS on all managed clusters and also SOFS running on Windows Server 2019 and later.
 
-> [!NOTE]
-> VMM 2025 supports [Azure Local (version 22H2)](deploy-manage-azure-stack-hci.md).
 ::: moniker-end
 
 **Use these steps**:

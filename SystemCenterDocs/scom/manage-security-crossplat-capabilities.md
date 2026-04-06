@@ -2,8 +2,8 @@
 ms.assetid: 97e6a5fa-a108-42d0-93f7-c1ac1884f2ae
 title: Required Capabilities for UNIX and Linux Accounts
 description: This article describes the capabilities for privileged and unprivileged access to Linux and UNIX computer with Operations Manager
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/07/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3

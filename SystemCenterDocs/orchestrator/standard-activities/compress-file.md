@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: cdc74cd7-336f-42f7-b5fd-ffad7f926211
 caps.latest.revision: 15
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Compress File
 

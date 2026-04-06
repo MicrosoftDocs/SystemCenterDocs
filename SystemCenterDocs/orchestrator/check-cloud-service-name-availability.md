@@ -10,10 +10,12 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: b4f862ca-5918-4f0a-9031-973cce272d68
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Check Cloud Service Name Availability
 
 The **Check Cloud Service Name Availability** activity checks to see if the specified cloud service name is available, or if it has already been taken. It's part of the **Azure Cloud Services** category activity.

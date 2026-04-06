@@ -10,8 +10,9 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: a2d782b3-10c2-453c-bb23-47ff4f7b0047
-author: jyothisuri
-ms.author: jsuri
+ms.update-cycle: 1095-days
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Get Computer

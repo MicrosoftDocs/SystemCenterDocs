@@ -9,8 +9,9 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 2a7359ab-604e-4e05-89f3-09eb13a14c58
-author: jyothisuri
-ms.author: jsuri
+ms.update-cycle: 1095-days
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom:
   - engagement-fy24
   - sfi-image-nochange

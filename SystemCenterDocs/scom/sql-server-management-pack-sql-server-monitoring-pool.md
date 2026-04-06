@@ -3,11 +3,12 @@ ms.assetid: d69cf961-ec43-4dd8-9b53-14fddaf078fa
 title: SQL Server Monitoring Pool in management pack for SQL Server
 description: This article explains SQL Server monitoring pool
 author: epomortseva
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 04/02/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # SQL Server Monitoring Pool

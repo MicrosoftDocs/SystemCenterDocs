@@ -6,8 +6,8 @@ ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 # Deploy Service activity

@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: ee86105b-c786-4aee-b2ec-8cfcd88f8fc5
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Get Collection Member activity for Configuration Manager Integration Pack

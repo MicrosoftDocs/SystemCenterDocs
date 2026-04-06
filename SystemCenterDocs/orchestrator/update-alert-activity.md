@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: ba537978-bae7-4188-8c49-c380c7fc4adc
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
 ---
 # Update Alert Activity

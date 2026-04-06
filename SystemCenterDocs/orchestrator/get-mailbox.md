@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 1e5f6075-259b-426b-97c9-a934d155f665
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Get Mailbox

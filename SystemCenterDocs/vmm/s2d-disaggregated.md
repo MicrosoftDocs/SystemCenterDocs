@@ -2,12 +2,13 @@
 ms.assetid: feec02b6-3742-494c-a145-ca178af2cb9a
 title: Deploy a Storage Spaces Direct disaggregated cluster in VMM
 description: This article describes how to deploy a Storage Spaces Direct disaggregated cluster in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/07/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ms.custom:
   - UpdateFrequency2
   - intro-deployment

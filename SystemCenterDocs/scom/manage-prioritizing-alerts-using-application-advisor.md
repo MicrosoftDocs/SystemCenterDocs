@@ -1,8 +1,8 @@
 ---
 title: Prioritize Alerts by Using Application Advisor
 description: This article describes how to use Application Advisor to identify exceptions detected from your monitored web application.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24

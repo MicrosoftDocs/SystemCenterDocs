@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 846005ef-f15b-42e1-a6f5-ead1324a788f
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
 ---
 

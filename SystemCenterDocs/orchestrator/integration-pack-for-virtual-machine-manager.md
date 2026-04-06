@@ -5,9 +5,10 @@ ms.date: 07/07/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Integration pack for System Center VMM

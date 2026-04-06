@@ -10,8 +10,9 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 4c5f2a00-b4bf-4315-b976-dd0a7005e47b
-author: jyothisuri
-ms.author: jsuri
+ms.update-cycle: 1095-days
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Remove Computer From Group
 

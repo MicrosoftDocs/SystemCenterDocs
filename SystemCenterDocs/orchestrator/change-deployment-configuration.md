@@ -10,10 +10,12 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: e4769f6f-dad7-4132-8d3c-917eee12d18a
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Change Deployment Configuration
 
 The **Change Deployment Configuration** activity initiates a change to the deployment configuration. It's part of the Azure Deployments category activity.

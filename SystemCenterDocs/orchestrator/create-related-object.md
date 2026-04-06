@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 06e71bd9-60d6-4a75-b658-d34791a75e5b
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Create Related Object
 

@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.assetid: a3f3137f-3e5a-44bc-9623-d541d1348e9e
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Deploy Configuration Baseline activity for Configuration Manager Integration Pack

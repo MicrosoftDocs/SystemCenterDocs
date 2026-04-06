@@ -1,13 +1,14 @@
 ---
 title: include file
 description: include file to summarize the release notes for OM 1801.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/30/2018
 ms.service: system-center
 ms.assetid: b9174aab-ed12-48f3-88f2-586aef943734
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## Operations Manager 1801 release notes

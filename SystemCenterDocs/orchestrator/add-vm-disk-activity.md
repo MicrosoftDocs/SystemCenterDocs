@@ -9,11 +9,12 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 08f66280-43b4-4f32-ae2d-97936c2bdb1f
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ---
+
 # Add VM Disk Activity
 
 The Add VM Disk activity is used in a runbook to add a virtual disk to a virtual machine controlled by the VMware vSphere server. This can be used to increase the amount of disk space allocated to an existing virtual machine.

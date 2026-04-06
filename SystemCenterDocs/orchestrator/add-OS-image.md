@@ -10,10 +10,12 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 0d88f548-97ef-4fb4-9f1c-4f45b0afc796
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Add OS Image
 
 The **Add OS Image** activity adds an operating system image that is currently stored in a storage account in your subscription to the image repository. It's part of the **Azure Virtual Machine Images** category activity.

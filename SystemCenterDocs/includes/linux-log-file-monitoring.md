@@ -2,12 +2,13 @@
 ms.assetid:
 title: include file
 description: This include file details the Linux log file monitoring in Operations Manager
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  05/08/2023
 ms.topic:  include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Overview of configuration

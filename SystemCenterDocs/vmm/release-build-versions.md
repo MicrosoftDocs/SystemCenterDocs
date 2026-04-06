@@ -2,10 +2,10 @@
 ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Release build versions for System Center Virtual Machine Manager
 description: This article details the release builds in Virtual Machine Manager
-ms.date: 04/16/2025
+ms.date: 03/23/2026
 ms.update-cycle: 180-days
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,10 +15,10 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 # System Center – Virtual Machine Manager build versions
 
-This article describes how to determine your current Microsoft System Center – Virtual Machine Manager version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the UR changes and links to the package downloads.
+This article describes how to determine your current Microsoft System Center – Virtual Machine Manager (VMM) version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the UR changes and links to the package downloads.
 
 > [!NOTE]
-> All System Center Virtual Machine Manager update rollups are cumulative. This means, you do not need to apply the URs in order; you can always apply the latest update. If you have deployed System Center – Virtual Machine Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Virtual Machine Manager update rollups are cumulative. This means, you don't need to apply the Update Rollups in order; you can always apply the latest update. If you're running System Center – Virtual Machine Manager with no Update Rollup applied, you can proceed to install the latest one available.
 
 :::moniker range="sc-vmm-2025"
 
@@ -27,26 +27,11 @@ The following table lists the release history for Virtual Machine Manager 2025.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-|10.25.1200.0|n/a| November 2024 | General Availability |
+| 10.25.1200.0 / 10.25.1226.0 | n/a | November 2024 | General Availability |
+| 10.25.1345.0 | [5068697](https://support.microsoft.com/kb/5068697) | November 2025 | GB18030-2022 Hotfix |
+| 10.25.1439.0 | [5068308](https://support.microsoft.com/kb/5068308) | March 2026 | Update Rollup 1 |
 
 :::moniker-end
-
-::: moniker range="sc-vmm-2019"
-
-## Virtual Machine Manager 2019 build versions
-The following table lists the release history for Virtual Machine Manager 2019.
-
-| Build Number | KB | Release Date | Description |
-| --- | --- |--- |--- |
-|10.19.1013.0|n/a |March 2019 |System Center 2019 Virtual Machine Manager RTM |
-|10.19.2292.0|[4533411](https://support.microsoft.com/kb/4533411) |April 2020 |Update Rollup 1 |
-|10.19.2445.0|[4569533](https://support.microsoft.com/kb/4569533) |September 2020 |Update Rollup 2 |
-|10.19.2591.0|[5001835](https://support.microsoft.com/kb/5001835) |May 2021 |Update Rollup 3 |
-|10.19.2648.0|[5014156](https://support.microsoft.com/kb/5014156) |July 2022 |Update Rollup 4 |
-|10.19.2729.0|[5024282](https://support.microsoft.com/kb/5024282) |April 2023 |Update Rollup 5 |
-|10.19.2883.0|[5035468](https://support.microsoft.com/kb/5035468) | March 2024 | Update Rollup 6 |
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
@@ -56,10 +41,29 @@ The following table lists the release history for Virtual Machine Manager 2022.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-|10.22.1287.0 |n/a | March 2022 | System Center 2022 Virtual Machine Manager RTM |
-|10.22.1508.0 |[5019202](https://support.microsoft.com/kb/5019202) | November 2022 | Update Rollup 1 |
+| 10.22.1287.0 |n/a | March 2022 | General Availability |
+| 10.22.1508.0 | [5019202](https://support.microsoft.com/kb/5019202) | November 2022 | Update Rollup 1 |
 | 10.22.1711.0 | [5032369](https://support.microsoft.com/kb/5032369) | November 2023 | Update Rollup 2 |
 | 10.22.2112.0 | [5055459](https://support.microsoft.com/kb/5055459) | May 2025 | Update Rollup 3 |
+| 10.22.2163.0 | [5068698](https://support.microsoft.com/kb/5068698) | November 2025 | GB18030-2022 Hotfix |
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+## Virtual Machine Manager 2019 build versions
+The following table lists the release history for Virtual Machine Manager 2019.
+
+| Build Number | KB | Release Date | Description |
+| --- | --- |--- |--- |
+|10.19.1013.0|n/a |March 2019 | General Availability |
+|10.19.2292.0|[4533411](https://support.microsoft.com/kb/4533411) |April 2020 |Update Rollup 1 |
+|10.19.2445.0|[4569533](https://support.microsoft.com/kb/4569533) |September 2020 |Update Rollup 2 |
+|10.19.2591.0|[5001835](https://support.microsoft.com/kb/5001835) |May 2021 |Update Rollup 3 |
+|10.19.2648.0|[5014156](https://support.microsoft.com/kb/5014156) |July 2022 |Update Rollup 4 |
+|10.19.2729.0|[5024282](https://support.microsoft.com/kb/5024282) |April 2023 |Update Rollup 5 |
+|10.19.2883.0|[5035468](https://support.microsoft.com/kb/5035468) | March 2024 | Update Rollup 6 |
+
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
@@ -70,7 +74,7 @@ The following table lists the release history for Virtual Machine Manager 2016.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-|4.0.1662.0|n/a | September 2016 |System Center 2016 Virtual Machine Manager RTM  |
+|4.0.1662.0|n/a | September 2016 | General Availability  |
 |4.0.1968.0|[3190597](https://support.microsoft.com/kb/3190597) | October 2016 |Update Rollup 1 |
 |4.0.1968.10|[3208888](https://support.microsoft.com/kb/3208888) | December 2016 |Update Rollup 1 - Hotfix 1 |
 |4.0.2043.0|[3209586](https://support.microsoft.com/kb/3209586) | January 2017 |Update Rollup 2 |

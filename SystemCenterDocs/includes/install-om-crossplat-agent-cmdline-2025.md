@@ -2,12 +2,13 @@
 ms.assetid: 
 title: include file
 description: include article to detail how to install the Operations Manager version 2025 agent manually on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  11/29/2021
 ms.topic:  include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Install Operations Manager 2025 agent on UNIX and Linux computers

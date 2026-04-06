@@ -7,9 +7,10 @@ ms.date: 08/07/2025
 title: Back up and Restore VMM Servers
 ms.subservice: data-protection-manager
 ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Back up and restore VMM servers

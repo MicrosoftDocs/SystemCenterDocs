@@ -2,13 +2,14 @@
 ms.assetid:
 title: Set up TLS 1.3 for Orchestrator
 description: This article provides instructions for setting up TLS 1.3 with Orchestrator
-author: jyothisuri
-ms.author: jsuri
-ms.date: 08/07/2025
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 02/27/2026
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 moniker range: sc-orch-2025
+ms.update-cycle: 1095-days
 ---
 
 # Set up TLS 1.3 for Orchestrator
@@ -174,6 +175,8 @@ To configure and use TLS 1.3, follow these steps:
    ```
 
 3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
+
+   [!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
 
    | Operating system | Required update |
    | --- | --- |

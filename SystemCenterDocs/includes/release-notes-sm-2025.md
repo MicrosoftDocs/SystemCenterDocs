@@ -1,14 +1,15 @@
 ---
 description: Include file to detail the release notes for Service Manager 2025
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:
-ms.date: 03/31/2025
+ms.date: 11/13/2025
 title: Include file
 ms.assetid:
+ms.update-cycle: 1095-days
 ---
 
 ## Service Manager 2025 release notes

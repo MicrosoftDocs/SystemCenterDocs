@@ -94,4 +94,3 @@ You might receive the following error when you start web recording:
 To resolve this, disable the Internet Explorer advanced setting **Enable Enhanced Protection Mode***:  
 
 :::image type="content" source="media/troubleshoot-web-capture/internet-option-disabled.png" alt-text="Screenshot showing Internet option disabled." :::
- 

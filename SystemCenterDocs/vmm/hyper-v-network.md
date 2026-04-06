@@ -2,12 +2,13 @@
 ms.assetid: 979fc81c-b946-47ab-8ddb-50e53478d3f4
 title: Set up networking for Hyper-V hosts and clusters in the VMM fabric
 description: This article describes how to set up networking for Hyper-V hosts and clusters in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/09/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

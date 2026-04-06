@@ -10,6 +10,7 @@ ms.date: 11/01/2024
 ms.topic: reference
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Sudoers templates for elevation in UNIX/Linux monitoring
@@ -104,7 +105,7 @@ Once updated with the correct usernames and any extra modifications, the templat
 
 ## Universal Linux
 
-Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](/SystemCenterDocs/scom/plan-supported-crossplat-os.md#universal-linux-debian-package-1).
+Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](https://learn.microsoft.com/system-center/scom/plan-supported-crossplat-linux-os?view=sc-om-2025#universal-linux-debian-package).
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 

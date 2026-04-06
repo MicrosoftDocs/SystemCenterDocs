@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot UNIX and Linux Agent Monitoring
 description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24

@@ -1,13 +1,14 @@
 ---
 description: Provides guidance and procedures for using global assets in an Automation runbook.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 11/01/2024
 title: Simplify runbook authoring with global assets
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Simplify Service Management Automation runbook authoring with global assets

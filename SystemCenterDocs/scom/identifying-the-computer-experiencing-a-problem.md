@@ -1,7 +1,7 @@
 ---
 title: Identify the Computer Experiencing a Problem
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 description: This topic describes how to identify particular computers in your environment that have triggered an alert.
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days

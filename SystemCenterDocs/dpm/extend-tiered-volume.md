@@ -1,8 +1,8 @@
 ---
 description: This article explains how to extend the tiered volume in System Center - Data Protection Manager.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 04/02/2025
@@ -10,6 +10,7 @@ title:  Extend Tiered Volume in System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Extend tiered volume

@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: d697232c-7604-4e8e-bde9-1d8e55a1c220
 caps.latest.revision: 11
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Disconnect Network Path
 

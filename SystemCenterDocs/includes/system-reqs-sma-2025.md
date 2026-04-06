@@ -1,10 +1,10 @@
 ---
 description: include file to provide the information about the minimum hardware and software requirements for a full installation of Service Management Automation 2025.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
-keywords:  
+ms.update-cycle: 1095-days 
 ms.date: 08/07/2025
 title:  include file
 ms.subservice:  service-management-automation
@@ -37,8 +37,8 @@ The following software must be installed for each role:
 
 **SQL version** | **Supported**
 --- | ---
-**[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
-**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
+**[SQL Server 2025](/lifecycle/products/?terms=SQL+Server+2025)** | Y
+**[SQL Server 2022](/lifecycle/products/?terms=SQL+Server+2022)** | Y
 
 Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2025.
 

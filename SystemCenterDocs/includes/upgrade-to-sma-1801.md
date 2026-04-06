@@ -1,14 +1,15 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 1801.
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 05/31/2018
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  23356ae4-74ba-46f0-8484-22f896a5e0f5
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 1801 - Service Management Automation

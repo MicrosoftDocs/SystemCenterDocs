@@ -1,14 +1,15 @@
 ---
 title: Find Data and Objects in the Operations Manager Consoles
 description: This article describes how to filter monitoring data in the Operations Manager Operations console to see data based on your specific criteria.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
+ms.update-cycle: 1095-days
 ---
 
 # Find data and objects in the Operations Manager consoles

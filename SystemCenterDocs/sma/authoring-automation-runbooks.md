@@ -1,12 +1,12 @@
 ---
 description: Provides guidance and instructions for creating Service Management Automation runbooks.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 08/20/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 title: Author Automation Runbooks
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24

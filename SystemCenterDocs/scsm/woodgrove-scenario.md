@@ -2,13 +2,14 @@
 title: Woodgrove Bank Customization Sample Scenario
 description: Provides an overview and the steps needed to complete the Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/11/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.assetid: ea9bb90e-5a00-4346-b2a2-f6076c203778
 ms.custom: engagement-fy23

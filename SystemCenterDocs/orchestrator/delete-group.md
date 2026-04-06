@@ -10,8 +10,9 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: a9e39268-b3aa-493c-b6f1-7b4862164f5d
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
 # Delete Group
 

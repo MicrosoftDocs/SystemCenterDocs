@@ -2,19 +2,17 @@
 title: Manage Service Manager user roles
 description: Describes the user roles used by Service Manager and how to manage them.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
-keywords:
-ms.date: 11/01/2024
+ms.date: 10/27/2025
 ms.subservice: service-manager
 ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage Service Manager user roles
-
-
 
 This section provides an overview of user roles in [List of User Role Profiles in Service Manager](user-role-profiles.md). It includes procedures that you can use to work with user roles.
 
@@ -52,7 +50,7 @@ In Service Manager, when you select **Administration**, expand **Security**, and
 
 ### Example
 
-For example, say that you want to define one security access that allows users to create and edit, but not delete, configuration items and another security access that allows users to create, edit, and delete configuration items. Appendix A, at the end of this guide, lists the user role profiles and their associated artifacts. The following table shows user role profiles as they relate to configuration items.
+For example, say that you want to define one security access that allows users to create and edit, but not delete, configuration items and another security access that allows users to create, edit, and delete configuration items. The following table shows user role profiles as they relate to configuration items.
 
 |User role profile|Create configuration items|Update configuration items|Delete configuration items|
 |---------------------|------------------------------|------------------------------|------------------------------|

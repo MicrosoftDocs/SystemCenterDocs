@@ -4,11 +4,12 @@ title: Web Application Transaction Monitoring template in Operations Manager man
 description: This article provides an overview of web application transaction monitoring template.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/27/2025
+ms.date: 06/04/2026
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Web Application Transaction Monitoring template

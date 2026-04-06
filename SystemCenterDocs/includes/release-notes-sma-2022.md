@@ -2,13 +2,14 @@
 ms.assetid: 
 description: include file to summarize the release notes for System Center 2022 - Service Management Automation
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-management-automation
 keywords:
 ms.date: 06/09/2022
 title:  include file
+ms.update-cycle: 1095-days
 ---
 
 ## SMA 2022 release notes

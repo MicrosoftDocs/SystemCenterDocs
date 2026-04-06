@@ -2,9 +2,9 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
-author: jyothisuri
-ms.author: jsuri
-ms.date: 08/13/2025
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 02/04/2026
 ms.update-cycle: 180-days
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
@@ -36,8 +36,17 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2022"
+::: moniker range="sc-om-2022"
 
+- SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
+- SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
+- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+- SQL Server 2025 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2025)
 - SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
@@ -230,7 +239,7 @@ Factors that influence the load on the data warehouse include:
 Based on these factors, there are several recommended practices to consider when sizing the data warehouse:
 
 - Choose an appropriate storage subsystem.
-  - Because the data warehouse is an integral part of the overall data flow through the management group, choosing an appropriate storage subsystem for the data warehouse is important. As with the Operations Manager database, RAID 0 + 1 is often the best choice. In general, the storage subsystem for the data warehouse should be similar to the storage subsystem for the Operations Manager database, and the guidance that applies to the Operations Manager database also applies to the data warehouse.
+  - Because the data warehouse is an integral part of the overall data flow through the management group, choosing an appropriate storage subsystem for the data warehouse is important. As with the Operations Manager database, RAID 0 + 1 (RAID 10) is often the best choice. In general, the storage subsystem for the data warehouse should be similar to the storage subsystem for the Operations Manager database, and the guidance that applies to the Operations Manager database also applies to the data warehouse.
 - Consider appropriate placement of data logs vs. transaction logs.
   - As for the Operations Manager database, separating SQL data and transaction logs are often an appropriate choice as you scale up the number of agents. If both the Operations Manager database and data warehouse are located on the same server and you want to separate data and transaction logs, you must put the transaction logs for the Operations Manager database on a separate physical volume and disk spindles from the data warehouse to receive any benefit. The data files for the Operations Manager database and data warehouse can share the same physical volume as long as the volume provides adequate capacity and disk I/O performance doesn't negatively affect the monitoring and reporting functionality.
 - Consider placing the data warehouse on a separate server from the Operations Manager database.

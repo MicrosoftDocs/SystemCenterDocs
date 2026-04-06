@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 1c97c68d-f3f5-4840-86b5-43501d575edf
 caps.latest.revision: 14
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Monitor Process
 

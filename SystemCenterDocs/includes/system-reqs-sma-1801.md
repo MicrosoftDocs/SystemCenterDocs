@@ -1,10 +1,10 @@
 ---
 description: include file to provide the information about the minimum hardware and software requirements for a full installation of Service Management Automation 1801.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
-keywords:  
+ms.update-cycle: 1095-days
 ms.date: 02/05/2018
 title:  include file
 ms.subservice:  service-management-automation

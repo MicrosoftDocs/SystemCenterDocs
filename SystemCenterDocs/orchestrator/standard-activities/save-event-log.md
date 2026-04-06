@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: c3409b18-a952-48fd-8fbd-7d9d4ef44173
 caps.latest.revision: 16
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Save Event Log
 

@@ -2,9 +2,9 @@
 ms.assetid: b1883bce-1329-4c2a-bca9-1c5b1ccecaca
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager
-author: jyothisuri
-ms.author: jsuri
-ms.date: 11/01/2024
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center

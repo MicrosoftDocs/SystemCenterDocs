@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 349554ed-af74-42fd-b061-bb75e0a3bd0f
 caps.latest.revision: 18
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # End Process
 

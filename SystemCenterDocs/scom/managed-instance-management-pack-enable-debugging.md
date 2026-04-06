@@ -2,11 +2,12 @@
 title: Enabling debugging in Management Pack for Azure SQL Managed Instance
 description: This article explains how to enable debugging in Management Pack for Azure SQL Managed Instance
 author: epomortseva
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Debugging in Azure SQL Managed Instance Management Pack 

@@ -1,8 +1,8 @@
 ---
 title: Orchestrator overview
 description: This article provides an overview of System Center - Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.service: system-center

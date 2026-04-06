@@ -5,8 +5,8 @@ description: This article provides an overview about how to select a management 
 author: Anastas1ya
 manager: evansma
 ms.date: 04/14/2025
-ms.author: jsuri
-ms.custom: na
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

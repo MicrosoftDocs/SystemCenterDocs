@@ -1,14 +1,15 @@
 ---
 description: include file to detail the release notes for Service Manager 2019
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:
 ms.date: 03/07/2024
 title: include file
 ms.assetid: df2f12b4-ccbe-459e-815c-c70ad97fd0e1
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 2019 - Service Manager

@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: e9df3561-cd3d-440c-afce-f47e3d0d933d
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Create collection activity for System Center 2016 Configuration Manager

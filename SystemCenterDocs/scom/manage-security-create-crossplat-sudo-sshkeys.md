@@ -3,8 +3,8 @@ ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
 title: Configure sudo Elevation and SSH Keys
 titlesuffix: Microsoft System Center Operations Manager
 description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
@@ -110,6 +110,32 @@ You can use the `scomuser` account by using the SSH key and sudo elevation for s
 > By default, PuTTYgen is set to use PPK file version 3. You may change the PPK file version to 2 by going to the toolbar and selecting Key > Parameters for saving key files..., then select the radio button for 2 for PPK file version.
 >
 > :::image type="content" source="media/manage-security-create-crossplat-sudo-sshkeys/puttygen-key-generator-private-key-file-parameters.png" alt-text="Screenshot of PuTTY Key Generator showing that where to select the PPK file version for the private key.":::
+
+## Known Issues and Troubleshooting
+If you encounter the following error during SCOM discovery, as shown in the ETL trace or within Operations Manager module logs:
+```Log
+An exception (-1073479162) caused the SSH command to fail - Disconnected: No supported authentication methods available
+```
+> [!NOTE]
+> The console error may appear vague, as shown below. To see the actual error, enable module logging or check the task status in monitoring view.
+> ```Object reference is not set to an instance of an object.```
+
+### Cause
+This is because newer distributions of Linux disable SSH-RSA and SSH-DSS by default.
+
+### Resolution
+For SSH key to work, add the following to `/etc/ssh/sshd_config` and replace the user with the Operations Manager user.
+```
+Match User opsmgradminsvc
+    PasswordAuthentication no
+    ChallengeResponseAuthentication no
+    AuthenticationMethods publickey
+    PubkeyAcceptedAlgorithms +ssh-rsa,ssh-dss
+```
+For further troubleshooting, you can edit `/etc/ssh/sshd_config` and add the following line, then reload the SSH service, you should see verbose logging in the secure log.
+``` 
+LogLevel=DEBUG3
+```
 
 ## Next steps
 

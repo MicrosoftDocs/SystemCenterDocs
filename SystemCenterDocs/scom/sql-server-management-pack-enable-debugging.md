@@ -3,11 +3,12 @@ ms.assetid: b6aec30b-3bd1-4e4e-a664-23faee39953a
 title: Enabling debugging in Management Pack for SQL Server
 description: This article explains how to enable debugging in Management Pack for SQL Server
 author: epomortseva
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Debugging in SQL Server Management Pack 

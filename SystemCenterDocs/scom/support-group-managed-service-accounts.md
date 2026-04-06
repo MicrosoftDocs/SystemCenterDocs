@@ -2,10 +2,10 @@
 ms.assetid: a13cf51e-e6f0-4446-b00c-bf7516426d4f  
 title: Support for group managed service accounts in System Center Operations Manager
 description: This article details the group managed service accounts feature, supported in System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.update-cycle: 1095-days
+ms.update-cycle: 180-days
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager

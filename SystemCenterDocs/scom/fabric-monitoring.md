@@ -2,8 +2,8 @@
 ms.assetid: ea90aa0a-46e0-49f0-8560-5c35dd3a3c96
 title: Fabric Monitoring in System Center Operation Manager
 description: This article provides an overview of fabric monitoring.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/15/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24

@@ -2,13 +2,14 @@
 ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
 title: Deploy System Center Operations Manager
 description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: intro-deployment, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 180-days
 ---
 
 # Deploy System Center Operations Manager

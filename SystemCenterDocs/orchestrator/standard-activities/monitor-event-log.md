@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: how-to
 ms.assetid: 244f37c3-48e0-46a4-b3bc-2bd7046ba544
 caps.latest.revision: 14
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Monitor Event Log
 

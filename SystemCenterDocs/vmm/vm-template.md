@@ -2,12 +2,13 @@
 ms.assetid: 109349a7-ead0-43a7-9075-d528f8830616
 title: Create and deploy VMs in the VMM fabric from a VM template
 description: This article describes how to create VMs in the VMM fabric from a VM template
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

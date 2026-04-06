@@ -1,14 +1,15 @@
 ---
 description: include file to detail the release notes for System Center 2016 - Service Manager
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:
 ms.date: 03/07/2024
 title:  include file
 ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 2016 - Service Manager

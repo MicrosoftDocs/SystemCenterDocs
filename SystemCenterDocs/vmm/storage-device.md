@@ -2,12 +2,13 @@
 ms.assetid: 41d863fe-2888-466c-891c-43e2e57ae0c6
 title: Add storage devices to the VMM fabric
 description: This article describes how to discover storage devices in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 05/09/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 365-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

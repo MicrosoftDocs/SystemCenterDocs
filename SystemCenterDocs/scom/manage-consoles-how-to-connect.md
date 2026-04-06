@@ -1,14 +1,15 @@
 ---
 title: Connect to the Operations and Web Console
 description: This article describes how to open and configure the Operations Manager consoles to view monitoring data and perform administration in the management group.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
+ms.update-cycle: 365-days
 ---
 
 # Connect to the Operations and Web Console
@@ -73,10 +74,21 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 
 ::: moniker-end
 
-By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\WebHost is the default path) and changing the *autoSignOutInterval* value from **30** to a shorter or longer interval, or disable the session limit by changing the value to **0**, as shown in the following example.  
+By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\MonitoringView is the default path) and updating the existing `<connection>` element. If the `<connection>` element doesn't already include the attributes, add *autoSignOutInterval* (and optionally *autoSignIn*) to the existing tag. Set *autoSignOutInterval* to a shorter or longer interval, or disable the session limit by setting it to **0**, as shown in the following example.  
+
+Before
+```  
+<connection>
+ ...
+</connection>  
+``` 
+
+After
 
 ```  
-<connection autoSignIn="true" autoSignOutInterval="0">  
+<connection autoSignIn="true" autoSignOutInterval="0">
+ ...
+</connection>  
 ```  
 
 > [!NOTE]  

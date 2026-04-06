@@ -2,12 +2,13 @@
 ms.assetid: 
 title: Troubleshoot discovery error - Azure Linux and Arc Linux machines are unsupported
 description: This article describes how to resolve an error indicating Azure Linux is unsupported in System Center Operations Manager 2025.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: troubleshooting-general
+ms.update-cycle: 1095-days
 ---
 
 # Troubleshoot discovery error - Azure Linux and Arc Linux machines are unsupported

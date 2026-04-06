@@ -2,12 +2,13 @@
 ms.assetid: 0fc1e4e6-616d-4930-9e9a-fef274e9ac16
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 1801.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/20/2025
 ms.topic: include
 ms.service:  system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 1801 - Virtual Machine Manager

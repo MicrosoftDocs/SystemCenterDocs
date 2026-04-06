@@ -2,13 +2,14 @@
 title: Use the Administration Workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 ms.date: 04/22/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Use the Administration workspace in Operations Manager

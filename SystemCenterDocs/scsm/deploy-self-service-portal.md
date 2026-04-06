@@ -2,11 +2,12 @@
 title: Deploy the Service Manager Self-Service portal
 description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self-Service portal.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: install-set-up-deploy
+ms.update-cycle: 365-days
 ms.custom:
   - intro-deployment
   - sfi-image-nochange

@@ -2,8 +2,8 @@
 ms.assetid: a3c877d9-c9f5-449f-bba9-0da7ec32db60
 title: Add service templates to the VMM library
 description: This article provides guidance for adding service templates to the library in the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/02/2024
 ms.update-cycle: 1095-days
 ms.topic: how-to

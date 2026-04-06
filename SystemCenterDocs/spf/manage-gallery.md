@@ -1,13 +1,14 @@
 ---
 title: Import gallery items in SPF
 description: Provides information about importing gallery items into SPF
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/20/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Import gallery items in SPF

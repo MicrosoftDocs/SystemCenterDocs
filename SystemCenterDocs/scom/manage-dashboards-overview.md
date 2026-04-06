@@ -1,13 +1,14 @@
 ---
 title: Dashboards in Operations Manager
 description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Dashboards in Operations Manager

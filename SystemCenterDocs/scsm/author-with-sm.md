@@ -2,12 +2,13 @@
 title: Author with Service Manager
 description: Provides an overview of using, authoring, and customizing management packs, which enable customizations in Service Manager.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/12/2025
 ms.subservice: service-manager
 ms.topic: how-to
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Author with System Center - Service Manager
@@ -85,9 +86,14 @@ After you modify or create a management pack, you must save it and then import i
 
 Before you set up the Authoring Tool in Service Manager, ensure that the server on which you plan to install the Authoring Tool meets all the following server and operating system requirements.  
 
+::: moniker range="sc-sm-2025"
+
 ##### Server requirements  
 
-You can install the Authoring Tool on a server that hosts the Service Manager management server, or you can install it on a separate server.  
+Install the Authoring Tool on a server that does not host the Service Manager management server. 
+
+::: moniker-end
+
 
 ##### Operating system requirements  
 
@@ -129,10 +135,10 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 ##### Additional requirements  
 
 - [Microsoft .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21), which you can download from the Microsoft Download Center.  
-- Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
+- Microsoft Visual Studio 2015 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2015 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
-    > During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 isn't installed and you've verified that it's installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
+    > During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2015 isn't installed and you've verified that it's installed, then the Visual Studio 2015 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2015 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
 
 #### Set up the Authoring Tool
 

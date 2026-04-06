@@ -1,14 +1,15 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2016 in your environment.
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 10/08/2024
 title: Preparing your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid:
+ms.update-cycle: 1095-days
 ---
 
 ## DPM deployment considerations

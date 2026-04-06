@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.assetid: b1197648-35b2-4366-886e-1c93dca4f1cf
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Deploy application activity

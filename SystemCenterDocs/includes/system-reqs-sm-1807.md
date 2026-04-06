@@ -3,8 +3,8 @@ title: include file
 description: include file to describe the hardware, software, and other system requirements Service Manager 1807.
 ms.custom: na
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 05/14/2019
 ms.reviewer: na
 ms.suite: na
@@ -12,6 +12,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 87d03428-968d-4036-8d1c-8064900756cb
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 1807 - Service Manager

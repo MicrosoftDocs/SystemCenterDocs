@@ -1,10 +1,9 @@
 ---
 title: include file
 description: include file to describe the hardware, software, and other system requirements Service Manager 1801.
-ms.custom: na
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 05/14/2019
 ms.reviewer: na
 ms.suite: na
@@ -12,6 +11,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 5a6b1532-d4e0-4fb0-b721-086e934b4b5f
+ms.update-cycle: 1095-days
 ---
 
 ## System requirements for System Center 1801 - Service Manager

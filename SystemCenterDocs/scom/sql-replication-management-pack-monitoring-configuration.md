@@ -5,10 +5,11 @@ description: This article explains the monitoring configuration in management pa
 author: Anastas1ya
 manager: evansma
 ms.date: 07/24/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Monitor Configuration in management pack for SQL Server Replication

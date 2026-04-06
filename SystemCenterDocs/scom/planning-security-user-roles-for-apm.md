@@ -2,9 +2,9 @@
 ms.assetid: aa903de4-1f46-407b-a340-8b07abdaeda7
 title: User Roles for Application Performance Monitoring
 description: This article describes the user roles for the Application Performance Monitoring feature of Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
