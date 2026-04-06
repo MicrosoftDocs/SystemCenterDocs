@@ -26,7 +26,7 @@ With VMM 2025, you can manage the virtual machines running on Azure Local instan
 
 ### Enhanced security posture
 
-VMM 2025 works with TLS 1.3, and the dependency on legacy authentication protocols, such as NTLM and CredSSP, has reduced significantly.
+VMM 2025 works with TLS 1.3, and has significantly reduced the dependency on legacy authentication protocols, such as NTLM and CredSSP.
 
 All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmware-based and is more secure than BIOS firmware-based Generation 1 VMs.
 
@@ -48,7 +48,7 @@ Azure Arc-enabled System Center Virtual Machine Manager is the alternative for t
 
 ### System Center Service Provider Foundation (SPF) is discontinued
 
-Starting from System Center 2025, Service Provider Foundation (SPF) will be discontinued as its capabilities are now built into Azure Arc-enabled System Center Virtual Machine Manager.
+Starting from System Center 2025, Service Provider Foundation (SPF) stands discontinued as its capabilities are now built into Azure Arc-enabled System Center Virtual Machine Manager.
 
 ## New features in VMM 2025 UR1
 
@@ -63,6 +63,10 @@ VMM 2025 UR1 provides GUI and PowerShell experience to run vTPM-enabled virtual 
 ### Support for SQL 2025 and SQL Contained Availability Group
 
 You can use SQL 2025 for VMM 2025's database. To improve your resiliency posture, you can choose to use a SQL Contained Availability Group.
+
+### Support for management of VMs running on the latest versions of Azure Local
+
+VMM 2025 UR1 release comes with updated support for the management of VMs running on the latest versions of Azure Local. Refer [the full list of supported and unsupported scenarios for managing Azure Local with VMM](../vmm/manage-azure-stack-hci.md). 
 
 ### Support for the latest Linux Guest Operating Systems and Linux network settings file format
 
