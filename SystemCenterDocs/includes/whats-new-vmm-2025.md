@@ -64,6 +64,10 @@ VMM 2025 UR1 provides GUI and PowerShell experience to run vTPM-enabled virtual 
 
 You can use SQL 2025 for VMM 2025's database. To improve your resiliency posture, you can choose to use a SQL Contained Availability Group.
 
+### Support for management of VMs running on the latest versions of Azure Local
+
+VMM 202% UR1 release comes with updated support for the management of VMs running on the latest versions of Azure Local. Refer [the full list of supported and unsupported scenarios for managing Azure Local with VMM](../vmm/manage-azure-stack-hci.md). 
+
 ### Support for the latest Linux Guest Operating Systems and Linux network settings file format
 
 With VMM 2025 UR1, you can manage RHEL 10, SUSE Linux 15, Debian 13, Oracle Linux 10, Rocky Linux 10, and OpenEuler 24.03 flavored Linux virtual machines. Along with the updated Operating Systems support, VMM recognizes and supports storing network settings of Linux machines in _keyfile_ format. 
