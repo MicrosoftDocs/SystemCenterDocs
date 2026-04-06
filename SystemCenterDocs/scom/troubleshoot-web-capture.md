@@ -35,7 +35,7 @@ Depending on your environment, you may need some or all of the changes, outlined
 
 To resolve this issue, do the following: 
 
-## Enable third-party browser extensions in Internet Explorer 
+### Enable third-party browser extensions in Internet Explorer 
 
 To enable third-party browser extensions in the Internet Explorer settings, follow these steps: 
 
@@ -51,7 +51,7 @@ To enable third-party browser extensions in the Internet Explorer settings, foll
 
 If the issue persists, do the following:  
 
-## Modify registry 
+### Modify registry 
 
 To modify the registry, follow these steps: 
 
