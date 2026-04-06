@@ -3,7 +3,7 @@ title: Troubleshoot Web capture
 description: This article describes how to resolve issues with the Web Recorder feature in System Center Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 04/06/2026
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: troubleshooting-known-issue
@@ -12,11 +12,11 @@ monikerRange: 'sc-om-2025'
 
 # Troubleshoot Web capture 
 
-This article describes how to resolve issues with the Web Recorder feature in System Center Operations Manager 2025. 
+This article describes how to resolve issues with the Web Recorder feature in System Center Operations Manager 2025.
 
 ## Issue
 
-In System Center Operations Manager 2025, when you start a Web Recorder session, you either get a blank page or the following error message in Internet Explorer: 
+In System Center Operations Manager 2025, when you start a Web Recorder session, you either get a blank page or the following error message in Internet Explorer:
 
 :::image type="content" source="media/troubleshoot-web-capture/blank-page.png" alt-text="Screenshot showing blank page." :::
 
@@ -66,10 +66,10 @@ To modify the registry, follow these steps:
 
    `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Discardable\PostSetup\Component Categories64\` 
 
-3. Delete the following subkeys (These are the cached BHO IE objects related to the Web Recorder). This forces Internet Explorer to recache next launch. 
+3. Delete the following two subkeys (These are the cached BHO IE objects related to the Web Recorder). This forces Internet Explorer to recache next launch. 
 
  
-   **{00021493-0000-0000-C000-000000000046}**
+   **{00021493-0000-0000-C000-000000000046}** <br>
    **{00021494-0000-0000-C000-000000000046}**
 
 To ensure browser launches the 64-bit version instead of 32-bit, do the following to the IEXPLORE.EXE key: 
