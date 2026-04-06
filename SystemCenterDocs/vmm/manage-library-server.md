@@ -2,11 +2,12 @@
 ms.assetid: c568f693-0d00-483f-8ffb-099645b31d8e
 title: Set up the library in the VMM compute fabric
 description: This article provides guidance for setting up the library in the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/02/2024
 ms.topic: concept-article
 ms.service: system-center
+ms.update-cycle: 365-days
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---

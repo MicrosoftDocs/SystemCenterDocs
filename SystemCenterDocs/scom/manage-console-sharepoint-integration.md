@@ -1,14 +1,15 @@
 ---
 title: Use SharePoint to View Operations Manager Data
 description: This article describes how to deploy the Operations Manager Web console SharePoint web part for viewing select dashboards in SharePoint from Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
+ms.update-cycle: 1095-days
 ---
 
 # Use SharePoint to view Operations Manager data

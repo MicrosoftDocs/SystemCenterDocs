@@ -3,8 +3,8 @@ title: include file
 description: include file that outlines planning considerations and the order to upgrade to System Center 2019 - Service Manager.  
 ms.custom: na
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/14/2019
 ms.reviewer: na
 ms.suite: na
@@ -12,6 +12,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 21baa50d-4f34-489e-b3ce-f44e1b3a83aa
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2019 - Service Manager

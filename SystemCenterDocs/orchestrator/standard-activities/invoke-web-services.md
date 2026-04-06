@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: how-to
 ms.assetid: 44490141-2205-427b-a700-1e64ed61a561
 caps.latest.revision: 15
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Invoke Web Services
 

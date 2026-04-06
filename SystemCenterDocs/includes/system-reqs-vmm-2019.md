@@ -2,12 +2,13 @@
 ms.assetid: a20cc9dc-04d8-436a-a798-4073c30fefe6
 title: include file
 description: include article to detail the system requirements for VMM 2019
-author: jyothisuri
-ms.author: jsuri
-ms.date:  03/01/2023
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date:  11/26/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## VMM 2019 system requirements
@@ -28,7 +29,7 @@ Services | 1000
 User roles | 1000
 Clouds | 20
 Virtual networks| 2000
-logical networks| 20
+Logical networks| 20
 Library resources| 1000
 Library Objects (templates, profiles)| 100
 

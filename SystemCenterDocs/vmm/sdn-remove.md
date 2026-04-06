@@ -2,12 +2,13 @@
 ms.assetid: 2e2323c5-6ec6-4fd2-bec5-70537d328fbe
 title: Remove a Software Defined Network (SDN) Infrastructure from VMM
 description: This article describes how to remove SDN from the VMM fabric.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/09/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

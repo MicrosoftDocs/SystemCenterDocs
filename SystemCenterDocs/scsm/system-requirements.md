@@ -2,12 +2,12 @@
 ms.assetid: 39ea4ec4-9c42-4083-b0d4-9fdeff1f44f8
 title: System requirements for Service Manager
 description: This article describes the software and hardware system requirements for System Center Service Manager.
-author: jyothisuri
-ms.author: jsuri
-ms.date: 11/01/2024
-ms.update-cycle: 180-days
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 12/01/2025
 ms.topic: concept-article
 ms.service: system-center
+ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.custom: UpdateFrequency.5
 ---
@@ -45,10 +45,6 @@ This article details the system requirements for System Center 2019 - Service Ma
 [!INCLUDE [system-reqs-sm-2019](../includes/system-reqs-sm-2019.md)]
 
 ::: moniker-end
-
-
-
-
 
 ::: moniker range="sc-sm-2016"
 

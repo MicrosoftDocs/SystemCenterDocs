@@ -2,13 +2,14 @@
 ms.assetid:
 title: include file
 description: This include file describes the new features in Orchestrator 2022.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 05/07/2025
 ms.service: system-center
 monikerRange: 'sc-orch-2022'
 ms.subservice: orchestrator
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## New features in Orchestrator 2022

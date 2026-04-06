@@ -1,13 +1,14 @@
 ---
 description: Provides an overview of how you can work with integration modules.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 11/01/2024
 title: Work with Integration Modules
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Work with integration modules

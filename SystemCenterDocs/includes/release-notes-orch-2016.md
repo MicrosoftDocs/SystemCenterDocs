@@ -2,14 +2,15 @@
 ms.assetid: d90ac676-292f-4b33-aa79-b7a5870c1ea3
 description: include file to provide Release Notes for System Center 2016 -Orchestrator
 ms.topic:  include file
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
 ms.date: 05/17/2018
 title:  include
 monikerRange: 'sc-orch-2016'
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 2016 - Orchestrator

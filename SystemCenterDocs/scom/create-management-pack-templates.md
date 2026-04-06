@@ -2,10 +2,10 @@
 ms.assetid: a554a6b1-252e-4cc3-8b8f-80a7ea43b6da
 title: Create management pack Templates in Operations Manager management pack
 description: This article provides an overview of creating management pack templates
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/22/2025
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

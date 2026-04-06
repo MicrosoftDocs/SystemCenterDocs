@@ -10,9 +10,11 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 37312c77-54fc-488b-b710-053ad0a78ba9
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ---
+
 # Add Computer To Group
 
 You can use the Add Computer To Group activity in a runbook to add a computer to a group in the Microsoft Active Directory.

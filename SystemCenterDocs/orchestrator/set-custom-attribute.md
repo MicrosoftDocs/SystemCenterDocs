@@ -9,8 +9,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: 7655d0b0-8b28-495a-8431-e9962a6d5fcd
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days

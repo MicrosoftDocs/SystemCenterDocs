@@ -2,10 +2,10 @@
 ms.assetid: 40d9b3b7-3e5a-463c-bbc0-161450e59714
 title: Manage Azure Local instances in VMM
 description: This article describes how to manage an Azure Local instance in VMM.
-author: jyothisuri
-ms.author: jsuri
-ms.date: 09/09/2025
-ms.update-cycle: 180-days
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 03/23/2026
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,7 +21,7 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 
 >[!IMPORTANT]
-> Azure Local instances that are managed by Virtual Machine Manager must not join [the preview channel](/azure/azure-local/deploy/download-23h2-software) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Local preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+> Azure Local instances managed by Virtual Machine Manager must not join [the preview channel](/azure/azure-local/deploy/download-23h2-software) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Local preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 
 
 **Supported Azure Local management scenarios with VMM**
@@ -38,11 +38,15 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 **Unsupported Azure Local management scenarios with VMM**
 
-- Creation of Azure Local instance using SCVMM. See the [deployment methods for Azure Local instances](/azure/azure-local/deploy/deployment-introduction#about-deployment-methods).
+- Creation of Azure Local instances using SCVMM. See the [deployment methods for Azure Local instances](/azure/azure-local/deploy/deployment-introduction#about-deployment-methods).
 
-- Networking configuration of Azure Local hosts and clusters. VMM doesn't support Network ATC and can't recognize Arc-enabled Software Defined Networking configuration.
+- Management of Azure Local instances which have any form of SDN deployments using SCVMM. VMM can't recognize Arc-enabled Software Defined Networking configuration either.
 
-- Management of Azure Local hosts and clusters which are deployed with AD-less methods like [local identity](/azure/azure-local/deploy/deployment-local-identity-with-key-vault).
+- Dual management of VMs from Azure and SCVMM. Manage a VM either by Azure interfaces associated with Azure Local or by VMM. VMM can't recognize any operation performed on the VM from Azure and hence dual management leads to incorrect VM states.
+
+- Configuring network settings of Azure Local hosts and clusters. Network ATC is enabled by default in Azure Local deployments and VMM doesn't support Network ATC. 
+
+- Management of Azure Local hosts and clusters that are deployed with AD-less methods like [local identity](/azure/azure-local/deploy/deployment-local-identity-with-key-vault).
 
 - Management of Azure Local [stretched clusters](/azure/azure-local/concepts/stretched-clusters).
 
@@ -54,8 +58,6 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 > [!NOTE]
 > Live migration between Azure Local instances works, as well as between Windows Server clusters.
-
-- The only storage type available for Azure Local is Storage Spaces Direct (S2D). If you need to use any other type of storage, for example SANs, use Windows Server as the virtualization host.
 
 ## Manage the storage pool and create CSVs
 
@@ -91,7 +93,7 @@ Use Network migration functionality in VMM to migrate workloads from Hyper-V (Wi
 3.	Select the VM that you want to migrate. The VM must be in a turned off state. 
 5.	Select **Migrate Virtual Machine**.
 6.	In **Select Host**, review and select the destination Azure Local host. 
-6.	Select **Next** to initiate network migration. VMM will perform imports and exports at the back end. 
+6.	Select **Next** to initiate network migration. VMM performs imports and exports at the back end. 
 7.	To verify that the virtual machine is successfully migrated, check the VMs list on the destination host. Turn on the VM and re-enable live migration on the Azure Local host.
 
 ## Next steps

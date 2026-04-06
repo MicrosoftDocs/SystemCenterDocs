@@ -2,8 +2,8 @@
 title: Feature Performance Considerations
 description: Provides performance guidance for System Center - Orchestrator
 ms.date: 04/09/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator

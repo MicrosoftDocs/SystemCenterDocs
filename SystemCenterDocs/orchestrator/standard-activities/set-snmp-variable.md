@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: fe39d6e7-10e3-470f-aa06-b5307a13a871
 caps.latest.revision: 24
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Set SNMP Variable

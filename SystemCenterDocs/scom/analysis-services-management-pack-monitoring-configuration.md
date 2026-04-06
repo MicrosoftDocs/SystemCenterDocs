@@ -3,11 +3,12 @@ ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
 title: Monitor Configuration in Management Pack for SQL Server Analysis Services
 description: This article explains monitoring configurations in Management Pack for SQL Server Analysis Services
 ms.date: 04/24/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Monitor Configuration in Management Pack for SQL Server Analysis Services

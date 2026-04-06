@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 58173cdc-97ea-4ecf-a7b8-4e48c30fea5b
 caps.latest.revision: 18
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Get Process Status
 

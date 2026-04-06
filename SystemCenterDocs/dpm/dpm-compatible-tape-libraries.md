@@ -3,13 +3,13 @@ description: This article describes tape libraries compatible with DPM.
 ms.topic: concept-article
 ms.service: system-center
 keywords:
-ms.date: 05/05/2025
-ms.update-cycle: 180-days
+ms.date: 03/02/2026
+ms.update-cycle: 1095-days
 title: System Center DPM Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy23, updateFrequency.5, engagement-fy24
 ---
 
@@ -99,6 +99,8 @@ Data Protection Manager (DPM) in System Center 2019 and 2022 can be deployed usi
 ::: moniker-end
 
 ## BDT
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
 
 | Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Other Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
 | --- | --- | --- | --- | --- | --- | --- | --- |

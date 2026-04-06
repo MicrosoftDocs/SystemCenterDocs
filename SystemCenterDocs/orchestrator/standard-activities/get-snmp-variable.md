@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 7bb233a2-aa1f-4739-8f43-fb5004ba4342
 caps.latest.revision: 22
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Get SNMP Variable
 

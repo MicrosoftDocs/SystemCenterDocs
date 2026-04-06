@@ -1,13 +1,14 @@
 ---
 description: include file to describe the new features in Service Management Automation (SMA) 2016
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 01/22/2018
 title:  include file
 ms.subservice:  service-management-automation
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in SMA 2016

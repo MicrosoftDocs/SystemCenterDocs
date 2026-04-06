@@ -2,12 +2,13 @@
 ms.assetid: 
 title: Supported Linux operating system versions
 description: This article lists the supported versions of Linux operating system for System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 01/29/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 ## Red Hat Enterprise Linux Server 7

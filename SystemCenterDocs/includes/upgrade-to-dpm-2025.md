@@ -1,14 +1,15 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2025.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:
 ms.date:  04/17/2024
 title:  include file
 ms.subservice: data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to DPM 2025

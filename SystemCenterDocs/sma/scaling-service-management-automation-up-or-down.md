@@ -2,14 +2,15 @@
 description: Provides an overview of how you can scale out a machine tier.
 ms.topic: concept-article
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 keywords:
 ms.date: 11/01/2024
 title: Scale Service Management Automation
 ms.subservice: service-management-automation
 ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Scale Service Management Automation

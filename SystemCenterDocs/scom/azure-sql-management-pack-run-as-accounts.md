@@ -5,11 +5,12 @@ description: This article explains how to configure Azure SQL Database run as ac
 author: Anastas1ya
 manager: evansma
 ms.date: 08/21/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: sfi-image-nochange
+ms.update-cycle: 1095-days
 ---
 
 # Azure SQL Database Run As Accounts

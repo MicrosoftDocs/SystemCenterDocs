@@ -2,11 +2,12 @@
 ms.assetid: a6ab9340-decc-4f90-bb5b-4f0901737fc6
 title: Deploy SQL Server for VMM high availability
 description: This article explains how to set up SQL Server as highly available in a VMM deployment
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/02/2024
 ms.topic: install-set-up-deploy
 ms.service: system-center
+ms.update-cycle: 1095-days
 ms.subservice: virtual-machine-manager
 ms.custom:
   - intro-deployment

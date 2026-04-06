@@ -3,16 +3,35 @@ ms.assetid: 2973edd7-293f-496e-b4db-405d6438bb04
 title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server.
 author: epomortseva
-ms.author: jsuri
-ms.date: 06/30/2025
+ms.author: v-gajeronika
+ms.date: 03/11/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Features and enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## January 2026 - 7.12 RTM
+
+### What's New
+
+- Support for SQL Server 2025
+
+  - Includes support for the following editions of SQL Server 2025 (Enterprise, Standard, Enterprise Developer, Standard Developer, Evaluation, and Express)
+  
+- Replaced Microsoft.Data.SqlClient with the System.Data.SqlClient 
+
+- Reverts SQL Server Management Objects (SMO) to version 15
+
+[Download Management Pack for SQL Server 7.12 RTM](https://www.microsoft.com/download/details.aspx?id=108512).
+
+### Bug Fixes
+
+- Fixed a bug where Availability Group monitors were not functioning as expected for some customers.
 
 ## July 2025 – 7.10.6 RTM
 
@@ -20,12 +39,14 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 - Replaced System.Data.SqlClient with the Microsoft.Data.SqlClient data provider for SQL Server (MDS):
   - Actively maintained and enhanced by Microsoft.
-  - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
+  - Supports the latest protocols and features, including TDS 8.0, and Always Encrypted.
 
 - Upgraded Microsoft SQL Server Management Objects (SMO) from version 15 to version 17, enabled by the migration to Microsoft.Data.SqlClient. This update brings numerous improvements and adds support for new SQL Server features.
 - Added an "Only Running Jobs" override to the Job Duration monitor. This setting allows the monitor to measure either all jobs or only those currently running.
 - Updated display strings.
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
+
+[Download Management Pack for SQL Server 7.10.6 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=108242).
 
 ### Bug Fixes
 
@@ -40,6 +61,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's new
 
 - Added an [inclusion override](sql-server-management-pack-disabling-monitoring.md#disabling-monitoring-of-specified-sql-agent-jobs-by-name) for SQL Agent Job discovery
+
+[Download Management Pack for SQL Server 7.8.4 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=56203).
 
 ### Bug fixes and improvements
 

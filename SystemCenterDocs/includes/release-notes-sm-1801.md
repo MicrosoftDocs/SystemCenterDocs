@@ -1,14 +1,15 @@
 ---
 description: include file to detail the release notes for Service Manager 1801
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:
 ms.date: 05/07/2018
 title: include file
 ms.assetid: 135c0449-c04a-4329-a67e-38f7abe82896
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 1801 - Service Manager

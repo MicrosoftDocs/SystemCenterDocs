@@ -1,13 +1,14 @@
 ---
 title: Automate and invoke runbooks from SPF
 description: Provides information about integrating System Center SPF and SMA.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2023
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Automate and invoke runbooks from SPF

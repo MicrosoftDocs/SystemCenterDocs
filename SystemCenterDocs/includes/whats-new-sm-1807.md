@@ -2,13 +2,14 @@
 title:  include file
 description: include file to describe the new features and other changes in System Center 1807 - Service Manager.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 07/24/2018
 ms.subservice:  service-manager
 ms.assetid:  89743b74-65f9-4eac-8fcc-6a0cf43819d9
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in System Center 1807 - Service Manager

@@ -7,9 +7,10 @@ ms.date: 08/07/2025
 title: Back up SQL Server with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: engagement-fy23, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Back up SQL Server with DPM

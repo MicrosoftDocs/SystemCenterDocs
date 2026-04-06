@@ -2,10 +2,10 @@
 title: Languages Supported by System Center - Service Manager
 description: Describes the languages that System Center - Service Manager supports.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/31/2025
-ms.update-cycle: 1825-days
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.topic: concept-article
 ms.custom: UpdateFrequency5, engagement-fy24

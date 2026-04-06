@@ -4,8 +4,9 @@ description: Describes how to manage workflows with the Service Manager Authorin
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.date: 04/21/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager

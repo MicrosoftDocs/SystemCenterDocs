@@ -2,14 +2,15 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Set up TLS 1.2 for VMM
 description: This article provides instructions for setting up TLS 1.2 with VMM
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/13/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: <=sc-vmm-2022
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Set up TLS 1.2 for VMM

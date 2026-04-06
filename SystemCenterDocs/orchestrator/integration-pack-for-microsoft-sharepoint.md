@@ -5,8 +5,9 @@ ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.update-cycle: 1095-days
 ms.custom:
   - engagement-fy23
   - sfi-image-nochange

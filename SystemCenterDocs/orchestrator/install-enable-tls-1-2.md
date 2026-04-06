@@ -2,14 +2,15 @@
 ms.assetid: 958fdc2f-73b1-4648-94d0-b9c45b51b719
 title: Set up TLS 1.2 for Orchestrator
 description: This article provides instructions for setting up TLS 1.2 with Orchestrator
-author: jyothisuri
-ms.author: jsuri
-ms.date: 11/01/2024
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 02/27/2026
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: engagement-fy24
 moniker range: <=sc-orch-2022
+ms.update-cycle: 1095-days
 ---
 
 # Set up TLS 1.2 for Orchestrator
@@ -146,6 +147,8 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
    ```
 
 3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
+
+    [!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
 
    | Operating system | Required update |
    | --- | --- |

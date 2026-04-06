@@ -2,8 +2,8 @@
 title: Import Runbooks from System Center Orchestrator
 description: Describes how you can import Runbooks from System Center Orchestrator into Service Manager.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 04/15/2025

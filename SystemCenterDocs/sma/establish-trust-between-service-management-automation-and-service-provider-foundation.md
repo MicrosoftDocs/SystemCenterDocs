@@ -1,13 +1,14 @@
 ---
 description: Provides an overview of how you can establish trust between Service Management Automation and Service Provider Foundation.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
 title: Establish trust between Service Management Automation and Service Provider Foundation.
 ms.subservice: service-management-automation
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

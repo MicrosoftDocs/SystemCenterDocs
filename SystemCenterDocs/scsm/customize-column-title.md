@@ -3,13 +3,14 @@ title: Customize a column title in a view for the views sample scenario
 description: Describes how to customize a column title in a view for the Service Manager Authoring Tool views sample scenario.
 ms.custom: engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.assetid: 0a48640f-1ecf-4636-912e-42d9000cebc7
 ---

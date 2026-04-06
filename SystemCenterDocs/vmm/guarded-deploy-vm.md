@@ -2,12 +2,13 @@
 ms.assetid: 56e1b31e-1d0c-4844-9625-bcd051dd189e
 title: Provision shielded virtual machines in VMM
 description: Describes how to add and provision shielded VMs in the VMM fabric. Shielding VMs helps keep them secure.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
+ms.update-cycle: 1095-days
 ms.subservice: virtual-machine-manager
 ---
 

@@ -2,12 +2,13 @@
 ms.assetid: 4d983ab4-17dc-4a05-b334-9c2fba69ae82
 title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

@@ -2,8 +2,8 @@
 title: Configure Service Manager notifications
 description: You can create notifications in Service Manager when incidents or changes occur.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

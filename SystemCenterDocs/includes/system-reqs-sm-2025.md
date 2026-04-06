@@ -1,11 +1,11 @@
 ---
 title: include file
 description: include file to describe the hardware, software, and other system requirements  Service Manager 2025.
-ms.custom: na
+ms.update-cycle: 1095-days
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 09/26/2024
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 10/27/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -93,24 +93,6 @@ To help simplify upgrades, you can use Service Manager 2025 connectors with the 
   > [!NOTE]
   > System Center 2025 - Service Manager doesn't support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 2025 - Service Manager connection strings.
 
-### Allow updates
-
- To either install or upgrade to System Center 2025 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2025 - Service Manager Setup won't complete and the following error message appears at the **Create database** stage of the installation:
-
- *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
-
- You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
-
- ```
- sp_configure 'allow updates'
- ```
-
- In the results table, examine the value for **run_value**. If the value of **run value** is 1, set it back to 0 with the following stored procedure, and then run Setup again.
-
- ```
- sp_configure 'allow updates',0 reconfigure with override
- ```
-
 ### AlwaysOn Availability Groups considerations for Service Manager databases
 
  SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2025 - Service Manager.
@@ -151,9 +133,25 @@ The following steps provide information about upgrading to SQL 2022.
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2022.
 
+## Upgrade to SQL 2025 (supported from Service Manager 2025 UR1)
+
+ > [!NOTE]  
+ > - Service Manager supports SQL 2025 and all its Cumulative Updates.
+ > - Use ODBC 17.3 to 18.5.2.1, and MSOLEDBSQL 18.2 to 19.4.1. 
+ > - Upgrade process to SQL 2025 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
+
+ **Use the following steps to upgrade from SQL 2022 to 2025**:
+
+1. Upgrade to SQL 2025.
+2. Install SQL 2025 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
+3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2025.
+4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
+5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2025.
+
+
 ### Enable CLR strict security
 
-   Optional. Use the following script to enable CLR strict security.
+   [Optional]. Use the following script to enable CLR strict security.
 
    ```
    -- Do this only for SQL server version 2017 and more

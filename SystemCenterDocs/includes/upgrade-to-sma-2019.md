@@ -1,14 +1,15 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 2019.
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 07/24/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  7fc426cb-aa90-4e45-b14c-95d711f6e005
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2019 - Service Management Automation

@@ -2,12 +2,13 @@
 ms.assetid: 0df52a1b-212b-4600-9ba0-a98447be87cb
 title: include file
 description: include article to detail the system requirements for VMM 1807
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  07/24/2018
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## VMM 1807 system requirements

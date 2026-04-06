@@ -2,12 +2,13 @@
 ms.assetid:
 title: Recommendations for Antivirus Exclusions that relate to System Center Orchestrator
 description: Describes some antivirus exclusions that relate to Orchestrator. These exclusions include process-based exclusions, directory-specific exclusions, and file name extension-specific exclusions.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ---
 
 # Recommendations for antivirus exclusions that relate to Orchestrator

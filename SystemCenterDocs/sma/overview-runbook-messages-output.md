@@ -1,14 +1,15 @@
 ---
 description: Provides an overview of how you can use different output stream in your runbooks.
 ms.topic: concept-article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 keywords:
 ms.date: 02/26/2025
 title: Runbook Output and Messages
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Runbook output and messages

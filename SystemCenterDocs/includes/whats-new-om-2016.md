@@ -2,14 +2,15 @@
 ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
 title: include file
 description: include file to describe the new features in Operations Manager 2016
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/09/2017
 ms.custom: na
 ms.service: system-center
 monikerRange: 'sc-om-2016'
 ms.subservice: operations-manager
 ms.topic: include
+ms.update-cycle: 1095-days
 ---
 
 ## New features in Operations Manager 2016

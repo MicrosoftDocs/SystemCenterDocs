@@ -5,10 +5,11 @@ ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
 ms.assetid: 
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/07/2025
 monikerRange: 'sc-orch-2025'
+ms.update-cycle: 1095-days
 zone_pivot_groups: orchestrator-security-planning
 ---
 # Orchestrator Security Planning
@@ -239,6 +240,8 @@ For more information about adding firewall rules, see [Add or Edit a Firewall Ru
 ### Firewall rules for activities
 
 Any activities that use WMI communication, such as any of the Monitoring Activities, require certain Windows Firewall rules to function correctly.
+
+[!INCLUDE [end-of-life-notes-windows-server-2008.md](../includes/end-of-life-notes-windows-server-2008.md)]
 
 For Windows Server 2008 R2, enable the following rules to allow any activity that uses WMI to function correctly:
 

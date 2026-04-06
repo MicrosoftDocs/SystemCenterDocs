@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: e6ea8b08-b182-45dd-a680-2b06bc62ce8e
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Query ConfigMgr activity for Configuration Manager Integration Pack

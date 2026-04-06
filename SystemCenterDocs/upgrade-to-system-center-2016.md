@@ -2,8 +2,8 @@
 description: This article provides information about how to upgrade to System Center 2016
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 keywords:
 ms.date: 03/07/2024
 title: Upgrade to System Center 2016

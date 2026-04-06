@@ -3,11 +3,12 @@ ms.assetid: b849557b-8ed6-4bed-a374-a072a724dba6
 title: Scope and supported configuration in Management Pack for SQL Server Replication
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Replication
 author: epomortseva
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server Replication

@@ -9,8 +9,9 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 3d807dc8-013d-45da-9647-825ab64aba2a
-author: jyothisuri
-ms.author: jsuri
+ms.update-cycle: 1095-days
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 
 # Exchange Admin Integration Pack for Orchestrator in System Center

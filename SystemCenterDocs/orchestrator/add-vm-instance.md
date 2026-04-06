@@ -10,10 +10,12 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: f142536a-1a83-42d6-aab3-9ad72799942e
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
+ms.update-cycle: 1095-days
 ---
+
 # Add VM Instance
 
 The **Add VM Instance** activity adds a virtual machine to an existing deployment. It's part of the Azure Virtual Machines category activity.

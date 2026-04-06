@@ -2,12 +2,13 @@
 ms.assetid: 20634e48-491b-400f-beb4-2eae28362052
 title: .NET application performance monitoring template in Operations Manager management pack
 description: This article provides an overview of .NET application performance monitoring template
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ms.custom:
   - engagement-fy24
   - sfi-image-nochange

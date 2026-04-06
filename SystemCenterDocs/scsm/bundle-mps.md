@@ -3,8 +3,8 @@ title: Bundle management packs and Resource Files
 description: Learn about bundling management packs and resource files for Service Manager authoring.
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 07/24/2025
 ms.update-cycle: 1095-days
 ms.reviewer: na

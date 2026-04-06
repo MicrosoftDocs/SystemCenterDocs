@@ -2,12 +2,13 @@
 ms.assetid: 306caff2-9555-4f41-995c-65714ed97057
 title: Release build versions for System Center Service Manager
 description: This article details the release builds in Service Manager
-author: jyothisuri
-ms.author: jsuri
-ms.date: 08/19/2025
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 12/12/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-manager
+ms.update-cycle: 365-days
 ms.custom: engagement-fy23
 ---
 
@@ -33,6 +34,7 @@ The following table lists the build versions for Service Manager 2025.
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
 |10.25.1523.0|-| November 2024 | General Availability |
+|10.25.1523.37| [5068305](https://support.microsoft.com/kb/5068305) | December 2025 | Update Rollup 1 |
 
 ::: moniker-end
 
@@ -48,6 +50,7 @@ The following table lists the build versions for Service Manager 2022.
 | 10.22.1219.0 | [5021792](https://support.microsoft.com/kb/5021792) | June 2023 | System Center 2022 Service Manager Hotfix |
 | 10.22.1313.0 | [5031648](https://support.microsoft.com/kb/5031648) | November 2023 | Update Rollup 2 |
 | 10.22.1858.0 | [5059074](https://support.microsoft.com/kb/5059074) | August 2025 | Update Rollup 3 |
+|10.22.1869.0 | [5073080](https://support.microsoft.com/kb/5073080) | December 2025 | Update Rollup 3 Hotfix |
 
 >[!NOTE]
 >With the release of UR2, there is no requirement to apply Hotfix anymore. We recommend you to directly apply UR2 if Hotfix is not installed on SM 2022.

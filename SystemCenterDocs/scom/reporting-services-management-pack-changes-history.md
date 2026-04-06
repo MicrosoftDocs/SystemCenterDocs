@@ -3,12 +3,13 @@ ms.assetid: d68fe81d-e14c-494f-b118-e9a421d551c1
 title: Features and enhancements in Management Pack for SQL Server Reporting Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Reporting Services
 author: epomortseva
-ms.author: jsuri
-ms.date: 06/30/2025
+ms.author: v-gajeronika
+ms.date: 03/03/2026
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: sfi-ropc-nochange
+ms.update-cycle: 1095-days
 ---
 
 # Features and enhancements in Management Pack for SQL Server Reporting Services
@@ -21,11 +22,12 @@ This article covers new functionality and improvements in Management Pack for SQ
 
 - Replaced System.Data.SqlClient with the Microsoft.Data.SqlClient data provider for SQL Server (MDS):
   - Actively maintained and enhanced by Microsoft.
-  - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
+  - Supports the latest protocols and features, including TDS 8.0, and Always Encrypted.
 
 - Included minor enhancements and routine maintenance updates to improve system stability and overall reliability.
 
 - Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
+
 
 ### Known Issues
 

@@ -1,8 +1,8 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 1801.
 ms.topic:  article
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:
 ms.date:  2/8/2018
@@ -10,6 +10,7 @@ title:  Upgrade to DPM 1801
 ms.subservice: data-protection-manager
 ms.assetid:
 ms.custom: sfi-image-nochange
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to DPM 1801

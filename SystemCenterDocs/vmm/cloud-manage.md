@@ -2,8 +2,8 @@
 ms.assetid: 54833c06-7479-47cd-8926-1eb703634a3f
 title: Manage a VMM private cloud
 description: This article provides instructions for managing a private cloud in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 02/28/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to

@@ -2,12 +2,13 @@
 ms.assetid: 0683ab30-6f03-4ffc-a50d-8d91d61768fe
 title: include file
 description: include file to detail the new features in virtual machine manager 1801.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  06/06/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.update-cycle: 1095-days
 ---
 
 ## What's new in System Center 1801 - Virtual Machine Manager

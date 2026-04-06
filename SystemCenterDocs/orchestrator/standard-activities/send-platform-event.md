@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 58d4359b-155b-4406-8978-8b40fc87f5d0
 caps.latest.revision: 15
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Send Platform Event
 

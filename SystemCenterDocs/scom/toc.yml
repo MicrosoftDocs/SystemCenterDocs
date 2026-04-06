@@ -91,17 +91,17 @@
       items:
       - name: Install an Operations Manager management server
         href: deploy-install-mgmt-server.md
-      - name: Install the Operations console
+      - name: Install the operations console
         href: deploy-install-ops-console.md
-      - name: Install the Operations Manager Web console
+      - name: Install the Operations Manager web console
         href: deploy-install-web-console.md
-      - name: Create folders in Operations Manager Web console
+      - name: Create folders in the Operations Manager web console
         href: support-folders-monitoring-view-web-console.md
-      - name: Install an Audit Collection Services(ACS) Collector and database
+      - name: Install an Audit Collection Services (ACS) collector and database
         href: deploy-install-acs.md
-      - name: Install the Operations Manager Reporting server
+      - name: Install the Operations Manager reporting server
         href: deploy-install-reporting-server.md
-      - name: Connect to the Data Warehouse across a firewall
+      - name: Connect to the data warehouse across a firewall
         href: deploy-connect-reportingdw-firewall.md
       - name: Install a gateway server
         href: deploy-install-gateway-server.md
@@ -134,6 +134,8 @@
         href: upgrade-sqlserver-2019-operations-manager.md
       - name: Upgrade Operations Manager databases to SQL Server 2022
         href: upgrade-sqlserver-2022-operations-manager.md
+      - name: Upgrade Operations Manager databases to SQL Server 2025
+        href: upgrade-sql-server-2025-operations-manager.md
       - name: Upgrade from the evaluation version of Operations Manager
         href: deploy-upgrade-eval.md
       - name: Post-upgrade tasks when upgrading Operations Manager

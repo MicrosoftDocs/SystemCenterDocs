@@ -1,14 +1,15 @@
 ---
 title: Subscribe to alert notifications in Operations Manager
 description: This article describes the alerts that Operations Manager can generate and notify individuals through email, instant message, text message, and Microsoft Teams.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 02/27/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
 ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
+ms.update-cycle: 1095-days
 ---
 
 # Subscribe to alert notifications in Operations Manager

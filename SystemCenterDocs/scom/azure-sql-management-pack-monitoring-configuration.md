@@ -2,11 +2,12 @@
 title: Monitor Scenarios in Management Pack for Azure SQL Database
 description: Learn about monitoring configurations in Management Pack for Azure SQL Database.
 ms.date: 04/24/2025
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Monitor scenarios in Management Pack for Azure SQL Database

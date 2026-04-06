@@ -3,10 +3,10 @@ title: Install Service Manager on virtual machines
 description: This article provides guidance that you should consider when you install Service Manager in a Hyper-V virtual environment.
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 03/19/2025
-ms.update-cycle: 180-days
+ms.update-cycle: 1095-days
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager

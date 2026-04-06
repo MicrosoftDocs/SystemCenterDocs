@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: concept-article
 ms.assetid: 8954602d-8f80-4a5d-8e69-fd8148122ac6
 caps.latest.revision: 14
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ---
 # Map Network Path
 

@@ -2,9 +2,9 @@
 ms.assetid: 3fc0d06c-cbac-4ca1-9cda-a0fe5bc72e16
 title: System requirements for Orchestrator
 description: This article describes the software and hardware system requirements for System Center Orchestrator.
-author: jyothisuri
-ms.author: jsuri
-ms.date: 11/01/2024
+author: Jeronika-MS
+ms.author: v-gajeronika
+ms.date: 11/25/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center

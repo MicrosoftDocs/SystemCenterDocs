@@ -2,12 +2,13 @@
 ms.assetid: 7b623b69-e0f1-4461-aa45-6d9a2e965cfd
 title:  include file
 description:  include file to provide the upgrade instructions for System Center 2016 - Orchestrator
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  o5/17/2018
 ms.service:  system-center
 ms.subservice:  orchestrator
 ms.topic:  include
+ms.update-cycle: 1095-days
 ---
 
 

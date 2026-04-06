@@ -1,14 +1,14 @@
 ---
 description: This article describes how to update protection agents for both connected and disconnected client computers.
 ms.topic: how-to
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service: system-center
 ms.date: 04/22/2025
 title: Update the DPM Protection Agent
 ms.subservice: data-protection-manager
 ms.assetid: 
-ms.custom: na
+ms.update-cycle: 1095-days
 ---
 
 # Update the DPM protection agent

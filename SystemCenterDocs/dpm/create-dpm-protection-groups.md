@@ -6,9 +6,10 @@ ms.date: 04/22/2025
 title: Deploy protection groups
 ms.subservice: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
+ms.update-cycle: 1095-days
 ---
 
 # Deploy protection groups

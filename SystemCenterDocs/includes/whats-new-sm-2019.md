@@ -2,13 +2,14 @@
 title:  include file
 description: include file to describe the new features and other changes in System Center 2019 - Service Manager.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 10/04/2023
 ms.subservice: service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
+ms.update-cycle: 1095-days
 ---
 
 ## New features in SM 2019

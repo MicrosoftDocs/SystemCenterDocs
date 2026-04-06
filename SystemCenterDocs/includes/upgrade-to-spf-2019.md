@@ -1,13 +1,14 @@
 ---
 title: include file
 description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 2019 from a previous version.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date:  08/20/2025
 ms.topic: include
 ms.service:  system-center
 ms.subservice:  service-provider-foundation
 ms.assetid: d085d58a-f48d-4ab3-9e07-1a3e49526582
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2019 -  Service Provider Foundation

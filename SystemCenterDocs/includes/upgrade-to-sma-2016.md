@@ -1,14 +1,15 @@
 ---
 description: include file to describe the process to upgrade classic deployment model Automation in System Center 2016.
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
 ms.date: 07/24/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid: f13edf4f-5708-4a50-94ca-9afb5c266839
+ms.update-cycle: 1095-days
 ---
 
 ## Upgrade to System Center 2016 - Service Management Automation

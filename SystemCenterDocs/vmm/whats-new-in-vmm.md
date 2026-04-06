@@ -4,8 +4,8 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 ms.date: 04/14/2025
 ms.update-cycle: 180-days
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.topic: whats-new
 ms.service: system-center
 ms.subservice: virtual-machine-manager

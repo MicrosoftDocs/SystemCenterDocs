@@ -3,7 +3,7 @@ title: Create Storage Account
 description: The Create Storage Account activity creates a new storage account in Azure.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
-ms.update-cycle: 1095-days
+ms.update-cycle: 365-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -11,8 +11,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: concept-article
 ms.assetid: d77c39e2-e0bb-4259-8072-803361ad4211
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 monikerRange: '<=sc-orch-2019'
 ---
 # Create Storage Account

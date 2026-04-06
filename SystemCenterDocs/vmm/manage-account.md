@@ -2,12 +2,13 @@
 ms.assetid: 07eb5def-e680-4b7b-8238-cf2266a675bb
 title: Manage roles and permissions in VMM
 description: This article describes how to manage roles and permissions in VMM
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

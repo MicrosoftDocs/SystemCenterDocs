@@ -1,12 +1,13 @@
 ---
 title: Manage usage metering in SPF
 description: Provides information about setting up usage metering in SPF
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 08/20/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
+ms.update-cycle: 1095-days
 ms.custom:
   - UpdateFrequency2
   - engagement-fy24

@@ -5,10 +5,11 @@ description: This article explains how to install management pack for Azure SQL 
 author: epomortseva
 manager: vvithal
 ms.date: 04/23/2025
-ms.author: jsuri
+ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.update-cycle: 1095-days
 ---
 
 # Management Pack for Azure SQL Managed Instance Delivery

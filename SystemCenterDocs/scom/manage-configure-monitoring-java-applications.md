@@ -1,14 +1,15 @@
 ---
 title: Configure Monitoring for Java Applications
 description: This article describes how to configure monitoring of Java applications with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 04/02/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: ec45bdd7-cc61-4c81-8d1c-a4aae303f892
+ms.update-cycle: 1095-days
 ---
 
 # Configure Monitoring for Java applications

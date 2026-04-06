@@ -2,13 +2,14 @@
 ms.assetid:
 description: include file to detail the Release Notes for System Center 1807-Service Management Automation
 ms.topic:  include file
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.service:  system-center
 ms.subservice: service-management-automation
 keywords:
 ms.date: 07/24/2018
 title:  include
+ms.update-cycle: 1095-days
 ---
 
 ## Release Notes for System Center 1807 - Service Management Automation

@@ -2,14 +2,15 @@
 ms.assetid: 19659b4f-05d3-4f33-9dd4-689b2a9fc21b
 title: Enable Service Log on
 description: This article provides information about how to enable service log for Run As accounts in System Center - Operations Manager.
-author: jyothisuri
-ms.author: jsuri
+author: Jeronika-MS
+ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: na, UpdateFrequency2
+ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 monikerRange: '>=sc-om-2019'
+ms.update-cycle: 180-days
 ---
 
 # Enable Service Log on for run as accounts
