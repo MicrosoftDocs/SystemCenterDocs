@@ -21,7 +21,7 @@ For the problems fixed in UR1 and the installation instructions for UR1, see the
 
 **Description**: After you apply System Center Operations Manager 2025 UR1 Gateway Patch, the file **KB5068304-amd64-Agent.msp** isn't automatically copied to the `AgentManagement\amd64` directory.
 
-**Workaround**: If agent deployment or upgrade requires **KB5068304-amd64-Agent.msp** file, manually copy it into the `AgentManagement\amd64` folder.
+**Workaround**: Manually copy the **KB5068304-amd64-Agent.msp** file into the `AgentManagement\amd64` folder.
 
 ### Known issue
 
