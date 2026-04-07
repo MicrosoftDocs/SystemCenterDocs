@@ -3,7 +3,7 @@ title: include file
 description: Include file that summarizes the release notes for Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/09/2026
+ms.date: 03/31/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -11,11 +11,17 @@ ms.topic: include
 ms.update-cycle: 1095-days
 ---
 
-## Operations Manager 2025 UR1 Release notes
+## Operations Manager 2025 UR1 release notes
 
 The following sections summarize the release notes for Operations Manager 2025 UR1, and include the known issues and workarounds.
 
 For the problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/kb/5068304).
+
+### File `KB5068304-amd64-Agent.msp` isn't automatically copied
+
+**Description**: After you apply System Center Operations Manager 2025 UR1 Gateway Patch, the file **KB5068304-amd64-Agent.msp** isn't automatically copied to the `AgentManagement\amd64` directory.
+
+**Workaround**: Manually copy the **KB5068304-amd64-Agent.msp** file into the `AgentManagement\amd64` folder.
 
 ### Known issue
 
@@ -25,7 +31,7 @@ The **About** page on Operations Console shows RTM version (10.25.10324.0) inste
 
 **Description**: After installation of System Center Operations Manager Update Rollup 1, resource pool stops sending heartbeats; Agents or gateways connected to secondary management servers are greyed out.
 
-**Workaround**:  Apply [System Center Operations Manager Update Rollup 1 hotfix](https://support.microsoft.com/kb/5080648).
+**Workaround**: Apply [System Center Operations Manager Update Rollup 1 hotfix](https://support.microsoft.com/kb/5080648).
 
 ## Operations Manager 2025 release notes
 
