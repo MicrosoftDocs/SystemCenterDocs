@@ -4,7 +4,7 @@ title: What's new in Operations Manager
 description: This article describes the new features supported in Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/25/2025
+ms.date: 04/15/2026
 ms.custom: intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
@@ -45,7 +45,7 @@ Operations Manager 2025 now supports SQL server 2025 for improved performance an
 
 ### Other updates
 
-The following new platforms are supported for monitoring in Operations Manager 2025 UR1. [Learn more](/system-center/scom/plan-supported-crossplat-linux-os?view=sc-om-2025).
+The following new platforms are supported for monitoring in Operations Manager 2025 UR1. [Learn more](/system-center/scom/plan-supported-crossplat-linux-os?view=sc-om-2025&preserve-view=true).
 
 - Oracle Linux 10
 - Rocky 10

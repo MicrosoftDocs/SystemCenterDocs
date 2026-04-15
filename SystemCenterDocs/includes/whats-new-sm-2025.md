@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service:  system-center
 keywords:  
-ms.date: 12/01/2025
+ms.date: 04/15/2026
 ms.subservice: service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ms.update-cycle: 1095-days
@@ -37,7 +37,7 @@ For problems fixed in UR1 and the installation instructions for UR1, see the [KB
 
 ### Support for SQL 2025 
 
-Service Manager 2025 UR1 supports SQL 2025. [Learn more](/system-center/scsm/sm-sql-reqs?view=sc-sm-2025).
+Service Manager 2025 UR1 supports SQL 2025. [Learn more](/system-center/scsm/sm-sql-reqs?view=sc-sm-2025&preserve-view=true).
 
 ### Support for MSOLEDBSQL 19 
 
