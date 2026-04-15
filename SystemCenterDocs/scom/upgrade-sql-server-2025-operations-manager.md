@@ -3,7 +3,7 @@ title: Upgrade Operations Manager databases to SQL Server 2025
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/23/2026
+ms.date: 04/15/2026
 ms.service: system-center
 monikerRange: 'sc-om-2025'
 ms.update-cycle: 1095-days
@@ -20,7 +20,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 >[!NOTE]
 >Use ODBC 18 or later, and MSOLEDBSQL 19 or later.
 
-Before you perform these upgrade steps, review the [SQL Server 2025 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-ver17).
+Before you perform these upgrade steps, review the [SQL Server 2025 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-ver17&preserve-view=true).
 
 ## Prerequisites
 

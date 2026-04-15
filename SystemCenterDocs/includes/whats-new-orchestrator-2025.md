@@ -4,7 +4,7 @@ title: include file
 description: This include file describes the new features in Orchestrator 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/25/2025
+ms.date: 04/15/2026
 ms.service: system-center
 monikerRange: 'sc-orch-2025'
 ms.subservice: orchestrator
@@ -38,4 +38,4 @@ The following sections introduce the new features and feature updates supported 
 
 ### Support for SQL Server 2025
 
-System Center Orchestrator 2025 UR1 supports SQL Server 2025. [Learn more](/system-center/orchestrator/system-requirements-orch?view=sc-orch-2025#sql-server).
+System Center Orchestrator 2025 UR1 supports SQL Server 2025. [Learn more](/system-center/orchestrator/system-requirements-orch?view=sc-orch-2025&preserve-view=true#sql-server).

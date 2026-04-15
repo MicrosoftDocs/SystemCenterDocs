@@ -4,7 +4,7 @@ ms.topic: include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 12/09/2025
+ms.date: 04/15/2026
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -50,11 +50,11 @@ For issues fixed and the installation instructions for UR1, see [KB article](htt
 
 DPM 2025 UR1 allows administrators to exclude specific disks from a Hyper-V VM backup.
  
-The backup omits the excluded disk contents from the restore points. As a result, when the VM gets restored, the excluded disks wouldn't be overwritten by backup data. [Learn more](/system-center/dpm/back-up-hyper-v-virtual-machines?view=sc-dpm-2025#exclude-disk-from-hyper-v-vm-backup).
+The backup omits the excluded disk contents from the restore points. As a result, when the VM gets restored, the excluded disks wouldn't be overwritten by backup data. [Learn more](/system-center/dpm/back-up-hyper-v-virtual-machines?view=sc-dpm-2025&preserve-view=true#exclude-disk-from-hyper-v-vm-backup).
 
 ### Support for SQL Server 2025
 
-DPM 2025 UR1 supports SQL Server 2025 both as a protected workload and DPM database. [Learn more](https://learn.microsoft.com/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
+DPM 2025 UR1 supports SQL Server 2025 both as a protected workload and DPM database. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
  
 ### Runtime dependent version is compliant and secure
 
@@ -65,4 +65,4 @@ DPM 2025 UR1 requires the latest Visual C++ Redistributable 2013, 2015-2022 (lat
  
 ### Support for Exchange Subscription Edition
 
-DPM 2025 UR1 supports Exchange Subscription Edition as an application aware backup. [Learn More](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2025#applications-backup-1).
+DPM 2025 UR1 supports Exchange Subscription Edition as an application aware backup. [Learn More](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2025&preserve-view=true#applications-backup-1).

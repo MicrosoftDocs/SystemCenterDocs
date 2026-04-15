@@ -3,7 +3,7 @@ title: Install Orchestrator
 description: Provides instructions for installing System Center - Orchestrator
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 02/05/2026
+ms.date: 04/15/2026
 ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: orchestrator
@@ -629,14 +629,6 @@ If issues occur after you apply IIS security headers:
     The **Installing features** page appears and displays the installation progress.
 
 8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
-
-::: moniker-end
-
-::: moniker range="sc-orch-2022"
-
-## Additional security for Web API and Console
-
-
 
 ::: moniker-end
 
