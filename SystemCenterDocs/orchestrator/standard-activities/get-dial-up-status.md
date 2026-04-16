@@ -2,7 +2,7 @@
 title: Get Dial-up Status
 description: This article describes the functionality of Get Dial-up Status activity.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 02/27/2026
+ms.date: 04/16/2026
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,11 @@ ms.update-cycle: 1095-days
 # Get Dial-up Status
 
 > [!NOTE]
-> Windows Server 2008 and Windows Server 2008 R2 have reached End of Support (EOS). For more information, see, [End of support for Windows Server 2008 and Windows Server 2008 R2](/troubleshoot/windows-server/windows-server-eos-faq/end-of-support-windows-server-2008-2008r2) and [Perform in-place upgrade to Windows Server 2016, 2019, 2022, or 2025](/azure/virtual-machines/windows-in-place-upgrade#perform-in-place-upgrade-to-windows-server-2016-2019-2022-or-2025). Review your usage and plan OS upgrades and migrations accordingly.
+> Windows Server 2008, 2008 R2, 2012 and 2012 R2 have reached End of Support (EOS). Review your usage and plan OS upgrades and migrations accordingly. For more information, see End of support for <br>
+>- [Windows Server 2008 and Windows Server 2008 R2](/troubleshoot/windows-server/windows-server-eos-faq/end-of-support-windows-server-2008-2008r2)
+>- [Windows Server 2012](/windows/release-health/status-windows-server-2012)
+>- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br>
+>[Perform in-place upgrade to Windows Server 2016, 2019, 2022, or 2025](/azure/virtual-machines/windows-in-place-upgrade#perform-in-place-upgrade-to-windows-server-2016-2019-2022-or-2025).
 
 The Get Dial-up Status activity retrieves the status of a dial-up or VPN network connection on the Runbook server. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 
