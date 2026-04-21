@@ -216,7 +216,7 @@ The following table is for reference only and contains links to management packs
 |[System Center Service Manager 2010](https://www.microsoft.com/download/details.aspx?id=23964)|7.0.6555.112|7/15/2024|
 |[UNIX and Linux Operating Systems (Operations Manager 2012 - 2016)](https://www.microsoft.com/download/details.aspx?id=29696)|7.6.1203.0|9/20/2024|
 |[UNIX and Linux Operating Systems (Operations Manager 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1258.0|10/8/2024|
-|[UNIX and Linux Operating Systems (Operations Manager 2022)](https://www.microsoft.com/download/details.aspx?id=104213)|10.22.1330.0|9/8/2025|
+|[UNIX and Linux Operating Systems (Operations Manager 2022)](https://www.microsoft.com/download/details.aspx?id=104213)|10.22.1330.0|2/13/2026|
 |[Visual Studio 2008 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=14720)|	1.0.0.2|6/15/2024|
 |[Visual Studio 2010 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=6325)|	1.0.0.7|7/15/2024|
 |[Visual Studio 2013 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=41696)|	1.0.0.1|7/15/2024|
