@@ -83,7 +83,7 @@ The following table is for reference only and contains links to management packs
 |[Message Queuing Services (MSMQ) 10.0](https://www.microsoft.com/download/details.aspx?id=57958&WT.mc_id=rss_alldownloads_all)|7.1.10242.1|5/12/2025|
 |[Message Queuing Services (MSMQ) 6.0](https://www.microsoft.com/download/details.aspx?id=36775)|7.0.8608.0|7/15/2024|
 |[Message Queuing Services (MSMQ) 6.3](https://www.microsoft.com/download/details.aspx?id=41539)|7.1.10148.0|7/15/2024|
-|[Microsoft 365 (Office 365)](https://www.microsoft.com/download/details.aspx?id=103379)|10.2.0.0|5/12/2025|
+|[Microsoft 365 (Office 365)](https://www.microsoft.com/download/details.aspx?id=103379)|10.2.0.3|12/08/2025|
 |[Microsoft Advanced Threat Analytics Management Pack](https://www.microsoft.com/download/details.aspx?id=56033)|1.9.2.0|7/15/2024|
 |[Microsoft Advanced Threat Analytics](https://www.microsoft.com/download/details.aspx?id=56033)|1.9.2.0|7/15/2024|
 |[Microsoft Analytics Platform System](https://www.microsoft.com/download/details.aspx?id=42522)|1|7/15/2024|
@@ -146,8 +146,8 @@ The following table is for reference only and contains links to management packs
 |[SQL Server 2012 Parallel Data Warehouse Appliance](https://www.microsoft.com/download/details.aspx?id=38198)|1.0.14.0|7/15/2024|
 |[Storage Spaces Direct Management Pack for Windows Server 2016 and above](https://www.microsoft.com/download/details.aspx?id=100782)|1.0.47.4|5/29/2025|
 |[System Center 1801 Operations Manager Management Pack to configure Operations Management Suite](https://www.microsoft.com/download/details.aspx?id=57173)|7.3.13285.0|7/15/2024|
-|[System Center 1801 Orchestrator - Service Management Automation](https://www.microsoft.com/download/details.aspx?id=56559)|7.4.48.0|03/01/2018|
-|[System Center 1801 Orchestrator](https://www.microsoft.com/download/details.aspx?id=56558)|7.4.48.0|7/15/2024|
+|[System Center 1801 Orchestrator - Service Management Automation](https://www.microsoft.com/download/details.aspx?id=56559)|7.4.48.0|7/15/2024|
+|[System Center 1801 Orchestrator](https://www.microsoft.com/download/details.aspx?id=56558)|7.5.1.0|7/15/2024|
 |[System Center 1801 Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=56557)|7.4.58.0|7/15/2024|
 |[System Center 2012 - Operations Manager Component Add - On](https://www.microsoft.com/download/details.aspx?id=29270)|7.3.2135.0|7/15/2024|
 |[System Center 2012 and 2016 Management Pack for Java Application Performance Monitoring](https://www.microsoft.com/download/details.aspx?id=39709)|7.1.10227.0|7/15/2024|
@@ -216,13 +216,13 @@ The following table is for reference only and contains links to management packs
 |[System Center Service Manager 2010](https://www.microsoft.com/download/details.aspx?id=23964)|7.0.6555.112|7/15/2024|
 |[UNIX and Linux Operating Systems (Operations Manager 2012 - 2016)](https://www.microsoft.com/download/details.aspx?id=29696)|7.6.1203.0|9/20/2024|
 |[UNIX and Linux Operating Systems (Operations Manager 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1258.0|10/8/2024|
-|[UNIX and Linux Operating Systems (Operations Manager 2022)](https://www.microsoft.com/download/details.aspx?id=104213)|10.22.1075.0|10/8/2024|
+|[UNIX and Linux Operating Systems (Operations Manager 2022)](https://www.microsoft.com/download/details.aspx?id=104213)|10.22.1330.0|2/13/2026|
 |[Visual Studio 2008 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=14720)|	1.0.0.2|6/15/2024|
 |[Visual Studio 2010 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=6325)|	1.0.0.7|7/15/2024|
 |[Visual Studio 2013 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=41696)|	1.0.0.1|7/15/2024|
 |[Visual Studio 2015 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=49554)|	14.0.24807.0|7/15/2024|
 |[Visual Studio 2017 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=54791)|15.113.26130.0|7/15/2024|
-|[Windows Client 10 Operating System](https://www.microsoft.com/download/details.aspx?id=51189)|10.0.0.2|15.113.26130.0|
+|[Windows Client 10 Operating System](https://www.microsoft.com/download/details.aspx?id=51189)|10.0.0.2|7/15/2024|
 |[Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|5/12/2025|
 |[Windows Server 2012 R2 Essentials](https://www.microsoft.com/download/details.aspx?id=40809)|7.1.10100.0|7/15/2024|
 |[Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1.0|7/15/2024|
