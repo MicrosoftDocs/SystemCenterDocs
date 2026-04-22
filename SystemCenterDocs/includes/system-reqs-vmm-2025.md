@@ -107,7 +107,6 @@ Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N
 [Azure Local - Azure Stack HCI, version 23H2 OS (OS version 25398.xxxx)](../vmm/manage-azure-stack-hci.md) | Y | N | N | N
 [Azure Local - Azure Stack HCI, version 24H2 OS (OS version 26100.xxxx)](../vmm/manage-azure-stack-hci.md) | Y | N | N | N
-Windows Server 2019 | Y | Y | Y | Y
 Windows Server 2022 | Y | Y | Y | Y
 Windows Server 2025 | Y | Y | Y | Y
 
