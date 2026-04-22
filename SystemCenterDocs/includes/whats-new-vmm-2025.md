@@ -4,7 +4,7 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/23/2026
+ms.date: 04/22/2026
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -66,7 +66,7 @@ You can use SQL 2025 for VMM 2025's database. To improve your resiliency posture
 
 ### Support for management of VMs running on the latest versions of Azure Local
 
-VMM 2025 UR1 release comes with updated support for the management of VMs running on the latest versions of Azure Local. Refer [the full list of supported and unsupported scenarios for managing Azure Local with VMM](../vmm/manage-azure-stack-hci.md). 
+VMM 2025 UR1 release comes with updated support for the management of Azure Local VMs running on Azure Stack HCI, version 24H2 OS (OS version 26100.xxxx). Refer [the full list of supported and unsupported scenarios for managing Azure Local with VMM](../vmm/manage-azure-stack-hci.md). 
 
 ### Support for the latest Linux Guest Operating Systems and Linux network settings file format
 
