@@ -19,7 +19,7 @@ ms.update-cycle: 1095-days
 # Get Dial-up Status
 
 > [!NOTE]
-> Windows Server 2008, 2008 R2, 2012 and 2012 R2 have reached End of Support (EOS). Review your usage and plan OS upgrades and migrations accordingly. For more information, see End of support for <br>
+> Windows Server 2008, 2008 R2, 2012 and 2012 R2 have reached End of Support (EOS). Review your usage and plan OS upgrades and migrations accordingly. For more information, see End of support for: <br>
 >- [Windows Server 2008 and Windows Server 2008 R2](/troubleshoot/windows-server/windows-server-eos-faq/end-of-support-windows-server-2008-2008r2)
 >- [Windows Server 2012](/windows/release-health/status-windows-server-2012)
 >- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br>
