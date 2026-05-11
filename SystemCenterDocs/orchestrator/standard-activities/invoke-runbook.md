@@ -1,7 +1,7 @@
 ---
 title: Invoke Runbook
 description: This article describes the Invoke Runbook activity that launches a runbook that you have specified.
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 03/28/2025
 ms.service: system-center
 ms.reviewer: ""

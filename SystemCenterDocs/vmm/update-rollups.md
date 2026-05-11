@@ -9,7 +9,7 @@ ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.update-cycle: 1095-days
 ms.subservice: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom: intro-deployment, engagement-fy23, engagement-fy24
 ---
 
 # Deploy and manage update rollups in VMM

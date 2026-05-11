@@ -1,7 +1,7 @@
 ---
 title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 10/07/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

@@ -9,7 +9,6 @@ ms.update-cycle: 365-days
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: orchestrator
-ms.custom: UpdateFrequency.5
 ---
 
 # Upgrade System Center Orchestrator

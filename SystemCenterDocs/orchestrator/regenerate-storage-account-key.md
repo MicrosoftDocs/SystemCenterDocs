@@ -1,7 +1,6 @@
 ---
 title: Regenerate Storage Account Key
 description: The Regenerate Storage Account Key activity regenerates the primary or secondary access key for the specified storage account.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

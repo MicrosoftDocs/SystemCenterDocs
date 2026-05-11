@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager operat
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 03/19/2025
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy

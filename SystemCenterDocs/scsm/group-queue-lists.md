@@ -10,7 +10,7 @@ ms.update-cycle: 1095-days
 title: Use Groups, Queues, and Lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Use Groups, Queues, and Lists in Service Manager

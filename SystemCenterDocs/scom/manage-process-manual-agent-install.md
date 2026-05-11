@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.update-cycle: 1095-days
 ---
 

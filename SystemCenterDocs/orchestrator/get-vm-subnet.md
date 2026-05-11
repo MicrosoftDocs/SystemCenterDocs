@@ -8,7 +8,7 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Get VM Subnet activity

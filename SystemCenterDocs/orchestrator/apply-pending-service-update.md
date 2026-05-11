@@ -8,7 +8,7 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ---
 # Apply Pending Service Update activity
 

@@ -9,7 +9,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.update-cycle: 1095-days
-ms.custom: intro-installation, UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom: intro-installation, engagement-fy23, engagement-fy24
 ---
 
 # Install Service Manager on a single computer (minimum configuration)

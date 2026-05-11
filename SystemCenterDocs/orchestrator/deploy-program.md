@@ -1,7 +1,7 @@
 ---
 title: Deploy Program activity
 description: Describes the configurable properties for the Deploy Program activity for Configuration Manager Integration Pack.
-ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy24
+ms.custom: intro-deployment, engagement-fy24
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.service: system-center

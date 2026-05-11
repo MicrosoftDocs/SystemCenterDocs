@@ -9,7 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.update-cycle: 180-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Set up logical networks in the VMM fabric

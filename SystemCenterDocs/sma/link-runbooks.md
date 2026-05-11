@@ -7,7 +7,7 @@ ms.service: system-center
 ms.date: 04/22/2025
 title: Child Runbooks in Service Management Automation
 ms.subservice: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Change Deployment Configuration
 description: The Change Deployment Configuration activity initiates a change to the deployment configuration.
-ms.custom: UpdateFrequency2
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

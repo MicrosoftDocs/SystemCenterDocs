@@ -8,7 +8,7 @@ ms.service: system-center
 ms.date: 04/15/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Glossary of terms in System Center - Service Manager

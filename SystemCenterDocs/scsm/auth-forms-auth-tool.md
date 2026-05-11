@@ -1,7 +1,7 @@
 ---
 title: Customize and Author Forms
 description: Provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
-ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.date: 04/24/2025
 author: Jeronika-MS

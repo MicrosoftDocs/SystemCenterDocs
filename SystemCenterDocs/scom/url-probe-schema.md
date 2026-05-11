@@ -10,7 +10,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 monikerRange: '>=sc-om-2019'
-ms.custom: UpdateFrequency5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Microsoft.SystemCenter.WebApplication.UrlProbe

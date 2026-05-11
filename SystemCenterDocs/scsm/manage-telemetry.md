@@ -10,7 +10,6 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-manager
 ms.custom:
-  - UpdateFrequency.5
   - sfi-image-nochange
 ---
 

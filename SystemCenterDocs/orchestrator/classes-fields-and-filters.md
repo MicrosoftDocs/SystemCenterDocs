@@ -8,7 +8,6 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency3
 ---
 # Classes, fields, and filters
 

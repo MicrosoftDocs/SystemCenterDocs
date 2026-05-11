@@ -10,7 +10,7 @@ ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Back up SharePoint with DPM

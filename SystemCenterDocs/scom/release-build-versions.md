@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # System Center - Operations Manager build versions

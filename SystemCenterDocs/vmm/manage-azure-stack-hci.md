@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: sc-vmm-2025
-ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23, engagement-fy24
+ms.custom: intro-deployment, engagement-fy23, engagement-fy24
 ---
 
 # Manage Azure Local instances in VMM

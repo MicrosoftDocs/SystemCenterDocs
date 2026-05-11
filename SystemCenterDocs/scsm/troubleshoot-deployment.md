@@ -9,7 +9,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting-general
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Troubleshoot Service Manager deployment issues

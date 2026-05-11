@@ -1,7 +1,7 @@
 ---
 title: Manage the data warehouse
 description: Describes how to manage the Service Manager data warehouse.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

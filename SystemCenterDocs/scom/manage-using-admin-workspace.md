@@ -4,7 +4,7 @@ description: This article describes the functions you can perform from the Admin
 ms.date: 04/22/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
 ms.subservice: operations-manager

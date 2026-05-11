@@ -8,7 +8,7 @@ ms.date: 04/24/2023
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ---
 
 # Manage storage in Storage Spaces Direct in the VMM fabric

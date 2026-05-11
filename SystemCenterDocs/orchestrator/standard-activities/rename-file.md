@@ -1,7 +1,7 @@
 ---
 title: Rename File
 description: This article describes the functionality of Rename File activity.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 08/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

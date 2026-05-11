@@ -1,7 +1,7 @@
 ---
 title: Get Lines
 description: This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 11/05/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

@@ -8,7 +8,6 @@ ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-ms.custom: UpdateFrequency3
 ---
 
 # System Center - Orchestrator Integration Toolkit

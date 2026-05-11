@@ -10,7 +10,7 @@ ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Configure and use Service Manager cmdlets for Windows PowerShell

@@ -4,7 +4,6 @@ description: This article describes how to reconfigure the data graphics in Visi
 ms.date: 04/24/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

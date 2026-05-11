@@ -8,7 +8,7 @@ ms.service: system-center
 ms.date: 08/07/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Use connectors to import data into Service Manager

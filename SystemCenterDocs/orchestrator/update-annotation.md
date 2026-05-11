@@ -1,7 +1,6 @@
 ---
 title: Update Annotation
 description: The Update Annotation activity is used in a runbook to update an annotation to an existing message.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

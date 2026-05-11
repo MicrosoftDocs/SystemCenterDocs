@@ -8,7 +8,7 @@ ms.date: 08/22/2024
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

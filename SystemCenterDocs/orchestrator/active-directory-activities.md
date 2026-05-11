@@ -1,7 +1,7 @@
 ---
 title: Active Directory Activities
 description: This article contains configuration instructions for Active Directory activities.
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

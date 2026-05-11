@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: engagement-fy23
 ---
 
 # System requirements for System Center Operations Manager

@@ -1,7 +1,6 @@
 ---
 title: Get Organizational Unit
 description: You can use the Get Organizational Unit activity in a runbook to get the properties of an organizational unit in Active Directory Domain Services (AD DS).
-ms.custom: UpdateFrequency2
 ms.date: 04/02/2025
 ms.service: system-center
 ms.reviewer: na

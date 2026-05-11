@@ -1,7 +1,7 @@
 ---
 title: List Storage Account
 description: The List Storage Account activity lists the storage accounts available under the current subscription.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

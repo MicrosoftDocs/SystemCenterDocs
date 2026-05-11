@@ -9,7 +9,7 @@ ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.update-cycle: 365-days
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 

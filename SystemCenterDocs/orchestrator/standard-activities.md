@@ -10,7 +10,6 @@ ms.date: 03/31/2025
 ms.update-cycle: 1095-days
 ms.subservice: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
-ms.custom: UpdateFrequency3
 ---
 
 # Standard activities

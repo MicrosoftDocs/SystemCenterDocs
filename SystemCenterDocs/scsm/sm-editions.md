@@ -8,7 +8,7 @@ ms.date: 04/02/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.topic: concept-article
-ms.custom: UpdateFrequency5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 # System Center - Service Manager editions
 

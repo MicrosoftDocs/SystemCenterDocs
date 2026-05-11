@@ -10,7 +10,7 @@ ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: 29504a71-5574-472c-b930-894d31fe2267
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Configure Release Management settings

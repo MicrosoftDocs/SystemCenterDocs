@@ -8,7 +8,6 @@ ms.update-cycle: 1095-days
 ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency3
 ---
 # Service Manager activities
 

@@ -8,7 +8,7 @@ ms.date: 08/07/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.topic: concept-article
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Load balancing Service Manager

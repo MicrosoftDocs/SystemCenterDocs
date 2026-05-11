@@ -11,7 +11,6 @@ ms.topic: install-set-up-deploy
 ms.update-cycle: 365-days
 ms.custom:
   - intro-installation
-  - UpdateFrequency2
   - sfi-image-nochange
 ---
 

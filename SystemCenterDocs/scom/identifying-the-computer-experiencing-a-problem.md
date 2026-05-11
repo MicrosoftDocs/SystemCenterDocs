@@ -9,7 +9,6 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to
 ms.custom:
-  - UpdateFrequency3
   - sfi-image-nochange
 ---
 

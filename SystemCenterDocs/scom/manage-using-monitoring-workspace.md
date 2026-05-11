@@ -4,7 +4,6 @@ description: This article describes how to use the Operations Manager Operations
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/07/2025
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

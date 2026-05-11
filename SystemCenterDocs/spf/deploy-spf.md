@@ -9,7 +9,6 @@ ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.update-cycle: 1095-days
 ms.custom:
-  - UpdateFrequency2
   - intro-deployment
   - engagement-fy24
   - sfi-ropc-nochange

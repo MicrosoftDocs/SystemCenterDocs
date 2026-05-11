@@ -1,7 +1,6 @@
 ---
 title: Run iLO Command
 description: The Run iLO Command activity is used in a runbook to run a command that can be used to perform management activities such as Create User, Get Power State, and Set Configuration.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

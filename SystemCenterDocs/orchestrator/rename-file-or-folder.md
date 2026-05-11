@@ -1,7 +1,6 @@
 ---
 title: Rename File or Folder
 description: The Rename File/Folder activity is used in a runbook to rename a file or folder on an FTP server.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

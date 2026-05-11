@@ -10,7 +10,6 @@ ms.subservice: operations-manager
 ms.topic: how-to
 ms.update-cycle: 1095-days
 ms.custom:
-  - UpdateFrequency2
   - sfi-image-nochange
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Add VM Instance
 description: The Add VM Instance activity adds a virtual machine to an existing deployment.
-ms.custom: UpdateFrequency2
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

@@ -4,7 +4,7 @@ description: Article to detail how to install the System Center Operations Manag
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/01/2025
-ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
+ms.custom: intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy

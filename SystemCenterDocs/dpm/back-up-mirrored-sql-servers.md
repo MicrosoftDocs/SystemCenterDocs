@@ -8,7 +8,7 @@ ms.author: v-gajeronika
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

@@ -9,7 +9,7 @@ ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
+ms.custom: intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
 # What's new in System Center Data Protection Manager
