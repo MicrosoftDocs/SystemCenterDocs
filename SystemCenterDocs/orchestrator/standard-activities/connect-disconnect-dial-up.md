@@ -1,7 +1,7 @@
 ---
 title: Connect-Disconnect Dial-up
 description: This article describes the Connect/Disconnect Dial-up activity.
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 04/16/2026
 ms.service: system-center
 ms.reviewer: ""

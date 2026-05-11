@@ -1,7 +1,6 @@
 ---
 title: Create Group
 description: You can use the Create Group activity in a runbook to create a group in the Microsoft Active Directory.
-ms.custom: UpdateFrequency2
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

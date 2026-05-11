@@ -1,7 +1,7 @@
 ---
 title: Data warehouse reporting and analytics
 description: Provides an overview about data warehouse reporting and analytics in Service Manager.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

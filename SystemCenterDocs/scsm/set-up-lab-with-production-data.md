@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.topic: how-to
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Set up a lab environment with production data

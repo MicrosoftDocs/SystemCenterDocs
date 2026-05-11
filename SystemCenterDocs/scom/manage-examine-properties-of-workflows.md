@@ -5,7 +5,6 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

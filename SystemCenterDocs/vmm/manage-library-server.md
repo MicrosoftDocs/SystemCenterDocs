@@ -9,7 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.update-cycle: 365-days
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Set up the library in the VMM compute fabric

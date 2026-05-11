@@ -12,7 +12,6 @@ ms.author: v-gajeronika
 monikerRange: '>=sc-dpm-2019'
 ms.update-cycle: 1095-days
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy24
   - sfi-image-nochange
 ---

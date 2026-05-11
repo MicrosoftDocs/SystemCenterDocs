@@ -10,7 +10,6 @@ ms.update-cycle: 365-days
 ms.topic: how-to
 MonikerRange: '>=sc-om-2022'
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy23
   - sfi-image-nochange
 ---

@@ -4,7 +4,6 @@ description: This article describes how to configure discovery of network device
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/17/2025
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

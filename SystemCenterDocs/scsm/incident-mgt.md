@@ -10,7 +10,7 @@ ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: 8453a3e9-56ee-4750-b111-81e241c480a4
-ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Configure Incident Management in Service Manager

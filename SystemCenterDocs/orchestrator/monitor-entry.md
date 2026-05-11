@@ -1,7 +1,7 @@
 ---
 title: Monitor Entry
 description: The Monitor Entry activity invokes a runbook when new entries are generated and/or existing entries are modified in HP Service Manager.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

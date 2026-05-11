@@ -13,7 +13,6 @@ ms.update-cycle: 1095-days
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy23
   - sfi-ropc-nochange
 ---

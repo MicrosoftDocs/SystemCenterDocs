@@ -10,7 +10,6 @@ ms.subservice: operations-manager
 ms.topic: how-to
 ms.assetid: e29fed7f-28ec-48fe-b195-0e776a4778da
 ms.custom:
-  - UpdateFrequency3
   - engagement-fy24
   - sfi-image-nochange
 ---

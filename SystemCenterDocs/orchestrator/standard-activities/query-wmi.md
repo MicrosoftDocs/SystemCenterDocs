@@ -1,7 +1,7 @@
 ---
 title: Query WMI
 description: This article describes the Query WMI activity that will send a WMI query to a system that you specify and return the results.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

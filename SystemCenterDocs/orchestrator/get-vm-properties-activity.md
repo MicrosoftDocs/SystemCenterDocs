@@ -1,7 +1,7 @@
 ---
 title: Get VM Properties Activity
 description: The Get VM Properties activity is used in a runbook to retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

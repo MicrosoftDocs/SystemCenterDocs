@@ -1,7 +1,7 @@
 ---
 title: Print File
 description: This article describes the functionality of Print File Activity.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 03/31/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

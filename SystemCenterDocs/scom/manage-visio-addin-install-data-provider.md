@@ -4,7 +4,7 @@ description: This article describes how to install and configure the Visio Servi
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/17/2025
-ms.custom: UpdateFrequency2, intro-installation
+ms.custom: intro-installation
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy

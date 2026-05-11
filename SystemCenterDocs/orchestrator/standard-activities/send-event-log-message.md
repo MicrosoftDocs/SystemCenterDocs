@@ -1,7 +1,7 @@
 ---
 title: Send Event Log Message
 description: This article describes the functionality of Send Event Log Message activity.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 10/09/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

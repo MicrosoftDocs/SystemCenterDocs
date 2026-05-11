@@ -9,7 +9,7 @@ ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-manager
 ms.update-cycle: 365-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Upgrade System Center Service Manager

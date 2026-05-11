@@ -8,7 +8,7 @@ ms.subservice: orchestrator
 ms.topic: how-to
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Optimize performance of .NET activities

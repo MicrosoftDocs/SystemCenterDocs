@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 03/19/2025
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
+ms.custom: intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: install-set-up-deploy

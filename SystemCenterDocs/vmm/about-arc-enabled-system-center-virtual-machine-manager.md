@@ -9,7 +9,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.update-cycle: 365-days
-ms.custom: intro-overview, UpdateFrequency0.5, engagement-fy24
+ms.custom: intro-overview, engagement-fy24
 ---
 
 # About Arc-enabled System Center Virtual Machine Manager

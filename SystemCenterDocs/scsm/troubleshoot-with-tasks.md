@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.date: 04/22/2025
 ms.subservice: service-manager
 ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Troubleshoot computer problems with Service Manager tasks

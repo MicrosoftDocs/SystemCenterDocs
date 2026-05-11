@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Configure HGS fallback URLs in VMM

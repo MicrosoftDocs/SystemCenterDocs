@@ -1,7 +1,7 @@
 ---
 title: Common Activity Properties
 description: This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

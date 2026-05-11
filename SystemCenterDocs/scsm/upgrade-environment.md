@@ -1,7 +1,7 @@
 ---
 title: Upgrade to System Center 2016 - Service Manager
 description: Use this article to upgrade to System Center 2016 - Service Manager.
-ms.custom: UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

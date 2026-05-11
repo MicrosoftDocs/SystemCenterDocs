@@ -1,7 +1,6 @@
 ---
 title: Put Blob
 description: The Put Blob activity creates a new block blob from the specified file, or updates the content of an existing block blob.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

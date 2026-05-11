@@ -10,7 +10,7 @@ ms.date: 04/15/2025
 ms.subservice: service-manager
 ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Manage Service Manager knowledge articles

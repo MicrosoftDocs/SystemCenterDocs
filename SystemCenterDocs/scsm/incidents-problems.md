@@ -1,7 +1,7 @@
 ---
 title: Manage incidents and problems
 description: Provides an overview and explains how to manage incidents and problems in Service Manager.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

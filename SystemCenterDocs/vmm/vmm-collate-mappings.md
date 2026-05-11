@@ -9,7 +9,6 @@ ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency3
 ---
 
 # VMM server collate mapping

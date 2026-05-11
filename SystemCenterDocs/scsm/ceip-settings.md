@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Configure your preference for sharing Service Manager diagnostic and usage data

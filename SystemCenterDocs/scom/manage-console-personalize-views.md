@@ -4,7 +4,7 @@ description: This article describes how to customize views in the Operations Man
 ms.date: 04/23/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

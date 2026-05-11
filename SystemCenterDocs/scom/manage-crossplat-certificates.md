@@ -5,7 +5,7 @@ description: This article describes how to manage certificates required for auth
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

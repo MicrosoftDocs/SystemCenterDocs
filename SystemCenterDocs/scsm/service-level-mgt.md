@@ -10,7 +10,7 @@ ms.date: 08/07/2025
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
-ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Configure Service Level Management

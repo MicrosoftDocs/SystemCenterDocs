@@ -10,7 +10,7 @@ ms.assetid: c0f4201b-53f7-45c8-af16-5522d0f10c6e
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

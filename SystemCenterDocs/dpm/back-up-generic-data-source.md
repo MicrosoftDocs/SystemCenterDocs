@@ -11,7 +11,7 @@ ms.assetid: 8ad00a50-108a-4212-ad43-c12a8f8f5587
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Prepare to back up a generic data source

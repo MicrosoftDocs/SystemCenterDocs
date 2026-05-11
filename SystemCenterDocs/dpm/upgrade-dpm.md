@@ -11,7 +11,7 @@ ms.update-cycle: 365-days
 title: Upgrade your System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Upgrade your DPM installation

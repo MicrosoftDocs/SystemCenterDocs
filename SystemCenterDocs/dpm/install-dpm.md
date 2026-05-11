@@ -8,7 +8,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24
+ms.custom: intro-installation, engagement-fy23, engagement-fy24
 ---
 
 # Get DPM installed

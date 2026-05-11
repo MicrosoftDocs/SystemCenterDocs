@@ -11,7 +11,7 @@ ms.update-cycle: 180-days
 title: How does DPM work?
 ms.subservice: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
-ms.custom: UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 # How does DPM work?
 

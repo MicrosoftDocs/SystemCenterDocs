@@ -1,7 +1,7 @@
 ---
 title: Orchestrator logs
 description: Provides information about common troubleshooting issues using log files.
-ms.custom: UpdateFrequency3, engagment-fy24
+ms.custom: engagment-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

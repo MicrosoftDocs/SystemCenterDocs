@@ -5,7 +5,7 @@ description: This article describes about Favorite reports in Web console.
 ms.date: 08/21/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager

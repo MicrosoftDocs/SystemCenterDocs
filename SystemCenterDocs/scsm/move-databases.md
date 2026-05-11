@@ -13,8 +13,6 @@ ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 ms.custom:
-  - na
-  - UpdateFrequency3
   - engagement-fy23
   - engagement-fy24
   - sfi-ropc-nochange

@@ -1,7 +1,7 @@
 ---
 title: Delete Folder
 description: The Delete Folder activity is used in a runbook to delete a folder on an FTP server.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

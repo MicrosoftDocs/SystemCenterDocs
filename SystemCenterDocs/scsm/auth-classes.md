@@ -1,7 +1,7 @@
 ---
 title: Customize and Author Classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
-ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

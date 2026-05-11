@@ -9,7 +9,7 @@ ms.date: 01/29/2026
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
+ms.custom: intro-deployment, engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

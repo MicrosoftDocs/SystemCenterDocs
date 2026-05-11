@@ -11,7 +11,6 @@ ms.subservice: virtual-machine-manager
 ms.update-cycle: 1095-days
 ms.custom:
   - engagement-fy23
-  - UpdateFrequency2
   - engagement-fy24
   - sfi-image-nochange
 ---

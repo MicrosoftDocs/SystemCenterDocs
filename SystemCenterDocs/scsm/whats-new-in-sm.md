@@ -9,7 +9,7 @@ ms.topic: whats-new
 ms.service: system-center
 ms.subservice: service-manager
 ms.update-cycle: 365-days
-ms.custom: UpdateFrequency.5, intro-whats-new
+ms.custom: intro-whats-new
 ---
 
 

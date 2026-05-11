@@ -1,7 +1,7 @@
 ---
 title: Get View Items
 description: The Get View Items activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list by using one of the list's views.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.date: 04/23/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

@@ -10,7 +10,7 @@ ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # System Center – Data Protection Manager build versions

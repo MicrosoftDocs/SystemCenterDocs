@@ -8,7 +8,7 @@ ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article
-ms.custom: UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Orchestrator Integration Toolkit overview

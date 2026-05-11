@@ -1,7 +1,7 @@
 ---
 title: Index non-English knowledge articles
 description: This article helps you resolve issues when you want to index non-English knowledge articles.
-ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

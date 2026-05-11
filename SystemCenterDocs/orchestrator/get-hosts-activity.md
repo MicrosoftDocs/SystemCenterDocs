@@ -1,7 +1,7 @@
 ---
 title: Get Hosts Activity
 description: The Get Hosts activity is used in a runbook to retrieve all the hosts attached to a vCenter instance.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

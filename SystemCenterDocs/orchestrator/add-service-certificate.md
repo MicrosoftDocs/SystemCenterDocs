@@ -1,7 +1,6 @@
 ---
 title: Add Service Certificate
 description: The Add Service Certificate activity is used in a runbook to add a certificate to a cloud service.
-ms.custom: UpdateFrequency2
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

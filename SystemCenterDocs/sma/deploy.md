@@ -7,7 +7,7 @@ ms.service: system-center
 ms.date: 08/20/2025
 title: Deploy Service Management Automation
 ms.subservice: service-management-automation
-ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
+ms.custom: intro-deployment, engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Plan VMM installation

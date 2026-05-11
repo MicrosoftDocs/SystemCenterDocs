@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article
-ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Planning a Management Group Design

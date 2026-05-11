@@ -10,7 +10,6 @@ ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: release-notes
 ms.custom:
-  - UpdateFrequency.5
   - engagement-fy23
   - engagement-fy24
   - sfi-image-nochange

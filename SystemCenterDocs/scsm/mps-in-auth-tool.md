@@ -1,7 +1,7 @@
 ---
 title: Work with management packs
 description: Explains how to work with management packs in the Service Manager Authoring Tool.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

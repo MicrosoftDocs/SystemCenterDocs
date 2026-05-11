@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24
+ms.custom: intro-installation, engagement-fy24
 ---
 
 # Install the VMM Console

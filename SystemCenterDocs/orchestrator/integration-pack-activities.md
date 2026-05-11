@@ -1,7 +1,7 @@
 ---
 title: FTP Integration Pack Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists Activity properties.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

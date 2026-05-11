@@ -9,7 +9,7 @@ ms.date: 04/02/2025
 title:  Extend Tiered Volume in System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

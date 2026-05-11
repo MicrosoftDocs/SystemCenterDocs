@@ -8,7 +8,6 @@ ms.date: 07/28/2023
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
-ms.custom: UpdateFrequency2
 ms.update-cycle: 1095-days
 ---
 

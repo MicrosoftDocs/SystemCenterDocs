@@ -9,7 +9,7 @@ ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.update-cycle: 365-days
-ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy and manage a Software Defined Network (SDN) infrastructure in the VMM fabric

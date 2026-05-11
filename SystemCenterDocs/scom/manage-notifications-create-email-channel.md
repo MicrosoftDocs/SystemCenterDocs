@@ -10,7 +10,6 @@ ms.topic: how-to
 ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
 ms.update-cycle: 365-days
 ms.custom:
-  - UpdateFrequency2
   - sfi-image-nochange
 ---
 

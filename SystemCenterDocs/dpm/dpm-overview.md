@@ -10,7 +10,7 @@ ms.subservice: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Data Protection Manager

@@ -1,7 +1,6 @@
 ---
 title: Remove VM Endpoint
 description: The Remove VM Endpoint activity removes an external endpoint from the specified virtual machine.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

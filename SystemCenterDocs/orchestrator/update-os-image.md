@@ -1,7 +1,7 @@
 ---
 title: Update OS Image
 description: The Update OS Image activity updates an operating system image that is in your image repository.
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

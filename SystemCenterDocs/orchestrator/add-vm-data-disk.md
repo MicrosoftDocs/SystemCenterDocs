@@ -1,7 +1,7 @@
 ---
 title: Add VM Data Disk
 description: The Add VM Data Disk activity adds a data disk to a virtual machine.
-ms.custom: engagement-fy23, UpdateFrequency2
+ms.custom: engagement-fy23
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

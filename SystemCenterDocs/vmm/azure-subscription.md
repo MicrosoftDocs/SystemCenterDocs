@@ -11,7 +11,6 @@ ms.subservice: virtual-machine-manager
 ms.update-cycle: 1095-days
 monikerRange: '<=sc-vmm-2022'
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy24
   - sfi-image-nochange
 ---

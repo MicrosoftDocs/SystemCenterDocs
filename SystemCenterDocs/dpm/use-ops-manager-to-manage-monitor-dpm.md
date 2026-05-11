@@ -11,7 +11,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Manage and monitor DPM servers by using Operations Manager

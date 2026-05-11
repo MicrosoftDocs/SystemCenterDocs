@@ -8,7 +8,6 @@ ms.date: 04/16/2025
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
-ms.custom: UpdateFrequency2
 ms.update-cycle: 1095-days
 ---
 

@@ -10,7 +10,7 @@ ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Configure a nested VM as a host

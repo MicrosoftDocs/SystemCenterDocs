@@ -1,7 +1,6 @@
 ---
 title: Orchestrator Integration Packs
 description: This article provides the list of integration packs for Orchestrator.
-ms.custom: UpdateFrequency2
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""

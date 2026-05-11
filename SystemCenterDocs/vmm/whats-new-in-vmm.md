@@ -9,7 +9,7 @@ ms.author: v-gajeronika
 ms.topic: whats-new
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
+ms.custom: intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
 

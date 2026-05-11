@@ -1,7 +1,7 @@
 ---
 title: Save Event Log
 description: This article describes the Save Event Log activity that is used to save entries from an event log.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 08/07/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

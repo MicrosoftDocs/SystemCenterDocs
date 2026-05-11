@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.topic: troubleshooting-general
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency5, engagement-fy24
+ms.custom: engagement-fy24
 monikerRange: '<=sc-vmm-2022'
 ---
 

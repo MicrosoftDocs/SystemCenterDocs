@@ -10,7 +10,7 @@ ms.subservice: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Identify data sources you want to protect

@@ -10,7 +10,7 @@ ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: 'sc-vmm-2019'
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Set up logical networks in the VMM 2019 UR1 and later fabric

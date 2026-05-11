@@ -12,7 +12,6 @@ ms.subservice: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy24
   - sfi-image-nochange
 ---

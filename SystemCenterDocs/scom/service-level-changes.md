@@ -10,7 +10,6 @@ ms.subservice: operations-manager
 ms.topic: concept-article
 ms.update-cycle: 365-days
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy24
   - sfi-image-nochange
 ---

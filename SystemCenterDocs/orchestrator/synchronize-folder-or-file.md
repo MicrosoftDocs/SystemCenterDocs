@@ -1,7 +1,6 @@
 ---
 title: Synchronize Folder or File
 description: The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
