@@ -5,7 +5,6 @@ description: This article highlights accessing UNIX and Linux computers in Opera
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 03/26/2025
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

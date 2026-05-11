@@ -10,7 +10,7 @@ ms.date: 11/01/2024
 ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Map Active Directory Domain Services attributes to properties in System Center - Service Manager

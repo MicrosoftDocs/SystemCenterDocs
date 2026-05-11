@@ -1,7 +1,7 @@
 ---
 title: Upgrade Deployment
 description: The Upgrade Deployment activity initiates an upgrade to a deployment.
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

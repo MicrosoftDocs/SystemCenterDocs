@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: orchestrator
-ms.custom: engagement-fy23, UpdateFrequency.5
+ms.custom: engagement-fy23
 ---
 
 # System requirements for System Center Orchestrator

@@ -1,7 +1,7 @@
 ---
 title: Customize the data warehouse
 description: Provides an overview about customizing the Service Manager data warehouse.
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

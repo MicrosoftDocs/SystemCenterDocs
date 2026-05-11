@@ -1,7 +1,7 @@
 ---
 title: Prepare for Disaster Recovery
 description: This article describes the steps that you must take for Service Manager disaster recovery before problems occur.
-ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

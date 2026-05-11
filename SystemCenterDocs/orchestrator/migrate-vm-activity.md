@@ -1,7 +1,7 @@
 ---
 title: Migrate VM activity
 description: The Migrate VM activity is used in a runbook to migrate a virtual machine in any state (powered on, powered off, or suspended) to another computer.
-ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
+ms.custom: intro-migration, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

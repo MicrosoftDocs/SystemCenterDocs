@@ -10,7 +10,6 @@ ms.topic: how-to
 ms.update-cycle: 365-days
 ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 ms.custom:
-  - UpdateFrequency2
   - engagement-fy24
   - sfi-image-nochange
 ---

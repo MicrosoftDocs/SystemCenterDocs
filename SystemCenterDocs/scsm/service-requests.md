@@ -1,7 +1,7 @@
 ---
 title: Manage service requests
 description: Explains how to manage service requests in Service Manager.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

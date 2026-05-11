@@ -1,7 +1,7 @@
 ---
 title: Workflow Activity Reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
-ms.custom: na, UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.custom: na, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

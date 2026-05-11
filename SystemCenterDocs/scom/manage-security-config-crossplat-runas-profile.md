@@ -5,7 +5,7 @@ description: This article describes how to configure Run As accounts and profile
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/21/2025
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

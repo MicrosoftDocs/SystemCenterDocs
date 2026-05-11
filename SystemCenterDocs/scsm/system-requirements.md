@@ -9,7 +9,6 @@ ms.topic: concept-article
 ms.service: system-center
 ms.update-cycle: 365-days
 ms.subservice: service-manager
-ms.custom: UpdateFrequency.5
 ---
 
 # System requirements for System Center Service Manager

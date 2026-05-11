@@ -1,7 +1,7 @@
 ---
 title: Set SNMP Variable
 description: This article describes the Set SNMP Variable activity that will modify a variable, specified by its MIB, on a network device.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

@@ -1,7 +1,6 @@
 ---
 title: Suspend VM Activity
 description: The Suspend VM activity is used in a runbook to suspend a virtual machine that has already been added to a VMware vSphere server and is already running.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

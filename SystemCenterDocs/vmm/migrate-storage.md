@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
+ms.custom: intro-migration, engagement-fy24
 ---
 
 

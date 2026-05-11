@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Scenario - Deploy guarded hosts and shielded virtual machines in VMM

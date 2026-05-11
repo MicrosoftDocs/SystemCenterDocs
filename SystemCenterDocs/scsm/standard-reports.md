@@ -1,7 +1,7 @@
 ---
 title: Use and manage standard reports
 description: Explains how to use and manage standard reports in Service Manager.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

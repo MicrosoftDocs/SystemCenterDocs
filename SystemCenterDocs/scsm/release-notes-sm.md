@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.topic: release-notes
 ms.service: system-center
 ms.subservice: service-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: engagement-fy23
 ---
 
 # Release notes for System Center Service Manager

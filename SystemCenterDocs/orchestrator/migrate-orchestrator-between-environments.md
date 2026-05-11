@@ -8,7 +8,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/13/2025
 ms.update-cycle: 1095-days
-ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
+ms.custom: intro-migration, engagement-fy24
 ---
 
 # Migrate Orchestrator between environments

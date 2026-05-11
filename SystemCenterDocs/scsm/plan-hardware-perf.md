@@ -8,7 +8,7 @@ ms.date: 04/22/2025
 ms.subservice: service-manager
 ms.topic: how-to
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Plan for Service Manager hardware performance

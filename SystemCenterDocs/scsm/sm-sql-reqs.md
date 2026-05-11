@@ -10,7 +10,7 @@ ms.date: 12/01/2025
 ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
-ms.custom: UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # SQL Server requirements for System Center - Service Manager

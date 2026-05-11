@@ -1,7 +1,7 @@
 ---
 title: Exchange Administrator Activities
 description: The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.date: 04/21/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

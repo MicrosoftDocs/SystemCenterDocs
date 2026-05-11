@@ -10,7 +10,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.reviewer: v-gajeronika
 monikerRange: sc-dpm-2019||sc-dpm-2016
-ms.custom: intro-migration, UpdateFrequency2, engagement-fy24
+ms.custom: intro-migration, engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

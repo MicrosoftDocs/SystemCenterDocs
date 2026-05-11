@@ -13,7 +13,6 @@ ms.tgt_pltfrm: na
 ms.topic: install-set-up-deploy
 ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 ms.custom:
-  - UpdateFrequency3
   - engagement-fy24
   - sfi-ropc-nochange
 ---

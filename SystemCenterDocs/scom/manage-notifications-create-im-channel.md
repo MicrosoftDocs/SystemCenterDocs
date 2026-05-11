@@ -4,7 +4,6 @@ description: This article describes how to create an instant message notificatio
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/14/2025
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

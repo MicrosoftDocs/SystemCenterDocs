@@ -1,7 +1,7 @@
 ---
 title: Audit Trail
 description: This article provides information about how to activate and deactivate audit trails. 
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

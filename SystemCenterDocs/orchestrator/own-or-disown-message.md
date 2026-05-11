@@ -1,7 +1,6 @@
 ---
 title: Own or Disown Message
 description: The Own/Disown Message activity is used in a runbook to take ownership or remove ownership of a message.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

@@ -1,7 +1,6 @@
 ---
 title: Start VM Activity
 description: The Start VM activity is used in a runbook to start a virtual machine that has been added to a VMware vSphere server and is not already running.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

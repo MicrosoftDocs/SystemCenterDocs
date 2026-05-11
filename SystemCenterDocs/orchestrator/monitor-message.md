@@ -1,7 +1,7 @@
 ---
 title: Monitor Message
 description: The Monitor Message activity invokes a runbook when certain HP Operations Manager messages are created, updated, acknowledged, or unacknowledged according to filter criteria that you specify.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

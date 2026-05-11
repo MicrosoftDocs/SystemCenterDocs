@@ -5,7 +5,7 @@ description: This article describes how to put a monitored object into maintenan
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 02/04/2026
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

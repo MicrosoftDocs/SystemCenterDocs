@@ -1,7 +1,7 @@
 ---
 title: Get Move Request Statistics
 description: You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premises environment.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.date: 03/31/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

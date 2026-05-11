@@ -4,7 +4,6 @@ description: This article describes how to view the effective configuration of a
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 04/09/2025
-ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.update-cycle: 1095-days

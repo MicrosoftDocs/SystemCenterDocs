@@ -10,7 +10,7 @@ ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # What can DPM back up?

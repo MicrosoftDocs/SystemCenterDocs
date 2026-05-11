@@ -1,7 +1,7 @@
 ---
 title: Install Operations Manager on a Single Server
 description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
-ms.custom: engagement-fy23, UpdateFrequency.5
+ms.custom: engagement-fy23
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 03/19/2025

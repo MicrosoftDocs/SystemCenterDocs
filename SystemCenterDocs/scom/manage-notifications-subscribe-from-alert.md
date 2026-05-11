@@ -4,7 +4,7 @@ description: This article describes how to subscribe to a notification from a se
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 08/07/2025
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

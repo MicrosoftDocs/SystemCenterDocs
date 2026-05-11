@@ -9,7 +9,7 @@ ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.update-cycle: 1095-days
-ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
+ms.custom: intro-deployment, engagement-fy23
 ---
 
 # Deploy clusters with Storage Spaces Direct in VMM

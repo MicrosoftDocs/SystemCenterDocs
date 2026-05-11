@@ -8,7 +8,7 @@ ms.subservice: orchestrator
 ms.topic: install-set-up-deploy
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: intro-deployment, engagement-fy23, engagement-fy24
 ---
 # Deploy Service activity
 

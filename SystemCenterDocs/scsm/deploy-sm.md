@@ -10,7 +10,6 @@ ms.subservice: service-manager
 ms.topic: install-set-up-deploy
 ms.custom:
   - intro-deployment
-  - UpdateFrequency3
   - engagement-fy24
   - sfi-image-nochange
 ---

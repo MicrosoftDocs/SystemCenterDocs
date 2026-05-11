@@ -9,7 +9,7 @@ ms.date: 08/20/2025
 ms.update-cycle: 1095-days
 title: Author Automation Runbooks
 ms.subservice: service-management-automation
-ms.custom: UpdateFrequency.5, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Author Service Management Automation runbooks

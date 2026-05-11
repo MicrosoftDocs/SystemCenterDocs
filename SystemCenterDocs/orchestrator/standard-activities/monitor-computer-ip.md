@@ -1,7 +1,7 @@
 ---
 title: Monitor Computer-IP
 description: This article describes the functionality of Monitor Computer/IP activity.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 07/24/2025
 ms.update-cycle: 1095-days
 ms.service: system-center

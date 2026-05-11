@@ -1,7 +1,6 @@
 ---
 title: Resume File Download
 description: The Resume File Download activity is used in a runbook to resume a file download.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

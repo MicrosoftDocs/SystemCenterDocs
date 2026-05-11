@@ -9,7 +9,7 @@ ms.update-cycle: 365-days
 ms.topic: release-notes
 ms.service: system-center
 ms.subservice: orchestrator
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: engagement-fy23
 ---
 
 # Release notes for System Center Orchestrator

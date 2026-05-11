@@ -4,7 +4,6 @@ description: This article provides an overview on how to perform monitoring of a
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
-ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

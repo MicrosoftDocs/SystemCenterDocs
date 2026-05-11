@@ -8,7 +8,7 @@ ms.author: v-gajeronika
 ms.service: system-center
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Set up incident generation in Service Manager

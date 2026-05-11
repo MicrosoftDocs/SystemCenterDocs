@@ -10,7 +10,6 @@ ms.subservice: operations-manager
 ms.update-cycle: 180-days
 ms.topic: install-set-up-deploy
 ms.custom:
-  - UpdateFrequency2
   - intro-installation
   - engagement-fy23
   - engagement-fy24

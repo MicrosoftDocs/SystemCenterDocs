@@ -10,7 +10,7 @@ keywords:
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Import data from Virtual Machine Manager into Service Manager

@@ -1,7 +1,6 @@
 ---
 title: Clone Linux VM activity
 description: The article describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
-ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: how-to

@@ -10,7 +10,7 @@ ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>=sc-vmm-2016'
-ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # System Center – Virtual Machine Manager build versions

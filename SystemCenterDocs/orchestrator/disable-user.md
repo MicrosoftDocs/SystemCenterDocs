@@ -1,7 +1,6 @@
 ---
 title: Disable User
 description: You can use the Disable User activity in a runbook to disable a user in the Microsoft Active Directory.
-ms.custom: UpdateFrequency2
 ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na

@@ -9,7 +9,7 @@ ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Virtual Machine Manager network object fundamentals

@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: concept-article
 ms.update-cycle: 1095-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Disaster recovery for System Center - Service Manager

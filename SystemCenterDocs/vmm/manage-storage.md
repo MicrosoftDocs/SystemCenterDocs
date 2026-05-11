@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.update-cycle: 365-days
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ---
 
 # Set up the VMM storage fabric

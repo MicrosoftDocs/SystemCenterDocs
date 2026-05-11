@@ -5,7 +5,6 @@ description: This article provides an overview of the new HTML5 Web console and 
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 12/13/2024
-ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager

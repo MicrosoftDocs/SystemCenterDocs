@@ -9,7 +9,7 @@ ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-management-automation
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: engagement-fy23
 ---
 
 # System requirements for System Center Service Management Automation

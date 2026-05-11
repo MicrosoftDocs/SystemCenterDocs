@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.topic: whats-new
 ms.service: system-center
 ms.subservice: service-management-automation
-ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24
+ms.custom: intro-whats-new, engagement-fy24
 ms.update-cycle: 1095-days
 ---
 

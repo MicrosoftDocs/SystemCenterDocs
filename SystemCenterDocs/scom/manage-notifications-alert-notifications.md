@@ -4,7 +4,7 @@ description: This article describes the alerts that Operations Manager can gener
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 02/27/2025
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

@@ -8,7 +8,7 @@ ms.service: system-center
 ms.date: 09/01/2025
 ms.update-cycle: 180-days
 ms.subservice: service-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: engagement-fy23
 ---
 
 # About System Center - Service Manager

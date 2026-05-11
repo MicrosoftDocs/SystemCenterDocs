@@ -1,7 +1,7 @@
 ---
 title: Manage Changes and Activities
 description: Provides an example scenario and details about how to manage changes and activities in Service Manager.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika

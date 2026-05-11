@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 11/01/2024
 ms.update-cycle: 180-days
-ms.custom: intro-get-started, UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.custom: intro-get-started, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: get-started

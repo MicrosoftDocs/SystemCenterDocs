@@ -7,7 +7,6 @@ ms.subservice: orchestrator
 ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency2
 monikerRange: '<=sc-orch-2019'
 ms.update-cycle: 1095-days
 ---

@@ -4,7 +4,7 @@ description: This article describes how to export a distributed application diag
 ms.date: 08/21/2025
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.custom: UpdateFrequency2, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: how-to

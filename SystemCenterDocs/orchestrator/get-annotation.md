@@ -1,7 +1,7 @@
 ---
 title: Get Annotation
 description: The Get Annotation activity retrieves annotations for a specified message according to the filter criteria that you specify.
-ms.custom: UpdateFrequency3, engagement-fy24
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

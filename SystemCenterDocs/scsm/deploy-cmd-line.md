@@ -14,7 +14,6 @@ ms.topic: install-set-up-deploy
 ms.assetid: 27c60668-1baf-4521-98ad-cf87389c8310
 ms.custom:
   - intro-deployment
-  - UpdateFrequency3
   - engagement-fy24
   - sfi-image-nochange
 ---

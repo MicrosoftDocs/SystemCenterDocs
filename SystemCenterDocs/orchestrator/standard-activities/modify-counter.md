@@ -1,7 +1,7 @@
 ---
 title: Modify Counter
 description: This article describes the functionality of Modify Counter activity.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: engagement-fy23
 ms.date: 08/22/2025
 ms.update-cycle: 1095-days
 ms.service: system-center
