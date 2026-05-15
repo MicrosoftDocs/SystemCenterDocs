@@ -17,9 +17,11 @@ The following sections summarize the release notes for Operations Manager 2022 U
 
 For the problems fixed in UR3 hotfix and the installation instructions for UR3 hotfix, see the [KB article](https://support.microsoft.com/kb/5071859).
 
-### Known issue 
+### Hotfix version display in Operations Console 
 
-After you install 2022 UR3 hotfix, the updated hotfix version doesn't immediately appear in the Operations Console. This issue is limited to the version of display only and doesn't affect the installation or functionality of the hotfix.
+**Description**: After you install 2022 UR3 hotfix, the updated hotfix version doesn't immediately appear in the Operations Console. This issue is limited to the version of display only and doesn't affect the installation or functionality of the hotfix.
+
+**Workaround**: None
 
 ### Management Pack Update behavior 
 
