@@ -3,7 +3,7 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 15/05/2026
+ms.date: 05/15/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -31,7 +31,7 @@ After you install 2022 UR3 hotfix, the updated hotfix version doesn't immediatel
 - Microsoft.SystemCenter.OperationsManager.Reports.2007.mp 
 - ODR.mp 
 
-**Workaround**: Manually import the updated Management Packs included in the hotfix package. For more information about how to import Management Packs, see [Import, export, and remove an Operations Manager management pack](/system-center/scom/manage-mp-import-remove-delete?view=sc-om-2025).
+**Workaround**: Manually import the updated Management Packs included in the hotfix package. For more information about how to import Management Packs, see [Import, export, and remove an Operations Manager management pack](/system-center/scom/manage-mp-import-remove-delete?view=sc-om-2025&preserve-view=true).
 
 ## Operations Manager 2022 release notes
 
