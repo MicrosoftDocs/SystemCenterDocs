@@ -3,7 +3,7 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/09/2026
+ms.date: 05/15/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -11,9 +11,35 @@ ms.topic: include
 ms.update-cycle: 1095-days
 ---
 
+## Operations Manager 2022 UR3 hotfix release notes
+
+The following sections summarize the release notes for Operations Manager 2022 UR3, and include the known issues and workarounds.
+
+For the problems fixed in UR3 hotfix and the installation instructions for UR3 hotfix, see the [KB article](https://support.microsoft.com/kb/5071859).
+
+### Issue with Hotfix version display in Operations Console 
+
+**Description**: After you install 2022 UR3 hotfix, the updated hotfix version doesn't immediately appear in the Operations Console. 
+
+This issue is limited to the version of display only and doesn't affect the installation or functionality of the hotfix.
+
+**Workaround**: None
+
+### Management Pack Update behavior 
+
+**Description**: The following Management Packs included in this hotfix might not update automatically after installation. 
+- Microsoft.SystemCenter.DataWarehouse.Report.Library.mp 
+- Microsoft.SystemCenter.DataWarehouse.ChangeTrackingReport.Library.mp 
+- Microsoft.SystemCenter.DataWarehouse.Reports.mp 
+- Microsoft.SystemCenter.DataWarehouse.ServiceLevel.Report.Library.mp 
+- Microsoft.SystemCenter.OperationsManager.Reports.2007.mp 
+- ODR.mp 
+
+**Workaround**: Manually import the updated Management Packs included in the hotfix package. For more information about how to import Management Packs, see [Import, export, and remove an Operations Manager management pack](/system-center/scom/manage-mp-import-remove-delete?view=sc-om-2025&preserve-view=true).
+
 ## Operations Manager 2022 release notes
 
-This article summarizes the release notes for Operations Manager 2022.
+The following sections summarize the release notes for Operations Manager 2022, and include the known issues and workarounds.
 
 ### *Show/Hide Details* error in Web Console
 
