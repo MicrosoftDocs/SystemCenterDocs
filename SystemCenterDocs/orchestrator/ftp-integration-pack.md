@@ -40,7 +40,7 @@ The Integration Pack for FTP requires the following software to be installed and
 
 ::: moniker range="sc-orch-2022"
 
-- To download the FTP integration pack for Orchestrator 2022, [Download](https://download.microsoft.com/download/a194d79e-e076-48f9-b33d-be805cee43ac/System_Center_IntegrationPack_for_FTP.oip).
+- Download the FTP integration pack for Orchestrator 2022, [here](https://www.microsoft.com/en-us/download/details.aspx?id=108675).
   
 ::: moniker-end
 
