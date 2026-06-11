@@ -10,7 +10,7 @@ ms.topic: concept-article
 ms.assetid: 99aa7184-cdd0-467a-9624-9d75821e38d2
 author: Jeronika-MS
 ms.author: v-gajeronika
-monikerRange: '<=sc-orch-2019'
+monikerRange: '<=sc-orch-2022'
 ms.date: 11/01/2024
 ms.update-cycle: 1095-days
 ---
