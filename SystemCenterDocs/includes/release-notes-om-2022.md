@@ -3,7 +3,7 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 05/15/2026
+ms.date: 06/15/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -40,6 +40,13 @@ This issue is limited to the version of display only and doesn't affect the inst
 ## Operations Manager 2022 release notes
 
 The following sections summarize the release notes for Operations Manager 2022, and include the known issues and workarounds.
+
+### ESENT event log descriptions appear garbled
+
+**Description**: ESENT event log descriptions appear garbled and are not displayed correctly in Japanese.
+This issue occurs when ESENT event logs are collected from Windows Server 2022 or later, and it occurs every time ESENT event logs are logged.
+
+**Workaround**: None
 
 ### *Show/Hide Details* error in Web Console
 

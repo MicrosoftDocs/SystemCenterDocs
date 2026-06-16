@@ -3,7 +3,7 @@ title: include file
 description: Include file that summarizes the release notes for Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 03/31/2026
+ms.date: 06/15/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -39,6 +39,13 @@ The following sections summarize the release notes for Operations Manager 2025, 
 
 - Fixed broken behavior of Web Console where allow-popups and allow-forms settings weren't added after applying security changes.
 - Fixed failure of favorite reports with `HttpParseException` in Web Console.
+
+### ESENT event log descriptions appear garbled
+
+**Description**: ESENT event log descriptions appear garbled and are not displayed correctly in Japanese.
+This issue occurs when ESENT event logs are collected from Windows Server 2022 or later, and it occurs every time ESENT event logs are logged.
+
+**Workaround**: None
 
 ### *Show/Hide Details* error in Web Console
 
