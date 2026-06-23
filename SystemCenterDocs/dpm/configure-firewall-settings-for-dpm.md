@@ -76,7 +76,7 @@ If Windows Firewall is enabled when you install DPM, the DPM setup configures th
 
 - Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL Server to allow TCP on port 80. The report server listens for HTTP requests on port 80.  
 
-- The default instance of the database engine listens on TCP port 1433. This setting can be changed. To use the SQL Server Browser service to connect to instances that don’t listen on the default 1433 port, you’ll need UDP port 1434.  
+- The default instance of the database engine listens on TCP port 1433. You can change this setting. To use the SQL Server Browser service to connect to instances that don’t listen on the default 1433 port, you need UDP port 1434.  
 
 - By default, a named instance of the SQL Server uses Dynamic ports. This setting can be changed.  
 
