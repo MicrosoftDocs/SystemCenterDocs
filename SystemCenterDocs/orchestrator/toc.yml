@@ -48,6 +48,8 @@
       href: migrate-orchestrator-between-environments.md
     - name: Change the Orchestrator database
       href: how-to-change-the-orchestrator-database.md
+    - name: Troubleshoot failures when adding the Orchestrator database
+      href: troubleshoot-orchestrator-database-sql-always-on.md
     - name: Antivirus
       href: plan-security-antivirus.md
   - name: Manage Runbooks
