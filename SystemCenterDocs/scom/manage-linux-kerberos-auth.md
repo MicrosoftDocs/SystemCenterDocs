@@ -90,9 +90,9 @@ The following subset of those operating systems now supports WS-Management commu
 
 ### Supported domain and trust topologies
 
-In addition to the prerequisites, the following topology constraints apply when Kerberos authentication is used between the Management Server and UNIX/Linux agents:
+In addition to the prerequisites, the following topology constraints apply when you use Kerberos authentication between the Management Server and UNIX/Linux agents:
 
-- The UNIX/Linux agent must be joined to an **Active Directory (AD) domain**. Non-AD Kerberos realms (for example, **FreeIPA**) are **not supported**.
+- You must join the UNIX/Linux agent to an **Active Directory (AD) domain**. Non-AD Kerberos realms such as **FreeIPA** are **not supported**.
 - The Management Server, the UNIX/Linux agent, and the Run As Account must reside in the **same AD forest**, or in forests connected by a **bi-directional (two-way) forest trust**.
 - **One-way trust topologies** where the AD forest hosting the Management Server doesn't trust the realm hosting the Linux agent are **not supported**.
 - The Run As Account must be a **domain-based account** whose Kerberos credentials can be used by the Management Server to request a service ticket for the target host's SPN (`HTTP/<fqdn>`).
