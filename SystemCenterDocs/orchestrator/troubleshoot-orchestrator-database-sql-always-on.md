@@ -78,3 +78,4 @@ Run the query from Step 1 again on each SQL Server instance and confirm that *ke
 ### Step 5: Restart required services
 
 Restart the SQL Server service on affected SQL Server instances, Orchestrator Management service on the management server and Orchestrator Runbook service on each runbook server.
+
