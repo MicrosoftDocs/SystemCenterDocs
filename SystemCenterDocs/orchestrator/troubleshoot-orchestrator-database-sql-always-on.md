@@ -6,7 +6,7 @@ ms.subservice: orchestrator
 ms.topic: troubleshooting-known-issue
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/30/2026
+ms.date: 07/01/2026
 ms.update-cycle: 1095-days
 moniker range: 'sc-orch-2022', 'sc-orch-2025'
 ---
