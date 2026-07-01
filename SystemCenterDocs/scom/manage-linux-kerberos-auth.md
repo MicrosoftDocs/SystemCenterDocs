@@ -4,7 +4,7 @@ title: Kerberos Authentication Support for UNIX and Linux
 description: This article describes how to enable Kerberos Authentication with Unix and Linux Computers in System Center Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 11/01/2024
+ms.date: 06/30/2026
 ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
@@ -87,6 +87,15 @@ The following subset of those operating systems now supports WS-Management commu
 - Run as accounts must be configured to use domain-based accounts that are associated with the appropriate [Unix/Linux Run As Profile](./plan-security-crossplat-credentials.md).
 
 - Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others use Kerberos isn't supported. Instead use separate Resource Pools and Management Servers to achieve this.
+
+### Supported domain and trust topologies
+
+In addition to the prerequisites, the following topology constraints apply when you use Kerberos authentication between the Management Server and UNIX/Linux agents:
+
+- You must join the UNIX/Linux agent to an **Active Directory (AD) domain**. Non-AD Kerberos realms such as **FreeIPA** aren't supported.
+- The Management Server, the UNIX/Linux agent, and the Run As Account must reside in the **same AD forest**, or in forests connected by a **bi-directional (two-way) forest trust**.
+- **One-way trust topologies** where the AD forest hosting the Management Server doesn't trust the realm hosting the Linux agent aren't supported.
+- The Run As Account must be a **domain-based account** whose Kerberos credentials can be used by the Management Server to request a service ticket for the target host's SPN (`HTTP/<fqdn>`).
 
 ## Enable or disable Kerberos Authentication on a management or a gateway server
 
