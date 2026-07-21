@@ -8,7 +8,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.date: 07/21/2026
 ms.update-cycle: 1095-days
-monikerRange: 'sc-orch-2022', 'sc-orch-2025'
+monikerRange: '>=sc-orch-2022'
 ---
 
 # Troubleshoot failures when adding the Orchestrator database to a SQL Always On availability group

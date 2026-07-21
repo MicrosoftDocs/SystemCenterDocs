@@ -43,13 +43,13 @@ For problems fixed in UR1 and the installation instructions for UR1, see the [KB
 
 Operations Manager 2025 UR1 now supports SQL Server 2025 for improved performance and scalability. The following configurations are supported:
 
-- SQL Server 2025 + Operations Manager 2025 UR1 + SQL Server Reporting Services. 2022
+- SQL Server 2025 + Operations Manager 2025 UR1 + SQL Server Reporting Services 2022
 
-- SQL Server 2025 Cumulative Update 6 + Operations Manager 2025 UR1 + SQL Server Reporting Services. 2022
+- SQL Server 2025 Cumulative Update 6 + Operations Manager 2025 UR1 + SQL Server Reporting Services 2022
 
 - SQL Server 2025 (RTM/CU6) + Operations Manager 2025 UR1 + Power BI Report Server
 
-This support enables you to deploy Operations Manager 2025 UR1 on SQL Server 2025 based environments while using supported reporting platforms. [Learn more](/system-center/scom/upgrade-sql-server-2025-operations-manager?view=sc-om-2025).
+This support enables you to deploy Operations Manager 2025 UR1 on SQL Server 2025 based environments while using supported reporting platforms. [Learn more](/system-center/scom/upgrade-sql-server-2025-operations-manager?view=sc-om-2025&preserve-view=true).
 
 ### Other updates
 
