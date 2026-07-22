@@ -6,9 +6,9 @@ ms.subservice: orchestrator
 ms.topic: troubleshooting-known-issue
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/30/2026
+ms.date: 07/21/2026
 ms.update-cycle: 1095-days
-moniker range: '<=sc-orch-2025 >=sc-orch-2022'
+monikerRange: '>=sc-orch-2022'
 ---
 
 # Troubleshoot failures when adding the Orchestrator database to a SQL Always On availability group
@@ -78,3 +78,4 @@ Run the query from Step 1 again on each SQL Server instance and confirm that *ke
 ### Step 5: Restart required services
 
 Restart the SQL Server service on affected SQL Server instances, Orchestrator Management service on the management server and Orchestrator Runbook service on each runbook server.
+
