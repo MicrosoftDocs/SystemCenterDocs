@@ -16,13 +16,12 @@ ms.custom: engagement-fy24
 
 ::: moniker range="sc-vmm-2025"
 
-For new features in VMM 2025, see [What's new](whats-new-in-vmm.md).
+This article lists the release notes for System Center 2025 - Virtual Machine Manager (VMM).
 
-## Known issues
-
-- Virtual Machine Manager (VMM) does not recognize VM Recovery checkpoints and it is not recommended to take Recovery checkpoints on VMs managed by VMM. VM Production and Standard checkpoints are fully supported by VMM.
+[!INCLUDE [release-notes-vmm-2022.md](../includes/release-notes-vmm-2025.md)]
 
 ::: moniker-end
+
 
 ::: moniker range="sc-vmm-2022"
 
@@ -31,6 +30,7 @@ This article lists the release notes for System Center 2022 - Virtual Machine Ma
 [!INCLUDE [release-notes-vmm-2022.md](../includes/release-notes-vmm-2022.md)]
 
 ::: moniker-end
+
 
 ::: moniker range="sc-vmm-2019"
 
@@ -41,14 +41,11 @@ This article lists the release notes for System Center 2019 - Virtual Machine Ma
 ::: moniker-end
 
 
-
 ::: moniker range="sc-vmm-2016"
 
 This article lists the release notes for System Center 2016 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
-
-
 
 ::: moniker range="sc-vmm-2016"
 
