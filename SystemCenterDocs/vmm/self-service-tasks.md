@@ -4,7 +4,7 @@ title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/20/2025
+ms.date: 07/27/2026
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -22,8 +22,7 @@ Self-service users can interact with VMM to deploy virtual machines and services
 ::: moniker range=">= sc-vmm-2019"
 
 > [!NOTE]
-> - Single sign-on will not work and you need to input the login credentials again while connecting to the VM from the VMM console when Credential Guard is enabled in the host machine. Credential Guard is enabled by default starting Windows Server 2025. 
-> - When the default language configured in the guest VM and the VMM console differs, you may not be able to seamlessly copy text from the VMM console into the guest VM. This will primarily impact the login functionality when you are copying password from the VMM console and then pasting it in the Password field while logging into guest VM. You can circumvent this by changing the language using the keyboard language icon in the VM login page.
+> When you enable Credential Guard on the host machine, Single Sign-On stops working. You need to enter your credentials again when you connect to the VM from the VMM console. Starting with Windows Server 2025, Credential Guard is enabled by default. 
 
 ::: moniker-end
 
