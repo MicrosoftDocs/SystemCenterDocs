@@ -134,6 +134,6 @@ The following sections introduce the new features and feature updates supported 
 
 For problems fixed in VMM 2022 UR4, and installation instructions for UR4, see the [KB article](https://support.microsoft.com/en-US/servicing/management-tools/virtual-machine-manager/update/2026/07/update-rollup-4-for-system-center-2022-virtual-machine-manager).
 
-### Support for latest guest Operating Systems
+### Support for latest guest operating systems
 
 With VMM 2022 UR4, you can run RHEL 10, Oracle Linux 10, Rocky Linux 10, Debain 13, SUSE Linux 15 and OpenEuler 24.03 based Linux VMs.
