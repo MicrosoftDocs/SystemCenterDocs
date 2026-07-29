@@ -136,4 +136,4 @@ For problems fixed in VMM 2022 UR4, and installation instructions for UR4, see t
 
 ### Support for latest guest operating systems
 
-With VMM 2022 UR4, you can run RHEL 10, Oracle Linux 10, Rocky Linux 10, Debain 13, SUSE Linux 15 and OpenEuler 24.03 based Linux VMs.
+With VMM 2022 UR4, you can run RHEL 10, Oracle Linux 10, Rocky Linux 10, Debian 13, SUSE Linux 15, and OpenEuler 24.03 based Linux VMs.
