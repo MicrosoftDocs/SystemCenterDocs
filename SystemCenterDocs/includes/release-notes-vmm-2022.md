@@ -4,7 +4,7 @@ title: Include file
 description: Include file to summarize the release notes for VMM 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date:  07/27/2026
+ms.date:  07/29/2026
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,6 +18,7 @@ The following sections summarize the release notes for VMM 2022 and include the 
 - For issues fixed in 2022 UR1, [see the KB article for UR1](https://support.microsoft.com/kb/5019202).
 - For issues fixed in 2022 UR2, [see the KB article for UR2](https://support.microsoft.com/kb/5032369).
 - For issues fixed in 2022 UR3, [see the KB article for UR3](https://support.microsoft.com/kb/5055459).
+- For issues fixed in 2022 UR4, [see the KB article for UR4](https://support.microsoft.com/kb/5098585).
 
 ## Known issues
 
