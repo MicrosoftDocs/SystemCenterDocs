@@ -46,7 +46,7 @@ The following table lists the release history for Virtual Machine Manager 2022.
 | 10.22.1711.0 | [5032369](https://support.microsoft.com/kb/5032369) | November 2023 | Update Rollup 2 |
 | 10.22.2112.0 | [5055459](https://support.microsoft.com/kb/5055459) | May 2025 | Update Rollup 3 |
 | 10.22.2163.0 | [5068698](https://support.microsoft.com/kb/5068698) | November 2025 | GB18030-2022 Hotfix |
-| 10.22.2232.0 | [5055459](https://support.microsoft.com/kb/5098585) | July 2026 | Update Rollup 4 |
+| 10.22.2232.0 | [5098585](https://support.microsoft.com/kb/5098585) | July 2026 | Update Rollup 4 |
 
 ::: moniker-end
 
