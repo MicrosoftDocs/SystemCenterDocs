@@ -2,7 +2,7 @@
 ms.assetid:
 title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
-ms.date: 04/14/2025
+ms.date: 07/30/2026
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.topic: include
@@ -121,8 +121,19 @@ With VMM 2022 UR2, you can run Ubuntu Linux 22, Debian 11, Oracle Linux 8 and 9 
 
 The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 3 (UR3).
 
-For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the KB article.
+For problems fixed in VMM 2022 UR3, and installation instructions for UR3, see the [KB article](https://support.microsoft.com/en-US/servicing/management-tools/virtual-machine-manager/update/2025/03/update-rollup-3-for-system-center-2022-virtual-machine-manager).
 
 ### Support for latest guest Operating Systems
 
 With VMM 2022 UR3, you can run Windows Server 2025 VMs and Ubuntu Linux 24.04, RHEL 9, Debian 12, Rocky Linux 8 and 9 based Linux VMs.
+
+
+## New features in VMM 2022 UR4
+
+The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 4 (UR4).
+
+For problems fixed in VMM 2022 UR4, and installation instructions for UR4, see the [KB article](https://support.microsoft.com/en-US/servicing/management-tools/virtual-machine-manager/update/2026/07/update-rollup-4-for-system-center-2022-virtual-machine-manager).
+
+### Support for latest guest operating systems
+
+With VMM 2022 UR4, you can run RHEL 10, Oracle Linux 10, Rocky Linux 10, Debian 13, SUSE Linux 15, and OpenEuler 24.03 based Linux VMs.
