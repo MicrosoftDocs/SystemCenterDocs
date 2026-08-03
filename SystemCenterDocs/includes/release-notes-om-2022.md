@@ -22,7 +22,7 @@ For the problems fixed in the hotfix and the installation instructions, see theâ
 The following issues are resolved:
 
 - **Hotfix version display in Operations Console**: The installed hotfix version now displays correctly in the Operations Console.  
-- **Management Pack update behavior**: Management Packs included with the hotfix now update automatically during installation.  
+- **Management Pack update behavior**: Management Packs included with the hotfix now update automatically, during installation.  
 
 ## Operations Manager 2022 UR3 hotfix release notes
 
