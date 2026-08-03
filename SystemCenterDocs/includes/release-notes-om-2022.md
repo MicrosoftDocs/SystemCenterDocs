@@ -3,13 +3,26 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/15/2026
+ms.date: 08/03/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
 ms.topic: include
 ms.update-cycle: 1095-days
 ---
+
+## Operations Manager 2022 UR3 hotfix - Components Version and Management Pack Update in Operations Console
+
+The following sections summarize the release notes for Operations Manager 2022 UR3 - Components Version and Management Pack Update in Operations Console.
+
+For the problems fixed in the hotfix and the installation instructions, see the [KB article](https://support.microsoft.com/servicing/management-tools/operations-manager/update/2026/07/hotfix-for-system-center-2022-operations-manager-ur3-componentsvrsnmpupdate).
+
+### Issues fixed
+
+The following issues that were present in the original Operations Manager 2022 UR3 hotfix are now resolved:
+
+- **Hotfix version display in Operations Console**: The installed hotfix version now displays correctly in the Operations Console.  
+- **Management Pack update behavior**: Management Packs included with the hotfix now update automatically during installation.  
 
 ## Operations Manager 2022 UR3 hotfix release notes
 
