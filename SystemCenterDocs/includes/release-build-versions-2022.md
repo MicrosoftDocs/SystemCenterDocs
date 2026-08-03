@@ -34,7 +34,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10684.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 2 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
 |10.22.11642.0|[5055455](https://support.microsoft.com/kb/5055455) | August 2025 | Update Rollup 3 |
 |10.22.11951.0|[5071859](https://support.microsoft.com/kb/5071859) | December 2025 | Update Rollup 3 GB Hotfix and Linux Monitoring Issue. |
-|10.22.12236.0|[5101442](https://support.microsoft.com/servicing/management-tools/operations-manager/update/2026/07/hotfix-for-system-center-2022-operations-manager-ur3-componentsvrsnmpupdate) | July 2026 | Update Rollup 3 Hotfix - Components Version and MP Update in Operation Console | 
+|10.22.12236.0|[5101442](https://support.microsoft.com/servicing/management-tools/operations-manager/update/2026/07/hotfix-for-system-center-2022-operations-manager-ur3-componentsvrsnmpupdate) | July 2026 | Update Rollup 3 Hotfix - Components version and Management pack update in Operation Console. | 
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
