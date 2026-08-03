@@ -11,7 +11,7 @@ ms.topic: include
 ms.update-cycle: 1095-days
 ---
 
-## Operations Manager 2022 UR3 hotfix - Components Version and Management Pack Update in Operations Console
+## Operations Manager 2022 UR3 hotfix - Components version and Management pack update in Operations Console release notes
 
 The following sections summarize the release notes for Operations Manager 2022 UR3 - Components Version and Management Pack Update in Operations Console.
 
@@ -19,7 +19,7 @@ For the problems fixed in the hotfix and the installation instructions, see theâ
 
 ### Issues fixed
 
-The following issues that were present in the original Operations Manager 2022 UR3 hotfix are now resolved:
+The following issues are resolved:
 
 - **Hotfix version display in Operations Console**: The installed hotfix version now displays correctly in the Operations Console.  
 - **Management Pack update behavior**: Management Packs included with the hotfix now update automatically during installation.  
