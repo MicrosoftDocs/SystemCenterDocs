@@ -32,6 +32,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 ::: moniker range="sc-om-2019"
 
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
+
 - SQL Server 2016 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
 
 ::: moniker-end
@@ -47,12 +48,13 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 ::: moniker range="sc-om-2025"
 
 - SQL Server 2025 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2025)
+> [!NOTE]
+> SQL Server 2025 support starts with [SCOM 2025 Update Rollup 1 (UR1)](https://support.microsoft.com/en-US/servicing/management-tools/operations-manager/update/2025/09/update-rollup-1-for-system-center-operations-manager-2025).
 - SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
 
 ::: moniker-end
-
 
 ::: moniker range="sc-om-2019"
 
@@ -288,7 +290,9 @@ These settings allow for quicker recovery and resolution of the cluster name wit
 
 Run the following PowerShell commands on any one of the SQL nodes to modify these settings:
 
-```PowerShell
+```
+
+PowerShell
 Import-Module FailoverClusters
 Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
 Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
@@ -301,7 +305,9 @@ If you're using Always On with a listener name, you should also make these confi
 
 The following PowerShell commands can be run on the SQL node currently hosting the listener to modify its settings:
 
-```PowerShell
+```
+
+PowerShell
 Import-Module FailoverClusters
 Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
 Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter HostRecordTTL 300
@@ -391,7 +397,9 @@ To achieve optimal TempDB performance, we recommend the following configuration 
 
 To configure TempDB, you can run the following query or modify its properties in Management Studio.
 
-```SQL
+```
+
+SQL
 USE [TempDB]
 GO
 DBCC SHRINKFILE (N'tempdev' , 8)
