@@ -47,8 +47,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2025"
 
-- SQL Server 2025 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2025)  
-**Note**: SQL Server 2025 support starts with [SCOM 2025 Update Rollup 1 (UR1)](https://support.microsoft.com/en-US/servicing/management-tools/operations-manager/update/2025/09/update-rollup-1-for-system-center-operations-manager-2025).
+- SQL Server 2025 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2025)
+> [!NOTE]
+> SQL Server 2025 support starts with [SCOM 2025 Update Rollup 1 (UR1)](https://support.microsoft.com/en-US/servicing/management-tools/operations-manager/update/2025/09/update-rollup-1-for-system-center-operations-manager-2025).
 - SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
