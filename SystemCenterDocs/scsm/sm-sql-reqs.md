@@ -81,6 +81,7 @@ For detailed information about the requirements for Service Manager components, 
 
 >[!NOTE]
 > - Use ODBC 17.3 to 18.5.2.1, and MSOLEDBSQL 18.2 to 19.4.1.
+> - System Center Service Manager 2025 UR1 supports ODBC 18.5.2.1 and MSOLEDBSQL 19.4.1, including earlier supported versions.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 
