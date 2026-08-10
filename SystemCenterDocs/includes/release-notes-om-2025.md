@@ -3,7 +3,7 @@ title: include file
 description: Include file that summarizes the release notes for Operations Manager 2025.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 06/15/2026
+ms.date: 07/30/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -25,7 +25,8 @@ For the problems fixed in UR1 and the installation instructions for UR1, see the
 
 ### Known issue
 
-The **About** page on Operations Console shows RTM version (10.25.10324.0) instead of UR1 version. The accurate version number is displayed starting from Operations Manager 2025 UR2. To verify the accurate version, check **Operations Console** > **Management server** page.
+- When you update ADDS 10.0.2.4 management pack, LSASS process monitor alert from Active Directory Management Pack shows a blank alert description.
+- The **About** page on Operations Console shows RTM version (10.25.10324.0) instead of UR1 version. The accurate version number is displayed starting from Operations Manager 2025 UR2. To verify the accurate version, check **Operations Console** > **Management server** page.
 
 ### Resource pool communication issue
 

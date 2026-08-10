@@ -3,7 +3,7 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2022.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/03/2026
+ms.date: 08/10/2026
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
@@ -29,6 +29,10 @@ The following issues are resolved:
 The following sections summarize the release notes for Operations Manager 2022 UR3, and include the known issues and workarounds.
 
 For the problems fixed in UR3 hotfix and the installation instructions for UR3 hotfix, see the [KB article](https://support.microsoft.com/kb/5071859).
+
+### Known issue
+
+- When you update ADDS 10.0.2.4 management pack, LSASS process monitor alert from Active Directory Management Pack shows a blank alert description.
 
 ### Issue with Hotfix version display in Operations Console 
 
