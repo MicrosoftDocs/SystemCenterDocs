@@ -185,38 +185,79 @@ Follow these steps to set API permissions:
 
    ![Screenshot of SharePoint API Scopes.](./media/integration-pack-for-sharepoint/sp-api-scope.png)
 
+### Configure Certificate
+#### Generate a certificate
+Follow the steps below to generate a certificate. The sample script is for illustrative only. Replace the certificate name, file paths, and password with values that are appropriate for your environment.
+1. Open PowerShell as as Administrator.
+2. Create a self-signed certificate by running the following script. The certificate is created in the current user's personal certificate store.
+```powershell
+$cert = New-SelfSignedCertificate -Subject "CN=OrchestratorSharePoint" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeyAlgorithm RSA    -KeyLength 2048 -HashAlgorithm SHA256
+```
+3. Create a secure password that protects the exported PFX file.
+```powershell
+$pwd = ConvertTo-SecureString -String "yourpwd" -AsPlainText -Force
+```
+4. Export the certificate as a PFX file. This file contains the certificate and private key and is imported to the Orchestrator server..
+```powershell
+Export-PfxCertificate -Cert $cert -FilePath "C:\Temp\OrchestratorSharePoint.pfx" -Password $pwd
+```
+5. Export the public certificate as a CER file. This file is uploaded to the Microsoft Entra ID application registration..
+```powershell
+Export-Certificate -Cert $cert -FilePath "C:\Temp\OrchestratorSharePoint.cer"
+```
+6. Retrieve the certificate thumbprint by running.
+```powershell
+$cert.Thumbprint
+```
+7. Record the certificate thumbprint for later use to configure the SharePoint Integration Pack connection.
+
+#### To install the certificate on the Orchestrator server, follow these steps:
+1. Copy `OrchestratorSharePoint.pfx` to the Orchestrator server.
+2. Double-click the PFX file to open **Certificate Import** Wizard.
+3. Select Local Machine and then select **Next**.
+4. Confirm the file path and select **Next**.
+5. Enter the password used when exporting.
+6. Check **Mark this key as exportable** and select **Next**.
+7. Select **Place all certificates in the following store**.
+8. Select **Browse** > **Personal** and then select **OK**.
+9. Select **Next**, then **Finish**.
+
+#### To upload certificate to app registration, follow these steps:
+1. In Microsoft Entra ID, go to your app registration.
+2. Select **Certificates & secrets**.
+3. Select the **Certificates** tab and then select **Upload certificate**.
+4. Browse to `OrchestratorSharePoint.cer` generated in previous steps.
+6. Select **Add**.
+
+#### To grant private key access, follow these steps:
+1. On Orchestrator server machine, press Win+R.
+2. Type **certlm.msc** and press Enter.
+3. Go to **Personal** > **Certificates**.
+4. Find the certificate named **OrchestratorSharePoint**.
+5. Right-click the certificate.
+6. Select **All Tasks** > **Manage Private Keys**.
+7. Select **Add** and enter NETWORK SERVICE (or your Orchestrator service account)
+8. Select **Check Names** and then select **OK**.
+9. Ensure Read permission is checked and select **OK**.
+
 ### Configure the SharePoint IP for Modern Auth
-
 Use the following steps to configure the SharePoint IP for OAuth authentication:
-
 1. In the **Orchestrator Runbook Designer**, select **Options**, and select **Microsoft SharePoint**.
-2. The **Microsoft SharePoint** dialog appears.
-
-3. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
-
-4. In the **Name** box, enter a name for the connection. This name can be the name of the SharePoint site or a descriptive name to distinguish the type of connection.
-
-5. In the **Type** box, select **SharePoint Configuration**.
-
-6. In the **SharePoint Site**  box, enter the URL of the SharePoint site that you want to integrate with.
-
-7. In the **User Name** and **Password** boxes, enter the (user) credentials that Orchestrator will use to connect to the SharePoint site when runbooks are executed.
-
-8. In the **Domain box**, enter the name of the domain to authorize access.
-
-9. In the **SharePoint Online** box, enter **True**.
-
-10. Set the **Utilize OAuth** box to **True**.
-
+2. The **Microsoft SharePoint** dialog appears. 
+4. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears. 
+5. In the **Name** box, enter a name for the connection. This name can be the name of the SharePoint site or a descriptive name to distinguish the type of connection. 
+6. In the **Type** box, select **SharePoint Configuration**.
+7. In the **SharePoint Site** box, enter the URL of the SharePoint site that you want to integrate with.
+8. Set the **SharePoint Online** box to **True**.
+9. Set the **Authenticate via AAD using OAuth** box to **True**.
+10. Set the **Use App-Only Authentication** box to **True**.
 11. Set the **Application ID** to the application ID seen on the portal.
-
 12. Set the **Directory ID** to the directory (tenant) ID seen on the portal. This is also referred to as Microsoft 365 Tenant ID.
-
-13. Set the **AAD Instance URI** to your AD URL (or leave it to default value).
-
-14. Select **OK**.
-
-15. Add additional connections, if applicable, and select **Finish**.
+13. Set the **Certificate Thumbprint** to the value you get from step  **Generate a certificate**.
+14. Keep **User Name**, **Password**, and **Domain** boxes blank.
+15. Set the **Azure Active Directory URI** to your AD URL (or leave it to default value).
+16. Select **OK**.
+17. Add additional connections, if applicable, and select **Finish**.
 
 ### Get data from SharePoint
 
