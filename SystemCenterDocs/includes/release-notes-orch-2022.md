@@ -25,7 +25,7 @@ For the problems fixed in UR3 and the installation instructions for UR4, see the
 
 ### Service Manager connector does not work with new Web API
 
-**Description**: Service Manager (SM) console does not detect Orchestrator 2022 installation because Microsoft hasn't released the Connector for the new Web API.
+**Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because Microsoft didn't release the Connector for the new Web API.
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure you configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
   
