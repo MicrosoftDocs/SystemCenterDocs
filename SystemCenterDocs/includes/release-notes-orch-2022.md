@@ -11,7 +11,7 @@ ms.date: 12/09/2025
 title:  include file
 ms.update-cycle: 1095-days
 ---
-## Orchestrator 2022 UR4 Release notes
+## Orchestrator 2022 UR4 release notes
 
 The following sections summarize the release notes for Orchestrator 2022 UR4, and include the known issues and workarounds.
 
@@ -19,15 +19,15 @@ For the problems fixed in UR3 and the installation instructions for UR4, see the
 ### Conform GB18030-2022 Amendment standard. 
 ### Text content does not show correctly in the Runbook Tester log view area
 
-**Description**: Text content does not show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
+**Description**: Text content does not show correctly in the Runbook Tester log view area. When you select the text, it re-renders in the correct font that supports all scripts, including GB18030-2022 character set.
 
 **Workaround**: None
 
-### Service Manager connector doesn't work with new Web API
+### Service Manager connector does not work with new Web API
 
-**Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
+**Description**: Service Manager (SM) console does not detect Orchestrator 2022 installation because Microsoft hasn't released the Connector for the new Web API.
 
-**Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
+**Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure you configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
   
 ## Orchestrator 2022 UR3 GB issues hotfix Release notes
 
