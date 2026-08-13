@@ -27,3 +27,4 @@ The following table lists the release history for Orchestrator 2022.
 |10.22.9.2|[5033099](https://support.microsoft.com/kb/5033099)|November 2023|Update Rollup 2|
 |10.22.10.2|[5059072](https://support.microsoft.com/kb/5059072)|May 2025|Update Rollup 3|
 |10.22.10.3|[5072592](https://support.microsoft.com/kb/5072592)|December 2025|Conforms to GB18030-2022 Amendment standard|
+|10.22.10.4|[5120168](https://support.microsoft.com/kb/5120168)|August 2026|Update Rollup 4|
