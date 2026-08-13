@@ -19,7 +19,7 @@ For the problems fixed in UR3 and the installation instructions for UR4, see the
 ### Conform GB18030-2022 Amendment standard. 
 ### Text content does not show correctly in the Runbook Tester log view area
 
-**Description**: Text content does not show correctly in the Runbook Tester log view area. When you select the text, it re-renders in the correct font that supports all scripts, including GB18030-2022 character set.
+**Description**: Text content doesn't show correctly in the Runbook Tester log view area. When you select the text, it re-renders in the correct font that supports all scripts, including the GB18030-2022 character set.
 
 **Workaround**: None
 
