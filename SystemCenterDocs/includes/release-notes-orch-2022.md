@@ -17,7 +17,7 @@ The following sections summarize the release notes for Orchestrator 2022 UR4, an
 
 For the problems fixed in UR3 and the installation instructions for UR4, see the [KB article](https://support.microsoft.com/kb/5120168).
 ### Conform GB18030-2022 Amendment standard. 
-### Text content does not show correctly in the Runbook Tester log view area
+### Text content doesn't show correctly in the Runbook Tester log view area
 
 **Description**: Text content doesn't show correctly in the Runbook Tester log view area. When you select the text, it re-renders in the correct font that supports all scripts, including the GB18030-2022 character set.
 
