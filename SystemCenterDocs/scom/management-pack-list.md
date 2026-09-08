@@ -41,7 +41,6 @@ The following table is for reference only and contains links to management packs
 |[Exchange Connector System Center Operations Manager Pack - Intune](https://www.microsoft.com/download/details.aspx?id=55990)|1.0.0.0|7/15/2024|
 |[Exchange Server 2010 Monitoring management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=692)|14.3.210.2|7/15/2024|
 |[Exchange Server 2010](https://www.microsoft.com/download/details.aspx?id=692)|14.3.210.2|7/15/2024|
-|[Exchange Server 2013 and above](https://www.microsoft.com/download/details.aspx?id=39039) (also supports Exchange 2016 and higher)|15.0.669.23|5/12/2025|
 |[FAST Search Server 2010 for SharePoint management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=17998)|14.0.19.1000|7/15/2024|
 |[FAST Search Server 2010 for SharePoint](https://www.microsoft.com/download/details.aspx?id=17998)|14.0.19.1000|7/15/2024|
 |[Forefront Identity Manager 2010 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=19395)|1.0.0.0|7/15/2024|
@@ -83,7 +82,6 @@ The following table is for reference only and contains links to management packs
 |[Message Queuing Services (MSMQ) 10.0](https://www.microsoft.com/download/details.aspx?id=57958&WT.mc_id=rss_alldownloads_all)|7.1.10242.1|5/12/2025|
 |[Message Queuing Services (MSMQ) 6.0](https://www.microsoft.com/download/details.aspx?id=36775)|7.0.8608.0|7/15/2024|
 |[Message Queuing Services (MSMQ) 6.3](https://www.microsoft.com/download/details.aspx?id=41539)|7.1.10148.0|7/15/2024|
-|[Microsoft 365 (Office 365)](https://www.microsoft.com/download/details.aspx?id=103379)|10.2.0.3|12/08/2025|
 |[Microsoft Advanced Threat Analytics Management Pack](https://www.microsoft.com/download/details.aspx?id=56033)|1.9.2.0|7/15/2024|
 |[Microsoft Advanced Threat Analytics](https://www.microsoft.com/download/details.aspx?id=56033)|1.9.2.0|7/15/2024|
 |[Microsoft Analytics Platform System](https://www.microsoft.com/download/details.aspx?id=42522)|1|7/15/2024|
@@ -92,7 +90,7 @@ The following table is for reference only and contains links to management packs
 |[Microsoft Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.6.0|8/5/2024|
 |[Microsoft Azure Stack Hub](https://www.microsoft.com/download/details.aspx?id=55184)|1.0.10.0|7/15/2024|
 |[Microsoft Distributed Transaction Coordinator (MSDTC) 2016 and above Management Pack for Microsoft System Center](https://www.microsoft.com/download/details.aspx?id=54271)|10.0.0.1|5/12/2025|
-|[Microsoft Exchange Server 2013 and above Management Pack](https://www.microsoft.com/download/details.aspx?id=39039)|15.0.669.23|5/12/2025|
+|[Microsoft Exchange Server 2013 and above Management Pack](https://www.microsoft.com/download/details.aspx?id=39039)|15.0.669.23|9/24/2025|
 |[Microsoft Host Integration Server 2016 Management Pack for System Center](https://www.microsoft.com/download/details.aspx?id=55030)|10.0.2306.0|7/15/2024|
 |[Microsoft Intune Exchange Connector](https://www.microsoft.com/download/details.aspx?id=55990)|1.0.0.0|7/15/2024|
 |[Microsoft RDS Management Pack](https://www.microsoft.com/download/details.aspx?id=54806)|10.0.6.0|7/15/2024|
@@ -111,10 +109,10 @@ The following table is for reference only and contains links to management packs
 |[Microsoft System Center Management Pack for Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|7/15/2024|
 |[Microsoft System Center Management Pack for Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.6.0|8/5/2024|
 |[Microsoft System Center Management Pack for Internet Information Service 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|5/9/2025|
-|[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57382)|7.8.3|1/23/2025|
+|[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=108241)|7.10.4|6/30/2025|
 |[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|6.7.15.0|1/23/2025|
 |[Microsoft System Center management pack for SQL Server Replication version agnostic 2012-2019+](https://www.microsoft.com/download/details.aspx?id=56204)|7.0.28.0|7/15/2024|
-|[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57381)|7.8.2|1/23/2025|
+|[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=108243)|7.10.4|6/30/2025|
 |[Microsoft System Center management pack for SQL Server version agnostic 2012-2025+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=108512)|7.12.1619|1/15/2026|
 |[Microsoft System Center Management Pack for Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|5/12/2025|
 |[Microsoft System Center Management Pack for Windows Print Server 2016 and 1709 plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|7/15/2024|
@@ -262,7 +260,6 @@ The following table is for reference only and contains links to management packs
 |[Windows Server Remote Access 2012 R2](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|7/15/2024|
 |[Windows Server Remote Access 2012](https://www.microsoft.com/download/details.aspx?id=36496)|7.0.8560.0|7/15/2024|
 |[Windows Server Remote Desktop Services 2016 and above](https://www.microsoft.com/download/details.aspx?id=54806)|10.0.6.0|7/15/2024|
-|[Windows Server Software Defined Networking (SDN) 2016](https://www.microsoft.com/download/details.aspx?id=54300)|1.0.0.2|5/12/2025|
 |[Windows Server Storage Server 2008 R2](https://www.microsoft.com/download/details.aspx?id=23251)|6.0.6600.0|7/15/2024|
 |[Windows Server Storage Spaces Direct 2016 and above](https://www.microsoft.com/download/details.aspx?id=100782)|1.0.47.4|5/29/2025|
 |[Windows Server Update Services 2012 (WSUS)](https://www.microsoft.com/download/details.aspx?id=36784)|7.0.8560.0|7/15/2024|
