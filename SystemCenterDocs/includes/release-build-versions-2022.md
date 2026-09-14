@@ -3,7 +3,7 @@ title: System Center 2022 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2022 - Operations Manager.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 08/03/2026
+ms.date: 09/14/2026
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -34,7 +34,8 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10684.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 2 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
 |10.22.11642.0|[5055455](https://support.microsoft.com/kb/5055455) | August 2025 | Update Rollup 3 |
 |10.22.11951.0|[5071859](https://support.microsoft.com/kb/5071859) | December 2025 | Update Rollup 3 GB Hotfix and Linux Monitoring Issue. |
-|10.22.12236.0|[5101442](https://support.microsoft.com/servicing/management-tools/operations-manager/update/2026/07/hotfix-for-system-center-2022-operations-manager-ur3-componentsvrsnmpupdate) | July 2026 | Update Rollup 3 Hotfix - Components version and Management pack update in Operation Console. | 
+|10.22.12236.0|[5101442](https://support.microsoft.com/servicing/management-tools/operations-manager/update/2026/07/hotfix-for-system-center-2022-operations-manager-ur3-componentsvrsnmpupdate) | July 2026 | Update Rollup 3 Hotfix - Components version and Management pack update in Operation Console. |
+|10.22.12369.0|[5120166](https://support.microsoft.com/kb/5120166) | September 2026 | Update Rollup 4 | 
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -44,6 +45,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10208.0|[5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
 |10.22.10215.0|[5033752](https://support.microsoft.com/kb/5033752) | November 2023 | Update Rollup 2 hotfix |
 |10.22.10870.0|[5055545](https://support.microsoft.com/topic/778f5f8b-ed9f-4a34-b742-48e48fce1b81) | August 2025 | Update Rollup 3 |
+|10.22.11292.0|[5120166](https://support.microsoft.com/kb/5120166) | September 2026 | Update Rollup 4 |
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
