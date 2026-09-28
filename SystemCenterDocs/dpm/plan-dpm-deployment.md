@@ -1,29 +1,31 @@
 ---
-description: Information to help you plan for and prepare to deploy DPM in your environment.
+description: Learn how to plan your DPM server deployment, including server count and placement, firewall and port settings, and required user permissions. Get started now.
 ms.topic: install-set-up-deploy
 ms.service: system-center
 keywords:
-ms.date: 08/06/2025
-title: Get ready to deploy DPM servers
+ms.date: 09/24/2026
+title: Plan and Prepare to Deploy DPM Servers
 ms.subservice: data-protection-manager
 ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.custom: engagement-fy24
 ms.update-cycle: 365-days
 ---
 
 # Get ready to deploy DPM servers
 
-There are a few planning steps to consider before you begin to deploy your System Center Data Protection Manager (DPM) servers:
+Before you deploy System Center Data Protection Manager (DPM), use this article to size your deployment, prepare your network, and assign the right permissions. This article helps you estimate how many DPM servers you need, which firewall ports to open, and which accounts can perform each DPM task.
+Complete these planning tasks before you deploy DPM:
 
-- [Plan for DPM server deployment](#BKMK_Server) - Figure out how many DPM servers you'll need and where to place them.
+- [Plan for DPM server deployment](#plan-for-dpm-server-deployment) - Determine how many DPM servers you need and where to place them.
 
-- [Plan firewall settings](#BKMK_Firewall) - Get information about firewall, port, and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
+- [Plan firewall settings](#firewall-settings) - Get information about firewall, port, and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
 
-- [Grant user permissions](#BKMK_Users) - Specify who can interact with DPM.
+- [Grant user permissions](#grant-user-permissions) - Specify who can interact with DPM.
 
-## <a name="BKMK_Server"></a>Plan for DPM server deployment
+## Plan for DPM server deployment
 
 First, determine how many servers you'll need:
 
@@ -33,7 +35,7 @@ First, determine how many servers you'll need:
 
 - A single DPM server can protect up to 3000 client computers and 100 servers.
 
-    - For DPM server capacity planning, you can use the [DPM storage calculators](https://www.microsoft.com/download/details.aspx?id=54301). These calculators are Excel sheets and are workload-specific. They guide about the number of DPM servers required, processor core, RAM, virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific, you'll need to combine the recommended settings and consider them together with the system requirements and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. Note that the calculators were released for DPM 2010 but remain relevant for later DPM versions.
+    - For DPM server capacity planning, you can use the [DPM storage calculators](https://www.microsoft.com/download/details.aspx?id=54301). These calculators are Excel sheets and are workload-specific. They guide about the number of DPM servers required, processor core, RAM, virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific, you'll need to combine the recommended settings and consider them together with the system requirements and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. The calculators were released for DPM 2010 but remain relevant for later DPM versions.
 
 Then figure out how to locate the servers:
 
@@ -49,11 +51,11 @@ Then figure out how to locate the servers:
 
 - Consider the network bandwidth between the DPM server and the protected computers. If you are protecting data over a WAN, there's a minimum network bandwidth requirement of 512 Kbps. Note that DPM supports teamed NICs that provide increased bandwidth by combining bandwidth available for each network adapter and failover if an adapter fails.
 
-## <a name="BKMK_Firewall"></a>Plan firewall settings and user permissions
+## Plan firewall settings and user permissions
 
 ### Firewall settings
 
-Firewall settings for DPM deployment are required on the DPM server, on machines you want to protect, and on the SQL Server used for the DPM database if you're running it remotely. If Windows Firewall is enabled when you install DPM, then the DPM setup automatically configures the firewall settings on the DPM server. The firewall settings are summarized in the following table.
+You need firewall settings for DPM deployment on the DPM server, on machines you want to protect, and on the SQL Server used for the DPM database if you're running it remotely. If you enable Windows Firewall when you install DPM, the DPM setup automatically configures the firewall settings on the DPM server. The following table summarizes the firewall settings.
 
 |Location|Rule|Details|Protocol|Port|
 |------------|--------|-----------|------------|--------|
@@ -61,21 +63,21 @@ Firewall settings for DPM deployment are required on the DPM server, on machines
 |DPM server|System Center \<version\> Data Protection Manager|Exception for Msdpm.exe (the DPM service). Runs on the DPM server.|All protocols|All ports|
 |DPM server<br /><br />Protected machines|System Center \<version\> Data Protection Management Replication Agent|Exception for Dpmra.exe (protection agent service used to back up and restore data). Runs on the DPM server and protected machines.|All protocols|All ports|
 |Protected machines||Configure an incoming exception for sqserv.exe|||
-|Protected machines||DPM issues command to the protection agent with DCOM calls to the agent.   You'll need to open the upper ports (1024-65535) for DPM to communicate.|DCOM|135/TCP Dynamic|
+|Protected machines||DPM issues command to the protection agent with DCOM calls to the agent.   You need to open the upper ports (1024-65535) for DPM to communicate.|DCOM|135/TCP Dynamic|
 |Protected machines||The DPM data channel is TCP. Both the DPM server and the protected machines initiate connections. DPM communicates with the agent coordinator on port 5718 and with the protection agent on port 5719.|TCP|5718/TCP<br /><br />5719/TCP|
 |Protected machines||Used for hostname resolution between DPM/protected machine, and the domain controller.|DNS|53/UDP|
 |Protected machines||Used for authentication of the connection endpoint, between DPM/protected machine, and the domain controller.|Kerberos|88/UDP<br /><br />88/TCP|
 |Protected machines||Used for queries between the DPM server and the domain controller.|LDAP|389/TCP<br /><br />389/UDP|
-|Protected machines||Used for miscellaneous operations between 1) DPM and protected machines, 2) DPM and the domain controller 3) Protected machines and the domain controller. Also used for SMB directly hosted on TCP/IP for DPM functions.|NetBIOS|137/UDP<br /><br />138/UDP<br /><br />139/TCP<br /><br />445/TCP|
+|Protected machines||Used for miscellaneous operations between 1. DPM and protected machines, 2. DPM and the domain controller 3. Protected machines and the domain controller. Also used for SMB directly hosted on TCP/IP for DPM functions.|NetBIOS|137/UDP<br /><br />138/UDP<br /><br />139/TCP<br /><br />445/TCP|
 |Remote SQL Server||Enable TCP/IP for the DPM instance of SQL Server with the following: default failure audit; enable password policy checking.|||
 |Remote SQL Server||Enable incoming exception for sqservr.exe for DPM instance of SQL Server to allow TCP on port 80. The report server listens for HTTP requests on port 80.|||
 |Remote SQL Server||Default instance of database engine listens on TCP port 1443. Can be modified.<br /><br />To use the SQL Server Browser service to connect on a non-default port set UDP port 1434.|||
 |Remote SQL Server||Named instance of SQL Server uses Dynamic ports by default. Can be modified.|||
 |Remote SQL Server||Enable RPC|||
 
-### <a name="BKMK_Users"></a>Grant user permissions
+### Grant user permissions
 
-Before you begin a DPM deployment, verify that appropriate users have been granted the required privileges to perform the various tasks. These are summarized in the following table.
+Before you begin a DPM deployment, verify that appropriate users have the required privileges to perform the various tasks. The following table summarizes these privileges.
 
 |DPM task|Permissions needed|
 |------------|----------------------|
@@ -91,6 +93,11 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 |Recover SharePoint data|SharePoint farm admin that's also an admin on the front-end Web server on which the protection agent is installed.|
 
 >[!NOTE]
-> DPM server and protected computer communicate using DCOM. During DPMRA installation, the DPM server’s account is added to the *Distributed COM Users* security group on the protected computer.
+> DPM server and protected computer communicate by using DCOM. During DPMRA installation, the DPM server’s account is added to the *Distributed COM Users* security group on the protected computer.
 >
->For domain controller protection, Active Directory security groups will be created for each of the protected domain controllers, with the names *DPMRADCOMTRUSTEDMACHINES$DCNAME*, *DPMRADMTRUSTEDMACHINES$DCNAME*, and *DPMRATRUSTEDDPMRAS$DCNAME*.
+>For domain controller protection, Active Directory security groups are created for each of the protected domain controllers, with the names *DPMRADCOMTRUSTEDMACHINES$DCNAME*, *DPMRADMTRUSTEDMACHINES$DCNAME*, and *DPMRATRUSTEDDPMRAS$DCNAME*.
+
+## Next steps
+
+- [Prepare your environment for DPM](/system-center/dpm/prepare-environment-for-dpm).
+- [Install DPM](/system-center/dpm/install-dpm).

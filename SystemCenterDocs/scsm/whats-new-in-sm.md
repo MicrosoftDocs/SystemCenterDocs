@@ -4,7 +4,7 @@ title: What's new in System Center Service Manager
 description: This article describes the new features supported in Service Manager
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 12/01/2025
+ms.date: 09/23/2026
 ms.topic: whats-new
 ms.service: system-center
 ms.subservice: service-manager
@@ -27,7 +27,9 @@ This article details the new features supported in System Center 2025 - Service 
 
 ::: moniker range="sc-sm-2022"
 
-There are no new features introduced in Service Manager 2022. For issues fixed in SM 2022, see [release notes](release-notes-sm.md).
+This article details the new features supported in System Center 2022 - Service Manager.  
+
+[!INCLUDE [whats-new-sm-2022.md](../includes/whats-new-sm-2022.md)]
 
 ::: moniker-end
 

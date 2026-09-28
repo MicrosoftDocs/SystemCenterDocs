@@ -5,7 +5,7 @@ ms.update-cycle: 1095-days
 ms.service: system-center
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 10/27/2025
+ms.date: 09/23/2026
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -87,12 +87,12 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 > - Service Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
+> - Service Manager 2022 UR4 and later support MSOLEDBSQL 19.4.1 and earlier supported versions.
 
 
-|**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**|
-| --- | --- |--- |
-|**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |
-
+|**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)** | **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)** | SQL Server [2022](/lifecycle/products/?terms=SQL+Server+2022) |
+| --- | --- | --- | --- |
+|**Service Manager/Data Warehouse database** | &#8226; | &#8226; | &#8226; |
 
 
   > [!NOTE]
@@ -136,6 +136,24 @@ The following steps provide information about upgrading to SQL 2019.
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2019.      
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2019.
+
+## Upgrade to SQL 2022
+
+The following steps provide information about upgrading to SQL 2022.
+
+ > [!NOTE]  
+ > - Use Cumulative Update 8 (CU8) or later with SQL 2022.
+ > - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
+> - Service Manager 2022 UR4 and later support MSOLEDBSQL 19.4.1 and earlier supported versions.
+ > - The upgrade process to SQL 2022 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
+
+ **Use the following steps to upgrade from SQL 2019 to 2022**:
+
+1. Upgrade to SQL 2022.
+2. Install SQL 2022 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
+3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2022.      
+4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
+5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2022.
 
 
 ### Enable CLR strict security

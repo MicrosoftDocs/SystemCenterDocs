@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 09/23/2026
 ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
@@ -37,6 +37,8 @@ While this example is simple, Service Manager includes substitution strings for 
 ## Configure notification channels
 
 You can use the following procedures to configure notification channels and validate the configuration. Notification channels are the method by which notification messages are sent to users. You use the **Configure E-Mail Notification Channel** dialog to configure and enable email notifications that Service Manager sends to a Simple Mail Transfer Protocol (SMTP) server.
+
+Starting with Service Manager 2022 UR4, notification channels can also send outgoing email notifications through Exchange Online by using [Microsoft Graph API authentication](#send-notifications-by-using-microsoft-graph-api-authentication).
 
 > [!NOTE]
 > Only email notification is supported.
@@ -69,6 +71,10 @@ You can use the following procedures to configure notification channels and vali
 ::: moniker range=">=sc-sm-2022"
 
 ## Send notifications using external email authentication
+
+> [!IMPORTANT]
+>
+> Starting October 2026, Microsoft deprecates the EWS-based external email authentication method. For new configurations, use [Microsoft Graph API authentication](#send-notifications-by-using-microsoft-graph-api-authentication). Migrate existing configurations to Graph API before the deprecation.
 
 Microsoft Entra ID implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs:
 
@@ -186,7 +192,190 @@ Use this channel for sending notifications/outgoing e-mails.
 
 An additional setup of connector/SMTP relay and SMTP details such as FQDN and port number are not required while you use External E-mail Authentication mode for sending notifications. Therefore, FQDN and port number values are set to random values as NA and 65534 when a channel is created using this authentication method.
 
+### Send notifications by using Microsoft Graph API authentication
+
+Service Manager 2022 UR4 supports sending outgoing email notifications through Exchange Online by using Microsoft Graph API authentication. This method uses the client credentials flow and requires a Microsoft Entra application, a client secret, and the Microsoft Graph Mail.Send application permission.
+
+When a notification runs, the connection is established as follows:
+
+1. Service Manager retrieves the client ID, tenant ID, sender email address, and encrypted client secret from the notification channel configuration.
+
+2. It authenticates the application with Microsoft Entra ID by using the OAuth 2.0 client credentials flow.
+
+3. Microsoft Entra ID returns an application access token.
+
+4. Service Manager uses the token to send the notification through Microsoft Graph API.
+
+### Create a Microsoft Entra application for Graph API
+
+To create an application for Microsoft Graph API authentication, follow these steps:
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
+
+2. Go to **Entra ID** > **App registrations** and select **New registration**.
+
+3. On the **Register an application** page, complete the following fields:
+
+      :::image type="App Registration for Graph API" source="media/notifications/app-registrations-graph-api.png" alt-text="screenshot of App Registration for Graph API.":::
+      
+      - **Name**: Enter a name for the application.
+      - **Supported account types**: Select the account type that works for your organization.
+      - **Redirect URL**: Leave this field blank. The client credentials flow doesn't require a redirect URL.
+
+4. Select **Register**.<br>
+On the Overview page, note the Application (client) ID and Directory (tenant) ID. You need these values when you configure the notification channel.
+
+### Create a client secret
+
+To create a client secret, follow these steps:
+
+1. In the registered application, select **Certificates & secrets**.
+
+2. Under **Client secrets**, select **New client secret**.
+
+3. Enter a description, select an expiration period, and then select **Add**.
+
+Copy the client secret Value immediately after creation. It’s displayed only once. Don't use the Secret ID as the client secret. You need this value when you configure the notification channel.
+
+### Configure Microsoft Graph permissions
+
+To configure Microsoft Graph permissions, follow these steps:
+
+1. In the registered application, select **API permissions**.
+
+2. Select **Add a permission**, and then select **Microsoft Graph**.
+
+3. Select **Application permissions**.
+
+4. Expand **Mail**, select **Mail.Send**, and then select **Add permissions**.
+
+5. Select **Grant admin consent for your organization** and select **Yes**. Verify that the status of **Mail.Send** is **Granted** for your organization.
+
+> [!NOTE]
+> Select the *Mail.Send* application permission. The delegated permission and the Office 365 Exchange Online *EWS.AccessAsUser.All* permission aren't used by Graph API authentication.
+
+### Configure the required Microsoft Graph API permission
+
+To configure the required Microsoft Graph API permission, follow these steps:
+
+1. In the application registration, select **API permissions**.
+
+2. Go to **Add a permission** > **Microsoft Graph** > **Application permissions**.
+
+3. Expand **Mail**, select **Mail.Send**, and then select **Add permissions**.
+
+4. Select **Grant admin consent** for your tenant and select **Yes**.
+
+5. Confirm that the permission has the following values:
+      - **Permission**: Mail.Send
+      - **Type**: Application
+      - **Description**: Send mail as any user
+      - **Status**: Granted
+
+> [!NOTE]
+> Service Manager requires the *Mail.Send* application permission with admin consent. Don't select the delegated *Mail.Send* permission or the Office 365 Exchange Online *EWS.AccessAsUser.All* permission for Graph API authentication.
+
+### Before you configure Service Manager
+
+Before you configure the notification channel, ensure you have the following values:
+- Application (client) ID
+- Directory (tenant) ID
+- Client Secret Value
+- Exchange Online mailbox address used to send notifications
+
+> [!IMPORTANT]
+>
+> Enter the client secret Value in Service Manager. Don't enter the Secret ID.
+
+### Edit an existing SMTP configuration
+
+To change an existing SMTP configuration from the deprecated external email authentication method to Microsoft Graph API, follow these steps:
+
+1. Open the Service Manager console.
+
+2. Go to **Administration** > **Notifications** > **Channels**.
+
+3. Open **E-Mail Notification Channel**.
+
+4. In the SMTP servers list, select the line **Configured with External E-mail Authentication(deprecated from Oct'26)**, and select **Edit**.
+
+5. Change Authentication method to External E-mail Authentication (Graph API).
+
+6. Enter the following values:
+      - **Client Id**: Application (client) ID
+      - **Tenant Id**: Directory (tenant) ID
+      - **Mail Id**: Exchange Online mailbox address used to send notifications
+      - **Client Secret**: Client Secret value
+
+7. Select **OK**.
+
+8. Ensure that the SMTP line displays the following values:
+      - **SMTP Server**: NA
+      - **Port Number**: 65534
+      - **Authentication**: External E-mail Authentication (Graph API)
+
+      > [!NOTE]
+      > NA and 65534 are internal placeholder values for a Graph API configuration. An SMTP server FQDN and port aren't required when you use Microsoft Graph API authentication.
+
+9. Verify the **Return e-mail address** and select **OK** to save the E-Mail Notification Channel.
+
+10. Reopen the SMTP line and ensure that:
+      - Graph API remains selected.
+      - Client ID, Tenant ID, and Mail ID retain their values.
+      - Client Secret appears as a masked value.
+
+### Add a new Microsoft Graph API configuration
+
+To add a new Graph API configuration, follow these steps:
+
+1. Open the Service Manager console.
+
+2. Go to **Administration** > **Notifications** > **Channels**.
+
+3. Open **E-Mail Notification Channel**.
+
+4. Select **Add** next to the SMTP servers list.
+
+5. For Authentication method, select **External E-mail Authentication (Graph API)**.
+
+6. Enter the following values:
+      - **Client Id**: Application (client) ID
+      - **Tenant Id**: Directory (tenant) ID
+      - **Mail Id**: Exchange Online mailbox address used to send notifications
+      - **Client Secret**: Client Secret value
+
+7. Select **OK**.
+
+8. Confirm that the new SMTP line displays the following values:
+      - **SMTP Server**: NA
+      - **Port Number**: 65534
+      - **Authentication**: External E-mail Authentication (Graph API)
+
+      > [!NOTE]
+      > NA and 65534 are generated automatically for Graph API configurations. Don't replace them with an SMTP server name or port.
+
+9. If multiple SMTP lines exist, use **Up** or **Down** to set the required failover order. Move the Graph API line to the primary position if it should be used first.
+
+10. Verify the **Return e-mail address** and select **OK** to save the E-Mail Notification Channel.
+
+11. Reopen the new SMTP line and confirm that its values were saved and the Client Secret is masked.
+
+### Verify the Microsoft Graph API configuration
+
+Trigger an existing Service Manager notification and confirm that the intended recipient receives the email from the configured Exchange Online mailbox. For an example of how to trigger a notification, see [Verify a notification configuration](#verify-a-notification-configuration).
+
 ### Troubleshooting
+
+For Microsoft Graph API authentication, check the Operations Manager event log if a notification isn't sent and verify the following:
+- The Application (client) ID and Directory (tenant) ID are correct.
+- The Client Secret is valid and hasn't expired.
+- Mail.Send is configured as an application permission.
+- Admin consent is granted.
+- The Mail Id is a valid Exchange Online mailbox that the application can use to send email.
+
+> [!NOTE]
+> The EWS tracing instructions apply to the deprecated External E-mail Authentication method. They don't apply to Microsoft Graph API authentication.
+
 
 Each time Notification part runs, it logs events into the event viewer. In case of unexpected behavior, check events to troubleshoot. For more information or for debugging purposes, refer EWS Traces in events. To display trace and logs in the event viewer, open command prompt in administrator mode in the Service Manager Console machine and set the env var EXTERNALEWSLogs value to 1 (setx /m EXTERNALEWSLogs 1).
 
