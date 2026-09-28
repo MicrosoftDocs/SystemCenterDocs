@@ -1,12 +1,12 @@
 ---
-title: Map Active Directory Domain Services attributes to properties in Service Manager
-description: Learn about the relationships between Active Directory Domain Services attributes and properties in Service Manager.
+title: Map Active Directory Attributes to Service Manager Properties
+description: See how Service Manager maps Active Directory Domain Services user, group, printer, and computer attributes to class properties. Review the mapping tables now.
 ms.topic: concept-article
 author: Jeronika-MS
 ms.author: v-gajeronika
+ms.reviewer: v-gajeronika
 ms.service: system-center
-keywords:
-ms.date: 11/01/2024
+ms.date: 09/28/2026
 ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
@@ -15,7 +15,7 @@ ms.custom: engagement-fy24
 
 # Map Active Directory Domain Services attributes to properties in System Center - Service Manager
 
-Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services (AD DS) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
+By using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services (AD DS) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
 
 ## User/Microsoft.AD.User
 
