@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: whats-new
 ms.service: system-center
-ms.date: 11/25/2025
+ms.date: 09/23/2026
 ms.update-cycle: 180-days
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
@@ -26,7 +26,7 @@ This article gives details of the new features supported in System Center - Data
 
 ::: moniker range="sc-dpm-2022"
 
-This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2022. It also provides details of the new features in DPM 2022 UR1 and UR2.
+This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2022. It also provides details of the new features in DPM 2022 UR1, UR2, UR3, and UR4.
 
 [!INCLUDE [whats-new-dpm-2022.md](../includes/whats-new-dpm-2022.md)]
 
@@ -60,7 +60,7 @@ DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 
 ### SQL 2017 support as DPM database
 
-DPM 2019 support SQL 2017 as its database.
+DPM 2019 supports SQL 2017 as its database.
 
 You can install SQL Server on a remote server or on the DPM server. The database must be installed and running before you install DPM.
 
@@ -83,7 +83,7 @@ To achieve the scale and performance by MBS, we recommend using a small percenta
 
 ### Support for Central Monitoring
 
-With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
+With DPM 2019, all DPM-A customers (customers connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
 
 You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
@@ -95,7 +95,7 @@ DPM 2019 supports both Original Location Recovery (OLR) and Alternate Location R
 
 ### VMware parallel backups
 
-With DPM 2019, all your VMware VMs back up within a single protection group would be parallel, leading to 25% faster VM backups.
+With DPM 2019, all your VMware VMs that back up within a single protection group would be parallel, leading to 25% faster VM backups.
 
 With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMware delta replication jobs run in parallel. By default, the number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
@@ -158,7 +158,7 @@ DPM 2019 UR2 supports Offline backup using Azure Data Box. With [Microsoft Azure
 
 ### SQL Server 2019 support as DPM database
 
-DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on a remote server or on the DPM server. The database must be installed and running before you install DPM. [Learn more](prepare-environment-for-dpm.md#sql-server-database).
+DPM 2019 supports SQL Server 2019 as DPM database. You can install SQL Server on a remote server or on the DPM server. The database must be installed and running before you install DPM. [Learn more](prepare-environment-for-dpm.md#sql-server-database).
 
 ## New features in DPM 2019 UR3
 
