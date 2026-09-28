@@ -3,7 +3,7 @@ description: This article describes the way that you can monitor DPM.
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 08/07/2025
+ms.date: 09/16/2026
 title: Monitor DPM
 ms.subservice: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -31,6 +31,98 @@ To monitor DPM in the console, you should be signed in to the DPM server with a 
 
 - In the **Management** task area, you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
+::: moniker range="sc-dpm-2022"
+
+## Configure Microsoft 365 email notifications
+
+Data Protection Manager 2022 UR4 can send email notifications through Microsoft 365 by using OAuth 2.0 client credentials. This section explains how to register a Microsoft Entra application, grant the required permissions, configure a mailbox, and enter the OAuth credentials in DPM. Use the Exchange Online SMTP endpoint `smtp.office365.com`, port `587`, and STARTTLS, together with the application's tenant ID, client ID, and client secret. For more information, see [Use client credentials grant flow to authenticate SMTP, IMAP, and POP connections](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth#use-client-credentials-grant-flow-to-authenticate-smtp-imap-and-pop-connections).
+
+>[!NOTE]
+>Before you set up the email notification, ensure that you [enable SMTP AUTH in Microsoft Exchange Online](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission).
+
+To set up SMTP by using OAuth, follow these steps:
+
+1. In the [Azure portal](https://portal.azure.com/auth/login/), go to **Microsoft Entra ID**.
+
+2. On the **Microsoft Entra ID** pane, select **+ Add** > **App registration**.
+
+   :::image type="content" source="media/monitor-dpm/microsoft-entra-add-menu-app-registration.png" alt-text="Screenshot of the Microsoft Entra overview with App registration selected from the Add menu." lightbox="media/monitor-dpm/microsoft-entra-add-menu-app-registration.png":::
+
+3. On the **Register an application** pane, provide a name and select supported account types as required.
+
+   :::image type="content" source="media/monitor-dpm/register-application-supported-account-types.png" alt-text="Screenshot of Register an application showing Name field, account type options, redirect URI, and Register button." lightbox="media/monitor-dpm/register-application-supported-account-types.png":::
+
+4. Select **Register**.
+
+5. On the registered **Microsoft Entra ID application** pane, select **Manage** > **API permissions**.
+
+   :::image type="content" source="media/monitor-dpm/oauth-app-registration-essentials-pane.png" alt-text="Screenshot of the registered application Overview with display name, client credentials, and API permissions in the sidebar." lightbox="media/monitor-dpm/oauth-app-registration-essentials-pane.png":::
+
+6. On the **API permissions** pane, select **+ Add a permission**.
+
+7. On the **Request API permissions** pane, select **APIs my organization uses**, and then search for *Office 365 Exchange Online*.
+
+   :::image type="content" source="media/monitor-dpm/select-office-365-exchange-online-api-permission.png" alt-text="Screenshot of the Select an API step listing Office 365 Exchange Online under APIs my organization uses." lightbox="media/monitor-dpm/select-office-365-exchange-online-api-permission.png":::
+
+8. On the **Request API permissions** pane, select **Application permissions**.
+
+9. For SMTP access, select the `SMTP.SendAsApp` and `Mail.Send` permissions.
+
+   Ensure that you grant admin consent for these permissions.
+
+   :::image type="content" source="media/monitor-dpm/request-permissions.png" alt-text="Screenshot of the Request API permissions pane showing a search for smtp and the SMTP.SendAsApp checkbox." lightbox="media/monitor-dpm/request-permissions.png":::
+
+   :::image type="content" source="media/monitor-dpm/request-api-permissions-mail-send-application.png" alt-text="Screenshot of Azure Request API permissions showing Mail.Send permission checkbox and Add permissions button." lightbox="media/monitor-dpm/request-api-permissions-mail-send-application.png":::
+
+10. Select **Add permissions**.
+
+### Configure mailboxes for SMTP
+
+To configure mailboxes for SMTP, [register a service principal in Exchange](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth#register-service-principals-in-exchange) and [enable SMTP AUTH for specific mailboxes or the entire tenant](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission#use-the-microsoft-365-admin-center-to-enable-or-disable-smtp-auth-on-specific-mailboxes).
+
+> [!NOTE]
+> - Client secrets have a maximum lifetime of two years. To avoid mail delivery failures, administrators must generate a new secret in Microsoft Entra and update Data Protection Manager Server SMTP settings before the current secret expires.
+> - Ensure that you enable SMTP AUTH for the tenant and the mailboxes.
+
+## Retrieve credentials and client secret
+
+To retrieve essential details required to set up SMTP by using OAuth for Microsoft 365 accounts, follow these steps:
+
+1. In the [Azure portal](https://portal.azure.com/auth/login/), go to **Microsoft Entra ID**.
+
+1. On the **Microsoft Entra ID** pane, select **App registration**.
+
+    :::image type="content" source="media/monitor-dpm/app-registrations-owned-applications-list.png" alt-text="Screenshot of App registrations showing New registration, Endpoints, and Refresh toolbar options with the OAuth 2.0 app listed." lightbox="media/monitor-dpm/app-registrations-owned-applications-list.png":::
+
+1. On the **App registrations** pane, select your application to open.
+
+1. On the **selected registered application** pane, select **Manage**, select **Certificates & secrets**. Create a client secret by selecting **New client secret**.
+
+    :::image type="content" source="media/monitor-dpm/azure-certificates-secrets-client-secret-expiry.png" alt-text="Screenshot of Azure portal App registration Certificates and secrets with the client secret description and expiration options." lightbox="media/monitor-dpm/azure-certificates-secrets-client-secret-expiry.png":::
+
+>[!IMPORTANT]
+> After the client secret creation is complete, you can find the tenant ID and client ID on the **Overview** pane. Store the client secret value securely because you can't view it again after you leave the pane. Use the tenant ID, client ID, and client secret value to configure SMTP for Microsoft 365 accounts in DPM.
+
+## Use OAuth
+
+To configure email for DPM by using the Microsoft 365 OAuth SMTP server, follow these steps:
+
+1. On the DPM console, select **Actions** > **Options** >  **SMTP Server**.
+1. On **SMTP Server**, enter the following values:
+
+    - **SMTP server name**: `smtp.office365.com`
+    - **SMTP server port**: `587`
+    - **From address**: Enter a valid email address.
+    - **Authentication method**: Select **OAuth (M365)**.
+    - **Tenant ID**: Enter the tenant ID.
+    - **Client ID**: Enter the client ID.
+    - **Client secret**: Enter the newly created client secret.
+
+1. To verify if the setup works as expected, select **Send Test E-mail**.
+1. Select **OK** and save the details.
+
+::: moniker-end
+
 ### Configure Email for DPM
 
 **Use on-premises SMTP server to configure email for DPM**
@@ -53,7 +145,7 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
+>Microsoft 365 SMTP no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
 
@@ -77,7 +169,7 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
+>Microsoft 365 SMTP no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
     
@@ -101,7 +193,7 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 DPM supports an external mail provider without a relay agent using the Basic authentication and Port 587 for secure SMTP with your email (username@contoso.com) and password.
 
 >[!NOTE]
->Microsoft 365 SMPT no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
+>Microsoft 365 SMTP no longer supports Basic authentication.  For more information, see [Deprecation of Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online).
 
 :::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
 

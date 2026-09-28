@@ -4,7 +4,7 @@ ms.topic: include
 author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
-ms.date: 04/15/2026
+ms.date: 09/23/2026
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -119,3 +119,11 @@ DPM 2022 UR3 onwards, DPM is dependent on Visual C++ Redistributable 2015-2022 (
 ### Added Support for Exchange Subscription Edition
 
 DPM 2025 now supports Exchange Subscription Edition as an application aware backup. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022&preserve-view=true#applications-backup-1)
+
+## New features in DPM 2022 UR4
+
+See the following sections for information about the new features/feature updates supported in DPM 2022 UR4. 
+
+### Added support for Microsoft 365 email notifications
+
+Data Protection Manager 2022 UR4 can send email notifications through Microsoft 365 by using OAuth 2.0 client credentials. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-microsoft-365-email-notifications).
