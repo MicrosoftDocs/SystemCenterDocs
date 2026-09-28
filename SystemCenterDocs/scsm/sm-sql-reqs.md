@@ -6,7 +6,7 @@ author: Jeronika-MS
 ms.author: v-gajeronika
 ms.service: system-center
 keywords:
-ms.date: 12/01/2025
+ms.date: 09/23/2026
 ms.update-cycle: 365-days
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
@@ -65,6 +65,7 @@ For detailed information about the requirements for Service Manager components, 
 
 >[!NOTE]
 > - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
+> - Service Manager 2022 UR4 supports MSOLEDBSQL 19.4.1 and earlier supported versions.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 
