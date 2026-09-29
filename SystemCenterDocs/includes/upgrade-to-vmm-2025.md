@@ -189,6 +189,12 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 
  After the upgrade, you need to update the VMM agents on your Hyper-V hosts and in your VMM library servers.
 
+**Warning**
+
+Updating the VMM agent can restart the Hyper-V Virtual Machine Management service (VMMS). On a Hyper-V host that is a member of a Windows Server Failover Cluster, this service restart can disrupt running virtual machines.
+
+Before updating the VMM agent on a clustered Hyper-V host, place the host in VMM Maintenance Mode and migrate running VMs off the host. Keep the host in Maintenance Mode until the agent update completes. Alternatively, manually live-migrate or shut down all VMs on the host before starting the update.
+
  1. Select **Fabric** >  **Servers** >  **All Hosts**.
  2. In the **Hosts** pane, right-click a column heading and then select **Agent Version Status**.
  3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, select **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention**, and the **Agent Version Status** column will display **Upgrade Available**.
