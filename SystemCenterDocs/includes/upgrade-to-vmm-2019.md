@@ -4,7 +4,7 @@ title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2019.
 author: Jeronika-MS
 ms.author: v-gajeronika
-ms.date: 12/13/2023
+ms.date: 09/30/2026
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -184,6 +184,9 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 ## Update VMM agents
 
  After the upgrade, you need to update the VMM agents on your Hyper-V hosts and in your VMM library servers.
+
+>[!NOTE]
+> Updating the VMM agent can restart the Hyper-V Virtual Machine Management service (VMMS). On a Hyper-V host that's a member of a Windows Server Failover Cluster, this service restart can disrupt running virtual machines. To avoid this disruption, before updating the VMM agent on a clustered Hyper-V host, place the host in Maintenance Mode. This action live-migrates running VMs off the host. Keep the host in Maintenance Mode until the agent update finishes. Alternatively, manually live-migrate or shut down all VMs on the host before starting the update.
 
  1. Select **Fabric** >  **Servers** >  **All Hosts**.
  2. In the **Hosts** pane, right-click a column heading and then select **Agent Version Status**.
